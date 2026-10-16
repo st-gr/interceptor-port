@@ -2117,7 +2117,7 @@ SKIPPED [1] tests/frontend/test_views.py:187: reference captures not present
 SKIPPED [1] tests/frontend/test_views.py:194: reference captures not present
 SKIPPED [1] tests/frontend/test_web_build.py:14: emcc (Emscripten) not on PATH
 SKIPPED [1] tests/frontend/test_world_frames.py:28: reference emulator, snapshot or assets absent
-404 passed, 331 skipped in 22.62s
+404 passed, 331 skipped in 22.12s
 make: Entering directory '/home/runner/work/interceptor-port/interceptor-port/tools/m68k-rig'
 cc -o musashi/m68kmake musashi/m68kmake.c
 cd musashi && ./m68kmake
