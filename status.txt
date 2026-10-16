@@ -1,4 +1,4 @@
-linux failure
+linux success
 windows success
 macos success
 extract-js success

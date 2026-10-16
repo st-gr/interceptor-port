@@ -2117,5 +2117,305 @@ SKIPPED [1] tests/frontend/test_views.py:187: reference captures not present
 SKIPPED [1] tests/frontend/test_views.py:194: reference captures not present
 SKIPPED [1] tests/frontend/test_web_build.py:14: emcc (Emscripten) not on PATH
 SKIPPED [1] tests/frontend/test_world_frames.py:28: reference emulator, snapshot or assets absent
-404 passed, 331 skipped in 12.93s
-cp: cannot stat '/home/runner/work/interceptor-port/interceptor-port/tools/release/tests/../README.public.md': No such file or directory
+404 passed, 331 skipped in 22.62s
+make: Entering directory '/home/runner/work/interceptor-port/interceptor-port/tools/m68k-rig'
+cc -o musashi/m68kmake musashi/m68kmake.c
+cd musashi && ./m68kmake
+
+	Musashi v4.60 68000, 68008, 68010, 68EC020, 68020, 68EC030, 68030, 68EC040, 68040 emulator
+		Copyright Karl Stenerud (kstenerud@gmail.com)
+
+Generated 1967 opcode handlers from 518 primitives
+cc -O2 -Wall -DMUSASHI_CNF='"/home/runner/work/interceptor-port/interceptor-port/tools/m68k-rig/m68kconf.h"' -I. -Imusashi -c rig.c -o rig.o
+cc -O2 -Wall -DMUSASHI_CNF='"/home/runner/work/interceptor-port/interceptor-port/tools/m68k-rig/m68kconf.h"' -I. -Imusashi -c musashi/m68kcpu.c -o m68kcpu.o
+In file included from musashi/m68kcpu.c:49:
+musashi/m68kcpu.h: In function ‘m68ki_exception_trapN’:
+musashi/m68kcpu.h:1869:14: warning: unused variable ‘t’ [-Wunused-variable]
+ 1869 |         uint t = REG_IR & 0xf;
+      |              ^
+cc -O2 -Wall -DMUSASHI_CNF='"/home/runner/work/interceptor-port/interceptor-port/tools/m68k-rig/m68kconf.h"' -I. -Imusashi -c musashi/m68kops.c -o m68kops.o
+In file included from musashi/m68kops.c:2:
+musashi/m68kcpu.h: In function ‘m68ki_exception_trapN’:
+musashi/m68kcpu.h:1869:14: warning: unused variable ‘t’ [-Wunused-variable]
+ 1869 |         uint t = REG_IR & 0xf;
+      |              ^
+musashi/m68kops.c: In function ‘m68k_op_bfchg_32_ai’:
+musashi/m68kops.c:5320:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5320 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5319:22: warning: unused variable ‘data_byte’ [-Wunused-variable]
+ 5319 |                 uint data_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5317:22: warning: unused variable ‘data_long’ [-Wunused-variable]
+ 5317 |                 uint data_long;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfchg_32_di’:
+musashi/m68kops.c:5360:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5360 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5359:22: warning: unused variable ‘data_byte’ [-Wunused-variable]
+ 5359 |                 uint data_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5357:22: warning: unused variable ‘data_long’ [-Wunused-variable]
+ 5357 |                 uint data_long;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfchg_32_ix’:
+musashi/m68kops.c:5400:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5400 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5399:22: warning: unused variable ‘data_byte’ [-Wunused-variable]
+ 5399 |                 uint data_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5397:22: warning: unused variable ‘data_long’ [-Wunused-variable]
+ 5397 |                 uint data_long;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfchg_32_aw’:
+musashi/m68kops.c:5440:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5440 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5439:22: warning: unused variable ‘data_byte’ [-Wunused-variable]
+ 5439 |                 uint data_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5437:22: warning: unused variable ‘data_long’ [-Wunused-variable]
+ 5437 |                 uint data_long;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfchg_32_al’:
+musashi/m68kops.c:5480:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5480 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5479:22: warning: unused variable ‘data_byte’ [-Wunused-variable]
+ 5479 |                 uint data_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5477:22: warning: unused variable ‘data_long’ [-Wunused-variable]
+ 5477 |                 uint data_long;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfclr_32_ai’:
+musashi/m68kops.c:5555:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5555 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfclr_32_di’:
+musashi/m68kops.c:5593:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5593 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfclr_32_ix’:
+musashi/m68kops.c:5631:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5631 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfclr_32_aw’:
+musashi/m68kops.c:5669:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5669 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfclr_32_al’:
+musashi/m68kops.c:5707:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5707 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68ki_build_opcode_table’:
+musashi/m68kops.c:36374:13: warning: unused variable ‘cycle_cost’ [-Wunused-variable]
+36374 |         int cycle_cost;
+      |             ^~~~~~~~~~
+cc -O2 -Wall -DMUSASHI_CNF='"/home/runner/work/interceptor-port/interceptor-port/tools/m68k-rig/m68kconf.h"' -I. -Imusashi -c musashi/m68kdasm.c -o m68kdasm.o
+cc -O2 -Wall -DMUSASHI_CNF='"/home/runner/work/interceptor-port/interceptor-port/tools/m68k-rig/m68kconf.h"' -I. -Imusashi -c musashi/softfloat/softfloat.c -o softfloat.o
+In file included from musashi/softfloat/softfloat.c:33:
+musashi/softfloat/../m68kcpu.h: In function ‘m68ki_exception_trapN’:
+musashi/softfloat/../m68kcpu.h:1869:14: warning: unused variable ‘t’ [-Wunused-variable]
+ 1869 |         uint t = REG_IR & 0xf;
+      |              ^
+ar rcs librig.a rig.o m68kcpu.o m68kops.o m68kdasm.o softfloat.o
+cc -O2 -Wall -I. tests/test_rig.c librig.a -o test_rig -lm
+make -C ../.. core
+make[1]: Entering directory '/home/runner/work/interceptor-port/interceptor-port'
+make[1]: Leaving directory '/home/runner/work/interceptor-port/interceptor-port'
+cc -O2 -Wall -I. ../../tests/rig/test_fx_diff.c librig.a ../../build/libcore.a -o test_fx_diff -lm
+./test_fx_diff
+test_fx_diff: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. ../../tests/rig/test_flight_diff.c librig.a ../../build/libcore.a -o test_flight_diff -lm
+./test_flight_diff
+test_flight_diff: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. ../../tests/rig/test_training_diff.c librig.a ../../build/libcore.a -o test_training_diff -lm
+./test_training_diff
+test_training_diff: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. ../../tests/rig/test_ai_diff.c librig.a ../../build/libcore.a -o test_ai_diff -lm
+./test_ai_diff
+test_ai_diff: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. ../../tests/rig/test_radar_diff.c librig.a ../../build/libcore.a -o test_radar_diff -lm
+./test_radar_diff
+test_radar_diff: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. ../../tests/rig/test_weapons_diff.c librig.a ../../build/libcore.a -o test_weapons_diff -lm
+./test_weapons_diff
+test_weapons_diff: skipped (extracted/interceptor.bin not found)
+# the whole-state part reads extracted/captures/state-flight.bin and landmark-state-cases.bin (state_dump.py, landmark_state_check.py) and skips without them; it needs the 14 MB machine
+WEAPONS_DIFF_PART=lmstate ./test_weapons_diff
+test_weapons_diff: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. ../../tests/rig/test_slots_diff.c librig.a ../../build/libcore.a -o test_slots_diff -lm
+./test_slots_diff
+test_slots_diff: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. ../../tests/rig/test_ship_diff.c librig.a ../../build/libcore.a -o test_ship_diff -lm
+./test_ship_diff
+test_ship_diff: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. ../../tests/rig/test_ai_traj.c librig.a ../../build/libcore.a -o test_ai_traj -lm
+./test_ai_traj
+test_ai_traj: skipped (extracted/interceptor.bin not found)
+AI_TRAJ_DIVE=1 AI_TRAJ_STEPS=100 AI_TRAJ_CASES=60 ./test_ai_traj
+test_ai_traj: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. ../../tests/rig/test_seat_diff.c librig.a ../../build/libcore.a -o test_seat_diff -lm
+./test_seat_diff
+test_seat_diff: skipped (extracted/interceptor.bin not found)
+SEAT_DIFF_SPAWN=1 ./test_seat_diff
+test_seat_diff: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. ../../tests/rig/test_spawn_diff.c librig.a ../../build/libcore.a -o test_spawn_diff -lm
+./test_spawn_diff
+test_spawn_diff: skipped (extracted/interceptor.bin not found)
+SPAWN_DIFF_TARGETS=1 ./test_spawn_diff
+test_spawn_diff: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. ../../tests/rig/test_missions_diff.c librig.a ../../build/libcore.a -o test_missions_diff -lm
+./test_missions_diff
+test_missions_diff: skipped (extracted/interceptor.bin not found)
+cc -O2 -Wall -I. tests/test_lists_diff.c librig.a -o test_lists_diff -lm
+./test_lists_diff
+  deck_queues_equal_the_emulators                         (skipped, no extracted/ log) ok
+  airborne_queues_equal_the_emulators_up_to_the_lod_nibble(skipped, no extracted/ log) ok
+2 tests, 0 failures
+cc -O2 -Wall -I. ../../tests/rig/test_lists_diff.c librig.a ../../build/libcore.a -o test_lists_port_diff -lm
+./test_lists_port_diff ../../assets
+test_lists_diff: skipped (no assets or extracted/interceptor.bin)
+cc -O2 -Wall -I. ../../tests/rig/test_draw_diff.c librig.a ../../build/libcore.a -o test_draw_diff -lm
+./test_draw_diff
+draw handlers: skipped (extracted/interceptor.bin is absent)
+DRAW_DIFF_FULL=1 DRAW_DIFF_EDGE=1 DRAW_DIFF_OPS=2,74,48,13,75,14,11,12,6,19,22 DRAW_DIFF_N=5000 ./test_draw_diff
+draw handlers: skipped (extracted/interceptor.bin is absent)
+DRAW_DIFF_FULL=1 DRAW_DIFF_EDGE=1 DRAW_DIFF_OPS=39,40 DRAW_DIFF_N=5000 ./test_draw_diff
+draw handlers: skipped (extracted/interceptor.bin is absent)
+cc -O2 -Wall -I. ../../tests/rig/test_nearground_diff.c librig.a ../../build/libcore.a -o test_nearground_diff -lm
+./test_nearground_diff
+near-ground pass: skipped (extracted/interceptor.bin is absent)
+cc -O2 -Wall -I. ../../tests/rig/test_sky_diff.c librig.a ../../build/libcore.a -o test_sky_diff -lm
+./test_sky_diff
+test_sky_diff: extracted/interceptor.bin absent, skipped
+cc -O2 -Wall -fPIC -shared -DMUSASHI_CNF='"/home/runner/work/interceptor-port/interceptor-port/tools/m68k-rig/m68kconf.h"' -I. -Imusashi rig.c musashi/m68kcpu.c musashi/m68kops.c musashi/m68kdasm.c musashi/softfloat/softfloat.c -o librig.so -lm
+In file included from musashi/m68kcpu.c:49:
+musashi/m68kcpu.h: In function ‘m68ki_exception_trapN’:
+musashi/m68kcpu.h:1869:14: warning: unused variable ‘t’ [-Wunused-variable]
+ 1869 |         uint t = REG_IR & 0xf;
+      |              ^
+In file included from musashi/m68kops.c:2:
+musashi/m68kcpu.h: In function ‘m68ki_exception_trapN’:
+musashi/m68kcpu.h:1869:14: warning: unused variable ‘t’ [-Wunused-variable]
+ 1869 |         uint t = REG_IR & 0xf;
+      |              ^
+musashi/m68kops.c: In function ‘m68k_op_bfchg_32_ai’:
+musashi/m68kops.c:5320:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5320 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5319:22: warning: unused variable ‘data_byte’ [-Wunused-variable]
+ 5319 |                 uint data_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5317:22: warning: unused variable ‘data_long’ [-Wunused-variable]
+ 5317 |                 uint data_long;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfchg_32_di’:
+musashi/m68kops.c:5360:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5360 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5359:22: warning: unused variable ‘data_byte’ [-Wunused-variable]
+ 5359 |                 uint data_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5357:22: warning: unused variable ‘data_long’ [-Wunused-variable]
+ 5357 |                 uint data_long;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfchg_32_ix’:
+musashi/m68kops.c:5400:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5400 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5399:22: warning: unused variable ‘data_byte’ [-Wunused-variable]
+ 5399 |                 uint data_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5397:22: warning: unused variable ‘data_long’ [-Wunused-variable]
+ 5397 |                 uint data_long;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfchg_32_aw’:
+musashi/m68kops.c:5440:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5440 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5439:22: warning: unused variable ‘data_byte’ [-Wunused-variable]
+ 5439 |                 uint data_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5437:22: warning: unused variable ‘data_long’ [-Wunused-variable]
+ 5437 |                 uint data_long;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfchg_32_al’:
+musashi/m68kops.c:5480:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5480 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5479:22: warning: unused variable ‘data_byte’ [-Wunused-variable]
+ 5479 |                 uint data_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c:5477:22: warning: unused variable ‘data_long’ [-Wunused-variable]
+ 5477 |                 uint data_long;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfclr_32_ai’:
+musashi/m68kops.c:5555:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5555 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfclr_32_di’:
+musashi/m68kops.c:5593:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5593 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfclr_32_ix’:
+musashi/m68kops.c:5631:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5631 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfclr_32_aw’:
+musashi/m68kops.c:5669:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5669 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68k_op_bfclr_32_al’:
+musashi/m68kops.c:5707:22: warning: unused variable ‘mask_byte’ [-Wunused-variable]
+ 5707 |                 uint mask_byte = 0;
+      |                      ^~~~~~~~~
+musashi/m68kops.c: In function ‘m68ki_build_opcode_table’:
+musashi/m68kops.c:36374:13: warning: unused variable ‘cycle_cost’ [-Wunused-variable]
+36374 |         int cycle_cost;
+      |             ^~~~~~~~~~
+In file included from musashi/softfloat/softfloat.c:33:
+musashi/softfloat/../m68kcpu.h: In function ‘m68ki_exception_trapN’:
+musashi/softfloat/../m68kcpu.h:1869:14: warning: unused variable ‘t’ [-Wunused-variable]
+ 1869 |         uint t = REG_IR & 0xf;
+      |              ^
+skipped (missing: extracted/interceptor.bin, extracted/captures/logs/lists.txt)
+skipped (missing: extracted/interceptor.bin, extracted/captures/logs/lists.txt)
+skipped (missing: extracted/interceptor.bin, assets/sounds/textcpt.raw)
+cc -O2 -Wall -I. ../../tests/rig/test_sound_diff.c librig.a ../../build/libcore.a -o test_sound_diff -lm
+./test_sound_diff
+test_sound_diff: skipped (extracted/interceptor.bin not found)
+./test_rig
+  calls_a_two_argument_function_and_returns_d0            ok
+  peek_reads_back_what_poke_wrote                         ok
+  loads_relocated_game_image_when_present                 (skipped, no extracted/) ok
+  infinite_loop_reports_timeout                           ok
+  load_image_rejects_oversize_and_bad_base                ok
+  run_at_address_uses_and_returns_registers               ok
+  run_reports_timeout_without_hanging                     ok
+  run_outside_image_is_an_error                           ok
+8 tests, 0 failures
+make: Leaving directory '/home/runner/work/interceptor-port/interceptor-port/tools/m68k-rig'
+cc -std=c99 -Wall -Wextra -O2 tests/golden/run_golden.c build/libcore.a -o build/tests/run_golden -lm
+golden: synthetic takeoff-and-circuit ok
+golden: real takeoff-and-circuit skipped (assets or local tests/golden/takeoff-and-circuit-real.golden absent; make golden-update-real)
+golden: synthetic demo ok
+golden: real demo skipped (assets or local tests/golden/demo-real.golden absent; make golden-update-real)
+golden: synthetic training ok
+golden: real training skipped (assets or local tests/golden/training-real.golden absent; make golden-update-real)
+golden: synthetic qualification ok
+golden: real qualification skipped (assets or local tests/golden/qualification-real.golden absent; make golden-update-real)
+golden: synthetic mission-f1 ok
+golden: real mission-f1 skipped (assets or local tests/golden/mission-f1-real.golden absent; make golden-update-real)
+golden: synthetic mission-f2 ok
+golden: real mission-f2 skipped (assets or local tests/golden/mission-f2-real.golden absent; make golden-update-real)
+golden: synthetic mission-f3 ok
+golden: real mission-f3 skipped (assets or local tests/golden/mission-f3-real.golden absent; make golden-update-real)
+golden: synthetic mission-f4 ok
+golden: real mission-f4 skipped (assets or local tests/golden/mission-f4-real.golden absent; make golden-update-real)
+golden: synthetic mission-f5 ok
+golden: real mission-f5 skipped (assets or local tests/golden/mission-f5-real.golden absent; make golden-update-real)
+golden: synthetic mission-f6 ok
+golden: real mission-f6 skipped (assets or local tests/golden/mission-f6-real.golden absent; make golden-update-real)

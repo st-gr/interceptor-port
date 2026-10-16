@@ -3,523 +3,523 @@ TAP version 13
 # Subtest: files of many sizes read back byte for byte, with extension blocks beyond 72 data blocks (OFS)
 ok 1 - files of many sizes read back byte for byte, with extension blocks beyond 72 data blocks (OFS)
   ---
-  duration_ms: 17.2602
+  duration_ms: 13.446715
   type: 'test'
   ...
 # Subtest: FFS data blocks are raw
 ok 2 - FFS data blocks are raw
   ---
-  duration_ms: 0.368439
+  duration_ms: 0.296922
   type: 'test'
   ...
 # Subtest: directory order is the hash table order, with hash chains after the table entries
 ok 3 - directory order is the hash table order, with hash chains after the table entries
   ---
-  duration_ms: 0.680173
+  duration_ms: 0.588579
   type: 'test'
   ...
 # Subtest: a damaged data block or a damaged directory is reported, not read past
 ok 4 - a damaged data block or a damaged directory is reported, not read past
   ---
-  duration_ms: 1.542548
+  duration_ms: 1.327742
   type: 'test'
   ...
 # Subtest: amitools (the Python extractor's reader) lists and reads the invented disks the same way
 ok 5 - amitools (the Python extractor's reader) lists and reads the invented disks the same way # SKIP python with extract and amitools not available
   ---
-  duration_ms: 0.084806
+  duration_ms: 0.0738
   type: 'test'
   ...
 # Subtest: reads the files of the synthetic disk in directory order
 ok 6 - reads the files of the synthetic disk in directory order
   ---
-  duration_ms: 7.432992
+  duration_ms: 4.890231
   type: 'test'
   ...
 # Subtest: a missing file or directory is named
 ok 7 - a missing file or directory is named
   ---
-  duration_ms: 1.258895
+  duration_ms: 1.07691
   type: 'test'
   ...
 # Subtest: a short file, a wrong size and a file that is no AmigaDOS disk are refused
 ok 8 - a short file, a wrong size and a file that is no AmigaDOS disk are refused
   ---
-  duration_ms: 2.702796
+  duration_ms: 1.360405
   type: 'test'
   ...
 # Subtest: flux images are refused by name
 ok 9 - flux images are refused by name
   ---
-  duration_ms: 0.37604
+  duration_ms: 0.422322
   type: 'test'
   ...
 # Subtest: the cockpit tables of the synthetic image equal the Python output
 ok 10 - the cockpit tables of the synthetic image equal the Python output
   ---
-  duration_ms: 20.927434
+  duration_ms: 23.593277
   type: 'test'
   ...
 # Subtest: a table that runs past the image is refused naming the table
 ok 11 - a table that runs past the image is refused naming the table
   ---
-  duration_ms: 0.51704
+  duration_ms: 0.560158
   type: 'test'
   ...
 # Subtest: the structure checks of the real-asset tests
 ok 12 - the structure checks of the real-asset tests
   ---
-  duration_ms: 0.808033
+  duration_ms: 2.008195
   type: 'test'
   ...
 # Subtest: the map shapes of the synthetic disk pass the structure check with the invented hash and not with the real constant
 ok 13 - the map shapes of the synthetic disk pass the structure check with the invented hash and not with the real constant
   ---
-  duration_ms: 1.512513
+  duration_ms: 3.600305
   type: 'test'
   ...
 # Subtest: templates, ai, burst, target text, months, prompts, star, briefing chain and head step equal the Python output
 ok 14 - templates, ai, burst, target text, months, prompts, star, briefing chain and head step equal the Python output
   ---
-  duration_ms: 24.014501
+  duration_ms: 29.512297
   type: 'test'
   ...
 # Subtest: a table outside the image or a value the note does not allow is refused naming the table
 ok 15 - a table outside the image or a value the note does not allow is refused naming the table
   ---
-  duration_ms: 0.59083
+  duration_ms: 0.566231
   type: 'test'
   ...
 # Subtest: month names are stored reversed and read back in reading order
 ok 16 - month names are stored reversed and read back in reading order
   ---
-  duration_ms: 0.353497
+  duration_ms: 0.277016
   type: 'test'
   ...
 # Subtest: the corpus covers the decoders and both outcomes
 ok 17 - the corpus covers the decoders and both outcomes
   ---
-  duration_ms: 6.375477
+  duration_ms: 3.439835
   type: 'test'
   ...
 # Subtest: every recorded Python call gives the same digest or the same refusal in JavaScript
 ok 18 - every recorded Python call gives the same digest or the same refusal in JavaScript
   ---
-  duration_ms: 534.661658
+  duration_ms: 534.962588
   type: 'test'
   ...
 # Subtest: not an ADF: a short file, a file of the wrong size, a disk without an AmigaDOS root block
 ok 19 - not an ADF: a short file, a file of the wrong size, a disk without an AmigaDOS root block
   ---
-  duration_ms: 4.815785
+  duration_ms: 3.080416
   type: 'test'
   ...
 # Subtest: a flux image is refused by name: SCP, HFE, MFI
 ok 20 - a flux image is refused by name: SCP, HFE, MFI
   ---
-  duration_ms: 0.583699
+  duration_ms: 0.4598
   type: 'test'
   ...
 # Subtest: an ADF of another disk: the game's files are missing
 ok 21 - an ADF of another disk: the game's files are missing
   ---
-  duration_ms: 1.024916
+  duration_ms: 0.895772
   type: 'test'
   ...
 # Subtest: an ADF with the game's pictures and samples but another executable: the hunk signature is missing
 ok 22 - an ADF with the game's pictures and samples but another executable: the hunk signature is missing
   ---
-  duration_ms: 9.154558
+  duration_ms: 7.373665
   type: 'test'
   ...
 # Subtest: an executable that is a hunk file but lacks the game's tables is refused naming the table
 ok 23 - an executable that is a hunk file but lacks the game's tables is refused naming the table
   ---
-  duration_ms: 4.623423
+  duration_ms: 3.729596
   type: 'test'
   ...
 # Subtest: a damaged picture is reported as such; extraction without a segment table is refused unless flat spans are allowed
 ok 24 - a damaged picture is reported as such; extraction without a segment table is refused unless flat spans are allowed
   ---
-  duration_ms: 7.138525
+  duration_ms: 6.083382
   type: 'test'
   ...
 # Subtest: progress stages are reported in order
 ok 25 - progress stages are reported in order
   ---
-  duration_ms: 38.322332
+  duration_ms: 26.855927
   type: 'test'
   ...
 # Subtest: with a segment table the manifest says the spans are relocated and no flat-spans note is written
 ok 26 - with a segment table the manifest says the spans are relocated and no flat-spans note is written
   ---
-  duration_ms: 18.598598
+  duration_ms: 17.069992
   type: 'test'
   ...
 # Subtest: the flight tables of the synthetic image equal the Python output (flat spans)
 ok 27 - the flight tables of the synthetic image equal the Python output (flat spans)
   ---
-  duration_ms: 21.827959
+  duration_ms: 17.857865
   type: 'test'
   ...
 # Subtest: the segment table log is parsed and its flat starts are checked against the executable
 ok 28 - the segment table log is parsed and its flat starts are checked against the executable
   ---
-  duration_ms: 0.734555
+  duration_ms: 0.58876
   type: 'test'
   ...
 # Subtest: reference longs: the file's value plus the RAM base of the target hunk, only inside the spans
 ok 29 - reference longs: the file's value plus the RAM base of the target hunk, only inside the spans
   ---
-  duration_ms: 19.966967
+  duration_ms: 14.629548
   type: 'test'
   ...
 # Subtest: pads without a terminator entry and ship blobs with a stray pointer are refused
 ok 30 - pads without a terminator entry and ship blobs with a stray pointer are refused
   ---
-  duration_ms: 0.463681
+  duration_ms: 0.371261
   type: 'test'
   ...
 # Subtest: palettes, scenario, text, menu font, training and demo equal the Python output
 ok 31 - palettes, scenario, text, menu font, training and demo equal the Python output
   ---
-  duration_ms: 11.789825
+  duration_ms: 9.59309
   type: 'test'
   ...
 # Subtest: the synthetic text has 110 ids and the four ids that name no record carry no lines
 ok 32 - the synthetic text has 110 ids and the four ids that name no record carry no lines
   ---
-  duration_ms: 1.951848
+  duration_ms: 1.491145
   type: 'test'
   ...
 # Subtest: refusals name the table and the address
 ok 33 - refusals name the table and the address
   ---
-  duration_ms: 0.883055
+  duration_ms: 0.637709
   type: 'test'
   ...
 # Subtest: the demo stream: key bytes carried over, the words turned little endian
 ok 34 - the demo stream: key bytes carried over, the words turned little endian
   ---
-  duration_ms: 0.906781
+  duration_ms: 0.602864
   type: 'test'
   ...
 # Subtest: parse keeps hunk sizes, types, contents and every relocation run
 ok 35 - parse keeps hunk sizes, types, contents and every relocation run
   ---
-  duration_ms: 1.459124
+  duration_ms: 1.147451
   type: 'test'
   ...
 # Subtest: relocate lays the hunks out from the base and adds the target hunk's address
 ok 36 - relocate lays the hunks out from the base and adds the target hunk's address
   ---
-  duration_ms: 0.538602
+  duration_ms: 0.399199
   type: 'test'
   ...
 # Subtest: a file that is not a hunk executable is refused
 ok 37 - a file that is not a hunk executable is refused
   ---
-  duration_ms: 0.409129
+  duration_ms: 0.324423
   type: 'test'
   ...
 # Subtest: the synthetic executable relocates to a 0x3C000-byte image carrying the invented patches
 ok 38 - the synthetic executable relocates to a 0x3C000-byte image carrying the invented patches
   ---
-  duration_ms: 16.751911
+  duration_ms: 14.420957
   type: 'test'
   ...
 # Subtest: two planes: the plane bits are combined into pixel indices, the CMAP is read
 ok 39 - two planes: the plane bits are combined into pixel indices, the CMAP is read
   ---
-  duration_ms: 1.547545
+  duration_ms: 1.766742
   type: 'test'
   ...
 # Subtest: ByteRun1 bodies and mask planes decode to the same pixels
 ok 40 - ByteRun1 bodies and mask planes decode to the same pixels
   ---
-  duration_ms: 0.399455
+  duration_ms: 0.5483
   type: 'test'
   ...
 # Subtest: unpackByterun1: literal runs, repeat runs, the no-op and the output limit
 ok 41 - unpackByterun1: literal runs, repeat runs, the no-op and the output limit
   ---
-  duration_ms: 0.135191
+  duration_ms: 0.150518
   type: 'test'
   ...
 # Subtest: not an ILBM, a missing BODY and a short body are refused
 ok 42 - not an ILBM, a missing BODY and a short body are refused
   ---
-  duration_ms: 0.495719
+  duration_ms: 0.639548
   type: 'test'
   ...
 # Subtest: the synthetic disk's pictures: idx, palette json and PNG bytes equal the Python extractor's
 ok 43 - the synthetic disk's pictures: idx, palette json and PNG bytes equal the Python extractor's
   ---
-  duration_ms: 3.958016
+  duration_ms: 4.024315
   type: 'test'
   ...
 # Subtest: the display-list tables of the synthetic image equal the Python output
 ok 44 - the display-list tables of the synthetic image equal the Python output
   ---
-  duration_ms: 20.629454
+  duration_ms: 16.179676
   type: 'test'
   ...
 # Subtest: pattern lists: tile, sub-cell count and sub-cells are validated
 ok 45 - pattern lists: tile, sub-cell count and sub-cells are validated
   ---
-  duration_ms: 0.8591
+  duration_ms: 0.73627
   type: 'test'
   ...
 # Subtest: a footprint whose node chain loops, or that is not well formed, is none
 ok 46 - a footprint whose node chain loops, or that is not well formed, is none
   ---
-  duration_ms: 0.304554
+  duration_ms: 0.257112
   type: 'test'
   ...
 # Subtest: the pure SHA-256 gives the standard digests and agrees with Node's at every padding boundary
 ok 47 - the pure SHA-256 gives the standard digests and agrees with Node's at every padding boundary
   ---
-  duration_ms: 22.683013
+  duration_ms: 18.571174
   type: 'test'
   ...
 # Subtest: sha256Hex uses Web Crypto when the page has it and the pure code when it has not
 ok 48 - sha256Hex uses Web Crypto when the page has it and the pure code when it has not
   ---
-  duration_ms: 4.343401
+  duration_ms: 3.032972
   type: 'test'
   ...
 # Subtest: the manifest lists the files in sorted order with their hashes, 2-space JSON and a final newline, as Python writes it
 ok 49 - the manifest lists the files in sorted order with their hashes, 2-space JSON and a final newline, as Python writes it
   ---
-  duration_ms: 6.337171
+  duration_ms: 2.212579
   type: 'test'
   ...
 # Subtest: the synthetic image has 133 empty records and the one invented landmark model (no model program: failed): the index and no model files equal the Python output
 ok 50 - the synthetic image has 133 empty records and the one invented landmark model (no model program: failed): the index and no model files equal the Python output
   ---
-  duration_ms: 22.098292
+  duration_ms: 16.945111
   type: 'test'
   ...
 # Subtest: a model that fails does not abort the run and is listed in the index with its reason
 ok 51 - a model that fails does not abort the run and is listed in the index with its reason
   ---
-  duration_ms: 3.540735
+  duration_ms: 2.974102
   type: 'test'
   ...
 # Subtest: strict decoding refuses a BLOCKING item with BlockedError; lenient decoding flags it
 ok 52 - strict decoding refuses a BLOCKING item with BlockedError; lenient decoding flags it
   ---
-  duration_ms: 1.331884
+  duration_ms: 1.164916
   type: 'test'
   ...
 # Subtest: the first model: one level, one block vertex per slot, IMDL header fields
 ok 53 - the first model: one level, one block vertex per slot, IMDL header fields
   ---
-  duration_ms: 0.380127
+  duration_ms: 0.346369
   type: 'test'
   ...
 # Subtest: success: every extracted file is created under /assets, progress reported
 ok 54 - success: every extracted file is created under /assets, progress reported
   ---
-  duration_ms: 36.750711
+  duration_ms: 28.9141
   type: 'test'
   ...
 # Subtest: not an ADF: the extractor's message verbatim, nothing created
 ok 55 - not an ADF: the extractor's message verbatim, nothing created
   ---
-  duration_ms: 23.10736
+  duration_ms: 17.201483
   type: 'test'
   ...
 # Subtest: a flux image is refused by name
 ok 56 - a flux image is refused by name
   ---
-  duration_ms: 26.143328
+  duration_ms: 20.859351
   type: 'test'
   ...
 # Subtest: another disk (an ADF without the game's files) is refused
 ok 57 - another disk (an ADF without the game's files) is refused
   ---
-  duration_ms: 23.97989
+  duration_ms: 17.75353
   type: 'test'
   ...
 # Subtest: an unexpected error is wrapped in a plain sentence; a failing FS is reported, not thrown
 ok 58 - an unexpected error is wrapped in a plain sentence; a failing FS is reported, not thrown
   ---
-  duration_ms: 19.333924
+  duration_ms: 16.039385
   type: 'test'
   ...
 # Subtest: writeAssets creates nested directories
 ok 59 - writeAssets creates nested directories
   ---
-  duration_ms: 0.175972
+  duration_ms: 0.135634
   type: 'test'
   ...
 # Subtest: the audio unlock is called when the build has it, else nothing happens
 ok 60 - the audio unlock is called when the build has it, else nothing happens
   ---
-  duration_ms: 0.190935
+  duration_ms: 0.132188
   type: 'test'
   ...
 # Subtest: log storage: mounted at the log directory and loaded before the program starts
 ok 61 - log storage: mounted at the log directory and loaded before the program starts
   ---
-  duration_ms: 0.40258
+  duration_ms: 0.346664
   type: 'test'
   ...
 # Subtest: log storage: a refused load, a missing IDBFS and a throwing mount are not fatal and leave the game in memory
 ok 62 - log storage: a refused load, a missing IDBFS and a throwing mount are not fatal and leave the game in memory
   ---
-  duration_ms: 0.363161
+  duration_ms: 0.278151
   type: 'test'
   ...
 # Subtest: log storage: an open that never answers falls back to the in-memory log after the timeout
 ok 63 - log storage: an open that never answers falls back to the in-memory log after the timeout
   ---
-  duration_ms: 51.339771
+  duration_ms: 50.344577
   type: 'test'
   ...
 # Subtest: log storage: one write at a time, a request during one is run after it, an error is reported
 ok 64 - log storage: one write at a time, a request during one is run after it, an error is reported
   ---
-  duration_ms: 0.385774
+  duration_ms: 0.268349
   type: 'test'
   ...
 # Subtest: the synthetic image's fade table, flight palette and HUD font equal the Python output
 ok 65 - the synthetic image's fade table, flight palette and HUD font equal the Python output
   ---
-  duration_ms: 20.368515
+  duration_ms: 16.158184
   type: 'test'
   ...
 # Subtest: a 12-bit colour is scaled by 17 and a word above 0x0FFF is refused naming the offset
 ok 66 - a 12-bit colour is scaled by 17 and a word above 0x0FFF is refused naming the offset
   ---
-  duration_ms: 0.66478
+  duration_ms: 0.475725
   type: 'test'
   ...
 # Subtest: a font glyph outside the hunk or with bits outside the three columns is refused
 ok 67 - a font glyph outside the hunk or with bits outside the three columns is refused
   ---
-  duration_ms: 0.276752
+  duration_ms: 0.159093
   type: 'test'
   ...
 # Subtest: the checksums agree with zlib's
 ok 68 - the checksums agree with zlib's
   ---
-  duration_ms: 5.323581
+  duration_ms: 4.314371
   type: 'test'
   ...
 # Subtest: a small indexed image round-trips through a zlib inflate
 ok 69 - a small indexed image round-trips through a zlib inflate
   ---
-  duration_ms: 1.809556
+  duration_ms: 1.638844
   type: 'test'
   ...
 # Subtest: more than 65,535 bytes of rows make several stored blocks, as in the Python writer
 ok 70 - more than 65,535 bytes of rows make several stored blocks, as in the Python writer
   ---
-  duration_ms: 16.956641
+  duration_ms: 13.929442
   type: 'test'
   ...
 # Subtest: the committed table holds comments and hunk lines only: no bytes of the game
 ok 71 - the committed table holds comments and hunk lines only: no bytes of the game
   ---
-  duration_ms: 0.863046
+  duration_ms: 0.700899
   type: 'test'
   ...
 # Subtest: extract with the table on the synthetic disk relocates the spans
 ok 72 - extract with the table on the synthetic disk relocates the spans
   ---
-  duration_ms: 38.40135
+  duration_ms: 27.367106
   type: 'test'
   ...
 # Subtest: the synthetic samples' .raw and .wav equal the Python output; the index order is the disk's
 ok 73 - the synthetic samples' .raw and .wav equal the Python output; the index order is the disk's
   ---
-  duration_ms: 5.216131
+  duration_ms: 3.63403
   type: 'test'
   ...
 # Subtest: WAV: 8-bit mono PCM, signed samples turned unsigned, odd data padded as Python's wave module does
 ok 74 - WAV: 8-bit mono PCM, signed samples turned unsigned, odd data padded as Python's wave module does
   ---
-  duration_ms: 0.299686
+  duration_ms: 0.190858
   type: 'test'
   ...
 # Subtest: the WAV rate follows the reference period (3,546,895 / period)
 ok 75 - the WAV rate follows the reference period (3,546,895 / period)
   ---
-  duration_ms: 0.219026
+  duration_ms: 0.120384
   type: 'test'
   ...
 # Subtest: the object table has 37 records inside the files; a missing file leaves its objects absent, a short one is clamped
 ok 76 - the object table has 37 records inside the files; a missing file leaves its objects absent, a short one is clamped
   ---
-  duration_ms: 2.760152
+  duration_ms: 1.941875
   type: 'test'
   ...
 # Subtest: the file set, every byte and the manifest equal the Python extractor's
 ok 77 - the file set, every byte and the manifest equal the Python extractor's
   ---
-  duration_ms: 37.60264
+  duration_ms: 28.424508
   type: 'test'
   ...
 # Subtest: the extractor version is the Python one's
 ok 78 - the extractor version is the Python one's
   ---
-  duration_ms: 0.403912
+  duration_ms: 0.30584
   type: 'test'
   ...
 # Subtest: the committed expected output is what the Python extractor writes now
 ok 79 - the committed expected output is what the Python extractor writes now # SKIP python with extract and amitools not available
   ---
-  duration_ms: 0.066139
+  duration_ms: 0.053428
   type: 'test'
   ...
 # Subtest: lod, range and camera-ring tables of the synthetic image equal the Python output
 ok 80 - lod, range and camera-ring tables of the synthetic image equal the Python output
   ---
-  duration_ms: 19.665938
+  duration_ms: 15.357246
   type: 'test'
   ...
 # Subtest: the sky and sea tables of the synthetic image equal the Python output
 ok 81 - the sky and sea tables of the synthetic image equal the Python output
   ---
-  duration_ms: 2.726472
+  duration_ms: 3.111365
   type: 'test'
   ...
 # Subtest: a level-of-detail table that decreases or exceeds 15 is refused naming the entry
 ok 82 - a level-of-detail table that decreases or exceeds 15 is refused naming the entry
   ---
-  duration_ms: 0.726262
+  duration_ms: 0.57589
   type: 'test'
   ...
 # Subtest: Mem reads big-endian values and names the context and address of a read outside the image
 ok 83 - Mem reads big-endian values and names the context and address of a read outside the image
   ---
-  duration_ms: 0.345995
+  duration_ms: 0.238795
   type: 'test'
   ...
 # Subtest: the terrain files of the synthetic image equal the Python output
 ok 84 - the terrain files of the synthetic image equal the Python output
   ---
-  duration_ms: 20.288616
+  duration_ms: 16.537889
   type: 'test'
   ...
 # Subtest: an item list ends at 0xFF; bit 7 and offsets above 4095 are refused
 ok 85 - an item list ends at 0xFF; bit 7 and offsets above 4095 are refused
   ---
-  duration_ms: 0.54339
+  duration_ms: 0.424736
   type: 'test'
   ...
 # Subtest: a cell table row: x keys strictly increasing and inside the grid, then the list pointers
 ok 86 - a cell table row: x keys strictly increasing and inside the grid, then the list pointers
   ---
-  duration_ms: 0.263142
+  duration_ms: 0.1938
   type: 'test'
   ...
 # Subtest: position blocks: the table ends where the lowest block starts
 ok 87 - position blocks: the table ends where the lowest block starts
   ---
-  duration_ms: 0.136644
+  duration_ms: 0.134713
   type: 'test'
   ...
 1..87
@@ -530,4 +530,4 @@ ok 87 - position blocks: the table ends where the lowest block starts
 # cancelled 0
 # skipped 2
 # todo 0
-# duration_ms 2730.469131
+# duration_ms 2281.278369
