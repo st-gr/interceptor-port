@@ -1,0 +1,26 @@
+# Mouse button as a menu key? Credits snapshot: left click, then the state pointer (0x135C8 = still waiting for any key,
+# 0x13622 = the log-disk screen). Then the same in the main menu snapshot (state 0x11E04 stays; V:4A95E stays 0).
+# Wall-clock waits (the click needs the machine running).
+restore extracted/captures/credits.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+click
+wait 1.5
+freeze
+peek F:1A6BC 4 credits_state_after_click
+peek F:4A85B 1 credits_k85b
+thaw
+key SPACE
+wait 2
+freeze
+peek F:1A6BC 4 credits_state_after_space
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+click
+wait 1.5
+freeze
+peek F:1A6BC 4 menu_state_after_click
+peek F:4A95E 1 menu_mode_after_click
+thaw

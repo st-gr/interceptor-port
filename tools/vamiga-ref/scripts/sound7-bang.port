@@ -1,0 +1,7 @@
+# the port's side of sound7-bang and sound7-bang-ext: the bang request of a dying record drawn with its counter at 14 (V:4A922 = 60, V:4A921 = 120, the countdown 1) in the cockpit view,
+# then in the outside view (KP-ENTER). Run: build/sound7_port assets FILE
+start deck
+ticks 400
+at 5 bang 60 120 1
+at 60 kp 11
+at 100 bang 60 120 1

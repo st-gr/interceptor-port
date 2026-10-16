@@ -1,0 +1,5 @@
+# Cold boot Kickstart 1.2 + the autoboot ADF and wait for the credits screen (the any-key prompt shows).
+# Takes about 150 s of real time. Saves a snapshot so later runs can start from there.
+wait 150
+frame extracted/captures/credits.ppm
+snapshot extracted/captures/credits.vasnap

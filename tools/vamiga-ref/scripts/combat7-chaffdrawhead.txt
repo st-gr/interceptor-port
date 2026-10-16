@@ -1,0 +1,143 @@
+# note 07 7.7 / 11.4 (milestone 7 task 3): the chaff drawer stopped at each call, the draw-time camera logged; view: head.
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key KPENTER 0.12
+step 20
+key KP8 0.12
+stepuntil F:4A992 2 eq 271 600
+step 4
+colors pal
+peek F:4A83D 1 view
+frame extracted/captures/combat7/chaff-head-pre.ppm
+peek F:4AB1A 24 pre_cam
+peek F:4AC90 18 pre_mat
+poke F:4A943 1 1
+runto F:3140C 10
+peek F:4AD2A 640 s0_pool
+peek F:4A992 2 s0_pass
+peek F:4AB1A 24 s0_cam
+peek F:4AC90 18 s0_mat
+peek F:4AA04 4 s0_cell
+peek F:4A79E 6 s0_clip
+peek F:4AA0C 2 s0_pen
+peek F:4AB2A 8 s0_camoff
+peek F:4AA3C 2 s0_lowlimit
+frame extracted/captures/combat7/chaff-head-00.ppm
+runto F:3140C 10
+peek F:4AD2A 640 s1_pool
+peek F:4A992 2 s1_pass
+peek F:4AB1A 24 s1_cam
+peek F:4AC90 18 s1_mat
+peek F:4AA04 4 s1_cell
+peek F:4A79E 6 s1_clip
+peek F:4AA0C 2 s1_pen
+peek F:4AB2A 8 s1_camoff
+peek F:4AA3C 2 s1_lowlimit
+frame extracted/captures/combat7/chaff-head-01.ppm
+runto F:3140C 10
+peek F:4AD2A 640 s2_pool
+peek F:4A992 2 s2_pass
+peek F:4AB1A 24 s2_cam
+peek F:4AC90 18 s2_mat
+peek F:4AA04 4 s2_cell
+peek F:4A79E 6 s2_clip
+peek F:4AA0C 2 s2_pen
+peek F:4AB2A 8 s2_camoff
+peek F:4AA3C 2 s2_lowlimit
+frame extracted/captures/combat7/chaff-head-02.ppm
+runto F:3140C 10
+peek F:4AD2A 640 s3_pool
+peek F:4A992 2 s3_pass
+peek F:4AB1A 24 s3_cam
+peek F:4AC90 18 s3_mat
+peek F:4AA04 4 s3_cell
+peek F:4A79E 6 s3_clip
+peek F:4AA0C 2 s3_pen
+peek F:4AB2A 8 s3_camoff
+peek F:4AA3C 2 s3_lowlimit
+frame extracted/captures/combat7/chaff-head-03.ppm
+runto F:3140C 10
+peek F:4AD2A 640 s4_pool
+peek F:4A992 2 s4_pass
+peek F:4AB1A 24 s4_cam
+peek F:4AC90 18 s4_mat
+peek F:4AA04 4 s4_cell
+peek F:4A79E 6 s4_clip
+peek F:4AA0C 2 s4_pen
+peek F:4AB2A 8 s4_camoff
+peek F:4AA3C 2 s4_lowlimit
+frame extracted/captures/combat7/chaff-head-04.ppm
+runto F:3140C 10
+peek F:4AD2A 640 s5_pool
+peek F:4A992 2 s5_pass
+peek F:4AB1A 24 s5_cam
+peek F:4AC90 18 s5_mat
+peek F:4AA04 4 s5_cell
+peek F:4A79E 6 s5_clip
+peek F:4AA0C 2 s5_pen
+peek F:4AB2A 8 s5_camoff
+peek F:4AA3C 2 s5_lowlimit
+frame extracted/captures/combat7/chaff-head-05.ppm
+runto F:3140C 10
+peek F:4AD2A 640 s6_pool
+peek F:4A992 2 s6_pass
+peek F:4AB1A 24 s6_cam
+peek F:4AC90 18 s6_mat
+peek F:4AA04 4 s6_cell
+peek F:4A79E 6 s6_clip
+peek F:4AA0C 2 s6_pen
+peek F:4AB2A 8 s6_camoff
+peek F:4AA3C 2 s6_lowlimit
+frame extracted/captures/combat7/chaff-head-06.ppm
+runto F:3140C 10
+peek F:4AD2A 640 s7_pool
+peek F:4A992 2 s7_pass
+peek F:4AB1A 24 s7_cam
+peek F:4AC90 18 s7_mat
+peek F:4AA04 4 s7_cell
+peek F:4A79E 6 s7_clip
+peek F:4AA0C 2 s7_pen
+peek F:4AB2A 8 s7_camoff
+peek F:4AA3C 2 s7_lowlimit
+frame extracted/captures/combat7/chaff-head-07.ppm
+runto F:3140C 10
+peek F:4AD2A 640 s8_pool
+peek F:4A992 2 s8_pass
+peek F:4AB1A 24 s8_cam
+peek F:4AC90 18 s8_mat
+peek F:4AA04 4 s8_cell
+peek F:4A79E 6 s8_clip
+peek F:4AA0C 2 s8_pen
+peek F:4AB2A 8 s8_camoff
+peek F:4AA3C 2 s8_lowlimit
+frame extracted/captures/combat7/chaff-head-08.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-09.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-10.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-11.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-12.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-13.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-14.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-15.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-16.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-17.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-18.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-19.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-20.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-21.ppm
+step 1
+frame extracted/captures/combat7/chaff-head-22.ppm

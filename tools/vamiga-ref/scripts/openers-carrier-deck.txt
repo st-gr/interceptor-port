@@ -1,0 +1,10 @@
+# Carrier start (location 4) on the deck, cockpit view, engine idle. Prerequisite: location-select.vasnap
+# (freeflight-takeoff.txt). Writes cockpit-carrier.vasnap, the starting point of openers-range.txt and
+# openers-deck.txt.
+restore extracted/captures/location-select.vasnap
+key 4
+wait 6
+key 1
+wait 32
+frame extracted/captures/openers/carrier-deck.ppm
+snapshot extracted/captures/cockpit-carrier.vasnap

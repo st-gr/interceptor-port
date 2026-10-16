@@ -1,0 +1,27 @@
+# note 08 section 9: qualification, a crash (hard touchdown) and the restart on the catapult; the allowance V:4A94F (3 at the start of mode 9) falls by one.
+# Prerequisite: extracted/captures/qual-airborne.vasnap (flow-qual-airborne.txt). Run with --log extracted/captures/logs/flow-qual-crash.txt
+restore extracted/captures/qual-airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+keydown UP
+wait 2.2
+freeze
+stepuntil F:4B254 4 lt 9000 600
+keyup UP
+
+log STAGE
+peek F:4A94F 1 allow0
+peek F:4B23C 128 r0
+stepuntil F:4B23C 2 and 0x0200 600
+peek F:4B23C 128 crash
+peek F:4A94F 1 allow_c
+peek F:1A6BC 4 state_c
+stepuntil F:4A94F 1 lt 3 400
+peek F:4A94F 1 allow_d
+peek F:1A6BC 4 state_d
+step 400
+peek F:4B23C 128 restart
+peek F:4A900 1 loc
+peek F:4A94F 1 allow_r
+peek F:1A6BC 4 state_r
+frame extracted/captures/logs/qual-crash-restart.ppm
+thaw

@@ -1,0 +1,175 @@
+# Palette versus altitude: climb from the carrier deck at full thrust; colour table (0x54F18), Denise colour registers and the state block at each step.
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+log p00
+peek F:4B23C 512 rec0_p00
+peek F:4CE3C 512 rec14_p00
+peek F:4A700 2336 s71_p00
+colors pal_p00
+frame extracted/captures/openers/pal-00.ppm
+peek F:54F18 64 tab_p00
+thaw
+key F10
+wait 12
+key DOWN 1.5
+wait 2.5
+freeze
+log p01
+peek F:4B23C 512 rec0_p01
+peek F:4CE3C 512 rec14_p01
+peek F:4A700 2336 s71_p01
+colors pal_p01
+frame extracted/captures/openers/pal-01.ppm
+peek F:54F18 64 tab_p01
+thaw
+wait 2.5
+freeze
+log p02
+peek F:4B23C 512 rec0_p02
+peek F:4CE3C 512 rec14_p02
+peek F:4A700 2336 s71_p02
+colors pal_p02
+frame extracted/captures/openers/pal-02.ppm
+peek F:54F18 64 tab_p02
+thaw
+wait 2.5
+freeze
+log p03
+peek F:4B23C 512 rec0_p03
+peek F:4CE3C 512 rec14_p03
+peek F:4A700 2336 s71_p03
+colors pal_p03
+frame extracted/captures/openers/pal-03.ppm
+peek F:54F18 64 tab_p03
+thaw
+wait 2.5
+freeze
+log p04
+peek F:4B23C 512 rec0_p04
+peek F:4CE3C 512 rec14_p04
+peek F:4A700 2336 s71_p04
+colors pal_p04
+frame extracted/captures/openers/pal-04.ppm
+peek F:54F18 64 tab_p04
+thaw
+wait 2.5
+freeze
+log p05
+peek F:4B23C 512 rec0_p05
+peek F:4CE3C 512 rec14_p05
+peek F:4A700 2336 s71_p05
+colors pal_p05
+frame extracted/captures/openers/pal-05.ppm
+peek F:54F18 64 tab_p05
+thaw
+wait 2.5
+freeze
+log p06
+peek F:4B23C 512 rec0_p06
+peek F:4CE3C 512 rec14_p06
+peek F:4A700 2336 s71_p06
+colors pal_p06
+frame extracted/captures/openers/pal-06.ppm
+peek F:54F18 64 tab_p06
+thaw
+wait 2.5
+freeze
+log p07
+peek F:4B23C 512 rec0_p07
+peek F:4CE3C 512 rec14_p07
+peek F:4A700 2336 s71_p07
+colors pal_p07
+frame extracted/captures/openers/pal-07.ppm
+peek F:54F18 64 tab_p07
+thaw
+wait 2.5
+freeze
+log p08
+peek F:4B23C 512 rec0_p08
+peek F:4CE3C 512 rec14_p08
+peek F:4A700 2336 s71_p08
+colors pal_p08
+frame extracted/captures/openers/pal-08.ppm
+peek F:54F18 64 tab_p08
+thaw
+wait 2.5
+freeze
+log p09
+peek F:4B23C 512 rec0_p09
+peek F:4CE3C 512 rec14_p09
+peek F:4A700 2336 s71_p09
+colors pal_p09
+frame extracted/captures/openers/pal-09.ppm
+peek F:54F18 64 tab_p09
+thaw
+wait 2.5
+freeze
+log p10
+peek F:4B23C 512 rec0_p10
+peek F:4CE3C 512 rec14_p10
+peek F:4A700 2336 s71_p10
+colors pal_p10
+frame extracted/captures/openers/pal-10.ppm
+peek F:54F18 64 tab_p10
+thaw
+wait 2.5
+freeze
+log p11
+peek F:4B23C 512 rec0_p11
+peek F:4CE3C 512 rec14_p11
+peek F:4A700 2336 s71_p11
+colors pal_p11
+frame extracted/captures/openers/pal-11.ppm
+peek F:54F18 64 tab_p11
+thaw
+wait 2.5
+freeze
+log p12
+peek F:4B23C 512 rec0_p12
+peek F:4CE3C 512 rec14_p12
+peek F:4A700 2336 s71_p12
+colors pal_p12
+frame extracted/captures/openers/pal-12.ppm
+peek F:54F18 64 tab_p12
+thaw
+wait 2.5
+freeze
+log p13
+peek F:4B23C 512 rec0_p13
+peek F:4CE3C 512 rec14_p13
+peek F:4A700 2336 s71_p13
+colors pal_p13
+frame extracted/captures/openers/pal-13.ppm
+peek F:54F18 64 tab_p13
+thaw
+wait 2.5
+freeze
+log p14
+peek F:4B23C 512 rec0_p14
+peek F:4CE3C 512 rec14_p14
+peek F:4A700 2336 s71_p14
+colors pal_p14
+frame extracted/captures/openers/pal-14.ppm
+peek F:54F18 64 tab_p14
+thaw
+wait 2.5
+freeze
+log p15
+peek F:4B23C 512 rec0_p15
+peek F:4CE3C 512 rec14_p15
+peek F:4A700 2336 s71_p15
+colors pal_p15
+frame extracted/captures/openers/pal-15.ppm
+peek F:54F18 64 tab_p15
+thaw
+wait 2.5
+freeze
+log p16
+peek F:4B23C 512 rec0_p16
+peek F:4CE3C 512 rec14_p16
+peek F:4A700 2336 s71_p16
+colors pal_p16
+frame extracted/captures/openers/pal-16.ppm
+peek F:54F18 64 tab_p16
+thaw

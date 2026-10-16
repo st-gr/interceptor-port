@@ -1,0 +1,40 @@
+# The game's disk images and anything extracted from them: copyrighted, never commit.
+disks/
+extracted/
+*.scp
+*.hfe
+*.mfi
+*.adf
+*.adz
+*.dms
+*.ipf
+*.zip
+
+# Ghidra projects
+*.gpr
+*.rep/
+
+.DS_Store
+
+# Extractor output and ROMs: copyrighted, never commit.
+assets/
+*.rom
+
+# SDD scratch workspace (ledger, briefs, reports)
+.superpowers/
+build/
+__pycache__/
+*.egg-info/
+
+# Scanned manual and codewheel: copyrighted, never commit.
+manual-en/
+*codewheel*
+*.jpg
+*.jpeg
+
+# Real-asset golden is derived from the user's disk (make golden-update-real)
+tests/golden/*-real.golden
+.claude/worktrees/
+
+# The JavaScript extractor's test disk: invented bytes (tools/extract/tests/write_synth.py), not the game's.
+!tools/extract-js/test/fixtures/synth.adf

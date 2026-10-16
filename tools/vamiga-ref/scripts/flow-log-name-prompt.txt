@@ -1,0 +1,17 @@
+# note 08 section 10: first tour of duty (never-used log, write-enabled disk) up to the callsign entry; saves name-prompt.vasnap.
+# Prerequisite: extracted/captures/credits-zero.vasnap (flow-log-boot-zero.txt).
+# Run:  build/vamiga-ref/ref --rw --rom disks/kick12.rom --adf extracted/scratch/q/zero.adf --script <this> --log extracted/captures/logs/flow-log-name-prompt.txt
+restore extracted/captures/credits-zero.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+key SPACE
+wait 12
+freeze
+peek F:4A9E0 2 diskstate
+peek F:1A6BC 4 state
+peek F:4A898 1 g898
+peek F:4A8AD 6 inp
+peek R:C54498 78 rec
+frame extracted/captures/logs/log-name-prompt.ppm
+snapshot extracted/captures/name-prompt.vasnap
+thaw

@@ -1,0 +1,64 @@
+# Flight keys with before/after frames. Prerequisites: cockpit-ground.vasnap and airborne.vasnap
+# (freeflight-takeoff.txt, freeflight-headings.txt). Short holds (1.5 s) keep the bank mild so the heading
+# change shows the direction of the turn; the external view (keypad Enter) prints the exact HDG.
+restore extracted/captures/cockpit-ground.vasnap
+frame extracted/captures/keys/F10-before.ppm
+key F10
+wait 12
+frame extracted/captures/keys/F10-after.ppm
+restore extracted/captures/airborne.vasnap
+key KPENTER
+wait 2
+frame extracted/captures/keys/LEFT-before.ppm
+key KPENTER
+wait 1
+key LEFT 1.5
+wait 3
+key KPENTER
+wait 2
+frame extracted/captures/keys/LEFT-after.ppm
+key KPENTER
+wait 1
+frame extracted/captures/keys/LEFT-after-cockpit.ppm
+restore extracted/captures/airborne.vasnap
+key KPENTER
+wait 2
+frame extracted/captures/keys/RIGHT-before.ppm
+key KPENTER
+wait 1
+key RIGHT 1.5
+wait 3
+key KPENTER
+wait 2
+frame extracted/captures/keys/RIGHT-after.ppm
+key KPENTER
+wait 1
+frame extracted/captures/keys/RIGHT-after-cockpit.ppm
+restore extracted/captures/airborne.vasnap
+key KPENTER
+wait 2
+frame extracted/captures/keys/DOWN-before.ppm
+key KPENTER
+wait 1
+key DOWN 1.5
+wait 3
+key KPENTER
+wait 2
+frame extracted/captures/keys/DOWN-after.ppm
+key KPENTER
+wait 1
+frame extracted/captures/keys/DOWN-after-cockpit.ppm
+restore extracted/captures/airborne.vasnap
+key KPENTER
+wait 2
+frame extracted/captures/keys/UP-before.ppm
+key KPENTER
+wait 1
+key UP 1.5
+wait 3
+key KPENTER
+wait 2
+frame extracted/captures/keys/UP-after.ppm
+key KPENTER
+wait 1
+frame extracted/captures/keys/UP-after-cockpit.ppm

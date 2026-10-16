@@ -1,0 +1,206 @@
+# note 08 5.8: the same on the location screen from the snapshot; author note-0708 fix 2
+thaw
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+
+peek F:4A879 1 b0
+peek F:4A84D 1 g0
+peek F:4A898 1 e0
+step 10
+peek F:4A879 1 b10
+peek F:4A84D 1 g10
+peek F:4A898 1 e10
+step 10
+peek F:4A879 1 b20
+peek F:4A84D 1 g20
+peek F:4A898 1 e20
+step 10
+peek F:4A879 1 b30
+peek F:4A84D 1 g30
+peek F:4A898 1 e30
+step 10
+peek F:4A879 1 b40
+peek F:4A84D 1 g40
+peek F:4A898 1 e40
+step 10
+peek F:4A879 1 b50
+peek F:4A84D 1 g50
+peek F:4A898 1 e50
+step 10
+peek F:4A879 1 b60
+peek F:4A84D 1 g60
+peek F:4A898 1 e60
+step 10
+peek F:4A879 1 b70
+peek F:4A84D 1 g70
+peek F:4A898 1 e70
+step 10
+peek F:4A879 1 b80
+peek F:4A84D 1 g80
+peek F:4A898 1 e80
+step 10
+peek F:4A879 1 b90
+peek F:4A84D 1 g90
+peek F:4A898 1 e90
+step 10
+peek F:4A879 1 b100
+peek F:4A84D 1 g100
+peek F:4A898 1 e100
+step 10
+peek F:4A879 1 b110
+peek F:4A84D 1 g110
+peek F:4A898 1 e110
+step 10
+peek F:4A879 1 b120
+peek F:4A84D 1 g120
+peek F:4A898 1 e120
+step 10
+peek F:4A879 1 b130
+peek F:4A84D 1 g130
+peek F:4A898 1 e130
+step 10
+peek F:4A879 1 b140
+peek F:4A84D 1 g140
+peek F:4A898 1 e140
+step 10
+peek F:4A879 1 b150
+peek F:4A84D 1 g150
+peek F:4A898 1 e150
+step 10
+peek F:4A879 1 b160
+peek F:4A84D 1 g160
+peek F:4A898 1 e160
+step 10
+peek F:4A879 1 b170
+peek F:4A84D 1 g170
+peek F:4A898 1 e170
+step 10
+peek F:4A879 1 b180
+peek F:4A84D 1 g180
+peek F:4A898 1 e180
+step 10
+peek F:4A879 1 b190
+peek F:4A84D 1 g190
+peek F:4A898 1 e190
+step 10
+peek F:4A879 1 b200
+peek F:4A84D 1 g200
+peek F:4A898 1 e200
+step 10
+peek F:4A879 1 b210
+peek F:4A84D 1 g210
+peek F:4A898 1 e210
+step 10
+peek F:4A879 1 b220
+peek F:4A84D 1 g220
+peek F:4A898 1 e220
+step 10
+peek F:4A879 1 b230
+peek F:4A84D 1 g230
+peek F:4A898 1 e230
+step 10
+peek F:4A879 1 b240
+peek F:4A84D 1 g240
+peek F:4A898 1 e240
+step 10
+peek F:4A879 1 b250
+peek F:4A84D 1 g250
+peek F:4A898 1 e250
+step 10
+peek F:4A879 1 b260
+peek F:4A84D 1 g260
+peek F:4A898 1 e260
+step 10
+peek F:4A879 1 b270
+peek F:4A84D 1 g270
+peek F:4A898 1 e270
+step 10
+peek F:4A879 1 b280
+peek F:4A84D 1 g280
+peek F:4A898 1 e280
+step 10
+peek F:4A879 1 b290
+peek F:4A84D 1 g290
+peek F:4A898 1 e290
+step 10
+peek F:4A879 1 b300
+peek F:4A84D 1 g300
+peek F:4A898 1 e300
+step 10
+peek F:4A879 1 b310
+peek F:4A84D 1 g310
+peek F:4A898 1 e310
+step 10
+peek F:4A879 1 b320
+peek F:4A84D 1 g320
+peek F:4A898 1 e320
+step 10
+peek F:4A879 1 b330
+peek F:4A84D 1 g330
+peek F:4A898 1 e330
+step 10
+peek F:4A879 1 b340
+peek F:4A84D 1 g340
+peek F:4A898 1 e340
+step 10
+peek F:4A879 1 b350
+peek F:4A84D 1 g350
+peek F:4A898 1 e350
+step 10
+peek F:4A879 1 b360
+peek F:4A84D 1 g360
+peek F:4A898 1 e360
+step 10
+peek F:4A879 1 b370
+peek F:4A84D 1 g370
+peek F:4A898 1 e370
+step 10
+peek F:4A879 1 b380
+peek F:4A84D 1 g380
+peek F:4A898 1 e380
+step 10
+peek F:4A879 1 b390
+peek F:4A84D 1 g390
+peek F:4A898 1 e390
+step 10
+peek F:4A879 1 b400
+peek F:4A84D 1 g400
+peek F:4A898 1 e400
+step 10
+peek F:4A879 1 b410
+peek F:4A84D 1 g410
+peek F:4A898 1 e410
+step 10
+peek F:4A879 1 b420
+peek F:4A84D 1 g420
+peek F:4A898 1 e420
+step 10
+peek F:4A879 1 b430
+peek F:4A84D 1 g430
+peek F:4A898 1 e430
+step 10
+peek F:4A879 1 b440
+peek F:4A84D 1 g440
+peek F:4A898 1 e440
+step 10
+peek F:4A879 1 b450
+peek F:4A84D 1 g450
+peek F:4A898 1 e450
+step 10
+peek F:4A879 1 b460
+peek F:4A84D 1 g460
+peek F:4A898 1 e460
+step 10
+peek F:4A879 1 b470
+peek F:4A84D 1 g470
+peek F:4A898 1 e470
+step 10
+peek F:4A879 1 b480
+peek F:4A84D 1 g480
+peek F:4A898 1 e480
+step 10
+peek F:4A879 1 b490
+peek F:4A84D 1 g490
+peek F:4A898 1 e490
+step 10

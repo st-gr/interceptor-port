@@ -1,0 +1,3229 @@
+# stale colour and mask in level cockpit flight (horizon on the screen)
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4B2A2 2 0
+poke F:4B2A4 2 0
+poke F:4B2A6 2 0
+poke F:4B254 4 600000
+poke F:4B2BC 2 16384
+poke F:4B2BE 2 0
+poke F:4B2C0 2 0
+poke F:4B2C2 2 0
+poke F:4B2C4 2 16384
+poke F:4B2C6 2 0
+poke F:4B2C8 2 0
+poke F:4B2CA 2 0
+poke F:4B2CC 2 16384
+poke F:4B2CE 2 16384
+poke F:4B2D0 2 0
+poke F:4B2D2 2 0
+poke F:4B2D4 2 0
+poke F:4B2D6 2 16384
+poke F:4B2D8 2 0
+poke F:4B2DA 2 0
+poke F:4B2DC 2 0
+poke F:4B2DE 2 16384
+thaw
+wait 1.5
+freeze
+step
+peek F:4AB8C 2 k0000
+peek F:4AA0C 2 c0000
+peek F:4A79E 8 m0000
+peek F:4A992 2 n0000
+peek F:4AB42 2 p0000
+peek F:4AB4C 2 q0000
+peek F:4A956 1 f0000
+step
+peek F:4AB8C 2 k0001
+peek F:4AA0C 2 c0001
+peek F:4A79E 8 m0001
+peek F:4A992 2 n0001
+peek F:4AB42 2 p0001
+peek F:4AB4C 2 q0001
+peek F:4A956 1 f0001
+step
+peek F:4AB8C 2 k0002
+peek F:4AA0C 2 c0002
+peek F:4A79E 8 m0002
+peek F:4A992 2 n0002
+peek F:4AB42 2 p0002
+peek F:4AB4C 2 q0002
+peek F:4A956 1 f0002
+step
+peek F:4AB8C 2 k0003
+peek F:4AA0C 2 c0003
+peek F:4A79E 8 m0003
+peek F:4A992 2 n0003
+peek F:4AB42 2 p0003
+peek F:4AB4C 2 q0003
+peek F:4A956 1 f0003
+step
+peek F:4AB8C 2 k0004
+peek F:4AA0C 2 c0004
+peek F:4A79E 8 m0004
+peek F:4A992 2 n0004
+peek F:4AB42 2 p0004
+peek F:4AB4C 2 q0004
+peek F:4A956 1 f0004
+step
+peek F:4AB8C 2 k0005
+peek F:4AA0C 2 c0005
+peek F:4A79E 8 m0005
+peek F:4A992 2 n0005
+peek F:4AB42 2 p0005
+peek F:4AB4C 2 q0005
+peek F:4A956 1 f0005
+step
+peek F:4AB8C 2 k0006
+peek F:4AA0C 2 c0006
+peek F:4A79E 8 m0006
+peek F:4A992 2 n0006
+peek F:4AB42 2 p0006
+peek F:4AB4C 2 q0006
+peek F:4A956 1 f0006
+step
+peek F:4AB8C 2 k0007
+peek F:4AA0C 2 c0007
+peek F:4A79E 8 m0007
+peek F:4A992 2 n0007
+peek F:4AB42 2 p0007
+peek F:4AB4C 2 q0007
+peek F:4A956 1 f0007
+step
+peek F:4AB8C 2 k0008
+peek F:4AA0C 2 c0008
+peek F:4A79E 8 m0008
+peek F:4A992 2 n0008
+peek F:4AB42 2 p0008
+peek F:4AB4C 2 q0008
+peek F:4A956 1 f0008
+step
+peek F:4AB8C 2 k0009
+peek F:4AA0C 2 c0009
+peek F:4A79E 8 m0009
+peek F:4A992 2 n0009
+peek F:4AB42 2 p0009
+peek F:4AB4C 2 q0009
+peek F:4A956 1 f0009
+step
+peek F:4AB8C 2 k0010
+peek F:4AA0C 2 c0010
+peek F:4A79E 8 m0010
+peek F:4A992 2 n0010
+peek F:4AB42 2 p0010
+peek F:4AB4C 2 q0010
+peek F:4A956 1 f0010
+step
+peek F:4AB8C 2 k0011
+peek F:4AA0C 2 c0011
+peek F:4A79E 8 m0011
+peek F:4A992 2 n0011
+peek F:4AB42 2 p0011
+peek F:4AB4C 2 q0011
+peek F:4A956 1 f0011
+step
+peek F:4AB8C 2 k0012
+peek F:4AA0C 2 c0012
+peek F:4A79E 8 m0012
+peek F:4A992 2 n0012
+peek F:4AB42 2 p0012
+peek F:4AB4C 2 q0012
+peek F:4A956 1 f0012
+step
+peek F:4AB8C 2 k0013
+peek F:4AA0C 2 c0013
+peek F:4A79E 8 m0013
+peek F:4A992 2 n0013
+peek F:4AB42 2 p0013
+peek F:4AB4C 2 q0013
+peek F:4A956 1 f0013
+step
+peek F:4AB8C 2 k0014
+peek F:4AA0C 2 c0014
+peek F:4A79E 8 m0014
+peek F:4A992 2 n0014
+peek F:4AB42 2 p0014
+peek F:4AB4C 2 q0014
+peek F:4A956 1 f0014
+step
+peek F:4AB8C 2 k0015
+peek F:4AA0C 2 c0015
+peek F:4A79E 8 m0015
+peek F:4A992 2 n0015
+peek F:4AB42 2 p0015
+peek F:4AB4C 2 q0015
+peek F:4A956 1 f0015
+step
+peek F:4AB8C 2 k0016
+peek F:4AA0C 2 c0016
+peek F:4A79E 8 m0016
+peek F:4A992 2 n0016
+peek F:4AB42 2 p0016
+peek F:4AB4C 2 q0016
+peek F:4A956 1 f0016
+step
+peek F:4AB8C 2 k0017
+peek F:4AA0C 2 c0017
+peek F:4A79E 8 m0017
+peek F:4A992 2 n0017
+peek F:4AB42 2 p0017
+peek F:4AB4C 2 q0017
+peek F:4A956 1 f0017
+step
+peek F:4AB8C 2 k0018
+peek F:4AA0C 2 c0018
+peek F:4A79E 8 m0018
+peek F:4A992 2 n0018
+peek F:4AB42 2 p0018
+peek F:4AB4C 2 q0018
+peek F:4A956 1 f0018
+step
+peek F:4AB8C 2 k0019
+peek F:4AA0C 2 c0019
+peek F:4A79E 8 m0019
+peek F:4A992 2 n0019
+peek F:4AB42 2 p0019
+peek F:4AB4C 2 q0019
+peek F:4A956 1 f0019
+step
+peek F:4AB8C 2 k0020
+peek F:4AA0C 2 c0020
+peek F:4A79E 8 m0020
+peek F:4A992 2 n0020
+peek F:4AB42 2 p0020
+peek F:4AB4C 2 q0020
+peek F:4A956 1 f0020
+step
+peek F:4AB8C 2 k0021
+peek F:4AA0C 2 c0021
+peek F:4A79E 8 m0021
+peek F:4A992 2 n0021
+peek F:4AB42 2 p0021
+peek F:4AB4C 2 q0021
+peek F:4A956 1 f0021
+step
+peek F:4AB8C 2 k0022
+peek F:4AA0C 2 c0022
+peek F:4A79E 8 m0022
+peek F:4A992 2 n0022
+peek F:4AB42 2 p0022
+peek F:4AB4C 2 q0022
+peek F:4A956 1 f0022
+step
+peek F:4AB8C 2 k0023
+peek F:4AA0C 2 c0023
+peek F:4A79E 8 m0023
+peek F:4A992 2 n0023
+peek F:4AB42 2 p0023
+peek F:4AB4C 2 q0023
+peek F:4A956 1 f0023
+step
+peek F:4AB8C 2 k0024
+peek F:4AA0C 2 c0024
+peek F:4A79E 8 m0024
+peek F:4A992 2 n0024
+peek F:4AB42 2 p0024
+peek F:4AB4C 2 q0024
+peek F:4A956 1 f0024
+step
+peek F:4AB8C 2 k0025
+peek F:4AA0C 2 c0025
+peek F:4A79E 8 m0025
+peek F:4A992 2 n0025
+peek F:4AB42 2 p0025
+peek F:4AB4C 2 q0025
+peek F:4A956 1 f0025
+step
+peek F:4AB8C 2 k0026
+peek F:4AA0C 2 c0026
+peek F:4A79E 8 m0026
+peek F:4A992 2 n0026
+peek F:4AB42 2 p0026
+peek F:4AB4C 2 q0026
+peek F:4A956 1 f0026
+step
+peek F:4AB8C 2 k0027
+peek F:4AA0C 2 c0027
+peek F:4A79E 8 m0027
+peek F:4A992 2 n0027
+peek F:4AB42 2 p0027
+peek F:4AB4C 2 q0027
+peek F:4A956 1 f0027
+step
+peek F:4AB8C 2 k0028
+peek F:4AA0C 2 c0028
+peek F:4A79E 8 m0028
+peek F:4A992 2 n0028
+peek F:4AB42 2 p0028
+peek F:4AB4C 2 q0028
+peek F:4A956 1 f0028
+step
+peek F:4AB8C 2 k0029
+peek F:4AA0C 2 c0029
+peek F:4A79E 8 m0029
+peek F:4A992 2 n0029
+peek F:4AB42 2 p0029
+peek F:4AB4C 2 q0029
+peek F:4A956 1 f0029
+step
+peek F:4AB8C 2 k0030
+peek F:4AA0C 2 c0030
+peek F:4A79E 8 m0030
+peek F:4A992 2 n0030
+peek F:4AB42 2 p0030
+peek F:4AB4C 2 q0030
+peek F:4A956 1 f0030
+step
+peek F:4AB8C 2 k0031
+peek F:4AA0C 2 c0031
+peek F:4A79E 8 m0031
+peek F:4A992 2 n0031
+peek F:4AB42 2 p0031
+peek F:4AB4C 2 q0031
+peek F:4A956 1 f0031
+step
+peek F:4AB8C 2 k0032
+peek F:4AA0C 2 c0032
+peek F:4A79E 8 m0032
+peek F:4A992 2 n0032
+peek F:4AB42 2 p0032
+peek F:4AB4C 2 q0032
+peek F:4A956 1 f0032
+step
+peek F:4AB8C 2 k0033
+peek F:4AA0C 2 c0033
+peek F:4A79E 8 m0033
+peek F:4A992 2 n0033
+peek F:4AB42 2 p0033
+peek F:4AB4C 2 q0033
+peek F:4A956 1 f0033
+step
+peek F:4AB8C 2 k0034
+peek F:4AA0C 2 c0034
+peek F:4A79E 8 m0034
+peek F:4A992 2 n0034
+peek F:4AB42 2 p0034
+peek F:4AB4C 2 q0034
+peek F:4A956 1 f0034
+step
+peek F:4AB8C 2 k0035
+peek F:4AA0C 2 c0035
+peek F:4A79E 8 m0035
+peek F:4A992 2 n0035
+peek F:4AB42 2 p0035
+peek F:4AB4C 2 q0035
+peek F:4A956 1 f0035
+step
+peek F:4AB8C 2 k0036
+peek F:4AA0C 2 c0036
+peek F:4A79E 8 m0036
+peek F:4A992 2 n0036
+peek F:4AB42 2 p0036
+peek F:4AB4C 2 q0036
+peek F:4A956 1 f0036
+step
+peek F:4AB8C 2 k0037
+peek F:4AA0C 2 c0037
+peek F:4A79E 8 m0037
+peek F:4A992 2 n0037
+peek F:4AB42 2 p0037
+peek F:4AB4C 2 q0037
+peek F:4A956 1 f0037
+step
+peek F:4AB8C 2 k0038
+peek F:4AA0C 2 c0038
+peek F:4A79E 8 m0038
+peek F:4A992 2 n0038
+peek F:4AB42 2 p0038
+peek F:4AB4C 2 q0038
+peek F:4A956 1 f0038
+step
+peek F:4AB8C 2 k0039
+peek F:4AA0C 2 c0039
+peek F:4A79E 8 m0039
+peek F:4A992 2 n0039
+peek F:4AB42 2 p0039
+peek F:4AB4C 2 q0039
+peek F:4A956 1 f0039
+step
+peek F:4AB8C 2 k0040
+peek F:4AA0C 2 c0040
+peek F:4A79E 8 m0040
+peek F:4A992 2 n0040
+peek F:4AB42 2 p0040
+peek F:4AB4C 2 q0040
+peek F:4A956 1 f0040
+step
+peek F:4AB8C 2 k0041
+peek F:4AA0C 2 c0041
+peek F:4A79E 8 m0041
+peek F:4A992 2 n0041
+peek F:4AB42 2 p0041
+peek F:4AB4C 2 q0041
+peek F:4A956 1 f0041
+step
+peek F:4AB8C 2 k0042
+peek F:4AA0C 2 c0042
+peek F:4A79E 8 m0042
+peek F:4A992 2 n0042
+peek F:4AB42 2 p0042
+peek F:4AB4C 2 q0042
+peek F:4A956 1 f0042
+step
+peek F:4AB8C 2 k0043
+peek F:4AA0C 2 c0043
+peek F:4A79E 8 m0043
+peek F:4A992 2 n0043
+peek F:4AB42 2 p0043
+peek F:4AB4C 2 q0043
+peek F:4A956 1 f0043
+step
+peek F:4AB8C 2 k0044
+peek F:4AA0C 2 c0044
+peek F:4A79E 8 m0044
+peek F:4A992 2 n0044
+peek F:4AB42 2 p0044
+peek F:4AB4C 2 q0044
+peek F:4A956 1 f0044
+step
+peek F:4AB8C 2 k0045
+peek F:4AA0C 2 c0045
+peek F:4A79E 8 m0045
+peek F:4A992 2 n0045
+peek F:4AB42 2 p0045
+peek F:4AB4C 2 q0045
+peek F:4A956 1 f0045
+step
+peek F:4AB8C 2 k0046
+peek F:4AA0C 2 c0046
+peek F:4A79E 8 m0046
+peek F:4A992 2 n0046
+peek F:4AB42 2 p0046
+peek F:4AB4C 2 q0046
+peek F:4A956 1 f0046
+step
+peek F:4AB8C 2 k0047
+peek F:4AA0C 2 c0047
+peek F:4A79E 8 m0047
+peek F:4A992 2 n0047
+peek F:4AB42 2 p0047
+peek F:4AB4C 2 q0047
+peek F:4A956 1 f0047
+step
+peek F:4AB8C 2 k0048
+peek F:4AA0C 2 c0048
+peek F:4A79E 8 m0048
+peek F:4A992 2 n0048
+peek F:4AB42 2 p0048
+peek F:4AB4C 2 q0048
+peek F:4A956 1 f0048
+step
+peek F:4AB8C 2 k0049
+peek F:4AA0C 2 c0049
+peek F:4A79E 8 m0049
+peek F:4A992 2 n0049
+peek F:4AB42 2 p0049
+peek F:4AB4C 2 q0049
+peek F:4A956 1 f0049
+step
+peek F:4AB8C 2 k0050
+peek F:4AA0C 2 c0050
+peek F:4A79E 8 m0050
+peek F:4A992 2 n0050
+peek F:4AB42 2 p0050
+peek F:4AB4C 2 q0050
+peek F:4A956 1 f0050
+step
+peek F:4AB8C 2 k0051
+peek F:4AA0C 2 c0051
+peek F:4A79E 8 m0051
+peek F:4A992 2 n0051
+peek F:4AB42 2 p0051
+peek F:4AB4C 2 q0051
+peek F:4A956 1 f0051
+step
+peek F:4AB8C 2 k0052
+peek F:4AA0C 2 c0052
+peek F:4A79E 8 m0052
+peek F:4A992 2 n0052
+peek F:4AB42 2 p0052
+peek F:4AB4C 2 q0052
+peek F:4A956 1 f0052
+step
+peek F:4AB8C 2 k0053
+peek F:4AA0C 2 c0053
+peek F:4A79E 8 m0053
+peek F:4A992 2 n0053
+peek F:4AB42 2 p0053
+peek F:4AB4C 2 q0053
+peek F:4A956 1 f0053
+step
+peek F:4AB8C 2 k0054
+peek F:4AA0C 2 c0054
+peek F:4A79E 8 m0054
+peek F:4A992 2 n0054
+peek F:4AB42 2 p0054
+peek F:4AB4C 2 q0054
+peek F:4A956 1 f0054
+step
+peek F:4AB8C 2 k0055
+peek F:4AA0C 2 c0055
+peek F:4A79E 8 m0055
+peek F:4A992 2 n0055
+peek F:4AB42 2 p0055
+peek F:4AB4C 2 q0055
+peek F:4A956 1 f0055
+step
+peek F:4AB8C 2 k0056
+peek F:4AA0C 2 c0056
+peek F:4A79E 8 m0056
+peek F:4A992 2 n0056
+peek F:4AB42 2 p0056
+peek F:4AB4C 2 q0056
+peek F:4A956 1 f0056
+step
+peek F:4AB8C 2 k0057
+peek F:4AA0C 2 c0057
+peek F:4A79E 8 m0057
+peek F:4A992 2 n0057
+peek F:4AB42 2 p0057
+peek F:4AB4C 2 q0057
+peek F:4A956 1 f0057
+step
+peek F:4AB8C 2 k0058
+peek F:4AA0C 2 c0058
+peek F:4A79E 8 m0058
+peek F:4A992 2 n0058
+peek F:4AB42 2 p0058
+peek F:4AB4C 2 q0058
+peek F:4A956 1 f0058
+step
+peek F:4AB8C 2 k0059
+peek F:4AA0C 2 c0059
+peek F:4A79E 8 m0059
+peek F:4A992 2 n0059
+peek F:4AB42 2 p0059
+peek F:4AB4C 2 q0059
+peek F:4A956 1 f0059
+step
+peek F:4AB8C 2 k0060
+peek F:4AA0C 2 c0060
+peek F:4A79E 8 m0060
+peek F:4A992 2 n0060
+peek F:4AB42 2 p0060
+peek F:4AB4C 2 q0060
+peek F:4A956 1 f0060
+step
+peek F:4AB8C 2 k0061
+peek F:4AA0C 2 c0061
+peek F:4A79E 8 m0061
+peek F:4A992 2 n0061
+peek F:4AB42 2 p0061
+peek F:4AB4C 2 q0061
+peek F:4A956 1 f0061
+step
+peek F:4AB8C 2 k0062
+peek F:4AA0C 2 c0062
+peek F:4A79E 8 m0062
+peek F:4A992 2 n0062
+peek F:4AB42 2 p0062
+peek F:4AB4C 2 q0062
+peek F:4A956 1 f0062
+step
+peek F:4AB8C 2 k0063
+peek F:4AA0C 2 c0063
+peek F:4A79E 8 m0063
+peek F:4A992 2 n0063
+peek F:4AB42 2 p0063
+peek F:4AB4C 2 q0063
+peek F:4A956 1 f0063
+step
+peek F:4AB8C 2 k0064
+peek F:4AA0C 2 c0064
+peek F:4A79E 8 m0064
+peek F:4A992 2 n0064
+peek F:4AB42 2 p0064
+peek F:4AB4C 2 q0064
+peek F:4A956 1 f0064
+step
+peek F:4AB8C 2 k0065
+peek F:4AA0C 2 c0065
+peek F:4A79E 8 m0065
+peek F:4A992 2 n0065
+peek F:4AB42 2 p0065
+peek F:4AB4C 2 q0065
+peek F:4A956 1 f0065
+step
+peek F:4AB8C 2 k0066
+peek F:4AA0C 2 c0066
+peek F:4A79E 8 m0066
+peek F:4A992 2 n0066
+peek F:4AB42 2 p0066
+peek F:4AB4C 2 q0066
+peek F:4A956 1 f0066
+step
+peek F:4AB8C 2 k0067
+peek F:4AA0C 2 c0067
+peek F:4A79E 8 m0067
+peek F:4A992 2 n0067
+peek F:4AB42 2 p0067
+peek F:4AB4C 2 q0067
+peek F:4A956 1 f0067
+step
+peek F:4AB8C 2 k0068
+peek F:4AA0C 2 c0068
+peek F:4A79E 8 m0068
+peek F:4A992 2 n0068
+peek F:4AB42 2 p0068
+peek F:4AB4C 2 q0068
+peek F:4A956 1 f0068
+step
+peek F:4AB8C 2 k0069
+peek F:4AA0C 2 c0069
+peek F:4A79E 8 m0069
+peek F:4A992 2 n0069
+peek F:4AB42 2 p0069
+peek F:4AB4C 2 q0069
+peek F:4A956 1 f0069
+step
+peek F:4AB8C 2 k0070
+peek F:4AA0C 2 c0070
+peek F:4A79E 8 m0070
+peek F:4A992 2 n0070
+peek F:4AB42 2 p0070
+peek F:4AB4C 2 q0070
+peek F:4A956 1 f0070
+step
+peek F:4AB8C 2 k0071
+peek F:4AA0C 2 c0071
+peek F:4A79E 8 m0071
+peek F:4A992 2 n0071
+peek F:4AB42 2 p0071
+peek F:4AB4C 2 q0071
+peek F:4A956 1 f0071
+step
+peek F:4AB8C 2 k0072
+peek F:4AA0C 2 c0072
+peek F:4A79E 8 m0072
+peek F:4A992 2 n0072
+peek F:4AB42 2 p0072
+peek F:4AB4C 2 q0072
+peek F:4A956 1 f0072
+step
+peek F:4AB8C 2 k0073
+peek F:4AA0C 2 c0073
+peek F:4A79E 8 m0073
+peek F:4A992 2 n0073
+peek F:4AB42 2 p0073
+peek F:4AB4C 2 q0073
+peek F:4A956 1 f0073
+step
+peek F:4AB8C 2 k0074
+peek F:4AA0C 2 c0074
+peek F:4A79E 8 m0074
+peek F:4A992 2 n0074
+peek F:4AB42 2 p0074
+peek F:4AB4C 2 q0074
+peek F:4A956 1 f0074
+step
+peek F:4AB8C 2 k0075
+peek F:4AA0C 2 c0075
+peek F:4A79E 8 m0075
+peek F:4A992 2 n0075
+peek F:4AB42 2 p0075
+peek F:4AB4C 2 q0075
+peek F:4A956 1 f0075
+step
+peek F:4AB8C 2 k0076
+peek F:4AA0C 2 c0076
+peek F:4A79E 8 m0076
+peek F:4A992 2 n0076
+peek F:4AB42 2 p0076
+peek F:4AB4C 2 q0076
+peek F:4A956 1 f0076
+step
+peek F:4AB8C 2 k0077
+peek F:4AA0C 2 c0077
+peek F:4A79E 8 m0077
+peek F:4A992 2 n0077
+peek F:4AB42 2 p0077
+peek F:4AB4C 2 q0077
+peek F:4A956 1 f0077
+step
+peek F:4AB8C 2 k0078
+peek F:4AA0C 2 c0078
+peek F:4A79E 8 m0078
+peek F:4A992 2 n0078
+peek F:4AB42 2 p0078
+peek F:4AB4C 2 q0078
+peek F:4A956 1 f0078
+step
+peek F:4AB8C 2 k0079
+peek F:4AA0C 2 c0079
+peek F:4A79E 8 m0079
+peek F:4A992 2 n0079
+peek F:4AB42 2 p0079
+peek F:4AB4C 2 q0079
+peek F:4A956 1 f0079
+step
+peek F:4AB8C 2 k0080
+peek F:4AA0C 2 c0080
+peek F:4A79E 8 m0080
+peek F:4A992 2 n0080
+peek F:4AB42 2 p0080
+peek F:4AB4C 2 q0080
+peek F:4A956 1 f0080
+step
+peek F:4AB8C 2 k0081
+peek F:4AA0C 2 c0081
+peek F:4A79E 8 m0081
+peek F:4A992 2 n0081
+peek F:4AB42 2 p0081
+peek F:4AB4C 2 q0081
+peek F:4A956 1 f0081
+step
+peek F:4AB8C 2 k0082
+peek F:4AA0C 2 c0082
+peek F:4A79E 8 m0082
+peek F:4A992 2 n0082
+peek F:4AB42 2 p0082
+peek F:4AB4C 2 q0082
+peek F:4A956 1 f0082
+step
+peek F:4AB8C 2 k0083
+peek F:4AA0C 2 c0083
+peek F:4A79E 8 m0083
+peek F:4A992 2 n0083
+peek F:4AB42 2 p0083
+peek F:4AB4C 2 q0083
+peek F:4A956 1 f0083
+step
+peek F:4AB8C 2 k0084
+peek F:4AA0C 2 c0084
+peek F:4A79E 8 m0084
+peek F:4A992 2 n0084
+peek F:4AB42 2 p0084
+peek F:4AB4C 2 q0084
+peek F:4A956 1 f0084
+step
+peek F:4AB8C 2 k0085
+peek F:4AA0C 2 c0085
+peek F:4A79E 8 m0085
+peek F:4A992 2 n0085
+peek F:4AB42 2 p0085
+peek F:4AB4C 2 q0085
+peek F:4A956 1 f0085
+step
+peek F:4AB8C 2 k0086
+peek F:4AA0C 2 c0086
+peek F:4A79E 8 m0086
+peek F:4A992 2 n0086
+peek F:4AB42 2 p0086
+peek F:4AB4C 2 q0086
+peek F:4A956 1 f0086
+step
+peek F:4AB8C 2 k0087
+peek F:4AA0C 2 c0087
+peek F:4A79E 8 m0087
+peek F:4A992 2 n0087
+peek F:4AB42 2 p0087
+peek F:4AB4C 2 q0087
+peek F:4A956 1 f0087
+step
+peek F:4AB8C 2 k0088
+peek F:4AA0C 2 c0088
+peek F:4A79E 8 m0088
+peek F:4A992 2 n0088
+peek F:4AB42 2 p0088
+peek F:4AB4C 2 q0088
+peek F:4A956 1 f0088
+step
+peek F:4AB8C 2 k0089
+peek F:4AA0C 2 c0089
+peek F:4A79E 8 m0089
+peek F:4A992 2 n0089
+peek F:4AB42 2 p0089
+peek F:4AB4C 2 q0089
+peek F:4A956 1 f0089
+step
+peek F:4AB8C 2 k0090
+peek F:4AA0C 2 c0090
+peek F:4A79E 8 m0090
+peek F:4A992 2 n0090
+peek F:4AB42 2 p0090
+peek F:4AB4C 2 q0090
+peek F:4A956 1 f0090
+step
+peek F:4AB8C 2 k0091
+peek F:4AA0C 2 c0091
+peek F:4A79E 8 m0091
+peek F:4A992 2 n0091
+peek F:4AB42 2 p0091
+peek F:4AB4C 2 q0091
+peek F:4A956 1 f0091
+step
+peek F:4AB8C 2 k0092
+peek F:4AA0C 2 c0092
+peek F:4A79E 8 m0092
+peek F:4A992 2 n0092
+peek F:4AB42 2 p0092
+peek F:4AB4C 2 q0092
+peek F:4A956 1 f0092
+step
+peek F:4AB8C 2 k0093
+peek F:4AA0C 2 c0093
+peek F:4A79E 8 m0093
+peek F:4A992 2 n0093
+peek F:4AB42 2 p0093
+peek F:4AB4C 2 q0093
+peek F:4A956 1 f0093
+step
+peek F:4AB8C 2 k0094
+peek F:4AA0C 2 c0094
+peek F:4A79E 8 m0094
+peek F:4A992 2 n0094
+peek F:4AB42 2 p0094
+peek F:4AB4C 2 q0094
+peek F:4A956 1 f0094
+step
+peek F:4AB8C 2 k0095
+peek F:4AA0C 2 c0095
+peek F:4A79E 8 m0095
+peek F:4A992 2 n0095
+peek F:4AB42 2 p0095
+peek F:4AB4C 2 q0095
+peek F:4A956 1 f0095
+step
+peek F:4AB8C 2 k0096
+peek F:4AA0C 2 c0096
+peek F:4A79E 8 m0096
+peek F:4A992 2 n0096
+peek F:4AB42 2 p0096
+peek F:4AB4C 2 q0096
+peek F:4A956 1 f0096
+step
+peek F:4AB8C 2 k0097
+peek F:4AA0C 2 c0097
+peek F:4A79E 8 m0097
+peek F:4A992 2 n0097
+peek F:4AB42 2 p0097
+peek F:4AB4C 2 q0097
+peek F:4A956 1 f0097
+step
+peek F:4AB8C 2 k0098
+peek F:4AA0C 2 c0098
+peek F:4A79E 8 m0098
+peek F:4A992 2 n0098
+peek F:4AB42 2 p0098
+peek F:4AB4C 2 q0098
+peek F:4A956 1 f0098
+step
+peek F:4AB8C 2 k0099
+peek F:4AA0C 2 c0099
+peek F:4A79E 8 m0099
+peek F:4A992 2 n0099
+peek F:4AB42 2 p0099
+peek F:4AB4C 2 q0099
+peek F:4A956 1 f0099
+step
+peek F:4AB8C 2 k0100
+peek F:4AA0C 2 c0100
+peek F:4A79E 8 m0100
+peek F:4A992 2 n0100
+peek F:4AB42 2 p0100
+peek F:4AB4C 2 q0100
+peek F:4A956 1 f0100
+step
+peek F:4AB8C 2 k0101
+peek F:4AA0C 2 c0101
+peek F:4A79E 8 m0101
+peek F:4A992 2 n0101
+peek F:4AB42 2 p0101
+peek F:4AB4C 2 q0101
+peek F:4A956 1 f0101
+step
+peek F:4AB8C 2 k0102
+peek F:4AA0C 2 c0102
+peek F:4A79E 8 m0102
+peek F:4A992 2 n0102
+peek F:4AB42 2 p0102
+peek F:4AB4C 2 q0102
+peek F:4A956 1 f0102
+step
+peek F:4AB8C 2 k0103
+peek F:4AA0C 2 c0103
+peek F:4A79E 8 m0103
+peek F:4A992 2 n0103
+peek F:4AB42 2 p0103
+peek F:4AB4C 2 q0103
+peek F:4A956 1 f0103
+step
+peek F:4AB8C 2 k0104
+peek F:4AA0C 2 c0104
+peek F:4A79E 8 m0104
+peek F:4A992 2 n0104
+peek F:4AB42 2 p0104
+peek F:4AB4C 2 q0104
+peek F:4A956 1 f0104
+step
+peek F:4AB8C 2 k0105
+peek F:4AA0C 2 c0105
+peek F:4A79E 8 m0105
+peek F:4A992 2 n0105
+peek F:4AB42 2 p0105
+peek F:4AB4C 2 q0105
+peek F:4A956 1 f0105
+step
+peek F:4AB8C 2 k0106
+peek F:4AA0C 2 c0106
+peek F:4A79E 8 m0106
+peek F:4A992 2 n0106
+peek F:4AB42 2 p0106
+peek F:4AB4C 2 q0106
+peek F:4A956 1 f0106
+step
+peek F:4AB8C 2 k0107
+peek F:4AA0C 2 c0107
+peek F:4A79E 8 m0107
+peek F:4A992 2 n0107
+peek F:4AB42 2 p0107
+peek F:4AB4C 2 q0107
+peek F:4A956 1 f0107
+step
+peek F:4AB8C 2 k0108
+peek F:4AA0C 2 c0108
+peek F:4A79E 8 m0108
+peek F:4A992 2 n0108
+peek F:4AB42 2 p0108
+peek F:4AB4C 2 q0108
+peek F:4A956 1 f0108
+step
+peek F:4AB8C 2 k0109
+peek F:4AA0C 2 c0109
+peek F:4A79E 8 m0109
+peek F:4A992 2 n0109
+peek F:4AB42 2 p0109
+peek F:4AB4C 2 q0109
+peek F:4A956 1 f0109
+step
+peek F:4AB8C 2 k0110
+peek F:4AA0C 2 c0110
+peek F:4A79E 8 m0110
+peek F:4A992 2 n0110
+peek F:4AB42 2 p0110
+peek F:4AB4C 2 q0110
+peek F:4A956 1 f0110
+step
+peek F:4AB8C 2 k0111
+peek F:4AA0C 2 c0111
+peek F:4A79E 8 m0111
+peek F:4A992 2 n0111
+peek F:4AB42 2 p0111
+peek F:4AB4C 2 q0111
+peek F:4A956 1 f0111
+step
+peek F:4AB8C 2 k0112
+peek F:4AA0C 2 c0112
+peek F:4A79E 8 m0112
+peek F:4A992 2 n0112
+peek F:4AB42 2 p0112
+peek F:4AB4C 2 q0112
+peek F:4A956 1 f0112
+step
+peek F:4AB8C 2 k0113
+peek F:4AA0C 2 c0113
+peek F:4A79E 8 m0113
+peek F:4A992 2 n0113
+peek F:4AB42 2 p0113
+peek F:4AB4C 2 q0113
+peek F:4A956 1 f0113
+step
+peek F:4AB8C 2 k0114
+peek F:4AA0C 2 c0114
+peek F:4A79E 8 m0114
+peek F:4A992 2 n0114
+peek F:4AB42 2 p0114
+peek F:4AB4C 2 q0114
+peek F:4A956 1 f0114
+step
+peek F:4AB8C 2 k0115
+peek F:4AA0C 2 c0115
+peek F:4A79E 8 m0115
+peek F:4A992 2 n0115
+peek F:4AB42 2 p0115
+peek F:4AB4C 2 q0115
+peek F:4A956 1 f0115
+step
+peek F:4AB8C 2 k0116
+peek F:4AA0C 2 c0116
+peek F:4A79E 8 m0116
+peek F:4A992 2 n0116
+peek F:4AB42 2 p0116
+peek F:4AB4C 2 q0116
+peek F:4A956 1 f0116
+step
+peek F:4AB8C 2 k0117
+peek F:4AA0C 2 c0117
+peek F:4A79E 8 m0117
+peek F:4A992 2 n0117
+peek F:4AB42 2 p0117
+peek F:4AB4C 2 q0117
+peek F:4A956 1 f0117
+step
+peek F:4AB8C 2 k0118
+peek F:4AA0C 2 c0118
+peek F:4A79E 8 m0118
+peek F:4A992 2 n0118
+peek F:4AB42 2 p0118
+peek F:4AB4C 2 q0118
+peek F:4A956 1 f0118
+step
+peek F:4AB8C 2 k0119
+peek F:4AA0C 2 c0119
+peek F:4A79E 8 m0119
+peek F:4A992 2 n0119
+peek F:4AB42 2 p0119
+peek F:4AB4C 2 q0119
+peek F:4A956 1 f0119
+step
+peek F:4AB8C 2 k0120
+peek F:4AA0C 2 c0120
+peek F:4A79E 8 m0120
+peek F:4A992 2 n0120
+peek F:4AB42 2 p0120
+peek F:4AB4C 2 q0120
+peek F:4A956 1 f0120
+step
+peek F:4AB8C 2 k0121
+peek F:4AA0C 2 c0121
+peek F:4A79E 8 m0121
+peek F:4A992 2 n0121
+peek F:4AB42 2 p0121
+peek F:4AB4C 2 q0121
+peek F:4A956 1 f0121
+step
+peek F:4AB8C 2 k0122
+peek F:4AA0C 2 c0122
+peek F:4A79E 8 m0122
+peek F:4A992 2 n0122
+peek F:4AB42 2 p0122
+peek F:4AB4C 2 q0122
+peek F:4A956 1 f0122
+step
+peek F:4AB8C 2 k0123
+peek F:4AA0C 2 c0123
+peek F:4A79E 8 m0123
+peek F:4A992 2 n0123
+peek F:4AB42 2 p0123
+peek F:4AB4C 2 q0123
+peek F:4A956 1 f0123
+step
+peek F:4AB8C 2 k0124
+peek F:4AA0C 2 c0124
+peek F:4A79E 8 m0124
+peek F:4A992 2 n0124
+peek F:4AB42 2 p0124
+peek F:4AB4C 2 q0124
+peek F:4A956 1 f0124
+step
+peek F:4AB8C 2 k0125
+peek F:4AA0C 2 c0125
+peek F:4A79E 8 m0125
+peek F:4A992 2 n0125
+peek F:4AB42 2 p0125
+peek F:4AB4C 2 q0125
+peek F:4A956 1 f0125
+step
+peek F:4AB8C 2 k0126
+peek F:4AA0C 2 c0126
+peek F:4A79E 8 m0126
+peek F:4A992 2 n0126
+peek F:4AB42 2 p0126
+peek F:4AB4C 2 q0126
+peek F:4A956 1 f0126
+step
+peek F:4AB8C 2 k0127
+peek F:4AA0C 2 c0127
+peek F:4A79E 8 m0127
+peek F:4A992 2 n0127
+peek F:4AB42 2 p0127
+peek F:4AB4C 2 q0127
+peek F:4A956 1 f0127
+step
+peek F:4AB8C 2 k0128
+peek F:4AA0C 2 c0128
+peek F:4A79E 8 m0128
+peek F:4A992 2 n0128
+peek F:4AB42 2 p0128
+peek F:4AB4C 2 q0128
+peek F:4A956 1 f0128
+step
+peek F:4AB8C 2 k0129
+peek F:4AA0C 2 c0129
+peek F:4A79E 8 m0129
+peek F:4A992 2 n0129
+peek F:4AB42 2 p0129
+peek F:4AB4C 2 q0129
+peek F:4A956 1 f0129
+step
+peek F:4AB8C 2 k0130
+peek F:4AA0C 2 c0130
+peek F:4A79E 8 m0130
+peek F:4A992 2 n0130
+peek F:4AB42 2 p0130
+peek F:4AB4C 2 q0130
+peek F:4A956 1 f0130
+step
+peek F:4AB8C 2 k0131
+peek F:4AA0C 2 c0131
+peek F:4A79E 8 m0131
+peek F:4A992 2 n0131
+peek F:4AB42 2 p0131
+peek F:4AB4C 2 q0131
+peek F:4A956 1 f0131
+step
+peek F:4AB8C 2 k0132
+peek F:4AA0C 2 c0132
+peek F:4A79E 8 m0132
+peek F:4A992 2 n0132
+peek F:4AB42 2 p0132
+peek F:4AB4C 2 q0132
+peek F:4A956 1 f0132
+step
+peek F:4AB8C 2 k0133
+peek F:4AA0C 2 c0133
+peek F:4A79E 8 m0133
+peek F:4A992 2 n0133
+peek F:4AB42 2 p0133
+peek F:4AB4C 2 q0133
+peek F:4A956 1 f0133
+step
+peek F:4AB8C 2 k0134
+peek F:4AA0C 2 c0134
+peek F:4A79E 8 m0134
+peek F:4A992 2 n0134
+peek F:4AB42 2 p0134
+peek F:4AB4C 2 q0134
+peek F:4A956 1 f0134
+step
+peek F:4AB8C 2 k0135
+peek F:4AA0C 2 c0135
+peek F:4A79E 8 m0135
+peek F:4A992 2 n0135
+peek F:4AB42 2 p0135
+peek F:4AB4C 2 q0135
+peek F:4A956 1 f0135
+step
+peek F:4AB8C 2 k0136
+peek F:4AA0C 2 c0136
+peek F:4A79E 8 m0136
+peek F:4A992 2 n0136
+peek F:4AB42 2 p0136
+peek F:4AB4C 2 q0136
+peek F:4A956 1 f0136
+step
+peek F:4AB8C 2 k0137
+peek F:4AA0C 2 c0137
+peek F:4A79E 8 m0137
+peek F:4A992 2 n0137
+peek F:4AB42 2 p0137
+peek F:4AB4C 2 q0137
+peek F:4A956 1 f0137
+step
+peek F:4AB8C 2 k0138
+peek F:4AA0C 2 c0138
+peek F:4A79E 8 m0138
+peek F:4A992 2 n0138
+peek F:4AB42 2 p0138
+peek F:4AB4C 2 q0138
+peek F:4A956 1 f0138
+step
+peek F:4AB8C 2 k0139
+peek F:4AA0C 2 c0139
+peek F:4A79E 8 m0139
+peek F:4A992 2 n0139
+peek F:4AB42 2 p0139
+peek F:4AB4C 2 q0139
+peek F:4A956 1 f0139
+step
+peek F:4AB8C 2 k0140
+peek F:4AA0C 2 c0140
+peek F:4A79E 8 m0140
+peek F:4A992 2 n0140
+peek F:4AB42 2 p0140
+peek F:4AB4C 2 q0140
+peek F:4A956 1 f0140
+step
+peek F:4AB8C 2 k0141
+peek F:4AA0C 2 c0141
+peek F:4A79E 8 m0141
+peek F:4A992 2 n0141
+peek F:4AB42 2 p0141
+peek F:4AB4C 2 q0141
+peek F:4A956 1 f0141
+step
+peek F:4AB8C 2 k0142
+peek F:4AA0C 2 c0142
+peek F:4A79E 8 m0142
+peek F:4A992 2 n0142
+peek F:4AB42 2 p0142
+peek F:4AB4C 2 q0142
+peek F:4A956 1 f0142
+step
+peek F:4AB8C 2 k0143
+peek F:4AA0C 2 c0143
+peek F:4A79E 8 m0143
+peek F:4A992 2 n0143
+peek F:4AB42 2 p0143
+peek F:4AB4C 2 q0143
+peek F:4A956 1 f0143
+step
+peek F:4AB8C 2 k0144
+peek F:4AA0C 2 c0144
+peek F:4A79E 8 m0144
+peek F:4A992 2 n0144
+peek F:4AB42 2 p0144
+peek F:4AB4C 2 q0144
+peek F:4A956 1 f0144
+step
+peek F:4AB8C 2 k0145
+peek F:4AA0C 2 c0145
+peek F:4A79E 8 m0145
+peek F:4A992 2 n0145
+peek F:4AB42 2 p0145
+peek F:4AB4C 2 q0145
+peek F:4A956 1 f0145
+step
+peek F:4AB8C 2 k0146
+peek F:4AA0C 2 c0146
+peek F:4A79E 8 m0146
+peek F:4A992 2 n0146
+peek F:4AB42 2 p0146
+peek F:4AB4C 2 q0146
+peek F:4A956 1 f0146
+step
+peek F:4AB8C 2 k0147
+peek F:4AA0C 2 c0147
+peek F:4A79E 8 m0147
+peek F:4A992 2 n0147
+peek F:4AB42 2 p0147
+peek F:4AB4C 2 q0147
+peek F:4A956 1 f0147
+step
+peek F:4AB8C 2 k0148
+peek F:4AA0C 2 c0148
+peek F:4A79E 8 m0148
+peek F:4A992 2 n0148
+peek F:4AB42 2 p0148
+peek F:4AB4C 2 q0148
+peek F:4A956 1 f0148
+step
+peek F:4AB8C 2 k0149
+peek F:4AA0C 2 c0149
+peek F:4A79E 8 m0149
+peek F:4A992 2 n0149
+peek F:4AB42 2 p0149
+peek F:4AB4C 2 q0149
+peek F:4A956 1 f0149
+step
+peek F:4AB8C 2 k0150
+peek F:4AA0C 2 c0150
+peek F:4A79E 8 m0150
+peek F:4A992 2 n0150
+peek F:4AB42 2 p0150
+peek F:4AB4C 2 q0150
+peek F:4A956 1 f0150
+step
+peek F:4AB8C 2 k0151
+peek F:4AA0C 2 c0151
+peek F:4A79E 8 m0151
+peek F:4A992 2 n0151
+peek F:4AB42 2 p0151
+peek F:4AB4C 2 q0151
+peek F:4A956 1 f0151
+step
+peek F:4AB8C 2 k0152
+peek F:4AA0C 2 c0152
+peek F:4A79E 8 m0152
+peek F:4A992 2 n0152
+peek F:4AB42 2 p0152
+peek F:4AB4C 2 q0152
+peek F:4A956 1 f0152
+step
+peek F:4AB8C 2 k0153
+peek F:4AA0C 2 c0153
+peek F:4A79E 8 m0153
+peek F:4A992 2 n0153
+peek F:4AB42 2 p0153
+peek F:4AB4C 2 q0153
+peek F:4A956 1 f0153
+step
+peek F:4AB8C 2 k0154
+peek F:4AA0C 2 c0154
+peek F:4A79E 8 m0154
+peek F:4A992 2 n0154
+peek F:4AB42 2 p0154
+peek F:4AB4C 2 q0154
+peek F:4A956 1 f0154
+step
+peek F:4AB8C 2 k0155
+peek F:4AA0C 2 c0155
+peek F:4A79E 8 m0155
+peek F:4A992 2 n0155
+peek F:4AB42 2 p0155
+peek F:4AB4C 2 q0155
+peek F:4A956 1 f0155
+step
+peek F:4AB8C 2 k0156
+peek F:4AA0C 2 c0156
+peek F:4A79E 8 m0156
+peek F:4A992 2 n0156
+peek F:4AB42 2 p0156
+peek F:4AB4C 2 q0156
+peek F:4A956 1 f0156
+step
+peek F:4AB8C 2 k0157
+peek F:4AA0C 2 c0157
+peek F:4A79E 8 m0157
+peek F:4A992 2 n0157
+peek F:4AB42 2 p0157
+peek F:4AB4C 2 q0157
+peek F:4A956 1 f0157
+step
+peek F:4AB8C 2 k0158
+peek F:4AA0C 2 c0158
+peek F:4A79E 8 m0158
+peek F:4A992 2 n0158
+peek F:4AB42 2 p0158
+peek F:4AB4C 2 q0158
+peek F:4A956 1 f0158
+step
+peek F:4AB8C 2 k0159
+peek F:4AA0C 2 c0159
+peek F:4A79E 8 m0159
+peek F:4A992 2 n0159
+peek F:4AB42 2 p0159
+peek F:4AB4C 2 q0159
+peek F:4A956 1 f0159
+step
+peek F:4AB8C 2 k0160
+peek F:4AA0C 2 c0160
+peek F:4A79E 8 m0160
+peek F:4A992 2 n0160
+peek F:4AB42 2 p0160
+peek F:4AB4C 2 q0160
+peek F:4A956 1 f0160
+step
+peek F:4AB8C 2 k0161
+peek F:4AA0C 2 c0161
+peek F:4A79E 8 m0161
+peek F:4A992 2 n0161
+peek F:4AB42 2 p0161
+peek F:4AB4C 2 q0161
+peek F:4A956 1 f0161
+step
+peek F:4AB8C 2 k0162
+peek F:4AA0C 2 c0162
+peek F:4A79E 8 m0162
+peek F:4A992 2 n0162
+peek F:4AB42 2 p0162
+peek F:4AB4C 2 q0162
+peek F:4A956 1 f0162
+step
+peek F:4AB8C 2 k0163
+peek F:4AA0C 2 c0163
+peek F:4A79E 8 m0163
+peek F:4A992 2 n0163
+peek F:4AB42 2 p0163
+peek F:4AB4C 2 q0163
+peek F:4A956 1 f0163
+step
+peek F:4AB8C 2 k0164
+peek F:4AA0C 2 c0164
+peek F:4A79E 8 m0164
+peek F:4A992 2 n0164
+peek F:4AB42 2 p0164
+peek F:4AB4C 2 q0164
+peek F:4A956 1 f0164
+step
+peek F:4AB8C 2 k0165
+peek F:4AA0C 2 c0165
+peek F:4A79E 8 m0165
+peek F:4A992 2 n0165
+peek F:4AB42 2 p0165
+peek F:4AB4C 2 q0165
+peek F:4A956 1 f0165
+step
+peek F:4AB8C 2 k0166
+peek F:4AA0C 2 c0166
+peek F:4A79E 8 m0166
+peek F:4A992 2 n0166
+peek F:4AB42 2 p0166
+peek F:4AB4C 2 q0166
+peek F:4A956 1 f0166
+step
+peek F:4AB8C 2 k0167
+peek F:4AA0C 2 c0167
+peek F:4A79E 8 m0167
+peek F:4A992 2 n0167
+peek F:4AB42 2 p0167
+peek F:4AB4C 2 q0167
+peek F:4A956 1 f0167
+step
+peek F:4AB8C 2 k0168
+peek F:4AA0C 2 c0168
+peek F:4A79E 8 m0168
+peek F:4A992 2 n0168
+peek F:4AB42 2 p0168
+peek F:4AB4C 2 q0168
+peek F:4A956 1 f0168
+step
+peek F:4AB8C 2 k0169
+peek F:4AA0C 2 c0169
+peek F:4A79E 8 m0169
+peek F:4A992 2 n0169
+peek F:4AB42 2 p0169
+peek F:4AB4C 2 q0169
+peek F:4A956 1 f0169
+step
+peek F:4AB8C 2 k0170
+peek F:4AA0C 2 c0170
+peek F:4A79E 8 m0170
+peek F:4A992 2 n0170
+peek F:4AB42 2 p0170
+peek F:4AB4C 2 q0170
+peek F:4A956 1 f0170
+step
+peek F:4AB8C 2 k0171
+peek F:4AA0C 2 c0171
+peek F:4A79E 8 m0171
+peek F:4A992 2 n0171
+peek F:4AB42 2 p0171
+peek F:4AB4C 2 q0171
+peek F:4A956 1 f0171
+step
+peek F:4AB8C 2 k0172
+peek F:4AA0C 2 c0172
+peek F:4A79E 8 m0172
+peek F:4A992 2 n0172
+peek F:4AB42 2 p0172
+peek F:4AB4C 2 q0172
+peek F:4A956 1 f0172
+step
+peek F:4AB8C 2 k0173
+peek F:4AA0C 2 c0173
+peek F:4A79E 8 m0173
+peek F:4A992 2 n0173
+peek F:4AB42 2 p0173
+peek F:4AB4C 2 q0173
+peek F:4A956 1 f0173
+step
+peek F:4AB8C 2 k0174
+peek F:4AA0C 2 c0174
+peek F:4A79E 8 m0174
+peek F:4A992 2 n0174
+peek F:4AB42 2 p0174
+peek F:4AB4C 2 q0174
+peek F:4A956 1 f0174
+step
+peek F:4AB8C 2 k0175
+peek F:4AA0C 2 c0175
+peek F:4A79E 8 m0175
+peek F:4A992 2 n0175
+peek F:4AB42 2 p0175
+peek F:4AB4C 2 q0175
+peek F:4A956 1 f0175
+step
+peek F:4AB8C 2 k0176
+peek F:4AA0C 2 c0176
+peek F:4A79E 8 m0176
+peek F:4A992 2 n0176
+peek F:4AB42 2 p0176
+peek F:4AB4C 2 q0176
+peek F:4A956 1 f0176
+step
+peek F:4AB8C 2 k0177
+peek F:4AA0C 2 c0177
+peek F:4A79E 8 m0177
+peek F:4A992 2 n0177
+peek F:4AB42 2 p0177
+peek F:4AB4C 2 q0177
+peek F:4A956 1 f0177
+step
+peek F:4AB8C 2 k0178
+peek F:4AA0C 2 c0178
+peek F:4A79E 8 m0178
+peek F:4A992 2 n0178
+peek F:4AB42 2 p0178
+peek F:4AB4C 2 q0178
+peek F:4A956 1 f0178
+step
+peek F:4AB8C 2 k0179
+peek F:4AA0C 2 c0179
+peek F:4A79E 8 m0179
+peek F:4A992 2 n0179
+peek F:4AB42 2 p0179
+peek F:4AB4C 2 q0179
+peek F:4A956 1 f0179
+step
+peek F:4AB8C 2 k0180
+peek F:4AA0C 2 c0180
+peek F:4A79E 8 m0180
+peek F:4A992 2 n0180
+peek F:4AB42 2 p0180
+peek F:4AB4C 2 q0180
+peek F:4A956 1 f0180
+step
+peek F:4AB8C 2 k0181
+peek F:4AA0C 2 c0181
+peek F:4A79E 8 m0181
+peek F:4A992 2 n0181
+peek F:4AB42 2 p0181
+peek F:4AB4C 2 q0181
+peek F:4A956 1 f0181
+step
+peek F:4AB8C 2 k0182
+peek F:4AA0C 2 c0182
+peek F:4A79E 8 m0182
+peek F:4A992 2 n0182
+peek F:4AB42 2 p0182
+peek F:4AB4C 2 q0182
+peek F:4A956 1 f0182
+step
+peek F:4AB8C 2 k0183
+peek F:4AA0C 2 c0183
+peek F:4A79E 8 m0183
+peek F:4A992 2 n0183
+peek F:4AB42 2 p0183
+peek F:4AB4C 2 q0183
+peek F:4A956 1 f0183
+step
+peek F:4AB8C 2 k0184
+peek F:4AA0C 2 c0184
+peek F:4A79E 8 m0184
+peek F:4A992 2 n0184
+peek F:4AB42 2 p0184
+peek F:4AB4C 2 q0184
+peek F:4A956 1 f0184
+step
+peek F:4AB8C 2 k0185
+peek F:4AA0C 2 c0185
+peek F:4A79E 8 m0185
+peek F:4A992 2 n0185
+peek F:4AB42 2 p0185
+peek F:4AB4C 2 q0185
+peek F:4A956 1 f0185
+step
+peek F:4AB8C 2 k0186
+peek F:4AA0C 2 c0186
+peek F:4A79E 8 m0186
+peek F:4A992 2 n0186
+peek F:4AB42 2 p0186
+peek F:4AB4C 2 q0186
+peek F:4A956 1 f0186
+step
+peek F:4AB8C 2 k0187
+peek F:4AA0C 2 c0187
+peek F:4A79E 8 m0187
+peek F:4A992 2 n0187
+peek F:4AB42 2 p0187
+peek F:4AB4C 2 q0187
+peek F:4A956 1 f0187
+step
+peek F:4AB8C 2 k0188
+peek F:4AA0C 2 c0188
+peek F:4A79E 8 m0188
+peek F:4A992 2 n0188
+peek F:4AB42 2 p0188
+peek F:4AB4C 2 q0188
+peek F:4A956 1 f0188
+step
+peek F:4AB8C 2 k0189
+peek F:4AA0C 2 c0189
+peek F:4A79E 8 m0189
+peek F:4A992 2 n0189
+peek F:4AB42 2 p0189
+peek F:4AB4C 2 q0189
+peek F:4A956 1 f0189
+step
+peek F:4AB8C 2 k0190
+peek F:4AA0C 2 c0190
+peek F:4A79E 8 m0190
+peek F:4A992 2 n0190
+peek F:4AB42 2 p0190
+peek F:4AB4C 2 q0190
+peek F:4A956 1 f0190
+step
+peek F:4AB8C 2 k0191
+peek F:4AA0C 2 c0191
+peek F:4A79E 8 m0191
+peek F:4A992 2 n0191
+peek F:4AB42 2 p0191
+peek F:4AB4C 2 q0191
+peek F:4A956 1 f0191
+step
+peek F:4AB8C 2 k0192
+peek F:4AA0C 2 c0192
+peek F:4A79E 8 m0192
+peek F:4A992 2 n0192
+peek F:4AB42 2 p0192
+peek F:4AB4C 2 q0192
+peek F:4A956 1 f0192
+step
+peek F:4AB8C 2 k0193
+peek F:4AA0C 2 c0193
+peek F:4A79E 8 m0193
+peek F:4A992 2 n0193
+peek F:4AB42 2 p0193
+peek F:4AB4C 2 q0193
+peek F:4A956 1 f0193
+step
+peek F:4AB8C 2 k0194
+peek F:4AA0C 2 c0194
+peek F:4A79E 8 m0194
+peek F:4A992 2 n0194
+peek F:4AB42 2 p0194
+peek F:4AB4C 2 q0194
+peek F:4A956 1 f0194
+step
+peek F:4AB8C 2 k0195
+peek F:4AA0C 2 c0195
+peek F:4A79E 8 m0195
+peek F:4A992 2 n0195
+peek F:4AB42 2 p0195
+peek F:4AB4C 2 q0195
+peek F:4A956 1 f0195
+step
+peek F:4AB8C 2 k0196
+peek F:4AA0C 2 c0196
+peek F:4A79E 8 m0196
+peek F:4A992 2 n0196
+peek F:4AB42 2 p0196
+peek F:4AB4C 2 q0196
+peek F:4A956 1 f0196
+step
+peek F:4AB8C 2 k0197
+peek F:4AA0C 2 c0197
+peek F:4A79E 8 m0197
+peek F:4A992 2 n0197
+peek F:4AB42 2 p0197
+peek F:4AB4C 2 q0197
+peek F:4A956 1 f0197
+step
+peek F:4AB8C 2 k0198
+peek F:4AA0C 2 c0198
+peek F:4A79E 8 m0198
+peek F:4A992 2 n0198
+peek F:4AB42 2 p0198
+peek F:4AB4C 2 q0198
+peek F:4A956 1 f0198
+step
+peek F:4AB8C 2 k0199
+peek F:4AA0C 2 c0199
+peek F:4A79E 8 m0199
+peek F:4A992 2 n0199
+peek F:4AB42 2 p0199
+peek F:4AB4C 2 q0199
+peek F:4A956 1 f0199
+step
+peek F:4AB8C 2 k0200
+peek F:4AA0C 2 c0200
+peek F:4A79E 8 m0200
+peek F:4A992 2 n0200
+peek F:4AB42 2 p0200
+peek F:4AB4C 2 q0200
+peek F:4A956 1 f0200
+step
+peek F:4AB8C 2 k0201
+peek F:4AA0C 2 c0201
+peek F:4A79E 8 m0201
+peek F:4A992 2 n0201
+peek F:4AB42 2 p0201
+peek F:4AB4C 2 q0201
+peek F:4A956 1 f0201
+step
+peek F:4AB8C 2 k0202
+peek F:4AA0C 2 c0202
+peek F:4A79E 8 m0202
+peek F:4A992 2 n0202
+peek F:4AB42 2 p0202
+peek F:4AB4C 2 q0202
+peek F:4A956 1 f0202
+step
+peek F:4AB8C 2 k0203
+peek F:4AA0C 2 c0203
+peek F:4A79E 8 m0203
+peek F:4A992 2 n0203
+peek F:4AB42 2 p0203
+peek F:4AB4C 2 q0203
+peek F:4A956 1 f0203
+step
+peek F:4AB8C 2 k0204
+peek F:4AA0C 2 c0204
+peek F:4A79E 8 m0204
+peek F:4A992 2 n0204
+peek F:4AB42 2 p0204
+peek F:4AB4C 2 q0204
+peek F:4A956 1 f0204
+step
+peek F:4AB8C 2 k0205
+peek F:4AA0C 2 c0205
+peek F:4A79E 8 m0205
+peek F:4A992 2 n0205
+peek F:4AB42 2 p0205
+peek F:4AB4C 2 q0205
+peek F:4A956 1 f0205
+step
+peek F:4AB8C 2 k0206
+peek F:4AA0C 2 c0206
+peek F:4A79E 8 m0206
+peek F:4A992 2 n0206
+peek F:4AB42 2 p0206
+peek F:4AB4C 2 q0206
+peek F:4A956 1 f0206
+step
+peek F:4AB8C 2 k0207
+peek F:4AA0C 2 c0207
+peek F:4A79E 8 m0207
+peek F:4A992 2 n0207
+peek F:4AB42 2 p0207
+peek F:4AB4C 2 q0207
+peek F:4A956 1 f0207
+step
+peek F:4AB8C 2 k0208
+peek F:4AA0C 2 c0208
+peek F:4A79E 8 m0208
+peek F:4A992 2 n0208
+peek F:4AB42 2 p0208
+peek F:4AB4C 2 q0208
+peek F:4A956 1 f0208
+step
+peek F:4AB8C 2 k0209
+peek F:4AA0C 2 c0209
+peek F:4A79E 8 m0209
+peek F:4A992 2 n0209
+peek F:4AB42 2 p0209
+peek F:4AB4C 2 q0209
+peek F:4A956 1 f0209
+step
+peek F:4AB8C 2 k0210
+peek F:4AA0C 2 c0210
+peek F:4A79E 8 m0210
+peek F:4A992 2 n0210
+peek F:4AB42 2 p0210
+peek F:4AB4C 2 q0210
+peek F:4A956 1 f0210
+step
+peek F:4AB8C 2 k0211
+peek F:4AA0C 2 c0211
+peek F:4A79E 8 m0211
+peek F:4A992 2 n0211
+peek F:4AB42 2 p0211
+peek F:4AB4C 2 q0211
+peek F:4A956 1 f0211
+step
+peek F:4AB8C 2 k0212
+peek F:4AA0C 2 c0212
+peek F:4A79E 8 m0212
+peek F:4A992 2 n0212
+peek F:4AB42 2 p0212
+peek F:4AB4C 2 q0212
+peek F:4A956 1 f0212
+step
+peek F:4AB8C 2 k0213
+peek F:4AA0C 2 c0213
+peek F:4A79E 8 m0213
+peek F:4A992 2 n0213
+peek F:4AB42 2 p0213
+peek F:4AB4C 2 q0213
+peek F:4A956 1 f0213
+step
+peek F:4AB8C 2 k0214
+peek F:4AA0C 2 c0214
+peek F:4A79E 8 m0214
+peek F:4A992 2 n0214
+peek F:4AB42 2 p0214
+peek F:4AB4C 2 q0214
+peek F:4A956 1 f0214
+step
+peek F:4AB8C 2 k0215
+peek F:4AA0C 2 c0215
+peek F:4A79E 8 m0215
+peek F:4A992 2 n0215
+peek F:4AB42 2 p0215
+peek F:4AB4C 2 q0215
+peek F:4A956 1 f0215
+step
+peek F:4AB8C 2 k0216
+peek F:4AA0C 2 c0216
+peek F:4A79E 8 m0216
+peek F:4A992 2 n0216
+peek F:4AB42 2 p0216
+peek F:4AB4C 2 q0216
+peek F:4A956 1 f0216
+step
+peek F:4AB8C 2 k0217
+peek F:4AA0C 2 c0217
+peek F:4A79E 8 m0217
+peek F:4A992 2 n0217
+peek F:4AB42 2 p0217
+peek F:4AB4C 2 q0217
+peek F:4A956 1 f0217
+step
+peek F:4AB8C 2 k0218
+peek F:4AA0C 2 c0218
+peek F:4A79E 8 m0218
+peek F:4A992 2 n0218
+peek F:4AB42 2 p0218
+peek F:4AB4C 2 q0218
+peek F:4A956 1 f0218
+step
+peek F:4AB8C 2 k0219
+peek F:4AA0C 2 c0219
+peek F:4A79E 8 m0219
+peek F:4A992 2 n0219
+peek F:4AB42 2 p0219
+peek F:4AB4C 2 q0219
+peek F:4A956 1 f0219
+step
+peek F:4AB8C 2 k0220
+peek F:4AA0C 2 c0220
+peek F:4A79E 8 m0220
+peek F:4A992 2 n0220
+peek F:4AB42 2 p0220
+peek F:4AB4C 2 q0220
+peek F:4A956 1 f0220
+step
+peek F:4AB8C 2 k0221
+peek F:4AA0C 2 c0221
+peek F:4A79E 8 m0221
+peek F:4A992 2 n0221
+peek F:4AB42 2 p0221
+peek F:4AB4C 2 q0221
+peek F:4A956 1 f0221
+step
+peek F:4AB8C 2 k0222
+peek F:4AA0C 2 c0222
+peek F:4A79E 8 m0222
+peek F:4A992 2 n0222
+peek F:4AB42 2 p0222
+peek F:4AB4C 2 q0222
+peek F:4A956 1 f0222
+step
+peek F:4AB8C 2 k0223
+peek F:4AA0C 2 c0223
+peek F:4A79E 8 m0223
+peek F:4A992 2 n0223
+peek F:4AB42 2 p0223
+peek F:4AB4C 2 q0223
+peek F:4A956 1 f0223
+step
+peek F:4AB8C 2 k0224
+peek F:4AA0C 2 c0224
+peek F:4A79E 8 m0224
+peek F:4A992 2 n0224
+peek F:4AB42 2 p0224
+peek F:4AB4C 2 q0224
+peek F:4A956 1 f0224
+step
+peek F:4AB8C 2 k0225
+peek F:4AA0C 2 c0225
+peek F:4A79E 8 m0225
+peek F:4A992 2 n0225
+peek F:4AB42 2 p0225
+peek F:4AB4C 2 q0225
+peek F:4A956 1 f0225
+step
+peek F:4AB8C 2 k0226
+peek F:4AA0C 2 c0226
+peek F:4A79E 8 m0226
+peek F:4A992 2 n0226
+peek F:4AB42 2 p0226
+peek F:4AB4C 2 q0226
+peek F:4A956 1 f0226
+step
+peek F:4AB8C 2 k0227
+peek F:4AA0C 2 c0227
+peek F:4A79E 8 m0227
+peek F:4A992 2 n0227
+peek F:4AB42 2 p0227
+peek F:4AB4C 2 q0227
+peek F:4A956 1 f0227
+step
+peek F:4AB8C 2 k0228
+peek F:4AA0C 2 c0228
+peek F:4A79E 8 m0228
+peek F:4A992 2 n0228
+peek F:4AB42 2 p0228
+peek F:4AB4C 2 q0228
+peek F:4A956 1 f0228
+step
+peek F:4AB8C 2 k0229
+peek F:4AA0C 2 c0229
+peek F:4A79E 8 m0229
+peek F:4A992 2 n0229
+peek F:4AB42 2 p0229
+peek F:4AB4C 2 q0229
+peek F:4A956 1 f0229
+step
+peek F:4AB8C 2 k0230
+peek F:4AA0C 2 c0230
+peek F:4A79E 8 m0230
+peek F:4A992 2 n0230
+peek F:4AB42 2 p0230
+peek F:4AB4C 2 q0230
+peek F:4A956 1 f0230
+step
+peek F:4AB8C 2 k0231
+peek F:4AA0C 2 c0231
+peek F:4A79E 8 m0231
+peek F:4A992 2 n0231
+peek F:4AB42 2 p0231
+peek F:4AB4C 2 q0231
+peek F:4A956 1 f0231
+step
+peek F:4AB8C 2 k0232
+peek F:4AA0C 2 c0232
+peek F:4A79E 8 m0232
+peek F:4A992 2 n0232
+peek F:4AB42 2 p0232
+peek F:4AB4C 2 q0232
+peek F:4A956 1 f0232
+step
+peek F:4AB8C 2 k0233
+peek F:4AA0C 2 c0233
+peek F:4A79E 8 m0233
+peek F:4A992 2 n0233
+peek F:4AB42 2 p0233
+peek F:4AB4C 2 q0233
+peek F:4A956 1 f0233
+step
+peek F:4AB8C 2 k0234
+peek F:4AA0C 2 c0234
+peek F:4A79E 8 m0234
+peek F:4A992 2 n0234
+peek F:4AB42 2 p0234
+peek F:4AB4C 2 q0234
+peek F:4A956 1 f0234
+step
+peek F:4AB8C 2 k0235
+peek F:4AA0C 2 c0235
+peek F:4A79E 8 m0235
+peek F:4A992 2 n0235
+peek F:4AB42 2 p0235
+peek F:4AB4C 2 q0235
+peek F:4A956 1 f0235
+step
+peek F:4AB8C 2 k0236
+peek F:4AA0C 2 c0236
+peek F:4A79E 8 m0236
+peek F:4A992 2 n0236
+peek F:4AB42 2 p0236
+peek F:4AB4C 2 q0236
+peek F:4A956 1 f0236
+step
+peek F:4AB8C 2 k0237
+peek F:4AA0C 2 c0237
+peek F:4A79E 8 m0237
+peek F:4A992 2 n0237
+peek F:4AB42 2 p0237
+peek F:4AB4C 2 q0237
+peek F:4A956 1 f0237
+step
+peek F:4AB8C 2 k0238
+peek F:4AA0C 2 c0238
+peek F:4A79E 8 m0238
+peek F:4A992 2 n0238
+peek F:4AB42 2 p0238
+peek F:4AB4C 2 q0238
+peek F:4A956 1 f0238
+step
+peek F:4AB8C 2 k0239
+peek F:4AA0C 2 c0239
+peek F:4A79E 8 m0239
+peek F:4A992 2 n0239
+peek F:4AB42 2 p0239
+peek F:4AB4C 2 q0239
+peek F:4A956 1 f0239
+step
+peek F:4AB8C 2 k0240
+peek F:4AA0C 2 c0240
+peek F:4A79E 8 m0240
+peek F:4A992 2 n0240
+peek F:4AB42 2 p0240
+peek F:4AB4C 2 q0240
+peek F:4A956 1 f0240
+step
+peek F:4AB8C 2 k0241
+peek F:4AA0C 2 c0241
+peek F:4A79E 8 m0241
+peek F:4A992 2 n0241
+peek F:4AB42 2 p0241
+peek F:4AB4C 2 q0241
+peek F:4A956 1 f0241
+step
+peek F:4AB8C 2 k0242
+peek F:4AA0C 2 c0242
+peek F:4A79E 8 m0242
+peek F:4A992 2 n0242
+peek F:4AB42 2 p0242
+peek F:4AB4C 2 q0242
+peek F:4A956 1 f0242
+step
+peek F:4AB8C 2 k0243
+peek F:4AA0C 2 c0243
+peek F:4A79E 8 m0243
+peek F:4A992 2 n0243
+peek F:4AB42 2 p0243
+peek F:4AB4C 2 q0243
+peek F:4A956 1 f0243
+step
+peek F:4AB8C 2 k0244
+peek F:4AA0C 2 c0244
+peek F:4A79E 8 m0244
+peek F:4A992 2 n0244
+peek F:4AB42 2 p0244
+peek F:4AB4C 2 q0244
+peek F:4A956 1 f0244
+step
+peek F:4AB8C 2 k0245
+peek F:4AA0C 2 c0245
+peek F:4A79E 8 m0245
+peek F:4A992 2 n0245
+peek F:4AB42 2 p0245
+peek F:4AB4C 2 q0245
+peek F:4A956 1 f0245
+step
+peek F:4AB8C 2 k0246
+peek F:4AA0C 2 c0246
+peek F:4A79E 8 m0246
+peek F:4A992 2 n0246
+peek F:4AB42 2 p0246
+peek F:4AB4C 2 q0246
+peek F:4A956 1 f0246
+step
+peek F:4AB8C 2 k0247
+peek F:4AA0C 2 c0247
+peek F:4A79E 8 m0247
+peek F:4A992 2 n0247
+peek F:4AB42 2 p0247
+peek F:4AB4C 2 q0247
+peek F:4A956 1 f0247
+step
+peek F:4AB8C 2 k0248
+peek F:4AA0C 2 c0248
+peek F:4A79E 8 m0248
+peek F:4A992 2 n0248
+peek F:4AB42 2 p0248
+peek F:4AB4C 2 q0248
+peek F:4A956 1 f0248
+step
+peek F:4AB8C 2 k0249
+peek F:4AA0C 2 c0249
+peek F:4A79E 8 m0249
+peek F:4A992 2 n0249
+peek F:4AB42 2 p0249
+peek F:4AB4C 2 q0249
+peek F:4A956 1 f0249
+step
+peek F:4AB8C 2 k0250
+peek F:4AA0C 2 c0250
+peek F:4A79E 8 m0250
+peek F:4A992 2 n0250
+peek F:4AB42 2 p0250
+peek F:4AB4C 2 q0250
+peek F:4A956 1 f0250
+step
+peek F:4AB8C 2 k0251
+peek F:4AA0C 2 c0251
+peek F:4A79E 8 m0251
+peek F:4A992 2 n0251
+peek F:4AB42 2 p0251
+peek F:4AB4C 2 q0251
+peek F:4A956 1 f0251
+step
+peek F:4AB8C 2 k0252
+peek F:4AA0C 2 c0252
+peek F:4A79E 8 m0252
+peek F:4A992 2 n0252
+peek F:4AB42 2 p0252
+peek F:4AB4C 2 q0252
+peek F:4A956 1 f0252
+step
+peek F:4AB8C 2 k0253
+peek F:4AA0C 2 c0253
+peek F:4A79E 8 m0253
+peek F:4A992 2 n0253
+peek F:4AB42 2 p0253
+peek F:4AB4C 2 q0253
+peek F:4A956 1 f0253
+step
+peek F:4AB8C 2 k0254
+peek F:4AA0C 2 c0254
+peek F:4A79E 8 m0254
+peek F:4A992 2 n0254
+peek F:4AB42 2 p0254
+peek F:4AB4C 2 q0254
+peek F:4A956 1 f0254
+step
+peek F:4AB8C 2 k0255
+peek F:4AA0C 2 c0255
+peek F:4A79E 8 m0255
+peek F:4A992 2 n0255
+peek F:4AB42 2 p0255
+peek F:4AB4C 2 q0255
+peek F:4A956 1 f0255
+step
+peek F:4AB8C 2 k0256
+peek F:4AA0C 2 c0256
+peek F:4A79E 8 m0256
+peek F:4A992 2 n0256
+peek F:4AB42 2 p0256
+peek F:4AB4C 2 q0256
+peek F:4A956 1 f0256
+step
+peek F:4AB8C 2 k0257
+peek F:4AA0C 2 c0257
+peek F:4A79E 8 m0257
+peek F:4A992 2 n0257
+peek F:4AB42 2 p0257
+peek F:4AB4C 2 q0257
+peek F:4A956 1 f0257
+step
+peek F:4AB8C 2 k0258
+peek F:4AA0C 2 c0258
+peek F:4A79E 8 m0258
+peek F:4A992 2 n0258
+peek F:4AB42 2 p0258
+peek F:4AB4C 2 q0258
+peek F:4A956 1 f0258
+step
+peek F:4AB8C 2 k0259
+peek F:4AA0C 2 c0259
+peek F:4A79E 8 m0259
+peek F:4A992 2 n0259
+peek F:4AB42 2 p0259
+peek F:4AB4C 2 q0259
+peek F:4A956 1 f0259
+step
+peek F:4AB8C 2 k0260
+peek F:4AA0C 2 c0260
+peek F:4A79E 8 m0260
+peek F:4A992 2 n0260
+peek F:4AB42 2 p0260
+peek F:4AB4C 2 q0260
+peek F:4A956 1 f0260
+step
+peek F:4AB8C 2 k0261
+peek F:4AA0C 2 c0261
+peek F:4A79E 8 m0261
+peek F:4A992 2 n0261
+peek F:4AB42 2 p0261
+peek F:4AB4C 2 q0261
+peek F:4A956 1 f0261
+step
+peek F:4AB8C 2 k0262
+peek F:4AA0C 2 c0262
+peek F:4A79E 8 m0262
+peek F:4A992 2 n0262
+peek F:4AB42 2 p0262
+peek F:4AB4C 2 q0262
+peek F:4A956 1 f0262
+step
+peek F:4AB8C 2 k0263
+peek F:4AA0C 2 c0263
+peek F:4A79E 8 m0263
+peek F:4A992 2 n0263
+peek F:4AB42 2 p0263
+peek F:4AB4C 2 q0263
+peek F:4A956 1 f0263
+step
+peek F:4AB8C 2 k0264
+peek F:4AA0C 2 c0264
+peek F:4A79E 8 m0264
+peek F:4A992 2 n0264
+peek F:4AB42 2 p0264
+peek F:4AB4C 2 q0264
+peek F:4A956 1 f0264
+step
+peek F:4AB8C 2 k0265
+peek F:4AA0C 2 c0265
+peek F:4A79E 8 m0265
+peek F:4A992 2 n0265
+peek F:4AB42 2 p0265
+peek F:4AB4C 2 q0265
+peek F:4A956 1 f0265
+step
+peek F:4AB8C 2 k0266
+peek F:4AA0C 2 c0266
+peek F:4A79E 8 m0266
+peek F:4A992 2 n0266
+peek F:4AB42 2 p0266
+peek F:4AB4C 2 q0266
+peek F:4A956 1 f0266
+step
+peek F:4AB8C 2 k0267
+peek F:4AA0C 2 c0267
+peek F:4A79E 8 m0267
+peek F:4A992 2 n0267
+peek F:4AB42 2 p0267
+peek F:4AB4C 2 q0267
+peek F:4A956 1 f0267
+step
+peek F:4AB8C 2 k0268
+peek F:4AA0C 2 c0268
+peek F:4A79E 8 m0268
+peek F:4A992 2 n0268
+peek F:4AB42 2 p0268
+peek F:4AB4C 2 q0268
+peek F:4A956 1 f0268
+step
+peek F:4AB8C 2 k0269
+peek F:4AA0C 2 c0269
+peek F:4A79E 8 m0269
+peek F:4A992 2 n0269
+peek F:4AB42 2 p0269
+peek F:4AB4C 2 q0269
+peek F:4A956 1 f0269
+step
+peek F:4AB8C 2 k0270
+peek F:4AA0C 2 c0270
+peek F:4A79E 8 m0270
+peek F:4A992 2 n0270
+peek F:4AB42 2 p0270
+peek F:4AB4C 2 q0270
+peek F:4A956 1 f0270
+step
+peek F:4AB8C 2 k0271
+peek F:4AA0C 2 c0271
+peek F:4A79E 8 m0271
+peek F:4A992 2 n0271
+peek F:4AB42 2 p0271
+peek F:4AB4C 2 q0271
+peek F:4A956 1 f0271
+step
+peek F:4AB8C 2 k0272
+peek F:4AA0C 2 c0272
+peek F:4A79E 8 m0272
+peek F:4A992 2 n0272
+peek F:4AB42 2 p0272
+peek F:4AB4C 2 q0272
+peek F:4A956 1 f0272
+step
+peek F:4AB8C 2 k0273
+peek F:4AA0C 2 c0273
+peek F:4A79E 8 m0273
+peek F:4A992 2 n0273
+peek F:4AB42 2 p0273
+peek F:4AB4C 2 q0273
+peek F:4A956 1 f0273
+step
+peek F:4AB8C 2 k0274
+peek F:4AA0C 2 c0274
+peek F:4A79E 8 m0274
+peek F:4A992 2 n0274
+peek F:4AB42 2 p0274
+peek F:4AB4C 2 q0274
+peek F:4A956 1 f0274
+step
+peek F:4AB8C 2 k0275
+peek F:4AA0C 2 c0275
+peek F:4A79E 8 m0275
+peek F:4A992 2 n0275
+peek F:4AB42 2 p0275
+peek F:4AB4C 2 q0275
+peek F:4A956 1 f0275
+step
+peek F:4AB8C 2 k0276
+peek F:4AA0C 2 c0276
+peek F:4A79E 8 m0276
+peek F:4A992 2 n0276
+peek F:4AB42 2 p0276
+peek F:4AB4C 2 q0276
+peek F:4A956 1 f0276
+step
+peek F:4AB8C 2 k0277
+peek F:4AA0C 2 c0277
+peek F:4A79E 8 m0277
+peek F:4A992 2 n0277
+peek F:4AB42 2 p0277
+peek F:4AB4C 2 q0277
+peek F:4A956 1 f0277
+step
+peek F:4AB8C 2 k0278
+peek F:4AA0C 2 c0278
+peek F:4A79E 8 m0278
+peek F:4A992 2 n0278
+peek F:4AB42 2 p0278
+peek F:4AB4C 2 q0278
+peek F:4A956 1 f0278
+step
+peek F:4AB8C 2 k0279
+peek F:4AA0C 2 c0279
+peek F:4A79E 8 m0279
+peek F:4A992 2 n0279
+peek F:4AB42 2 p0279
+peek F:4AB4C 2 q0279
+peek F:4A956 1 f0279
+step
+peek F:4AB8C 2 k0280
+peek F:4AA0C 2 c0280
+peek F:4A79E 8 m0280
+peek F:4A992 2 n0280
+peek F:4AB42 2 p0280
+peek F:4AB4C 2 q0280
+peek F:4A956 1 f0280
+step
+peek F:4AB8C 2 k0281
+peek F:4AA0C 2 c0281
+peek F:4A79E 8 m0281
+peek F:4A992 2 n0281
+peek F:4AB42 2 p0281
+peek F:4AB4C 2 q0281
+peek F:4A956 1 f0281
+step
+peek F:4AB8C 2 k0282
+peek F:4AA0C 2 c0282
+peek F:4A79E 8 m0282
+peek F:4A992 2 n0282
+peek F:4AB42 2 p0282
+peek F:4AB4C 2 q0282
+peek F:4A956 1 f0282
+step
+peek F:4AB8C 2 k0283
+peek F:4AA0C 2 c0283
+peek F:4A79E 8 m0283
+peek F:4A992 2 n0283
+peek F:4AB42 2 p0283
+peek F:4AB4C 2 q0283
+peek F:4A956 1 f0283
+step
+peek F:4AB8C 2 k0284
+peek F:4AA0C 2 c0284
+peek F:4A79E 8 m0284
+peek F:4A992 2 n0284
+peek F:4AB42 2 p0284
+peek F:4AB4C 2 q0284
+peek F:4A956 1 f0284
+step
+peek F:4AB8C 2 k0285
+peek F:4AA0C 2 c0285
+peek F:4A79E 8 m0285
+peek F:4A992 2 n0285
+peek F:4AB42 2 p0285
+peek F:4AB4C 2 q0285
+peek F:4A956 1 f0285
+step
+peek F:4AB8C 2 k0286
+peek F:4AA0C 2 c0286
+peek F:4A79E 8 m0286
+peek F:4A992 2 n0286
+peek F:4AB42 2 p0286
+peek F:4AB4C 2 q0286
+peek F:4A956 1 f0286
+step
+peek F:4AB8C 2 k0287
+peek F:4AA0C 2 c0287
+peek F:4A79E 8 m0287
+peek F:4A992 2 n0287
+peek F:4AB42 2 p0287
+peek F:4AB4C 2 q0287
+peek F:4A956 1 f0287
+step
+peek F:4AB8C 2 k0288
+peek F:4AA0C 2 c0288
+peek F:4A79E 8 m0288
+peek F:4A992 2 n0288
+peek F:4AB42 2 p0288
+peek F:4AB4C 2 q0288
+peek F:4A956 1 f0288
+step
+peek F:4AB8C 2 k0289
+peek F:4AA0C 2 c0289
+peek F:4A79E 8 m0289
+peek F:4A992 2 n0289
+peek F:4AB42 2 p0289
+peek F:4AB4C 2 q0289
+peek F:4A956 1 f0289
+step
+peek F:4AB8C 2 k0290
+peek F:4AA0C 2 c0290
+peek F:4A79E 8 m0290
+peek F:4A992 2 n0290
+peek F:4AB42 2 p0290
+peek F:4AB4C 2 q0290
+peek F:4A956 1 f0290
+step
+peek F:4AB8C 2 k0291
+peek F:4AA0C 2 c0291
+peek F:4A79E 8 m0291
+peek F:4A992 2 n0291
+peek F:4AB42 2 p0291
+peek F:4AB4C 2 q0291
+peek F:4A956 1 f0291
+step
+peek F:4AB8C 2 k0292
+peek F:4AA0C 2 c0292
+peek F:4A79E 8 m0292
+peek F:4A992 2 n0292
+peek F:4AB42 2 p0292
+peek F:4AB4C 2 q0292
+peek F:4A956 1 f0292
+step
+peek F:4AB8C 2 k0293
+peek F:4AA0C 2 c0293
+peek F:4A79E 8 m0293
+peek F:4A992 2 n0293
+peek F:4AB42 2 p0293
+peek F:4AB4C 2 q0293
+peek F:4A956 1 f0293
+step
+peek F:4AB8C 2 k0294
+peek F:4AA0C 2 c0294
+peek F:4A79E 8 m0294
+peek F:4A992 2 n0294
+peek F:4AB42 2 p0294
+peek F:4AB4C 2 q0294
+peek F:4A956 1 f0294
+step
+peek F:4AB8C 2 k0295
+peek F:4AA0C 2 c0295
+peek F:4A79E 8 m0295
+peek F:4A992 2 n0295
+peek F:4AB42 2 p0295
+peek F:4AB4C 2 q0295
+peek F:4A956 1 f0295
+step
+peek F:4AB8C 2 k0296
+peek F:4AA0C 2 c0296
+peek F:4A79E 8 m0296
+peek F:4A992 2 n0296
+peek F:4AB42 2 p0296
+peek F:4AB4C 2 q0296
+peek F:4A956 1 f0296
+step
+peek F:4AB8C 2 k0297
+peek F:4AA0C 2 c0297
+peek F:4A79E 8 m0297
+peek F:4A992 2 n0297
+peek F:4AB42 2 p0297
+peek F:4AB4C 2 q0297
+peek F:4A956 1 f0297
+step
+peek F:4AB8C 2 k0298
+peek F:4AA0C 2 c0298
+peek F:4A79E 8 m0298
+peek F:4A992 2 n0298
+peek F:4AB42 2 p0298
+peek F:4AB4C 2 q0298
+peek F:4A956 1 f0298
+step
+peek F:4AB8C 2 k0299
+peek F:4AA0C 2 c0299
+peek F:4A79E 8 m0299
+peek F:4A992 2 n0299
+peek F:4AB42 2 p0299
+peek F:4AB4C 2 q0299
+peek F:4A956 1 f0299
+step
+peek F:4AB8C 2 k0300
+peek F:4AA0C 2 c0300
+peek F:4A79E 8 m0300
+peek F:4A992 2 n0300
+peek F:4AB42 2 p0300
+peek F:4AB4C 2 q0300
+peek F:4A956 1 f0300
+step
+peek F:4AB8C 2 k0301
+peek F:4AA0C 2 c0301
+peek F:4A79E 8 m0301
+peek F:4A992 2 n0301
+peek F:4AB42 2 p0301
+peek F:4AB4C 2 q0301
+peek F:4A956 1 f0301
+step
+peek F:4AB8C 2 k0302
+peek F:4AA0C 2 c0302
+peek F:4A79E 8 m0302
+peek F:4A992 2 n0302
+peek F:4AB42 2 p0302
+peek F:4AB4C 2 q0302
+peek F:4A956 1 f0302
+step
+peek F:4AB8C 2 k0303
+peek F:4AA0C 2 c0303
+peek F:4A79E 8 m0303
+peek F:4A992 2 n0303
+peek F:4AB42 2 p0303
+peek F:4AB4C 2 q0303
+peek F:4A956 1 f0303
+step
+peek F:4AB8C 2 k0304
+peek F:4AA0C 2 c0304
+peek F:4A79E 8 m0304
+peek F:4A992 2 n0304
+peek F:4AB42 2 p0304
+peek F:4AB4C 2 q0304
+peek F:4A956 1 f0304
+step
+peek F:4AB8C 2 k0305
+peek F:4AA0C 2 c0305
+peek F:4A79E 8 m0305
+peek F:4A992 2 n0305
+peek F:4AB42 2 p0305
+peek F:4AB4C 2 q0305
+peek F:4A956 1 f0305
+step
+peek F:4AB8C 2 k0306
+peek F:4AA0C 2 c0306
+peek F:4A79E 8 m0306
+peek F:4A992 2 n0306
+peek F:4AB42 2 p0306
+peek F:4AB4C 2 q0306
+peek F:4A956 1 f0306
+step
+peek F:4AB8C 2 k0307
+peek F:4AA0C 2 c0307
+peek F:4A79E 8 m0307
+peek F:4A992 2 n0307
+peek F:4AB42 2 p0307
+peek F:4AB4C 2 q0307
+peek F:4A956 1 f0307
+step
+peek F:4AB8C 2 k0308
+peek F:4AA0C 2 c0308
+peek F:4A79E 8 m0308
+peek F:4A992 2 n0308
+peek F:4AB42 2 p0308
+peek F:4AB4C 2 q0308
+peek F:4A956 1 f0308
+step
+peek F:4AB8C 2 k0309
+peek F:4AA0C 2 c0309
+peek F:4A79E 8 m0309
+peek F:4A992 2 n0309
+peek F:4AB42 2 p0309
+peek F:4AB4C 2 q0309
+peek F:4A956 1 f0309
+step
+peek F:4AB8C 2 k0310
+peek F:4AA0C 2 c0310
+peek F:4A79E 8 m0310
+peek F:4A992 2 n0310
+peek F:4AB42 2 p0310
+peek F:4AB4C 2 q0310
+peek F:4A956 1 f0310
+step
+peek F:4AB8C 2 k0311
+peek F:4AA0C 2 c0311
+peek F:4A79E 8 m0311
+peek F:4A992 2 n0311
+peek F:4AB42 2 p0311
+peek F:4AB4C 2 q0311
+peek F:4A956 1 f0311
+step
+peek F:4AB8C 2 k0312
+peek F:4AA0C 2 c0312
+peek F:4A79E 8 m0312
+peek F:4A992 2 n0312
+peek F:4AB42 2 p0312
+peek F:4AB4C 2 q0312
+peek F:4A956 1 f0312
+step
+peek F:4AB8C 2 k0313
+peek F:4AA0C 2 c0313
+peek F:4A79E 8 m0313
+peek F:4A992 2 n0313
+peek F:4AB42 2 p0313
+peek F:4AB4C 2 q0313
+peek F:4A956 1 f0313
+step
+peek F:4AB8C 2 k0314
+peek F:4AA0C 2 c0314
+peek F:4A79E 8 m0314
+peek F:4A992 2 n0314
+peek F:4AB42 2 p0314
+peek F:4AB4C 2 q0314
+peek F:4A956 1 f0314
+step
+peek F:4AB8C 2 k0315
+peek F:4AA0C 2 c0315
+peek F:4A79E 8 m0315
+peek F:4A992 2 n0315
+peek F:4AB42 2 p0315
+peek F:4AB4C 2 q0315
+peek F:4A956 1 f0315
+step
+peek F:4AB8C 2 k0316
+peek F:4AA0C 2 c0316
+peek F:4A79E 8 m0316
+peek F:4A992 2 n0316
+peek F:4AB42 2 p0316
+peek F:4AB4C 2 q0316
+peek F:4A956 1 f0316
+step
+peek F:4AB8C 2 k0317
+peek F:4AA0C 2 c0317
+peek F:4A79E 8 m0317
+peek F:4A992 2 n0317
+peek F:4AB42 2 p0317
+peek F:4AB4C 2 q0317
+peek F:4A956 1 f0317
+step
+peek F:4AB8C 2 k0318
+peek F:4AA0C 2 c0318
+peek F:4A79E 8 m0318
+peek F:4A992 2 n0318
+peek F:4AB42 2 p0318
+peek F:4AB4C 2 q0318
+peek F:4A956 1 f0318
+step
+peek F:4AB8C 2 k0319
+peek F:4AA0C 2 c0319
+peek F:4A79E 8 m0319
+peek F:4A992 2 n0319
+peek F:4AB42 2 p0319
+peek F:4AB4C 2 q0319
+peek F:4A956 1 f0319
+step
+peek F:4AB8C 2 k0320
+peek F:4AA0C 2 c0320
+peek F:4A79E 8 m0320
+peek F:4A992 2 n0320
+peek F:4AB42 2 p0320
+peek F:4AB4C 2 q0320
+peek F:4A956 1 f0320
+step
+peek F:4AB8C 2 k0321
+peek F:4AA0C 2 c0321
+peek F:4A79E 8 m0321
+peek F:4A992 2 n0321
+peek F:4AB42 2 p0321
+peek F:4AB4C 2 q0321
+peek F:4A956 1 f0321
+step
+peek F:4AB8C 2 k0322
+peek F:4AA0C 2 c0322
+peek F:4A79E 8 m0322
+peek F:4A992 2 n0322
+peek F:4AB42 2 p0322
+peek F:4AB4C 2 q0322
+peek F:4A956 1 f0322
+step
+peek F:4AB8C 2 k0323
+peek F:4AA0C 2 c0323
+peek F:4A79E 8 m0323
+peek F:4A992 2 n0323
+peek F:4AB42 2 p0323
+peek F:4AB4C 2 q0323
+peek F:4A956 1 f0323
+step
+peek F:4AB8C 2 k0324
+peek F:4AA0C 2 c0324
+peek F:4A79E 8 m0324
+peek F:4A992 2 n0324
+peek F:4AB42 2 p0324
+peek F:4AB4C 2 q0324
+peek F:4A956 1 f0324
+step
+peek F:4AB8C 2 k0325
+peek F:4AA0C 2 c0325
+peek F:4A79E 8 m0325
+peek F:4A992 2 n0325
+peek F:4AB42 2 p0325
+peek F:4AB4C 2 q0325
+peek F:4A956 1 f0325
+step
+peek F:4AB8C 2 k0326
+peek F:4AA0C 2 c0326
+peek F:4A79E 8 m0326
+peek F:4A992 2 n0326
+peek F:4AB42 2 p0326
+peek F:4AB4C 2 q0326
+peek F:4A956 1 f0326
+step
+peek F:4AB8C 2 k0327
+peek F:4AA0C 2 c0327
+peek F:4A79E 8 m0327
+peek F:4A992 2 n0327
+peek F:4AB42 2 p0327
+peek F:4AB4C 2 q0327
+peek F:4A956 1 f0327
+step
+peek F:4AB8C 2 k0328
+peek F:4AA0C 2 c0328
+peek F:4A79E 8 m0328
+peek F:4A992 2 n0328
+peek F:4AB42 2 p0328
+peek F:4AB4C 2 q0328
+peek F:4A956 1 f0328
+step
+peek F:4AB8C 2 k0329
+peek F:4AA0C 2 c0329
+peek F:4A79E 8 m0329
+peek F:4A992 2 n0329
+peek F:4AB42 2 p0329
+peek F:4AB4C 2 q0329
+peek F:4A956 1 f0329
+step
+peek F:4AB8C 2 k0330
+peek F:4AA0C 2 c0330
+peek F:4A79E 8 m0330
+peek F:4A992 2 n0330
+peek F:4AB42 2 p0330
+peek F:4AB4C 2 q0330
+peek F:4A956 1 f0330
+step
+peek F:4AB8C 2 k0331
+peek F:4AA0C 2 c0331
+peek F:4A79E 8 m0331
+peek F:4A992 2 n0331
+peek F:4AB42 2 p0331
+peek F:4AB4C 2 q0331
+peek F:4A956 1 f0331
+step
+peek F:4AB8C 2 k0332
+peek F:4AA0C 2 c0332
+peek F:4A79E 8 m0332
+peek F:4A992 2 n0332
+peek F:4AB42 2 p0332
+peek F:4AB4C 2 q0332
+peek F:4A956 1 f0332
+step
+peek F:4AB8C 2 k0333
+peek F:4AA0C 2 c0333
+peek F:4A79E 8 m0333
+peek F:4A992 2 n0333
+peek F:4AB42 2 p0333
+peek F:4AB4C 2 q0333
+peek F:4A956 1 f0333
+step
+peek F:4AB8C 2 k0334
+peek F:4AA0C 2 c0334
+peek F:4A79E 8 m0334
+peek F:4A992 2 n0334
+peek F:4AB42 2 p0334
+peek F:4AB4C 2 q0334
+peek F:4A956 1 f0334
+step
+peek F:4AB8C 2 k0335
+peek F:4AA0C 2 c0335
+peek F:4A79E 8 m0335
+peek F:4A992 2 n0335
+peek F:4AB42 2 p0335
+peek F:4AB4C 2 q0335
+peek F:4A956 1 f0335
+step
+peek F:4AB8C 2 k0336
+peek F:4AA0C 2 c0336
+peek F:4A79E 8 m0336
+peek F:4A992 2 n0336
+peek F:4AB42 2 p0336
+peek F:4AB4C 2 q0336
+peek F:4A956 1 f0336
+step
+peek F:4AB8C 2 k0337
+peek F:4AA0C 2 c0337
+peek F:4A79E 8 m0337
+peek F:4A992 2 n0337
+peek F:4AB42 2 p0337
+peek F:4AB4C 2 q0337
+peek F:4A956 1 f0337
+step
+peek F:4AB8C 2 k0338
+peek F:4AA0C 2 c0338
+peek F:4A79E 8 m0338
+peek F:4A992 2 n0338
+peek F:4AB42 2 p0338
+peek F:4AB4C 2 q0338
+peek F:4A956 1 f0338
+step
+peek F:4AB8C 2 k0339
+peek F:4AA0C 2 c0339
+peek F:4A79E 8 m0339
+peek F:4A992 2 n0339
+peek F:4AB42 2 p0339
+peek F:4AB4C 2 q0339
+peek F:4A956 1 f0339
+step
+peek F:4AB8C 2 k0340
+peek F:4AA0C 2 c0340
+peek F:4A79E 8 m0340
+peek F:4A992 2 n0340
+peek F:4AB42 2 p0340
+peek F:4AB4C 2 q0340
+peek F:4A956 1 f0340
+step
+peek F:4AB8C 2 k0341
+peek F:4AA0C 2 c0341
+peek F:4A79E 8 m0341
+peek F:4A992 2 n0341
+peek F:4AB42 2 p0341
+peek F:4AB4C 2 q0341
+peek F:4A956 1 f0341
+step
+peek F:4AB8C 2 k0342
+peek F:4AA0C 2 c0342
+peek F:4A79E 8 m0342
+peek F:4A992 2 n0342
+peek F:4AB42 2 p0342
+peek F:4AB4C 2 q0342
+peek F:4A956 1 f0342
+step
+peek F:4AB8C 2 k0343
+peek F:4AA0C 2 c0343
+peek F:4A79E 8 m0343
+peek F:4A992 2 n0343
+peek F:4AB42 2 p0343
+peek F:4AB4C 2 q0343
+peek F:4A956 1 f0343
+step
+peek F:4AB8C 2 k0344
+peek F:4AA0C 2 c0344
+peek F:4A79E 8 m0344
+peek F:4A992 2 n0344
+peek F:4AB42 2 p0344
+peek F:4AB4C 2 q0344
+peek F:4A956 1 f0344
+step
+peek F:4AB8C 2 k0345
+peek F:4AA0C 2 c0345
+peek F:4A79E 8 m0345
+peek F:4A992 2 n0345
+peek F:4AB42 2 p0345
+peek F:4AB4C 2 q0345
+peek F:4A956 1 f0345
+step
+peek F:4AB8C 2 k0346
+peek F:4AA0C 2 c0346
+peek F:4A79E 8 m0346
+peek F:4A992 2 n0346
+peek F:4AB42 2 p0346
+peek F:4AB4C 2 q0346
+peek F:4A956 1 f0346
+step
+peek F:4AB8C 2 k0347
+peek F:4AA0C 2 c0347
+peek F:4A79E 8 m0347
+peek F:4A992 2 n0347
+peek F:4AB42 2 p0347
+peek F:4AB4C 2 q0347
+peek F:4A956 1 f0347
+step
+peek F:4AB8C 2 k0348
+peek F:4AA0C 2 c0348
+peek F:4A79E 8 m0348
+peek F:4A992 2 n0348
+peek F:4AB42 2 p0348
+peek F:4AB4C 2 q0348
+peek F:4A956 1 f0348
+step
+peek F:4AB8C 2 k0349
+peek F:4AA0C 2 c0349
+peek F:4A79E 8 m0349
+peek F:4A992 2 n0349
+peek F:4AB42 2 p0349
+peek F:4AB4C 2 q0349
+peek F:4A956 1 f0349
+step
+peek F:4AB8C 2 k0350
+peek F:4AA0C 2 c0350
+peek F:4A79E 8 m0350
+peek F:4A992 2 n0350
+peek F:4AB42 2 p0350
+peek F:4AB4C 2 q0350
+peek F:4A956 1 f0350
+step
+peek F:4AB8C 2 k0351
+peek F:4AA0C 2 c0351
+peek F:4A79E 8 m0351
+peek F:4A992 2 n0351
+peek F:4AB42 2 p0351
+peek F:4AB4C 2 q0351
+peek F:4A956 1 f0351
+step
+peek F:4AB8C 2 k0352
+peek F:4AA0C 2 c0352
+peek F:4A79E 8 m0352
+peek F:4A992 2 n0352
+peek F:4AB42 2 p0352
+peek F:4AB4C 2 q0352
+peek F:4A956 1 f0352
+step
+peek F:4AB8C 2 k0353
+peek F:4AA0C 2 c0353
+peek F:4A79E 8 m0353
+peek F:4A992 2 n0353
+peek F:4AB42 2 p0353
+peek F:4AB4C 2 q0353
+peek F:4A956 1 f0353
+step
+peek F:4AB8C 2 k0354
+peek F:4AA0C 2 c0354
+peek F:4A79E 8 m0354
+peek F:4A992 2 n0354
+peek F:4AB42 2 p0354
+peek F:4AB4C 2 q0354
+peek F:4A956 1 f0354
+step
+peek F:4AB8C 2 k0355
+peek F:4AA0C 2 c0355
+peek F:4A79E 8 m0355
+peek F:4A992 2 n0355
+peek F:4AB42 2 p0355
+peek F:4AB4C 2 q0355
+peek F:4A956 1 f0355
+step
+peek F:4AB8C 2 k0356
+peek F:4AA0C 2 c0356
+peek F:4A79E 8 m0356
+peek F:4A992 2 n0356
+peek F:4AB42 2 p0356
+peek F:4AB4C 2 q0356
+peek F:4A956 1 f0356
+step
+peek F:4AB8C 2 k0357
+peek F:4AA0C 2 c0357
+peek F:4A79E 8 m0357
+peek F:4A992 2 n0357
+peek F:4AB42 2 p0357
+peek F:4AB4C 2 q0357
+peek F:4A956 1 f0357
+step
+peek F:4AB8C 2 k0358
+peek F:4AA0C 2 c0358
+peek F:4A79E 8 m0358
+peek F:4A992 2 n0358
+peek F:4AB42 2 p0358
+peek F:4AB4C 2 q0358
+peek F:4A956 1 f0358
+step
+peek F:4AB8C 2 k0359
+peek F:4AA0C 2 c0359
+peek F:4A79E 8 m0359
+peek F:4A992 2 n0359
+peek F:4AB42 2 p0359
+peek F:4AB4C 2 q0359
+peek F:4A956 1 f0359
+step
+peek F:4AB8C 2 k0360
+peek F:4AA0C 2 c0360
+peek F:4A79E 8 m0360
+peek F:4A992 2 n0360
+peek F:4AB42 2 p0360
+peek F:4AB4C 2 q0360
+peek F:4A956 1 f0360
+step
+peek F:4AB8C 2 k0361
+peek F:4AA0C 2 c0361
+peek F:4A79E 8 m0361
+peek F:4A992 2 n0361
+peek F:4AB42 2 p0361
+peek F:4AB4C 2 q0361
+peek F:4A956 1 f0361
+step
+peek F:4AB8C 2 k0362
+peek F:4AA0C 2 c0362
+peek F:4A79E 8 m0362
+peek F:4A992 2 n0362
+peek F:4AB42 2 p0362
+peek F:4AB4C 2 q0362
+peek F:4A956 1 f0362
+step
+peek F:4AB8C 2 k0363
+peek F:4AA0C 2 c0363
+peek F:4A79E 8 m0363
+peek F:4A992 2 n0363
+peek F:4AB42 2 p0363
+peek F:4AB4C 2 q0363
+peek F:4A956 1 f0363
+step
+peek F:4AB8C 2 k0364
+peek F:4AA0C 2 c0364
+peek F:4A79E 8 m0364
+peek F:4A992 2 n0364
+peek F:4AB42 2 p0364
+peek F:4AB4C 2 q0364
+peek F:4A956 1 f0364
+step
+peek F:4AB8C 2 k0365
+peek F:4AA0C 2 c0365
+peek F:4A79E 8 m0365
+peek F:4A992 2 n0365
+peek F:4AB42 2 p0365
+peek F:4AB4C 2 q0365
+peek F:4A956 1 f0365
+step
+peek F:4AB8C 2 k0366
+peek F:4AA0C 2 c0366
+peek F:4A79E 8 m0366
+peek F:4A992 2 n0366
+peek F:4AB42 2 p0366
+peek F:4AB4C 2 q0366
+peek F:4A956 1 f0366
+step
+peek F:4AB8C 2 k0367
+peek F:4AA0C 2 c0367
+peek F:4A79E 8 m0367
+peek F:4A992 2 n0367
+peek F:4AB42 2 p0367
+peek F:4AB4C 2 q0367
+peek F:4A956 1 f0367
+step
+peek F:4AB8C 2 k0368
+peek F:4AA0C 2 c0368
+peek F:4A79E 8 m0368
+peek F:4A992 2 n0368
+peek F:4AB42 2 p0368
+peek F:4AB4C 2 q0368
+peek F:4A956 1 f0368
+step
+peek F:4AB8C 2 k0369
+peek F:4AA0C 2 c0369
+peek F:4A79E 8 m0369
+peek F:4A992 2 n0369
+peek F:4AB42 2 p0369
+peek F:4AB4C 2 q0369
+peek F:4A956 1 f0369
+step
+peek F:4AB8C 2 k0370
+peek F:4AA0C 2 c0370
+peek F:4A79E 8 m0370
+peek F:4A992 2 n0370
+peek F:4AB42 2 p0370
+peek F:4AB4C 2 q0370
+peek F:4A956 1 f0370
+step
+peek F:4AB8C 2 k0371
+peek F:4AA0C 2 c0371
+peek F:4A79E 8 m0371
+peek F:4A992 2 n0371
+peek F:4AB42 2 p0371
+peek F:4AB4C 2 q0371
+peek F:4A956 1 f0371
+step
+peek F:4AB8C 2 k0372
+peek F:4AA0C 2 c0372
+peek F:4A79E 8 m0372
+peek F:4A992 2 n0372
+peek F:4AB42 2 p0372
+peek F:4AB4C 2 q0372
+peek F:4A956 1 f0372
+step
+peek F:4AB8C 2 k0373
+peek F:4AA0C 2 c0373
+peek F:4A79E 8 m0373
+peek F:4A992 2 n0373
+peek F:4AB42 2 p0373
+peek F:4AB4C 2 q0373
+peek F:4A956 1 f0373
+step
+peek F:4AB8C 2 k0374
+peek F:4AA0C 2 c0374
+peek F:4A79E 8 m0374
+peek F:4A992 2 n0374
+peek F:4AB42 2 p0374
+peek F:4AB4C 2 q0374
+peek F:4A956 1 f0374
+step
+peek F:4AB8C 2 k0375
+peek F:4AA0C 2 c0375
+peek F:4A79E 8 m0375
+peek F:4A992 2 n0375
+peek F:4AB42 2 p0375
+peek F:4AB4C 2 q0375
+peek F:4A956 1 f0375
+step
+peek F:4AB8C 2 k0376
+peek F:4AA0C 2 c0376
+peek F:4A79E 8 m0376
+peek F:4A992 2 n0376
+peek F:4AB42 2 p0376
+peek F:4AB4C 2 q0376
+peek F:4A956 1 f0376
+step
+peek F:4AB8C 2 k0377
+peek F:4AA0C 2 c0377
+peek F:4A79E 8 m0377
+peek F:4A992 2 n0377
+peek F:4AB42 2 p0377
+peek F:4AB4C 2 q0377
+peek F:4A956 1 f0377
+step
+peek F:4AB8C 2 k0378
+peek F:4AA0C 2 c0378
+peek F:4A79E 8 m0378
+peek F:4A992 2 n0378
+peek F:4AB42 2 p0378
+peek F:4AB4C 2 q0378
+peek F:4A956 1 f0378
+step
+peek F:4AB8C 2 k0379
+peek F:4AA0C 2 c0379
+peek F:4A79E 8 m0379
+peek F:4A992 2 n0379
+peek F:4AB42 2 p0379
+peek F:4AB4C 2 q0379
+peek F:4A956 1 f0379
+step
+peek F:4AB8C 2 k0380
+peek F:4AA0C 2 c0380
+peek F:4A79E 8 m0380
+peek F:4A992 2 n0380
+peek F:4AB42 2 p0380
+peek F:4AB4C 2 q0380
+peek F:4A956 1 f0380
+step
+peek F:4AB8C 2 k0381
+peek F:4AA0C 2 c0381
+peek F:4A79E 8 m0381
+peek F:4A992 2 n0381
+peek F:4AB42 2 p0381
+peek F:4AB4C 2 q0381
+peek F:4A956 1 f0381
+step
+peek F:4AB8C 2 k0382
+peek F:4AA0C 2 c0382
+peek F:4A79E 8 m0382
+peek F:4A992 2 n0382
+peek F:4AB42 2 p0382
+peek F:4AB4C 2 q0382
+peek F:4A956 1 f0382
+step
+peek F:4AB8C 2 k0383
+peek F:4AA0C 2 c0383
+peek F:4A79E 8 m0383
+peek F:4A992 2 n0383
+peek F:4AB42 2 p0383
+peek F:4AB4C 2 q0383
+peek F:4A956 1 f0383
+step
+peek F:4AB8C 2 k0384
+peek F:4AA0C 2 c0384
+peek F:4A79E 8 m0384
+peek F:4A992 2 n0384
+peek F:4AB42 2 p0384
+peek F:4AB4C 2 q0384
+peek F:4A956 1 f0384
+step
+peek F:4AB8C 2 k0385
+peek F:4AA0C 2 c0385
+peek F:4A79E 8 m0385
+peek F:4A992 2 n0385
+peek F:4AB42 2 p0385
+peek F:4AB4C 2 q0385
+peek F:4A956 1 f0385
+step
+peek F:4AB8C 2 k0386
+peek F:4AA0C 2 c0386
+peek F:4A79E 8 m0386
+peek F:4A992 2 n0386
+peek F:4AB42 2 p0386
+peek F:4AB4C 2 q0386
+peek F:4A956 1 f0386
+step
+peek F:4AB8C 2 k0387
+peek F:4AA0C 2 c0387
+peek F:4A79E 8 m0387
+peek F:4A992 2 n0387
+peek F:4AB42 2 p0387
+peek F:4AB4C 2 q0387
+peek F:4A956 1 f0387
+step
+peek F:4AB8C 2 k0388
+peek F:4AA0C 2 c0388
+peek F:4A79E 8 m0388
+peek F:4A992 2 n0388
+peek F:4AB42 2 p0388
+peek F:4AB4C 2 q0388
+peek F:4A956 1 f0388
+step
+peek F:4AB8C 2 k0389
+peek F:4AA0C 2 c0389
+peek F:4A79E 8 m0389
+peek F:4A992 2 n0389
+peek F:4AB42 2 p0389
+peek F:4AB4C 2 q0389
+peek F:4A956 1 f0389
+step
+peek F:4AB8C 2 k0390
+peek F:4AA0C 2 c0390
+peek F:4A79E 8 m0390
+peek F:4A992 2 n0390
+peek F:4AB42 2 p0390
+peek F:4AB4C 2 q0390
+peek F:4A956 1 f0390
+step
+peek F:4AB8C 2 k0391
+peek F:4AA0C 2 c0391
+peek F:4A79E 8 m0391
+peek F:4A992 2 n0391
+peek F:4AB42 2 p0391
+peek F:4AB4C 2 q0391
+peek F:4A956 1 f0391
+step
+peek F:4AB8C 2 k0392
+peek F:4AA0C 2 c0392
+peek F:4A79E 8 m0392
+peek F:4A992 2 n0392
+peek F:4AB42 2 p0392
+peek F:4AB4C 2 q0392
+peek F:4A956 1 f0392
+step
+peek F:4AB8C 2 k0393
+peek F:4AA0C 2 c0393
+peek F:4A79E 8 m0393
+peek F:4A992 2 n0393
+peek F:4AB42 2 p0393
+peek F:4AB4C 2 q0393
+peek F:4A956 1 f0393
+step
+peek F:4AB8C 2 k0394
+peek F:4AA0C 2 c0394
+peek F:4A79E 8 m0394
+peek F:4A992 2 n0394
+peek F:4AB42 2 p0394
+peek F:4AB4C 2 q0394
+peek F:4A956 1 f0394
+step
+peek F:4AB8C 2 k0395
+peek F:4AA0C 2 c0395
+peek F:4A79E 8 m0395
+peek F:4A992 2 n0395
+peek F:4AB42 2 p0395
+peek F:4AB4C 2 q0395
+peek F:4A956 1 f0395
+step
+peek F:4AB8C 2 k0396
+peek F:4AA0C 2 c0396
+peek F:4A79E 8 m0396
+peek F:4A992 2 n0396
+peek F:4AB42 2 p0396
+peek F:4AB4C 2 q0396
+peek F:4A956 1 f0396
+step
+peek F:4AB8C 2 k0397
+peek F:4AA0C 2 c0397
+peek F:4A79E 8 m0397
+peek F:4A992 2 n0397
+peek F:4AB42 2 p0397
+peek F:4AB4C 2 q0397
+peek F:4A956 1 f0397
+step
+peek F:4AB8C 2 k0398
+peek F:4AA0C 2 c0398
+peek F:4A79E 8 m0398
+peek F:4A992 2 n0398
+peek F:4AB42 2 p0398
+peek F:4AB4C 2 q0398
+peek F:4A956 1 f0398
+step
+peek F:4AB8C 2 k0399
+peek F:4AA0C 2 c0399
+peek F:4A79E 8 m0399
+peek F:4A992 2 n0399
+peek F:4AB42 2 p0399
+peek F:4AB4C 2 q0399
+peek F:4A956 1 f0399

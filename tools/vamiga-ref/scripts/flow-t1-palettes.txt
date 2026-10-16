@@ -1,0 +1,170 @@
+# Task 1 (note 08 section 4): the 32 colour registers and the fade variables in each reference snapshot (the screen the snapshot shows).
+# run: flock /tmp/ref.lock build/vamiga-ref/ref --rom disks/kick12.rom --adf extracted/interceptor-autoboot.adf --script tools/vamiga-ref/scripts/flow-t1-palettes.txt --log extracted/captures/logs/flow-t1-palettes.txt
+restore extracted/captures/credits.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_credits
+peek F:4A958 1 credits_lvl
+peek F:4A959 1 credits_tgt
+peek F:4A95B 1 credits_cnt
+peek F:4A95C 1 credits_rl
+peek F:4A95E 1 credits_mode
+peek F:4A84D 1 credits_gate
+peek F:1A6BC 4 credits_st
+peek F:4A802 6 credits_ids
+peek F:4A898 1 credits_tmd
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_flow-menu
+peek F:4A958 1 flow-menu_lvl
+peek F:4A959 1 flow-menu_tgt
+peek F:4A95B 1 flow-menu_cnt
+peek F:4A95C 1 flow-menu_rl
+peek F:4A95E 1 flow-menu_mode
+peek F:4A84D 1 flow-menu_gate
+peek F:1A6BC 4 flow-menu_st
+peek F:4A802 6 flow-menu_ids
+peek F:4A898 1 flow-menu_tmd
+thaw
+restore extracted/captures/flow-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_flow-prompt
+peek F:4A958 1 flow-prompt_lvl
+peek F:4A959 1 flow-prompt_tgt
+peek F:4A95B 1 flow-prompt_cnt
+peek F:4A95C 1 flow-prompt_rl
+peek F:4A95E 1 flow-prompt_mode
+peek F:4A84D 1 flow-prompt_gate
+peek F:1A6BC 4 flow-prompt_st
+peek F:4A802 6 flow-prompt_ids
+peek F:4A898 1 flow-prompt_tmd
+thaw
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_location-select
+peek F:4A958 1 location-select_lvl
+peek F:4A959 1 location-select_tgt
+peek F:4A95B 1 location-select_cnt
+peek F:4A95C 1 location-select_rl
+peek F:4A95E 1 location-select_mode
+peek F:4A84D 1 location-select_gate
+peek F:1A6BC 4 location-select_st
+peek F:4A802 6 location-select_ids
+peek F:4A898 1 location-select_tmd
+thaw
+restore extracted/captures/aircraft-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_aircraft-select
+peek F:4A958 1 aircraft-select_lvl
+peek F:4A959 1 aircraft-select_tgt
+peek F:4A95B 1 aircraft-select_cnt
+peek F:4A95C 1 aircraft-select_rl
+peek F:4A95E 1 aircraft-select_mode
+peek F:4A84D 1 aircraft-select_gate
+peek F:1A6BC 4 aircraft-select_st
+peek F:4A802 6 aircraft-select_ids
+peek F:4A898 1 aircraft-select_tmd
+thaw
+restore extracted/captures/code-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_code-prompt
+peek F:4A958 1 code-prompt_lvl
+peek F:4A959 1 code-prompt_tgt
+peek F:4A95B 1 code-prompt_cnt
+peek F:4A95C 1 code-prompt_rl
+peek F:4A95E 1 code-prompt_mode
+peek F:4A84D 1 code-prompt_gate
+peek F:1A6BC 4 code-prompt_st
+peek F:4A802 6 code-prompt_ids
+peek F:4A898 1 code-prompt_tmd
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_airborne
+peek F:4A958 1 airborne_lvl
+peek F:4A959 1 airborne_tgt
+peek F:4A95B 1 airborne_cnt
+peek F:4A95C 1 airborne_rl
+peek F:4A95E 1 airborne_mode
+peek F:4A84D 1 airborne_gate
+peek F:1A6BC 4 airborne_st
+peek F:4A802 6 airborne_ids
+peek F:4A898 1 airborne_tmd
+thaw
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_cockpit-ground
+peek F:4A958 1 cockpit-ground_lvl
+peek F:4A959 1 cockpit-ground_tgt
+peek F:4A95B 1 cockpit-ground_cnt
+peek F:4A95C 1 cockpit-ground_rl
+peek F:4A95E 1 cockpit-ground_mode
+peek F:4A84D 1 cockpit-ground_gate
+peek F:1A6BC 4 cockpit-ground_st
+peek F:4A802 6 cockpit-ground_ids
+peek F:4A898 1 cockpit-ground_tmd
+thaw
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_cockpit-carrier
+peek F:4A958 1 cockpit-carrier_lvl
+peek F:4A959 1 cockpit-carrier_tgt
+peek F:4A95B 1 cockpit-carrier_cnt
+peek F:4A95C 1 cockpit-carrier_rl
+peek F:4A95E 1 cockpit-carrier_mode
+peek F:4A84D 1 cockpit-carrier_gate
+peek F:1A6BC 4 cockpit-carrier_st
+peek F:4A802 6 cockpit-carrier_ids
+peek F:4A898 1 cockpit-carrier_tmd
+thaw
+restore extracted/captures/demo.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_demo
+peek F:4A958 1 demo_lvl
+peek F:4A959 1 demo_tgt
+peek F:4A95B 1 demo_cnt
+peek F:4A95C 1 demo_rl
+peek F:4A95E 1 demo_mode
+peek F:4A84D 1 demo_gate
+peek F:1A6BC 4 demo_st
+peek F:4A802 6 demo_ids
+peek F:4A898 1 demo_tmd
+thaw
+restore extracted/captures/qual-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_qual-prompt
+peek F:4A958 1 qual-prompt_lvl
+peek F:4A959 1 qual-prompt_tgt
+peek F:4A95B 1 qual-prompt_cnt
+peek F:4A95C 1 qual-prompt_rl
+peek F:4A95E 1 qual-prompt_mode
+peek F:4A84D 1 qual-prompt_gate
+peek F:1A6BC 4 qual-prompt_st
+peek F:4A802 6 qual-prompt_ids
+peek F:4A898 1 qual-prompt_tmd
+thaw
+restore extracted/captures/training-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+colors pal_training-menu
+peek F:4A958 1 training-menu_lvl
+peek F:4A959 1 training-menu_tgt
+peek F:4A95B 1 training-menu_cnt
+peek F:4A95C 1 training-menu_rl
+peek F:4A95E 1 training-menu_mode
+peek F:4A84D 1 training-menu_gate
+peek F:1A6BC 4 training-menu_st
+peek F:4A802 6 training-menu_ids
+peek F:4A898 1 training-menu_tmd
+thaw

@@ -1,0 +1,38 @@
+# The carrier record (record 14, 0x4CE3C) and the player's start block in the flight snapshots (note 05, 17.17).
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4CE3C 32 airborne_carrier
+peek F:4CEA2 6 airborne_carrier_att
+peek F:4A900 2 airborne_start
+peek F:4ABD4 2 airborne_variant
+peek F:4ABB0 2 airborne_clock
+peek F:4A8E3 1 airborne_restart_flag
+peek F:4A95F 1 airborne_level
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4CE3C 32 ground_carrier
+peek F:4CEA2 6 ground_carrier_att
+peek F:4A900 2 ground_start
+peek F:4ABD4 2 ground_variant
+peek F:4ABB0 2 ground_clock
+peek F:4A8E3 1 ground_restart_flag
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4CE3C 32 carrier_carrier
+peek F:4CEA2 6 carrier_carrier_att
+peek F:4A900 2 carrier_start
+peek F:4ABD4 2 carrier_variant
+peek F:4ABB0 2 carrier_clock
+peek F:4A8E3 1 carrier_restart_flag
+peek F:4B23C 32 carrier_player
+restore extracted/captures/demo.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4CE3C 32 demo_carrier
+peek F:4CEA2 6 demo_carrier_att
+peek F:4A900 2 demo_start
+peek F:4ABD4 2 demo_variant
+peek F:4ABB0 2 demo_clock

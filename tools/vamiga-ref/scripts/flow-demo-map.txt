@@ -1,0 +1,12 @@
+# Note 06 open question 6: the demo (mode 3) variables of the map and view paths.
+restore extracted/captures/demo.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A90F 1 d90f
+peek F:4A865 1 d865
+peek F:4A83D 1 view
+peek F:4A966 1 cam
+peek F:4A965 1 c965
+peek F:4A86C 1 look
+peek F:4A86D 1 ring
+peek F:4A95E 1 mode

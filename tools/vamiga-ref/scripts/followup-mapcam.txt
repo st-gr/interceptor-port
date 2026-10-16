@@ -1,0 +1,21 @@
+# Task 2 (milestone 6): the map overview camera of the location screen and the numbers' pixels (note 04 "The map numbers").
+# build/vamiga-ref/ref --rom disks/kick12.rom --adf extracted/interceptor-autoboot.adf --script tools/vamiga-ref/scripts/followup-mapcam.txt --log extracted/captures/logs/followup-mapcam.txt
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A700 2336 s71
+peek F:4B23C 512 rec0
+peek F:4A95E 1 mode
+peek F:4A966 1 cam
+peek F:4A900 1 loc
+peek F:4A90F 1 v90f
+peek F:4A865 1 v865
+peek F:4A83D 1 v83d
+peek F:4A93B 1 v93b
+frame extracted/captures/followup-mapcam-0.ppm
+step
+peek F:4A93B 1 v93b1
+frame extracted/captures/followup-mapcam-1.ppm
+step
+peek F:4A93B 1 v93b2
+frame extracted/captures/followup-mapcam-2.ppm

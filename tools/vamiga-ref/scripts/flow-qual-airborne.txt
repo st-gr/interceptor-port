@@ -1,0 +1,20 @@
+# note 08 section 9: qualification, from qual-prompt.vasnap: countercode, briefing (any key), catapult launch with F10, and a snapshot in the
+# air (qual-airborne.vasnap: mode 9, gear down, hook up, just after lift-off).
+# Run with --log extracted/captures/logs/flow-qual-airborne.txt
+restore extracted/captures/qual-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt F7BD
+wait 14
+frame extracted/captures/logs/qual-briefing.ppm
+key SPACE
+wait 8
+frame extracted/captures/logs/qual-deck.ppm
+key F10 0.5
+wait 3
+freeze
+stepuntil F:4B240 1 eq 0 600
+stepuntil F:4B23C 1 and 0x10 1
+peek F:4B23C 128 air
+frame extracted/captures/logs/qual-airborne.ppm
+snapshot extracted/captures/qual-airborne.vasnap
+thaw

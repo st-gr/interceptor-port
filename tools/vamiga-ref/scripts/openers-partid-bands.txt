@@ -1,0 +1,94 @@
+# Part id +0x7B (note 04a, section 8a): pitch bands of V:4A923. Dive from the airborne snapshot, holding UP to each pitch word; peeks the band, gate latch, part id, eye measure and step counter.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+holduntil UP F:4B2A2 gt 500 8
+freeze
+log target_500
+peek F:4B2A2 2 pitchw
+peek F:4AB40 4 cam_pitch
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4B254 4 y
+peek F:4B23C 4 w0
+peek F:4A992 2 step
+thaw
+holduntil UP F:4B2A2 gt 760 8
+freeze
+log target_760
+peek F:4B2A2 2 pitchw
+peek F:4AB40 4 cam_pitch
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4B254 4 y
+peek F:4B23C 4 w0
+peek F:4A992 2 step
+thaw
+holduntil UP F:4B2A2 gt 840 8
+freeze
+log target_840
+peek F:4B2A2 2 pitchw
+peek F:4AB40 4 cam_pitch
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4B254 4 y
+peek F:4B23C 4 w0
+peek F:4A992 2 step
+thaw
+holduntil UP F:4B2A2 gt 2300 8
+freeze
+log target_2300
+peek F:4B2A2 2 pitchw
+peek F:4AB40 4 cam_pitch
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4B254 4 y
+peek F:4B23C 4 w0
+peek F:4A992 2 step
+thaw
+holduntil UP F:4B2A2 gt 2440 8
+freeze
+log target_2440
+peek F:4B2A2 2 pitchw
+peek F:4AB40 4 cam_pitch
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4B254 4 y
+peek F:4B23C 4 w0
+peek F:4A992 2 step
+thaw
+holduntil UP F:4B2A2 gt 4700 8
+freeze
+log target_4700
+peek F:4B2A2 2 pitchw
+peek F:4AB40 4 cam_pitch
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4B254 4 y
+peek F:4B23C 4 w0
+peek F:4A992 2 step
+thaw
+holduntil UP F:4B2A2 gt 4900 8
+freeze
+log target_4900
+peek F:4B2A2 2 pitchw
+peek F:4AB40 4 cam_pitch
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4B254 4 y
+peek F:4B23C 4 w0
+peek F:4A992 2 step
+thaw

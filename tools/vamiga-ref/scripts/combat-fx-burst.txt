@@ -1,0 +1,1567 @@
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+copy F:25F44 F:2605C 20
+poke F:4BA3C 4 0x13C01000
+poke F:4BA40 4 0x00010041
+poke F:4BA44 4 0x0042030F
+poke F:4BA48 4 0x077C3C1D
+poke F:4BA4C 4 0x00000AF5
+poke F:4BA50 4 0x10477CFF
+poke F:4BA54 4 0x000AF546
+poke F:4BA58 4 0x10BC1D96
+poke F:4BA5C 4 0x02010000
+poke F:4BA60 4 0x40000000
+poke F:4BA64 4 0x00000078
+poke F:4BA68 4 0xFFFF0000
+poke F:4BA6C 4 0x00000000
+poke F:4BA70 4 0x00000000
+poke F:4BA74 4 0xFF010000
+poke F:4BA78 4 0x0000FFFF
+poke F:4BA7C 4 0xE4E80000
+poke F:4BA80 4 0x21C00000
+poke F:4BA84 4 0x32940000
+poke F:4BA88 4 0x00000000
+poke F:4BA8C 4 0x00000000
+poke F:4BA90 4 0x00000000
+poke F:4BA94 4 0x00000000
+poke F:4BA98 4 0x00000424
+poke F:4BA9C 4 0x01F4120D
+poke F:4BAA0 4 0x000066F8
+poke F:4BAA4 4 0x08D00000
+poke F:4BAA8 4 0x10B910B9
+poke F:4BAAC 4 0x00FF0061
+poke F:4BAB0 4 0x798C0001
+poke F:4BAB4 4 0x000003FF
+poke F:4BAB8 4 0x00031400
+poke F:4BABC 4 0x38670000
+poke F:4BAC0 4 0x1E3E0F5A
+poke F:4BAC4 4 0x3725E35F
+poke F:4BAC8 4 0xE5F2207C
+poke F:4BACC 4 0x30993867
+poke F:4BAD0 4 0x0F5AE5F1
+poke F:4BAD4 4 0x00003725
+poke F:4BAD8 4 0x207C1E3E
+poke F:4BADC 4 0xE35F3099
+poke F:4A910 1 0xFF
+peek F:4B23C 2 b0_4B23C
+peek F:4B23E 2 b0_4B23E
+peek F:4BA3C 2 b0_4BA3C
+peek F:4BA3E 2 b0_4BA3E
+peek F:4BA4C 2 b0_4BA4C
+peek F:4BA79 1 b0_4BA79
+peek F:4BA7B 1 b0_4BA7B
+peek F:54E70 2 b0_54E70
+peek F:4A992 2 b0_4A992
+peek F:4BA7C 2 b0_trail
+peek F:54E74 72 b0_ring
+step 1
+peek F:4B23C 2 b1_4B23C
+peek F:4B23E 2 b1_4B23E
+peek F:4BA3C 2 b1_4BA3C
+peek F:4BA3E 2 b1_4BA3E
+peek F:4BA4C 2 b1_4BA4C
+peek F:4BA79 1 b1_4BA79
+peek F:4BA7B 1 b1_4BA7B
+peek F:54E70 2 b1_54E70
+peek F:4A992 2 b1_4A992
+peek F:4BA7C 2 b1_trail
+peek F:54E74 72 b1_ring
+step 1
+peek F:4B23C 2 b2_4B23C
+peek F:4B23E 2 b2_4B23E
+peek F:4BA3C 2 b2_4BA3C
+peek F:4BA3E 2 b2_4BA3E
+peek F:4BA4C 2 b2_4BA4C
+peek F:4BA79 1 b2_4BA79
+peek F:4BA7B 1 b2_4BA7B
+peek F:54E70 2 b2_54E70
+peek F:4A992 2 b2_4A992
+peek F:4BA7C 2 b2_trail
+peek F:54E74 72 b2_ring
+step 1
+peek F:4B23C 2 b3_4B23C
+peek F:4B23E 2 b3_4B23E
+peek F:4BA3C 2 b3_4BA3C
+peek F:4BA3E 2 b3_4BA3E
+peek F:4BA4C 2 b3_4BA4C
+peek F:4BA79 1 b3_4BA79
+peek F:4BA7B 1 b3_4BA7B
+peek F:54E70 2 b3_54E70
+peek F:4A992 2 b3_4A992
+peek F:4BA7C 2 b3_trail
+peek F:54E74 72 b3_ring
+step 1
+frame extracted/captures/fx-burst-004.ppm
+peek F:4B23C 2 b4_4B23C
+peek F:4B23E 2 b4_4B23E
+peek F:4BA3C 2 b4_4BA3C
+peek F:4BA3E 2 b4_4BA3E
+peek F:4BA4C 2 b4_4BA4C
+peek F:4BA79 1 b4_4BA79
+peek F:4BA7B 1 b4_4BA7B
+peek F:54E70 2 b4_54E70
+peek F:4A992 2 b4_4A992
+peek F:4BA7C 2 b4_trail
+peek F:54E74 72 b4_ring
+step 1
+peek F:4B23C 2 b5_4B23C
+peek F:4B23E 2 b5_4B23E
+peek F:4BA3C 2 b5_4BA3C
+peek F:4BA3E 2 b5_4BA3E
+peek F:4BA4C 2 b5_4BA4C
+peek F:4BA79 1 b5_4BA79
+peek F:4BA7B 1 b5_4BA7B
+peek F:54E70 2 b5_54E70
+peek F:4A992 2 b5_4A992
+peek F:4BA7C 2 b5_trail
+peek F:54E74 72 b5_ring
+step 1
+peek F:4B23C 2 b6_4B23C
+peek F:4B23E 2 b6_4B23E
+peek F:4BA3C 2 b6_4BA3C
+peek F:4BA3E 2 b6_4BA3E
+peek F:4BA4C 2 b6_4BA4C
+peek F:4BA79 1 b6_4BA79
+peek F:4BA7B 1 b6_4BA7B
+peek F:54E70 2 b6_54E70
+peek F:4A992 2 b6_4A992
+peek F:4BA7C 2 b6_trail
+peek F:54E74 72 b6_ring
+step 1
+peek F:4B23C 2 b7_4B23C
+peek F:4B23E 2 b7_4B23E
+peek F:4BA3C 2 b7_4BA3C
+peek F:4BA3E 2 b7_4BA3E
+peek F:4BA4C 2 b7_4BA4C
+peek F:4BA79 1 b7_4BA79
+peek F:4BA7B 1 b7_4BA7B
+peek F:54E70 2 b7_54E70
+peek F:4A992 2 b7_4A992
+peek F:4BA7C 2 b7_trail
+peek F:54E74 72 b7_ring
+step 1
+frame extracted/captures/fx-burst-008.ppm
+peek F:4B23C 2 b8_4B23C
+peek F:4B23E 2 b8_4B23E
+peek F:4BA3C 2 b8_4BA3C
+peek F:4BA3E 2 b8_4BA3E
+peek F:4BA4C 2 b8_4BA4C
+peek F:4BA79 1 b8_4BA79
+peek F:4BA7B 1 b8_4BA7B
+peek F:54E70 2 b8_54E70
+peek F:4A992 2 b8_4A992
+peek F:4BA7C 2 b8_trail
+peek F:54E74 72 b8_ring
+step 1
+peek F:4B23C 2 b9_4B23C
+peek F:4B23E 2 b9_4B23E
+peek F:4BA3C 2 b9_4BA3C
+peek F:4BA3E 2 b9_4BA3E
+peek F:4BA4C 2 b9_4BA4C
+peek F:4BA79 1 b9_4BA79
+peek F:4BA7B 1 b9_4BA7B
+peek F:54E70 2 b9_54E70
+peek F:4A992 2 b9_4A992
+peek F:4BA7C 2 b9_trail
+peek F:54E74 72 b9_ring
+step 1
+peek F:4B23C 2 b10_4B23C
+peek F:4B23E 2 b10_4B23E
+peek F:4BA3C 2 b10_4BA3C
+peek F:4BA3E 2 b10_4BA3E
+peek F:4BA4C 2 b10_4BA4C
+peek F:4BA79 1 b10_4BA79
+peek F:4BA7B 1 b10_4BA7B
+peek F:54E70 2 b10_54E70
+peek F:4A992 2 b10_4A992
+peek F:4BA7C 2 b10_trail
+peek F:54E74 72 b10_ring
+step 1
+peek F:4B23C 2 b11_4B23C
+peek F:4B23E 2 b11_4B23E
+peek F:4BA3C 2 b11_4BA3C
+peek F:4BA3E 2 b11_4BA3E
+peek F:4BA4C 2 b11_4BA4C
+peek F:4BA79 1 b11_4BA79
+peek F:4BA7B 1 b11_4BA7B
+peek F:54E70 2 b11_54E70
+peek F:4A992 2 b11_4A992
+peek F:4BA7C 2 b11_trail
+peek F:54E74 72 b11_ring
+step 1
+frame extracted/captures/fx-burst-012.ppm
+peek F:4B23C 2 b12_4B23C
+peek F:4B23E 2 b12_4B23E
+peek F:4BA3C 2 b12_4BA3C
+peek F:4BA3E 2 b12_4BA3E
+peek F:4BA4C 2 b12_4BA4C
+peek F:4BA79 1 b12_4BA79
+peek F:4BA7B 1 b12_4BA7B
+peek F:54E70 2 b12_54E70
+peek F:4A992 2 b12_4A992
+peek F:4BA7C 2 b12_trail
+peek F:54E74 72 b12_ring
+step 1
+peek F:4B23C 2 b13_4B23C
+peek F:4B23E 2 b13_4B23E
+peek F:4BA3C 2 b13_4BA3C
+peek F:4BA3E 2 b13_4BA3E
+peek F:4BA4C 2 b13_4BA4C
+peek F:4BA79 1 b13_4BA79
+peek F:4BA7B 1 b13_4BA7B
+peek F:54E70 2 b13_54E70
+peek F:4A992 2 b13_4A992
+peek F:4BA7C 2 b13_trail
+peek F:54E74 72 b13_ring
+step 1
+peek F:4B23C 2 b14_4B23C
+peek F:4B23E 2 b14_4B23E
+peek F:4BA3C 2 b14_4BA3C
+peek F:4BA3E 2 b14_4BA3E
+peek F:4BA4C 2 b14_4BA4C
+peek F:4BA79 1 b14_4BA79
+peek F:4BA7B 1 b14_4BA7B
+peek F:54E70 2 b14_54E70
+peek F:4A992 2 b14_4A992
+peek F:4BA7C 2 b14_trail
+peek F:54E74 72 b14_ring
+step 1
+peek F:4B23C 2 b15_4B23C
+peek F:4B23E 2 b15_4B23E
+peek F:4BA3C 2 b15_4BA3C
+peek F:4BA3E 2 b15_4BA3E
+peek F:4BA4C 2 b15_4BA4C
+peek F:4BA79 1 b15_4BA79
+peek F:4BA7B 1 b15_4BA7B
+peek F:54E70 2 b15_54E70
+peek F:4A992 2 b15_4A992
+peek F:4BA7C 2 b15_trail
+peek F:54E74 72 b15_ring
+step 1
+frame extracted/captures/fx-burst-016.ppm
+peek F:4B23C 2 b16_4B23C
+peek F:4B23E 2 b16_4B23E
+peek F:4BA3C 2 b16_4BA3C
+peek F:4BA3E 2 b16_4BA3E
+peek F:4BA4C 2 b16_4BA4C
+peek F:4BA79 1 b16_4BA79
+peek F:4BA7B 1 b16_4BA7B
+peek F:54E70 2 b16_54E70
+peek F:4A992 2 b16_4A992
+peek F:4BA7C 2 b16_trail
+peek F:54E74 72 b16_ring
+step 1
+peek F:4B23C 2 b17_4B23C
+peek F:4B23E 2 b17_4B23E
+peek F:4BA3C 2 b17_4BA3C
+peek F:4BA3E 2 b17_4BA3E
+peek F:4BA4C 2 b17_4BA4C
+peek F:4BA79 1 b17_4BA79
+peek F:4BA7B 1 b17_4BA7B
+peek F:54E70 2 b17_54E70
+peek F:4A992 2 b17_4A992
+peek F:4BA7C 2 b17_trail
+peek F:54E74 72 b17_ring
+step 1
+peek F:4B23C 2 b18_4B23C
+peek F:4B23E 2 b18_4B23E
+peek F:4BA3C 2 b18_4BA3C
+peek F:4BA3E 2 b18_4BA3E
+peek F:4BA4C 2 b18_4BA4C
+peek F:4BA79 1 b18_4BA79
+peek F:4BA7B 1 b18_4BA7B
+peek F:54E70 2 b18_54E70
+peek F:4A992 2 b18_4A992
+peek F:4BA7C 2 b18_trail
+peek F:54E74 72 b18_ring
+step 1
+peek F:4B23C 2 b19_4B23C
+peek F:4B23E 2 b19_4B23E
+peek F:4BA3C 2 b19_4BA3C
+peek F:4BA3E 2 b19_4BA3E
+peek F:4BA4C 2 b19_4BA4C
+peek F:4BA79 1 b19_4BA79
+peek F:4BA7B 1 b19_4BA7B
+peek F:54E70 2 b19_54E70
+peek F:4A992 2 b19_4A992
+peek F:4BA7C 2 b19_trail
+peek F:54E74 72 b19_ring
+step 1
+frame extracted/captures/fx-burst-020.ppm
+peek F:4B23C 2 b20_4B23C
+peek F:4B23E 2 b20_4B23E
+peek F:4BA3C 2 b20_4BA3C
+peek F:4BA3E 2 b20_4BA3E
+peek F:4BA4C 2 b20_4BA4C
+peek F:4BA79 1 b20_4BA79
+peek F:4BA7B 1 b20_4BA7B
+peek F:54E70 2 b20_54E70
+peek F:4A992 2 b20_4A992
+peek F:4BA7C 2 b20_trail
+peek F:54E74 72 b20_ring
+step 1
+peek F:4B23C 2 b21_4B23C
+peek F:4B23E 2 b21_4B23E
+peek F:4BA3C 2 b21_4BA3C
+peek F:4BA3E 2 b21_4BA3E
+peek F:4BA4C 2 b21_4BA4C
+peek F:4BA79 1 b21_4BA79
+peek F:4BA7B 1 b21_4BA7B
+peek F:54E70 2 b21_54E70
+peek F:4A992 2 b21_4A992
+peek F:4BA7C 2 b21_trail
+peek F:54E74 72 b21_ring
+step 1
+peek F:4B23C 2 b22_4B23C
+peek F:4B23E 2 b22_4B23E
+peek F:4BA3C 2 b22_4BA3C
+peek F:4BA3E 2 b22_4BA3E
+peek F:4BA4C 2 b22_4BA4C
+peek F:4BA79 1 b22_4BA79
+peek F:4BA7B 1 b22_4BA7B
+peek F:54E70 2 b22_54E70
+peek F:4A992 2 b22_4A992
+peek F:4BA7C 2 b22_trail
+peek F:54E74 72 b22_ring
+step 1
+peek F:4B23C 2 b23_4B23C
+peek F:4B23E 2 b23_4B23E
+peek F:4BA3C 2 b23_4BA3C
+peek F:4BA3E 2 b23_4BA3E
+peek F:4BA4C 2 b23_4BA4C
+peek F:4BA79 1 b23_4BA79
+peek F:4BA7B 1 b23_4BA7B
+peek F:54E70 2 b23_54E70
+peek F:4A992 2 b23_4A992
+peek F:4BA7C 2 b23_trail
+peek F:54E74 72 b23_ring
+step 1
+frame extracted/captures/fx-burst-024.ppm
+peek F:4B23C 2 b24_4B23C
+peek F:4B23E 2 b24_4B23E
+peek F:4BA3C 2 b24_4BA3C
+peek F:4BA3E 2 b24_4BA3E
+peek F:4BA4C 2 b24_4BA4C
+peek F:4BA79 1 b24_4BA79
+peek F:4BA7B 1 b24_4BA7B
+peek F:54E70 2 b24_54E70
+peek F:4A992 2 b24_4A992
+peek F:4BA7C 2 b24_trail
+peek F:54E74 72 b24_ring
+step 1
+peek F:4B23C 2 b25_4B23C
+peek F:4B23E 2 b25_4B23E
+peek F:4BA3C 2 b25_4BA3C
+peek F:4BA3E 2 b25_4BA3E
+peek F:4BA4C 2 b25_4BA4C
+peek F:4BA79 1 b25_4BA79
+peek F:4BA7B 1 b25_4BA7B
+peek F:54E70 2 b25_54E70
+peek F:4A992 2 b25_4A992
+peek F:4BA7C 2 b25_trail
+peek F:54E74 72 b25_ring
+step 1
+peek F:4B23C 2 b26_4B23C
+peek F:4B23E 2 b26_4B23E
+peek F:4BA3C 2 b26_4BA3C
+peek F:4BA3E 2 b26_4BA3E
+peek F:4BA4C 2 b26_4BA4C
+peek F:4BA79 1 b26_4BA79
+peek F:4BA7B 1 b26_4BA7B
+peek F:54E70 2 b26_54E70
+peek F:4A992 2 b26_4A992
+peek F:4BA7C 2 b26_trail
+peek F:54E74 72 b26_ring
+step 1
+peek F:4B23C 2 b27_4B23C
+peek F:4B23E 2 b27_4B23E
+peek F:4BA3C 2 b27_4BA3C
+peek F:4BA3E 2 b27_4BA3E
+peek F:4BA4C 2 b27_4BA4C
+peek F:4BA79 1 b27_4BA79
+peek F:4BA7B 1 b27_4BA7B
+peek F:54E70 2 b27_54E70
+peek F:4A992 2 b27_4A992
+peek F:4BA7C 2 b27_trail
+peek F:54E74 72 b27_ring
+step 1
+frame extracted/captures/fx-burst-028.ppm
+peek F:4B23C 2 b28_4B23C
+peek F:4B23E 2 b28_4B23E
+peek F:4BA3C 2 b28_4BA3C
+peek F:4BA3E 2 b28_4BA3E
+peek F:4BA4C 2 b28_4BA4C
+peek F:4BA79 1 b28_4BA79
+peek F:4BA7B 1 b28_4BA7B
+peek F:54E70 2 b28_54E70
+peek F:4A992 2 b28_4A992
+peek F:4BA7C 2 b28_trail
+peek F:54E74 72 b28_ring
+step 1
+peek F:4B23C 2 b29_4B23C
+peek F:4B23E 2 b29_4B23E
+peek F:4BA3C 2 b29_4BA3C
+peek F:4BA3E 2 b29_4BA3E
+peek F:4BA4C 2 b29_4BA4C
+peek F:4BA79 1 b29_4BA79
+peek F:4BA7B 1 b29_4BA7B
+peek F:54E70 2 b29_54E70
+peek F:4A992 2 b29_4A992
+peek F:4BA7C 2 b29_trail
+peek F:54E74 72 b29_ring
+step 1
+peek F:4B23C 2 b30_4B23C
+peek F:4B23E 2 b30_4B23E
+peek F:4BA3C 2 b30_4BA3C
+peek F:4BA3E 2 b30_4BA3E
+peek F:4BA4C 2 b30_4BA4C
+peek F:4BA79 1 b30_4BA79
+peek F:4BA7B 1 b30_4BA7B
+peek F:54E70 2 b30_54E70
+peek F:4A992 2 b30_4A992
+peek F:4BA7C 2 b30_trail
+peek F:54E74 72 b30_ring
+step 1
+peek F:4B23C 2 b31_4B23C
+peek F:4B23E 2 b31_4B23E
+peek F:4BA3C 2 b31_4BA3C
+peek F:4BA3E 2 b31_4BA3E
+peek F:4BA4C 2 b31_4BA4C
+peek F:4BA79 1 b31_4BA79
+peek F:4BA7B 1 b31_4BA7B
+peek F:54E70 2 b31_54E70
+peek F:4A992 2 b31_4A992
+peek F:4BA7C 2 b31_trail
+peek F:54E74 72 b31_ring
+step 1
+frame extracted/captures/fx-burst-032.ppm
+peek F:4B23C 2 b32_4B23C
+peek F:4B23E 2 b32_4B23E
+peek F:4BA3C 2 b32_4BA3C
+peek F:4BA3E 2 b32_4BA3E
+peek F:4BA4C 2 b32_4BA4C
+peek F:4BA79 1 b32_4BA79
+peek F:4BA7B 1 b32_4BA7B
+peek F:54E70 2 b32_54E70
+peek F:4A992 2 b32_4A992
+peek F:4BA7C 2 b32_trail
+peek F:54E74 72 b32_ring
+step 1
+peek F:4B23C 2 b33_4B23C
+peek F:4B23E 2 b33_4B23E
+peek F:4BA3C 2 b33_4BA3C
+peek F:4BA3E 2 b33_4BA3E
+peek F:4BA4C 2 b33_4BA4C
+peek F:4BA79 1 b33_4BA79
+peek F:4BA7B 1 b33_4BA7B
+peek F:54E70 2 b33_54E70
+peek F:4A992 2 b33_4A992
+peek F:4BA7C 2 b33_trail
+peek F:54E74 72 b33_ring
+step 1
+peek F:4B23C 2 b34_4B23C
+peek F:4B23E 2 b34_4B23E
+peek F:4BA3C 2 b34_4BA3C
+peek F:4BA3E 2 b34_4BA3E
+peek F:4BA4C 2 b34_4BA4C
+peek F:4BA79 1 b34_4BA79
+peek F:4BA7B 1 b34_4BA7B
+peek F:54E70 2 b34_54E70
+peek F:4A992 2 b34_4A992
+peek F:4BA7C 2 b34_trail
+peek F:54E74 72 b34_ring
+step 1
+peek F:4B23C 2 b35_4B23C
+peek F:4B23E 2 b35_4B23E
+peek F:4BA3C 2 b35_4BA3C
+peek F:4BA3E 2 b35_4BA3E
+peek F:4BA4C 2 b35_4BA4C
+peek F:4BA79 1 b35_4BA79
+peek F:4BA7B 1 b35_4BA7B
+peek F:54E70 2 b35_54E70
+peek F:4A992 2 b35_4A992
+peek F:4BA7C 2 b35_trail
+peek F:54E74 72 b35_ring
+step 1
+frame extracted/captures/fx-burst-036.ppm
+peek F:4B23C 2 b36_4B23C
+peek F:4B23E 2 b36_4B23E
+peek F:4BA3C 2 b36_4BA3C
+peek F:4BA3E 2 b36_4BA3E
+peek F:4BA4C 2 b36_4BA4C
+peek F:4BA79 1 b36_4BA79
+peek F:4BA7B 1 b36_4BA7B
+peek F:54E70 2 b36_54E70
+peek F:4A992 2 b36_4A992
+peek F:4BA7C 2 b36_trail
+peek F:54E74 72 b36_ring
+step 1
+peek F:4B23C 2 b37_4B23C
+peek F:4B23E 2 b37_4B23E
+peek F:4BA3C 2 b37_4BA3C
+peek F:4BA3E 2 b37_4BA3E
+peek F:4BA4C 2 b37_4BA4C
+peek F:4BA79 1 b37_4BA79
+peek F:4BA7B 1 b37_4BA7B
+peek F:54E70 2 b37_54E70
+peek F:4A992 2 b37_4A992
+peek F:4BA7C 2 b37_trail
+peek F:54E74 72 b37_ring
+step 1
+peek F:4B23C 2 b38_4B23C
+peek F:4B23E 2 b38_4B23E
+peek F:4BA3C 2 b38_4BA3C
+peek F:4BA3E 2 b38_4BA3E
+peek F:4BA4C 2 b38_4BA4C
+peek F:4BA79 1 b38_4BA79
+peek F:4BA7B 1 b38_4BA7B
+peek F:54E70 2 b38_54E70
+peek F:4A992 2 b38_4A992
+peek F:4BA7C 2 b38_trail
+peek F:54E74 72 b38_ring
+step 1
+peek F:4B23C 2 b39_4B23C
+peek F:4B23E 2 b39_4B23E
+peek F:4BA3C 2 b39_4BA3C
+peek F:4BA3E 2 b39_4BA3E
+peek F:4BA4C 2 b39_4BA4C
+peek F:4BA79 1 b39_4BA79
+peek F:4BA7B 1 b39_4BA7B
+peek F:54E70 2 b39_54E70
+peek F:4A992 2 b39_4A992
+peek F:4BA7C 2 b39_trail
+peek F:54E74 72 b39_ring
+step 1
+frame extracted/captures/fx-burst-040.ppm
+peek F:4B23C 2 b40_4B23C
+peek F:4B23E 2 b40_4B23E
+peek F:4BA3C 2 b40_4BA3C
+peek F:4BA3E 2 b40_4BA3E
+peek F:4BA4C 2 b40_4BA4C
+peek F:4BA79 1 b40_4BA79
+peek F:4BA7B 1 b40_4BA7B
+peek F:54E70 2 b40_54E70
+peek F:4A992 2 b40_4A992
+peek F:4BA7C 2 b40_trail
+peek F:54E74 72 b40_ring
+step 1
+peek F:4B23C 2 b41_4B23C
+peek F:4B23E 2 b41_4B23E
+peek F:4BA3C 2 b41_4BA3C
+peek F:4BA3E 2 b41_4BA3E
+peek F:4BA4C 2 b41_4BA4C
+peek F:4BA79 1 b41_4BA79
+peek F:4BA7B 1 b41_4BA7B
+peek F:54E70 2 b41_54E70
+peek F:4A992 2 b41_4A992
+peek F:4BA7C 2 b41_trail
+peek F:54E74 72 b41_ring
+step 1
+peek F:4B23C 2 b42_4B23C
+peek F:4B23E 2 b42_4B23E
+peek F:4BA3C 2 b42_4BA3C
+peek F:4BA3E 2 b42_4BA3E
+peek F:4BA4C 2 b42_4BA4C
+peek F:4BA79 1 b42_4BA79
+peek F:4BA7B 1 b42_4BA7B
+peek F:54E70 2 b42_54E70
+peek F:4A992 2 b42_4A992
+peek F:4BA7C 2 b42_trail
+peek F:54E74 72 b42_ring
+step 1
+peek F:4B23C 2 b43_4B23C
+peek F:4B23E 2 b43_4B23E
+peek F:4BA3C 2 b43_4BA3C
+peek F:4BA3E 2 b43_4BA3E
+peek F:4BA4C 2 b43_4BA4C
+peek F:4BA79 1 b43_4BA79
+peek F:4BA7B 1 b43_4BA7B
+peek F:54E70 2 b43_54E70
+peek F:4A992 2 b43_4A992
+peek F:4BA7C 2 b43_trail
+peek F:54E74 72 b43_ring
+step 1
+frame extracted/captures/fx-burst-044.ppm
+peek F:4B23C 2 b44_4B23C
+peek F:4B23E 2 b44_4B23E
+peek F:4BA3C 2 b44_4BA3C
+peek F:4BA3E 2 b44_4BA3E
+peek F:4BA4C 2 b44_4BA4C
+peek F:4BA79 1 b44_4BA79
+peek F:4BA7B 1 b44_4BA7B
+peek F:54E70 2 b44_54E70
+peek F:4A992 2 b44_4A992
+peek F:4BA7C 2 b44_trail
+peek F:54E74 72 b44_ring
+step 1
+peek F:4B23C 2 b45_4B23C
+peek F:4B23E 2 b45_4B23E
+peek F:4BA3C 2 b45_4BA3C
+peek F:4BA3E 2 b45_4BA3E
+peek F:4BA4C 2 b45_4BA4C
+peek F:4BA79 1 b45_4BA79
+peek F:4BA7B 1 b45_4BA7B
+peek F:54E70 2 b45_54E70
+peek F:4A992 2 b45_4A992
+peek F:4BA7C 2 b45_trail
+peek F:54E74 72 b45_ring
+step 1
+peek F:4B23C 2 b46_4B23C
+peek F:4B23E 2 b46_4B23E
+peek F:4BA3C 2 b46_4BA3C
+peek F:4BA3E 2 b46_4BA3E
+peek F:4BA4C 2 b46_4BA4C
+peek F:4BA79 1 b46_4BA79
+peek F:4BA7B 1 b46_4BA7B
+peek F:54E70 2 b46_54E70
+peek F:4A992 2 b46_4A992
+peek F:4BA7C 2 b46_trail
+peek F:54E74 72 b46_ring
+step 1
+peek F:4B23C 2 b47_4B23C
+peek F:4B23E 2 b47_4B23E
+peek F:4BA3C 2 b47_4BA3C
+peek F:4BA3E 2 b47_4BA3E
+peek F:4BA4C 2 b47_4BA4C
+peek F:4BA79 1 b47_4BA79
+peek F:4BA7B 1 b47_4BA7B
+peek F:54E70 2 b47_54E70
+peek F:4A992 2 b47_4A992
+peek F:4BA7C 2 b47_trail
+peek F:54E74 72 b47_ring
+step 1
+frame extracted/captures/fx-burst-048.ppm
+peek F:4B23C 2 b48_4B23C
+peek F:4B23E 2 b48_4B23E
+peek F:4BA3C 2 b48_4BA3C
+peek F:4BA3E 2 b48_4BA3E
+peek F:4BA4C 2 b48_4BA4C
+peek F:4BA79 1 b48_4BA79
+peek F:4BA7B 1 b48_4BA7B
+peek F:54E70 2 b48_54E70
+peek F:4A992 2 b48_4A992
+peek F:4BA7C 2 b48_trail
+peek F:54E74 72 b48_ring
+step 1
+peek F:4B23C 2 b49_4B23C
+peek F:4B23E 2 b49_4B23E
+peek F:4BA3C 2 b49_4BA3C
+peek F:4BA3E 2 b49_4BA3E
+peek F:4BA4C 2 b49_4BA4C
+peek F:4BA79 1 b49_4BA79
+peek F:4BA7B 1 b49_4BA7B
+peek F:54E70 2 b49_54E70
+peek F:4A992 2 b49_4A992
+peek F:4BA7C 2 b49_trail
+peek F:54E74 72 b49_ring
+step 1
+peek F:4B23C 2 b50_4B23C
+peek F:4B23E 2 b50_4B23E
+peek F:4BA3C 2 b50_4BA3C
+peek F:4BA3E 2 b50_4BA3E
+peek F:4BA4C 2 b50_4BA4C
+peek F:4BA79 1 b50_4BA79
+peek F:4BA7B 1 b50_4BA7B
+peek F:54E70 2 b50_54E70
+peek F:4A992 2 b50_4A992
+peek F:4BA7C 2 b50_trail
+peek F:54E74 72 b50_ring
+step 1
+peek F:4B23C 2 b51_4B23C
+peek F:4B23E 2 b51_4B23E
+peek F:4BA3C 2 b51_4BA3C
+peek F:4BA3E 2 b51_4BA3E
+peek F:4BA4C 2 b51_4BA4C
+peek F:4BA79 1 b51_4BA79
+peek F:4BA7B 1 b51_4BA7B
+peek F:54E70 2 b51_54E70
+peek F:4A992 2 b51_4A992
+peek F:4BA7C 2 b51_trail
+peek F:54E74 72 b51_ring
+step 1
+frame extracted/captures/fx-burst-052.ppm
+peek F:4B23C 2 b52_4B23C
+peek F:4B23E 2 b52_4B23E
+peek F:4BA3C 2 b52_4BA3C
+peek F:4BA3E 2 b52_4BA3E
+peek F:4BA4C 2 b52_4BA4C
+peek F:4BA79 1 b52_4BA79
+peek F:4BA7B 1 b52_4BA7B
+peek F:54E70 2 b52_54E70
+peek F:4A992 2 b52_4A992
+peek F:4BA7C 2 b52_trail
+peek F:54E74 72 b52_ring
+step 1
+peek F:4B23C 2 b53_4B23C
+peek F:4B23E 2 b53_4B23E
+peek F:4BA3C 2 b53_4BA3C
+peek F:4BA3E 2 b53_4BA3E
+peek F:4BA4C 2 b53_4BA4C
+peek F:4BA79 1 b53_4BA79
+peek F:4BA7B 1 b53_4BA7B
+peek F:54E70 2 b53_54E70
+peek F:4A992 2 b53_4A992
+peek F:4BA7C 2 b53_trail
+peek F:54E74 72 b53_ring
+step 1
+peek F:4B23C 2 b54_4B23C
+peek F:4B23E 2 b54_4B23E
+peek F:4BA3C 2 b54_4BA3C
+peek F:4BA3E 2 b54_4BA3E
+peek F:4BA4C 2 b54_4BA4C
+peek F:4BA79 1 b54_4BA79
+peek F:4BA7B 1 b54_4BA7B
+peek F:54E70 2 b54_54E70
+peek F:4A992 2 b54_4A992
+peek F:4BA7C 2 b54_trail
+peek F:54E74 72 b54_ring
+step 1
+peek F:4B23C 2 b55_4B23C
+peek F:4B23E 2 b55_4B23E
+peek F:4BA3C 2 b55_4BA3C
+peek F:4BA3E 2 b55_4BA3E
+peek F:4BA4C 2 b55_4BA4C
+peek F:4BA79 1 b55_4BA79
+peek F:4BA7B 1 b55_4BA7B
+peek F:54E70 2 b55_54E70
+peek F:4A992 2 b55_4A992
+peek F:4BA7C 2 b55_trail
+peek F:54E74 72 b55_ring
+step 1
+frame extracted/captures/fx-burst-056.ppm
+peek F:4B23C 2 b56_4B23C
+peek F:4B23E 2 b56_4B23E
+peek F:4BA3C 2 b56_4BA3C
+peek F:4BA3E 2 b56_4BA3E
+peek F:4BA4C 2 b56_4BA4C
+peek F:4BA79 1 b56_4BA79
+peek F:4BA7B 1 b56_4BA7B
+peek F:54E70 2 b56_54E70
+peek F:4A992 2 b56_4A992
+peek F:4BA7C 2 b56_trail
+peek F:54E74 72 b56_ring
+step 1
+peek F:4B23C 2 b57_4B23C
+peek F:4B23E 2 b57_4B23E
+peek F:4BA3C 2 b57_4BA3C
+peek F:4BA3E 2 b57_4BA3E
+peek F:4BA4C 2 b57_4BA4C
+peek F:4BA79 1 b57_4BA79
+peek F:4BA7B 1 b57_4BA7B
+peek F:54E70 2 b57_54E70
+peek F:4A992 2 b57_4A992
+peek F:4BA7C 2 b57_trail
+peek F:54E74 72 b57_ring
+step 1
+peek F:4B23C 2 b58_4B23C
+peek F:4B23E 2 b58_4B23E
+peek F:4BA3C 2 b58_4BA3C
+peek F:4BA3E 2 b58_4BA3E
+peek F:4BA4C 2 b58_4BA4C
+peek F:4BA79 1 b58_4BA79
+peek F:4BA7B 1 b58_4BA7B
+peek F:54E70 2 b58_54E70
+peek F:4A992 2 b58_4A992
+peek F:4BA7C 2 b58_trail
+peek F:54E74 72 b58_ring
+step 1
+peek F:4B23C 2 b59_4B23C
+peek F:4B23E 2 b59_4B23E
+peek F:4BA3C 2 b59_4BA3C
+peek F:4BA3E 2 b59_4BA3E
+peek F:4BA4C 2 b59_4BA4C
+peek F:4BA79 1 b59_4BA79
+peek F:4BA7B 1 b59_4BA7B
+peek F:54E70 2 b59_54E70
+peek F:4A992 2 b59_4A992
+peek F:4BA7C 2 b59_trail
+peek F:54E74 72 b59_ring
+step 1
+frame extracted/captures/fx-burst-060.ppm
+peek F:4B23C 2 b60_4B23C
+peek F:4B23E 2 b60_4B23E
+peek F:4BA3C 2 b60_4BA3C
+peek F:4BA3E 2 b60_4BA3E
+peek F:4BA4C 2 b60_4BA4C
+peek F:4BA79 1 b60_4BA79
+peek F:4BA7B 1 b60_4BA7B
+peek F:54E70 2 b60_54E70
+peek F:4A992 2 b60_4A992
+peek F:4BA7C 2 b60_trail
+peek F:54E74 72 b60_ring
+step 1
+peek F:4B23C 2 b61_4B23C
+peek F:4B23E 2 b61_4B23E
+peek F:4BA3C 2 b61_4BA3C
+peek F:4BA3E 2 b61_4BA3E
+peek F:4BA4C 2 b61_4BA4C
+peek F:4BA79 1 b61_4BA79
+peek F:4BA7B 1 b61_4BA7B
+peek F:54E70 2 b61_54E70
+peek F:4A992 2 b61_4A992
+peek F:4BA7C 2 b61_trail
+peek F:54E74 72 b61_ring
+step 1
+peek F:4B23C 2 b62_4B23C
+peek F:4B23E 2 b62_4B23E
+peek F:4BA3C 2 b62_4BA3C
+peek F:4BA3E 2 b62_4BA3E
+peek F:4BA4C 2 b62_4BA4C
+peek F:4BA79 1 b62_4BA79
+peek F:4BA7B 1 b62_4BA7B
+peek F:54E70 2 b62_54E70
+peek F:4A992 2 b62_4A992
+peek F:4BA7C 2 b62_trail
+peek F:54E74 72 b62_ring
+step 1
+peek F:4B23C 2 b63_4B23C
+peek F:4B23E 2 b63_4B23E
+peek F:4BA3C 2 b63_4BA3C
+peek F:4BA3E 2 b63_4BA3E
+peek F:4BA4C 2 b63_4BA4C
+peek F:4BA79 1 b63_4BA79
+peek F:4BA7B 1 b63_4BA7B
+peek F:54E70 2 b63_54E70
+peek F:4A992 2 b63_4A992
+peek F:4BA7C 2 b63_trail
+peek F:54E74 72 b63_ring
+step 1
+frame extracted/captures/fx-burst-064.ppm
+peek F:4B23C 2 b64_4B23C
+peek F:4B23E 2 b64_4B23E
+peek F:4BA3C 2 b64_4BA3C
+peek F:4BA3E 2 b64_4BA3E
+peek F:4BA4C 2 b64_4BA4C
+peek F:4BA79 1 b64_4BA79
+peek F:4BA7B 1 b64_4BA7B
+peek F:54E70 2 b64_54E70
+peek F:4A992 2 b64_4A992
+peek F:4BA7C 2 b64_trail
+peek F:54E74 72 b64_ring
+step 1
+peek F:4B23C 2 b65_4B23C
+peek F:4B23E 2 b65_4B23E
+peek F:4BA3C 2 b65_4BA3C
+peek F:4BA3E 2 b65_4BA3E
+peek F:4BA4C 2 b65_4BA4C
+peek F:4BA79 1 b65_4BA79
+peek F:4BA7B 1 b65_4BA7B
+peek F:54E70 2 b65_54E70
+peek F:4A992 2 b65_4A992
+peek F:4BA7C 2 b65_trail
+peek F:54E74 72 b65_ring
+step 1
+peek F:4B23C 2 b66_4B23C
+peek F:4B23E 2 b66_4B23E
+peek F:4BA3C 2 b66_4BA3C
+peek F:4BA3E 2 b66_4BA3E
+peek F:4BA4C 2 b66_4BA4C
+peek F:4BA79 1 b66_4BA79
+peek F:4BA7B 1 b66_4BA7B
+peek F:54E70 2 b66_54E70
+peek F:4A992 2 b66_4A992
+peek F:4BA7C 2 b66_trail
+peek F:54E74 72 b66_ring
+step 1
+peek F:4B23C 2 b67_4B23C
+peek F:4B23E 2 b67_4B23E
+peek F:4BA3C 2 b67_4BA3C
+peek F:4BA3E 2 b67_4BA3E
+peek F:4BA4C 2 b67_4BA4C
+peek F:4BA79 1 b67_4BA79
+peek F:4BA7B 1 b67_4BA7B
+peek F:54E70 2 b67_54E70
+peek F:4A992 2 b67_4A992
+peek F:4BA7C 2 b67_trail
+peek F:54E74 72 b67_ring
+step 1
+frame extracted/captures/fx-burst-068.ppm
+peek F:4B23C 2 b68_4B23C
+peek F:4B23E 2 b68_4B23E
+peek F:4BA3C 2 b68_4BA3C
+peek F:4BA3E 2 b68_4BA3E
+peek F:4BA4C 2 b68_4BA4C
+peek F:4BA79 1 b68_4BA79
+peek F:4BA7B 1 b68_4BA7B
+peek F:54E70 2 b68_54E70
+peek F:4A992 2 b68_4A992
+peek F:4BA7C 2 b68_trail
+peek F:54E74 72 b68_ring
+step 1
+peek F:4B23C 2 b69_4B23C
+peek F:4B23E 2 b69_4B23E
+peek F:4BA3C 2 b69_4BA3C
+peek F:4BA3E 2 b69_4BA3E
+peek F:4BA4C 2 b69_4BA4C
+peek F:4BA79 1 b69_4BA79
+peek F:4BA7B 1 b69_4BA7B
+peek F:54E70 2 b69_54E70
+peek F:4A992 2 b69_4A992
+peek F:4BA7C 2 b69_trail
+peek F:54E74 72 b69_ring
+step 1
+peek F:4B23C 2 b70_4B23C
+peek F:4B23E 2 b70_4B23E
+peek F:4BA3C 2 b70_4BA3C
+peek F:4BA3E 2 b70_4BA3E
+peek F:4BA4C 2 b70_4BA4C
+peek F:4BA79 1 b70_4BA79
+peek F:4BA7B 1 b70_4BA7B
+peek F:54E70 2 b70_54E70
+peek F:4A992 2 b70_4A992
+peek F:4BA7C 2 b70_trail
+peek F:54E74 72 b70_ring
+step 1
+peek F:4B23C 2 b71_4B23C
+peek F:4B23E 2 b71_4B23E
+peek F:4BA3C 2 b71_4BA3C
+peek F:4BA3E 2 b71_4BA3E
+peek F:4BA4C 2 b71_4BA4C
+peek F:4BA79 1 b71_4BA79
+peek F:4BA7B 1 b71_4BA7B
+peek F:54E70 2 b71_54E70
+peek F:4A992 2 b71_4A992
+peek F:4BA7C 2 b71_trail
+peek F:54E74 72 b71_ring
+step 1
+frame extracted/captures/fx-burst-072.ppm
+peek F:4B23C 2 b72_4B23C
+peek F:4B23E 2 b72_4B23E
+peek F:4BA3C 2 b72_4BA3C
+peek F:4BA3E 2 b72_4BA3E
+peek F:4BA4C 2 b72_4BA4C
+peek F:4BA79 1 b72_4BA79
+peek F:4BA7B 1 b72_4BA7B
+peek F:54E70 2 b72_54E70
+peek F:4A992 2 b72_4A992
+peek F:4BA7C 2 b72_trail
+peek F:54E74 72 b72_ring
+step 1
+peek F:4B23C 2 b73_4B23C
+peek F:4B23E 2 b73_4B23E
+peek F:4BA3C 2 b73_4BA3C
+peek F:4BA3E 2 b73_4BA3E
+peek F:4BA4C 2 b73_4BA4C
+peek F:4BA79 1 b73_4BA79
+peek F:4BA7B 1 b73_4BA7B
+peek F:54E70 2 b73_54E70
+peek F:4A992 2 b73_4A992
+peek F:4BA7C 2 b73_trail
+peek F:54E74 72 b73_ring
+step 1
+peek F:4B23C 2 b74_4B23C
+peek F:4B23E 2 b74_4B23E
+peek F:4BA3C 2 b74_4BA3C
+peek F:4BA3E 2 b74_4BA3E
+peek F:4BA4C 2 b74_4BA4C
+peek F:4BA79 1 b74_4BA79
+peek F:4BA7B 1 b74_4BA7B
+peek F:54E70 2 b74_54E70
+peek F:4A992 2 b74_4A992
+peek F:4BA7C 2 b74_trail
+peek F:54E74 72 b74_ring
+step 1
+peek F:4B23C 2 b75_4B23C
+peek F:4B23E 2 b75_4B23E
+peek F:4BA3C 2 b75_4BA3C
+peek F:4BA3E 2 b75_4BA3E
+peek F:4BA4C 2 b75_4BA4C
+peek F:4BA79 1 b75_4BA79
+peek F:4BA7B 1 b75_4BA7B
+peek F:54E70 2 b75_54E70
+peek F:4A992 2 b75_4A992
+peek F:4BA7C 2 b75_trail
+peek F:54E74 72 b75_ring
+step 1
+frame extracted/captures/fx-burst-076.ppm
+peek F:4B23C 2 b76_4B23C
+peek F:4B23E 2 b76_4B23E
+peek F:4BA3C 2 b76_4BA3C
+peek F:4BA3E 2 b76_4BA3E
+peek F:4BA4C 2 b76_4BA4C
+peek F:4BA79 1 b76_4BA79
+peek F:4BA7B 1 b76_4BA7B
+peek F:54E70 2 b76_54E70
+peek F:4A992 2 b76_4A992
+peek F:4BA7C 2 b76_trail
+peek F:54E74 72 b76_ring
+step 1
+peek F:4B23C 2 b77_4B23C
+peek F:4B23E 2 b77_4B23E
+peek F:4BA3C 2 b77_4BA3C
+peek F:4BA3E 2 b77_4BA3E
+peek F:4BA4C 2 b77_4BA4C
+peek F:4BA79 1 b77_4BA79
+peek F:4BA7B 1 b77_4BA7B
+peek F:54E70 2 b77_54E70
+peek F:4A992 2 b77_4A992
+peek F:4BA7C 2 b77_trail
+peek F:54E74 72 b77_ring
+step 1
+peek F:4B23C 2 b78_4B23C
+peek F:4B23E 2 b78_4B23E
+peek F:4BA3C 2 b78_4BA3C
+peek F:4BA3E 2 b78_4BA3E
+peek F:4BA4C 2 b78_4BA4C
+peek F:4BA79 1 b78_4BA79
+peek F:4BA7B 1 b78_4BA7B
+peek F:54E70 2 b78_54E70
+peek F:4A992 2 b78_4A992
+peek F:4BA7C 2 b78_trail
+peek F:54E74 72 b78_ring
+step 1
+peek F:4B23C 2 b79_4B23C
+peek F:4B23E 2 b79_4B23E
+peek F:4BA3C 2 b79_4BA3C
+peek F:4BA3E 2 b79_4BA3E
+peek F:4BA4C 2 b79_4BA4C
+peek F:4BA79 1 b79_4BA79
+peek F:4BA7B 1 b79_4BA7B
+peek F:54E70 2 b79_54E70
+peek F:4A992 2 b79_4A992
+peek F:4BA7C 2 b79_trail
+peek F:54E74 72 b79_ring
+step 1
+frame extracted/captures/fx-burst-080.ppm
+peek F:4B23C 2 b80_4B23C
+peek F:4B23E 2 b80_4B23E
+peek F:4BA3C 2 b80_4BA3C
+peek F:4BA3E 2 b80_4BA3E
+peek F:4BA4C 2 b80_4BA4C
+peek F:4BA79 1 b80_4BA79
+peek F:4BA7B 1 b80_4BA7B
+peek F:54E70 2 b80_54E70
+peek F:4A992 2 b80_4A992
+peek F:4BA7C 2 b80_trail
+peek F:54E74 72 b80_ring
+step 1
+peek F:4B23C 2 b81_4B23C
+peek F:4B23E 2 b81_4B23E
+peek F:4BA3C 2 b81_4BA3C
+peek F:4BA3E 2 b81_4BA3E
+peek F:4BA4C 2 b81_4BA4C
+peek F:4BA79 1 b81_4BA79
+peek F:4BA7B 1 b81_4BA7B
+peek F:54E70 2 b81_54E70
+peek F:4A992 2 b81_4A992
+peek F:4BA7C 2 b81_trail
+peek F:54E74 72 b81_ring
+step 1
+peek F:4B23C 2 b82_4B23C
+peek F:4B23E 2 b82_4B23E
+peek F:4BA3C 2 b82_4BA3C
+peek F:4BA3E 2 b82_4BA3E
+peek F:4BA4C 2 b82_4BA4C
+peek F:4BA79 1 b82_4BA79
+peek F:4BA7B 1 b82_4BA7B
+peek F:54E70 2 b82_54E70
+peek F:4A992 2 b82_4A992
+peek F:4BA7C 2 b82_trail
+peek F:54E74 72 b82_ring
+step 1
+peek F:4B23C 2 b83_4B23C
+peek F:4B23E 2 b83_4B23E
+peek F:4BA3C 2 b83_4BA3C
+peek F:4BA3E 2 b83_4BA3E
+peek F:4BA4C 2 b83_4BA4C
+peek F:4BA79 1 b83_4BA79
+peek F:4BA7B 1 b83_4BA7B
+peek F:54E70 2 b83_54E70
+peek F:4A992 2 b83_4A992
+peek F:4BA7C 2 b83_trail
+peek F:54E74 72 b83_ring
+step 1
+frame extracted/captures/fx-burst-084.ppm
+peek F:4B23C 2 b84_4B23C
+peek F:4B23E 2 b84_4B23E
+peek F:4BA3C 2 b84_4BA3C
+peek F:4BA3E 2 b84_4BA3E
+peek F:4BA4C 2 b84_4BA4C
+peek F:4BA79 1 b84_4BA79
+peek F:4BA7B 1 b84_4BA7B
+peek F:54E70 2 b84_54E70
+peek F:4A992 2 b84_4A992
+peek F:4BA7C 2 b84_trail
+peek F:54E74 72 b84_ring
+step 1
+peek F:4B23C 2 b85_4B23C
+peek F:4B23E 2 b85_4B23E
+peek F:4BA3C 2 b85_4BA3C
+peek F:4BA3E 2 b85_4BA3E
+peek F:4BA4C 2 b85_4BA4C
+peek F:4BA79 1 b85_4BA79
+peek F:4BA7B 1 b85_4BA7B
+peek F:54E70 2 b85_54E70
+peek F:4A992 2 b85_4A992
+peek F:4BA7C 2 b85_trail
+peek F:54E74 72 b85_ring
+step 1
+peek F:4B23C 2 b86_4B23C
+peek F:4B23E 2 b86_4B23E
+peek F:4BA3C 2 b86_4BA3C
+peek F:4BA3E 2 b86_4BA3E
+peek F:4BA4C 2 b86_4BA4C
+peek F:4BA79 1 b86_4BA79
+peek F:4BA7B 1 b86_4BA7B
+peek F:54E70 2 b86_54E70
+peek F:4A992 2 b86_4A992
+peek F:4BA7C 2 b86_trail
+peek F:54E74 72 b86_ring
+step 1
+peek F:4B23C 2 b87_4B23C
+peek F:4B23E 2 b87_4B23E
+peek F:4BA3C 2 b87_4BA3C
+peek F:4BA3E 2 b87_4BA3E
+peek F:4BA4C 2 b87_4BA4C
+peek F:4BA79 1 b87_4BA79
+peek F:4BA7B 1 b87_4BA7B
+peek F:54E70 2 b87_54E70
+peek F:4A992 2 b87_4A992
+peek F:4BA7C 2 b87_trail
+peek F:54E74 72 b87_ring
+step 1
+frame extracted/captures/fx-burst-088.ppm
+peek F:4B23C 2 b88_4B23C
+peek F:4B23E 2 b88_4B23E
+peek F:4BA3C 2 b88_4BA3C
+peek F:4BA3E 2 b88_4BA3E
+peek F:4BA4C 2 b88_4BA4C
+peek F:4BA79 1 b88_4BA79
+peek F:4BA7B 1 b88_4BA7B
+peek F:54E70 2 b88_54E70
+peek F:4A992 2 b88_4A992
+peek F:4BA7C 2 b88_trail
+peek F:54E74 72 b88_ring
+step 1
+peek F:4B23C 2 b89_4B23C
+peek F:4B23E 2 b89_4B23E
+peek F:4BA3C 2 b89_4BA3C
+peek F:4BA3E 2 b89_4BA3E
+peek F:4BA4C 2 b89_4BA4C
+peek F:4BA79 1 b89_4BA79
+peek F:4BA7B 1 b89_4BA7B
+peek F:54E70 2 b89_54E70
+peek F:4A992 2 b89_4A992
+peek F:4BA7C 2 b89_trail
+peek F:54E74 72 b89_ring
+step 1
+peek F:4B23C 2 b90_4B23C
+peek F:4B23E 2 b90_4B23E
+peek F:4BA3C 2 b90_4BA3C
+peek F:4BA3E 2 b90_4BA3E
+peek F:4BA4C 2 b90_4BA4C
+peek F:4BA79 1 b90_4BA79
+peek F:4BA7B 1 b90_4BA7B
+peek F:54E70 2 b90_54E70
+peek F:4A992 2 b90_4A992
+peek F:4BA7C 2 b90_trail
+peek F:54E74 72 b90_ring
+step 1
+peek F:4B23C 2 b91_4B23C
+peek F:4B23E 2 b91_4B23E
+peek F:4BA3C 2 b91_4BA3C
+peek F:4BA3E 2 b91_4BA3E
+peek F:4BA4C 2 b91_4BA4C
+peek F:4BA79 1 b91_4BA79
+peek F:4BA7B 1 b91_4BA7B
+peek F:54E70 2 b91_54E70
+peek F:4A992 2 b91_4A992
+peek F:4BA7C 2 b91_trail
+peek F:54E74 72 b91_ring
+step 1
+frame extracted/captures/fx-burst-092.ppm
+peek F:4B23C 2 b92_4B23C
+peek F:4B23E 2 b92_4B23E
+peek F:4BA3C 2 b92_4BA3C
+peek F:4BA3E 2 b92_4BA3E
+peek F:4BA4C 2 b92_4BA4C
+peek F:4BA79 1 b92_4BA79
+peek F:4BA7B 1 b92_4BA7B
+peek F:54E70 2 b92_54E70
+peek F:4A992 2 b92_4A992
+peek F:4BA7C 2 b92_trail
+peek F:54E74 72 b92_ring
+step 1
+peek F:4B23C 2 b93_4B23C
+peek F:4B23E 2 b93_4B23E
+peek F:4BA3C 2 b93_4BA3C
+peek F:4BA3E 2 b93_4BA3E
+peek F:4BA4C 2 b93_4BA4C
+peek F:4BA79 1 b93_4BA79
+peek F:4BA7B 1 b93_4BA7B
+peek F:54E70 2 b93_54E70
+peek F:4A992 2 b93_4A992
+peek F:4BA7C 2 b93_trail
+peek F:54E74 72 b93_ring
+step 1
+peek F:4B23C 2 b94_4B23C
+peek F:4B23E 2 b94_4B23E
+peek F:4BA3C 2 b94_4BA3C
+peek F:4BA3E 2 b94_4BA3E
+peek F:4BA4C 2 b94_4BA4C
+peek F:4BA79 1 b94_4BA79
+peek F:4BA7B 1 b94_4BA7B
+peek F:54E70 2 b94_54E70
+peek F:4A992 2 b94_4A992
+peek F:4BA7C 2 b94_trail
+peek F:54E74 72 b94_ring
+step 1
+peek F:4B23C 2 b95_4B23C
+peek F:4B23E 2 b95_4B23E
+peek F:4BA3C 2 b95_4BA3C
+peek F:4BA3E 2 b95_4BA3E
+peek F:4BA4C 2 b95_4BA4C
+peek F:4BA79 1 b95_4BA79
+peek F:4BA7B 1 b95_4BA7B
+peek F:54E70 2 b95_54E70
+peek F:4A992 2 b95_4A992
+peek F:4BA7C 2 b95_trail
+peek F:54E74 72 b95_ring
+step 1
+frame extracted/captures/fx-burst-096.ppm
+peek F:4B23C 2 b96_4B23C
+peek F:4B23E 2 b96_4B23E
+peek F:4BA3C 2 b96_4BA3C
+peek F:4BA3E 2 b96_4BA3E
+peek F:4BA4C 2 b96_4BA4C
+peek F:4BA79 1 b96_4BA79
+peek F:4BA7B 1 b96_4BA7B
+peek F:54E70 2 b96_54E70
+peek F:4A992 2 b96_4A992
+peek F:4BA7C 2 b96_trail
+peek F:54E74 72 b96_ring
+step 1
+peek F:4B23C 2 b97_4B23C
+peek F:4B23E 2 b97_4B23E
+peek F:4BA3C 2 b97_4BA3C
+peek F:4BA3E 2 b97_4BA3E
+peek F:4BA4C 2 b97_4BA4C
+peek F:4BA79 1 b97_4BA79
+peek F:4BA7B 1 b97_4BA7B
+peek F:54E70 2 b97_54E70
+peek F:4A992 2 b97_4A992
+peek F:4BA7C 2 b97_trail
+peek F:54E74 72 b97_ring
+step 1
+peek F:4B23C 2 b98_4B23C
+peek F:4B23E 2 b98_4B23E
+peek F:4BA3C 2 b98_4BA3C
+peek F:4BA3E 2 b98_4BA3E
+peek F:4BA4C 2 b98_4BA4C
+peek F:4BA79 1 b98_4BA79
+peek F:4BA7B 1 b98_4BA7B
+peek F:54E70 2 b98_54E70
+peek F:4A992 2 b98_4A992
+peek F:4BA7C 2 b98_trail
+peek F:54E74 72 b98_ring
+step 1
+peek F:4B23C 2 b99_4B23C
+peek F:4B23E 2 b99_4B23E
+peek F:4BA3C 2 b99_4BA3C
+peek F:4BA3E 2 b99_4BA3E
+peek F:4BA4C 2 b99_4BA4C
+peek F:4BA79 1 b99_4BA79
+peek F:4BA7B 1 b99_4BA7B
+peek F:54E70 2 b99_54E70
+peek F:4A992 2 b99_4A992
+peek F:4BA7C 2 b99_trail
+peek F:54E74 72 b99_ring
+step 1
+frame extracted/captures/fx-burst-100.ppm
+peek F:4B23C 2 b100_4B23C
+peek F:4B23E 2 b100_4B23E
+peek F:4BA3C 2 b100_4BA3C
+peek F:4BA3E 2 b100_4BA3E
+peek F:4BA4C 2 b100_4BA4C
+peek F:4BA79 1 b100_4BA79
+peek F:4BA7B 1 b100_4BA7B
+peek F:54E70 2 b100_54E70
+peek F:4A992 2 b100_4A992
+peek F:4BA7C 2 b100_trail
+peek F:54E74 72 b100_ring
+step 1
+peek F:4B23C 2 b101_4B23C
+peek F:4B23E 2 b101_4B23E
+peek F:4BA3C 2 b101_4BA3C
+peek F:4BA3E 2 b101_4BA3E
+peek F:4BA4C 2 b101_4BA4C
+peek F:4BA79 1 b101_4BA79
+peek F:4BA7B 1 b101_4BA7B
+peek F:54E70 2 b101_54E70
+peek F:4A992 2 b101_4A992
+peek F:4BA7C 2 b101_trail
+peek F:54E74 72 b101_ring
+step 1
+peek F:4B23C 2 b102_4B23C
+peek F:4B23E 2 b102_4B23E
+peek F:4BA3C 2 b102_4BA3C
+peek F:4BA3E 2 b102_4BA3E
+peek F:4BA4C 2 b102_4BA4C
+peek F:4BA79 1 b102_4BA79
+peek F:4BA7B 1 b102_4BA7B
+peek F:54E70 2 b102_54E70
+peek F:4A992 2 b102_4A992
+peek F:4BA7C 2 b102_trail
+peek F:54E74 72 b102_ring
+step 1
+peek F:4B23C 2 b103_4B23C
+peek F:4B23E 2 b103_4B23E
+peek F:4BA3C 2 b103_4BA3C
+peek F:4BA3E 2 b103_4BA3E
+peek F:4BA4C 2 b103_4BA4C
+peek F:4BA79 1 b103_4BA79
+peek F:4BA7B 1 b103_4BA7B
+peek F:54E70 2 b103_54E70
+peek F:4A992 2 b103_4A992
+peek F:4BA7C 2 b103_trail
+peek F:54E74 72 b103_ring
+step 1
+frame extracted/captures/fx-burst-104.ppm
+peek F:4B23C 2 b104_4B23C
+peek F:4B23E 2 b104_4B23E
+peek F:4BA3C 2 b104_4BA3C
+peek F:4BA3E 2 b104_4BA3E
+peek F:4BA4C 2 b104_4BA4C
+peek F:4BA79 1 b104_4BA79
+peek F:4BA7B 1 b104_4BA7B
+peek F:54E70 2 b104_54E70
+peek F:4A992 2 b104_4A992
+peek F:4BA7C 2 b104_trail
+peek F:54E74 72 b104_ring
+step 1
+peek F:4B23C 2 b105_4B23C
+peek F:4B23E 2 b105_4B23E
+peek F:4BA3C 2 b105_4BA3C
+peek F:4BA3E 2 b105_4BA3E
+peek F:4BA4C 2 b105_4BA4C
+peek F:4BA79 1 b105_4BA79
+peek F:4BA7B 1 b105_4BA7B
+peek F:54E70 2 b105_54E70
+peek F:4A992 2 b105_4A992
+peek F:4BA7C 2 b105_trail
+peek F:54E74 72 b105_ring
+step 1
+peek F:4B23C 2 b106_4B23C
+peek F:4B23E 2 b106_4B23E
+peek F:4BA3C 2 b106_4BA3C
+peek F:4BA3E 2 b106_4BA3E
+peek F:4BA4C 2 b106_4BA4C
+peek F:4BA79 1 b106_4BA79
+peek F:4BA7B 1 b106_4BA7B
+peek F:54E70 2 b106_54E70
+peek F:4A992 2 b106_4A992
+peek F:4BA7C 2 b106_trail
+peek F:54E74 72 b106_ring
+step 1
+peek F:4B23C 2 b107_4B23C
+peek F:4B23E 2 b107_4B23E
+peek F:4BA3C 2 b107_4BA3C
+peek F:4BA3E 2 b107_4BA3E
+peek F:4BA4C 2 b107_4BA4C
+peek F:4BA79 1 b107_4BA79
+peek F:4BA7B 1 b107_4BA7B
+peek F:54E70 2 b107_54E70
+peek F:4A992 2 b107_4A992
+peek F:4BA7C 2 b107_trail
+peek F:54E74 72 b107_ring
+step 1
+frame extracted/captures/fx-burst-108.ppm
+peek F:4B23C 2 b108_4B23C
+peek F:4B23E 2 b108_4B23E
+peek F:4BA3C 2 b108_4BA3C
+peek F:4BA3E 2 b108_4BA3E
+peek F:4BA4C 2 b108_4BA4C
+peek F:4BA79 1 b108_4BA79
+peek F:4BA7B 1 b108_4BA7B
+peek F:54E70 2 b108_54E70
+peek F:4A992 2 b108_4A992
+peek F:4BA7C 2 b108_trail
+peek F:54E74 72 b108_ring
+step 1
+peek F:4B23C 2 b109_4B23C
+peek F:4B23E 2 b109_4B23E
+peek F:4BA3C 2 b109_4BA3C
+peek F:4BA3E 2 b109_4BA3E
+peek F:4BA4C 2 b109_4BA4C
+peek F:4BA79 1 b109_4BA79
+peek F:4BA7B 1 b109_4BA7B
+peek F:54E70 2 b109_54E70
+peek F:4A992 2 b109_4A992
+peek F:4BA7C 2 b109_trail
+peek F:54E74 72 b109_ring
+step 1
+peek F:4B23C 2 b110_4B23C
+peek F:4B23E 2 b110_4B23E
+peek F:4BA3C 2 b110_4BA3C
+peek F:4BA3E 2 b110_4BA3E
+peek F:4BA4C 2 b110_4BA4C
+peek F:4BA79 1 b110_4BA79
+peek F:4BA7B 1 b110_4BA7B
+peek F:54E70 2 b110_54E70
+peek F:4A992 2 b110_4A992
+peek F:4BA7C 2 b110_trail
+peek F:54E74 72 b110_ring
+step 1
+peek F:4B23C 2 b111_4B23C
+peek F:4B23E 2 b111_4B23E
+peek F:4BA3C 2 b111_4BA3C
+peek F:4BA3E 2 b111_4BA3E
+peek F:4BA4C 2 b111_4BA4C
+peek F:4BA79 1 b111_4BA79
+peek F:4BA7B 1 b111_4BA7B
+peek F:54E70 2 b111_54E70
+peek F:4A992 2 b111_4A992
+peek F:4BA7C 2 b111_trail
+peek F:54E74 72 b111_ring
+step 1
+frame extracted/captures/fx-burst-112.ppm
+peek F:4B23C 2 b112_4B23C
+peek F:4B23E 2 b112_4B23E
+peek F:4BA3C 2 b112_4BA3C
+peek F:4BA3E 2 b112_4BA3E
+peek F:4BA4C 2 b112_4BA4C
+peek F:4BA79 1 b112_4BA79
+peek F:4BA7B 1 b112_4BA7B
+peek F:54E70 2 b112_54E70
+peek F:4A992 2 b112_4A992
+peek F:4BA7C 2 b112_trail
+peek F:54E74 72 b112_ring
+step 1
+peek F:4B23C 2 b113_4B23C
+peek F:4B23E 2 b113_4B23E
+peek F:4BA3C 2 b113_4BA3C
+peek F:4BA3E 2 b113_4BA3E
+peek F:4BA4C 2 b113_4BA4C
+peek F:4BA79 1 b113_4BA79
+peek F:4BA7B 1 b113_4BA7B
+peek F:54E70 2 b113_54E70
+peek F:4A992 2 b113_4A992
+peek F:4BA7C 2 b113_trail
+peek F:54E74 72 b113_ring
+step 1
+peek F:4B23C 2 b114_4B23C
+peek F:4B23E 2 b114_4B23E
+peek F:4BA3C 2 b114_4BA3C
+peek F:4BA3E 2 b114_4BA3E
+peek F:4BA4C 2 b114_4BA4C
+peek F:4BA79 1 b114_4BA79
+peek F:4BA7B 1 b114_4BA7B
+peek F:54E70 2 b114_54E70
+peek F:4A992 2 b114_4A992
+peek F:4BA7C 2 b114_trail
+peek F:54E74 72 b114_ring
+step 1
+peek F:4B23C 2 b115_4B23C
+peek F:4B23E 2 b115_4B23E
+peek F:4BA3C 2 b115_4BA3C
+peek F:4BA3E 2 b115_4BA3E
+peek F:4BA4C 2 b115_4BA4C
+peek F:4BA79 1 b115_4BA79
+peek F:4BA7B 1 b115_4BA7B
+peek F:54E70 2 b115_54E70
+peek F:4A992 2 b115_4A992
+peek F:4BA7C 2 b115_trail
+peek F:54E74 72 b115_ring
+step 1
+frame extracted/captures/fx-burst-116.ppm
+peek F:4B23C 2 b116_4B23C
+peek F:4B23E 2 b116_4B23E
+peek F:4BA3C 2 b116_4BA3C
+peek F:4BA3E 2 b116_4BA3E
+peek F:4BA4C 2 b116_4BA4C
+peek F:4BA79 1 b116_4BA79
+peek F:4BA7B 1 b116_4BA7B
+peek F:54E70 2 b116_54E70
+peek F:4A992 2 b116_4A992
+peek F:4BA7C 2 b116_trail
+peek F:54E74 72 b116_ring
+step 1
+peek F:4B23C 2 b117_4B23C
+peek F:4B23E 2 b117_4B23E
+peek F:4BA3C 2 b117_4BA3C
+peek F:4BA3E 2 b117_4BA3E
+peek F:4BA4C 2 b117_4BA4C
+peek F:4BA79 1 b117_4BA79
+peek F:4BA7B 1 b117_4BA7B
+peek F:54E70 2 b117_54E70
+peek F:4A992 2 b117_4A992
+peek F:4BA7C 2 b117_trail
+peek F:54E74 72 b117_ring
+step 1
+peek F:4B23C 2 b118_4B23C
+peek F:4B23E 2 b118_4B23E
+peek F:4BA3C 2 b118_4BA3C
+peek F:4BA3E 2 b118_4BA3E
+peek F:4BA4C 2 b118_4BA4C
+peek F:4BA79 1 b118_4BA79
+peek F:4BA7B 1 b118_4BA7B
+peek F:54E70 2 b118_54E70
+peek F:4A992 2 b118_4A992
+peek F:4BA7C 2 b118_trail
+peek F:54E74 72 b118_ring
+step 1
+peek F:4B23C 2 b119_4B23C
+peek F:4B23E 2 b119_4B23E
+peek F:4BA3C 2 b119_4BA3C
+peek F:4BA3E 2 b119_4BA3E
+peek F:4BA4C 2 b119_4BA4C
+peek F:4BA79 1 b119_4BA79
+peek F:4BA7B 1 b119_4BA7B
+peek F:54E70 2 b119_54E70
+peek F:4A992 2 b119_4A992
+peek F:4BA7C 2 b119_trail
+peek F:54E74 72 b119_ring
+step 1
+frame extracted/captures/fx-burst-120.ppm
+peek F:4B23C 2 b120_4B23C
+peek F:4B23E 2 b120_4B23E
+peek F:4BA3C 2 b120_4BA3C
+peek F:4BA3E 2 b120_4BA3E
+peek F:4BA4C 2 b120_4BA4C
+peek F:4BA79 1 b120_4BA79
+peek F:4BA7B 1 b120_4BA7B
+peek F:54E70 2 b120_54E70
+peek F:4A992 2 b120_4A992
+peek F:4BA7C 2 b120_trail
+peek F:54E74 72 b120_ring
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4D23C 4 0x00400013
+poke F:4D240 4 0x007F0041
+poke F:4D244 4 0x0042030F
+poke F:4D248 4 0x077C3C1D
+poke F:4D24C 4 0x00000AF5
+poke F:4D250 4 0x10477CFF
+poke F:4D254 4 0x000AF546
+poke F:4D258 4 0x10BC1D96
+poke F:4A910 1 0xFF
+poke F:4D240 2 0x007F
+step 1
+peek F:4D240 2 obj_t007F
+frame extracted/captures/fx-object-007F.ppm
+poke F:4D240 2 0x007A
+step 1
+peek F:4D240 2 obj_t007A
+frame extracted/captures/fx-object-007A.ppm
+poke F:4D240 2 0x0060
+step 1
+peek F:4D240 2 obj_t0060
+frame extracted/captures/fx-object-0060.ppm
+poke F:4D240 2 0x0040
+step 1
+peek F:4D240 2 obj_t0040
+frame extracted/captures/fx-object-0040.ppm
+poke F:4D240 2 0x000A
+step 1
+peek F:4D240 2 obj_t000A
+frame extracted/captures/fx-object-000A.ppm
+poke F:4D240 2 0x0004
+step 1
+peek F:4D240 2 obj_t0004
+frame extracted/captures/fx-object-0004.ppm
+poke F:4D240 2 0xFFFF
+step 1
+peek F:4D240 2 obj_tFFFF
+frame extracted/captures/fx-object-FFFF.ppm

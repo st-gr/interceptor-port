@@ -1,0 +1,2466 @@
+# Stall run (as openers-steprate-stall2.txt): the player's part-id byte +0x7B with the draw-side variables that decide whether the player's own model is drawn (0x21C44 prelude), per blank from 1060 to 1130 (note 05, the three-vertex ground test).
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+holduntil UP F:4B2A2 gt -1
+wait 1
+freeze
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+peek F:4A992 2 v1060_f
+peek F:4B23C 4 v1060_p
+peek F:4B254 4 v1060_y
+peek F:4B2B7 1 v1060_g
+peek F:4A923 1 v1060_a
+peek F:4A85F 1 v1060_b
+peek F:4A913 1 v1060_c
+peek F:4A8ED 1 v1060_d
+peek F:4AB30 4 v1060_e
+peek F:4AB70 2 v1060_h
+peek F:4AAF2 4 v1060_i
+peek F:4AAEE 4 v1060_j
+peek F:54E72 2 v1060_k
+peek F:4A83D 1 v1060_l
+peek F:4A996 2 v1060_m
+peek F:4AA6E 2 v1060_n
+peek F:4ABF8 2 v1060_o
+peek F:4A91C 1 v1060_q
+peek F:4A924 1 v1060_r
+step
+peek F:4A992 2 v1061_f
+peek F:4B23C 4 v1061_p
+peek F:4B254 4 v1061_y
+peek F:4B2B7 1 v1061_g
+peek F:4A923 1 v1061_a
+peek F:4A85F 1 v1061_b
+peek F:4A913 1 v1061_c
+peek F:4A8ED 1 v1061_d
+peek F:4AB30 4 v1061_e
+peek F:4AB70 2 v1061_h
+peek F:4AAF2 4 v1061_i
+peek F:4AAEE 4 v1061_j
+peek F:54E72 2 v1061_k
+peek F:4A83D 1 v1061_l
+peek F:4A996 2 v1061_m
+peek F:4AA6E 2 v1061_n
+peek F:4ABF8 2 v1061_o
+peek F:4A91C 1 v1061_q
+peek F:4A924 1 v1061_r
+step
+peek F:4A992 2 v1062_f
+peek F:4B23C 4 v1062_p
+peek F:4B254 4 v1062_y
+peek F:4B2B7 1 v1062_g
+peek F:4A923 1 v1062_a
+peek F:4A85F 1 v1062_b
+peek F:4A913 1 v1062_c
+peek F:4A8ED 1 v1062_d
+peek F:4AB30 4 v1062_e
+peek F:4AB70 2 v1062_h
+peek F:4AAF2 4 v1062_i
+peek F:4AAEE 4 v1062_j
+peek F:54E72 2 v1062_k
+peek F:4A83D 1 v1062_l
+peek F:4A996 2 v1062_m
+peek F:4AA6E 2 v1062_n
+peek F:4ABF8 2 v1062_o
+peek F:4A91C 1 v1062_q
+peek F:4A924 1 v1062_r
+step
+peek F:4A992 2 v1063_f
+peek F:4B23C 4 v1063_p
+peek F:4B254 4 v1063_y
+peek F:4B2B7 1 v1063_g
+peek F:4A923 1 v1063_a
+peek F:4A85F 1 v1063_b
+peek F:4A913 1 v1063_c
+peek F:4A8ED 1 v1063_d
+peek F:4AB30 4 v1063_e
+peek F:4AB70 2 v1063_h
+peek F:4AAF2 4 v1063_i
+peek F:4AAEE 4 v1063_j
+peek F:54E72 2 v1063_k
+peek F:4A83D 1 v1063_l
+peek F:4A996 2 v1063_m
+peek F:4AA6E 2 v1063_n
+peek F:4ABF8 2 v1063_o
+peek F:4A91C 1 v1063_q
+peek F:4A924 1 v1063_r
+step
+peek F:4A992 2 v1064_f
+peek F:4B23C 4 v1064_p
+peek F:4B254 4 v1064_y
+peek F:4B2B7 1 v1064_g
+peek F:4A923 1 v1064_a
+peek F:4A85F 1 v1064_b
+peek F:4A913 1 v1064_c
+peek F:4A8ED 1 v1064_d
+peek F:4AB30 4 v1064_e
+peek F:4AB70 2 v1064_h
+peek F:4AAF2 4 v1064_i
+peek F:4AAEE 4 v1064_j
+peek F:54E72 2 v1064_k
+peek F:4A83D 1 v1064_l
+peek F:4A996 2 v1064_m
+peek F:4AA6E 2 v1064_n
+peek F:4ABF8 2 v1064_o
+peek F:4A91C 1 v1064_q
+peek F:4A924 1 v1064_r
+step
+peek F:4A992 2 v1065_f
+peek F:4B23C 4 v1065_p
+peek F:4B254 4 v1065_y
+peek F:4B2B7 1 v1065_g
+peek F:4A923 1 v1065_a
+peek F:4A85F 1 v1065_b
+peek F:4A913 1 v1065_c
+peek F:4A8ED 1 v1065_d
+peek F:4AB30 4 v1065_e
+peek F:4AB70 2 v1065_h
+peek F:4AAF2 4 v1065_i
+peek F:4AAEE 4 v1065_j
+peek F:54E72 2 v1065_k
+peek F:4A83D 1 v1065_l
+peek F:4A996 2 v1065_m
+peek F:4AA6E 2 v1065_n
+peek F:4ABF8 2 v1065_o
+peek F:4A91C 1 v1065_q
+peek F:4A924 1 v1065_r
+step
+peek F:4A992 2 v1066_f
+peek F:4B23C 4 v1066_p
+peek F:4B254 4 v1066_y
+peek F:4B2B7 1 v1066_g
+peek F:4A923 1 v1066_a
+peek F:4A85F 1 v1066_b
+peek F:4A913 1 v1066_c
+peek F:4A8ED 1 v1066_d
+peek F:4AB30 4 v1066_e
+peek F:4AB70 2 v1066_h
+peek F:4AAF2 4 v1066_i
+peek F:4AAEE 4 v1066_j
+peek F:54E72 2 v1066_k
+peek F:4A83D 1 v1066_l
+peek F:4A996 2 v1066_m
+peek F:4AA6E 2 v1066_n
+peek F:4ABF8 2 v1066_o
+peek F:4A91C 1 v1066_q
+peek F:4A924 1 v1066_r
+step
+peek F:4A992 2 v1067_f
+peek F:4B23C 4 v1067_p
+peek F:4B254 4 v1067_y
+peek F:4B2B7 1 v1067_g
+peek F:4A923 1 v1067_a
+peek F:4A85F 1 v1067_b
+peek F:4A913 1 v1067_c
+peek F:4A8ED 1 v1067_d
+peek F:4AB30 4 v1067_e
+peek F:4AB70 2 v1067_h
+peek F:4AAF2 4 v1067_i
+peek F:4AAEE 4 v1067_j
+peek F:54E72 2 v1067_k
+peek F:4A83D 1 v1067_l
+peek F:4A996 2 v1067_m
+peek F:4AA6E 2 v1067_n
+peek F:4ABF8 2 v1067_o
+peek F:4A91C 1 v1067_q
+peek F:4A924 1 v1067_r
+step
+peek F:4A992 2 v1068_f
+peek F:4B23C 4 v1068_p
+peek F:4B254 4 v1068_y
+peek F:4B2B7 1 v1068_g
+peek F:4A923 1 v1068_a
+peek F:4A85F 1 v1068_b
+peek F:4A913 1 v1068_c
+peek F:4A8ED 1 v1068_d
+peek F:4AB30 4 v1068_e
+peek F:4AB70 2 v1068_h
+peek F:4AAF2 4 v1068_i
+peek F:4AAEE 4 v1068_j
+peek F:54E72 2 v1068_k
+peek F:4A83D 1 v1068_l
+peek F:4A996 2 v1068_m
+peek F:4AA6E 2 v1068_n
+peek F:4ABF8 2 v1068_o
+peek F:4A91C 1 v1068_q
+peek F:4A924 1 v1068_r
+step
+peek F:4A992 2 v1069_f
+peek F:4B23C 4 v1069_p
+peek F:4B254 4 v1069_y
+peek F:4B2B7 1 v1069_g
+peek F:4A923 1 v1069_a
+peek F:4A85F 1 v1069_b
+peek F:4A913 1 v1069_c
+peek F:4A8ED 1 v1069_d
+peek F:4AB30 4 v1069_e
+peek F:4AB70 2 v1069_h
+peek F:4AAF2 4 v1069_i
+peek F:4AAEE 4 v1069_j
+peek F:54E72 2 v1069_k
+peek F:4A83D 1 v1069_l
+peek F:4A996 2 v1069_m
+peek F:4AA6E 2 v1069_n
+peek F:4ABF8 2 v1069_o
+peek F:4A91C 1 v1069_q
+peek F:4A924 1 v1069_r
+step
+peek F:4A992 2 v1070_f
+peek F:4B23C 4 v1070_p
+peek F:4B254 4 v1070_y
+peek F:4B2B7 1 v1070_g
+peek F:4A923 1 v1070_a
+peek F:4A85F 1 v1070_b
+peek F:4A913 1 v1070_c
+peek F:4A8ED 1 v1070_d
+peek F:4AB30 4 v1070_e
+peek F:4AB70 2 v1070_h
+peek F:4AAF2 4 v1070_i
+peek F:4AAEE 4 v1070_j
+peek F:54E72 2 v1070_k
+peek F:4A83D 1 v1070_l
+peek F:4A996 2 v1070_m
+peek F:4AA6E 2 v1070_n
+peek F:4ABF8 2 v1070_o
+peek F:4A91C 1 v1070_q
+peek F:4A924 1 v1070_r
+step
+peek F:4A992 2 v1071_f
+peek F:4B23C 4 v1071_p
+peek F:4B254 4 v1071_y
+peek F:4B2B7 1 v1071_g
+peek F:4A923 1 v1071_a
+peek F:4A85F 1 v1071_b
+peek F:4A913 1 v1071_c
+peek F:4A8ED 1 v1071_d
+peek F:4AB30 4 v1071_e
+peek F:4AB70 2 v1071_h
+peek F:4AAF2 4 v1071_i
+peek F:4AAEE 4 v1071_j
+peek F:54E72 2 v1071_k
+peek F:4A83D 1 v1071_l
+peek F:4A996 2 v1071_m
+peek F:4AA6E 2 v1071_n
+peek F:4ABF8 2 v1071_o
+peek F:4A91C 1 v1071_q
+peek F:4A924 1 v1071_r
+step
+peek F:4A992 2 v1072_f
+peek F:4B23C 4 v1072_p
+peek F:4B254 4 v1072_y
+peek F:4B2B7 1 v1072_g
+peek F:4A923 1 v1072_a
+peek F:4A85F 1 v1072_b
+peek F:4A913 1 v1072_c
+peek F:4A8ED 1 v1072_d
+peek F:4AB30 4 v1072_e
+peek F:4AB70 2 v1072_h
+peek F:4AAF2 4 v1072_i
+peek F:4AAEE 4 v1072_j
+peek F:54E72 2 v1072_k
+peek F:4A83D 1 v1072_l
+peek F:4A996 2 v1072_m
+peek F:4AA6E 2 v1072_n
+peek F:4ABF8 2 v1072_o
+peek F:4A91C 1 v1072_q
+peek F:4A924 1 v1072_r
+step
+peek F:4A992 2 v1073_f
+peek F:4B23C 4 v1073_p
+peek F:4B254 4 v1073_y
+peek F:4B2B7 1 v1073_g
+peek F:4A923 1 v1073_a
+peek F:4A85F 1 v1073_b
+peek F:4A913 1 v1073_c
+peek F:4A8ED 1 v1073_d
+peek F:4AB30 4 v1073_e
+peek F:4AB70 2 v1073_h
+peek F:4AAF2 4 v1073_i
+peek F:4AAEE 4 v1073_j
+peek F:54E72 2 v1073_k
+peek F:4A83D 1 v1073_l
+peek F:4A996 2 v1073_m
+peek F:4AA6E 2 v1073_n
+peek F:4ABF8 2 v1073_o
+peek F:4A91C 1 v1073_q
+peek F:4A924 1 v1073_r
+step
+peek F:4A992 2 v1074_f
+peek F:4B23C 4 v1074_p
+peek F:4B254 4 v1074_y
+peek F:4B2B7 1 v1074_g
+peek F:4A923 1 v1074_a
+peek F:4A85F 1 v1074_b
+peek F:4A913 1 v1074_c
+peek F:4A8ED 1 v1074_d
+peek F:4AB30 4 v1074_e
+peek F:4AB70 2 v1074_h
+peek F:4AAF2 4 v1074_i
+peek F:4AAEE 4 v1074_j
+peek F:54E72 2 v1074_k
+peek F:4A83D 1 v1074_l
+peek F:4A996 2 v1074_m
+peek F:4AA6E 2 v1074_n
+peek F:4ABF8 2 v1074_o
+peek F:4A91C 1 v1074_q
+peek F:4A924 1 v1074_r
+step
+peek F:4A992 2 v1075_f
+peek F:4B23C 4 v1075_p
+peek F:4B254 4 v1075_y
+peek F:4B2B7 1 v1075_g
+peek F:4A923 1 v1075_a
+peek F:4A85F 1 v1075_b
+peek F:4A913 1 v1075_c
+peek F:4A8ED 1 v1075_d
+peek F:4AB30 4 v1075_e
+peek F:4AB70 2 v1075_h
+peek F:4AAF2 4 v1075_i
+peek F:4AAEE 4 v1075_j
+peek F:54E72 2 v1075_k
+peek F:4A83D 1 v1075_l
+peek F:4A996 2 v1075_m
+peek F:4AA6E 2 v1075_n
+peek F:4ABF8 2 v1075_o
+peek F:4A91C 1 v1075_q
+peek F:4A924 1 v1075_r
+step
+peek F:4A992 2 v1076_f
+peek F:4B23C 4 v1076_p
+peek F:4B254 4 v1076_y
+peek F:4B2B7 1 v1076_g
+peek F:4A923 1 v1076_a
+peek F:4A85F 1 v1076_b
+peek F:4A913 1 v1076_c
+peek F:4A8ED 1 v1076_d
+peek F:4AB30 4 v1076_e
+peek F:4AB70 2 v1076_h
+peek F:4AAF2 4 v1076_i
+peek F:4AAEE 4 v1076_j
+peek F:54E72 2 v1076_k
+peek F:4A83D 1 v1076_l
+peek F:4A996 2 v1076_m
+peek F:4AA6E 2 v1076_n
+peek F:4ABF8 2 v1076_o
+peek F:4A91C 1 v1076_q
+peek F:4A924 1 v1076_r
+step
+peek F:4A992 2 v1077_f
+peek F:4B23C 4 v1077_p
+peek F:4B254 4 v1077_y
+peek F:4B2B7 1 v1077_g
+peek F:4A923 1 v1077_a
+peek F:4A85F 1 v1077_b
+peek F:4A913 1 v1077_c
+peek F:4A8ED 1 v1077_d
+peek F:4AB30 4 v1077_e
+peek F:4AB70 2 v1077_h
+peek F:4AAF2 4 v1077_i
+peek F:4AAEE 4 v1077_j
+peek F:54E72 2 v1077_k
+peek F:4A83D 1 v1077_l
+peek F:4A996 2 v1077_m
+peek F:4AA6E 2 v1077_n
+peek F:4ABF8 2 v1077_o
+peek F:4A91C 1 v1077_q
+peek F:4A924 1 v1077_r
+step
+peek F:4A992 2 v1078_f
+peek F:4B23C 4 v1078_p
+peek F:4B254 4 v1078_y
+peek F:4B2B7 1 v1078_g
+peek F:4A923 1 v1078_a
+peek F:4A85F 1 v1078_b
+peek F:4A913 1 v1078_c
+peek F:4A8ED 1 v1078_d
+peek F:4AB30 4 v1078_e
+peek F:4AB70 2 v1078_h
+peek F:4AAF2 4 v1078_i
+peek F:4AAEE 4 v1078_j
+peek F:54E72 2 v1078_k
+peek F:4A83D 1 v1078_l
+peek F:4A996 2 v1078_m
+peek F:4AA6E 2 v1078_n
+peek F:4ABF8 2 v1078_o
+peek F:4A91C 1 v1078_q
+peek F:4A924 1 v1078_r
+step
+peek F:4A992 2 v1079_f
+peek F:4B23C 4 v1079_p
+peek F:4B254 4 v1079_y
+peek F:4B2B7 1 v1079_g
+peek F:4A923 1 v1079_a
+peek F:4A85F 1 v1079_b
+peek F:4A913 1 v1079_c
+peek F:4A8ED 1 v1079_d
+peek F:4AB30 4 v1079_e
+peek F:4AB70 2 v1079_h
+peek F:4AAF2 4 v1079_i
+peek F:4AAEE 4 v1079_j
+peek F:54E72 2 v1079_k
+peek F:4A83D 1 v1079_l
+peek F:4A996 2 v1079_m
+peek F:4AA6E 2 v1079_n
+peek F:4ABF8 2 v1079_o
+peek F:4A91C 1 v1079_q
+peek F:4A924 1 v1079_r
+step
+peek F:4A992 2 v1080_f
+peek F:4B23C 4 v1080_p
+peek F:4B254 4 v1080_y
+peek F:4B2B7 1 v1080_g
+peek F:4A923 1 v1080_a
+peek F:4A85F 1 v1080_b
+peek F:4A913 1 v1080_c
+peek F:4A8ED 1 v1080_d
+peek F:4AB30 4 v1080_e
+peek F:4AB70 2 v1080_h
+peek F:4AAF2 4 v1080_i
+peek F:4AAEE 4 v1080_j
+peek F:54E72 2 v1080_k
+peek F:4A83D 1 v1080_l
+peek F:4A996 2 v1080_m
+peek F:4AA6E 2 v1080_n
+peek F:4ABF8 2 v1080_o
+peek F:4A91C 1 v1080_q
+peek F:4A924 1 v1080_r
+step
+peek F:4A992 2 v1081_f
+peek F:4B23C 4 v1081_p
+peek F:4B254 4 v1081_y
+peek F:4B2B7 1 v1081_g
+peek F:4A923 1 v1081_a
+peek F:4A85F 1 v1081_b
+peek F:4A913 1 v1081_c
+peek F:4A8ED 1 v1081_d
+peek F:4AB30 4 v1081_e
+peek F:4AB70 2 v1081_h
+peek F:4AAF2 4 v1081_i
+peek F:4AAEE 4 v1081_j
+peek F:54E72 2 v1081_k
+peek F:4A83D 1 v1081_l
+peek F:4A996 2 v1081_m
+peek F:4AA6E 2 v1081_n
+peek F:4ABF8 2 v1081_o
+peek F:4A91C 1 v1081_q
+peek F:4A924 1 v1081_r
+step
+peek F:4A992 2 v1082_f
+peek F:4B23C 4 v1082_p
+peek F:4B254 4 v1082_y
+peek F:4B2B7 1 v1082_g
+peek F:4A923 1 v1082_a
+peek F:4A85F 1 v1082_b
+peek F:4A913 1 v1082_c
+peek F:4A8ED 1 v1082_d
+peek F:4AB30 4 v1082_e
+peek F:4AB70 2 v1082_h
+peek F:4AAF2 4 v1082_i
+peek F:4AAEE 4 v1082_j
+peek F:54E72 2 v1082_k
+peek F:4A83D 1 v1082_l
+peek F:4A996 2 v1082_m
+peek F:4AA6E 2 v1082_n
+peek F:4ABF8 2 v1082_o
+peek F:4A91C 1 v1082_q
+peek F:4A924 1 v1082_r
+step
+peek F:4A992 2 v1083_f
+peek F:4B23C 4 v1083_p
+peek F:4B254 4 v1083_y
+peek F:4B2B7 1 v1083_g
+peek F:4A923 1 v1083_a
+peek F:4A85F 1 v1083_b
+peek F:4A913 1 v1083_c
+peek F:4A8ED 1 v1083_d
+peek F:4AB30 4 v1083_e
+peek F:4AB70 2 v1083_h
+peek F:4AAF2 4 v1083_i
+peek F:4AAEE 4 v1083_j
+peek F:54E72 2 v1083_k
+peek F:4A83D 1 v1083_l
+peek F:4A996 2 v1083_m
+peek F:4AA6E 2 v1083_n
+peek F:4ABF8 2 v1083_o
+peek F:4A91C 1 v1083_q
+peek F:4A924 1 v1083_r
+step
+peek F:4A992 2 v1084_f
+peek F:4B23C 4 v1084_p
+peek F:4B254 4 v1084_y
+peek F:4B2B7 1 v1084_g
+peek F:4A923 1 v1084_a
+peek F:4A85F 1 v1084_b
+peek F:4A913 1 v1084_c
+peek F:4A8ED 1 v1084_d
+peek F:4AB30 4 v1084_e
+peek F:4AB70 2 v1084_h
+peek F:4AAF2 4 v1084_i
+peek F:4AAEE 4 v1084_j
+peek F:54E72 2 v1084_k
+peek F:4A83D 1 v1084_l
+peek F:4A996 2 v1084_m
+peek F:4AA6E 2 v1084_n
+peek F:4ABF8 2 v1084_o
+peek F:4A91C 1 v1084_q
+peek F:4A924 1 v1084_r
+step
+peek F:4A992 2 v1085_f
+peek F:4B23C 4 v1085_p
+peek F:4B254 4 v1085_y
+peek F:4B2B7 1 v1085_g
+peek F:4A923 1 v1085_a
+peek F:4A85F 1 v1085_b
+peek F:4A913 1 v1085_c
+peek F:4A8ED 1 v1085_d
+peek F:4AB30 4 v1085_e
+peek F:4AB70 2 v1085_h
+peek F:4AAF2 4 v1085_i
+peek F:4AAEE 4 v1085_j
+peek F:54E72 2 v1085_k
+peek F:4A83D 1 v1085_l
+peek F:4A996 2 v1085_m
+peek F:4AA6E 2 v1085_n
+peek F:4ABF8 2 v1085_o
+peek F:4A91C 1 v1085_q
+peek F:4A924 1 v1085_r
+step
+peek F:4A992 2 v1086_f
+peek F:4B23C 4 v1086_p
+peek F:4B254 4 v1086_y
+peek F:4B2B7 1 v1086_g
+peek F:4A923 1 v1086_a
+peek F:4A85F 1 v1086_b
+peek F:4A913 1 v1086_c
+peek F:4A8ED 1 v1086_d
+peek F:4AB30 4 v1086_e
+peek F:4AB70 2 v1086_h
+peek F:4AAF2 4 v1086_i
+peek F:4AAEE 4 v1086_j
+peek F:54E72 2 v1086_k
+peek F:4A83D 1 v1086_l
+peek F:4A996 2 v1086_m
+peek F:4AA6E 2 v1086_n
+peek F:4ABF8 2 v1086_o
+peek F:4A91C 1 v1086_q
+peek F:4A924 1 v1086_r
+step
+peek F:4A992 2 v1087_f
+peek F:4B23C 4 v1087_p
+peek F:4B254 4 v1087_y
+peek F:4B2B7 1 v1087_g
+peek F:4A923 1 v1087_a
+peek F:4A85F 1 v1087_b
+peek F:4A913 1 v1087_c
+peek F:4A8ED 1 v1087_d
+peek F:4AB30 4 v1087_e
+peek F:4AB70 2 v1087_h
+peek F:4AAF2 4 v1087_i
+peek F:4AAEE 4 v1087_j
+peek F:54E72 2 v1087_k
+peek F:4A83D 1 v1087_l
+peek F:4A996 2 v1087_m
+peek F:4AA6E 2 v1087_n
+peek F:4ABF8 2 v1087_o
+peek F:4A91C 1 v1087_q
+peek F:4A924 1 v1087_r
+step
+peek F:4A992 2 v1088_f
+peek F:4B23C 4 v1088_p
+peek F:4B254 4 v1088_y
+peek F:4B2B7 1 v1088_g
+peek F:4A923 1 v1088_a
+peek F:4A85F 1 v1088_b
+peek F:4A913 1 v1088_c
+peek F:4A8ED 1 v1088_d
+peek F:4AB30 4 v1088_e
+peek F:4AB70 2 v1088_h
+peek F:4AAF2 4 v1088_i
+peek F:4AAEE 4 v1088_j
+peek F:54E72 2 v1088_k
+peek F:4A83D 1 v1088_l
+peek F:4A996 2 v1088_m
+peek F:4AA6E 2 v1088_n
+peek F:4ABF8 2 v1088_o
+peek F:4A91C 1 v1088_q
+peek F:4A924 1 v1088_r
+step
+peek F:4A992 2 v1089_f
+peek F:4B23C 4 v1089_p
+peek F:4B254 4 v1089_y
+peek F:4B2B7 1 v1089_g
+peek F:4A923 1 v1089_a
+peek F:4A85F 1 v1089_b
+peek F:4A913 1 v1089_c
+peek F:4A8ED 1 v1089_d
+peek F:4AB30 4 v1089_e
+peek F:4AB70 2 v1089_h
+peek F:4AAF2 4 v1089_i
+peek F:4AAEE 4 v1089_j
+peek F:54E72 2 v1089_k
+peek F:4A83D 1 v1089_l
+peek F:4A996 2 v1089_m
+peek F:4AA6E 2 v1089_n
+peek F:4ABF8 2 v1089_o
+peek F:4A91C 1 v1089_q
+peek F:4A924 1 v1089_r
+step
+peek F:4A992 2 v1090_f
+peek F:4B23C 4 v1090_p
+peek F:4B254 4 v1090_y
+peek F:4B2B7 1 v1090_g
+peek F:4A923 1 v1090_a
+peek F:4A85F 1 v1090_b
+peek F:4A913 1 v1090_c
+peek F:4A8ED 1 v1090_d
+peek F:4AB30 4 v1090_e
+peek F:4AB70 2 v1090_h
+peek F:4AAF2 4 v1090_i
+peek F:4AAEE 4 v1090_j
+peek F:54E72 2 v1090_k
+peek F:4A83D 1 v1090_l
+peek F:4A996 2 v1090_m
+peek F:4AA6E 2 v1090_n
+peek F:4ABF8 2 v1090_o
+peek F:4A91C 1 v1090_q
+peek F:4A924 1 v1090_r
+step
+peek F:4A992 2 v1091_f
+peek F:4B23C 4 v1091_p
+peek F:4B254 4 v1091_y
+peek F:4B2B7 1 v1091_g
+peek F:4A923 1 v1091_a
+peek F:4A85F 1 v1091_b
+peek F:4A913 1 v1091_c
+peek F:4A8ED 1 v1091_d
+peek F:4AB30 4 v1091_e
+peek F:4AB70 2 v1091_h
+peek F:4AAF2 4 v1091_i
+peek F:4AAEE 4 v1091_j
+peek F:54E72 2 v1091_k
+peek F:4A83D 1 v1091_l
+peek F:4A996 2 v1091_m
+peek F:4AA6E 2 v1091_n
+peek F:4ABF8 2 v1091_o
+peek F:4A91C 1 v1091_q
+peek F:4A924 1 v1091_r
+step
+peek F:4A992 2 v1092_f
+peek F:4B23C 4 v1092_p
+peek F:4B254 4 v1092_y
+peek F:4B2B7 1 v1092_g
+peek F:4A923 1 v1092_a
+peek F:4A85F 1 v1092_b
+peek F:4A913 1 v1092_c
+peek F:4A8ED 1 v1092_d
+peek F:4AB30 4 v1092_e
+peek F:4AB70 2 v1092_h
+peek F:4AAF2 4 v1092_i
+peek F:4AAEE 4 v1092_j
+peek F:54E72 2 v1092_k
+peek F:4A83D 1 v1092_l
+peek F:4A996 2 v1092_m
+peek F:4AA6E 2 v1092_n
+peek F:4ABF8 2 v1092_o
+peek F:4A91C 1 v1092_q
+peek F:4A924 1 v1092_r
+step
+peek F:4A992 2 v1093_f
+peek F:4B23C 4 v1093_p
+peek F:4B254 4 v1093_y
+peek F:4B2B7 1 v1093_g
+peek F:4A923 1 v1093_a
+peek F:4A85F 1 v1093_b
+peek F:4A913 1 v1093_c
+peek F:4A8ED 1 v1093_d
+peek F:4AB30 4 v1093_e
+peek F:4AB70 2 v1093_h
+peek F:4AAF2 4 v1093_i
+peek F:4AAEE 4 v1093_j
+peek F:54E72 2 v1093_k
+peek F:4A83D 1 v1093_l
+peek F:4A996 2 v1093_m
+peek F:4AA6E 2 v1093_n
+peek F:4ABF8 2 v1093_o
+peek F:4A91C 1 v1093_q
+peek F:4A924 1 v1093_r
+step
+peek F:4A992 2 v1094_f
+peek F:4B23C 4 v1094_p
+peek F:4B254 4 v1094_y
+peek F:4B2B7 1 v1094_g
+peek F:4A923 1 v1094_a
+peek F:4A85F 1 v1094_b
+peek F:4A913 1 v1094_c
+peek F:4A8ED 1 v1094_d
+peek F:4AB30 4 v1094_e
+peek F:4AB70 2 v1094_h
+peek F:4AAF2 4 v1094_i
+peek F:4AAEE 4 v1094_j
+peek F:54E72 2 v1094_k
+peek F:4A83D 1 v1094_l
+peek F:4A996 2 v1094_m
+peek F:4AA6E 2 v1094_n
+peek F:4ABF8 2 v1094_o
+peek F:4A91C 1 v1094_q
+peek F:4A924 1 v1094_r
+step
+peek F:4A992 2 v1095_f
+peek F:4B23C 4 v1095_p
+peek F:4B254 4 v1095_y
+peek F:4B2B7 1 v1095_g
+peek F:4A923 1 v1095_a
+peek F:4A85F 1 v1095_b
+peek F:4A913 1 v1095_c
+peek F:4A8ED 1 v1095_d
+peek F:4AB30 4 v1095_e
+peek F:4AB70 2 v1095_h
+peek F:4AAF2 4 v1095_i
+peek F:4AAEE 4 v1095_j
+peek F:54E72 2 v1095_k
+peek F:4A83D 1 v1095_l
+peek F:4A996 2 v1095_m
+peek F:4AA6E 2 v1095_n
+peek F:4ABF8 2 v1095_o
+peek F:4A91C 1 v1095_q
+peek F:4A924 1 v1095_r
+step
+peek F:4A992 2 v1096_f
+peek F:4B23C 4 v1096_p
+peek F:4B254 4 v1096_y
+peek F:4B2B7 1 v1096_g
+peek F:4A923 1 v1096_a
+peek F:4A85F 1 v1096_b
+peek F:4A913 1 v1096_c
+peek F:4A8ED 1 v1096_d
+peek F:4AB30 4 v1096_e
+peek F:4AB70 2 v1096_h
+peek F:4AAF2 4 v1096_i
+peek F:4AAEE 4 v1096_j
+peek F:54E72 2 v1096_k
+peek F:4A83D 1 v1096_l
+peek F:4A996 2 v1096_m
+peek F:4AA6E 2 v1096_n
+peek F:4ABF8 2 v1096_o
+peek F:4A91C 1 v1096_q
+peek F:4A924 1 v1096_r
+step
+peek F:4A992 2 v1097_f
+peek F:4B23C 4 v1097_p
+peek F:4B254 4 v1097_y
+peek F:4B2B7 1 v1097_g
+peek F:4A923 1 v1097_a
+peek F:4A85F 1 v1097_b
+peek F:4A913 1 v1097_c
+peek F:4A8ED 1 v1097_d
+peek F:4AB30 4 v1097_e
+peek F:4AB70 2 v1097_h
+peek F:4AAF2 4 v1097_i
+peek F:4AAEE 4 v1097_j
+peek F:54E72 2 v1097_k
+peek F:4A83D 1 v1097_l
+peek F:4A996 2 v1097_m
+peek F:4AA6E 2 v1097_n
+peek F:4ABF8 2 v1097_o
+peek F:4A91C 1 v1097_q
+peek F:4A924 1 v1097_r
+step
+peek F:4A992 2 v1098_f
+peek F:4B23C 4 v1098_p
+peek F:4B254 4 v1098_y
+peek F:4B2B7 1 v1098_g
+peek F:4A923 1 v1098_a
+peek F:4A85F 1 v1098_b
+peek F:4A913 1 v1098_c
+peek F:4A8ED 1 v1098_d
+peek F:4AB30 4 v1098_e
+peek F:4AB70 2 v1098_h
+peek F:4AAF2 4 v1098_i
+peek F:4AAEE 4 v1098_j
+peek F:54E72 2 v1098_k
+peek F:4A83D 1 v1098_l
+peek F:4A996 2 v1098_m
+peek F:4AA6E 2 v1098_n
+peek F:4ABF8 2 v1098_o
+peek F:4A91C 1 v1098_q
+peek F:4A924 1 v1098_r
+step
+peek F:4A992 2 v1099_f
+peek F:4B23C 4 v1099_p
+peek F:4B254 4 v1099_y
+peek F:4B2B7 1 v1099_g
+peek F:4A923 1 v1099_a
+peek F:4A85F 1 v1099_b
+peek F:4A913 1 v1099_c
+peek F:4A8ED 1 v1099_d
+peek F:4AB30 4 v1099_e
+peek F:4AB70 2 v1099_h
+peek F:4AAF2 4 v1099_i
+peek F:4AAEE 4 v1099_j
+peek F:54E72 2 v1099_k
+peek F:4A83D 1 v1099_l
+peek F:4A996 2 v1099_m
+peek F:4AA6E 2 v1099_n
+peek F:4ABF8 2 v1099_o
+peek F:4A91C 1 v1099_q
+peek F:4A924 1 v1099_r
+step
+peek F:4A992 2 v1100_f
+peek F:4B23C 4 v1100_p
+peek F:4B254 4 v1100_y
+peek F:4B2B7 1 v1100_g
+peek F:4A923 1 v1100_a
+peek F:4A85F 1 v1100_b
+peek F:4A913 1 v1100_c
+peek F:4A8ED 1 v1100_d
+peek F:4AB30 4 v1100_e
+peek F:4AB70 2 v1100_h
+peek F:4AAF2 4 v1100_i
+peek F:4AAEE 4 v1100_j
+peek F:54E72 2 v1100_k
+peek F:4A83D 1 v1100_l
+peek F:4A996 2 v1100_m
+peek F:4AA6E 2 v1100_n
+peek F:4ABF8 2 v1100_o
+peek F:4A91C 1 v1100_q
+peek F:4A924 1 v1100_r
+step
+peek F:4A992 2 v1101_f
+peek F:4B23C 4 v1101_p
+peek F:4B254 4 v1101_y
+peek F:4B2B7 1 v1101_g
+peek F:4A923 1 v1101_a
+peek F:4A85F 1 v1101_b
+peek F:4A913 1 v1101_c
+peek F:4A8ED 1 v1101_d
+peek F:4AB30 4 v1101_e
+peek F:4AB70 2 v1101_h
+peek F:4AAF2 4 v1101_i
+peek F:4AAEE 4 v1101_j
+peek F:54E72 2 v1101_k
+peek F:4A83D 1 v1101_l
+peek F:4A996 2 v1101_m
+peek F:4AA6E 2 v1101_n
+peek F:4ABF8 2 v1101_o
+peek F:4A91C 1 v1101_q
+peek F:4A924 1 v1101_r
+step
+peek F:4A992 2 v1102_f
+peek F:4B23C 4 v1102_p
+peek F:4B254 4 v1102_y
+peek F:4B2B7 1 v1102_g
+peek F:4A923 1 v1102_a
+peek F:4A85F 1 v1102_b
+peek F:4A913 1 v1102_c
+peek F:4A8ED 1 v1102_d
+peek F:4AB30 4 v1102_e
+peek F:4AB70 2 v1102_h
+peek F:4AAF2 4 v1102_i
+peek F:4AAEE 4 v1102_j
+peek F:54E72 2 v1102_k
+peek F:4A83D 1 v1102_l
+peek F:4A996 2 v1102_m
+peek F:4AA6E 2 v1102_n
+peek F:4ABF8 2 v1102_o
+peek F:4A91C 1 v1102_q
+peek F:4A924 1 v1102_r
+step
+peek F:4A992 2 v1103_f
+peek F:4B23C 4 v1103_p
+peek F:4B254 4 v1103_y
+peek F:4B2B7 1 v1103_g
+peek F:4A923 1 v1103_a
+peek F:4A85F 1 v1103_b
+peek F:4A913 1 v1103_c
+peek F:4A8ED 1 v1103_d
+peek F:4AB30 4 v1103_e
+peek F:4AB70 2 v1103_h
+peek F:4AAF2 4 v1103_i
+peek F:4AAEE 4 v1103_j
+peek F:54E72 2 v1103_k
+peek F:4A83D 1 v1103_l
+peek F:4A996 2 v1103_m
+peek F:4AA6E 2 v1103_n
+peek F:4ABF8 2 v1103_o
+peek F:4A91C 1 v1103_q
+peek F:4A924 1 v1103_r
+step
+peek F:4A992 2 v1104_f
+peek F:4B23C 4 v1104_p
+peek F:4B254 4 v1104_y
+peek F:4B2B7 1 v1104_g
+peek F:4A923 1 v1104_a
+peek F:4A85F 1 v1104_b
+peek F:4A913 1 v1104_c
+peek F:4A8ED 1 v1104_d
+peek F:4AB30 4 v1104_e
+peek F:4AB70 2 v1104_h
+peek F:4AAF2 4 v1104_i
+peek F:4AAEE 4 v1104_j
+peek F:54E72 2 v1104_k
+peek F:4A83D 1 v1104_l
+peek F:4A996 2 v1104_m
+peek F:4AA6E 2 v1104_n
+peek F:4ABF8 2 v1104_o
+peek F:4A91C 1 v1104_q
+peek F:4A924 1 v1104_r
+step
+peek F:4A992 2 v1105_f
+peek F:4B23C 4 v1105_p
+peek F:4B254 4 v1105_y
+peek F:4B2B7 1 v1105_g
+peek F:4A923 1 v1105_a
+peek F:4A85F 1 v1105_b
+peek F:4A913 1 v1105_c
+peek F:4A8ED 1 v1105_d
+peek F:4AB30 4 v1105_e
+peek F:4AB70 2 v1105_h
+peek F:4AAF2 4 v1105_i
+peek F:4AAEE 4 v1105_j
+peek F:54E72 2 v1105_k
+peek F:4A83D 1 v1105_l
+peek F:4A996 2 v1105_m
+peek F:4AA6E 2 v1105_n
+peek F:4ABF8 2 v1105_o
+peek F:4A91C 1 v1105_q
+peek F:4A924 1 v1105_r
+step
+peek F:4A992 2 v1106_f
+peek F:4B23C 4 v1106_p
+peek F:4B254 4 v1106_y
+peek F:4B2B7 1 v1106_g
+peek F:4A923 1 v1106_a
+peek F:4A85F 1 v1106_b
+peek F:4A913 1 v1106_c
+peek F:4A8ED 1 v1106_d
+peek F:4AB30 4 v1106_e
+peek F:4AB70 2 v1106_h
+peek F:4AAF2 4 v1106_i
+peek F:4AAEE 4 v1106_j
+peek F:54E72 2 v1106_k
+peek F:4A83D 1 v1106_l
+peek F:4A996 2 v1106_m
+peek F:4AA6E 2 v1106_n
+peek F:4ABF8 2 v1106_o
+peek F:4A91C 1 v1106_q
+peek F:4A924 1 v1106_r
+step
+peek F:4A992 2 v1107_f
+peek F:4B23C 4 v1107_p
+peek F:4B254 4 v1107_y
+peek F:4B2B7 1 v1107_g
+peek F:4A923 1 v1107_a
+peek F:4A85F 1 v1107_b
+peek F:4A913 1 v1107_c
+peek F:4A8ED 1 v1107_d
+peek F:4AB30 4 v1107_e
+peek F:4AB70 2 v1107_h
+peek F:4AAF2 4 v1107_i
+peek F:4AAEE 4 v1107_j
+peek F:54E72 2 v1107_k
+peek F:4A83D 1 v1107_l
+peek F:4A996 2 v1107_m
+peek F:4AA6E 2 v1107_n
+peek F:4ABF8 2 v1107_o
+peek F:4A91C 1 v1107_q
+peek F:4A924 1 v1107_r
+step
+peek F:4A992 2 v1108_f
+peek F:4B23C 4 v1108_p
+peek F:4B254 4 v1108_y
+peek F:4B2B7 1 v1108_g
+peek F:4A923 1 v1108_a
+peek F:4A85F 1 v1108_b
+peek F:4A913 1 v1108_c
+peek F:4A8ED 1 v1108_d
+peek F:4AB30 4 v1108_e
+peek F:4AB70 2 v1108_h
+peek F:4AAF2 4 v1108_i
+peek F:4AAEE 4 v1108_j
+peek F:54E72 2 v1108_k
+peek F:4A83D 1 v1108_l
+peek F:4A996 2 v1108_m
+peek F:4AA6E 2 v1108_n
+peek F:4ABF8 2 v1108_o
+peek F:4A91C 1 v1108_q
+peek F:4A924 1 v1108_r
+step
+peek F:4A992 2 v1109_f
+peek F:4B23C 4 v1109_p
+peek F:4B254 4 v1109_y
+peek F:4B2B7 1 v1109_g
+peek F:4A923 1 v1109_a
+peek F:4A85F 1 v1109_b
+peek F:4A913 1 v1109_c
+peek F:4A8ED 1 v1109_d
+peek F:4AB30 4 v1109_e
+peek F:4AB70 2 v1109_h
+peek F:4AAF2 4 v1109_i
+peek F:4AAEE 4 v1109_j
+peek F:54E72 2 v1109_k
+peek F:4A83D 1 v1109_l
+peek F:4A996 2 v1109_m
+peek F:4AA6E 2 v1109_n
+peek F:4ABF8 2 v1109_o
+peek F:4A91C 1 v1109_q
+peek F:4A924 1 v1109_r
+step
+peek F:4A992 2 v1110_f
+peek F:4B23C 4 v1110_p
+peek F:4B254 4 v1110_y
+peek F:4B2B7 1 v1110_g
+peek F:4A923 1 v1110_a
+peek F:4A85F 1 v1110_b
+peek F:4A913 1 v1110_c
+peek F:4A8ED 1 v1110_d
+peek F:4AB30 4 v1110_e
+peek F:4AB70 2 v1110_h
+peek F:4AAF2 4 v1110_i
+peek F:4AAEE 4 v1110_j
+peek F:54E72 2 v1110_k
+peek F:4A83D 1 v1110_l
+peek F:4A996 2 v1110_m
+peek F:4AA6E 2 v1110_n
+peek F:4ABF8 2 v1110_o
+peek F:4A91C 1 v1110_q
+peek F:4A924 1 v1110_r
+step
+peek F:4A992 2 v1111_f
+peek F:4B23C 4 v1111_p
+peek F:4B254 4 v1111_y
+peek F:4B2B7 1 v1111_g
+peek F:4A923 1 v1111_a
+peek F:4A85F 1 v1111_b
+peek F:4A913 1 v1111_c
+peek F:4A8ED 1 v1111_d
+peek F:4AB30 4 v1111_e
+peek F:4AB70 2 v1111_h
+peek F:4AAF2 4 v1111_i
+peek F:4AAEE 4 v1111_j
+peek F:54E72 2 v1111_k
+peek F:4A83D 1 v1111_l
+peek F:4A996 2 v1111_m
+peek F:4AA6E 2 v1111_n
+peek F:4ABF8 2 v1111_o
+peek F:4A91C 1 v1111_q
+peek F:4A924 1 v1111_r
+step
+peek F:4A992 2 v1112_f
+peek F:4B23C 4 v1112_p
+peek F:4B254 4 v1112_y
+peek F:4B2B7 1 v1112_g
+peek F:4A923 1 v1112_a
+peek F:4A85F 1 v1112_b
+peek F:4A913 1 v1112_c
+peek F:4A8ED 1 v1112_d
+peek F:4AB30 4 v1112_e
+peek F:4AB70 2 v1112_h
+peek F:4AAF2 4 v1112_i
+peek F:4AAEE 4 v1112_j
+peek F:54E72 2 v1112_k
+peek F:4A83D 1 v1112_l
+peek F:4A996 2 v1112_m
+peek F:4AA6E 2 v1112_n
+peek F:4ABF8 2 v1112_o
+peek F:4A91C 1 v1112_q
+peek F:4A924 1 v1112_r
+step
+peek F:4A992 2 v1113_f
+peek F:4B23C 4 v1113_p
+peek F:4B254 4 v1113_y
+peek F:4B2B7 1 v1113_g
+peek F:4A923 1 v1113_a
+peek F:4A85F 1 v1113_b
+peek F:4A913 1 v1113_c
+peek F:4A8ED 1 v1113_d
+peek F:4AB30 4 v1113_e
+peek F:4AB70 2 v1113_h
+peek F:4AAF2 4 v1113_i
+peek F:4AAEE 4 v1113_j
+peek F:54E72 2 v1113_k
+peek F:4A83D 1 v1113_l
+peek F:4A996 2 v1113_m
+peek F:4AA6E 2 v1113_n
+peek F:4ABF8 2 v1113_o
+peek F:4A91C 1 v1113_q
+peek F:4A924 1 v1113_r
+step
+peek F:4A992 2 v1114_f
+peek F:4B23C 4 v1114_p
+peek F:4B254 4 v1114_y
+peek F:4B2B7 1 v1114_g
+peek F:4A923 1 v1114_a
+peek F:4A85F 1 v1114_b
+peek F:4A913 1 v1114_c
+peek F:4A8ED 1 v1114_d
+peek F:4AB30 4 v1114_e
+peek F:4AB70 2 v1114_h
+peek F:4AAF2 4 v1114_i
+peek F:4AAEE 4 v1114_j
+peek F:54E72 2 v1114_k
+peek F:4A83D 1 v1114_l
+peek F:4A996 2 v1114_m
+peek F:4AA6E 2 v1114_n
+peek F:4ABF8 2 v1114_o
+peek F:4A91C 1 v1114_q
+peek F:4A924 1 v1114_r
+step
+peek F:4A992 2 v1115_f
+peek F:4B23C 4 v1115_p
+peek F:4B254 4 v1115_y
+peek F:4B2B7 1 v1115_g
+peek F:4A923 1 v1115_a
+peek F:4A85F 1 v1115_b
+peek F:4A913 1 v1115_c
+peek F:4A8ED 1 v1115_d
+peek F:4AB30 4 v1115_e
+peek F:4AB70 2 v1115_h
+peek F:4AAF2 4 v1115_i
+peek F:4AAEE 4 v1115_j
+peek F:54E72 2 v1115_k
+peek F:4A83D 1 v1115_l
+peek F:4A996 2 v1115_m
+peek F:4AA6E 2 v1115_n
+peek F:4ABF8 2 v1115_o
+peek F:4A91C 1 v1115_q
+peek F:4A924 1 v1115_r
+step
+peek F:4A992 2 v1116_f
+peek F:4B23C 4 v1116_p
+peek F:4B254 4 v1116_y
+peek F:4B2B7 1 v1116_g
+peek F:4A923 1 v1116_a
+peek F:4A85F 1 v1116_b
+peek F:4A913 1 v1116_c
+peek F:4A8ED 1 v1116_d
+peek F:4AB30 4 v1116_e
+peek F:4AB70 2 v1116_h
+peek F:4AAF2 4 v1116_i
+peek F:4AAEE 4 v1116_j
+peek F:54E72 2 v1116_k
+peek F:4A83D 1 v1116_l
+peek F:4A996 2 v1116_m
+peek F:4AA6E 2 v1116_n
+peek F:4ABF8 2 v1116_o
+peek F:4A91C 1 v1116_q
+peek F:4A924 1 v1116_r
+step
+peek F:4A992 2 v1117_f
+peek F:4B23C 4 v1117_p
+peek F:4B254 4 v1117_y
+peek F:4B2B7 1 v1117_g
+peek F:4A923 1 v1117_a
+peek F:4A85F 1 v1117_b
+peek F:4A913 1 v1117_c
+peek F:4A8ED 1 v1117_d
+peek F:4AB30 4 v1117_e
+peek F:4AB70 2 v1117_h
+peek F:4AAF2 4 v1117_i
+peek F:4AAEE 4 v1117_j
+peek F:54E72 2 v1117_k
+peek F:4A83D 1 v1117_l
+peek F:4A996 2 v1117_m
+peek F:4AA6E 2 v1117_n
+peek F:4ABF8 2 v1117_o
+peek F:4A91C 1 v1117_q
+peek F:4A924 1 v1117_r
+step
+peek F:4A992 2 v1118_f
+peek F:4B23C 4 v1118_p
+peek F:4B254 4 v1118_y
+peek F:4B2B7 1 v1118_g
+peek F:4A923 1 v1118_a
+peek F:4A85F 1 v1118_b
+peek F:4A913 1 v1118_c
+peek F:4A8ED 1 v1118_d
+peek F:4AB30 4 v1118_e
+peek F:4AB70 2 v1118_h
+peek F:4AAF2 4 v1118_i
+peek F:4AAEE 4 v1118_j
+peek F:54E72 2 v1118_k
+peek F:4A83D 1 v1118_l
+peek F:4A996 2 v1118_m
+peek F:4AA6E 2 v1118_n
+peek F:4ABF8 2 v1118_o
+peek F:4A91C 1 v1118_q
+peek F:4A924 1 v1118_r
+step
+peek F:4A992 2 v1119_f
+peek F:4B23C 4 v1119_p
+peek F:4B254 4 v1119_y
+peek F:4B2B7 1 v1119_g
+peek F:4A923 1 v1119_a
+peek F:4A85F 1 v1119_b
+peek F:4A913 1 v1119_c
+peek F:4A8ED 1 v1119_d
+peek F:4AB30 4 v1119_e
+peek F:4AB70 2 v1119_h
+peek F:4AAF2 4 v1119_i
+peek F:4AAEE 4 v1119_j
+peek F:54E72 2 v1119_k
+peek F:4A83D 1 v1119_l
+peek F:4A996 2 v1119_m
+peek F:4AA6E 2 v1119_n
+peek F:4ABF8 2 v1119_o
+peek F:4A91C 1 v1119_q
+peek F:4A924 1 v1119_r
+step
+peek F:4A992 2 v1120_f
+peek F:4B23C 4 v1120_p
+peek F:4B254 4 v1120_y
+peek F:4B2B7 1 v1120_g
+peek F:4A923 1 v1120_a
+peek F:4A85F 1 v1120_b
+peek F:4A913 1 v1120_c
+peek F:4A8ED 1 v1120_d
+peek F:4AB30 4 v1120_e
+peek F:4AB70 2 v1120_h
+peek F:4AAF2 4 v1120_i
+peek F:4AAEE 4 v1120_j
+peek F:54E72 2 v1120_k
+peek F:4A83D 1 v1120_l
+peek F:4A996 2 v1120_m
+peek F:4AA6E 2 v1120_n
+peek F:4ABF8 2 v1120_o
+peek F:4A91C 1 v1120_q
+peek F:4A924 1 v1120_r
+step
+peek F:4A992 2 v1121_f
+peek F:4B23C 4 v1121_p
+peek F:4B254 4 v1121_y
+peek F:4B2B7 1 v1121_g
+peek F:4A923 1 v1121_a
+peek F:4A85F 1 v1121_b
+peek F:4A913 1 v1121_c
+peek F:4A8ED 1 v1121_d
+peek F:4AB30 4 v1121_e
+peek F:4AB70 2 v1121_h
+peek F:4AAF2 4 v1121_i
+peek F:4AAEE 4 v1121_j
+peek F:54E72 2 v1121_k
+peek F:4A83D 1 v1121_l
+peek F:4A996 2 v1121_m
+peek F:4AA6E 2 v1121_n
+peek F:4ABF8 2 v1121_o
+peek F:4A91C 1 v1121_q
+peek F:4A924 1 v1121_r
+step
+peek F:4A992 2 v1122_f
+peek F:4B23C 4 v1122_p
+peek F:4B254 4 v1122_y
+peek F:4B2B7 1 v1122_g
+peek F:4A923 1 v1122_a
+peek F:4A85F 1 v1122_b
+peek F:4A913 1 v1122_c
+peek F:4A8ED 1 v1122_d
+peek F:4AB30 4 v1122_e
+peek F:4AB70 2 v1122_h
+peek F:4AAF2 4 v1122_i
+peek F:4AAEE 4 v1122_j
+peek F:54E72 2 v1122_k
+peek F:4A83D 1 v1122_l
+peek F:4A996 2 v1122_m
+peek F:4AA6E 2 v1122_n
+peek F:4ABF8 2 v1122_o
+peek F:4A91C 1 v1122_q
+peek F:4A924 1 v1122_r
+step
+peek F:4A992 2 v1123_f
+peek F:4B23C 4 v1123_p
+peek F:4B254 4 v1123_y
+peek F:4B2B7 1 v1123_g
+peek F:4A923 1 v1123_a
+peek F:4A85F 1 v1123_b
+peek F:4A913 1 v1123_c
+peek F:4A8ED 1 v1123_d
+peek F:4AB30 4 v1123_e
+peek F:4AB70 2 v1123_h
+peek F:4AAF2 4 v1123_i
+peek F:4AAEE 4 v1123_j
+peek F:54E72 2 v1123_k
+peek F:4A83D 1 v1123_l
+peek F:4A996 2 v1123_m
+peek F:4AA6E 2 v1123_n
+peek F:4ABF8 2 v1123_o
+peek F:4A91C 1 v1123_q
+peek F:4A924 1 v1123_r
+step
+peek F:4A992 2 v1124_f
+peek F:4B23C 4 v1124_p
+peek F:4B254 4 v1124_y
+peek F:4B2B7 1 v1124_g
+peek F:4A923 1 v1124_a
+peek F:4A85F 1 v1124_b
+peek F:4A913 1 v1124_c
+peek F:4A8ED 1 v1124_d
+peek F:4AB30 4 v1124_e
+peek F:4AB70 2 v1124_h
+peek F:4AAF2 4 v1124_i
+peek F:4AAEE 4 v1124_j
+peek F:54E72 2 v1124_k
+peek F:4A83D 1 v1124_l
+peek F:4A996 2 v1124_m
+peek F:4AA6E 2 v1124_n
+peek F:4ABF8 2 v1124_o
+peek F:4A91C 1 v1124_q
+peek F:4A924 1 v1124_r
+step
+peek F:4A992 2 v1125_f
+peek F:4B23C 4 v1125_p
+peek F:4B254 4 v1125_y
+peek F:4B2B7 1 v1125_g
+peek F:4A923 1 v1125_a
+peek F:4A85F 1 v1125_b
+peek F:4A913 1 v1125_c
+peek F:4A8ED 1 v1125_d
+peek F:4AB30 4 v1125_e
+peek F:4AB70 2 v1125_h
+peek F:4AAF2 4 v1125_i
+peek F:4AAEE 4 v1125_j
+peek F:54E72 2 v1125_k
+peek F:4A83D 1 v1125_l
+peek F:4A996 2 v1125_m
+peek F:4AA6E 2 v1125_n
+peek F:4ABF8 2 v1125_o
+peek F:4A91C 1 v1125_q
+peek F:4A924 1 v1125_r
+step
+peek F:4A992 2 v1126_f
+peek F:4B23C 4 v1126_p
+peek F:4B254 4 v1126_y
+peek F:4B2B7 1 v1126_g
+peek F:4A923 1 v1126_a
+peek F:4A85F 1 v1126_b
+peek F:4A913 1 v1126_c
+peek F:4A8ED 1 v1126_d
+peek F:4AB30 4 v1126_e
+peek F:4AB70 2 v1126_h
+peek F:4AAF2 4 v1126_i
+peek F:4AAEE 4 v1126_j
+peek F:54E72 2 v1126_k
+peek F:4A83D 1 v1126_l
+peek F:4A996 2 v1126_m
+peek F:4AA6E 2 v1126_n
+peek F:4ABF8 2 v1126_o
+peek F:4A91C 1 v1126_q
+peek F:4A924 1 v1126_r
+step
+peek F:4A992 2 v1127_f
+peek F:4B23C 4 v1127_p
+peek F:4B254 4 v1127_y
+peek F:4B2B7 1 v1127_g
+peek F:4A923 1 v1127_a
+peek F:4A85F 1 v1127_b
+peek F:4A913 1 v1127_c
+peek F:4A8ED 1 v1127_d
+peek F:4AB30 4 v1127_e
+peek F:4AB70 2 v1127_h
+peek F:4AAF2 4 v1127_i
+peek F:4AAEE 4 v1127_j
+peek F:54E72 2 v1127_k
+peek F:4A83D 1 v1127_l
+peek F:4A996 2 v1127_m
+peek F:4AA6E 2 v1127_n
+peek F:4ABF8 2 v1127_o
+peek F:4A91C 1 v1127_q
+peek F:4A924 1 v1127_r
+step
+peek F:4A992 2 v1128_f
+peek F:4B23C 4 v1128_p
+peek F:4B254 4 v1128_y
+peek F:4B2B7 1 v1128_g
+peek F:4A923 1 v1128_a
+peek F:4A85F 1 v1128_b
+peek F:4A913 1 v1128_c
+peek F:4A8ED 1 v1128_d
+peek F:4AB30 4 v1128_e
+peek F:4AB70 2 v1128_h
+peek F:4AAF2 4 v1128_i
+peek F:4AAEE 4 v1128_j
+peek F:54E72 2 v1128_k
+peek F:4A83D 1 v1128_l
+peek F:4A996 2 v1128_m
+peek F:4AA6E 2 v1128_n
+peek F:4ABF8 2 v1128_o
+peek F:4A91C 1 v1128_q
+peek F:4A924 1 v1128_r
+step
+peek F:4A992 2 v1129_f
+peek F:4B23C 4 v1129_p
+peek F:4B254 4 v1129_y
+peek F:4B2B7 1 v1129_g
+peek F:4A923 1 v1129_a
+peek F:4A85F 1 v1129_b
+peek F:4A913 1 v1129_c
+peek F:4A8ED 1 v1129_d
+peek F:4AB30 4 v1129_e
+peek F:4AB70 2 v1129_h
+peek F:4AAF2 4 v1129_i
+peek F:4AAEE 4 v1129_j
+peek F:54E72 2 v1129_k
+peek F:4A83D 1 v1129_l
+peek F:4A996 2 v1129_m
+peek F:4AA6E 2 v1129_n
+peek F:4ABF8 2 v1129_o
+peek F:4A91C 1 v1129_q
+peek F:4A924 1 v1129_r

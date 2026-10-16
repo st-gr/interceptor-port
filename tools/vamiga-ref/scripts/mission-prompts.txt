@@ -1,0 +1,72 @@
+restore extracted/captures/credits-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+key SPACE
+wait 14
+freeze
+poke R:C544AF 1 1
+peek R:C54498 78 m6_rec
+thaw
+key F4 0.3
+wait 1
+freeze
+stepuntil F:1A6BC 4 eq 0xC0A0D0 3000
+key SPACE 0.12
+step 2
+stepuntil F:1A6BC 4 eq 0xC0A3D2 9000
+peek F:4A87F 4 m6_chal
+peek F:4A95E 1 m6_mode
+peek F:4A7F2 4 m6_sub
+peek F:4A962 1 m6_cap
+peek F:4ABD4 2 m6_variant
+snapshot extracted/captures/mission-m6-prompt.vasnap
+frame extracted/captures/logs/mission-m6-prompt.ppm
+thaw
+restore extracted/captures/credits-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+key SPACE
+wait 14
+freeze
+poke R:C544B0 1 1
+peek R:C54498 78 m7_rec
+thaw
+key F5 0.3
+wait 1
+freeze
+stepuntil F:1A6BC 4 eq 0xC0A0D0 3000
+key SPACE 0.12
+step 2
+stepuntil F:1A6BC 4 eq 0xC0A3D2 9000
+peek F:4A87F 4 m7_chal
+peek F:4A95E 1 m7_mode
+peek F:4A7F2 4 m7_sub
+peek F:4A962 1 m7_cap
+peek F:4ABD4 2 m7_variant
+snapshot extracted/captures/mission-m7-prompt.vasnap
+frame extracted/captures/logs/mission-m7-prompt.ppm
+thaw
+restore extracted/captures/credits-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+key SPACE
+wait 14
+freeze
+poke R:C544B1 1 1
+peek R:C54498 78 m8_rec
+thaw
+key F6 0.3
+wait 1
+freeze
+stepuntil F:1A6BC 4 eq 0xC0A0D0 3000
+key SPACE 0.12
+step 2
+stepuntil F:1A6BC 4 eq 0xC0A3D2 9000
+peek F:4A87F 4 m8_chal
+peek F:4A95E 1 m8_mode
+peek F:4A7F2 4 m8_sub
+peek F:4A962 1 m8_cap
+peek F:4ABD4 2 m8_variant
+snapshot extracted/captures/mission-m8-prompt.vasnap
+frame extracted/captures/logs/mission-m8-prompt.ppm
+thaw

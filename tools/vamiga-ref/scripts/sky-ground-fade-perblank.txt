@@ -1,0 +1,606 @@
+# fade: one video frame at a time, level/target/counter and the colour registers; the accumulator is poked to 15, then to -1 with the latch cleared
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A941 1 15
+step
+peek F:4A958 4 L000
+colors C000
+frame extracted/captures/fade/f000.ppm
+step
+peek F:4A958 4 L001
+colors C001
+frame extracted/captures/fade/f001.ppm
+step
+peek F:4A958 4 L002
+colors C002
+frame extracted/captures/fade/f002.ppm
+step
+peek F:4A958 4 L003
+colors C003
+frame extracted/captures/fade/f003.ppm
+step
+peek F:4A958 4 L004
+colors C004
+frame extracted/captures/fade/f004.ppm
+step
+peek F:4A958 4 L005
+colors C005
+frame extracted/captures/fade/f005.ppm
+step
+peek F:4A958 4 L006
+colors C006
+frame extracted/captures/fade/f006.ppm
+step
+peek F:4A958 4 L007
+colors C007
+frame extracted/captures/fade/f007.ppm
+step
+peek F:4A958 4 L008
+colors C008
+frame extracted/captures/fade/f008.ppm
+step
+peek F:4A958 4 L009
+colors C009
+frame extracted/captures/fade/f009.ppm
+step
+peek F:4A958 4 L010
+colors C010
+frame extracted/captures/fade/f010.ppm
+step
+peek F:4A958 4 L011
+colors C011
+frame extracted/captures/fade/f011.ppm
+step
+peek F:4A958 4 L012
+colors C012
+frame extracted/captures/fade/f012.ppm
+step
+peek F:4A958 4 L013
+colors C013
+frame extracted/captures/fade/f013.ppm
+step
+peek F:4A958 4 L014
+colors C014
+frame extracted/captures/fade/f014.ppm
+step
+peek F:4A958 4 L015
+colors C015
+frame extracted/captures/fade/f015.ppm
+step
+peek F:4A958 4 L016
+colors C016
+frame extracted/captures/fade/f016.ppm
+step
+peek F:4A958 4 L017
+colors C017
+frame extracted/captures/fade/f017.ppm
+step
+peek F:4A958 4 L018
+colors C018
+frame extracted/captures/fade/f018.ppm
+step
+peek F:4A958 4 L019
+colors C019
+frame extracted/captures/fade/f019.ppm
+step
+peek F:4A958 4 L020
+colors C020
+frame extracted/captures/fade/f020.ppm
+step
+peek F:4A958 4 L021
+colors C021
+frame extracted/captures/fade/f021.ppm
+step
+peek F:4A958 4 L022
+colors C022
+frame extracted/captures/fade/f022.ppm
+step
+peek F:4A958 4 L023
+colors C023
+frame extracted/captures/fade/f023.ppm
+step
+peek F:4A958 4 L024
+colors C024
+frame extracted/captures/fade/f024.ppm
+step
+peek F:4A958 4 L025
+colors C025
+frame extracted/captures/fade/f025.ppm
+step
+peek F:4A958 4 L026
+colors C026
+frame extracted/captures/fade/f026.ppm
+step
+peek F:4A958 4 L027
+colors C027
+frame extracted/captures/fade/f027.ppm
+step
+peek F:4A958 4 L028
+colors C028
+frame extracted/captures/fade/f028.ppm
+step
+peek F:4A958 4 L029
+colors C029
+frame extracted/captures/fade/f029.ppm
+step
+peek F:4A958 4 L030
+colors C030
+frame extracted/captures/fade/f030.ppm
+step
+peek F:4A958 4 L031
+colors C031
+frame extracted/captures/fade/f031.ppm
+step
+peek F:4A958 4 L032
+colors C032
+frame extracted/captures/fade/f032.ppm
+step
+peek F:4A958 4 L033
+colors C033
+frame extracted/captures/fade/f033.ppm
+step
+peek F:4A958 4 L034
+colors C034
+frame extracted/captures/fade/f034.ppm
+step
+peek F:4A958 4 L035
+colors C035
+frame extracted/captures/fade/f035.ppm
+step
+peek F:4A958 4 L036
+colors C036
+frame extracted/captures/fade/f036.ppm
+step
+peek F:4A958 4 L037
+colors C037
+frame extracted/captures/fade/f037.ppm
+step
+peek F:4A958 4 L038
+colors C038
+frame extracted/captures/fade/f038.ppm
+step
+peek F:4A958 4 L039
+colors C039
+frame extracted/captures/fade/f039.ppm
+step
+peek F:4A958 4 L040
+colors C040
+frame extracted/captures/fade/f040.ppm
+step
+peek F:4A958 4 L041
+colors C041
+frame extracted/captures/fade/f041.ppm
+step
+peek F:4A958 4 L042
+colors C042
+frame extracted/captures/fade/f042.ppm
+step
+peek F:4A958 4 L043
+colors C043
+frame extracted/captures/fade/f043.ppm
+step
+peek F:4A958 4 L044
+colors C044
+frame extracted/captures/fade/f044.ppm
+step
+peek F:4A958 4 L045
+colors C045
+frame extracted/captures/fade/f045.ppm
+step
+peek F:4A958 4 L046
+colors C046
+frame extracted/captures/fade/f046.ppm
+step
+peek F:4A958 4 L047
+colors C047
+frame extracted/captures/fade/f047.ppm
+step
+peek F:4A958 4 L048
+colors C048
+frame extracted/captures/fade/f048.ppm
+step
+peek F:4A958 4 L049
+colors C049
+frame extracted/captures/fade/f049.ppm
+step
+peek F:4A958 4 L050
+colors C050
+frame extracted/captures/fade/f050.ppm
+step
+peek F:4A958 4 L051
+colors C051
+frame extracted/captures/fade/f051.ppm
+step
+peek F:4A958 4 L052
+colors C052
+frame extracted/captures/fade/f052.ppm
+step
+peek F:4A958 4 L053
+colors C053
+frame extracted/captures/fade/f053.ppm
+step
+peek F:4A958 4 L054
+colors C054
+frame extracted/captures/fade/f054.ppm
+step
+peek F:4A958 4 L055
+colors C055
+frame extracted/captures/fade/f055.ppm
+step
+peek F:4A958 4 L056
+colors C056
+frame extracted/captures/fade/f056.ppm
+step
+peek F:4A958 4 L057
+colors C057
+frame extracted/captures/fade/f057.ppm
+step
+peek F:4A958 4 L058
+colors C058
+frame extracted/captures/fade/f058.ppm
+step
+peek F:4A958 4 L059
+colors C059
+frame extracted/captures/fade/f059.ppm
+step
+peek F:4A958 4 L060
+colors C060
+frame extracted/captures/fade/f060.ppm
+step
+peek F:4A958 4 L061
+colors C061
+frame extracted/captures/fade/f061.ppm
+step
+peek F:4A958 4 L062
+colors C062
+frame extracted/captures/fade/f062.ppm
+step
+peek F:4A958 4 L063
+colors C063
+frame extracted/captures/fade/f063.ppm
+step
+peek F:4A958 4 L064
+colors C064
+frame extracted/captures/fade/f064.ppm
+step
+peek F:4A958 4 L065
+colors C065
+frame extracted/captures/fade/f065.ppm
+step
+peek F:4A958 4 L066
+colors C066
+frame extracted/captures/fade/f066.ppm
+step
+peek F:4A958 4 L067
+colors C067
+frame extracted/captures/fade/f067.ppm
+step
+peek F:4A958 4 L068
+colors C068
+frame extracted/captures/fade/f068.ppm
+step
+peek F:4A958 4 L069
+colors C069
+frame extracted/captures/fade/f069.ppm
+poke F:4A941 1 0xFF
+step
+peek F:4A958 4 L070
+colors C070
+frame extracted/captures/fade/f070.ppm
+step
+peek F:4A958 4 L071
+colors C071
+frame extracted/captures/fade/f071.ppm
+step
+peek F:4A958 4 L072
+colors C072
+frame extracted/captures/fade/f072.ppm
+step
+peek F:4A958 4 L073
+colors C073
+frame extracted/captures/fade/f073.ppm
+step
+peek F:4A958 4 L074
+colors C074
+frame extracted/captures/fade/f074.ppm
+step
+peek F:4A958 4 L075
+colors C075
+frame extracted/captures/fade/f075.ppm
+step
+peek F:4A958 4 L076
+colors C076
+frame extracted/captures/fade/f076.ppm
+step
+peek F:4A958 4 L077
+colors C077
+frame extracted/captures/fade/f077.ppm
+step
+peek F:4A958 4 L078
+colors C078
+frame extracted/captures/fade/f078.ppm
+step
+peek F:4A958 4 L079
+colors C079
+frame extracted/captures/fade/f079.ppm
+step
+peek F:4A958 4 L080
+colors C080
+frame extracted/captures/fade/f080.ppm
+step
+peek F:4A958 4 L081
+colors C081
+frame extracted/captures/fade/f081.ppm
+step
+peek F:4A958 4 L082
+colors C082
+frame extracted/captures/fade/f082.ppm
+step
+peek F:4A958 4 L083
+colors C083
+frame extracted/captures/fade/f083.ppm
+step
+peek F:4A958 4 L084
+colors C084
+frame extracted/captures/fade/f084.ppm
+step
+peek F:4A958 4 L085
+colors C085
+frame extracted/captures/fade/f085.ppm
+step
+peek F:4A958 4 L086
+colors C086
+frame extracted/captures/fade/f086.ppm
+step
+peek F:4A958 4 L087
+colors C087
+frame extracted/captures/fade/f087.ppm
+step
+peek F:4A958 4 L088
+colors C088
+frame extracted/captures/fade/f088.ppm
+step
+peek F:4A958 4 L089
+colors C089
+frame extracted/captures/fade/f089.ppm
+step
+peek F:4A958 4 L090
+colors C090
+frame extracted/captures/fade/f090.ppm
+step
+peek F:4A958 4 L091
+colors C091
+frame extracted/captures/fade/f091.ppm
+step
+peek F:4A958 4 L092
+colors C092
+frame extracted/captures/fade/f092.ppm
+step
+peek F:4A958 4 L093
+colors C093
+frame extracted/captures/fade/f093.ppm
+step
+peek F:4A958 4 L094
+colors C094
+frame extracted/captures/fade/f094.ppm
+step
+peek F:4A958 4 L095
+colors C095
+frame extracted/captures/fade/f095.ppm
+step
+peek F:4A958 4 L096
+colors C096
+frame extracted/captures/fade/f096.ppm
+step
+peek F:4A958 4 L097
+colors C097
+frame extracted/captures/fade/f097.ppm
+step
+peek F:4A958 4 L098
+colors C098
+frame extracted/captures/fade/f098.ppm
+step
+peek F:4A958 4 L099
+colors C099
+frame extracted/captures/fade/f099.ppm
+step
+peek F:4A958 4 L100
+colors C100
+frame extracted/captures/fade/f100.ppm
+step
+peek F:4A958 4 L101
+colors C101
+frame extracted/captures/fade/f101.ppm
+step
+peek F:4A958 4 L102
+colors C102
+frame extracted/captures/fade/f102.ppm
+step
+peek F:4A958 4 L103
+colors C103
+frame extracted/captures/fade/f103.ppm
+step
+peek F:4A958 4 L104
+colors C104
+frame extracted/captures/fade/f104.ppm
+step
+peek F:4A958 4 L105
+colors C105
+frame extracted/captures/fade/f105.ppm
+step
+peek F:4A958 4 L106
+colors C106
+frame extracted/captures/fade/f106.ppm
+step
+peek F:4A958 4 L107
+colors C107
+frame extracted/captures/fade/f107.ppm
+step
+peek F:4A958 4 L108
+colors C108
+frame extracted/captures/fade/f108.ppm
+step
+peek F:4A958 4 L109
+colors C109
+frame extracted/captures/fade/f109.ppm
+step
+peek F:4A958 4 L110
+colors C110
+frame extracted/captures/fade/f110.ppm
+step
+peek F:4A958 4 L111
+colors C111
+frame extracted/captures/fade/f111.ppm
+step
+peek F:4A958 4 L112
+colors C112
+frame extracted/captures/fade/f112.ppm
+step
+peek F:4A958 4 L113
+colors C113
+frame extracted/captures/fade/f113.ppm
+step
+peek F:4A958 4 L114
+colors C114
+frame extracted/captures/fade/f114.ppm
+step
+peek F:4A958 4 L115
+colors C115
+frame extracted/captures/fade/f115.ppm
+step
+peek F:4A958 4 L116
+colors C116
+frame extracted/captures/fade/f116.ppm
+step
+peek F:4A958 4 L117
+colors C117
+frame extracted/captures/fade/f117.ppm
+step
+peek F:4A958 4 L118
+colors C118
+frame extracted/captures/fade/f118.ppm
+step
+peek F:4A958 4 L119
+colors C119
+frame extracted/captures/fade/f119.ppm
+step
+peek F:4A958 4 L120
+colors C120
+frame extracted/captures/fade/f120.ppm
+step
+peek F:4A958 4 L121
+colors C121
+frame extracted/captures/fade/f121.ppm
+step
+peek F:4A958 4 L122
+colors C122
+frame extracted/captures/fade/f122.ppm
+step
+peek F:4A958 4 L123
+colors C123
+frame extracted/captures/fade/f123.ppm
+step
+peek F:4A958 4 L124
+colors C124
+frame extracted/captures/fade/f124.ppm
+step
+peek F:4A958 4 L125
+colors C125
+frame extracted/captures/fade/f125.ppm
+step
+peek F:4A958 4 L126
+colors C126
+frame extracted/captures/fade/f126.ppm
+step
+peek F:4A958 4 L127
+colors C127
+frame extracted/captures/fade/f127.ppm
+step
+peek F:4A958 4 L128
+colors C128
+frame extracted/captures/fade/f128.ppm
+step
+peek F:4A958 4 L129
+colors C129
+frame extracted/captures/fade/f129.ppm
+step
+peek F:4A958 4 L130
+colors C130
+frame extracted/captures/fade/f130.ppm
+step
+peek F:4A958 4 L131
+colors C131
+frame extracted/captures/fade/f131.ppm
+step
+peek F:4A958 4 L132
+colors C132
+frame extracted/captures/fade/f132.ppm
+step
+peek F:4A958 4 L133
+colors C133
+frame extracted/captures/fade/f133.ppm
+step
+peek F:4A958 4 L134
+colors C134
+frame extracted/captures/fade/f134.ppm
+step
+peek F:4A958 4 L135
+colors C135
+frame extracted/captures/fade/f135.ppm
+step
+peek F:4A958 4 L136
+colors C136
+frame extracted/captures/fade/f136.ppm
+step
+peek F:4A958 4 L137
+colors C137
+frame extracted/captures/fade/f137.ppm
+step
+peek F:4A958 4 L138
+colors C138
+frame extracted/captures/fade/f138.ppm
+step
+peek F:4A958 4 L139
+colors C139
+frame extracted/captures/fade/f139.ppm
+step
+peek F:4A958 4 L140
+colors C140
+frame extracted/captures/fade/f140.ppm
+step
+peek F:4A958 4 L141
+colors C141
+frame extracted/captures/fade/f141.ppm
+step
+peek F:4A958 4 L142
+colors C142
+frame extracted/captures/fade/f142.ppm
+step
+peek F:4A958 4 L143
+colors C143
+frame extracted/captures/fade/f143.ppm
+step
+peek F:4A958 4 L144
+colors C144
+frame extracted/captures/fade/f144.ppm
+step
+peek F:4A958 4 L145
+colors C145
+frame extracted/captures/fade/f145.ppm
+step
+peek F:4A958 4 L146
+colors C146
+frame extracted/captures/fade/f146.ppm
+step
+peek F:4A958 4 L147
+colors C147
+frame extracted/captures/fade/f147.ppm
+step
+peek F:4A958 4 L148
+colors C148
+frame extracted/captures/fade/f148.ppm
+step
+peek F:4A958 4 L149
+colors C149
+frame extracted/captures/fade/f149.ppm

@@ -1,0 +1,160 @@
+# Range collapse above 10240 ft: the 4AA6A word and the display-list queues (0x5476A, 0x53A4A, 0x540DA) while climbing from airborne.vasnap and levelling; frames show whether terrain objects remain.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key DOWN 1.5
+wait 6
+freeze
+log s0
+peek F:4B23C 128 rec0_s0
+peek F:4AA00 256 st_s0
+peek F:4AB00 128 cam_s0
+peek F:5476A 1680 q1_s0
+peek F:53A4A 1680 q2_s0
+peek F:540DA 1680 q3_s0
+frame extracted/captures/openers/hi-00.ppm
+thaw
+wait 2.5
+freeze
+log s1
+peek F:4B23C 128 rec0_s1
+peek F:4AA00 256 st_s1
+peek F:4AB00 128 cam_s1
+peek F:5476A 1680 q1_s1
+peek F:53A4A 1680 q2_s1
+peek F:540DA 1680 q3_s1
+frame extracted/captures/openers/hi-01.ppm
+thaw
+wait 2.5
+freeze
+log s2
+peek F:4B23C 128 rec0_s2
+peek F:4AA00 256 st_s2
+peek F:4AB00 128 cam_s2
+peek F:5476A 1680 q1_s2
+peek F:53A4A 1680 q2_s2
+peek F:540DA 1680 q3_s2
+frame extracted/captures/openers/hi-02.ppm
+thaw
+wait 2.5
+freeze
+log s3
+peek F:4B23C 128 rec0_s3
+peek F:4AA00 256 st_s3
+peek F:4AB00 128 cam_s3
+peek F:5476A 1680 q1_s3
+peek F:53A4A 1680 q2_s3
+peek F:540DA 1680 q3_s3
+frame extracted/captures/openers/hi-03.ppm
+thaw
+wait 2.5
+freeze
+log s4
+peek F:4B23C 128 rec0_s4
+peek F:4AA00 256 st_s4
+peek F:4AB00 128 cam_s4
+peek F:5476A 1680 q1_s4
+peek F:53A4A 1680 q2_s4
+peek F:540DA 1680 q3_s4
+frame extracted/captures/openers/hi-04.ppm
+thaw
+wait 2.5
+freeze
+log s5
+peek F:4B23C 128 rec0_s5
+peek F:4AA00 256 st_s5
+peek F:4AB00 128 cam_s5
+peek F:5476A 1680 q1_s5
+peek F:53A4A 1680 q2_s5
+peek F:540DA 1680 q3_s5
+frame extracted/captures/openers/hi-05.ppm
+thaw
+wait 2.5
+key UP 1.2
+freeze
+log s6
+peek F:4B23C 128 rec0_s6
+peek F:4AA00 256 st_s6
+peek F:4AB00 128 cam_s6
+peek F:5476A 1680 q1_s6
+peek F:53A4A 1680 q2_s6
+peek F:540DA 1680 q3_s6
+frame extracted/captures/openers/hi-06.ppm
+thaw
+wait 2.5
+freeze
+log s7
+peek F:4B23C 128 rec0_s7
+peek F:4AA00 256 st_s7
+peek F:4AB00 128 cam_s7
+peek F:5476A 1680 q1_s7
+peek F:53A4A 1680 q2_s7
+peek F:540DA 1680 q3_s7
+frame extracted/captures/openers/hi-07.ppm
+thaw
+wait 2.5
+freeze
+log s8
+peek F:4B23C 128 rec0_s8
+peek F:4AA00 256 st_s8
+peek F:4AB00 128 cam_s8
+peek F:5476A 1680 q1_s8
+peek F:53A4A 1680 q2_s8
+peek F:540DA 1680 q3_s8
+frame extracted/captures/openers/hi-08.ppm
+thaw
+wait 2.5
+freeze
+log s9
+peek F:4B23C 128 rec0_s9
+peek F:4AA00 256 st_s9
+peek F:4AB00 128 cam_s9
+peek F:5476A 1680 q1_s9
+peek F:53A4A 1680 q2_s9
+peek F:540DA 1680 q3_s9
+frame extracted/captures/openers/hi-09.ppm
+thaw
+wait 2.5
+freeze
+log s10
+peek F:4B23C 128 rec0_s10
+peek F:4AA00 256 st_s10
+peek F:4AB00 128 cam_s10
+peek F:5476A 1680 q1_s10
+peek F:53A4A 1680 q2_s10
+peek F:540DA 1680 q3_s10
+frame extracted/captures/openers/hi-10.ppm
+thaw
+wait 2.5
+freeze
+log s11
+peek F:4B23C 128 rec0_s11
+peek F:4AA00 256 st_s11
+peek F:4AB00 128 cam_s11
+peek F:5476A 1680 q1_s11
+peek F:53A4A 1680 q2_s11
+peek F:540DA 1680 q3_s11
+frame extracted/captures/openers/hi-11.ppm
+thaw
+wait 2.5
+freeze
+log s12
+peek F:4B23C 128 rec0_s12
+peek F:4AA00 256 st_s12
+peek F:4AB00 128 cam_s12
+peek F:5476A 1680 q1_s12
+peek F:53A4A 1680 q2_s12
+peek F:540DA 1680 q3_s12
+frame extracted/captures/openers/hi-12.ppm
+thaw
+wait 2.5
+freeze
+log s13
+peek F:4B23C 128 rec0_s13
+peek F:4AA00 256 st_s13
+peek F:4AB00 128 cam_s13
+peek F:5476A 1680 q1_s13
+peek F:53A4A 1680 q2_s13
+peek F:540DA 1680 q3_s13
+frame extracted/captures/openers/hi-13.ppm
+thaw
+wait 2.5

@@ -1,0 +1,50 @@
+# Free flight with player control. Prerequisite: extracted/captures/code-prompt.vasnap, made by
+# freeflight-prompt.txt. The `code` line looks the answer up in the git-ignored disks/countercodes.txt (lines
+# "CHALLENGE ANSWER"); 5D5A is the challenge frozen in that snapshot. If you regenerate the snapshot the
+# challenge may differ: derive the new answer with the codewheel (docs/re/01a-reference-captures.md,
+# "Answering the prompt"), add a line to disks/countercodes.txt and change the challenge on the `code` line.
+# Run:  build/vamiga-ref/ref --rom disks/kick12.rom --adf extracted/interceptor-autoboot.adf \
+#           --script tools/vamiga-ref/scripts/freeflight-takeoff.txt
+# Waits are wall-clock against a real-time emulator (jittery); each capture therefore starts from a snapshot
+# restore point taken right before it where the timing matters.
+restore extracted/captures/code-prompt.vasnap
+code @disks/countercodes.txt 5D5A
+wait 6
+frame extracted/captures/freeflight-select.ppm
+snapshot extracted/captures/location-select.vasnap
+key 1
+wait 6
+frame extracted/captures/aircraft-select.ppm
+snapshot extracted/captures/aircraft-select.vasnap
+key 1
+wait 32
+frame extracted/captures/cockpit-takeoff.ppm
+snapshot extracted/captures/cockpit-ground.vasnap
+# View keys (verified in the note): keypad Enter toggles external view; keypad digits then pick the angle.
+key KPENTER
+wait 3
+frame extracted/captures/external-view.ppm
+key KP5
+wait 2.5
+frame extracted/captures/external-top.ppm
+key KP8
+wait 2.5
+frame extracted/captures/external-front.ppm
+key KP4
+wait 2.5
+frame extracted/captures/external-side.ppm
+key KPENTER
+wait 3
+# Head keys inside the cockpit.
+key KP4
+wait 1.5
+frame extracted/captures/head-left.ppm
+key KP2
+wait 1.5
+frame extracted/captures/head-back.ppm
+key KP1
+wait 1.5
+frame extracted/captures/head-down.ppm
+key KP7
+wait 1.5
+frame extracted/captures/head-up.ppm

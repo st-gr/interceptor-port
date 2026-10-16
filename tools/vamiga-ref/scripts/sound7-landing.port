@@ -1,0 +1,5 @@
+# the port's side of sound7-landing: the ground wrapper for the touchdown volumes 0x1E and 0x28. Run: build/sound7_port assets FILE
+start deck
+ticks 100
+at 5 ground 30
+at 40 ground 40

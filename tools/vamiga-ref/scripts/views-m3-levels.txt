@@ -1,0 +1,1617 @@
+# Distance levels of the external view: the aim pair per video frame (note 03 'External camera aim', note 06 view item 4).
+# Part A: staged straight into level L (the first external frame snaps to the target of that level); part B: level -1 converged, then V:4A83D poked to L (a level key: the ring key is unchanged, so no snap) and the pair stepped one video frame at a time; V:4A992 (n) counts the game passes.
+log A1
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A96A 1 4
+poke F:4A86D 1 1
+poke F:4A86C 1 1
+poke F:4A865 1 0
+poke F:4A8EB 1 1
+poke F:4A9E2 2 0x8c0
+poke F:4A97E 2 2
+step 1
+peek F:4AB4C 4 a1_0_aim
+peek F:4A992 2 a1_0_n
+peek F:4A83D 2 a1_0_vk
+peek F:4A85E 1 a1_0_h
+peek F:4ACF6 12 a1_0_cam
+step 1
+peek F:4AB4C 4 a1_1_aim
+peek F:4A992 2 a1_1_n
+peek F:4A83D 2 a1_1_vk
+peek F:4A85E 1 a1_1_h
+peek F:4ACF6 12 a1_1_cam
+step 1
+peek F:4AB4C 4 a1_2_aim
+peek F:4A992 2 a1_2_n
+peek F:4A83D 2 a1_2_vk
+peek F:4A85E 1 a1_2_h
+peek F:4ACF6 12 a1_2_cam
+step 1
+peek F:4AB4C 4 a1_3_aim
+peek F:4A992 2 a1_3_n
+peek F:4A83D 2 a1_3_vk
+peek F:4A85E 1 a1_3_h
+peek F:4ACF6 12 a1_3_cam
+step 1
+peek F:4AB4C 4 a1_4_aim
+peek F:4A992 2 a1_4_n
+peek F:4A83D 2 a1_4_vk
+peek F:4A85E 1 a1_4_h
+peek F:4ACF6 12 a1_4_cam
+step 1
+peek F:4AB4C 4 a1_5_aim
+peek F:4A992 2 a1_5_n
+peek F:4A83D 2 a1_5_vk
+peek F:4A85E 1 a1_5_h
+peek F:4ACF6 12 a1_5_cam
+step 1
+peek F:4AB4C 4 a1_6_aim
+peek F:4A992 2 a1_6_n
+peek F:4A83D 2 a1_6_vk
+peek F:4A85E 1 a1_6_h
+peek F:4ACF6 12 a1_6_cam
+step 1
+peek F:4AB4C 4 a1_7_aim
+peek F:4A992 2 a1_7_n
+peek F:4A83D 2 a1_7_vk
+peek F:4A85E 1 a1_7_h
+peek F:4ACF6 12 a1_7_cam
+step 1
+peek F:4AB4C 4 a1_8_aim
+peek F:4A992 2 a1_8_n
+peek F:4A83D 2 a1_8_vk
+peek F:4A85E 1 a1_8_h
+peek F:4ACF6 12 a1_8_cam
+step 1
+peek F:4AB4C 4 a1_9_aim
+peek F:4A992 2 a1_9_n
+peek F:4A83D 2 a1_9_vk
+peek F:4A85E 1 a1_9_h
+peek F:4ACF6 12 a1_9_cam
+step 1
+peek F:4AB4C 4 a1_10_aim
+peek F:4A992 2 a1_10_n
+peek F:4A83D 2 a1_10_vk
+peek F:4A85E 1 a1_10_h
+peek F:4ACF6 12 a1_10_cam
+step 1
+peek F:4AB4C 4 a1_11_aim
+peek F:4A992 2 a1_11_n
+peek F:4A83D 2 a1_11_vk
+peek F:4A85E 1 a1_11_h
+peek F:4ACF6 12 a1_11_cam
+step 1
+peek F:4AB4C 4 a1_12_aim
+peek F:4A992 2 a1_12_n
+peek F:4A83D 2 a1_12_vk
+peek F:4A85E 1 a1_12_h
+peek F:4ACF6 12 a1_12_cam
+step 1
+peek F:4AB4C 4 a1_13_aim
+peek F:4A992 2 a1_13_n
+peek F:4A83D 2 a1_13_vk
+peek F:4A85E 1 a1_13_h
+peek F:4ACF6 12 a1_13_cam
+log A2
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A96A 1 4
+poke F:4A86D 1 1
+poke F:4A86C 1 1
+poke F:4A865 1 0
+poke F:4A8EB 1 2
+poke F:4A9E2 2 0x8c0
+poke F:4A97E 2 2
+step 1
+peek F:4AB4C 4 a2_0_aim
+peek F:4A992 2 a2_0_n
+peek F:4A83D 2 a2_0_vk
+peek F:4A85E 1 a2_0_h
+peek F:4ACF6 12 a2_0_cam
+step 1
+peek F:4AB4C 4 a2_1_aim
+peek F:4A992 2 a2_1_n
+peek F:4A83D 2 a2_1_vk
+peek F:4A85E 1 a2_1_h
+peek F:4ACF6 12 a2_1_cam
+step 1
+peek F:4AB4C 4 a2_2_aim
+peek F:4A992 2 a2_2_n
+peek F:4A83D 2 a2_2_vk
+peek F:4A85E 1 a2_2_h
+peek F:4ACF6 12 a2_2_cam
+step 1
+peek F:4AB4C 4 a2_3_aim
+peek F:4A992 2 a2_3_n
+peek F:4A83D 2 a2_3_vk
+peek F:4A85E 1 a2_3_h
+peek F:4ACF6 12 a2_3_cam
+step 1
+peek F:4AB4C 4 a2_4_aim
+peek F:4A992 2 a2_4_n
+peek F:4A83D 2 a2_4_vk
+peek F:4A85E 1 a2_4_h
+peek F:4ACF6 12 a2_4_cam
+step 1
+peek F:4AB4C 4 a2_5_aim
+peek F:4A992 2 a2_5_n
+peek F:4A83D 2 a2_5_vk
+peek F:4A85E 1 a2_5_h
+peek F:4ACF6 12 a2_5_cam
+step 1
+peek F:4AB4C 4 a2_6_aim
+peek F:4A992 2 a2_6_n
+peek F:4A83D 2 a2_6_vk
+peek F:4A85E 1 a2_6_h
+peek F:4ACF6 12 a2_6_cam
+step 1
+peek F:4AB4C 4 a2_7_aim
+peek F:4A992 2 a2_7_n
+peek F:4A83D 2 a2_7_vk
+peek F:4A85E 1 a2_7_h
+peek F:4ACF6 12 a2_7_cam
+step 1
+peek F:4AB4C 4 a2_8_aim
+peek F:4A992 2 a2_8_n
+peek F:4A83D 2 a2_8_vk
+peek F:4A85E 1 a2_8_h
+peek F:4ACF6 12 a2_8_cam
+step 1
+peek F:4AB4C 4 a2_9_aim
+peek F:4A992 2 a2_9_n
+peek F:4A83D 2 a2_9_vk
+peek F:4A85E 1 a2_9_h
+peek F:4ACF6 12 a2_9_cam
+step 1
+peek F:4AB4C 4 a2_10_aim
+peek F:4A992 2 a2_10_n
+peek F:4A83D 2 a2_10_vk
+peek F:4A85E 1 a2_10_h
+peek F:4ACF6 12 a2_10_cam
+step 1
+peek F:4AB4C 4 a2_11_aim
+peek F:4A992 2 a2_11_n
+peek F:4A83D 2 a2_11_vk
+peek F:4A85E 1 a2_11_h
+peek F:4ACF6 12 a2_11_cam
+step 1
+peek F:4AB4C 4 a2_12_aim
+peek F:4A992 2 a2_12_n
+peek F:4A83D 2 a2_12_vk
+peek F:4A85E 1 a2_12_h
+peek F:4ACF6 12 a2_12_cam
+step 1
+peek F:4AB4C 4 a2_13_aim
+peek F:4A992 2 a2_13_n
+peek F:4A83D 2 a2_13_vk
+peek F:4A85E 1 a2_13_h
+peek F:4ACF6 12 a2_13_cam
+log A3
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A96A 1 4
+poke F:4A86D 1 1
+poke F:4A86C 1 1
+poke F:4A865 1 0
+poke F:4A8EB 1 3
+poke F:4A9E2 2 0x8c0
+poke F:4A97E 2 2
+step 1
+peek F:4AB4C 4 a3_0_aim
+peek F:4A992 2 a3_0_n
+peek F:4A83D 2 a3_0_vk
+peek F:4A85E 1 a3_0_h
+peek F:4ACF6 12 a3_0_cam
+step 1
+peek F:4AB4C 4 a3_1_aim
+peek F:4A992 2 a3_1_n
+peek F:4A83D 2 a3_1_vk
+peek F:4A85E 1 a3_1_h
+peek F:4ACF6 12 a3_1_cam
+step 1
+peek F:4AB4C 4 a3_2_aim
+peek F:4A992 2 a3_2_n
+peek F:4A83D 2 a3_2_vk
+peek F:4A85E 1 a3_2_h
+peek F:4ACF6 12 a3_2_cam
+step 1
+peek F:4AB4C 4 a3_3_aim
+peek F:4A992 2 a3_3_n
+peek F:4A83D 2 a3_3_vk
+peek F:4A85E 1 a3_3_h
+peek F:4ACF6 12 a3_3_cam
+step 1
+peek F:4AB4C 4 a3_4_aim
+peek F:4A992 2 a3_4_n
+peek F:4A83D 2 a3_4_vk
+peek F:4A85E 1 a3_4_h
+peek F:4ACF6 12 a3_4_cam
+step 1
+peek F:4AB4C 4 a3_5_aim
+peek F:4A992 2 a3_5_n
+peek F:4A83D 2 a3_5_vk
+peek F:4A85E 1 a3_5_h
+peek F:4ACF6 12 a3_5_cam
+step 1
+peek F:4AB4C 4 a3_6_aim
+peek F:4A992 2 a3_6_n
+peek F:4A83D 2 a3_6_vk
+peek F:4A85E 1 a3_6_h
+peek F:4ACF6 12 a3_6_cam
+step 1
+peek F:4AB4C 4 a3_7_aim
+peek F:4A992 2 a3_7_n
+peek F:4A83D 2 a3_7_vk
+peek F:4A85E 1 a3_7_h
+peek F:4ACF6 12 a3_7_cam
+step 1
+peek F:4AB4C 4 a3_8_aim
+peek F:4A992 2 a3_8_n
+peek F:4A83D 2 a3_8_vk
+peek F:4A85E 1 a3_8_h
+peek F:4ACF6 12 a3_8_cam
+step 1
+peek F:4AB4C 4 a3_9_aim
+peek F:4A992 2 a3_9_n
+peek F:4A83D 2 a3_9_vk
+peek F:4A85E 1 a3_9_h
+peek F:4ACF6 12 a3_9_cam
+step 1
+peek F:4AB4C 4 a3_10_aim
+peek F:4A992 2 a3_10_n
+peek F:4A83D 2 a3_10_vk
+peek F:4A85E 1 a3_10_h
+peek F:4ACF6 12 a3_10_cam
+step 1
+peek F:4AB4C 4 a3_11_aim
+peek F:4A992 2 a3_11_n
+peek F:4A83D 2 a3_11_vk
+peek F:4A85E 1 a3_11_h
+peek F:4ACF6 12 a3_11_cam
+step 1
+peek F:4AB4C 4 a3_12_aim
+peek F:4A992 2 a3_12_n
+peek F:4A83D 2 a3_12_vk
+peek F:4A85E 1 a3_12_h
+peek F:4ACF6 12 a3_12_cam
+step 1
+peek F:4AB4C 4 a3_13_aim
+peek F:4A992 2 a3_13_n
+peek F:4A83D 2 a3_13_vk
+peek F:4A85E 1 a3_13_h
+peek F:4ACF6 12 a3_13_cam
+log A4
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A96A 1 4
+poke F:4A86D 1 1
+poke F:4A86C 1 1
+poke F:4A865 1 0
+poke F:4A8EB 1 4
+poke F:4A9E2 2 0x8c0
+poke F:4A97E 2 2
+step 1
+peek F:4AB4C 4 a4_0_aim
+peek F:4A992 2 a4_0_n
+peek F:4A83D 2 a4_0_vk
+peek F:4A85E 1 a4_0_h
+peek F:4ACF6 12 a4_0_cam
+step 1
+peek F:4AB4C 4 a4_1_aim
+peek F:4A992 2 a4_1_n
+peek F:4A83D 2 a4_1_vk
+peek F:4A85E 1 a4_1_h
+peek F:4ACF6 12 a4_1_cam
+step 1
+peek F:4AB4C 4 a4_2_aim
+peek F:4A992 2 a4_2_n
+peek F:4A83D 2 a4_2_vk
+peek F:4A85E 1 a4_2_h
+peek F:4ACF6 12 a4_2_cam
+step 1
+peek F:4AB4C 4 a4_3_aim
+peek F:4A992 2 a4_3_n
+peek F:4A83D 2 a4_3_vk
+peek F:4A85E 1 a4_3_h
+peek F:4ACF6 12 a4_3_cam
+step 1
+peek F:4AB4C 4 a4_4_aim
+peek F:4A992 2 a4_4_n
+peek F:4A83D 2 a4_4_vk
+peek F:4A85E 1 a4_4_h
+peek F:4ACF6 12 a4_4_cam
+step 1
+peek F:4AB4C 4 a4_5_aim
+peek F:4A992 2 a4_5_n
+peek F:4A83D 2 a4_5_vk
+peek F:4A85E 1 a4_5_h
+peek F:4ACF6 12 a4_5_cam
+step 1
+peek F:4AB4C 4 a4_6_aim
+peek F:4A992 2 a4_6_n
+peek F:4A83D 2 a4_6_vk
+peek F:4A85E 1 a4_6_h
+peek F:4ACF6 12 a4_6_cam
+step 1
+peek F:4AB4C 4 a4_7_aim
+peek F:4A992 2 a4_7_n
+peek F:4A83D 2 a4_7_vk
+peek F:4A85E 1 a4_7_h
+peek F:4ACF6 12 a4_7_cam
+step 1
+peek F:4AB4C 4 a4_8_aim
+peek F:4A992 2 a4_8_n
+peek F:4A83D 2 a4_8_vk
+peek F:4A85E 1 a4_8_h
+peek F:4ACF6 12 a4_8_cam
+step 1
+peek F:4AB4C 4 a4_9_aim
+peek F:4A992 2 a4_9_n
+peek F:4A83D 2 a4_9_vk
+peek F:4A85E 1 a4_9_h
+peek F:4ACF6 12 a4_9_cam
+step 1
+peek F:4AB4C 4 a4_10_aim
+peek F:4A992 2 a4_10_n
+peek F:4A83D 2 a4_10_vk
+peek F:4A85E 1 a4_10_h
+peek F:4ACF6 12 a4_10_cam
+step 1
+peek F:4AB4C 4 a4_11_aim
+peek F:4A992 2 a4_11_n
+peek F:4A83D 2 a4_11_vk
+peek F:4A85E 1 a4_11_h
+peek F:4ACF6 12 a4_11_cam
+step 1
+peek F:4AB4C 4 a4_12_aim
+peek F:4A992 2 a4_12_n
+peek F:4A83D 2 a4_12_vk
+peek F:4A85E 1 a4_12_h
+peek F:4ACF6 12 a4_12_cam
+step 1
+peek F:4AB4C 4 a4_13_aim
+peek F:4A992 2 a4_13_n
+peek F:4A83D 2 a4_13_vk
+peek F:4A85E 1 a4_13_h
+peek F:4ACF6 12 a4_13_cam
+log B1
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A96A 1 4
+poke F:4A86D 1 1
+poke F:4A86C 1 1
+poke F:4A865 1 0
+poke F:4A8EB 1 255
+poke F:4A9E2 2 0x8c0
+poke F:4A97E 2 2
+step 14
+poke F:4A83D 1 1
+poke F:4A8EB 1 1
+log B1_switch
+step 1
+peek F:4AB4C 4 b1_0_aim
+peek F:4A992 2 b1_0_n
+step 1
+peek F:4AB4C 4 b1_1_aim
+peek F:4A992 2 b1_1_n
+step 1
+peek F:4AB4C 4 b1_2_aim
+peek F:4A992 2 b1_2_n
+step 1
+peek F:4AB4C 4 b1_3_aim
+peek F:4A992 2 b1_3_n
+step 1
+peek F:4AB4C 4 b1_4_aim
+peek F:4A992 2 b1_4_n
+step 1
+peek F:4AB4C 4 b1_5_aim
+peek F:4A992 2 b1_5_n
+step 1
+peek F:4AB4C 4 b1_6_aim
+peek F:4A992 2 b1_6_n
+step 1
+peek F:4AB4C 4 b1_7_aim
+peek F:4A992 2 b1_7_n
+step 1
+peek F:4AB4C 4 b1_8_aim
+peek F:4A992 2 b1_8_n
+step 1
+peek F:4AB4C 4 b1_9_aim
+peek F:4A992 2 b1_9_n
+step 1
+peek F:4AB4C 4 b1_10_aim
+peek F:4A992 2 b1_10_n
+step 1
+peek F:4AB4C 4 b1_11_aim
+peek F:4A992 2 b1_11_n
+step 1
+peek F:4AB4C 4 b1_12_aim
+peek F:4A992 2 b1_12_n
+step 1
+peek F:4AB4C 4 b1_13_aim
+peek F:4A992 2 b1_13_n
+step 1
+peek F:4AB4C 4 b1_14_aim
+peek F:4A992 2 b1_14_n
+step 1
+peek F:4AB4C 4 b1_15_aim
+peek F:4A992 2 b1_15_n
+step 1
+peek F:4AB4C 4 b1_16_aim
+peek F:4A992 2 b1_16_n
+step 1
+peek F:4AB4C 4 b1_17_aim
+peek F:4A992 2 b1_17_n
+step 1
+peek F:4AB4C 4 b1_18_aim
+peek F:4A992 2 b1_18_n
+step 1
+peek F:4AB4C 4 b1_19_aim
+peek F:4A992 2 b1_19_n
+step 1
+peek F:4AB4C 4 b1_20_aim
+peek F:4A992 2 b1_20_n
+step 1
+peek F:4AB4C 4 b1_21_aim
+peek F:4A992 2 b1_21_n
+step 1
+peek F:4AB4C 4 b1_22_aim
+peek F:4A992 2 b1_22_n
+step 1
+peek F:4AB4C 4 b1_23_aim
+peek F:4A992 2 b1_23_n
+step 1
+peek F:4AB4C 4 b1_24_aim
+peek F:4A992 2 b1_24_n
+step 1
+peek F:4AB4C 4 b1_25_aim
+peek F:4A992 2 b1_25_n
+step 1
+peek F:4AB4C 4 b1_26_aim
+peek F:4A992 2 b1_26_n
+step 1
+peek F:4AB4C 4 b1_27_aim
+peek F:4A992 2 b1_27_n
+step 1
+peek F:4AB4C 4 b1_28_aim
+peek F:4A992 2 b1_28_n
+step 1
+peek F:4AB4C 4 b1_29_aim
+peek F:4A992 2 b1_29_n
+step 1
+peek F:4AB4C 4 b1_30_aim
+peek F:4A992 2 b1_30_n
+step 1
+peek F:4AB4C 4 b1_31_aim
+peek F:4A992 2 b1_31_n
+step 1
+peek F:4AB4C 4 b1_32_aim
+peek F:4A992 2 b1_32_n
+step 1
+peek F:4AB4C 4 b1_33_aim
+peek F:4A992 2 b1_33_n
+step 1
+peek F:4AB4C 4 b1_34_aim
+peek F:4A992 2 b1_34_n
+step 1
+peek F:4AB4C 4 b1_35_aim
+peek F:4A992 2 b1_35_n
+step 1
+peek F:4AB4C 4 b1_36_aim
+peek F:4A992 2 b1_36_n
+step 1
+peek F:4AB4C 4 b1_37_aim
+peek F:4A992 2 b1_37_n
+step 1
+peek F:4AB4C 4 b1_38_aim
+peek F:4A992 2 b1_38_n
+step 1
+peek F:4AB4C 4 b1_39_aim
+peek F:4A992 2 b1_39_n
+step 1
+peek F:4AB4C 4 b1_40_aim
+peek F:4A992 2 b1_40_n
+step 1
+peek F:4AB4C 4 b1_41_aim
+peek F:4A992 2 b1_41_n
+step 1
+peek F:4AB4C 4 b1_42_aim
+peek F:4A992 2 b1_42_n
+step 1
+peek F:4AB4C 4 b1_43_aim
+peek F:4A992 2 b1_43_n
+step 1
+peek F:4AB4C 4 b1_44_aim
+peek F:4A992 2 b1_44_n
+step 1
+peek F:4AB4C 4 b1_45_aim
+peek F:4A992 2 b1_45_n
+step 1
+peek F:4AB4C 4 b1_46_aim
+peek F:4A992 2 b1_46_n
+step 1
+peek F:4AB4C 4 b1_47_aim
+peek F:4A992 2 b1_47_n
+step 1
+peek F:4AB4C 4 b1_48_aim
+peek F:4A992 2 b1_48_n
+step 1
+peek F:4AB4C 4 b1_49_aim
+peek F:4A992 2 b1_49_n
+step 1
+peek F:4AB4C 4 b1_50_aim
+peek F:4A992 2 b1_50_n
+step 1
+peek F:4AB4C 4 b1_51_aim
+peek F:4A992 2 b1_51_n
+step 1
+peek F:4AB4C 4 b1_52_aim
+peek F:4A992 2 b1_52_n
+step 1
+peek F:4AB4C 4 b1_53_aim
+peek F:4A992 2 b1_53_n
+step 1
+peek F:4AB4C 4 b1_54_aim
+peek F:4A992 2 b1_54_n
+step 1
+peek F:4AB4C 4 b1_55_aim
+peek F:4A992 2 b1_55_n
+step 1
+peek F:4AB4C 4 b1_56_aim
+peek F:4A992 2 b1_56_n
+step 1
+peek F:4AB4C 4 b1_57_aim
+peek F:4A992 2 b1_57_n
+step 1
+peek F:4AB4C 4 b1_58_aim
+peek F:4A992 2 b1_58_n
+step 1
+peek F:4AB4C 4 b1_59_aim
+peek F:4A992 2 b1_59_n
+step 1
+peek F:4AB4C 4 b1_60_aim
+peek F:4A992 2 b1_60_n
+step 1
+peek F:4AB4C 4 b1_61_aim
+peek F:4A992 2 b1_61_n
+step 1
+peek F:4AB4C 4 b1_62_aim
+peek F:4A992 2 b1_62_n
+step 1
+peek F:4AB4C 4 b1_63_aim
+peek F:4A992 2 b1_63_n
+step 1
+peek F:4AB4C 4 b1_64_aim
+peek F:4A992 2 b1_64_n
+step 1
+peek F:4AB4C 4 b1_65_aim
+peek F:4A992 2 b1_65_n
+step 1
+peek F:4AB4C 4 b1_66_aim
+peek F:4A992 2 b1_66_n
+step 1
+peek F:4AB4C 4 b1_67_aim
+peek F:4A992 2 b1_67_n
+step 1
+peek F:4AB4C 4 b1_68_aim
+peek F:4A992 2 b1_68_n
+step 1
+peek F:4AB4C 4 b1_69_aim
+peek F:4A992 2 b1_69_n
+step 1
+peek F:4AB4C 4 b1_70_aim
+peek F:4A992 2 b1_70_n
+step 1
+peek F:4AB4C 4 b1_71_aim
+peek F:4A992 2 b1_71_n
+step 1
+peek F:4AB4C 4 b1_72_aim
+peek F:4A992 2 b1_72_n
+step 1
+peek F:4AB4C 4 b1_73_aim
+peek F:4A992 2 b1_73_n
+step 1
+peek F:4AB4C 4 b1_74_aim
+peek F:4A992 2 b1_74_n
+step 1
+peek F:4AB4C 4 b1_75_aim
+peek F:4A992 2 b1_75_n
+step 1
+peek F:4AB4C 4 b1_76_aim
+peek F:4A992 2 b1_76_n
+step 1
+peek F:4AB4C 4 b1_77_aim
+peek F:4A992 2 b1_77_n
+step 1
+peek F:4AB4C 4 b1_78_aim
+peek F:4A992 2 b1_78_n
+step 1
+peek F:4AB4C 4 b1_79_aim
+peek F:4A992 2 b1_79_n
+step 1
+peek F:4AB4C 4 b1_80_aim
+peek F:4A992 2 b1_80_n
+step 1
+peek F:4AB4C 4 b1_81_aim
+peek F:4A992 2 b1_81_n
+step 1
+peek F:4AB4C 4 b1_82_aim
+peek F:4A992 2 b1_82_n
+step 1
+peek F:4AB4C 4 b1_83_aim
+peek F:4A992 2 b1_83_n
+step 1
+peek F:4AB4C 4 b1_84_aim
+peek F:4A992 2 b1_84_n
+step 1
+peek F:4AB4C 4 b1_85_aim
+peek F:4A992 2 b1_85_n
+step 1
+peek F:4AB4C 4 b1_86_aim
+peek F:4A992 2 b1_86_n
+step 1
+peek F:4AB4C 4 b1_87_aim
+peek F:4A992 2 b1_87_n
+step 1
+peek F:4AB4C 4 b1_88_aim
+peek F:4A992 2 b1_88_n
+step 1
+peek F:4AB4C 4 b1_89_aim
+peek F:4A992 2 b1_89_n
+log B2
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A96A 1 4
+poke F:4A86D 1 1
+poke F:4A86C 1 1
+poke F:4A865 1 0
+poke F:4A8EB 1 255
+poke F:4A9E2 2 0x8c0
+poke F:4A97E 2 2
+step 14
+poke F:4A83D 1 2
+poke F:4A8EB 1 2
+log B2_switch
+step 1
+peek F:4AB4C 4 b2_0_aim
+peek F:4A992 2 b2_0_n
+step 1
+peek F:4AB4C 4 b2_1_aim
+peek F:4A992 2 b2_1_n
+step 1
+peek F:4AB4C 4 b2_2_aim
+peek F:4A992 2 b2_2_n
+step 1
+peek F:4AB4C 4 b2_3_aim
+peek F:4A992 2 b2_3_n
+step 1
+peek F:4AB4C 4 b2_4_aim
+peek F:4A992 2 b2_4_n
+step 1
+peek F:4AB4C 4 b2_5_aim
+peek F:4A992 2 b2_5_n
+step 1
+peek F:4AB4C 4 b2_6_aim
+peek F:4A992 2 b2_6_n
+step 1
+peek F:4AB4C 4 b2_7_aim
+peek F:4A992 2 b2_7_n
+step 1
+peek F:4AB4C 4 b2_8_aim
+peek F:4A992 2 b2_8_n
+step 1
+peek F:4AB4C 4 b2_9_aim
+peek F:4A992 2 b2_9_n
+step 1
+peek F:4AB4C 4 b2_10_aim
+peek F:4A992 2 b2_10_n
+step 1
+peek F:4AB4C 4 b2_11_aim
+peek F:4A992 2 b2_11_n
+step 1
+peek F:4AB4C 4 b2_12_aim
+peek F:4A992 2 b2_12_n
+step 1
+peek F:4AB4C 4 b2_13_aim
+peek F:4A992 2 b2_13_n
+step 1
+peek F:4AB4C 4 b2_14_aim
+peek F:4A992 2 b2_14_n
+step 1
+peek F:4AB4C 4 b2_15_aim
+peek F:4A992 2 b2_15_n
+step 1
+peek F:4AB4C 4 b2_16_aim
+peek F:4A992 2 b2_16_n
+step 1
+peek F:4AB4C 4 b2_17_aim
+peek F:4A992 2 b2_17_n
+step 1
+peek F:4AB4C 4 b2_18_aim
+peek F:4A992 2 b2_18_n
+step 1
+peek F:4AB4C 4 b2_19_aim
+peek F:4A992 2 b2_19_n
+step 1
+peek F:4AB4C 4 b2_20_aim
+peek F:4A992 2 b2_20_n
+step 1
+peek F:4AB4C 4 b2_21_aim
+peek F:4A992 2 b2_21_n
+step 1
+peek F:4AB4C 4 b2_22_aim
+peek F:4A992 2 b2_22_n
+step 1
+peek F:4AB4C 4 b2_23_aim
+peek F:4A992 2 b2_23_n
+step 1
+peek F:4AB4C 4 b2_24_aim
+peek F:4A992 2 b2_24_n
+step 1
+peek F:4AB4C 4 b2_25_aim
+peek F:4A992 2 b2_25_n
+step 1
+peek F:4AB4C 4 b2_26_aim
+peek F:4A992 2 b2_26_n
+step 1
+peek F:4AB4C 4 b2_27_aim
+peek F:4A992 2 b2_27_n
+step 1
+peek F:4AB4C 4 b2_28_aim
+peek F:4A992 2 b2_28_n
+step 1
+peek F:4AB4C 4 b2_29_aim
+peek F:4A992 2 b2_29_n
+step 1
+peek F:4AB4C 4 b2_30_aim
+peek F:4A992 2 b2_30_n
+step 1
+peek F:4AB4C 4 b2_31_aim
+peek F:4A992 2 b2_31_n
+step 1
+peek F:4AB4C 4 b2_32_aim
+peek F:4A992 2 b2_32_n
+step 1
+peek F:4AB4C 4 b2_33_aim
+peek F:4A992 2 b2_33_n
+step 1
+peek F:4AB4C 4 b2_34_aim
+peek F:4A992 2 b2_34_n
+step 1
+peek F:4AB4C 4 b2_35_aim
+peek F:4A992 2 b2_35_n
+step 1
+peek F:4AB4C 4 b2_36_aim
+peek F:4A992 2 b2_36_n
+step 1
+peek F:4AB4C 4 b2_37_aim
+peek F:4A992 2 b2_37_n
+step 1
+peek F:4AB4C 4 b2_38_aim
+peek F:4A992 2 b2_38_n
+step 1
+peek F:4AB4C 4 b2_39_aim
+peek F:4A992 2 b2_39_n
+step 1
+peek F:4AB4C 4 b2_40_aim
+peek F:4A992 2 b2_40_n
+step 1
+peek F:4AB4C 4 b2_41_aim
+peek F:4A992 2 b2_41_n
+step 1
+peek F:4AB4C 4 b2_42_aim
+peek F:4A992 2 b2_42_n
+step 1
+peek F:4AB4C 4 b2_43_aim
+peek F:4A992 2 b2_43_n
+step 1
+peek F:4AB4C 4 b2_44_aim
+peek F:4A992 2 b2_44_n
+step 1
+peek F:4AB4C 4 b2_45_aim
+peek F:4A992 2 b2_45_n
+step 1
+peek F:4AB4C 4 b2_46_aim
+peek F:4A992 2 b2_46_n
+step 1
+peek F:4AB4C 4 b2_47_aim
+peek F:4A992 2 b2_47_n
+step 1
+peek F:4AB4C 4 b2_48_aim
+peek F:4A992 2 b2_48_n
+step 1
+peek F:4AB4C 4 b2_49_aim
+peek F:4A992 2 b2_49_n
+step 1
+peek F:4AB4C 4 b2_50_aim
+peek F:4A992 2 b2_50_n
+step 1
+peek F:4AB4C 4 b2_51_aim
+peek F:4A992 2 b2_51_n
+step 1
+peek F:4AB4C 4 b2_52_aim
+peek F:4A992 2 b2_52_n
+step 1
+peek F:4AB4C 4 b2_53_aim
+peek F:4A992 2 b2_53_n
+step 1
+peek F:4AB4C 4 b2_54_aim
+peek F:4A992 2 b2_54_n
+step 1
+peek F:4AB4C 4 b2_55_aim
+peek F:4A992 2 b2_55_n
+step 1
+peek F:4AB4C 4 b2_56_aim
+peek F:4A992 2 b2_56_n
+step 1
+peek F:4AB4C 4 b2_57_aim
+peek F:4A992 2 b2_57_n
+step 1
+peek F:4AB4C 4 b2_58_aim
+peek F:4A992 2 b2_58_n
+step 1
+peek F:4AB4C 4 b2_59_aim
+peek F:4A992 2 b2_59_n
+step 1
+peek F:4AB4C 4 b2_60_aim
+peek F:4A992 2 b2_60_n
+step 1
+peek F:4AB4C 4 b2_61_aim
+peek F:4A992 2 b2_61_n
+step 1
+peek F:4AB4C 4 b2_62_aim
+peek F:4A992 2 b2_62_n
+step 1
+peek F:4AB4C 4 b2_63_aim
+peek F:4A992 2 b2_63_n
+step 1
+peek F:4AB4C 4 b2_64_aim
+peek F:4A992 2 b2_64_n
+step 1
+peek F:4AB4C 4 b2_65_aim
+peek F:4A992 2 b2_65_n
+step 1
+peek F:4AB4C 4 b2_66_aim
+peek F:4A992 2 b2_66_n
+step 1
+peek F:4AB4C 4 b2_67_aim
+peek F:4A992 2 b2_67_n
+step 1
+peek F:4AB4C 4 b2_68_aim
+peek F:4A992 2 b2_68_n
+step 1
+peek F:4AB4C 4 b2_69_aim
+peek F:4A992 2 b2_69_n
+step 1
+peek F:4AB4C 4 b2_70_aim
+peek F:4A992 2 b2_70_n
+step 1
+peek F:4AB4C 4 b2_71_aim
+peek F:4A992 2 b2_71_n
+step 1
+peek F:4AB4C 4 b2_72_aim
+peek F:4A992 2 b2_72_n
+step 1
+peek F:4AB4C 4 b2_73_aim
+peek F:4A992 2 b2_73_n
+step 1
+peek F:4AB4C 4 b2_74_aim
+peek F:4A992 2 b2_74_n
+step 1
+peek F:4AB4C 4 b2_75_aim
+peek F:4A992 2 b2_75_n
+step 1
+peek F:4AB4C 4 b2_76_aim
+peek F:4A992 2 b2_76_n
+step 1
+peek F:4AB4C 4 b2_77_aim
+peek F:4A992 2 b2_77_n
+step 1
+peek F:4AB4C 4 b2_78_aim
+peek F:4A992 2 b2_78_n
+step 1
+peek F:4AB4C 4 b2_79_aim
+peek F:4A992 2 b2_79_n
+step 1
+peek F:4AB4C 4 b2_80_aim
+peek F:4A992 2 b2_80_n
+step 1
+peek F:4AB4C 4 b2_81_aim
+peek F:4A992 2 b2_81_n
+step 1
+peek F:4AB4C 4 b2_82_aim
+peek F:4A992 2 b2_82_n
+step 1
+peek F:4AB4C 4 b2_83_aim
+peek F:4A992 2 b2_83_n
+step 1
+peek F:4AB4C 4 b2_84_aim
+peek F:4A992 2 b2_84_n
+step 1
+peek F:4AB4C 4 b2_85_aim
+peek F:4A992 2 b2_85_n
+step 1
+peek F:4AB4C 4 b2_86_aim
+peek F:4A992 2 b2_86_n
+step 1
+peek F:4AB4C 4 b2_87_aim
+peek F:4A992 2 b2_87_n
+step 1
+peek F:4AB4C 4 b2_88_aim
+peek F:4A992 2 b2_88_n
+step 1
+peek F:4AB4C 4 b2_89_aim
+peek F:4A992 2 b2_89_n
+log B3
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A96A 1 4
+poke F:4A86D 1 1
+poke F:4A86C 1 1
+poke F:4A865 1 0
+poke F:4A8EB 1 255
+poke F:4A9E2 2 0x8c0
+poke F:4A97E 2 2
+step 14
+poke F:4A83D 1 3
+poke F:4A8EB 1 3
+log B3_switch
+step 1
+peek F:4AB4C 4 b3_0_aim
+peek F:4A992 2 b3_0_n
+step 1
+peek F:4AB4C 4 b3_1_aim
+peek F:4A992 2 b3_1_n
+step 1
+peek F:4AB4C 4 b3_2_aim
+peek F:4A992 2 b3_2_n
+step 1
+peek F:4AB4C 4 b3_3_aim
+peek F:4A992 2 b3_3_n
+step 1
+peek F:4AB4C 4 b3_4_aim
+peek F:4A992 2 b3_4_n
+step 1
+peek F:4AB4C 4 b3_5_aim
+peek F:4A992 2 b3_5_n
+step 1
+peek F:4AB4C 4 b3_6_aim
+peek F:4A992 2 b3_6_n
+step 1
+peek F:4AB4C 4 b3_7_aim
+peek F:4A992 2 b3_7_n
+step 1
+peek F:4AB4C 4 b3_8_aim
+peek F:4A992 2 b3_8_n
+step 1
+peek F:4AB4C 4 b3_9_aim
+peek F:4A992 2 b3_9_n
+step 1
+peek F:4AB4C 4 b3_10_aim
+peek F:4A992 2 b3_10_n
+step 1
+peek F:4AB4C 4 b3_11_aim
+peek F:4A992 2 b3_11_n
+step 1
+peek F:4AB4C 4 b3_12_aim
+peek F:4A992 2 b3_12_n
+step 1
+peek F:4AB4C 4 b3_13_aim
+peek F:4A992 2 b3_13_n
+step 1
+peek F:4AB4C 4 b3_14_aim
+peek F:4A992 2 b3_14_n
+step 1
+peek F:4AB4C 4 b3_15_aim
+peek F:4A992 2 b3_15_n
+step 1
+peek F:4AB4C 4 b3_16_aim
+peek F:4A992 2 b3_16_n
+step 1
+peek F:4AB4C 4 b3_17_aim
+peek F:4A992 2 b3_17_n
+step 1
+peek F:4AB4C 4 b3_18_aim
+peek F:4A992 2 b3_18_n
+step 1
+peek F:4AB4C 4 b3_19_aim
+peek F:4A992 2 b3_19_n
+step 1
+peek F:4AB4C 4 b3_20_aim
+peek F:4A992 2 b3_20_n
+step 1
+peek F:4AB4C 4 b3_21_aim
+peek F:4A992 2 b3_21_n
+step 1
+peek F:4AB4C 4 b3_22_aim
+peek F:4A992 2 b3_22_n
+step 1
+peek F:4AB4C 4 b3_23_aim
+peek F:4A992 2 b3_23_n
+step 1
+peek F:4AB4C 4 b3_24_aim
+peek F:4A992 2 b3_24_n
+step 1
+peek F:4AB4C 4 b3_25_aim
+peek F:4A992 2 b3_25_n
+step 1
+peek F:4AB4C 4 b3_26_aim
+peek F:4A992 2 b3_26_n
+step 1
+peek F:4AB4C 4 b3_27_aim
+peek F:4A992 2 b3_27_n
+step 1
+peek F:4AB4C 4 b3_28_aim
+peek F:4A992 2 b3_28_n
+step 1
+peek F:4AB4C 4 b3_29_aim
+peek F:4A992 2 b3_29_n
+step 1
+peek F:4AB4C 4 b3_30_aim
+peek F:4A992 2 b3_30_n
+step 1
+peek F:4AB4C 4 b3_31_aim
+peek F:4A992 2 b3_31_n
+step 1
+peek F:4AB4C 4 b3_32_aim
+peek F:4A992 2 b3_32_n
+step 1
+peek F:4AB4C 4 b3_33_aim
+peek F:4A992 2 b3_33_n
+step 1
+peek F:4AB4C 4 b3_34_aim
+peek F:4A992 2 b3_34_n
+step 1
+peek F:4AB4C 4 b3_35_aim
+peek F:4A992 2 b3_35_n
+step 1
+peek F:4AB4C 4 b3_36_aim
+peek F:4A992 2 b3_36_n
+step 1
+peek F:4AB4C 4 b3_37_aim
+peek F:4A992 2 b3_37_n
+step 1
+peek F:4AB4C 4 b3_38_aim
+peek F:4A992 2 b3_38_n
+step 1
+peek F:4AB4C 4 b3_39_aim
+peek F:4A992 2 b3_39_n
+step 1
+peek F:4AB4C 4 b3_40_aim
+peek F:4A992 2 b3_40_n
+step 1
+peek F:4AB4C 4 b3_41_aim
+peek F:4A992 2 b3_41_n
+step 1
+peek F:4AB4C 4 b3_42_aim
+peek F:4A992 2 b3_42_n
+step 1
+peek F:4AB4C 4 b3_43_aim
+peek F:4A992 2 b3_43_n
+step 1
+peek F:4AB4C 4 b3_44_aim
+peek F:4A992 2 b3_44_n
+step 1
+peek F:4AB4C 4 b3_45_aim
+peek F:4A992 2 b3_45_n
+step 1
+peek F:4AB4C 4 b3_46_aim
+peek F:4A992 2 b3_46_n
+step 1
+peek F:4AB4C 4 b3_47_aim
+peek F:4A992 2 b3_47_n
+step 1
+peek F:4AB4C 4 b3_48_aim
+peek F:4A992 2 b3_48_n
+step 1
+peek F:4AB4C 4 b3_49_aim
+peek F:4A992 2 b3_49_n
+step 1
+peek F:4AB4C 4 b3_50_aim
+peek F:4A992 2 b3_50_n
+step 1
+peek F:4AB4C 4 b3_51_aim
+peek F:4A992 2 b3_51_n
+step 1
+peek F:4AB4C 4 b3_52_aim
+peek F:4A992 2 b3_52_n
+step 1
+peek F:4AB4C 4 b3_53_aim
+peek F:4A992 2 b3_53_n
+step 1
+peek F:4AB4C 4 b3_54_aim
+peek F:4A992 2 b3_54_n
+step 1
+peek F:4AB4C 4 b3_55_aim
+peek F:4A992 2 b3_55_n
+step 1
+peek F:4AB4C 4 b3_56_aim
+peek F:4A992 2 b3_56_n
+step 1
+peek F:4AB4C 4 b3_57_aim
+peek F:4A992 2 b3_57_n
+step 1
+peek F:4AB4C 4 b3_58_aim
+peek F:4A992 2 b3_58_n
+step 1
+peek F:4AB4C 4 b3_59_aim
+peek F:4A992 2 b3_59_n
+step 1
+peek F:4AB4C 4 b3_60_aim
+peek F:4A992 2 b3_60_n
+step 1
+peek F:4AB4C 4 b3_61_aim
+peek F:4A992 2 b3_61_n
+step 1
+peek F:4AB4C 4 b3_62_aim
+peek F:4A992 2 b3_62_n
+step 1
+peek F:4AB4C 4 b3_63_aim
+peek F:4A992 2 b3_63_n
+step 1
+peek F:4AB4C 4 b3_64_aim
+peek F:4A992 2 b3_64_n
+step 1
+peek F:4AB4C 4 b3_65_aim
+peek F:4A992 2 b3_65_n
+step 1
+peek F:4AB4C 4 b3_66_aim
+peek F:4A992 2 b3_66_n
+step 1
+peek F:4AB4C 4 b3_67_aim
+peek F:4A992 2 b3_67_n
+step 1
+peek F:4AB4C 4 b3_68_aim
+peek F:4A992 2 b3_68_n
+step 1
+peek F:4AB4C 4 b3_69_aim
+peek F:4A992 2 b3_69_n
+step 1
+peek F:4AB4C 4 b3_70_aim
+peek F:4A992 2 b3_70_n
+step 1
+peek F:4AB4C 4 b3_71_aim
+peek F:4A992 2 b3_71_n
+step 1
+peek F:4AB4C 4 b3_72_aim
+peek F:4A992 2 b3_72_n
+step 1
+peek F:4AB4C 4 b3_73_aim
+peek F:4A992 2 b3_73_n
+step 1
+peek F:4AB4C 4 b3_74_aim
+peek F:4A992 2 b3_74_n
+step 1
+peek F:4AB4C 4 b3_75_aim
+peek F:4A992 2 b3_75_n
+step 1
+peek F:4AB4C 4 b3_76_aim
+peek F:4A992 2 b3_76_n
+step 1
+peek F:4AB4C 4 b3_77_aim
+peek F:4A992 2 b3_77_n
+step 1
+peek F:4AB4C 4 b3_78_aim
+peek F:4A992 2 b3_78_n
+step 1
+peek F:4AB4C 4 b3_79_aim
+peek F:4A992 2 b3_79_n
+step 1
+peek F:4AB4C 4 b3_80_aim
+peek F:4A992 2 b3_80_n
+step 1
+peek F:4AB4C 4 b3_81_aim
+peek F:4A992 2 b3_81_n
+step 1
+peek F:4AB4C 4 b3_82_aim
+peek F:4A992 2 b3_82_n
+step 1
+peek F:4AB4C 4 b3_83_aim
+peek F:4A992 2 b3_83_n
+step 1
+peek F:4AB4C 4 b3_84_aim
+peek F:4A992 2 b3_84_n
+step 1
+peek F:4AB4C 4 b3_85_aim
+peek F:4A992 2 b3_85_n
+step 1
+peek F:4AB4C 4 b3_86_aim
+peek F:4A992 2 b3_86_n
+step 1
+peek F:4AB4C 4 b3_87_aim
+peek F:4A992 2 b3_87_n
+step 1
+peek F:4AB4C 4 b3_88_aim
+peek F:4A992 2 b3_88_n
+step 1
+peek F:4AB4C 4 b3_89_aim
+peek F:4A992 2 b3_89_n
+log B4
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A96A 1 4
+poke F:4A86D 1 1
+poke F:4A86C 1 1
+poke F:4A865 1 0
+poke F:4A8EB 1 255
+poke F:4A9E2 2 0x8c0
+poke F:4A97E 2 2
+step 14
+poke F:4A83D 1 4
+poke F:4A8EB 1 4
+log B4_switch
+step 1
+peek F:4AB4C 4 b4_0_aim
+peek F:4A992 2 b4_0_n
+step 1
+peek F:4AB4C 4 b4_1_aim
+peek F:4A992 2 b4_1_n
+step 1
+peek F:4AB4C 4 b4_2_aim
+peek F:4A992 2 b4_2_n
+step 1
+peek F:4AB4C 4 b4_3_aim
+peek F:4A992 2 b4_3_n
+step 1
+peek F:4AB4C 4 b4_4_aim
+peek F:4A992 2 b4_4_n
+step 1
+peek F:4AB4C 4 b4_5_aim
+peek F:4A992 2 b4_5_n
+step 1
+peek F:4AB4C 4 b4_6_aim
+peek F:4A992 2 b4_6_n
+step 1
+peek F:4AB4C 4 b4_7_aim
+peek F:4A992 2 b4_7_n
+step 1
+peek F:4AB4C 4 b4_8_aim
+peek F:4A992 2 b4_8_n
+step 1
+peek F:4AB4C 4 b4_9_aim
+peek F:4A992 2 b4_9_n
+step 1
+peek F:4AB4C 4 b4_10_aim
+peek F:4A992 2 b4_10_n
+step 1
+peek F:4AB4C 4 b4_11_aim
+peek F:4A992 2 b4_11_n
+step 1
+peek F:4AB4C 4 b4_12_aim
+peek F:4A992 2 b4_12_n
+step 1
+peek F:4AB4C 4 b4_13_aim
+peek F:4A992 2 b4_13_n
+step 1
+peek F:4AB4C 4 b4_14_aim
+peek F:4A992 2 b4_14_n
+step 1
+peek F:4AB4C 4 b4_15_aim
+peek F:4A992 2 b4_15_n
+step 1
+peek F:4AB4C 4 b4_16_aim
+peek F:4A992 2 b4_16_n
+step 1
+peek F:4AB4C 4 b4_17_aim
+peek F:4A992 2 b4_17_n
+step 1
+peek F:4AB4C 4 b4_18_aim
+peek F:4A992 2 b4_18_n
+step 1
+peek F:4AB4C 4 b4_19_aim
+peek F:4A992 2 b4_19_n
+step 1
+peek F:4AB4C 4 b4_20_aim
+peek F:4A992 2 b4_20_n
+step 1
+peek F:4AB4C 4 b4_21_aim
+peek F:4A992 2 b4_21_n
+step 1
+peek F:4AB4C 4 b4_22_aim
+peek F:4A992 2 b4_22_n
+step 1
+peek F:4AB4C 4 b4_23_aim
+peek F:4A992 2 b4_23_n
+step 1
+peek F:4AB4C 4 b4_24_aim
+peek F:4A992 2 b4_24_n
+step 1
+peek F:4AB4C 4 b4_25_aim
+peek F:4A992 2 b4_25_n
+step 1
+peek F:4AB4C 4 b4_26_aim
+peek F:4A992 2 b4_26_n
+step 1
+peek F:4AB4C 4 b4_27_aim
+peek F:4A992 2 b4_27_n
+step 1
+peek F:4AB4C 4 b4_28_aim
+peek F:4A992 2 b4_28_n
+step 1
+peek F:4AB4C 4 b4_29_aim
+peek F:4A992 2 b4_29_n
+step 1
+peek F:4AB4C 4 b4_30_aim
+peek F:4A992 2 b4_30_n
+step 1
+peek F:4AB4C 4 b4_31_aim
+peek F:4A992 2 b4_31_n
+step 1
+peek F:4AB4C 4 b4_32_aim
+peek F:4A992 2 b4_32_n
+step 1
+peek F:4AB4C 4 b4_33_aim
+peek F:4A992 2 b4_33_n
+step 1
+peek F:4AB4C 4 b4_34_aim
+peek F:4A992 2 b4_34_n
+step 1
+peek F:4AB4C 4 b4_35_aim
+peek F:4A992 2 b4_35_n
+step 1
+peek F:4AB4C 4 b4_36_aim
+peek F:4A992 2 b4_36_n
+step 1
+peek F:4AB4C 4 b4_37_aim
+peek F:4A992 2 b4_37_n
+step 1
+peek F:4AB4C 4 b4_38_aim
+peek F:4A992 2 b4_38_n
+step 1
+peek F:4AB4C 4 b4_39_aim
+peek F:4A992 2 b4_39_n
+step 1
+peek F:4AB4C 4 b4_40_aim
+peek F:4A992 2 b4_40_n
+step 1
+peek F:4AB4C 4 b4_41_aim
+peek F:4A992 2 b4_41_n
+step 1
+peek F:4AB4C 4 b4_42_aim
+peek F:4A992 2 b4_42_n
+step 1
+peek F:4AB4C 4 b4_43_aim
+peek F:4A992 2 b4_43_n
+step 1
+peek F:4AB4C 4 b4_44_aim
+peek F:4A992 2 b4_44_n
+step 1
+peek F:4AB4C 4 b4_45_aim
+peek F:4A992 2 b4_45_n
+step 1
+peek F:4AB4C 4 b4_46_aim
+peek F:4A992 2 b4_46_n
+step 1
+peek F:4AB4C 4 b4_47_aim
+peek F:4A992 2 b4_47_n
+step 1
+peek F:4AB4C 4 b4_48_aim
+peek F:4A992 2 b4_48_n
+step 1
+peek F:4AB4C 4 b4_49_aim
+peek F:4A992 2 b4_49_n
+step 1
+peek F:4AB4C 4 b4_50_aim
+peek F:4A992 2 b4_50_n
+step 1
+peek F:4AB4C 4 b4_51_aim
+peek F:4A992 2 b4_51_n
+step 1
+peek F:4AB4C 4 b4_52_aim
+peek F:4A992 2 b4_52_n
+step 1
+peek F:4AB4C 4 b4_53_aim
+peek F:4A992 2 b4_53_n
+step 1
+peek F:4AB4C 4 b4_54_aim
+peek F:4A992 2 b4_54_n
+step 1
+peek F:4AB4C 4 b4_55_aim
+peek F:4A992 2 b4_55_n
+step 1
+peek F:4AB4C 4 b4_56_aim
+peek F:4A992 2 b4_56_n
+step 1
+peek F:4AB4C 4 b4_57_aim
+peek F:4A992 2 b4_57_n
+step 1
+peek F:4AB4C 4 b4_58_aim
+peek F:4A992 2 b4_58_n
+step 1
+peek F:4AB4C 4 b4_59_aim
+peek F:4A992 2 b4_59_n
+step 1
+peek F:4AB4C 4 b4_60_aim
+peek F:4A992 2 b4_60_n
+step 1
+peek F:4AB4C 4 b4_61_aim
+peek F:4A992 2 b4_61_n
+step 1
+peek F:4AB4C 4 b4_62_aim
+peek F:4A992 2 b4_62_n
+step 1
+peek F:4AB4C 4 b4_63_aim
+peek F:4A992 2 b4_63_n
+step 1
+peek F:4AB4C 4 b4_64_aim
+peek F:4A992 2 b4_64_n
+step 1
+peek F:4AB4C 4 b4_65_aim
+peek F:4A992 2 b4_65_n
+step 1
+peek F:4AB4C 4 b4_66_aim
+peek F:4A992 2 b4_66_n
+step 1
+peek F:4AB4C 4 b4_67_aim
+peek F:4A992 2 b4_67_n
+step 1
+peek F:4AB4C 4 b4_68_aim
+peek F:4A992 2 b4_68_n
+step 1
+peek F:4AB4C 4 b4_69_aim
+peek F:4A992 2 b4_69_n
+step 1
+peek F:4AB4C 4 b4_70_aim
+peek F:4A992 2 b4_70_n
+step 1
+peek F:4AB4C 4 b4_71_aim
+peek F:4A992 2 b4_71_n
+step 1
+peek F:4AB4C 4 b4_72_aim
+peek F:4A992 2 b4_72_n
+step 1
+peek F:4AB4C 4 b4_73_aim
+peek F:4A992 2 b4_73_n
+step 1
+peek F:4AB4C 4 b4_74_aim
+peek F:4A992 2 b4_74_n
+step 1
+peek F:4AB4C 4 b4_75_aim
+peek F:4A992 2 b4_75_n
+step 1
+peek F:4AB4C 4 b4_76_aim
+peek F:4A992 2 b4_76_n
+step 1
+peek F:4AB4C 4 b4_77_aim
+peek F:4A992 2 b4_77_n
+step 1
+peek F:4AB4C 4 b4_78_aim
+peek F:4A992 2 b4_78_n
+step 1
+peek F:4AB4C 4 b4_79_aim
+peek F:4A992 2 b4_79_n
+step 1
+peek F:4AB4C 4 b4_80_aim
+peek F:4A992 2 b4_80_n
+step 1
+peek F:4AB4C 4 b4_81_aim
+peek F:4A992 2 b4_81_n
+step 1
+peek F:4AB4C 4 b4_82_aim
+peek F:4A992 2 b4_82_n
+step 1
+peek F:4AB4C 4 b4_83_aim
+peek F:4A992 2 b4_83_n
+step 1
+peek F:4AB4C 4 b4_84_aim
+peek F:4A992 2 b4_84_n
+step 1
+peek F:4AB4C 4 b4_85_aim
+peek F:4A992 2 b4_85_n
+step 1
+peek F:4AB4C 4 b4_86_aim
+peek F:4A992 2 b4_86_n
+step 1
+peek F:4AB4C 4 b4_87_aim
+peek F:4A992 2 b4_87_n
+step 1
+peek F:4AB4C 4 b4_88_aim
+peek F:4A992 2 b4_88_n
+step 1
+peek F:4AB4C 4 b4_89_aim
+peek F:4A992 2 b4_89_n
+log A255
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A96A 1 4
+poke F:4A86D 1 1
+poke F:4A86C 1 1
+poke F:4A865 1 0
+poke F:4A8EB 1 255
+poke F:4A9E2 2 0x8c0
+poke F:4A97E 2 2
+step 1
+peek F:4AB4C 4 a255_0_aim
+peek F:4A992 2 a255_0_n
+peek F:4A83D 2 a255_0_vk
+peek F:4A85E 1 a255_0_h
+peek F:4ACF6 12 a255_0_cam
+step 1
+peek F:4AB4C 4 a255_1_aim
+peek F:4A992 2 a255_1_n
+peek F:4A83D 2 a255_1_vk
+peek F:4A85E 1 a255_1_h
+peek F:4ACF6 12 a255_1_cam
+step 1
+peek F:4AB4C 4 a255_2_aim
+peek F:4A992 2 a255_2_n
+peek F:4A83D 2 a255_2_vk
+peek F:4A85E 1 a255_2_h
+peek F:4ACF6 12 a255_2_cam
+step 1
+peek F:4AB4C 4 a255_3_aim
+peek F:4A992 2 a255_3_n
+peek F:4A83D 2 a255_3_vk
+peek F:4A85E 1 a255_3_h
+peek F:4ACF6 12 a255_3_cam
+step 1
+peek F:4AB4C 4 a255_4_aim
+peek F:4A992 2 a255_4_n
+peek F:4A83D 2 a255_4_vk
+peek F:4A85E 1 a255_4_h
+peek F:4ACF6 12 a255_4_cam
+step 1
+peek F:4AB4C 4 a255_5_aim
+peek F:4A992 2 a255_5_n
+peek F:4A83D 2 a255_5_vk
+peek F:4A85E 1 a255_5_h
+peek F:4ACF6 12 a255_5_cam
+step 1
+peek F:4AB4C 4 a255_6_aim
+peek F:4A992 2 a255_6_n
+peek F:4A83D 2 a255_6_vk
+peek F:4A85E 1 a255_6_h
+peek F:4ACF6 12 a255_6_cam
+step 1
+peek F:4AB4C 4 a255_7_aim
+peek F:4A992 2 a255_7_n
+peek F:4A83D 2 a255_7_vk
+peek F:4A85E 1 a255_7_h
+peek F:4ACF6 12 a255_7_cam
+step 1
+peek F:4AB4C 4 a255_8_aim
+peek F:4A992 2 a255_8_n
+peek F:4A83D 2 a255_8_vk
+peek F:4A85E 1 a255_8_h
+peek F:4ACF6 12 a255_8_cam
+step 1
+peek F:4AB4C 4 a255_9_aim
+peek F:4A992 2 a255_9_n
+peek F:4A83D 2 a255_9_vk
+peek F:4A85E 1 a255_9_h
+peek F:4ACF6 12 a255_9_cam
+step 1
+peek F:4AB4C 4 a255_10_aim
+peek F:4A992 2 a255_10_n
+peek F:4A83D 2 a255_10_vk
+peek F:4A85E 1 a255_10_h
+peek F:4ACF6 12 a255_10_cam
+step 1
+peek F:4AB4C 4 a255_11_aim
+peek F:4A992 2 a255_11_n
+peek F:4A83D 2 a255_11_vk
+peek F:4A85E 1 a255_11_h
+peek F:4ACF6 12 a255_11_cam
+step 1
+peek F:4AB4C 4 a255_12_aim
+peek F:4A992 2 a255_12_n
+peek F:4A83D 2 a255_12_vk
+peek F:4A85E 1 a255_12_h
+peek F:4ACF6 12 a255_12_cam
+step 1
+peek F:4AB4C 4 a255_13_aim
+peek F:4A992 2 a255_13_n
+peek F:4A83D 2 a255_13_vk
+peek F:4A85E 1 a255_13_h
+peek F:4ACF6 12 a255_13_cam

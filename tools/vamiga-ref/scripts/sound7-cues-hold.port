@@ -1,0 +1,9 @@
+# the port's side of sound7-cues-hold: the cue 0x01 (a hostile missile locked: the cool-down 3), the cue 0x10 poked 20 blanks (3 steps) later and held by the cool-down. Twice, at different phases
+# of the clock second. Run: build/sound7_port assets FILE
+start deck
+ticks 400
+at 20 cue 1
+at 23 cue 10
+at 140 cue 1
+at 143 cue 10
+at 144 second

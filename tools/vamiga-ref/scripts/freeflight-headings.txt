@@ -1,0 +1,32 @@
+# Takeoff and three headings. Prerequisite: cockpit-ground.vasnap from freeflight-takeoff.txt.
+# F10 = full thrust; at about 240 kt DOWN pitches the nose up; UP then levels the climb. LEFT banks and turns
+# left (heading decreases: 028, 344, 293 below), RIGHT the reverse; verified in keys-flight.txt. After each capture
+# pair, keypad Enter shows the external view whose bottom line prints the exact HDG.
+restore extracted/captures/cockpit-ground.vasnap
+key F10
+wait 22
+key DOWN 3
+wait 2
+key UP 1.5
+wait 3
+snapshot extracted/captures/airborne.vasnap
+frame extracted/captures/heading-1.ppm
+key KPENTER
+wait 2
+frame extracted/captures/heading-1-hdg.ppm
+key KPENTER
+wait 1
+key LEFT 5
+wait 8
+frame extracted/captures/heading-2.ppm
+key KPENTER
+wait 2
+frame extracted/captures/heading-2-hdg.ppm
+key KPENTER
+wait 1
+key LEFT 5
+wait 8
+frame extracted/captures/heading-3.ppm
+key KPENTER
+wait 2
+frame extracted/captures/heading-3-hdg.ppm

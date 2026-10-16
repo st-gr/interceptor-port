@@ -1,0 +1,136 @@
+# mission-f4: menu key F4, the fourth mission (game mode 6, the rescue pod, note 08 12.10): the key SHIFT+F (RESCUE) releases the parachute record; success (0xFF) when it lands with its x and z
+# within 0x10000 position units (256 fine units) of the site marker (the class 0x32 record, about 9 cells from the carrier), failure 0xFE when it lands elsewhere.
+# 1 tick = 1 core step, the game starts at the credits: any key (tick 3), the continuing welcome of a log with a player record (tick 133), the menu's F4 (tick 175). The flight log is imported by the
+# script ("log": qualified, tours 2, the completion bytes 0 0 0 1 1 1 1 1 0) and the placement generator is seeded with 69 ("seed 69"). The location is the carrier and fixed for the mission: the
+# approach, the notice and the wait run by themselves and the first flight step is tick 534.
+# THIS MISSION REACHES THE SUCCESS CODE: end 0xFF at tick 2084 (the end column), the outcome text types and the flight resumes with the resume code 1 at tick 2116. The path: a catapult launch with
+# F10 at tick 532, a pull at 616 (stick back until 631), the gear at 641, a climb to about 1500 fine units of height, then a closed-loop course to the site marker (position longs x 275251200,
+# z 312999936) found with a throwaway steering search tool (a bang-bang bank and pitch controller on the heading to the marker, run against this port; its stick changes are the events below, 1 per
+# change), a descent to about 85 fine units from 9M position units out, a pass of the marker at tick 2072 within about 50,000 position units across track, and the RESCUE key at tick 2052: the
+# parachute keeps the aircraft's velocity for about 30 ticks, falls the 85 units and lands inside the 0x10000 box (the release ticks 2050 to 2054 win, 2052 is the middle; the others lose with 0xFE).
+# Since milestone 6 the placement selector is the measured one (note 07 2.4: 20,000 x m + the start path's delta + a jitter of -3 to +3, m drawn from the seeded generator), so "seed N" picks a placement: seed 69 draws m = 23 and the jitter -2, selector 0x0B18:
+# variant 0, offsets (0, +2) cells, the placement of the earlier golden (seed 6 now draws the selector 0x0B16, a neighbouring placement for which the release at tick 2029 lands outside the box: failure 0xFE); the inputs below are unchanged.
+# Milestone 7 history: the click cost 5,350 and the measured typing times (note 08 3.8) and then the final round (note 08 12.14 C14 and 5.13: the missions' approach is the mover's from the briefing camera, and the first flight pass follows the outcome resume by one step) re-timed this script twice; the values above are the current ones. The seed and the inputs are unchanged and the run still reaches the end code 0xFF.
+# The real "at" lines after tick 400 moved by +23 in the final round (+2 in the click-cost round); the synthetic "sat" lines by +109.
+screens
+seed 69
+log 0 0 0 1 1 1 1 1 0
+ticks 2275
+# SYNTHETIC RUN (CI): "synthflight" gives the synthetic world the invented flight tables (all zero) and the invented mission tables of tests/world_synth.h (scenario rows, templates, position blocks, briefing chain, ai.bin), so the F-key starts the mission; "synthfrom 175" keeps the
+# "at" lines up to the menu key and drops the real fight; the "sat" lines are the synthetic fight. F4: the site marker (class 0x32) is placed on the ground below the stationary start, RESCUE at 669 drops the parachute record onto it: END CODE 0xFF at tick 719, resume code 1 at 729.
+synthflight
+synthfrom 175
+synthetic 909
+sat 616 fkey 10
+sat 669 btn RESCUE
+# the credits (any key), the continuing welcome (any key), the menu's F4
+at 3 key 120
+at 133 key 120
+at 175 fkey 4
+# the briefing chain runs by itself (the location is fixed, the approach and the notice are not skipped); the flight starts at the tick the header names
+at 532 fkey 10
+at 616 stick 0 12000
+at 631 stick 0 0
+at 641 btn GEAR
+at 725 stick 12000 -12000
+at 735 stick 0 -12000
+at 748 stick 0 0
+at 749 stick 0 12000
+at 760 stick 0 0
+at 762 stick 12000 0
+at 763 stick 0 0
+at 766 stick 0 -12000
+at 770 stick 0 0
+at 787 stick -12000 0
+at 790 stick 0 0
+at 791 stick -12000 0
+at 794 stick 0 0
+at 796 stick -12000 0
+at 800 stick 0 0
+at 803 stick -12000 0
+at 806 stick 0 0
+at 810 stick -12000 0
+at 812 stick 0 0
+at 841 stick 0 12000
+at 850 stick 0 0
+at 863 stick -12000 0
+at 864 stick 0 0
+at 889 stick -12000 0
+at 890 stick 0 0
+at 909 stick 0 12000
+at 911 stick 0 0
+at 949 stick -12000 0
+at 950 stick 0 0
+at 972 stick -12000 0
+at 973 stick 0 0
+at 1043 stick 12000 0
+at 1045 stick 0 0
+at 1119 stick 12000 0
+at 1120 stick 0 0
+at 1207 stick 12000 0
+at 1208 stick 0 0
+at 1311 stick 12000 0
+at 1312 stick 0 0
+at 1381 stick -12000 0
+at 1383 stick 0 0
+at 1385 stick -12000 0
+at 1387 stick 0 0
+at 1416 stick -12000 0
+at 1417 stick 0 0
+at 1464 stick 0 -12000
+at 1466 stick 0 0
+at 1468 stick -12000 0
+at 1469 stick 0 0
+at 1482 stick -12000 0
+at 1483 stick 0 0
+at 1494 stick -12000 0
+at 1495 stick 0 0
+at 1524 stick -12000 0
+at 1525 stick 0 0
+at 1535 stick -12000 0
+at 1536 stick 0 0
+at 1607 stick 12000 0
+at 1609 stick 0 0
+at 1640 stick 12000 0
+at 1641 stick 0 0
+at 1680 stick 12000 0
+at 1681 stick 0 0
+at 1714 stick 12000 0
+at 1715 stick 0 0
+at 1758 stick 0 -12000
+at 1771 stick 0 0
+at 1775 stick 0 12000
+at 1781 stick 0 0
+at 1792 stick 0 12000
+at 1801 stick 0 0
+at 1822 stick -12000 0
+at 1824 stick 0 0
+at 1825 stick -12000 0
+at 1826 stick 0 0
+at 1828 stick 0 12000
+at 1831 stick 0 0
+at 1834 stick -12000 0
+at 1835 stick 0 0
+at 1840 stick -12000 0
+at 1841 stick 0 0
+at 1858 stick -12000 0
+at 1859 stick 0 0
+at 1863 stick -12000 0
+at 1864 stick 0 0
+at 1868 stick -12000 0
+at 1869 stick 0 0
+at 1878 stick -12000 0
+at 1879 stick 0 0
+at 1882 stick -12000 0
+at 1883 stick 0 0
+at 1886 stick -12000 0
+at 1887 stick 0 0
+at 1955 stick 12000 0
+at 1957 stick 0 0
+at 1961 stick 12000 0
+at 1963 stick 0 0
+at 2052 btn RESCUE
+at 2060 stick -12000 0
+at 2066 stick 0 0
+at 2067 stick -12000 0
+at 2077 stick 0 0

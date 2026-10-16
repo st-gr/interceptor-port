@@ -1,0 +1,26 @@
+# Task 2 (milestone 6): the map marks on the aircraft screen (camera mode 6): the chosen number drawn on the passes where V:4A93B is odd (note 04 "The start marks of the overview map").
+# build/vamiga-ref/ref --rom disks/kick12.rom --adf extracted/interceptor-autoboot.adf --script tools/vamiga-ref/scripts/followup-mapcam-air.txt --log extracted/captures/logs/followup-mapcam-air.txt
+restore extracted/captures/aircraft-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A95E 1 mode
+peek F:4A966 1 cam
+peek F:4A900 1 loc
+peek F:4A90F 1 v90f
+peek F:4A93B 1 v93b0
+frame extracted/captures/followup-mapcam-air-0.ppm
+step
+peek F:4A93B 1 v93b1
+frame extracted/captures/followup-mapcam-air-1.ppm
+step
+peek F:4A93B 1 v93b2
+frame extracted/captures/followup-mapcam-air-2.ppm
+step
+peek F:4A93B 1 v93b3
+frame extracted/captures/followup-mapcam-air-3.ppm
+step
+peek F:4A93B 1 v93b4
+frame extracted/captures/followup-mapcam-air-4.ppm
+step
+peek F:4A93B 1 v93b5
+frame extracted/captures/followup-mapcam-air-5.ppm

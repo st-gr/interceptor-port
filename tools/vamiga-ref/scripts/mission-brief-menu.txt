@@ -1,0 +1,12 @@
+# the menu with the shipped log (write-enabled boot): snapshot for gen-mission-brief.py
+restore extracted/captures/credits-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+key SPACE
+wait 16
+freeze
+peek F:1D024 4 recptr
+peek F:1A6BC 4 st
+peek F:4A95E 1 mode
+frame extracted/captures/mb/menu.ppm
+snapshot extracted/captures/mb/menu.vasnap

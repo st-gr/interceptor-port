@@ -1,0 +1,158 @@
+# Part id +0x7B (note 04a, section 8a): external views, every distance level and four directions; peeks the byte and the queue C entries (the player entry's distance word is at entry +0x10).
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+log cockpit
+peek F:4B23C 4 w0
+peek F:4B2B7 1 pid
+peek F:4A83D 1 v83d
+peek F:4AB30 4 e
+thaw
+key KPENTER
+wait 3
+freeze
+log ext_level_0
+peek F:4B2B7 1 pid
+peek F:4A83D 1 v83d
+peek F:4A966 1 v966
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:4A992 2 step
+peek F:5476A 480 qc
+thaw
+key LBRACKET
+wait 2.5
+freeze
+log ext_level_1
+peek F:4B2B7 1 pid
+peek F:4A83D 1 v83d
+peek F:4A966 1 v966
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:4A992 2 step
+peek F:5476A 480 qc
+thaw
+key LBRACKET
+wait 2.5
+freeze
+log ext_level_2
+peek F:4B2B7 1 pid
+peek F:4A83D 1 v83d
+peek F:4A966 1 v966
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:4A992 2 step
+peek F:5476A 480 qc
+thaw
+key LBRACKET
+wait 2.5
+freeze
+log ext_level_3
+peek F:4B2B7 1 pid
+peek F:4A83D 1 v83d
+peek F:4A966 1 v966
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:4A992 2 step
+peek F:5476A 480 qc
+thaw
+key LBRACKET
+wait 2.5
+freeze
+log ext_level_4
+peek F:4B2B7 1 pid
+peek F:4A83D 1 v83d
+peek F:4A966 1 v966
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:4A992 2 step
+peek F:5476A 480 qc
+thaw
+key LBRACKET
+wait 2.5
+freeze
+log ext_level_5
+peek F:4B2B7 1 pid
+peek F:4A83D 1 v83d
+peek F:4A966 1 v966
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:4A992 2 step
+peek F:5476A 480 qc
+thaw
+key LBRACKET
+wait 2.5
+freeze
+log ext_level_6
+peek F:4B2B7 1 pid
+peek F:4A83D 1 v83d
+peek F:4A966 1 v966
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:4A992 2 step
+peek F:5476A 480 qc
+thaw
+key LBRACKET
+wait 2.5
+freeze
+log ext_level_7
+peek F:4B2B7 1 pid
+peek F:4A83D 1 v83d
+peek F:4A966 1 v966
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:4A992 2 step
+peek F:5476A 480 qc
+thaw
+key LBRACKET
+wait 2.5
+freeze
+log ext_KP5
+peek F:4B2B7 1 pid
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:5476A 480 qc
+thaw
+key KP5
+wait 2.5
+freeze
+log ext_KPDOT
+peek F:4B2B7 1 pid
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:5476A 480 qc
+thaw
+key KPDOT
+wait 2.5
+freeze
+log ext_KP8
+peek F:4B2B7 1 pid
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:5476A 480 qc
+thaw
+key KP8
+wait 2.5
+freeze
+log ext_KP4
+peek F:4B2B7 1 pid
+peek F:4AB2A 2 offx
+peek F:4AB2E 2 offz
+peek F:4AB30 4 offy
+peek F:5476A 480 qc
+thaw
+key KP4
+wait 2.5
+freeze
+peek F:4B2B7 1 pid_end

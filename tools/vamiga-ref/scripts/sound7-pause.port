@@ -1,0 +1,5 @@
+# the port's side of sound7-pause: P (the pause text and its clicks), 100 blanks later P again. Run: build/sound7_port assets FILE
+start deck
+ticks 200
+at 20 btn PAUSE
+at 36 btn PAUSE

@@ -1,0 +1,247 @@
+# View keys, head hold, map view and KP-Enter (note 06, View kinds, settled): staged from cockpit-ground.vasnap.
+# Output: log lines read by tools/vamiga-ref/logparse.py; frames in extracted/captures/views3/ (git-ignored).
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+log s0
+peek F:4A83C 320 s0_v
+peek F:4AA3C 8 s0_hud
+peek F:4AB1A 80 s0_cam
+peek F:4ACEA 48 s0_pos
+peek F:4A71C 4 s0_alt
+peek F:4A992 2 s0_n
+peek F:4B23C 160 s0_rec
+thaw
+key KP6
+wait 0.15
+log kp6_0
+peek F:4A83C 320 kp6_0_v
+peek F:4AA3C 8 kp6_0_hud
+peek F:4AB1A 80 kp6_0_cam
+peek F:4ACEA 48 kp6_0_pos
+peek F:4A71C 4 kp6_0_alt
+peek F:4A992 2 kp6_0_n
+peek F:4B23C 160 kp6_0_rec
+wait 0.25
+log kp6_1
+peek F:4A83C 320 kp6_1_v
+peek F:4AA3C 8 kp6_1_hud
+peek F:4AB1A 80 kp6_1_cam
+peek F:4ACEA 48 kp6_1_pos
+peek F:4A71C 4 kp6_1_alt
+peek F:4A992 2 kp6_1_n
+peek F:4B23C 160 kp6_1_rec
+wait 0.4
+log kp6_2
+peek F:4A83C 320 kp6_2_v
+peek F:4AA3C 8 kp6_2_hud
+peek F:4AB1A 80 kp6_2_cam
+peek F:4ACEA 48 kp6_2_pos
+peek F:4A71C 4 kp6_2_alt
+peek F:4A992 2 kp6_2_n
+peek F:4B23C 160 kp6_2_rec
+wait 0.8
+log kp6_3
+peek F:4A83C 320 kp6_3_v
+peek F:4AA3C 8 kp6_3_hud
+peek F:4AB1A 80 kp6_3_cam
+peek F:4ACEA 48 kp6_3_pos
+peek F:4A71C 4 kp6_3_alt
+peek F:4A992 2 kp6_3_n
+peek F:4B23C 160 kp6_3_rec
+wait 1.4
+log kp6_4
+peek F:4A83C 320 kp6_4_v
+peek F:4AA3C 8 kp6_4_hud
+peek F:4AB1A 80 kp6_4_cam
+peek F:4ACEA 48 kp6_4_pos
+peek F:4A71C 4 kp6_4_alt
+peek F:4A992 2 kp6_4_n
+peek F:4B23C 160 kp6_4_rec
+wait 2.0
+log kp6_5
+peek F:4A83C 320 kp6_5_v
+peek F:4AA3C 8 kp6_5_hud
+peek F:4AB1A 80 kp6_5_cam
+peek F:4ACEA 48 kp6_5_pos
+peek F:4A71C 4 kp6_5_alt
+peek F:4A992 2 kp6_5_n
+peek F:4B23C 160 kp6_5_rec
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP7
+wait 0.6
+log k7_0
+peek F:4A83C 320 k7_0_v
+peek F:4AA3C 8 k7_0_hud
+peek F:4AB1A 80 k7_0_cam
+peek F:4ACEA 48 k7_0_pos
+peek F:4A71C 4 k7_0_alt
+peek F:4A992 2 k7_0_n
+peek F:4B23C 160 k7_0_rec
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP7
+wait 0.6
+log k7k4_0
+peek F:4A83C 320 k7k4_0_v
+peek F:4AA3C 8 k7k4_0_hud
+peek F:4AB1A 80 k7k4_0_cam
+peek F:4ACEA 48 k7k4_0_pos
+peek F:4A71C 4 k7k4_0_alt
+peek F:4A992 2 k7k4_0_n
+peek F:4B23C 160 k7k4_0_rec
+key KP4
+wait 0.6
+log k7k4_1
+peek F:4A83C 320 k7k4_1_v
+peek F:4AA3C 8 k7k4_1_hud
+peek F:4AB1A 80 k7k4_1_cam
+peek F:4ACEA 48 k7k4_1_pos
+peek F:4A71C 4 k7k4_1_alt
+peek F:4A992 2 k7k4_1_n
+peek F:4B23C 160 k7k4_1_rec
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP7
+wait 0.6
+log k7k6_0
+peek F:4A83C 320 k7k6_0_v
+peek F:4AA3C 8 k7k6_0_hud
+peek F:4AB1A 80 k7k6_0_cam
+peek F:4ACEA 48 k7k6_0_pos
+peek F:4A71C 4 k7k6_0_alt
+peek F:4A992 2 k7k6_0_n
+peek F:4B23C 160 k7k6_0_rec
+key KP6
+wait 0.6
+log k7k6_1
+peek F:4A83C 320 k7k6_1_v
+peek F:4AA3C 8 k7k6_1_hud
+peek F:4AB1A 80 k7k6_1_cam
+peek F:4ACEA 48 k7k6_1_pos
+peek F:4A71C 4 k7k6_1_alt
+peek F:4A992 2 k7k6_1_n
+peek F:4B23C 160 k7k6_1_rec
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP1
+wait 0.6
+log k1k4_0
+peek F:4A83C 320 k1k4_0_v
+peek F:4AA3C 8 k1k4_0_hud
+peek F:4AB1A 80 k1k4_0_cam
+peek F:4ACEA 48 k1k4_0_pos
+peek F:4A71C 4 k1k4_0_alt
+peek F:4A992 2 k1k4_0_n
+peek F:4B23C 160 k1k4_0_rec
+key KP4
+wait 0.6
+log k1k4_1
+peek F:4A83C 320 k1k4_1_v
+peek F:4AA3C 8 k1k4_1_hud
+peek F:4AB1A 80 k1k4_1_cam
+peek F:4ACEA 48 k1k4_1_pos
+peek F:4A71C 4 k1k4_1_alt
+peek F:4A992 2 k1k4_1_n
+peek F:4B23C 160 k1k4_1_rec
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP1
+wait 0.6
+log k1k6_0
+peek F:4A83C 320 k1k6_0_v
+peek F:4AA3C 8 k1k6_0_hud
+peek F:4AB1A 80 k1k6_0_cam
+peek F:4ACEA 48 k1k6_0_pos
+peek F:4A71C 4 k1k6_0_alt
+peek F:4A992 2 k1k6_0_n
+peek F:4B23C 160 k1k6_0_rec
+key KP6
+wait 0.6
+log k1k6_1
+peek F:4A83C 320 k1k6_1_v
+peek F:4AA3C 8 k1k6_1_hud
+peek F:4AB1A 80 k1k6_1_cam
+peek F:4ACEA 48 k1k6_1_pos
+peek F:4A71C 4 k1k6_1_alt
+peek F:4A992 2 k1k6_1_n
+peek F:4B23C 160 k1k6_1_rec
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP4
+wait 0.6
+log k4_0
+peek F:4A83C 320 k4_0_v
+peek F:4AA3C 8 k4_0_hud
+peek F:4AB1A 80 k4_0_cam
+peek F:4ACEA 48 k4_0_pos
+peek F:4A71C 4 k4_0_alt
+peek F:4A992 2 k4_0_n
+peek F:4B23C 160 k4_0_rec
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP6
+wait 0.6
+log k9_0
+peek F:4A83C 320 k9_0_v
+peek F:4AA3C 8 k9_0_hud
+peek F:4AB1A 80 k9_0_cam
+peek F:4ACEA 48 k9_0_pos
+peek F:4A71C 4 k9_0_alt
+peek F:4A992 2 k9_0_n
+peek F:4B23C 160 k9_0_rec
+key KP9
+wait 0.6
+log k9_1
+peek F:4A83C 320 k9_1_v
+peek F:4AA3C 8 k9_1_hud
+peek F:4AB1A 80 k9_1_cam
+peek F:4ACEA 48 k9_1_pos
+peek F:4A71C 4 k9_1_alt
+peek F:4A992 2 k9_1_n
+peek F:4B23C 160 k9_1_rec
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP6
+wait 0.6
+log k0_0
+peek F:4A83C 320 k0_0_v
+peek F:4AA3C 8 k0_0_hud
+peek F:4AB1A 80 k0_0_cam
+peek F:4ACEA 48 k0_0_pos
+peek F:4A71C 4 k0_0_alt
+peek F:4A992 2 k0_0_n
+peek F:4B23C 160 k0_0_rec
+key KP0
+wait 0.6
+log k0_1
+peek F:4A83C 320 k0_1_v
+peek F:4AA3C 8 k0_1_hud
+peek F:4AB1A 80 k0_1_cam
+peek F:4ACEA 48 k0_1_pos
+peek F:4A71C 4 k0_1_alt
+peek F:4A992 2 k0_1_n
+peek F:4B23C 160 k0_1_rec
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP6
+wait 0.6
+log k5_0
+peek F:4A83C 320 k5_0_v
+peek F:4AA3C 8 k5_0_hud
+peek F:4AB1A 80 k5_0_cam
+peek F:4ACEA 48 k5_0_pos
+peek F:4A71C 4 k5_0_alt
+peek F:4A992 2 k5_0_n
+peek F:4B23C 160 k5_0_rec
+key KP5
+wait 0.6
+log k5_1
+peek F:4A83C 320 k5_1_v
+peek F:4AA3C 8 k5_1_hud
+peek F:4AB1A 80 k5_1_cam
+peek F:4ACEA 48 k5_1_pos
+peek F:4A71C 4 k5_1_alt
+peek F:4A992 2 k5_1_n
+peek F:4B23C 160 k5_1_rec

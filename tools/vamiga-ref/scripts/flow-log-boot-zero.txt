@@ -1,0 +1,8 @@
+# note 08 section 10: boot a copy of the game disk whose `config` file is 78 zero bytes (a never-used flight log), write-enabled, to the
+# credits screen and save the snapshot. Make the disk first:
+#   cp extracted/interceptor-autoboot.adf extracted/scratch/q/zero.adf
+#   python3 -c "open('/tmp/zcfg','wb').write(bytes(78))"; xdftool extracted/scratch/q/zero.adf delete config + write /tmp/zcfg config
+# Run:  build/vamiga-ref/ref --rw --rom disks/kick12.rom --adf extracted/scratch/q/zero.adf --script <this>
+wait 150
+frame extracted/captures/logs/credits-zero.ppm
+snapshot extracted/captures/credits-zero.vasnap

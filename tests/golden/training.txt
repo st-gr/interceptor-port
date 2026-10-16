@@ -1,0 +1,17 @@
+# training: menu item 3, part 1 of the flight school (note 08 section 8), 1 tick = 1 core step. The game starts at the credits and the keys drive the screens: any key
+# (tick 3), the menu's '3' (tick 30). The briefing types out over the placed flight (the first ticks), the instructor flies lesson 1 from tick 106 (note 08 8.1: the post 4 steps after the dispatch, 59 steps typed and 1 held, 6 passes of 0x12DB8). The
+# player's flying is not scored: the script uses the keys that act in part 1 (a keypad view, RETURN, which skips to the next lesson, and the pause). The synthetic
+# asset set has no flight data, so there the item is refused, the menu stays and the keypad keys act as its digits (KP-2 is free flight): that golden asserts
+# the refusal and the key plumbing; the local real-asset golden carries the lessons.
+screens
+ticks 280
+at 3 key 120
+at 30 key 51
+# the point of view: KP-6 (the external camera swings to the right), then KP-2 (behind)
+at 130 kp 6
+at 150 kp 2
+# RETURN: the instructor is re-placed and the sequencer goes on to the next lesson
+at 190 btn RETURN
+# pause and resume (the lessons stand still while paused)
+at 235 btn PAUSE
+at 245 btn PAUSE

@@ -1,0 +1,161 @@
+name: release
+run-name: Release v${{ inputs.version }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Semantic version without the v prefix (for example, 1.0.0 or 1.0.0-rc.1)
+        required: true
+        type: string
+      prerelease:
+        description: Mark the GitHub release as a prerelease
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: github.repository == 'st-gr/interceptor-port'
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      tag: ${{ steps.version.outputs.tag }}
+    steps:
+      - name: Validate version and destination
+        id: version
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+          if [ "$GITHUB_REF" != refs/heads/main ]; then
+            echo "releases must be cut from the main branch" >&2
+            exit 1
+          fi
+          if [[ ! "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z]+([.-][0-9A-Za-z]+)*)?$ ]]; then
+            echo "version must be semantic version text without a v prefix" >&2
+            exit 1
+          fi
+          tag="v$VERSION"
+          if git ls-remote --exit-code --tags "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git" "refs/tags/$tag" >/dev/null 2>&1; then
+            echo "tag already exists: $tag" >&2
+            exit 1
+          fi
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "release already exists: $tag" >&2
+            exit 1
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+  linux:
+    needs: validate
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y libsdl2-dev
+      - name: Build and package Linux x86_64
+        env:
+          VERSION: ${{ needs.validate.outputs.version }}
+        run: |
+          set -euo pipefail
+          make -j2
+          test "$(uname -m)" = x86_64
+          package="interceptor-port-$VERSION-linux-x86_64"
+          mkdir "$package"
+          cp build/interceptor README.md LICENSE "$package/"
+          printf '%s\n' "$VERSION" > "$package/VERSION"
+          tar -czf "$package.tar.gz" "$package"
+          sha256sum "$package.tar.gz" > "$package.tar.gz.sha256"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-linux-x86_64
+          path: interceptor-port-*.tar.gz*
+          if-no-files-found: error
+
+  macos:
+    needs: validate
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew install sdl2 pkg-config
+      - name: Build and package macOS arm64
+        env:
+          VERSION: ${{ needs.validate.outputs.version }}
+        run: |
+          set -euo pipefail
+          make -j2 CC=clang
+          test "$(uname -m)" = arm64
+          package="interceptor-port-$VERSION-macos-arm64"
+          mkdir "$package"
+          cp build/interceptor README.md LICENSE "$package/"
+          printf '%s\n' "$VERSION" > "$package/VERSION"
+          tar -czf "$package.tar.gz" "$package"
+          shasum -a 256 "$package.tar.gz" > "$package.tar.gz.sha256"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-macos-arm64
+          path: interceptor-port-*.tar.gz*
+          if-no-files-found: error
+
+  windows:
+    needs: validate
+    runs-on: windows-2025
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          install: >-
+            mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-binutils
+            mingw-w64-ucrt-x86_64-SDL2 mingw-w64-ucrt-x86_64-pkg-config make
+      - name: Build and package Windows x86_64
+        env:
+          VERSION: ${{ needs.validate.outputs.version }}
+        run: |
+          set -euo pipefail
+          make -j2
+          package="interceptor-port-$VERSION-windows-x86_64"
+          mkdir "$package"
+          cp build/interceptor.exe /ucrt64/bin/SDL2.dll README.md LICENSE "$package/"
+          printf '%s\n' "$VERSION" > "$package/VERSION"
+          tar -a -cf "$package.zip" "$package"
+          sha256sum "$package.zip" > "$package.zip.sha256"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-windows-x86_64
+          path: interceptor-port-*.zip*
+          if-no-files-found: error
+
+  publish:
+    needs: [validate, linux, macos, windows]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: release-*
+          path: dist
+          merge-multiple: true
+      - name: Create tag and GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ needs.validate.outputs.tag }}
+          VERSION: ${{ needs.validate.outputs.version }}
+          PRERELEASE: ${{ inputs.prerelease }}
+        run: |
+          set -euo pipefail
+          find dist -maxdepth 1 -type f -print | sort
+          args=(--repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "Interceptor port $VERSION" --generate-notes)
+          if [ "$PRERELEASE" = true ]; then args+=(--prerelease); fi
+          gh release create "$TAG" dist/* "${args[@]}"

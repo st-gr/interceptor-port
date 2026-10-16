@@ -1,0 +1,69 @@
+# HUD reference frames with the state words (record 0, state block 0x4A700..0x4B020) logged at the same instant.
+# Deck idle on the runway and on the carrier, then level flight, a ~20 degree climb and a ~30 degree bank from airborne.vasnap.
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+log runway-idle
+peek F:4B23C 512 rec0_runway-idle
+peek F:4CE3C 512 rec14_runway-idle
+peek F:4A700 2336 s71_runway-idle
+colors pal_runway-idle
+frame extracted/captures/openers/hud-runway-idle.ppm
+peek F:4AC7E 64 mat_runway-idle
+peek F:4AC90 32 cammat_runway-idle
+thaw
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+log carrier-idle
+peek F:4B23C 512 rec0_carrier-idle
+peek F:4CE3C 512 rec14_carrier-idle
+peek F:4A700 2336 s71_carrier-idle
+colors pal_carrier-idle
+frame extracted/captures/openers/hud-carrier-idle.ppm
+peek F:4AC7E 64 mat_carrier-idle
+peek F:4AC90 32 cammat_carrier-idle
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key UP 1.5
+wait 1
+freeze
+log level
+peek F:4B23C 512 rec0_level
+peek F:4CE3C 512 rec14_level
+peek F:4A700 2336 s71_level
+colors pal_level
+frame extracted/captures/openers/hud-level.ppm
+peek F:4AC7E 64 mat_level
+peek F:4AC90 32 cammat_level
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key UP 0.8
+wait 0.5
+freeze
+log climb20
+peek F:4B23C 512 rec0_climb20
+peek F:4CE3C 512 rec14_climb20
+peek F:4A700 2336 s71_climb20
+colors pal_climb20
+frame extracted/captures/openers/hud-climb20.ppm
+peek F:4AC7E 64 mat_climb20
+peek F:4AC90 32 cammat_climb20
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key UP 1.5
+key RIGHT 1.35
+wait 0.3
+freeze
+log bank30
+peek F:4B23C 512 rec0_bank30
+peek F:4CE3C 512 rec14_bank30
+peek F:4A700 2336 s71_bank30
+colors pal_bank30
+frame extracted/captures/openers/hud-bank30.ppm
+peek F:4AC7E 64 mat_bank30
+peek F:4AC90 32 cammat_bank30
+thaw

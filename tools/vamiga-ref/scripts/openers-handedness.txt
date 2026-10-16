@@ -1,0 +1,72 @@
+# Handedness: attitude words (record 0 +0x66 pitch, +0x68 heading, +0x6A roll) before and after each key, with frames.
+# Handedness: attitude words (record 0 +0x66 pitch, +0x68 heading, +0x6A roll) before and after each key.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+log start
+peek F:4B23C 512 rec0_start
+peek F:4CE3C 512 rec14_start
+peek F:4A700 2336 s71_start
+colors pal_start
+frame extracted/captures/openers/hd-start.ppm
+thaw
+key UP 1.0
+wait 0.5
+freeze
+log up1
+peek F:4B23C 512 rec0_up1
+peek F:4CE3C 512 rec14_up1
+peek F:4A700 2336 s71_up1
+colors pal_up1
+frame extracted/captures/openers/hd-up1.ppm
+thaw
+key RIGHT 1.0
+wait 0.5
+freeze
+log right1
+peek F:4B23C 512 rec0_right1
+peek F:4CE3C 512 rec14_right1
+peek F:4A700 2336 s71_right1
+colors pal_right1
+frame extracted/captures/openers/hd-right1.ppm
+thaw
+key LEFT 1.0
+wait 0.5
+freeze
+log left1
+peek F:4B23C 512 rec0_left1
+peek F:4CE3C 512 rec14_left1
+peek F:4A700 2336 s71_left1
+colors pal_left1
+frame extracted/captures/openers/hd-left1.ppm
+thaw
+key LEFT 1.0
+wait 0.5
+freeze
+log left2
+peek F:4B23C 512 rec0_left2
+peek F:4CE3C 512 rec14_left2
+peek F:4A700 2336 s71_left2
+colors pal_left2
+frame extracted/captures/openers/hd-left2.ppm
+thaw
+key DOWN 1.0
+wait 0.5
+freeze
+log down1
+peek F:4B23C 512 rec0_down1
+peek F:4CE3C 512 rec14_down1
+peek F:4A700 2336 s71_down1
+colors pal_down1
+frame extracted/captures/openers/hd-down1.ppm
+thaw
+key UP 1.0
+wait 0.5
+freeze
+log up2
+peek F:4B23C 512 rec0_up2
+peek F:4CE3C 512 rec14_up2
+peek F:4A700 2336 s71_up2
+colors pal_up2
+frame extracted/captures/openers/hd-up2.ppm
+thaw

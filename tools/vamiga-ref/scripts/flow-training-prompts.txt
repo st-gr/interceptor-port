@@ -1,0 +1,27 @@
+# From the main menu (training-menu.vasnap) to the security prompt of menu item 3 (training, part 1: mode 2) and of
+# item 4 (part 2: mode 0x7D); freezes the challenge in two snapshots. The challenge nibbles are peeked
+# (F:1D02A, four words) so the answer can be looked up in disks/countercodes.txt.
+# Writes extracted/captures/training-code-3.vasnap and training-code-4.vasnap and the two prompt frames. The challenges of the committed
+# scripts (194A for item 3, 3CCE for item 4) are those of the snapshots made on 2026-10-14; make the snapshots again and the challenge changes.
+restore extracted/captures/training-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key 3
+freeze
+stepuntil F:4A802 2 eq 4 3000
+step 150
+peek F:1D02A 8 chal3
+peek F:4A95E 1 mode3
+frame extracted/captures/training-code-3.ppm
+snapshot extracted/captures/training-code-3.vasnap
+thaw
+wait 4
+restore extracted/captures/training-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key 4
+freeze
+stepuntil F:4A802 2 eq 4 3000
+step 150
+peek F:1D02A 8 chal4
+peek F:4A95E 1 mode4
+frame extracted/captures/training-code-4.ppm
+snapshot extracted/captures/training-code-4.vasnap

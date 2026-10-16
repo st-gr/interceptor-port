@@ -1,0 +1,17 @@
+# Note 08 7.6: does the demo change the flight-log record? From demo.vasnap (stream step 47) the player record's buffer (RAM C54498, 78 bytes)
+# and the dirty flag V:4A87D are read at the start, after the fire event (stream frames 599 to 602) and near the end of the stream.
+restore extracted/captures/demo.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek R:C54498 78 log_start
+peek F:4A87D 1 dirty_start
+stepuntil F:54E5C 4 eq 0xC5473F 9000
+peek R:C54498 78 log_599
+peek F:4A87D 1 dirty_599
+stepuntil F:54E5C 4 eq 0xC5474C 3000
+peek R:C54498 78 log_610
+peek F:4A87D 1 dirty_610
+stepuntil F:54E5C 4 eq 0xC54CB8 40000
+peek R:C54498 78 log_2000
+peek F:4A87D 1 dirty_2000
+peek F:4A94F 1 allow_2000

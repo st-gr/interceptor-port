@@ -1,0 +1,142 @@
+# generated: note 05 17.17 fix round, hold flash: frame and palette on consecutive blanks, mid-hold and at the end; needs crash-setup-dive.txt run first
+restore extracted/captures/dive-precrash.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+stepuntil F:4B23C 2 and 0x0200 400
+log FLAG
+stepuntil F:4A951 1 eq 0x20 200
+log MID
+peek F:4A82C 2 m0_blank
+peek F:4A951 1 m0_c951
+peek F:1A6BC 4 m0_st
+colors m0_col
+frame extracted/captures/flash-m0.ppm
+step
+peek F:4A82C 2 m1_blank
+peek F:4A951 1 m1_c951
+peek F:1A6BC 4 m1_st
+colors m1_col
+frame extracted/captures/flash-m1.ppm
+step
+peek F:4A82C 2 m2_blank
+peek F:4A951 1 m2_c951
+peek F:1A6BC 4 m2_st
+colors m2_col
+frame extracted/captures/flash-m2.ppm
+step
+peek F:4A82C 2 m3_blank
+peek F:4A951 1 m3_c951
+peek F:1A6BC 4 m3_st
+colors m3_col
+frame extracted/captures/flash-m3.ppm
+step
+peek F:4A82C 2 m4_blank
+peek F:4A951 1 m4_c951
+peek F:1A6BC 4 m4_st
+colors m4_col
+frame extracted/captures/flash-m4.ppm
+step
+peek F:4A82C 2 m5_blank
+peek F:4A951 1 m5_c951
+peek F:1A6BC 4 m5_st
+colors m5_col
+frame extracted/captures/flash-m5.ppm
+step
+peek F:4A82C 2 m6_blank
+peek F:4A951 1 m6_c951
+peek F:1A6BC 4 m6_st
+colors m6_col
+frame extracted/captures/flash-m6.ppm
+step
+peek F:4A82C 2 m7_blank
+peek F:4A951 1 m7_c951
+peek F:1A6BC 4 m7_st
+colors m7_col
+frame extracted/captures/flash-m7.ppm
+step
+stepuntil F:4A951 1 eq 3 200
+log END
+peek F:4A82C 2 e0_blank
+peek F:4A951 1 e0_c951
+peek F:1A6BC 4 e0_st
+colors e0_col
+frame extracted/captures/flash-e0.ppm
+step
+peek F:4A82C 2 e1_blank
+peek F:4A951 1 e1_c951
+peek F:1A6BC 4 e1_st
+colors e1_col
+frame extracted/captures/flash-e1.ppm
+step
+peek F:4A82C 2 e2_blank
+peek F:4A951 1 e2_c951
+peek F:1A6BC 4 e2_st
+colors e2_col
+frame extracted/captures/flash-e2.ppm
+step
+peek F:4A82C 2 e3_blank
+peek F:4A951 1 e3_c951
+peek F:1A6BC 4 e3_st
+colors e3_col
+frame extracted/captures/flash-e3.ppm
+step
+peek F:4A82C 2 e4_blank
+peek F:4A951 1 e4_c951
+peek F:1A6BC 4 e4_st
+colors e4_col
+frame extracted/captures/flash-e4.ppm
+step
+peek F:4A82C 2 e5_blank
+peek F:4A951 1 e5_c951
+peek F:1A6BC 4 e5_st
+colors e5_col
+frame extracted/captures/flash-e5.ppm
+step
+peek F:4A82C 2 e6_blank
+peek F:4A951 1 e6_c951
+peek F:1A6BC 4 e6_st
+colors e6_col
+frame extracted/captures/flash-e6.ppm
+step
+peek F:4A82C 2 e7_blank
+peek F:4A951 1 e7_c951
+peek F:1A6BC 4 e7_st
+colors e7_col
+frame extracted/captures/flash-e7.ppm
+step
+peek F:4A82C 2 e8_blank
+peek F:4A951 1 e8_c951
+peek F:1A6BC 4 e8_st
+colors e8_col
+frame extracted/captures/flash-e8.ppm
+step
+peek F:4A82C 2 e9_blank
+peek F:4A951 1 e9_c951
+peek F:1A6BC 4 e9_st
+colors e9_col
+frame extracted/captures/flash-e9.ppm
+step
+peek F:4A82C 2 e10_blank
+peek F:4A951 1 e10_c951
+peek F:1A6BC 4 e10_st
+colors e10_col
+frame extracted/captures/flash-e10.ppm
+step
+peek F:4A82C 2 e11_blank
+peek F:4A951 1 e11_c951
+peek F:1A6BC 4 e11_st
+colors e11_col
+frame extracted/captures/flash-e11.ppm
+step
+peek F:4A82C 2 e12_blank
+peek F:4A951 1 e12_c951
+peek F:1A6BC 4 e12_st
+colors e12_col
+frame extracted/captures/flash-e12.ppm
+step
+peek F:4A82C 2 e13_blank
+peek F:4A951 1 e13_c951
+peek F:1A6BC 4 e13_st
+colors e13_col
+frame extracted/captures/flash-e13.ppm
+step

@@ -1,0 +1,5 @@
+# Paths removed from the public export (before the clean-room scan). One path per line: PATH, a TAB, the reason.
+# A directory ends in a slash. A path that is not in the tree is skipped silently.
+openshell/	the sandbox profiles: they name the private repository and the Kyma sandbox and are useless to others
+tools/codewheel_table.csv	the 65,536-row answer table of the publisher's copy-protection wheel (the port skips that prompt; only the emulator scripts use the git-ignored disks/countercodes.txt)
+tools/codewheel.py	the decoder of that table (private tooling)

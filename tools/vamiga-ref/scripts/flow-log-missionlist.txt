@@ -1,0 +1,33 @@
+# note 08 section 10: the selectable-missions list (menu item 6) with the unlock bytes of the log set by poke: the shipped log (missions 1 to 3 done), then
+# all six flags nonzero (the list loop reads six flags for five lines). Prerequisite: credits-rw.vasnap. Run with --rw --log extracted/captures/logs/flow-log-missionlist.txt
+restore extracted/captures/credits-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+key SPACE
+wait 14
+key 6 0.3
+wait 6
+freeze
+peek F:4A802 24 txt_shipped
+peek R:C54498 78 rec
+frame extracted/captures/logs/log-missionlist-shipped.ppm
+thaw
+key ESC 0.3
+wait 8
+freeze
+peek F:4A95E 1 mode
+peek F:1A6BC 4 state
+poke R:C544AD 1 1
+poke R:C544AE 1 1
+poke R:C544AF 1 1
+poke R:C544B0 1 1
+poke R:C544B1 1 1
+poke R:C544B2 1 1
+peek R:C54498 78 rec_poked
+thaw
+key 6 0.3
+wait 6
+freeze
+peek F:4A802 24 txt_all
+frame extracted/captures/logs/log-missionlist-all.ppm
+thaw

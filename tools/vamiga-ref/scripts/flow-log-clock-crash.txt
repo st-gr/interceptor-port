@@ -1,0 +1,40 @@
+# note 08 section 10.7: does a crash restart re-run the mission-start state (clock start V:4A9CC, step counter V:4A992)?
+# From dive-precrash.vasnap (free flight, nose-down dive a few frames above the sea; the record buffer is at RAM C54498 there):
+# crash, wait for the restart, then ESC and read the record's flight time (+0x08) and the clock variables.
+restore extracted/captures/dive-precrash.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek R:C544A0 4 flight_time0
+peek F:4A9CC 4 start0
+peek F:4A9C8 4 c8_0
+peek F:4A9C4 4 c4_0
+peek F:4A9C0 4 c0_0
+peek F:4ABAA 4 now0
+peek F:4A992 2 step0
+stepuntil F:4B23C 2 and 0x0200 900
+peek F:4A9CC 4 start_crash
+peek F:4A9C8 4 c8_crash
+peek F:4A9C4 4 c4_crash
+peek F:4ABAA 4 now_crash
+peek F:4A992 2 step_crash
+peek F:4A94F 1 allow_crash
+step 700
+peek F:4A9CC 4 start_r
+peek F:4A9C8 4 c8_r
+peek F:4A9C4 4 c4_r
+peek F:4A9C0 4 c0_r
+peek F:4ABAA 4 now_r
+peek F:4A992 2 step_r
+peek F:4B23C 16 rec_r
+peek F:1A6BC 4 state_r
+peek F:4A951 1 c951_r
+thaw
+key ESC 0.3
+wait 3
+freeze
+peek R:C544A0 4 flight_time_end
+peek F:4A9CC 4 start_e
+peek F:4A9C8 4 c8_e
+peek F:4ABAA 4 now_e
+peek F:1A6BC 4 state_e
+thaw

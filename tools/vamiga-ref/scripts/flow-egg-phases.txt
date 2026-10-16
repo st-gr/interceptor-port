@@ -1,0 +1,97 @@
+restore extracted/captures/credits.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A83F 1 credits_4A83F
+peek F:4A849 1 credits_4A849
+peek F:4A965 1 credits_4A965
+peek F:4A966 1 credits_4A966
+peek F:4A88B 1 credits_4A88B
+peek F:4A95E 1 credits_4A95E
+peek F:4A903 1 credits_4A903
+peek F:4A898 1 credits_4A898
+peek F:4A930 1 credits_4A930
+peek F:4A88D 1 credits_4A88D
+peek F:4A865 1 credits_4A865
+peek F:4A84D 1 credits_4A84D
+peek F:4A866 1 credits_4A866
+thaw
+restore extracted/captures/code-prompt.vasnap
+freeze
+peek F:4A83F 1 code-prompt_4A83F
+peek F:4A849 1 code-prompt_4A849
+peek F:4A965 1 code-prompt_4A965
+peek F:4A966 1 code-prompt_4A966
+peek F:4A88B 1 code-prompt_4A88B
+peek F:4A95E 1 code-prompt_4A95E
+peek F:4A903 1 code-prompt_4A903
+peek F:4A898 1 code-prompt_4A898
+peek F:4A930 1 code-prompt_4A930
+peek F:4A88D 1 code-prompt_4A88D
+peek F:4A865 1 code-prompt_4A865
+peek F:4A84D 1 code-prompt_4A84D
+peek F:4A866 1 code-prompt_4A866
+thaw
+restore extracted/captures/location-select.vasnap
+freeze
+peek F:4A83F 1 location-select_4A83F
+peek F:4A849 1 location-select_4A849
+peek F:4A965 1 location-select_4A965
+peek F:4A966 1 location-select_4A966
+peek F:4A88B 1 location-select_4A88B
+peek F:4A95E 1 location-select_4A95E
+peek F:4A903 1 location-select_4A903
+peek F:4A898 1 location-select_4A898
+peek F:4A930 1 location-select_4A930
+peek F:4A88D 1 location-select_4A88D
+peek F:4A865 1 location-select_4A865
+peek F:4A84D 1 location-select_4A84D
+peek F:4A866 1 location-select_4A866
+thaw
+restore extracted/captures/aircraft-select.vasnap
+freeze
+peek F:4A83F 1 aircraft-select_4A83F
+peek F:4A849 1 aircraft-select_4A849
+peek F:4A965 1 aircraft-select_4A965
+peek F:4A966 1 aircraft-select_4A966
+peek F:4A88B 1 aircraft-select_4A88B
+peek F:4A95E 1 aircraft-select_4A95E
+peek F:4A903 1 aircraft-select_4A903
+peek F:4A898 1 aircraft-select_4A898
+peek F:4A930 1 aircraft-select_4A930
+peek F:4A88D 1 aircraft-select_4A88D
+peek F:4A865 1 aircraft-select_4A865
+peek F:4A84D 1 aircraft-select_4A84D
+peek F:4A866 1 aircraft-select_4A866
+thaw
+restore extracted/captures/demo.vasnap
+freeze
+peek F:4A83F 1 demo_4A83F
+peek F:4A849 1 demo_4A849
+peek F:4A965 1 demo_4A965
+peek F:4A966 1 demo_4A966
+peek F:4A88B 1 demo_4A88B
+peek F:4A95E 1 demo_4A95E
+peek F:4A903 1 demo_4A903
+peek F:4A898 1 demo_4A898
+peek F:4A930 1 demo_4A930
+peek F:4A88D 1 demo_4A88D
+peek F:4A865 1 demo_4A865
+peek F:4A84D 1 demo_4A84D
+peek F:4A866 1 demo_4A866
+thaw
+restore extracted/captures/airborne.vasnap
+freeze
+peek F:4A83F 1 airborne_4A83F
+peek F:4A849 1 airborne_4A849
+peek F:4A965 1 airborne_4A965
+peek F:4A966 1 airborne_4A966
+peek F:4A88B 1 airborne_4A88B
+peek F:4A95E 1 airborne_4A95E
+peek F:4A903 1 airborne_4A903
+peek F:4A898 1 airborne_4A898
+peek F:4A930 1 airborne_4A930
+peek F:4A88D 1 airborne_4A88D
+peek F:4A865 1 airborne_4A865
+peek F:4A84D 1 airborne_4A84D
+peek F:4A866 1 airborne_4A866
+thaw

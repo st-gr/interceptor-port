@@ -1,0 +1,139 @@
+# note 08 section 9: qualification, a bolter (approach as the landing but the hook stays up: the deck is touched and the aircraft rolls off the bow). Prerequisite: extracted/captures/qual-airborne.vasnap (flow-qual-airborne.txt).
+# Run with --log extracted/captures/logs/flow-qual-bolter.txt
+restore extracted/captures/qual-airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+log STAGE
+poke F:4B254 4 37472
+poke F:4B258 4 273942624
+poke F:4B2A8 2 1700
+poke F:4B2AA 2 1700
+poke F:4B267 1 40
+poke F:4B23E 2 0x2002
+step 20
+peek F:4B23C 128 r020
+peek F:4A850 1 res020
+peek F:4A98A 2 v98a020
+step 20
+peek F:4B23C 128 r040
+peek F:4A850 1 res040
+peek F:4A98A 2 v98a040
+step 20
+peek F:4B23C 128 r060
+peek F:4A850 1 res060
+peek F:4A98A 2 v98a060
+step 20
+peek F:4B23C 128 r080
+peek F:4A850 1 res080
+peek F:4A98A 2 v98a080
+step 20
+peek F:4B23C 128 r100
+peek F:4A850 1 res100
+peek F:4A98A 2 v98a100
+frame extracted/captures/logs/flow-qual-bolter-100.ppm
+step 20
+peek F:4B23C 128 r120
+peek F:4A850 1 res120
+peek F:4A98A 2 v98a120
+step 20
+peek F:4B23C 128 r140
+peek F:4A850 1 res140
+peek F:4A98A 2 v98a140
+step 20
+peek F:4B23C 128 r160
+peek F:4A850 1 res160
+peek F:4A98A 2 v98a160
+step 20
+peek F:4B23C 128 r180
+peek F:4A850 1 res180
+peek F:4A98A 2 v98a180
+step 20
+peek F:4B23C 128 r200
+peek F:4A850 1 res200
+peek F:4A98A 2 v98a200
+frame extracted/captures/logs/flow-qual-bolter-200.ppm
+step 20
+peek F:4B23C 128 r220
+peek F:4A850 1 res220
+peek F:4A98A 2 v98a220
+step 20
+peek F:4B23C 128 r240
+peek F:4A850 1 res240
+peek F:4A98A 2 v98a240
+step 20
+peek F:4B23C 128 r260
+peek F:4A850 1 res260
+peek F:4A98A 2 v98a260
+step 20
+peek F:4B23C 128 r280
+peek F:4A850 1 res280
+peek F:4A98A 2 v98a280
+step 20
+peek F:4B23C 128 r300
+peek F:4A850 1 res300
+peek F:4A98A 2 v98a300
+frame extracted/captures/logs/flow-qual-bolter-300.ppm
+step 20
+peek F:4B23C 128 r320
+peek F:4A850 1 res320
+peek F:4A98A 2 v98a320
+step 20
+peek F:4B23C 128 r340
+peek F:4A850 1 res340
+peek F:4A98A 2 v98a340
+step 20
+peek F:4B23C 128 r360
+peek F:4A850 1 res360
+peek F:4A98A 2 v98a360
+step 20
+peek F:4B23C 128 r380
+peek F:4A850 1 res380
+peek F:4A98A 2 v98a380
+step 20
+peek F:4B23C 128 r400
+peek F:4A850 1 res400
+peek F:4A98A 2 v98a400
+frame extracted/captures/logs/flow-qual-bolter-400.ppm
+step 20
+peek F:4B23C 128 r420
+peek F:4A850 1 res420
+peek F:4A98A 2 v98a420
+step 20
+peek F:4B23C 128 r440
+peek F:4A850 1 res440
+peek F:4A98A 2 v98a440
+step 20
+peek F:4B23C 128 r460
+peek F:4A850 1 res460
+peek F:4A98A 2 v98a460
+step 20
+peek F:4B23C 128 r480
+peek F:4A850 1 res480
+peek F:4A98A 2 v98a480
+step 20
+peek F:4B23C 128 r500
+peek F:4A850 1 res500
+peek F:4A98A 2 v98a500
+frame extracted/captures/logs/flow-qual-bolter-500.ppm
+step 20
+peek F:4B23C 128 r520
+peek F:4A850 1 res520
+peek F:4A98A 2 v98a520
+step 20
+peek F:4B23C 128 r540
+peek F:4A850 1 res540
+peek F:4A98A 2 v98a540
+step 20
+peek F:4B23C 128 r560
+peek F:4A850 1 res560
+peek F:4A98A 2 v98a560
+step 20
+peek F:4B23C 128 r580
+peek F:4A850 1 res580
+peek F:4A98A 2 v98a580
+step 20
+peek F:4B23C 128 r600
+peek F:4A850 1 res600
+peek F:4A98A 2 v98a600
+frame extracted/captures/logs/flow-qual-bolter-600.ppm
+thaw

@@ -1,0 +1,23 @@
+# note 07 12.1 (milestone 7 task 3): the call site 0x14388 of the redraw helper in the approach of a free flight.
+thaw
+restore extracted/captures/aircraft-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 1 0.12
+stepuntil F:4A992 2 eq 92 3000
+peek F:4ACFA 4 before_height
+peek F:4AA3C 2 before_row
+peek F:4A966 1 before_cammode
+peek F:4A8EE 2 before_panel
+runto F:14388 40
+peek F:4A992 2 at_pass
+peek F:4ACFA 4 at_height
+peek F:4AA3C 2 at_row
+peek F:4A966 1 at_cammode
+peek F:4A8EE 2 at_panel
+runto F:1EFF4 20
+peek F:4A992 2 helper_pass
+peek F:4A8EE 2 helper_panel
+step 1
+peek F:4A8EE 2 after_panel
+peek F:4A8F1 8 after_redraw_bytes

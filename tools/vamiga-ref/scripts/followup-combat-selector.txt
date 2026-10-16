@@ -1,0 +1,393 @@
+# followup-combat-selector: 30 starts of the demonstration from the main menu snapshot; the selector V:4ABB0 (and the clock long V:4ABAE it is the low word of)
+# is read after each start. The wait before the key varies (wall clock), so the emulated time of the start differs between samples. Run: ref ... --script THIS --log FILE
+# note 07 2.4, open question A1. (thaw before each restore: a frozen machine does not run the 3 s the restore waits for.)
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 0.190
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s0_clock
+peek F:4ABB0 2 s0_sel
+peek F:4ABD4 1 s0_variant
+peek F:4ABD0 4 s0_off
+peek F:4A95E 1 s0_mode
+peek F:4A992 2 s0_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 0.263
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s1_clock
+peek F:4ABB0 2 s1_sel
+peek F:4ABD4 1 s1_variant
+peek F:4ABD0 4 s1_off
+peek F:4A95E 1 s1_mode
+peek F:4A992 2 s1_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 0.376
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s2_clock
+peek F:4ABB0 2 s2_sel
+peek F:4ABD4 1 s2_variant
+peek F:4ABD0 4 s2_off
+peek F:4A95E 1 s2_mode
+peek F:4A992 2 s2_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 0.529
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s3_clock
+peek F:4ABB0 2 s3_sel
+peek F:4ABD4 1 s3_variant
+peek F:4ABD0 4 s3_off
+peek F:4A95E 1 s3_mode
+peek F:4A992 2 s3_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 0.602
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s4_clock
+peek F:4ABB0 2 s4_sel
+peek F:4ABD4 1 s4_variant
+peek F:4ABD0 4 s4_off
+peek F:4A95E 1 s4_mode
+peek F:4A992 2 s4_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 0.715
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s5_clock
+peek F:4ABB0 2 s5_sel
+peek F:4ABD4 1 s5_variant
+peek F:4ABD0 4 s5_off
+peek F:4A95E 1 s5_mode
+peek F:4A992 2 s5_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 0.868
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s6_clock
+peek F:4ABB0 2 s6_sel
+peek F:4ABD4 1 s6_variant
+peek F:4ABD0 4 s6_off
+peek F:4A95E 1 s6_mode
+peek F:4A992 2 s6_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 0.941
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s7_clock
+peek F:4ABB0 2 s7_sel
+peek F:4ABD4 1 s7_variant
+peek F:4ABD0 4 s7_off
+peek F:4A95E 1 s7_mode
+peek F:4A992 2 s7_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1.054
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s8_clock
+peek F:4ABB0 2 s8_sel
+peek F:4ABD4 1 s8_variant
+peek F:4ABD0 4 s8_off
+peek F:4A95E 1 s8_mode
+peek F:4A992 2 s8_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1.207
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s9_clock
+peek F:4ABB0 2 s9_sel
+peek F:4ABD4 1 s9_variant
+peek F:4ABD0 4 s9_off
+peek F:4A95E 1 s9_mode
+peek F:4A992 2 s9_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1.280
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s10_clock
+peek F:4ABB0 2 s10_sel
+peek F:4ABD4 1 s10_variant
+peek F:4ABD0 4 s10_off
+peek F:4A95E 1 s10_mode
+peek F:4A992 2 s10_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1.393
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s11_clock
+peek F:4ABB0 2 s11_sel
+peek F:4ABD4 1 s11_variant
+peek F:4ABD0 4 s11_off
+peek F:4A95E 1 s11_mode
+peek F:4A992 2 s11_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1.546
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s12_clock
+peek F:4ABB0 2 s12_sel
+peek F:4ABD4 1 s12_variant
+peek F:4ABD0 4 s12_off
+peek F:4A95E 1 s12_mode
+peek F:4A992 2 s12_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1.619
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s13_clock
+peek F:4ABB0 2 s13_sel
+peek F:4ABD4 1 s13_variant
+peek F:4ABD0 4 s13_off
+peek F:4A95E 1 s13_mode
+peek F:4A992 2 s13_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1.732
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s14_clock
+peek F:4ABB0 2 s14_sel
+peek F:4ABD4 1 s14_variant
+peek F:4ABD0 4 s14_off
+peek F:4A95E 1 s14_mode
+peek F:4A992 2 s14_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1.885
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s15_clock
+peek F:4ABB0 2 s15_sel
+peek F:4ABD4 1 s15_variant
+peek F:4ABD0 4 s15_off
+peek F:4A95E 1 s15_mode
+peek F:4A992 2 s15_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1.958
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s16_clock
+peek F:4ABB0 2 s16_sel
+peek F:4ABD4 1 s16_variant
+peek F:4ABD0 4 s16_off
+peek F:4A95E 1 s16_mode
+peek F:4A992 2 s16_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 2.071
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s17_clock
+peek F:4ABB0 2 s17_sel
+peek F:4ABD4 1 s17_variant
+peek F:4ABD0 4 s17_off
+peek F:4A95E 1 s17_mode
+peek F:4A992 2 s17_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 2.224
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s18_clock
+peek F:4ABB0 2 s18_sel
+peek F:4ABD4 1 s18_variant
+peek F:4ABD0 4 s18_off
+peek F:4A95E 1 s18_mode
+peek F:4A992 2 s18_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 2.297
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s19_clock
+peek F:4ABB0 2 s19_sel
+peek F:4ABD4 1 s19_variant
+peek F:4ABD0 4 s19_off
+peek F:4A95E 1 s19_mode
+peek F:4A992 2 s19_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 2.410
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s20_clock
+peek F:4ABB0 2 s20_sel
+peek F:4ABD4 1 s20_variant
+peek F:4ABD0 4 s20_off
+peek F:4A95E 1 s20_mode
+peek F:4A992 2 s20_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 2.563
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s21_clock
+peek F:4ABB0 2 s21_sel
+peek F:4ABD4 1 s21_variant
+peek F:4ABD0 4 s21_off
+peek F:4A95E 1 s21_mode
+peek F:4A992 2 s21_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 2.636
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s22_clock
+peek F:4ABB0 2 s22_sel
+peek F:4ABD4 1 s22_variant
+peek F:4ABD0 4 s22_off
+peek F:4A95E 1 s22_mode
+peek F:4A992 2 s22_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 2.749
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s23_clock
+peek F:4ABB0 2 s23_sel
+peek F:4ABD4 1 s23_variant
+peek F:4ABD0 4 s23_off
+peek F:4A95E 1 s23_mode
+peek F:4A992 2 s23_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 2.902
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s24_clock
+peek F:4ABB0 2 s24_sel
+peek F:4ABD4 1 s24_variant
+peek F:4ABD0 4 s24_off
+peek F:4A95E 1 s24_mode
+peek F:4A992 2 s24_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 2.975
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s25_clock
+peek F:4ABB0 2 s25_sel
+peek F:4ABD4 1 s25_variant
+peek F:4ABD0 4 s25_off
+peek F:4A95E 1 s25_mode
+peek F:4A992 2 s25_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 3.088
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s26_clock
+peek F:4ABB0 2 s26_sel
+peek F:4ABD4 1 s26_variant
+peek F:4ABD0 4 s26_off
+peek F:4A95E 1 s26_mode
+peek F:4A992 2 s26_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 3.241
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s27_clock
+peek F:4ABB0 2 s27_sel
+peek F:4ABD4 1 s27_variant
+peek F:4ABD0 4 s27_off
+peek F:4A95E 1 s27_mode
+peek F:4A992 2 s27_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 3.314
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s28_clock
+peek F:4ABB0 2 s28_sel
+peek F:4ABD4 1 s28_variant
+peek F:4ABD0 4 s28_off
+peek F:4A95E 1 s28_mode
+peek F:4A992 2 s28_pass
+thaw
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 3.427
+key 1 0.12
+wait 5
+freeze
+peek F:4ABAE 4 s29_clock
+peek F:4ABB0 2 s29_sel
+peek F:4ABD4 1 s29_variant
+peek F:4ABD0 4 s29_off
+peek F:4A95E 1 s29_mode
+peek F:4A992 2 s29_pass

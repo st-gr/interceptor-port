@@ -1,0 +1,38 @@
+# note 08 section 10: the weapon counters of the log record (+0x3A cannon rounds, +0x3E AIM-120 fired, +0x42 AIM-9L fired) in free flight: the fire key (SPACE)
+# with each weapon selected by RETURN. Prerequisite: extracted/captures/airborne.vasnap. Run with --log extracted/captures/logs/flow-log-weapons.txt
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek R:C54498 78 rec0
+peek F:4B29F 1 sel0
+thaw
+key SPACE 1.0
+wait 1
+freeze
+peek R:C54498 78 rec_gun
+peek F:4B29F 1 sel_gun
+thaw
+key RETURN 0.3
+wait 1
+key SPACE 0.3
+wait 3
+freeze
+peek R:C54498 78 rec_w1
+peek F:4B29F 1 sel_w1
+thaw
+key RETURN 0.3
+wait 1
+key SPACE 0.3
+wait 3
+freeze
+peek R:C54498 78 rec_w2
+peek F:4B29F 1 sel_w2
+thaw
+key RETURN 0.3
+wait 1
+key SPACE 0.3
+wait 3
+freeze
+peek R:C54498 78 rec_w3
+peek F:4B29F 1 sel_w3
+thaw

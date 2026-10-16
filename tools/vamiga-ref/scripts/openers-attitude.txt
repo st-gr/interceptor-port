@@ -1,0 +1,93 @@
+# Exact attitude references: hold the key until the attitude word (record 0 +0x66 pitch, +0x6A roll) reaches the target (28800 units per circle: 800 = 10 degrees), wait 0.8 s for the display to catch up, then freeze, log and frame.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+holduntil UP F:4B2A2 gt -1600
+wait 0.8
+freeze
+log p20up
+peek F:4B23C 512 rec0_p20up
+peek F:4A700 2336 s71_p20up
+peek F:4AC90 32 cammat_p20up
+peek F:4AB00 128 cam_p20up
+frame extracted/captures/openers/att-p20up.ppm
+thaw
+holduntil UP F:4B2A2 gt -800
+wait 0.8
+freeze
+log p10up
+peek F:4B23C 512 rec0_p10up
+peek F:4A700 2336 s71_p10up
+peek F:4AC90 32 cammat_p10up
+peek F:4AB00 128 cam_p10up
+frame extracted/captures/openers/att-p10up.ppm
+thaw
+holduntil UP F:4B2A2 gt -1
+wait 0.8
+freeze
+log p0
+peek F:4B23C 512 rec0_p0
+peek F:4A700 2336 s71_p0
+peek F:4AC90 32 cammat_p0
+peek F:4AB00 128 cam_p0
+frame extracted/captures/openers/att-p0.ppm
+thaw
+holduntil UP F:4B2A2 gt 800
+wait 0.8
+freeze
+log p10dn
+peek F:4B23C 512 rec0_p10dn
+peek F:4A700 2336 s71_p10dn
+peek F:4AC90 32 cammat_p10dn
+peek F:4AB00 128 cam_p10dn
+frame extracted/captures/openers/att-p10dn.ppm
+thaw
+holduntil RIGHT F:4B2A6 lt -800
+wait 0.8
+freeze
+log r10
+peek F:4B23C 512 rec0_r10
+peek F:4A700 2336 s71_r10
+peek F:4AC90 32 cammat_r10
+peek F:4AB00 128 cam_r10
+frame extracted/captures/openers/att-r10.ppm
+thaw
+holduntil RIGHT F:4B2A6 lt -1600
+wait 0.8
+freeze
+log r20
+peek F:4B23C 512 rec0_r20
+peek F:4A700 2336 s71_r20
+peek F:4AC90 32 cammat_r20
+peek F:4AB00 128 cam_r20
+frame extracted/captures/openers/att-r20.ppm
+thaw
+holduntil RIGHT F:4B2A6 lt -2400
+wait 0.8
+freeze
+log r30
+peek F:4B23C 512 rec0_r30
+peek F:4A700 2336 s71_r30
+peek F:4AC90 32 cammat_r30
+peek F:4AB00 128 cam_r30
+frame extracted/captures/openers/att-r30.ppm
+thaw
+holduntil RIGHT F:4B2A6 lt -3600
+wait 0.8
+freeze
+log r45
+peek F:4B23C 512 rec0_r45
+peek F:4A700 2336 s71_r45
+peek F:4AC90 32 cammat_r45
+peek F:4AB00 128 cam_r45
+frame extracted/captures/openers/att-r45.ppm
+thaw
+holduntil LEFT F:4B2A6 gt 2400
+wait 0.8
+freeze
+log l30
+peek F:4B23C 512 rec0_l30
+peek F:4A700 2336 s71_l30
+peek F:4AC90 32 cammat_l30
+peek F:4AB00 128 cam_l30
+frame extracted/captures/openers/att-l30.ppm
+thaw

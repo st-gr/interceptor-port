@@ -1,0 +1,606 @@
+# Displayed HUD update period: freeze a steady climb, step one vertical blank at a time, frame after every step (100 steps), with the counters.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 2
+freeze
+step
+peek F:4A992 2 d000_f
+peek F:4B254 4 d000_y
+peek F:4A9BA 2 d000_a
+peek F:4A9B0 2 d000_s
+frame extracted/captures/openers/dis-000.ppm
+step
+peek F:4A992 2 d001_f
+peek F:4B254 4 d001_y
+peek F:4A9BA 2 d001_a
+peek F:4A9B0 2 d001_s
+frame extracted/captures/openers/dis-001.ppm
+step
+peek F:4A992 2 d002_f
+peek F:4B254 4 d002_y
+peek F:4A9BA 2 d002_a
+peek F:4A9B0 2 d002_s
+frame extracted/captures/openers/dis-002.ppm
+step
+peek F:4A992 2 d003_f
+peek F:4B254 4 d003_y
+peek F:4A9BA 2 d003_a
+peek F:4A9B0 2 d003_s
+frame extracted/captures/openers/dis-003.ppm
+step
+peek F:4A992 2 d004_f
+peek F:4B254 4 d004_y
+peek F:4A9BA 2 d004_a
+peek F:4A9B0 2 d004_s
+frame extracted/captures/openers/dis-004.ppm
+step
+peek F:4A992 2 d005_f
+peek F:4B254 4 d005_y
+peek F:4A9BA 2 d005_a
+peek F:4A9B0 2 d005_s
+frame extracted/captures/openers/dis-005.ppm
+step
+peek F:4A992 2 d006_f
+peek F:4B254 4 d006_y
+peek F:4A9BA 2 d006_a
+peek F:4A9B0 2 d006_s
+frame extracted/captures/openers/dis-006.ppm
+step
+peek F:4A992 2 d007_f
+peek F:4B254 4 d007_y
+peek F:4A9BA 2 d007_a
+peek F:4A9B0 2 d007_s
+frame extracted/captures/openers/dis-007.ppm
+step
+peek F:4A992 2 d008_f
+peek F:4B254 4 d008_y
+peek F:4A9BA 2 d008_a
+peek F:4A9B0 2 d008_s
+frame extracted/captures/openers/dis-008.ppm
+step
+peek F:4A992 2 d009_f
+peek F:4B254 4 d009_y
+peek F:4A9BA 2 d009_a
+peek F:4A9B0 2 d009_s
+frame extracted/captures/openers/dis-009.ppm
+step
+peek F:4A992 2 d010_f
+peek F:4B254 4 d010_y
+peek F:4A9BA 2 d010_a
+peek F:4A9B0 2 d010_s
+frame extracted/captures/openers/dis-010.ppm
+step
+peek F:4A992 2 d011_f
+peek F:4B254 4 d011_y
+peek F:4A9BA 2 d011_a
+peek F:4A9B0 2 d011_s
+frame extracted/captures/openers/dis-011.ppm
+step
+peek F:4A992 2 d012_f
+peek F:4B254 4 d012_y
+peek F:4A9BA 2 d012_a
+peek F:4A9B0 2 d012_s
+frame extracted/captures/openers/dis-012.ppm
+step
+peek F:4A992 2 d013_f
+peek F:4B254 4 d013_y
+peek F:4A9BA 2 d013_a
+peek F:4A9B0 2 d013_s
+frame extracted/captures/openers/dis-013.ppm
+step
+peek F:4A992 2 d014_f
+peek F:4B254 4 d014_y
+peek F:4A9BA 2 d014_a
+peek F:4A9B0 2 d014_s
+frame extracted/captures/openers/dis-014.ppm
+step
+peek F:4A992 2 d015_f
+peek F:4B254 4 d015_y
+peek F:4A9BA 2 d015_a
+peek F:4A9B0 2 d015_s
+frame extracted/captures/openers/dis-015.ppm
+step
+peek F:4A992 2 d016_f
+peek F:4B254 4 d016_y
+peek F:4A9BA 2 d016_a
+peek F:4A9B0 2 d016_s
+frame extracted/captures/openers/dis-016.ppm
+step
+peek F:4A992 2 d017_f
+peek F:4B254 4 d017_y
+peek F:4A9BA 2 d017_a
+peek F:4A9B0 2 d017_s
+frame extracted/captures/openers/dis-017.ppm
+step
+peek F:4A992 2 d018_f
+peek F:4B254 4 d018_y
+peek F:4A9BA 2 d018_a
+peek F:4A9B0 2 d018_s
+frame extracted/captures/openers/dis-018.ppm
+step
+peek F:4A992 2 d019_f
+peek F:4B254 4 d019_y
+peek F:4A9BA 2 d019_a
+peek F:4A9B0 2 d019_s
+frame extracted/captures/openers/dis-019.ppm
+step
+peek F:4A992 2 d020_f
+peek F:4B254 4 d020_y
+peek F:4A9BA 2 d020_a
+peek F:4A9B0 2 d020_s
+frame extracted/captures/openers/dis-020.ppm
+step
+peek F:4A992 2 d021_f
+peek F:4B254 4 d021_y
+peek F:4A9BA 2 d021_a
+peek F:4A9B0 2 d021_s
+frame extracted/captures/openers/dis-021.ppm
+step
+peek F:4A992 2 d022_f
+peek F:4B254 4 d022_y
+peek F:4A9BA 2 d022_a
+peek F:4A9B0 2 d022_s
+frame extracted/captures/openers/dis-022.ppm
+step
+peek F:4A992 2 d023_f
+peek F:4B254 4 d023_y
+peek F:4A9BA 2 d023_a
+peek F:4A9B0 2 d023_s
+frame extracted/captures/openers/dis-023.ppm
+step
+peek F:4A992 2 d024_f
+peek F:4B254 4 d024_y
+peek F:4A9BA 2 d024_a
+peek F:4A9B0 2 d024_s
+frame extracted/captures/openers/dis-024.ppm
+step
+peek F:4A992 2 d025_f
+peek F:4B254 4 d025_y
+peek F:4A9BA 2 d025_a
+peek F:4A9B0 2 d025_s
+frame extracted/captures/openers/dis-025.ppm
+step
+peek F:4A992 2 d026_f
+peek F:4B254 4 d026_y
+peek F:4A9BA 2 d026_a
+peek F:4A9B0 2 d026_s
+frame extracted/captures/openers/dis-026.ppm
+step
+peek F:4A992 2 d027_f
+peek F:4B254 4 d027_y
+peek F:4A9BA 2 d027_a
+peek F:4A9B0 2 d027_s
+frame extracted/captures/openers/dis-027.ppm
+step
+peek F:4A992 2 d028_f
+peek F:4B254 4 d028_y
+peek F:4A9BA 2 d028_a
+peek F:4A9B0 2 d028_s
+frame extracted/captures/openers/dis-028.ppm
+step
+peek F:4A992 2 d029_f
+peek F:4B254 4 d029_y
+peek F:4A9BA 2 d029_a
+peek F:4A9B0 2 d029_s
+frame extracted/captures/openers/dis-029.ppm
+step
+peek F:4A992 2 d030_f
+peek F:4B254 4 d030_y
+peek F:4A9BA 2 d030_a
+peek F:4A9B0 2 d030_s
+frame extracted/captures/openers/dis-030.ppm
+step
+peek F:4A992 2 d031_f
+peek F:4B254 4 d031_y
+peek F:4A9BA 2 d031_a
+peek F:4A9B0 2 d031_s
+frame extracted/captures/openers/dis-031.ppm
+step
+peek F:4A992 2 d032_f
+peek F:4B254 4 d032_y
+peek F:4A9BA 2 d032_a
+peek F:4A9B0 2 d032_s
+frame extracted/captures/openers/dis-032.ppm
+step
+peek F:4A992 2 d033_f
+peek F:4B254 4 d033_y
+peek F:4A9BA 2 d033_a
+peek F:4A9B0 2 d033_s
+frame extracted/captures/openers/dis-033.ppm
+step
+peek F:4A992 2 d034_f
+peek F:4B254 4 d034_y
+peek F:4A9BA 2 d034_a
+peek F:4A9B0 2 d034_s
+frame extracted/captures/openers/dis-034.ppm
+step
+peek F:4A992 2 d035_f
+peek F:4B254 4 d035_y
+peek F:4A9BA 2 d035_a
+peek F:4A9B0 2 d035_s
+frame extracted/captures/openers/dis-035.ppm
+step
+peek F:4A992 2 d036_f
+peek F:4B254 4 d036_y
+peek F:4A9BA 2 d036_a
+peek F:4A9B0 2 d036_s
+frame extracted/captures/openers/dis-036.ppm
+step
+peek F:4A992 2 d037_f
+peek F:4B254 4 d037_y
+peek F:4A9BA 2 d037_a
+peek F:4A9B0 2 d037_s
+frame extracted/captures/openers/dis-037.ppm
+step
+peek F:4A992 2 d038_f
+peek F:4B254 4 d038_y
+peek F:4A9BA 2 d038_a
+peek F:4A9B0 2 d038_s
+frame extracted/captures/openers/dis-038.ppm
+step
+peek F:4A992 2 d039_f
+peek F:4B254 4 d039_y
+peek F:4A9BA 2 d039_a
+peek F:4A9B0 2 d039_s
+frame extracted/captures/openers/dis-039.ppm
+step
+peek F:4A992 2 d040_f
+peek F:4B254 4 d040_y
+peek F:4A9BA 2 d040_a
+peek F:4A9B0 2 d040_s
+frame extracted/captures/openers/dis-040.ppm
+step
+peek F:4A992 2 d041_f
+peek F:4B254 4 d041_y
+peek F:4A9BA 2 d041_a
+peek F:4A9B0 2 d041_s
+frame extracted/captures/openers/dis-041.ppm
+step
+peek F:4A992 2 d042_f
+peek F:4B254 4 d042_y
+peek F:4A9BA 2 d042_a
+peek F:4A9B0 2 d042_s
+frame extracted/captures/openers/dis-042.ppm
+step
+peek F:4A992 2 d043_f
+peek F:4B254 4 d043_y
+peek F:4A9BA 2 d043_a
+peek F:4A9B0 2 d043_s
+frame extracted/captures/openers/dis-043.ppm
+step
+peek F:4A992 2 d044_f
+peek F:4B254 4 d044_y
+peek F:4A9BA 2 d044_a
+peek F:4A9B0 2 d044_s
+frame extracted/captures/openers/dis-044.ppm
+step
+peek F:4A992 2 d045_f
+peek F:4B254 4 d045_y
+peek F:4A9BA 2 d045_a
+peek F:4A9B0 2 d045_s
+frame extracted/captures/openers/dis-045.ppm
+step
+peek F:4A992 2 d046_f
+peek F:4B254 4 d046_y
+peek F:4A9BA 2 d046_a
+peek F:4A9B0 2 d046_s
+frame extracted/captures/openers/dis-046.ppm
+step
+peek F:4A992 2 d047_f
+peek F:4B254 4 d047_y
+peek F:4A9BA 2 d047_a
+peek F:4A9B0 2 d047_s
+frame extracted/captures/openers/dis-047.ppm
+step
+peek F:4A992 2 d048_f
+peek F:4B254 4 d048_y
+peek F:4A9BA 2 d048_a
+peek F:4A9B0 2 d048_s
+frame extracted/captures/openers/dis-048.ppm
+step
+peek F:4A992 2 d049_f
+peek F:4B254 4 d049_y
+peek F:4A9BA 2 d049_a
+peek F:4A9B0 2 d049_s
+frame extracted/captures/openers/dis-049.ppm
+step
+peek F:4A992 2 d050_f
+peek F:4B254 4 d050_y
+peek F:4A9BA 2 d050_a
+peek F:4A9B0 2 d050_s
+frame extracted/captures/openers/dis-050.ppm
+step
+peek F:4A992 2 d051_f
+peek F:4B254 4 d051_y
+peek F:4A9BA 2 d051_a
+peek F:4A9B0 2 d051_s
+frame extracted/captures/openers/dis-051.ppm
+step
+peek F:4A992 2 d052_f
+peek F:4B254 4 d052_y
+peek F:4A9BA 2 d052_a
+peek F:4A9B0 2 d052_s
+frame extracted/captures/openers/dis-052.ppm
+step
+peek F:4A992 2 d053_f
+peek F:4B254 4 d053_y
+peek F:4A9BA 2 d053_a
+peek F:4A9B0 2 d053_s
+frame extracted/captures/openers/dis-053.ppm
+step
+peek F:4A992 2 d054_f
+peek F:4B254 4 d054_y
+peek F:4A9BA 2 d054_a
+peek F:4A9B0 2 d054_s
+frame extracted/captures/openers/dis-054.ppm
+step
+peek F:4A992 2 d055_f
+peek F:4B254 4 d055_y
+peek F:4A9BA 2 d055_a
+peek F:4A9B0 2 d055_s
+frame extracted/captures/openers/dis-055.ppm
+step
+peek F:4A992 2 d056_f
+peek F:4B254 4 d056_y
+peek F:4A9BA 2 d056_a
+peek F:4A9B0 2 d056_s
+frame extracted/captures/openers/dis-056.ppm
+step
+peek F:4A992 2 d057_f
+peek F:4B254 4 d057_y
+peek F:4A9BA 2 d057_a
+peek F:4A9B0 2 d057_s
+frame extracted/captures/openers/dis-057.ppm
+step
+peek F:4A992 2 d058_f
+peek F:4B254 4 d058_y
+peek F:4A9BA 2 d058_a
+peek F:4A9B0 2 d058_s
+frame extracted/captures/openers/dis-058.ppm
+step
+peek F:4A992 2 d059_f
+peek F:4B254 4 d059_y
+peek F:4A9BA 2 d059_a
+peek F:4A9B0 2 d059_s
+frame extracted/captures/openers/dis-059.ppm
+step
+peek F:4A992 2 d060_f
+peek F:4B254 4 d060_y
+peek F:4A9BA 2 d060_a
+peek F:4A9B0 2 d060_s
+frame extracted/captures/openers/dis-060.ppm
+step
+peek F:4A992 2 d061_f
+peek F:4B254 4 d061_y
+peek F:4A9BA 2 d061_a
+peek F:4A9B0 2 d061_s
+frame extracted/captures/openers/dis-061.ppm
+step
+peek F:4A992 2 d062_f
+peek F:4B254 4 d062_y
+peek F:4A9BA 2 d062_a
+peek F:4A9B0 2 d062_s
+frame extracted/captures/openers/dis-062.ppm
+step
+peek F:4A992 2 d063_f
+peek F:4B254 4 d063_y
+peek F:4A9BA 2 d063_a
+peek F:4A9B0 2 d063_s
+frame extracted/captures/openers/dis-063.ppm
+step
+peek F:4A992 2 d064_f
+peek F:4B254 4 d064_y
+peek F:4A9BA 2 d064_a
+peek F:4A9B0 2 d064_s
+frame extracted/captures/openers/dis-064.ppm
+step
+peek F:4A992 2 d065_f
+peek F:4B254 4 d065_y
+peek F:4A9BA 2 d065_a
+peek F:4A9B0 2 d065_s
+frame extracted/captures/openers/dis-065.ppm
+step
+peek F:4A992 2 d066_f
+peek F:4B254 4 d066_y
+peek F:4A9BA 2 d066_a
+peek F:4A9B0 2 d066_s
+frame extracted/captures/openers/dis-066.ppm
+step
+peek F:4A992 2 d067_f
+peek F:4B254 4 d067_y
+peek F:4A9BA 2 d067_a
+peek F:4A9B0 2 d067_s
+frame extracted/captures/openers/dis-067.ppm
+step
+peek F:4A992 2 d068_f
+peek F:4B254 4 d068_y
+peek F:4A9BA 2 d068_a
+peek F:4A9B0 2 d068_s
+frame extracted/captures/openers/dis-068.ppm
+step
+peek F:4A992 2 d069_f
+peek F:4B254 4 d069_y
+peek F:4A9BA 2 d069_a
+peek F:4A9B0 2 d069_s
+frame extracted/captures/openers/dis-069.ppm
+step
+peek F:4A992 2 d070_f
+peek F:4B254 4 d070_y
+peek F:4A9BA 2 d070_a
+peek F:4A9B0 2 d070_s
+frame extracted/captures/openers/dis-070.ppm
+step
+peek F:4A992 2 d071_f
+peek F:4B254 4 d071_y
+peek F:4A9BA 2 d071_a
+peek F:4A9B0 2 d071_s
+frame extracted/captures/openers/dis-071.ppm
+step
+peek F:4A992 2 d072_f
+peek F:4B254 4 d072_y
+peek F:4A9BA 2 d072_a
+peek F:4A9B0 2 d072_s
+frame extracted/captures/openers/dis-072.ppm
+step
+peek F:4A992 2 d073_f
+peek F:4B254 4 d073_y
+peek F:4A9BA 2 d073_a
+peek F:4A9B0 2 d073_s
+frame extracted/captures/openers/dis-073.ppm
+step
+peek F:4A992 2 d074_f
+peek F:4B254 4 d074_y
+peek F:4A9BA 2 d074_a
+peek F:4A9B0 2 d074_s
+frame extracted/captures/openers/dis-074.ppm
+step
+peek F:4A992 2 d075_f
+peek F:4B254 4 d075_y
+peek F:4A9BA 2 d075_a
+peek F:4A9B0 2 d075_s
+frame extracted/captures/openers/dis-075.ppm
+step
+peek F:4A992 2 d076_f
+peek F:4B254 4 d076_y
+peek F:4A9BA 2 d076_a
+peek F:4A9B0 2 d076_s
+frame extracted/captures/openers/dis-076.ppm
+step
+peek F:4A992 2 d077_f
+peek F:4B254 4 d077_y
+peek F:4A9BA 2 d077_a
+peek F:4A9B0 2 d077_s
+frame extracted/captures/openers/dis-077.ppm
+step
+peek F:4A992 2 d078_f
+peek F:4B254 4 d078_y
+peek F:4A9BA 2 d078_a
+peek F:4A9B0 2 d078_s
+frame extracted/captures/openers/dis-078.ppm
+step
+peek F:4A992 2 d079_f
+peek F:4B254 4 d079_y
+peek F:4A9BA 2 d079_a
+peek F:4A9B0 2 d079_s
+frame extracted/captures/openers/dis-079.ppm
+step
+peek F:4A992 2 d080_f
+peek F:4B254 4 d080_y
+peek F:4A9BA 2 d080_a
+peek F:4A9B0 2 d080_s
+frame extracted/captures/openers/dis-080.ppm
+step
+peek F:4A992 2 d081_f
+peek F:4B254 4 d081_y
+peek F:4A9BA 2 d081_a
+peek F:4A9B0 2 d081_s
+frame extracted/captures/openers/dis-081.ppm
+step
+peek F:4A992 2 d082_f
+peek F:4B254 4 d082_y
+peek F:4A9BA 2 d082_a
+peek F:4A9B0 2 d082_s
+frame extracted/captures/openers/dis-082.ppm
+step
+peek F:4A992 2 d083_f
+peek F:4B254 4 d083_y
+peek F:4A9BA 2 d083_a
+peek F:4A9B0 2 d083_s
+frame extracted/captures/openers/dis-083.ppm
+step
+peek F:4A992 2 d084_f
+peek F:4B254 4 d084_y
+peek F:4A9BA 2 d084_a
+peek F:4A9B0 2 d084_s
+frame extracted/captures/openers/dis-084.ppm
+step
+peek F:4A992 2 d085_f
+peek F:4B254 4 d085_y
+peek F:4A9BA 2 d085_a
+peek F:4A9B0 2 d085_s
+frame extracted/captures/openers/dis-085.ppm
+step
+peek F:4A992 2 d086_f
+peek F:4B254 4 d086_y
+peek F:4A9BA 2 d086_a
+peek F:4A9B0 2 d086_s
+frame extracted/captures/openers/dis-086.ppm
+step
+peek F:4A992 2 d087_f
+peek F:4B254 4 d087_y
+peek F:4A9BA 2 d087_a
+peek F:4A9B0 2 d087_s
+frame extracted/captures/openers/dis-087.ppm
+step
+peek F:4A992 2 d088_f
+peek F:4B254 4 d088_y
+peek F:4A9BA 2 d088_a
+peek F:4A9B0 2 d088_s
+frame extracted/captures/openers/dis-088.ppm
+step
+peek F:4A992 2 d089_f
+peek F:4B254 4 d089_y
+peek F:4A9BA 2 d089_a
+peek F:4A9B0 2 d089_s
+frame extracted/captures/openers/dis-089.ppm
+step
+peek F:4A992 2 d090_f
+peek F:4B254 4 d090_y
+peek F:4A9BA 2 d090_a
+peek F:4A9B0 2 d090_s
+frame extracted/captures/openers/dis-090.ppm
+step
+peek F:4A992 2 d091_f
+peek F:4B254 4 d091_y
+peek F:4A9BA 2 d091_a
+peek F:4A9B0 2 d091_s
+frame extracted/captures/openers/dis-091.ppm
+step
+peek F:4A992 2 d092_f
+peek F:4B254 4 d092_y
+peek F:4A9BA 2 d092_a
+peek F:4A9B0 2 d092_s
+frame extracted/captures/openers/dis-092.ppm
+step
+peek F:4A992 2 d093_f
+peek F:4B254 4 d093_y
+peek F:4A9BA 2 d093_a
+peek F:4A9B0 2 d093_s
+frame extracted/captures/openers/dis-093.ppm
+step
+peek F:4A992 2 d094_f
+peek F:4B254 4 d094_y
+peek F:4A9BA 2 d094_a
+peek F:4A9B0 2 d094_s
+frame extracted/captures/openers/dis-094.ppm
+step
+peek F:4A992 2 d095_f
+peek F:4B254 4 d095_y
+peek F:4A9BA 2 d095_a
+peek F:4A9B0 2 d095_s
+frame extracted/captures/openers/dis-095.ppm
+step
+peek F:4A992 2 d096_f
+peek F:4B254 4 d096_y
+peek F:4A9BA 2 d096_a
+peek F:4A9B0 2 d096_s
+frame extracted/captures/openers/dis-096.ppm
+step
+peek F:4A992 2 d097_f
+peek F:4B254 4 d097_y
+peek F:4A9BA 2 d097_a
+peek F:4A9B0 2 d097_s
+frame extracted/captures/openers/dis-097.ppm
+step
+peek F:4A992 2 d098_f
+peek F:4B254 4 d098_y
+peek F:4A9BA 2 d098_a
+peek F:4A9B0 2 d098_s
+frame extracted/captures/openers/dis-098.ppm
+step
+peek F:4A992 2 d099_f
+peek F:4B254 4 d099_y
+peek F:4A9BA 2 d099_a
+peek F:4A9B0 2 d099_s
+frame extracted/captures/openers/dis-099.ppm
+thaw

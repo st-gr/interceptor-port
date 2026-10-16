@@ -1,0 +1,10 @@
+# Note 08 section 11: the picture checksum screen. Boot a copy of the autoboot disk whose pix/frnt5 has one bit changed in a literal
+# run of its BODY (made with xdftool, see the note); frames every 20 s after the boot's first 60 s. Run with --adf /sandbox/tmp-t2/cs.adf.
+wait 60
+frame extracted/captures/egg-checksum-60.ppm
+wait 40
+frame extracted/captures/egg-checksum-100.ppm
+wait 50
+frame extracted/captures/egg-checksum-150.ppm
+wait 20
+frame extracted/captures/egg-checksum-170.ppm

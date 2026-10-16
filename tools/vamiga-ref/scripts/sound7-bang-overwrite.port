@@ -1,0 +1,7 @@
+# the port's side of sound7-bang-overwrite: a control bang (V:4A922 = 0x20, V:4A921 = 0x50, countdown 2), then the same with the countdown 4 and, one pass later, a later writer's (0x30, 0x60, 4).
+# Run: build/sound7_port assets FILE
+start deck
+ticks 300
+at 5 bang 32 80 2
+at 100 bang 32 80 4
+at 101 bang 48 96 4

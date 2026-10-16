@@ -1,0 +1,20 @@
+[project]
+name = "interceptor-extract"
+version = "0.1.0"
+description = "Extracts F/A-18 Interceptor assets from the user's own ADF into assets/"
+requires-python = ">=3.10"
+dependencies = ["amitools>=0.8"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["extract*"]
+
+[tool.setuptools.package-data]
+extract = ["segments.txt"]

@@ -1,0 +1,191 @@
+# View-kind state words (V:4A83D selector, 4A85F cockpit code, 4A96A external direction, 4A966, 4A865) per view key.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+log cockpit
+peek F:4B23C 512 rec0_cockpit
+peek F:4CE3C 512 rec14_cockpit
+peek F:4A700 2336 s71_cockpit
+colors pal_cockpit
+frame extracted/captures/openers/view-cockpit.ppm
+thaw
+key KP4
+wait 1.5
+freeze
+log c-KP4
+peek F:4B23C 512 rec0_c-KP4
+peek F:4CE3C 512 rec14_c-KP4
+peek F:4A700 2336 s71_c-KP4
+colors pal_c-KP4
+frame extracted/captures/openers/view-c-KP4.ppm
+thaw
+key KP6
+wait 1.5
+freeze
+log c-KP6
+peek F:4B23C 512 rec0_c-KP6
+peek F:4CE3C 512 rec14_c-KP6
+peek F:4A700 2336 s71_c-KP6
+colors pal_c-KP6
+frame extracted/captures/openers/view-c-KP6.ppm
+thaw
+key KP2
+wait 1.5
+freeze
+log c-KP2
+peek F:4B23C 512 rec0_c-KP2
+peek F:4CE3C 512 rec14_c-KP2
+peek F:4A700 2336 s71_c-KP2
+colors pal_c-KP2
+frame extracted/captures/openers/view-c-KP2.ppm
+thaw
+key KP1
+wait 1.5
+freeze
+log c-KP1
+peek F:4B23C 512 rec0_c-KP1
+peek F:4CE3C 512 rec14_c-KP1
+peek F:4A700 2336 s71_c-KP1
+colors pal_c-KP1
+frame extracted/captures/openers/view-c-KP1.ppm
+thaw
+key KP7
+wait 1.5
+freeze
+log c-KP7
+peek F:4B23C 512 rec0_c-KP7
+peek F:4CE3C 512 rec14_c-KP7
+peek F:4A700 2336 s71_c-KP7
+colors pal_c-KP7
+frame extracted/captures/openers/view-c-KP7.ppm
+thaw
+key KP8
+wait 1.5
+freeze
+log c-KP8
+peek F:4B23C 512 rec0_c-KP8
+peek F:4CE3C 512 rec14_c-KP8
+peek F:4A700 2336 s71_c-KP8
+colors pal_c-KP8
+frame extracted/captures/openers/view-c-KP8.ppm
+thaw
+key KPENTER
+wait 2.5
+freeze
+log ext
+peek F:4B23C 512 rec0_ext
+peek F:4CE3C 512 rec14_ext
+peek F:4A700 2336 s71_ext
+colors pal_ext
+frame extracted/captures/openers/view-ext.ppm
+thaw
+key KP5
+wait 2
+freeze
+log e-KP5
+peek F:4B23C 512 rec0_e-KP5
+peek F:4CE3C 512 rec14_e-KP5
+peek F:4A700 2336 s71_e-KP5
+colors pal_e-KP5
+frame extracted/captures/openers/view-e-KP5.ppm
+thaw
+key KP8
+wait 2
+freeze
+log e-KP8
+peek F:4B23C 512 rec0_e-KP8
+peek F:4CE3C 512 rec14_e-KP8
+peek F:4A700 2336 s71_e-KP8
+colors pal_e-KP8
+frame extracted/captures/openers/view-e-KP8.ppm
+thaw
+key KPDOT
+wait 2
+freeze
+log e-KPDOT
+peek F:4B23C 512 rec0_e-KPDOT
+peek F:4CE3C 512 rec14_e-KPDOT
+peek F:4A700 2336 s71_e-KPDOT
+colors pal_e-KPDOT
+frame extracted/captures/openers/view-e-KPDOT.ppm
+thaw
+key KP4
+wait 2
+freeze
+log e-KP4
+peek F:4B23C 512 rec0_e-KP4
+peek F:4CE3C 512 rec14_e-KP4
+peek F:4A700 2336 s71_e-KP4
+colors pal_e-KP4
+frame extracted/captures/openers/view-e-KP4.ppm
+thaw
+key KP6
+wait 2
+freeze
+log e-KP6
+peek F:4B23C 512 rec0_e-KP6
+peek F:4CE3C 512 rec14_e-KP6
+peek F:4A700 2336 s71_e-KP6
+colors pal_e-KP6
+frame extracted/captures/openers/view-e-KP6.ppm
+thaw
+key KP1
+wait 2
+freeze
+log e-KP1
+peek F:4B23C 512 rec0_e-KP1
+peek F:4CE3C 512 rec14_e-KP1
+peek F:4A700 2336 s71_e-KP1
+colors pal_e-KP1
+frame extracted/captures/openers/view-e-KP1.ppm
+thaw
+key KP3
+wait 2
+freeze
+log e-KP3
+peek F:4B23C 512 rec0_e-KP3
+peek F:4CE3C 512 rec14_e-KP3
+peek F:4A700 2336 s71_e-KP3
+colors pal_e-KP3
+frame extracted/captures/openers/view-e-KP3.ppm
+thaw
+key KP7
+wait 2
+freeze
+log e-KP7
+peek F:4B23C 512 rec0_e-KP7
+peek F:4CE3C 512 rec14_e-KP7
+peek F:4A700 2336 s71_e-KP7
+colors pal_e-KP7
+frame extracted/captures/openers/view-e-KP7.ppm
+thaw
+key KP9
+wait 2
+freeze
+log e-KP9
+peek F:4B23C 512 rec0_e-KP9
+peek F:4CE3C 512 rec14_e-KP9
+peek F:4A700 2336 s71_e-KP9
+colors pal_e-KP9
+frame extracted/captures/openers/view-e-KP9.ppm
+thaw
+key KP2
+wait 2
+freeze
+log e-KP2
+peek F:4B23C 512 rec0_e-KP2
+peek F:4CE3C 512 rec14_e-KP2
+peek F:4A700 2336 s71_e-KP2
+colors pal_e-KP2
+frame extracted/captures/openers/view-e-KP2.ppm
+thaw
+key KPENTER
+wait 2
+freeze
+log back
+peek F:4B23C 512 rec0_back
+peek F:4CE3C 512 rec14_back
+peek F:4A700 2336 s71_back
+colors pal_back
+frame extracted/captures/openers/view-back.ppm
+thaw

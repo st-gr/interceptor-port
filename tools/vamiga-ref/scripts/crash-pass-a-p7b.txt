@@ -1,0 +1,369 @@
+# generated: note 05 17.17 fix round, crash pass A, +0x7B forced negative before the restart; needs crash-setup-dive.txt run first
+restore extracted/captures/dive-precrash.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+stepuntil F:4B23C 2 and 0x0200 400
+log FLAG
+stepuntil F:4A951 1 eq 1 200
+log LAST_ITERATION
+poke F:4B2B7 1 0xFF
+peek F:4A82C 2 i0_blank
+peek F:1A6BC 4 i0_st
+peek F:4A992 2 i0_n
+peek F:4A951 1 i0_c951
+peek F:4A910 1 i0_req
+peek F:4A984 2 i0_v984
+peek F:4B23C 32 i0_rec
+peek F:4B2B7 1 i0_p7b
+peek F:4AB8E 2 i0_cd
+step
+peek F:4A82C 2 i1_blank
+peek F:1A6BC 4 i1_st
+peek F:4A992 2 i1_n
+peek F:4A951 1 i1_c951
+peek F:4A910 1 i1_req
+peek F:4A984 2 i1_v984
+peek F:4B23C 32 i1_rec
+peek F:4B2B7 1 i1_p7b
+peek F:4AB8E 2 i1_cd
+step
+peek F:4A82C 2 i2_blank
+peek F:1A6BC 4 i2_st
+peek F:4A992 2 i2_n
+peek F:4A951 1 i2_c951
+peek F:4A910 1 i2_req
+peek F:4A984 2 i2_v984
+peek F:4B23C 32 i2_rec
+peek F:4B2B7 1 i2_p7b
+peek F:4AB8E 2 i2_cd
+step
+peek F:4A82C 2 i3_blank
+peek F:1A6BC 4 i3_st
+peek F:4A992 2 i3_n
+peek F:4A951 1 i3_c951
+peek F:4A910 1 i3_req
+peek F:4A984 2 i3_v984
+peek F:4B23C 32 i3_rec
+peek F:4B2B7 1 i3_p7b
+peek F:4AB8E 2 i3_cd
+step
+peek F:4A82C 2 i4_blank
+peek F:1A6BC 4 i4_st
+peek F:4A992 2 i4_n
+peek F:4A951 1 i4_c951
+peek F:4A910 1 i4_req
+peek F:4A984 2 i4_v984
+peek F:4B23C 32 i4_rec
+peek F:4B2B7 1 i4_p7b
+peek F:4AB8E 2 i4_cd
+step
+peek F:4A82C 2 i5_blank
+peek F:1A6BC 4 i5_st
+peek F:4A992 2 i5_n
+peek F:4A951 1 i5_c951
+peek F:4A910 1 i5_req
+peek F:4A984 2 i5_v984
+peek F:4B23C 32 i5_rec
+peek F:4B2B7 1 i5_p7b
+peek F:4AB8E 2 i5_cd
+step
+peek F:4A82C 2 i6_blank
+peek F:1A6BC 4 i6_st
+peek F:4A992 2 i6_n
+peek F:4A951 1 i6_c951
+peek F:4A910 1 i6_req
+peek F:4A984 2 i6_v984
+peek F:4B23C 32 i6_rec
+peek F:4B2B7 1 i6_p7b
+peek F:4AB8E 2 i6_cd
+step
+peek F:4A82C 2 i7_blank
+peek F:1A6BC 4 i7_st
+peek F:4A992 2 i7_n
+peek F:4A951 1 i7_c951
+peek F:4A910 1 i7_req
+peek F:4A984 2 i7_v984
+peek F:4B23C 32 i7_rec
+peek F:4B2B7 1 i7_p7b
+peek F:4AB8E 2 i7_cd
+step
+peek F:4A82C 2 i8_blank
+peek F:1A6BC 4 i8_st
+peek F:4A992 2 i8_n
+peek F:4A951 1 i8_c951
+peek F:4A910 1 i8_req
+peek F:4A984 2 i8_v984
+peek F:4B23C 32 i8_rec
+peek F:4B2B7 1 i8_p7b
+peek F:4AB8E 2 i8_cd
+step
+peek F:4A82C 2 i9_blank
+peek F:1A6BC 4 i9_st
+peek F:4A992 2 i9_n
+peek F:4A951 1 i9_c951
+peek F:4A910 1 i9_req
+peek F:4A984 2 i9_v984
+peek F:4B23C 32 i9_rec
+peek F:4B2B7 1 i9_p7b
+peek F:4AB8E 2 i9_cd
+step
+peek F:4A82C 2 i10_blank
+peek F:1A6BC 4 i10_st
+peek F:4A992 2 i10_n
+peek F:4A951 1 i10_c951
+peek F:4A910 1 i10_req
+peek F:4A984 2 i10_v984
+peek F:4B23C 32 i10_rec
+peek F:4B2B7 1 i10_p7b
+peek F:4AB8E 2 i10_cd
+step
+peek F:4A82C 2 i11_blank
+peek F:1A6BC 4 i11_st
+peek F:4A992 2 i11_n
+peek F:4A951 1 i11_c951
+peek F:4A910 1 i11_req
+peek F:4A984 2 i11_v984
+peek F:4B23C 32 i11_rec
+peek F:4B2B7 1 i11_p7b
+peek F:4AB8E 2 i11_cd
+step
+peek F:4A82C 2 i12_blank
+peek F:1A6BC 4 i12_st
+peek F:4A992 2 i12_n
+peek F:4A951 1 i12_c951
+peek F:4A910 1 i12_req
+peek F:4A984 2 i12_v984
+peek F:4B23C 32 i12_rec
+peek F:4B2B7 1 i12_p7b
+peek F:4AB8E 2 i12_cd
+step
+peek F:4A82C 2 i13_blank
+peek F:1A6BC 4 i13_st
+peek F:4A992 2 i13_n
+peek F:4A951 1 i13_c951
+peek F:4A910 1 i13_req
+peek F:4A984 2 i13_v984
+peek F:4B23C 32 i13_rec
+peek F:4B2B7 1 i13_p7b
+peek F:4AB8E 2 i13_cd
+step
+peek F:4A82C 2 i14_blank
+peek F:1A6BC 4 i14_st
+peek F:4A992 2 i14_n
+peek F:4A951 1 i14_c951
+peek F:4A910 1 i14_req
+peek F:4A984 2 i14_v984
+peek F:4B23C 32 i14_rec
+peek F:4B2B7 1 i14_p7b
+peek F:4AB8E 2 i14_cd
+step
+peek F:4A82C 2 i15_blank
+peek F:1A6BC 4 i15_st
+peek F:4A992 2 i15_n
+peek F:4A951 1 i15_c951
+peek F:4A910 1 i15_req
+peek F:4A984 2 i15_v984
+peek F:4B23C 32 i15_rec
+peek F:4B2B7 1 i15_p7b
+peek F:4AB8E 2 i15_cd
+step
+peek F:4A82C 2 i16_blank
+peek F:1A6BC 4 i16_st
+peek F:4A992 2 i16_n
+peek F:4A951 1 i16_c951
+peek F:4A910 1 i16_req
+peek F:4A984 2 i16_v984
+peek F:4B23C 32 i16_rec
+peek F:4B2B7 1 i16_p7b
+peek F:4AB8E 2 i16_cd
+step
+peek F:4A82C 2 i17_blank
+peek F:1A6BC 4 i17_st
+peek F:4A992 2 i17_n
+peek F:4A951 1 i17_c951
+peek F:4A910 1 i17_req
+peek F:4A984 2 i17_v984
+peek F:4B23C 32 i17_rec
+peek F:4B2B7 1 i17_p7b
+peek F:4AB8E 2 i17_cd
+step
+peek F:4A82C 2 i18_blank
+peek F:1A6BC 4 i18_st
+peek F:4A992 2 i18_n
+peek F:4A951 1 i18_c951
+peek F:4A910 1 i18_req
+peek F:4A984 2 i18_v984
+peek F:4B23C 32 i18_rec
+peek F:4B2B7 1 i18_p7b
+peek F:4AB8E 2 i18_cd
+step
+peek F:4A82C 2 i19_blank
+peek F:1A6BC 4 i19_st
+peek F:4A992 2 i19_n
+peek F:4A951 1 i19_c951
+peek F:4A910 1 i19_req
+peek F:4A984 2 i19_v984
+peek F:4B23C 32 i19_rec
+peek F:4B2B7 1 i19_p7b
+peek F:4AB8E 2 i19_cd
+step
+peek F:4A82C 2 i20_blank
+peek F:1A6BC 4 i20_st
+peek F:4A992 2 i20_n
+peek F:4A951 1 i20_c951
+peek F:4A910 1 i20_req
+peek F:4A984 2 i20_v984
+peek F:4B23C 32 i20_rec
+peek F:4B2B7 1 i20_p7b
+peek F:4AB8E 2 i20_cd
+step
+peek F:4A82C 2 i21_blank
+peek F:1A6BC 4 i21_st
+peek F:4A992 2 i21_n
+peek F:4A951 1 i21_c951
+peek F:4A910 1 i21_req
+peek F:4A984 2 i21_v984
+peek F:4B23C 32 i21_rec
+peek F:4B2B7 1 i21_p7b
+peek F:4AB8E 2 i21_cd
+step
+peek F:4A82C 2 i22_blank
+peek F:1A6BC 4 i22_st
+peek F:4A992 2 i22_n
+peek F:4A951 1 i22_c951
+peek F:4A910 1 i22_req
+peek F:4A984 2 i22_v984
+peek F:4B23C 32 i22_rec
+peek F:4B2B7 1 i22_p7b
+peek F:4AB8E 2 i22_cd
+step
+peek F:4A82C 2 i23_blank
+peek F:1A6BC 4 i23_st
+peek F:4A992 2 i23_n
+peek F:4A951 1 i23_c951
+peek F:4A910 1 i23_req
+peek F:4A984 2 i23_v984
+peek F:4B23C 32 i23_rec
+peek F:4B2B7 1 i23_p7b
+peek F:4AB8E 2 i23_cd
+step
+peek F:4A82C 2 i24_blank
+peek F:1A6BC 4 i24_st
+peek F:4A992 2 i24_n
+peek F:4A951 1 i24_c951
+peek F:4A910 1 i24_req
+peek F:4A984 2 i24_v984
+peek F:4B23C 32 i24_rec
+peek F:4B2B7 1 i24_p7b
+peek F:4AB8E 2 i24_cd
+step
+peek F:4A82C 2 i25_blank
+peek F:1A6BC 4 i25_st
+peek F:4A992 2 i25_n
+peek F:4A951 1 i25_c951
+peek F:4A910 1 i25_req
+peek F:4A984 2 i25_v984
+peek F:4B23C 32 i25_rec
+peek F:4B2B7 1 i25_p7b
+peek F:4AB8E 2 i25_cd
+step
+peek F:4A82C 2 i26_blank
+peek F:1A6BC 4 i26_st
+peek F:4A992 2 i26_n
+peek F:4A951 1 i26_c951
+peek F:4A910 1 i26_req
+peek F:4A984 2 i26_v984
+peek F:4B23C 32 i26_rec
+peek F:4B2B7 1 i26_p7b
+peek F:4AB8E 2 i26_cd
+step
+peek F:4A82C 2 i27_blank
+peek F:1A6BC 4 i27_st
+peek F:4A992 2 i27_n
+peek F:4A951 1 i27_c951
+peek F:4A910 1 i27_req
+peek F:4A984 2 i27_v984
+peek F:4B23C 32 i27_rec
+peek F:4B2B7 1 i27_p7b
+peek F:4AB8E 2 i27_cd
+step
+peek F:4A82C 2 i28_blank
+peek F:1A6BC 4 i28_st
+peek F:4A992 2 i28_n
+peek F:4A951 1 i28_c951
+peek F:4A910 1 i28_req
+peek F:4A984 2 i28_v984
+peek F:4B23C 32 i28_rec
+peek F:4B2B7 1 i28_p7b
+peek F:4AB8E 2 i28_cd
+step
+peek F:4A82C 2 i29_blank
+peek F:1A6BC 4 i29_st
+peek F:4A992 2 i29_n
+peek F:4A951 1 i29_c951
+peek F:4A910 1 i29_req
+peek F:4A984 2 i29_v984
+peek F:4B23C 32 i29_rec
+peek F:4B2B7 1 i29_p7b
+peek F:4AB8E 2 i29_cd
+step
+peek F:4A82C 2 i30_blank
+peek F:1A6BC 4 i30_st
+peek F:4A992 2 i30_n
+peek F:4A951 1 i30_c951
+peek F:4A910 1 i30_req
+peek F:4A984 2 i30_v984
+peek F:4B23C 32 i30_rec
+peek F:4B2B7 1 i30_p7b
+peek F:4AB8E 2 i30_cd
+step
+peek F:4A82C 2 i31_blank
+peek F:1A6BC 4 i31_st
+peek F:4A992 2 i31_n
+peek F:4A951 1 i31_c951
+peek F:4A910 1 i31_req
+peek F:4A984 2 i31_v984
+peek F:4B23C 32 i31_rec
+peek F:4B2B7 1 i31_p7b
+peek F:4AB8E 2 i31_cd
+step
+peek F:4A82C 2 i32_blank
+peek F:1A6BC 4 i32_st
+peek F:4A992 2 i32_n
+peek F:4A951 1 i32_c951
+peek F:4A910 1 i32_req
+peek F:4A984 2 i32_v984
+peek F:4B23C 32 i32_rec
+peek F:4B2B7 1 i32_p7b
+peek F:4AB8E 2 i32_cd
+step
+peek F:4A82C 2 i33_blank
+peek F:1A6BC 4 i33_st
+peek F:4A992 2 i33_n
+peek F:4A951 1 i33_c951
+peek F:4A910 1 i33_req
+peek F:4A984 2 i33_v984
+peek F:4B23C 32 i33_rec
+peek F:4B2B7 1 i33_p7b
+peek F:4AB8E 2 i33_cd
+step
+peek F:4A82C 2 i34_blank
+peek F:1A6BC 4 i34_st
+peek F:4A992 2 i34_n
+peek F:4A951 1 i34_c951
+peek F:4A910 1 i34_req
+peek F:4A984 2 i34_v984
+peek F:4B23C 32 i34_rec
+peek F:4B2B7 1 i34_p7b
+peek F:4AB8E 2 i34_cd
+step
+peek F:4A82C 2 i35_blank
+peek F:1A6BC 4 i35_st
+peek F:4A992 2 i35_n
+peek F:4A951 1 i35_c951
+peek F:4A910 1 i35_req
+peek F:4A984 2 i35_v984
+peek F:4B23C 32 i35_rec
+peek F:4B2B7 1 i35_p7b
+peek F:4AB8E 2 i35_cd
+step

@@ -1,0 +1,1063 @@
+# note 07 4.4 (milestone 7 task 3): the lost-target rule with a region number and no entry.
+# --- run match
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+copy F:25F44 F:260AC 20
+poke F:4C23C 4 0x11400100
+poke F:4C240 4 0x00000041
+poke F:4C244 4 0x00420000
+poke F:4C248 4 0x09133926
+poke F:4C24C 4 0x000008FA
+poke F:4C250 4 0x10491398
+poke F:4C254 4 0x0008FA90
+poke F:4C258 4 0x10B926FC
+poke F:4C25C 4 0x00000000
+poke F:4C260 4 0x00000000
+poke F:4C264 4 0x0000005A
+poke F:4C268 4 0xFFFF0041
+poke F:4C26C 4 0x18001800
+poke F:4C270 4 0x00000000
+poke F:4C274 4 0xFF000E00
+poke F:4C278 4 0x0000FFFF
+poke F:4C27C 4 0xE5340000
+poke F:4C280 4 0x21600000
+poke F:4C284 4 0x32040000
+poke F:4C288 4 0x00280000
+poke F:4C28C 4 0x00000000
+poke F:4C290 4 0x00000000
+poke F:4C294 4 0x00000000
+poke F:4C298 4 0x00FF0344
+poke F:4C29C 4 0x01F4123D
+poke F:4C2A0 4 0x100066F8
+poke F:4C2A4 4 0x08D00000
+poke F:4C2A8 4 0x108C108C
+poke F:4C2AC 4 0x00FF0061
+poke F:4C2B0 4 0xA8000000
+poke F:4C2B4 4 0x00000300
+poke F:4C2B8 4 0xE0030000
+poke F:4C2BC 4 0x38670000
+poke F:4C2C0 4 0x1E3E0F5A
+poke F:4C2C4 4 0x3725E35F
+poke F:4C2C8 4 0xE5F2207C
+poke F:4C2CC 4 0x30993867
+poke F:4C2D0 4 0x0F5AE5F1
+poke F:4C2D4 4 0x00003725
+poke F:4C2D8 4 0x207C1E3E
+poke F:4C2DC 4 0xE35F3099
+poke F:4C278 1 0x02
+poke F:4B29F 1 0x1D
+poke F:4B29B 1 0x44
+poke F:4C23C 2 0x11C0
+poke F:4C274 1 0x01
+poke F:4C299 1 2
+peek F:4B43C 2 match_target_w0
+step 1
+peek F:4A992 2 match_f0_pass
+peek F:4A961 3 match_f0_counts
+peek F:4C23C 128 match_f0_r8
+peek F:4A93C 8 match_f0_dbg
+step 1
+peek F:4A992 2 match_f1_pass
+peek F:4A961 3 match_f1_counts
+peek F:4C23C 128 match_f1_r8
+peek F:4A93C 8 match_f1_dbg
+step 1
+peek F:4A992 2 match_f2_pass
+peek F:4A961 3 match_f2_counts
+peek F:4C23C 128 match_f2_r8
+peek F:4A93C 8 match_f2_dbg
+step 1
+peek F:4A992 2 match_f3_pass
+peek F:4A961 3 match_f3_counts
+peek F:4C23C 128 match_f3_r8
+peek F:4A93C 8 match_f3_dbg
+step 1
+peek F:4A992 2 match_f4_pass
+peek F:4A961 3 match_f4_counts
+peek F:4C23C 128 match_f4_r8
+peek F:4A93C 8 match_f4_dbg
+step 1
+peek F:4A992 2 match_f5_pass
+peek F:4A961 3 match_f5_counts
+peek F:4C23C 128 match_f5_r8
+peek F:4A93C 8 match_f5_dbg
+step 1
+peek F:4A992 2 match_f6_pass
+peek F:4A961 3 match_f6_counts
+peek F:4C23C 128 match_f6_r8
+peek F:4A93C 8 match_f6_dbg
+step 1
+peek F:4A992 2 match_f7_pass
+peek F:4A961 3 match_f7_counts
+peek F:4C23C 128 match_f7_r8
+peek F:4A93C 8 match_f7_dbg
+step 1
+peek F:4A992 2 match_f8_pass
+peek F:4A961 3 match_f8_counts
+peek F:4C23C 128 match_f8_r8
+peek F:4A93C 8 match_f8_dbg
+step 1
+peek F:4A992 2 match_f9_pass
+peek F:4A961 3 match_f9_counts
+peek F:4C23C 128 match_f9_r8
+peek F:4A93C 8 match_f9_dbg
+step 1
+peek F:4A992 2 match_f10_pass
+peek F:4A961 3 match_f10_counts
+peek F:4C23C 128 match_f10_r8
+peek F:4A93C 8 match_f10_dbg
+step 1
+peek F:4A992 2 match_f11_pass
+peek F:4A961 3 match_f11_counts
+peek F:4C23C 128 match_f11_r8
+peek F:4A93C 8 match_f11_dbg
+step 1
+peek F:4A992 2 match_f12_pass
+peek F:4A961 3 match_f12_counts
+peek F:4C23C 128 match_f12_r8
+peek F:4A93C 8 match_f12_dbg
+step 1
+peek F:4A992 2 match_f13_pass
+peek F:4A961 3 match_f13_counts
+peek F:4C23C 128 match_f13_r8
+peek F:4A93C 8 match_f13_dbg
+step 1
+peek F:4A992 2 match_f14_pass
+peek F:4A961 3 match_f14_counts
+peek F:4C23C 128 match_f14_r8
+peek F:4A93C 8 match_f14_dbg
+step 1
+peek F:4A992 2 match_f15_pass
+peek F:4A961 3 match_f15_counts
+peek F:4C23C 128 match_f15_r8
+peek F:4A93C 8 match_f15_dbg
+step 1
+peek F:4A992 2 match_f16_pass
+peek F:4A961 3 match_f16_counts
+peek F:4C23C 128 match_f16_r8
+peek F:4A93C 8 match_f16_dbg
+step 1
+peek F:4A992 2 match_f17_pass
+peek F:4A961 3 match_f17_counts
+peek F:4C23C 128 match_f17_r8
+peek F:4A93C 8 match_f17_dbg
+step 1
+peek F:4A992 2 match_f18_pass
+peek F:4A961 3 match_f18_counts
+peek F:4C23C 128 match_f18_r8
+peek F:4A93C 8 match_f18_dbg
+step 1
+peek F:4A992 2 match_f19_pass
+peek F:4A961 3 match_f19_counts
+peek F:4C23C 128 match_f19_r8
+peek F:4A93C 8 match_f19_dbg
+step 1
+peek F:4A992 2 match_f20_pass
+peek F:4A961 3 match_f20_counts
+peek F:4C23C 128 match_f20_r8
+peek F:4A93C 8 match_f20_dbg
+step 1
+peek F:4A992 2 match_f21_pass
+peek F:4A961 3 match_f21_counts
+peek F:4C23C 128 match_f21_r8
+peek F:4A93C 8 match_f21_dbg
+step 1
+peek F:4A992 2 match_f22_pass
+peek F:4A961 3 match_f22_counts
+peek F:4C23C 128 match_f22_r8
+peek F:4A93C 8 match_f22_dbg
+step 1
+peek F:4A992 2 match_f23_pass
+peek F:4A961 3 match_f23_counts
+peek F:4C23C 128 match_f23_r8
+peek F:4A93C 8 match_f23_dbg
+step 1
+peek F:4A992 2 match_f24_pass
+peek F:4A961 3 match_f24_counts
+peek F:4C23C 128 match_f24_r8
+peek F:4A93C 8 match_f24_dbg
+step 1
+peek F:4A992 2 match_f25_pass
+peek F:4A961 3 match_f25_counts
+peek F:4C23C 128 match_f25_r8
+peek F:4A93C 8 match_f25_dbg
+step 1
+peek F:4A992 2 match_f26_pass
+peek F:4A961 3 match_f26_counts
+peek F:4C23C 128 match_f26_r8
+peek F:4A93C 8 match_f26_dbg
+step 1
+peek F:4A992 2 match_f27_pass
+peek F:4A961 3 match_f27_counts
+peek F:4C23C 128 match_f27_r8
+peek F:4A93C 8 match_f27_dbg
+step 1
+peek F:4A992 2 match_f28_pass
+peek F:4A961 3 match_f28_counts
+peek F:4C23C 128 match_f28_r8
+peek F:4A93C 8 match_f28_dbg
+step 1
+peek F:4A992 2 match_f29_pass
+peek F:4A961 3 match_f29_counts
+peek F:4C23C 128 match_f29_r8
+peek F:4A93C 8 match_f29_dbg
+step 1
+peek F:4A992 2 match_f30_pass
+peek F:4A961 3 match_f30_counts
+peek F:4C23C 128 match_f30_r8
+peek F:4A93C 8 match_f30_dbg
+step 1
+peek F:4A992 2 match_f31_pass
+peek F:4A961 3 match_f31_counts
+peek F:4C23C 128 match_f31_r8
+peek F:4A93C 8 match_f31_dbg
+step 1
+peek F:4A992 2 match_f32_pass
+peek F:4A961 3 match_f32_counts
+peek F:4C23C 128 match_f32_r8
+peek F:4A93C 8 match_f32_dbg
+step 1
+peek F:4A992 2 match_f33_pass
+peek F:4A961 3 match_f33_counts
+peek F:4C23C 128 match_f33_r8
+peek F:4A93C 8 match_f33_dbg
+step 1
+peek F:4A992 2 match_f34_pass
+peek F:4A961 3 match_f34_counts
+peek F:4C23C 128 match_f34_r8
+peek F:4A93C 8 match_f34_dbg
+step 1
+peek F:4A992 2 match_f35_pass
+peek F:4A961 3 match_f35_counts
+peek F:4C23C 128 match_f35_r8
+peek F:4A93C 8 match_f35_dbg
+step 1
+peek F:4A992 2 match_f36_pass
+peek F:4A961 3 match_f36_counts
+peek F:4C23C 128 match_f36_r8
+peek F:4A93C 8 match_f36_dbg
+step 1
+peek F:4A992 2 match_f37_pass
+peek F:4A961 3 match_f37_counts
+peek F:4C23C 128 match_f37_r8
+peek F:4A93C 8 match_f37_dbg
+step 1
+peek F:4A992 2 match_f38_pass
+peek F:4A961 3 match_f38_counts
+peek F:4C23C 128 match_f38_r8
+peek F:4A93C 8 match_f38_dbg
+step 1
+peek F:4A992 2 match_f39_pass
+peek F:4A961 3 match_f39_counts
+peek F:4C23C 128 match_f39_r8
+peek F:4A93C 8 match_f39_dbg
+step 1
+peek F:4A992 2 match_f40_pass
+peek F:4A961 3 match_f40_counts
+peek F:4C23C 128 match_f40_r8
+peek F:4A93C 8 match_f40_dbg
+step 1
+peek F:4A992 2 match_f41_pass
+peek F:4A961 3 match_f41_counts
+peek F:4C23C 128 match_f41_r8
+peek F:4A93C 8 match_f41_dbg
+step 1
+peek F:4A992 2 match_f42_pass
+peek F:4A961 3 match_f42_counts
+peek F:4C23C 128 match_f42_r8
+peek F:4A93C 8 match_f42_dbg
+step 1
+peek F:4A992 2 match_f43_pass
+peek F:4A961 3 match_f43_counts
+peek F:4C23C 128 match_f43_r8
+peek F:4A93C 8 match_f43_dbg
+step 1
+peek F:4A992 2 match_f44_pass
+peek F:4A961 3 match_f44_counts
+peek F:4C23C 128 match_f44_r8
+peek F:4A93C 8 match_f44_dbg
+step 1
+peek F:4A992 2 match_f45_pass
+peek F:4A961 3 match_f45_counts
+peek F:4C23C 128 match_f45_r8
+peek F:4A93C 8 match_f45_dbg
+step 1
+peek F:4A992 2 match_f46_pass
+peek F:4A961 3 match_f46_counts
+peek F:4C23C 128 match_f46_r8
+peek F:4A93C 8 match_f46_dbg
+step 1
+peek F:4A992 2 match_f47_pass
+peek F:4A961 3 match_f47_counts
+peek F:4C23C 128 match_f47_r8
+peek F:4A93C 8 match_f47_dbg
+step 1
+peek F:4A992 2 match_f48_pass
+peek F:4A961 3 match_f48_counts
+peek F:4C23C 128 match_f48_r8
+peek F:4A93C 8 match_f48_dbg
+step 1
+peek F:4A992 2 match_f49_pass
+peek F:4A961 3 match_f49_counts
+peek F:4C23C 128 match_f49_r8
+peek F:4A93C 8 match_f49_dbg
+step 1
+peek F:4A992 2 match_f50_pass
+peek F:4A961 3 match_f50_counts
+peek F:4C23C 128 match_f50_r8
+peek F:4A93C 8 match_f50_dbg
+step 1
+peek F:4A992 2 match_f51_pass
+peek F:4A961 3 match_f51_counts
+peek F:4C23C 128 match_f51_r8
+peek F:4A93C 8 match_f51_dbg
+step 1
+peek F:4A992 2 match_f52_pass
+peek F:4A961 3 match_f52_counts
+peek F:4C23C 128 match_f52_r8
+peek F:4A93C 8 match_f52_dbg
+step 1
+peek F:4A992 2 match_f53_pass
+peek F:4A961 3 match_f53_counts
+peek F:4C23C 128 match_f53_r8
+peek F:4A93C 8 match_f53_dbg
+step 1
+peek F:4A992 2 match_f54_pass
+peek F:4A961 3 match_f54_counts
+peek F:4C23C 128 match_f54_r8
+peek F:4A93C 8 match_f54_dbg
+step 1
+peek F:4A992 2 match_f55_pass
+peek F:4A961 3 match_f55_counts
+peek F:4C23C 128 match_f55_r8
+peek F:4A93C 8 match_f55_dbg
+step 1
+peek F:4A992 2 match_f56_pass
+peek F:4A961 3 match_f56_counts
+peek F:4C23C 128 match_f56_r8
+peek F:4A93C 8 match_f56_dbg
+step 1
+peek F:4A992 2 match_f57_pass
+peek F:4A961 3 match_f57_counts
+peek F:4C23C 128 match_f57_r8
+peek F:4A93C 8 match_f57_dbg
+step 1
+peek F:4A992 2 match_f58_pass
+peek F:4A961 3 match_f58_counts
+peek F:4C23C 128 match_f58_r8
+peek F:4A93C 8 match_f58_dbg
+step 1
+peek F:4A992 2 match_f59_pass
+peek F:4A961 3 match_f59_counts
+peek F:4C23C 128 match_f59_r8
+peek F:4A93C 8 match_f59_dbg
+# --- run loop
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+copy F:25F44 F:260AC 20
+poke F:4C23C 4 0x11400100
+poke F:4C240 4 0x00000041
+poke F:4C244 4 0x00420000
+poke F:4C248 4 0x09133926
+poke F:4C24C 4 0x000008FA
+poke F:4C250 4 0x10491398
+poke F:4C254 4 0x0008FA90
+poke F:4C258 4 0x10B926FC
+poke F:4C25C 4 0x00000000
+poke F:4C260 4 0x00000000
+poke F:4C264 4 0x0000005A
+poke F:4C268 4 0xFFFF0041
+poke F:4C26C 4 0x18001800
+poke F:4C270 4 0x00000000
+poke F:4C274 4 0xFF000E00
+poke F:4C278 4 0x0000FFFF
+poke F:4C27C 4 0xE5340000
+poke F:4C280 4 0x21600000
+poke F:4C284 4 0x32040000
+poke F:4C288 4 0x00280000
+poke F:4C28C 4 0x00000000
+poke F:4C290 4 0x00000000
+poke F:4C294 4 0x00000000
+poke F:4C298 4 0x00FF0344
+poke F:4C29C 4 0x01F4123D
+poke F:4C2A0 4 0x100066F8
+poke F:4C2A4 4 0x08D00000
+poke F:4C2A8 4 0x108C108C
+poke F:4C2AC 4 0x00FF0061
+poke F:4C2B0 4 0xA8000000
+poke F:4C2B4 4 0x00000300
+poke F:4C2B8 4 0xE0030000
+poke F:4C2BC 4 0x38670000
+poke F:4C2C0 4 0x1E3E0F5A
+poke F:4C2C4 4 0x3725E35F
+poke F:4C2C8 4 0xE5F2207C
+poke F:4C2CC 4 0x30993867
+poke F:4C2D0 4 0x0F5AE5F1
+poke F:4C2D4 4 0x00003725
+poke F:4C2D8 4 0x207C1E3E
+poke F:4C2DC 4 0xE35F3099
+poke F:4C278 1 0x02
+poke F:4B29F 1 0x1D
+poke F:4B29B 1 0x44
+poke F:4C23C 2 0x11C0
+poke F:4C274 1 0x01
+poke F:4C299 1 3
+peek F:4B43C 2 loop_target_w0
+step 1
+peek F:4A992 2 loop_f0_pass
+peek F:4A961 3 loop_f0_counts
+peek F:4C23C 128 loop_f0_r8
+peek F:4A93C 8 loop_f0_dbg
+step 1
+peek F:4A992 2 loop_f1_pass
+peek F:4A961 3 loop_f1_counts
+peek F:4C23C 128 loop_f1_r8
+peek F:4A93C 8 loop_f1_dbg
+step 1
+peek F:4A992 2 loop_f2_pass
+peek F:4A961 3 loop_f2_counts
+peek F:4C23C 128 loop_f2_r8
+peek F:4A93C 8 loop_f2_dbg
+step 1
+peek F:4A992 2 loop_f3_pass
+peek F:4A961 3 loop_f3_counts
+peek F:4C23C 128 loop_f3_r8
+peek F:4A93C 8 loop_f3_dbg
+step 1
+peek F:4A992 2 loop_f4_pass
+peek F:4A961 3 loop_f4_counts
+peek F:4C23C 128 loop_f4_r8
+peek F:4A93C 8 loop_f4_dbg
+step 1
+peek F:4A992 2 loop_f5_pass
+peek F:4A961 3 loop_f5_counts
+peek F:4C23C 128 loop_f5_r8
+peek F:4A93C 8 loop_f5_dbg
+step 1
+peek F:4A992 2 loop_f6_pass
+peek F:4A961 3 loop_f6_counts
+peek F:4C23C 128 loop_f6_r8
+peek F:4A93C 8 loop_f6_dbg
+step 1
+peek F:4A992 2 loop_f7_pass
+peek F:4A961 3 loop_f7_counts
+peek F:4C23C 128 loop_f7_r8
+peek F:4A93C 8 loop_f7_dbg
+step 1
+peek F:4A992 2 loop_f8_pass
+peek F:4A961 3 loop_f8_counts
+peek F:4C23C 128 loop_f8_r8
+peek F:4A93C 8 loop_f8_dbg
+step 1
+peek F:4A992 2 loop_f9_pass
+peek F:4A961 3 loop_f9_counts
+peek F:4C23C 128 loop_f9_r8
+peek F:4A93C 8 loop_f9_dbg
+step 1
+peek F:4A992 2 loop_f10_pass
+peek F:4A961 3 loop_f10_counts
+peek F:4C23C 128 loop_f10_r8
+peek F:4A93C 8 loop_f10_dbg
+step 1
+peek F:4A992 2 loop_f11_pass
+peek F:4A961 3 loop_f11_counts
+peek F:4C23C 128 loop_f11_r8
+peek F:4A93C 8 loop_f11_dbg
+step 1
+peek F:4A992 2 loop_f12_pass
+peek F:4A961 3 loop_f12_counts
+peek F:4C23C 128 loop_f12_r8
+peek F:4A93C 8 loop_f12_dbg
+step 1
+peek F:4A992 2 loop_f13_pass
+peek F:4A961 3 loop_f13_counts
+peek F:4C23C 128 loop_f13_r8
+peek F:4A93C 8 loop_f13_dbg
+step 1
+peek F:4A992 2 loop_f14_pass
+peek F:4A961 3 loop_f14_counts
+peek F:4C23C 128 loop_f14_r8
+peek F:4A93C 8 loop_f14_dbg
+step 1
+peek F:4A992 2 loop_f15_pass
+peek F:4A961 3 loop_f15_counts
+peek F:4C23C 128 loop_f15_r8
+peek F:4A93C 8 loop_f15_dbg
+step 1
+peek F:4A992 2 loop_f16_pass
+peek F:4A961 3 loop_f16_counts
+peek F:4C23C 128 loop_f16_r8
+peek F:4A93C 8 loop_f16_dbg
+step 1
+peek F:4A992 2 loop_f17_pass
+peek F:4A961 3 loop_f17_counts
+peek F:4C23C 128 loop_f17_r8
+peek F:4A93C 8 loop_f17_dbg
+step 1
+peek F:4A992 2 loop_f18_pass
+peek F:4A961 3 loop_f18_counts
+peek F:4C23C 128 loop_f18_r8
+peek F:4A93C 8 loop_f18_dbg
+step 1
+peek F:4A992 2 loop_f19_pass
+peek F:4A961 3 loop_f19_counts
+peek F:4C23C 128 loop_f19_r8
+peek F:4A93C 8 loop_f19_dbg
+step 1
+peek F:4A992 2 loop_f20_pass
+peek F:4A961 3 loop_f20_counts
+peek F:4C23C 128 loop_f20_r8
+peek F:4A93C 8 loop_f20_dbg
+step 1
+peek F:4A992 2 loop_f21_pass
+peek F:4A961 3 loop_f21_counts
+peek F:4C23C 128 loop_f21_r8
+peek F:4A93C 8 loop_f21_dbg
+step 1
+peek F:4A992 2 loop_f22_pass
+peek F:4A961 3 loop_f22_counts
+peek F:4C23C 128 loop_f22_r8
+peek F:4A93C 8 loop_f22_dbg
+step 1
+peek F:4A992 2 loop_f23_pass
+peek F:4A961 3 loop_f23_counts
+peek F:4C23C 128 loop_f23_r8
+peek F:4A93C 8 loop_f23_dbg
+step 1
+peek F:4A992 2 loop_f24_pass
+peek F:4A961 3 loop_f24_counts
+peek F:4C23C 128 loop_f24_r8
+peek F:4A93C 8 loop_f24_dbg
+step 1
+peek F:4A992 2 loop_f25_pass
+peek F:4A961 3 loop_f25_counts
+peek F:4C23C 128 loop_f25_r8
+peek F:4A93C 8 loop_f25_dbg
+step 1
+peek F:4A992 2 loop_f26_pass
+peek F:4A961 3 loop_f26_counts
+peek F:4C23C 128 loop_f26_r8
+peek F:4A93C 8 loop_f26_dbg
+step 1
+peek F:4A992 2 loop_f27_pass
+peek F:4A961 3 loop_f27_counts
+peek F:4C23C 128 loop_f27_r8
+peek F:4A93C 8 loop_f27_dbg
+step 1
+peek F:4A992 2 loop_f28_pass
+peek F:4A961 3 loop_f28_counts
+peek F:4C23C 128 loop_f28_r8
+peek F:4A93C 8 loop_f28_dbg
+step 1
+peek F:4A992 2 loop_f29_pass
+peek F:4A961 3 loop_f29_counts
+peek F:4C23C 128 loop_f29_r8
+peek F:4A93C 8 loop_f29_dbg
+step 1
+peek F:4A992 2 loop_f30_pass
+peek F:4A961 3 loop_f30_counts
+peek F:4C23C 128 loop_f30_r8
+peek F:4A93C 8 loop_f30_dbg
+step 1
+peek F:4A992 2 loop_f31_pass
+peek F:4A961 3 loop_f31_counts
+peek F:4C23C 128 loop_f31_r8
+peek F:4A93C 8 loop_f31_dbg
+step 1
+peek F:4A992 2 loop_f32_pass
+peek F:4A961 3 loop_f32_counts
+peek F:4C23C 128 loop_f32_r8
+peek F:4A93C 8 loop_f32_dbg
+step 1
+peek F:4A992 2 loop_f33_pass
+peek F:4A961 3 loop_f33_counts
+peek F:4C23C 128 loop_f33_r8
+peek F:4A93C 8 loop_f33_dbg
+step 1
+peek F:4A992 2 loop_f34_pass
+peek F:4A961 3 loop_f34_counts
+peek F:4C23C 128 loop_f34_r8
+peek F:4A93C 8 loop_f34_dbg
+step 1
+peek F:4A992 2 loop_f35_pass
+peek F:4A961 3 loop_f35_counts
+peek F:4C23C 128 loop_f35_r8
+peek F:4A93C 8 loop_f35_dbg
+step 1
+peek F:4A992 2 loop_f36_pass
+peek F:4A961 3 loop_f36_counts
+peek F:4C23C 128 loop_f36_r8
+peek F:4A93C 8 loop_f36_dbg
+step 1
+peek F:4A992 2 loop_f37_pass
+peek F:4A961 3 loop_f37_counts
+peek F:4C23C 128 loop_f37_r8
+peek F:4A93C 8 loop_f37_dbg
+step 1
+peek F:4A992 2 loop_f38_pass
+peek F:4A961 3 loop_f38_counts
+peek F:4C23C 128 loop_f38_r8
+peek F:4A93C 8 loop_f38_dbg
+step 1
+peek F:4A992 2 loop_f39_pass
+peek F:4A961 3 loop_f39_counts
+peek F:4C23C 128 loop_f39_r8
+peek F:4A93C 8 loop_f39_dbg
+step 1
+peek F:4A992 2 loop_f40_pass
+peek F:4A961 3 loop_f40_counts
+peek F:4C23C 128 loop_f40_r8
+peek F:4A93C 8 loop_f40_dbg
+step 1
+peek F:4A992 2 loop_f41_pass
+peek F:4A961 3 loop_f41_counts
+peek F:4C23C 128 loop_f41_r8
+peek F:4A93C 8 loop_f41_dbg
+step 1
+peek F:4A992 2 loop_f42_pass
+peek F:4A961 3 loop_f42_counts
+peek F:4C23C 128 loop_f42_r8
+peek F:4A93C 8 loop_f42_dbg
+step 1
+peek F:4A992 2 loop_f43_pass
+peek F:4A961 3 loop_f43_counts
+peek F:4C23C 128 loop_f43_r8
+peek F:4A93C 8 loop_f43_dbg
+step 1
+peek F:4A992 2 loop_f44_pass
+peek F:4A961 3 loop_f44_counts
+peek F:4C23C 128 loop_f44_r8
+peek F:4A93C 8 loop_f44_dbg
+step 1
+peek F:4A992 2 loop_f45_pass
+peek F:4A961 3 loop_f45_counts
+peek F:4C23C 128 loop_f45_r8
+peek F:4A93C 8 loop_f45_dbg
+step 1
+peek F:4A992 2 loop_f46_pass
+peek F:4A961 3 loop_f46_counts
+peek F:4C23C 128 loop_f46_r8
+peek F:4A93C 8 loop_f46_dbg
+step 1
+peek F:4A992 2 loop_f47_pass
+peek F:4A961 3 loop_f47_counts
+peek F:4C23C 128 loop_f47_r8
+peek F:4A93C 8 loop_f47_dbg
+step 1
+peek F:4A992 2 loop_f48_pass
+peek F:4A961 3 loop_f48_counts
+peek F:4C23C 128 loop_f48_r8
+peek F:4A93C 8 loop_f48_dbg
+step 1
+peek F:4A992 2 loop_f49_pass
+peek F:4A961 3 loop_f49_counts
+peek F:4C23C 128 loop_f49_r8
+peek F:4A93C 8 loop_f49_dbg
+step 1
+peek F:4A992 2 loop_f50_pass
+peek F:4A961 3 loop_f50_counts
+peek F:4C23C 128 loop_f50_r8
+peek F:4A93C 8 loop_f50_dbg
+step 1
+peek F:4A992 2 loop_f51_pass
+peek F:4A961 3 loop_f51_counts
+peek F:4C23C 128 loop_f51_r8
+peek F:4A93C 8 loop_f51_dbg
+step 1
+peek F:4A992 2 loop_f52_pass
+peek F:4A961 3 loop_f52_counts
+peek F:4C23C 128 loop_f52_r8
+peek F:4A93C 8 loop_f52_dbg
+step 1
+peek F:4A992 2 loop_f53_pass
+peek F:4A961 3 loop_f53_counts
+peek F:4C23C 128 loop_f53_r8
+peek F:4A93C 8 loop_f53_dbg
+step 1
+peek F:4A992 2 loop_f54_pass
+peek F:4A961 3 loop_f54_counts
+peek F:4C23C 128 loop_f54_r8
+peek F:4A93C 8 loop_f54_dbg
+step 1
+peek F:4A992 2 loop_f55_pass
+peek F:4A961 3 loop_f55_counts
+peek F:4C23C 128 loop_f55_r8
+peek F:4A93C 8 loop_f55_dbg
+step 1
+peek F:4A992 2 loop_f56_pass
+peek F:4A961 3 loop_f56_counts
+peek F:4C23C 128 loop_f56_r8
+peek F:4A93C 8 loop_f56_dbg
+step 1
+peek F:4A992 2 loop_f57_pass
+peek F:4A961 3 loop_f57_counts
+peek F:4C23C 128 loop_f57_r8
+peek F:4A93C 8 loop_f57_dbg
+step 1
+peek F:4A992 2 loop_f58_pass
+peek F:4A961 3 loop_f58_counts
+peek F:4C23C 128 loop_f58_r8
+peek F:4A93C 8 loop_f58_dbg
+step 1
+peek F:4A992 2 loop_f59_pass
+peek F:4A961 3 loop_f59_counts
+peek F:4C23C 128 loop_f59_r8
+peek F:4A93C 8 loop_f59_dbg
+# --- run control
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+copy F:25F44 F:260AC 20
+poke F:4C23C 4 0x11400100
+poke F:4C240 4 0x00000041
+poke F:4C244 4 0x00420000
+poke F:4C248 4 0x09133926
+poke F:4C24C 4 0x000008FA
+poke F:4C250 4 0x10491398
+poke F:4C254 4 0x0008FA90
+poke F:4C258 4 0x10B926FC
+poke F:4C25C 4 0x00000000
+poke F:4C260 4 0x00000000
+poke F:4C264 4 0x0000005A
+poke F:4C268 4 0xFFFF0041
+poke F:4C26C 4 0x18001800
+poke F:4C270 4 0x00000000
+poke F:4C274 4 0xFF000E00
+poke F:4C278 4 0x0000FFFF
+poke F:4C27C 4 0xE5340000
+poke F:4C280 4 0x21600000
+poke F:4C284 4 0x32040000
+poke F:4C288 4 0x00280000
+poke F:4C28C 4 0x00000000
+poke F:4C290 4 0x00000000
+poke F:4C294 4 0x00000000
+poke F:4C298 4 0x00FF0344
+poke F:4C29C 4 0x01F4123D
+poke F:4C2A0 4 0x100066F8
+poke F:4C2A4 4 0x08D00000
+poke F:4C2A8 4 0x108C108C
+poke F:4C2AC 4 0x00FF0061
+poke F:4C2B0 4 0xA8000000
+poke F:4C2B4 4 0x00000300
+poke F:4C2B8 4 0xE0030000
+poke F:4C2BC 4 0x38670000
+poke F:4C2C0 4 0x1E3E0F5A
+poke F:4C2C4 4 0x3725E35F
+poke F:4C2C8 4 0xE5F2207C
+poke F:4C2CC 4 0x30993867
+poke F:4C2D0 4 0x0F5AE5F1
+poke F:4C2D4 4 0x00003725
+poke F:4C2D8 4 0x207C1E3E
+poke F:4C2DC 4 0xE35F3099
+poke F:4C278 1 0x02
+poke F:4B29F 1 0x1D
+poke F:4B29B 1 0x44
+poke F:4C23C 2 0x11C0
+poke F:4C274 1 0x01
+poke F:4C299 1 0
+peek F:4B43C 2 control_target_w0
+step 1
+peek F:4A992 2 control_f0_pass
+peek F:4A961 3 control_f0_counts
+peek F:4C23C 128 control_f0_r8
+peek F:4A93C 8 control_f0_dbg
+step 1
+peek F:4A992 2 control_f1_pass
+peek F:4A961 3 control_f1_counts
+peek F:4C23C 128 control_f1_r8
+peek F:4A93C 8 control_f1_dbg
+step 1
+peek F:4A992 2 control_f2_pass
+peek F:4A961 3 control_f2_counts
+peek F:4C23C 128 control_f2_r8
+peek F:4A93C 8 control_f2_dbg
+step 1
+peek F:4A992 2 control_f3_pass
+peek F:4A961 3 control_f3_counts
+peek F:4C23C 128 control_f3_r8
+peek F:4A93C 8 control_f3_dbg
+step 1
+peek F:4A992 2 control_f4_pass
+peek F:4A961 3 control_f4_counts
+peek F:4C23C 128 control_f4_r8
+peek F:4A93C 8 control_f4_dbg
+step 1
+peek F:4A992 2 control_f5_pass
+peek F:4A961 3 control_f5_counts
+peek F:4C23C 128 control_f5_r8
+peek F:4A93C 8 control_f5_dbg
+step 1
+peek F:4A992 2 control_f6_pass
+peek F:4A961 3 control_f6_counts
+peek F:4C23C 128 control_f6_r8
+peek F:4A93C 8 control_f6_dbg
+step 1
+peek F:4A992 2 control_f7_pass
+peek F:4A961 3 control_f7_counts
+peek F:4C23C 128 control_f7_r8
+peek F:4A93C 8 control_f7_dbg
+step 1
+peek F:4A992 2 control_f8_pass
+peek F:4A961 3 control_f8_counts
+peek F:4C23C 128 control_f8_r8
+peek F:4A93C 8 control_f8_dbg
+step 1
+peek F:4A992 2 control_f9_pass
+peek F:4A961 3 control_f9_counts
+peek F:4C23C 128 control_f9_r8
+peek F:4A93C 8 control_f9_dbg
+step 1
+peek F:4A992 2 control_f10_pass
+peek F:4A961 3 control_f10_counts
+peek F:4C23C 128 control_f10_r8
+peek F:4A93C 8 control_f10_dbg
+step 1
+peek F:4A992 2 control_f11_pass
+peek F:4A961 3 control_f11_counts
+peek F:4C23C 128 control_f11_r8
+peek F:4A93C 8 control_f11_dbg
+step 1
+peek F:4A992 2 control_f12_pass
+peek F:4A961 3 control_f12_counts
+peek F:4C23C 128 control_f12_r8
+peek F:4A93C 8 control_f12_dbg
+step 1
+peek F:4A992 2 control_f13_pass
+peek F:4A961 3 control_f13_counts
+peek F:4C23C 128 control_f13_r8
+peek F:4A93C 8 control_f13_dbg
+step 1
+peek F:4A992 2 control_f14_pass
+peek F:4A961 3 control_f14_counts
+peek F:4C23C 128 control_f14_r8
+peek F:4A93C 8 control_f14_dbg
+step 1
+peek F:4A992 2 control_f15_pass
+peek F:4A961 3 control_f15_counts
+peek F:4C23C 128 control_f15_r8
+peek F:4A93C 8 control_f15_dbg
+step 1
+peek F:4A992 2 control_f16_pass
+peek F:4A961 3 control_f16_counts
+peek F:4C23C 128 control_f16_r8
+peek F:4A93C 8 control_f16_dbg
+step 1
+peek F:4A992 2 control_f17_pass
+peek F:4A961 3 control_f17_counts
+peek F:4C23C 128 control_f17_r8
+peek F:4A93C 8 control_f17_dbg
+step 1
+peek F:4A992 2 control_f18_pass
+peek F:4A961 3 control_f18_counts
+peek F:4C23C 128 control_f18_r8
+peek F:4A93C 8 control_f18_dbg
+step 1
+peek F:4A992 2 control_f19_pass
+peek F:4A961 3 control_f19_counts
+peek F:4C23C 128 control_f19_r8
+peek F:4A93C 8 control_f19_dbg
+step 1
+peek F:4A992 2 control_f20_pass
+peek F:4A961 3 control_f20_counts
+peek F:4C23C 128 control_f20_r8
+peek F:4A93C 8 control_f20_dbg
+step 1
+peek F:4A992 2 control_f21_pass
+peek F:4A961 3 control_f21_counts
+peek F:4C23C 128 control_f21_r8
+peek F:4A93C 8 control_f21_dbg
+step 1
+peek F:4A992 2 control_f22_pass
+peek F:4A961 3 control_f22_counts
+peek F:4C23C 128 control_f22_r8
+peek F:4A93C 8 control_f22_dbg
+step 1
+peek F:4A992 2 control_f23_pass
+peek F:4A961 3 control_f23_counts
+peek F:4C23C 128 control_f23_r8
+peek F:4A93C 8 control_f23_dbg
+step 1
+peek F:4A992 2 control_f24_pass
+peek F:4A961 3 control_f24_counts
+peek F:4C23C 128 control_f24_r8
+peek F:4A93C 8 control_f24_dbg
+step 1
+peek F:4A992 2 control_f25_pass
+peek F:4A961 3 control_f25_counts
+peek F:4C23C 128 control_f25_r8
+peek F:4A93C 8 control_f25_dbg
+step 1
+peek F:4A992 2 control_f26_pass
+peek F:4A961 3 control_f26_counts
+peek F:4C23C 128 control_f26_r8
+peek F:4A93C 8 control_f26_dbg
+step 1
+peek F:4A992 2 control_f27_pass
+peek F:4A961 3 control_f27_counts
+peek F:4C23C 128 control_f27_r8
+peek F:4A93C 8 control_f27_dbg
+step 1
+peek F:4A992 2 control_f28_pass
+peek F:4A961 3 control_f28_counts
+peek F:4C23C 128 control_f28_r8
+peek F:4A93C 8 control_f28_dbg
+step 1
+peek F:4A992 2 control_f29_pass
+peek F:4A961 3 control_f29_counts
+peek F:4C23C 128 control_f29_r8
+peek F:4A93C 8 control_f29_dbg
+step 1
+peek F:4A992 2 control_f30_pass
+peek F:4A961 3 control_f30_counts
+peek F:4C23C 128 control_f30_r8
+peek F:4A93C 8 control_f30_dbg
+step 1
+peek F:4A992 2 control_f31_pass
+peek F:4A961 3 control_f31_counts
+peek F:4C23C 128 control_f31_r8
+peek F:4A93C 8 control_f31_dbg
+step 1
+peek F:4A992 2 control_f32_pass
+peek F:4A961 3 control_f32_counts
+peek F:4C23C 128 control_f32_r8
+peek F:4A93C 8 control_f32_dbg
+step 1
+peek F:4A992 2 control_f33_pass
+peek F:4A961 3 control_f33_counts
+peek F:4C23C 128 control_f33_r8
+peek F:4A93C 8 control_f33_dbg
+step 1
+peek F:4A992 2 control_f34_pass
+peek F:4A961 3 control_f34_counts
+peek F:4C23C 128 control_f34_r8
+peek F:4A93C 8 control_f34_dbg
+step 1
+peek F:4A992 2 control_f35_pass
+peek F:4A961 3 control_f35_counts
+peek F:4C23C 128 control_f35_r8
+peek F:4A93C 8 control_f35_dbg
+step 1
+peek F:4A992 2 control_f36_pass
+peek F:4A961 3 control_f36_counts
+peek F:4C23C 128 control_f36_r8
+peek F:4A93C 8 control_f36_dbg
+step 1
+peek F:4A992 2 control_f37_pass
+peek F:4A961 3 control_f37_counts
+peek F:4C23C 128 control_f37_r8
+peek F:4A93C 8 control_f37_dbg
+step 1
+peek F:4A992 2 control_f38_pass
+peek F:4A961 3 control_f38_counts
+peek F:4C23C 128 control_f38_r8
+peek F:4A93C 8 control_f38_dbg
+step 1
+peek F:4A992 2 control_f39_pass
+peek F:4A961 3 control_f39_counts
+peek F:4C23C 128 control_f39_r8
+peek F:4A93C 8 control_f39_dbg
+step 1
+peek F:4A992 2 control_f40_pass
+peek F:4A961 3 control_f40_counts
+peek F:4C23C 128 control_f40_r8
+peek F:4A93C 8 control_f40_dbg
+step 1
+peek F:4A992 2 control_f41_pass
+peek F:4A961 3 control_f41_counts
+peek F:4C23C 128 control_f41_r8
+peek F:4A93C 8 control_f41_dbg
+step 1
+peek F:4A992 2 control_f42_pass
+peek F:4A961 3 control_f42_counts
+peek F:4C23C 128 control_f42_r8
+peek F:4A93C 8 control_f42_dbg
+step 1
+peek F:4A992 2 control_f43_pass
+peek F:4A961 3 control_f43_counts
+peek F:4C23C 128 control_f43_r8
+peek F:4A93C 8 control_f43_dbg
+step 1
+peek F:4A992 2 control_f44_pass
+peek F:4A961 3 control_f44_counts
+peek F:4C23C 128 control_f44_r8
+peek F:4A93C 8 control_f44_dbg
+step 1
+peek F:4A992 2 control_f45_pass
+peek F:4A961 3 control_f45_counts
+peek F:4C23C 128 control_f45_r8
+peek F:4A93C 8 control_f45_dbg
+step 1
+peek F:4A992 2 control_f46_pass
+peek F:4A961 3 control_f46_counts
+peek F:4C23C 128 control_f46_r8
+peek F:4A93C 8 control_f46_dbg
+step 1
+peek F:4A992 2 control_f47_pass
+peek F:4A961 3 control_f47_counts
+peek F:4C23C 128 control_f47_r8
+peek F:4A93C 8 control_f47_dbg
+step 1
+peek F:4A992 2 control_f48_pass
+peek F:4A961 3 control_f48_counts
+peek F:4C23C 128 control_f48_r8
+peek F:4A93C 8 control_f48_dbg
+step 1
+peek F:4A992 2 control_f49_pass
+peek F:4A961 3 control_f49_counts
+peek F:4C23C 128 control_f49_r8
+peek F:4A93C 8 control_f49_dbg
+step 1
+peek F:4A992 2 control_f50_pass
+peek F:4A961 3 control_f50_counts
+peek F:4C23C 128 control_f50_r8
+peek F:4A93C 8 control_f50_dbg
+step 1
+peek F:4A992 2 control_f51_pass
+peek F:4A961 3 control_f51_counts
+peek F:4C23C 128 control_f51_r8
+peek F:4A93C 8 control_f51_dbg
+step 1
+peek F:4A992 2 control_f52_pass
+peek F:4A961 3 control_f52_counts
+peek F:4C23C 128 control_f52_r8
+peek F:4A93C 8 control_f52_dbg
+step 1
+peek F:4A992 2 control_f53_pass
+peek F:4A961 3 control_f53_counts
+peek F:4C23C 128 control_f53_r8
+peek F:4A93C 8 control_f53_dbg
+step 1
+peek F:4A992 2 control_f54_pass
+peek F:4A961 3 control_f54_counts
+peek F:4C23C 128 control_f54_r8
+peek F:4A93C 8 control_f54_dbg
+step 1
+peek F:4A992 2 control_f55_pass
+peek F:4A961 3 control_f55_counts
+peek F:4C23C 128 control_f55_r8
+peek F:4A93C 8 control_f55_dbg
+step 1
+peek F:4A992 2 control_f56_pass
+peek F:4A961 3 control_f56_counts
+peek F:4C23C 128 control_f56_r8
+peek F:4A93C 8 control_f56_dbg
+step 1
+peek F:4A992 2 control_f57_pass
+peek F:4A961 3 control_f57_counts
+peek F:4C23C 128 control_f57_r8
+peek F:4A93C 8 control_f57_dbg
+step 1
+peek F:4A992 2 control_f58_pass
+peek F:4A961 3 control_f58_counts
+peek F:4C23C 128 control_f58_r8
+peek F:4A93C 8 control_f58_dbg
+step 1
+peek F:4A992 2 control_f59_pass
+peek F:4A961 3 control_f59_counts
+peek F:4C23C 128 control_f59_r8
+peek F:4A93C 8 control_f59_dbg

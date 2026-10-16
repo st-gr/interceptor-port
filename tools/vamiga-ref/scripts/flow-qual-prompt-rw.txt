@@ -1,0 +1,21 @@
+# note 08 sections 9 and 10: a never-used log on a write-enabled disk: callsign TEST, menu item 5, snapshot at the security prompt
+# (qual-prompt-rw.vasnap). Prerequisite: credits-zero.vasnap (flow-log-boot-zero.txt). Run with --rw and
+#   --log extracted/captures/logs/flow-qual-prompt-rw.txt
+restore extracted/captures/credits-zero.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+key SPACE
+wait 12
+type TEST
+key RETURN
+wait 12
+frame extracted/captures/logs/qual-rw-menu.ppm
+key 5
+wait 8
+freeze
+peek F:4A87F 4 chal
+peek F:4A95E 1 mode
+peek R:C54498 78 rec
+frame extracted/captures/logs/qual-rw-prompt.ppm
+snapshot extracted/captures/qual-prompt-rw.vasnap
+thaw

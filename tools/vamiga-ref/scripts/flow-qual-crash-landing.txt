@@ -1,0 +1,109 @@
+# note 08 section 9.3: qualification after a crash restart. After the crash V:4A850 = 4 (the crash stores it); the restart does not clear it, so
+# the success test (which runs only while V:4A850 = 0) cannot fire; the same staged arrested landing as flow-qual-landing.txt is flown after the restart.
+# Prerequisite: extracted/captures/qual-airborne.vasnap (flow-qual-airborne.txt).
+restore extracted/captures/qual-airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+keydown UP
+stepuntil F:4B254 4 lt 9000 600
+keyup UP
+peek F:4A850 1 res_before
+stepuntil F:4B23C 2 and 0x0200 600
+peek F:4A850 1 res_crash
+peek F:4A94F 1 allow_c
+stepuntil F:4A94F 1 lt 3 400
+step 400
+peek F:4A850 1 res_restart
+peek F:4A94F 1 allow_r
+peek F:1A6BC 4 state_r
+peek F:4B23C 128 restart
+poke F:4B254 4 37472
+poke F:4B258 4 273942624
+poke F:4B2A8 2 1700
+poke F:4B2AA 2 1700
+poke F:4B267 1 40
+poke F:4B23E 2 0xA002
+step 60
+peek F:4B254 4 y_1
+peek F:4B258 4 z_1
+peek F:4B23E 2 w2_1
+peek F:4B2AA 2 s_1
+peek F:4A850 1 res_1
+peek F:4A98A 2 v98a_1
+step 60
+peek F:4B254 4 y_2
+peek F:4B258 4 z_2
+peek F:4B23E 2 w2_2
+peek F:4B2AA 2 s_2
+peek F:4A850 1 res_2
+peek F:4A98A 2 v98a_2
+step 60
+peek F:4B254 4 y_3
+peek F:4B258 4 z_3
+peek F:4B23E 2 w2_3
+peek F:4B2AA 2 s_3
+peek F:4A850 1 res_3
+peek F:4A98A 2 v98a_3
+step 60
+peek F:4B254 4 y_4
+peek F:4B258 4 z_4
+peek F:4B23E 2 w2_4
+peek F:4B2AA 2 s_4
+peek F:4A850 1 res_4
+peek F:4A98A 2 v98a_4
+step 60
+peek F:4B254 4 y_5
+peek F:4B258 4 z_5
+peek F:4B23E 2 w2_5
+peek F:4B2AA 2 s_5
+peek F:4A850 1 res_5
+peek F:4A98A 2 v98a_5
+step 60
+peek F:4B254 4 y_6
+peek F:4B258 4 z_6
+peek F:4B23E 2 w2_6
+peek F:4B2AA 2 s_6
+peek F:4A850 1 res_6
+peek F:4A98A 2 v98a_6
+step 60
+peek F:4B254 4 y_7
+peek F:4B258 4 z_7
+peek F:4B23E 2 w2_7
+peek F:4B2AA 2 s_7
+peek F:4A850 1 res_7
+peek F:4A98A 2 v98a_7
+step 60
+peek F:4B254 4 y_8
+peek F:4B258 4 z_8
+peek F:4B23E 2 w2_8
+peek F:4B2AA 2 s_8
+peek F:4A850 1 res_8
+peek F:4A98A 2 v98a_8
+step 60
+peek F:4B254 4 y_9
+peek F:4B258 4 z_9
+peek F:4B23E 2 w2_9
+peek F:4B2AA 2 s_9
+peek F:4A850 1 res_9
+peek F:4A98A 2 v98a_9
+step 60
+peek F:4B254 4 y_10
+peek F:4B258 4 z_10
+peek F:4B23E 2 w2_10
+peek F:4B2AA 2 s_10
+peek F:4A850 1 res_10
+peek F:4A98A 2 v98a_10
+step 60
+peek F:4B254 4 y_11
+peek F:4B258 4 z_11
+peek F:4B23E 2 w2_11
+peek F:4B2AA 2 s_11
+peek F:4A850 1 res_11
+peek F:4A98A 2 v98a_11
+step 60
+peek F:4B254 4 y_12
+peek F:4B258 4 z_12
+peek F:4B23E 2 w2_12
+peek F:4B2AA 2 s_12
+peek F:4A850 1 res_12
+peek F:4A98A 2 v98a_12

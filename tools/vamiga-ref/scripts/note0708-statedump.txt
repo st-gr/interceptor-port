@@ -1,0 +1,6 @@
+# note 07 8.2: dump of the state hunks 0x4A6E8-0x58F00 in flight (the out-of-table ordinal reads); author note-0708 fix 2
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A6E8 59000 mem

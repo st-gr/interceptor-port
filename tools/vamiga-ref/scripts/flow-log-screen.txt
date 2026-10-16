@@ -1,0 +1,69 @@
+# note 08 section 10: the shipped log (continuing tour of duty), the log screen (menu item 8), UPDATE (key 1) and RESET (SHIFT 2).
+# Prerequisite: extracted/captures/credits-rw.vasnap (flow-log-boot-rw.txt). Run with --rw and --log extracted/captures/logs/flow-log-screen.txt
+restore extracted/captures/credits-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+key SPACE
+wait 4
+freeze
+peek F:1D024 4 recptr
+peek F:4A9E0 2 diskstate
+peek F:1A424 2 cfgflag
+peek F:1A6BC 4 state
+peek F:4A802 8 txt
+peek R:C54498 78 rec_welcome
+thaw
+frame extracted/captures/logs/log-welcome-0.ppm
+wait 5
+frame extracted/captures/logs/log-welcome-1.ppm
+wait 8
+frame extracted/captures/logs/log-menu.ppm
+freeze
+peek F:1A6BC 4 state
+peek F:4A95E 1 mode
+peek F:4A83F 1 g83f
+peek R:C54498 78 rec_menu
+thaw
+key 8 0.3
+wait 6
+frame extracted/captures/logs/log-screen.ppm
+freeze
+peek F:1A6BC 4 state
+peek F:4A95E 1 mode
+peek F:4A84A 1 g84a
+peek F:4A87D 1 dirty
+peek R:C54498 78 rec_log
+thaw
+key 1 0.3
+wait 5
+freeze
+peek F:1A6BC 4 state
+peek F:4A84A 1 g84a
+peek F:4A87D 1 dirty
+peek F:4A802 8 txt
+thaw
+frame extracted/captures/logs/log-update.ppm
+savedisk extracted/captures/logs/log-update.adf
+keydown LSHIFT
+key 2 0.3
+keyup LSHIFT
+wait 4
+freeze
+peek F:1A6BC 4 state
+peek F:4A84A 1 g84a
+peek F:4A87D 1 dirty
+peek F:4A802 8 txt
+peek R:C54498 78 rec_reset
+thaw
+frame extracted/captures/logs/log-reset.ppm
+key 1 0.3
+wait 12
+freeze
+peek F:1A6BC 4 state
+peek F:4A802 8 txt
+peek F:4A898 1 g898
+peek F:4A87D 1 dirty
+peek R:C54498 78 rec_after_reset_update
+thaw
+frame extracted/captures/logs/log-reset-update.ppm
+savedisk extracted/captures/logs/log-reset-update.adf

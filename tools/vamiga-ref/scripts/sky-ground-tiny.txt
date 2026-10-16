@@ -1,0 +1,155 @@
+# tiny sky polygons (note 04): pitch words around the point where the sky leaves the window; also the polygon colour V:4AA0C and the plane-mask block
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4B2A2 2 2100
+poke F:4B2A4 2 4000
+poke F:4B2A6 2 0
+poke F:4A866 1 1
+thaw
+wait 4
+freeze
+log t-p2100-r0
+peek F:4A700 2336 s71_t-p2100-r0
+peek F:4B23C 512 rec0_t-p2100-r0
+colors pal_t-p2100-r0
+peek F:4AA0C 2 c0c_t-p2100-r0
+peek F:4A79E 8 m_t-p2100-r0
+peek F:4AB8C 2 mk_t-p2100-r0
+peek F:4A992 2 fn_t-p2100-r0
+frame extracted/captures/sky/t-p2100-r0.ppm
+thaw
+
+freeze
+poke F:4B2A2 2 2112
+poke F:4B2A4 2 4000
+poke F:4B2A6 2 0
+poke F:4A866 1 1
+thaw
+wait 4
+freeze
+log t-p2112-r0
+peek F:4A700 2336 s71_t-p2112-r0
+peek F:4B23C 512 rec0_t-p2112-r0
+colors pal_t-p2112-r0
+peek F:4AA0C 2 c0c_t-p2112-r0
+peek F:4A79E 8 m_t-p2112-r0
+peek F:4AB8C 2 mk_t-p2112-r0
+peek F:4A992 2 fn_t-p2112-r0
+frame extracted/captures/sky/t-p2112-r0.ppm
+thaw
+
+freeze
+poke F:4B2A2 2 2130
+poke F:4B2A4 2 4000
+poke F:4B2A6 2 0
+poke F:4A866 1 1
+thaw
+wait 4
+freeze
+log t-p2130-r0
+peek F:4A700 2336 s71_t-p2130-r0
+peek F:4B23C 512 rec0_t-p2130-r0
+colors pal_t-p2130-r0
+peek F:4AA0C 2 c0c_t-p2130-r0
+peek F:4A79E 8 m_t-p2130-r0
+peek F:4AB8C 2 mk_t-p2130-r0
+peek F:4A992 2 fn_t-p2130-r0
+frame extracted/captures/sky/t-p2130-r0.ppm
+thaw
+
+freeze
+poke F:4B2A2 2 2142
+poke F:4B2A4 2 4000
+poke F:4B2A6 2 0
+poke F:4A866 1 1
+thaw
+wait 4
+freeze
+log t-p2142-r0
+peek F:4A700 2336 s71_t-p2142-r0
+peek F:4B23C 512 rec0_t-p2142-r0
+colors pal_t-p2142-r0
+peek F:4AA0C 2 c0c_t-p2142-r0
+peek F:4A79E 8 m_t-p2142-r0
+peek F:4AB8C 2 mk_t-p2142-r0
+peek F:4A992 2 fn_t-p2142-r0
+frame extracted/captures/sky/t-p2142-r0.ppm
+thaw
+
+freeze
+poke F:4B2A2 2 2150
+poke F:4B2A4 2 4000
+poke F:4B2A6 2 0
+poke F:4A866 1 1
+thaw
+wait 4
+freeze
+log t-p2150-r0
+peek F:4A700 2336 s71_t-p2150-r0
+peek F:4B23C 512 rec0_t-p2150-r0
+colors pal_t-p2150-r0
+peek F:4AA0C 2 c0c_t-p2150-r0
+peek F:4A79E 8 m_t-p2150-r0
+peek F:4AB8C 2 mk_t-p2150-r0
+peek F:4A992 2 fn_t-p2150-r0
+frame extracted/captures/sky/t-p2150-r0.ppm
+thaw
+
+freeze
+poke F:4B2A2 2 2160
+poke F:4B2A4 2 4000
+poke F:4B2A6 2 0
+poke F:4A866 1 1
+thaw
+wait 4
+freeze
+log t-p2160-r0
+peek F:4A700 2336 s71_t-p2160-r0
+peek F:4B23C 512 rec0_t-p2160-r0
+colors pal_t-p2160-r0
+peek F:4AA0C 2 c0c_t-p2160-r0
+peek F:4A79E 8 m_t-p2160-r0
+peek F:4AB8C 2 mk_t-p2160-r0
+peek F:4A992 2 fn_t-p2160-r0
+frame extracted/captures/sky/t-p2160-r0.ppm
+thaw
+
+freeze
+poke F:4B2A2 2 2170
+poke F:4B2A4 2 4000
+poke F:4B2A6 2 0
+poke F:4A866 1 1
+thaw
+wait 4
+freeze
+log t-p2170-r0
+peek F:4A700 2336 s71_t-p2170-r0
+peek F:4B23C 512 rec0_t-p2170-r0
+colors pal_t-p2170-r0
+peek F:4AA0C 2 c0c_t-p2170-r0
+peek F:4A79E 8 m_t-p2170-r0
+peek F:4AB8C 2 mk_t-p2170-r0
+peek F:4A992 2 fn_t-p2170-r0
+frame extracted/captures/sky/t-p2170-r0.ppm
+thaw
+
+freeze
+poke F:4B2A2 2 2180
+poke F:4B2A4 2 4000
+poke F:4B2A6 2 0
+poke F:4A866 1 1
+thaw
+wait 4
+freeze
+log t-p2180-r0
+peek F:4A700 2336 s71_t-p2180-r0
+peek F:4B23C 512 rec0_t-p2180-r0
+colors pal_t-p2180-r0
+peek F:4AA0C 2 c0c_t-p2180-r0
+peek F:4A79E 8 m_t-p2180-r0
+peek F:4AB8C 2 mk_t-p2180-r0
+peek F:4A992 2 fn_t-p2180-r0
+frame extracted/captures/sky/t-p2180-r0.ppm
+thaw
+

@@ -1,0 +1,3807 @@
+# Task 1 (note 08 section 3): the text engine per blank after pressing 5 from flow-menu: passes per blank (V:4A879 is a byte that counts passes),
+# the text pointer V:4A7B6+4, the id list V:4A802, index V:4A87E, running flag V:4A87B, mode V:4A898, hold V:4A7FC, state pointer 0x1A6BC.
+# run: flock /tmp/ref.lock build/vamiga-ref/ref --rom disks/kick12.rom --adf extracted/interceptor-autoboot.adf --script tools/vamiga-ref/scripts/flow-t1-engine-5.txt --log extracted/captures/logs/flow-t1-engine-5.txt
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 5 0.06
+peek F:4A82C 2 b0_bl
+peek F:4A879 1 b0_pc
+peek F:4A7BA 4 b0_tp
+peek F:4A802 2 b0_id
+peek F:4A87E 1 b0_ix
+peek F:4A87B 1 b0_run
+peek F:4A898 1 b0_md
+peek F:4A7FC 2 b0_hold
+peek F:1A6BC 4 b0_st
+step
+peek F:4A82C 2 b1_bl
+peek F:4A879 1 b1_pc
+peek F:4A7BA 4 b1_tp
+peek F:4A802 2 b1_id
+peek F:4A87E 1 b1_ix
+peek F:4A87B 1 b1_run
+peek F:4A898 1 b1_md
+peek F:4A7FC 2 b1_hold
+peek F:1A6BC 4 b1_st
+step
+peek F:4A82C 2 b2_bl
+peek F:4A879 1 b2_pc
+peek F:4A7BA 4 b2_tp
+peek F:4A802 2 b2_id
+peek F:4A87E 1 b2_ix
+peek F:4A87B 1 b2_run
+peek F:4A898 1 b2_md
+peek F:4A7FC 2 b2_hold
+peek F:1A6BC 4 b2_st
+step
+peek F:4A82C 2 b3_bl
+peek F:4A879 1 b3_pc
+peek F:4A7BA 4 b3_tp
+peek F:4A802 2 b3_id
+peek F:4A87E 1 b3_ix
+peek F:4A87B 1 b3_run
+peek F:4A898 1 b3_md
+peek F:4A7FC 2 b3_hold
+peek F:1A6BC 4 b3_st
+step
+peek F:4A82C 2 b4_bl
+peek F:4A879 1 b4_pc
+peek F:4A7BA 4 b4_tp
+peek F:4A802 2 b4_id
+peek F:4A87E 1 b4_ix
+peek F:4A87B 1 b4_run
+peek F:4A898 1 b4_md
+peek F:4A7FC 2 b4_hold
+peek F:1A6BC 4 b4_st
+step
+peek F:4A82C 2 b5_bl
+peek F:4A879 1 b5_pc
+peek F:4A7BA 4 b5_tp
+peek F:4A802 2 b5_id
+peek F:4A87E 1 b5_ix
+peek F:4A87B 1 b5_run
+peek F:4A898 1 b5_md
+peek F:4A7FC 2 b5_hold
+peek F:1A6BC 4 b5_st
+step
+peek F:4A82C 2 b6_bl
+peek F:4A879 1 b6_pc
+peek F:4A7BA 4 b6_tp
+peek F:4A802 2 b6_id
+peek F:4A87E 1 b6_ix
+peek F:4A87B 1 b6_run
+peek F:4A898 1 b6_md
+peek F:4A7FC 2 b6_hold
+peek F:1A6BC 4 b6_st
+step
+peek F:4A82C 2 b7_bl
+peek F:4A879 1 b7_pc
+peek F:4A7BA 4 b7_tp
+peek F:4A802 2 b7_id
+peek F:4A87E 1 b7_ix
+peek F:4A87B 1 b7_run
+peek F:4A898 1 b7_md
+peek F:4A7FC 2 b7_hold
+peek F:1A6BC 4 b7_st
+step
+peek F:4A82C 2 b8_bl
+peek F:4A879 1 b8_pc
+peek F:4A7BA 4 b8_tp
+peek F:4A802 2 b8_id
+peek F:4A87E 1 b8_ix
+peek F:4A87B 1 b8_run
+peek F:4A898 1 b8_md
+peek F:4A7FC 2 b8_hold
+peek F:1A6BC 4 b8_st
+step
+peek F:4A82C 2 b9_bl
+peek F:4A879 1 b9_pc
+peek F:4A7BA 4 b9_tp
+peek F:4A802 2 b9_id
+peek F:4A87E 1 b9_ix
+peek F:4A87B 1 b9_run
+peek F:4A898 1 b9_md
+peek F:4A7FC 2 b9_hold
+peek F:1A6BC 4 b9_st
+step
+peek F:4A82C 2 b10_bl
+peek F:4A879 1 b10_pc
+peek F:4A7BA 4 b10_tp
+peek F:4A802 2 b10_id
+peek F:4A87E 1 b10_ix
+peek F:4A87B 1 b10_run
+peek F:4A898 1 b10_md
+peek F:4A7FC 2 b10_hold
+peek F:1A6BC 4 b10_st
+step
+peek F:4A82C 2 b11_bl
+peek F:4A879 1 b11_pc
+peek F:4A7BA 4 b11_tp
+peek F:4A802 2 b11_id
+peek F:4A87E 1 b11_ix
+peek F:4A87B 1 b11_run
+peek F:4A898 1 b11_md
+peek F:4A7FC 2 b11_hold
+peek F:1A6BC 4 b11_st
+step
+peek F:4A82C 2 b12_bl
+peek F:4A879 1 b12_pc
+peek F:4A7BA 4 b12_tp
+peek F:4A802 2 b12_id
+peek F:4A87E 1 b12_ix
+peek F:4A87B 1 b12_run
+peek F:4A898 1 b12_md
+peek F:4A7FC 2 b12_hold
+peek F:1A6BC 4 b12_st
+step
+peek F:4A82C 2 b13_bl
+peek F:4A879 1 b13_pc
+peek F:4A7BA 4 b13_tp
+peek F:4A802 2 b13_id
+peek F:4A87E 1 b13_ix
+peek F:4A87B 1 b13_run
+peek F:4A898 1 b13_md
+peek F:4A7FC 2 b13_hold
+peek F:1A6BC 4 b13_st
+step
+peek F:4A82C 2 b14_bl
+peek F:4A879 1 b14_pc
+peek F:4A7BA 4 b14_tp
+peek F:4A802 2 b14_id
+peek F:4A87E 1 b14_ix
+peek F:4A87B 1 b14_run
+peek F:4A898 1 b14_md
+peek F:4A7FC 2 b14_hold
+peek F:1A6BC 4 b14_st
+step
+peek F:4A82C 2 b15_bl
+peek F:4A879 1 b15_pc
+peek F:4A7BA 4 b15_tp
+peek F:4A802 2 b15_id
+peek F:4A87E 1 b15_ix
+peek F:4A87B 1 b15_run
+peek F:4A898 1 b15_md
+peek F:4A7FC 2 b15_hold
+peek F:1A6BC 4 b15_st
+step
+peek F:4A82C 2 b16_bl
+peek F:4A879 1 b16_pc
+peek F:4A7BA 4 b16_tp
+peek F:4A802 2 b16_id
+peek F:4A87E 1 b16_ix
+peek F:4A87B 1 b16_run
+peek F:4A898 1 b16_md
+peek F:4A7FC 2 b16_hold
+peek F:1A6BC 4 b16_st
+step
+peek F:4A82C 2 b17_bl
+peek F:4A879 1 b17_pc
+peek F:4A7BA 4 b17_tp
+peek F:4A802 2 b17_id
+peek F:4A87E 1 b17_ix
+peek F:4A87B 1 b17_run
+peek F:4A898 1 b17_md
+peek F:4A7FC 2 b17_hold
+peek F:1A6BC 4 b17_st
+step
+peek F:4A82C 2 b18_bl
+peek F:4A879 1 b18_pc
+peek F:4A7BA 4 b18_tp
+peek F:4A802 2 b18_id
+peek F:4A87E 1 b18_ix
+peek F:4A87B 1 b18_run
+peek F:4A898 1 b18_md
+peek F:4A7FC 2 b18_hold
+peek F:1A6BC 4 b18_st
+step
+peek F:4A82C 2 b19_bl
+peek F:4A879 1 b19_pc
+peek F:4A7BA 4 b19_tp
+peek F:4A802 2 b19_id
+peek F:4A87E 1 b19_ix
+peek F:4A87B 1 b19_run
+peek F:4A898 1 b19_md
+peek F:4A7FC 2 b19_hold
+peek F:1A6BC 4 b19_st
+step
+peek F:4A82C 2 b20_bl
+peek F:4A879 1 b20_pc
+peek F:4A7BA 4 b20_tp
+peek F:4A802 2 b20_id
+peek F:4A87E 1 b20_ix
+peek F:4A87B 1 b20_run
+peek F:4A898 1 b20_md
+peek F:4A7FC 2 b20_hold
+peek F:1A6BC 4 b20_st
+step
+peek F:4A82C 2 b21_bl
+peek F:4A879 1 b21_pc
+peek F:4A7BA 4 b21_tp
+peek F:4A802 2 b21_id
+peek F:4A87E 1 b21_ix
+peek F:4A87B 1 b21_run
+peek F:4A898 1 b21_md
+peek F:4A7FC 2 b21_hold
+peek F:1A6BC 4 b21_st
+step
+peek F:4A82C 2 b22_bl
+peek F:4A879 1 b22_pc
+peek F:4A7BA 4 b22_tp
+peek F:4A802 2 b22_id
+peek F:4A87E 1 b22_ix
+peek F:4A87B 1 b22_run
+peek F:4A898 1 b22_md
+peek F:4A7FC 2 b22_hold
+peek F:1A6BC 4 b22_st
+step
+peek F:4A82C 2 b23_bl
+peek F:4A879 1 b23_pc
+peek F:4A7BA 4 b23_tp
+peek F:4A802 2 b23_id
+peek F:4A87E 1 b23_ix
+peek F:4A87B 1 b23_run
+peek F:4A898 1 b23_md
+peek F:4A7FC 2 b23_hold
+peek F:1A6BC 4 b23_st
+step
+peek F:4A82C 2 b24_bl
+peek F:4A879 1 b24_pc
+peek F:4A7BA 4 b24_tp
+peek F:4A802 2 b24_id
+peek F:4A87E 1 b24_ix
+peek F:4A87B 1 b24_run
+peek F:4A898 1 b24_md
+peek F:4A7FC 2 b24_hold
+peek F:1A6BC 4 b24_st
+step
+peek F:4A82C 2 b25_bl
+peek F:4A879 1 b25_pc
+peek F:4A7BA 4 b25_tp
+peek F:4A802 2 b25_id
+peek F:4A87E 1 b25_ix
+peek F:4A87B 1 b25_run
+peek F:4A898 1 b25_md
+peek F:4A7FC 2 b25_hold
+peek F:1A6BC 4 b25_st
+step
+peek F:4A82C 2 b26_bl
+peek F:4A879 1 b26_pc
+peek F:4A7BA 4 b26_tp
+peek F:4A802 2 b26_id
+peek F:4A87E 1 b26_ix
+peek F:4A87B 1 b26_run
+peek F:4A898 1 b26_md
+peek F:4A7FC 2 b26_hold
+peek F:1A6BC 4 b26_st
+step
+peek F:4A82C 2 b27_bl
+peek F:4A879 1 b27_pc
+peek F:4A7BA 4 b27_tp
+peek F:4A802 2 b27_id
+peek F:4A87E 1 b27_ix
+peek F:4A87B 1 b27_run
+peek F:4A898 1 b27_md
+peek F:4A7FC 2 b27_hold
+peek F:1A6BC 4 b27_st
+step
+peek F:4A82C 2 b28_bl
+peek F:4A879 1 b28_pc
+peek F:4A7BA 4 b28_tp
+peek F:4A802 2 b28_id
+peek F:4A87E 1 b28_ix
+peek F:4A87B 1 b28_run
+peek F:4A898 1 b28_md
+peek F:4A7FC 2 b28_hold
+peek F:1A6BC 4 b28_st
+step
+peek F:4A82C 2 b29_bl
+peek F:4A879 1 b29_pc
+peek F:4A7BA 4 b29_tp
+peek F:4A802 2 b29_id
+peek F:4A87E 1 b29_ix
+peek F:4A87B 1 b29_run
+peek F:4A898 1 b29_md
+peek F:4A7FC 2 b29_hold
+peek F:1A6BC 4 b29_st
+step
+peek F:4A82C 2 b30_bl
+peek F:4A879 1 b30_pc
+peek F:4A7BA 4 b30_tp
+peek F:4A802 2 b30_id
+peek F:4A87E 1 b30_ix
+peek F:4A87B 1 b30_run
+peek F:4A898 1 b30_md
+peek F:4A7FC 2 b30_hold
+peek F:1A6BC 4 b30_st
+step
+peek F:4A82C 2 b31_bl
+peek F:4A879 1 b31_pc
+peek F:4A7BA 4 b31_tp
+peek F:4A802 2 b31_id
+peek F:4A87E 1 b31_ix
+peek F:4A87B 1 b31_run
+peek F:4A898 1 b31_md
+peek F:4A7FC 2 b31_hold
+peek F:1A6BC 4 b31_st
+step
+peek F:4A82C 2 b32_bl
+peek F:4A879 1 b32_pc
+peek F:4A7BA 4 b32_tp
+peek F:4A802 2 b32_id
+peek F:4A87E 1 b32_ix
+peek F:4A87B 1 b32_run
+peek F:4A898 1 b32_md
+peek F:4A7FC 2 b32_hold
+peek F:1A6BC 4 b32_st
+step
+peek F:4A82C 2 b33_bl
+peek F:4A879 1 b33_pc
+peek F:4A7BA 4 b33_tp
+peek F:4A802 2 b33_id
+peek F:4A87E 1 b33_ix
+peek F:4A87B 1 b33_run
+peek F:4A898 1 b33_md
+peek F:4A7FC 2 b33_hold
+peek F:1A6BC 4 b33_st
+step
+peek F:4A82C 2 b34_bl
+peek F:4A879 1 b34_pc
+peek F:4A7BA 4 b34_tp
+peek F:4A802 2 b34_id
+peek F:4A87E 1 b34_ix
+peek F:4A87B 1 b34_run
+peek F:4A898 1 b34_md
+peek F:4A7FC 2 b34_hold
+peek F:1A6BC 4 b34_st
+step
+peek F:4A82C 2 b35_bl
+peek F:4A879 1 b35_pc
+peek F:4A7BA 4 b35_tp
+peek F:4A802 2 b35_id
+peek F:4A87E 1 b35_ix
+peek F:4A87B 1 b35_run
+peek F:4A898 1 b35_md
+peek F:4A7FC 2 b35_hold
+peek F:1A6BC 4 b35_st
+step
+peek F:4A82C 2 b36_bl
+peek F:4A879 1 b36_pc
+peek F:4A7BA 4 b36_tp
+peek F:4A802 2 b36_id
+peek F:4A87E 1 b36_ix
+peek F:4A87B 1 b36_run
+peek F:4A898 1 b36_md
+peek F:4A7FC 2 b36_hold
+peek F:1A6BC 4 b36_st
+step
+peek F:4A82C 2 b37_bl
+peek F:4A879 1 b37_pc
+peek F:4A7BA 4 b37_tp
+peek F:4A802 2 b37_id
+peek F:4A87E 1 b37_ix
+peek F:4A87B 1 b37_run
+peek F:4A898 1 b37_md
+peek F:4A7FC 2 b37_hold
+peek F:1A6BC 4 b37_st
+step
+peek F:4A82C 2 b38_bl
+peek F:4A879 1 b38_pc
+peek F:4A7BA 4 b38_tp
+peek F:4A802 2 b38_id
+peek F:4A87E 1 b38_ix
+peek F:4A87B 1 b38_run
+peek F:4A898 1 b38_md
+peek F:4A7FC 2 b38_hold
+peek F:1A6BC 4 b38_st
+step
+peek F:4A82C 2 b39_bl
+peek F:4A879 1 b39_pc
+peek F:4A7BA 4 b39_tp
+peek F:4A802 2 b39_id
+peek F:4A87E 1 b39_ix
+peek F:4A87B 1 b39_run
+peek F:4A898 1 b39_md
+peek F:4A7FC 2 b39_hold
+peek F:1A6BC 4 b39_st
+step
+peek F:4A82C 2 b40_bl
+peek F:4A879 1 b40_pc
+peek F:4A7BA 4 b40_tp
+peek F:4A802 2 b40_id
+peek F:4A87E 1 b40_ix
+peek F:4A87B 1 b40_run
+peek F:4A898 1 b40_md
+peek F:4A7FC 2 b40_hold
+peek F:1A6BC 4 b40_st
+step
+peek F:4A82C 2 b41_bl
+peek F:4A879 1 b41_pc
+peek F:4A7BA 4 b41_tp
+peek F:4A802 2 b41_id
+peek F:4A87E 1 b41_ix
+peek F:4A87B 1 b41_run
+peek F:4A898 1 b41_md
+peek F:4A7FC 2 b41_hold
+peek F:1A6BC 4 b41_st
+step
+peek F:4A82C 2 b42_bl
+peek F:4A879 1 b42_pc
+peek F:4A7BA 4 b42_tp
+peek F:4A802 2 b42_id
+peek F:4A87E 1 b42_ix
+peek F:4A87B 1 b42_run
+peek F:4A898 1 b42_md
+peek F:4A7FC 2 b42_hold
+peek F:1A6BC 4 b42_st
+step
+peek F:4A82C 2 b43_bl
+peek F:4A879 1 b43_pc
+peek F:4A7BA 4 b43_tp
+peek F:4A802 2 b43_id
+peek F:4A87E 1 b43_ix
+peek F:4A87B 1 b43_run
+peek F:4A898 1 b43_md
+peek F:4A7FC 2 b43_hold
+peek F:1A6BC 4 b43_st
+step
+peek F:4A82C 2 b44_bl
+peek F:4A879 1 b44_pc
+peek F:4A7BA 4 b44_tp
+peek F:4A802 2 b44_id
+peek F:4A87E 1 b44_ix
+peek F:4A87B 1 b44_run
+peek F:4A898 1 b44_md
+peek F:4A7FC 2 b44_hold
+peek F:1A6BC 4 b44_st
+step
+peek F:4A82C 2 b45_bl
+peek F:4A879 1 b45_pc
+peek F:4A7BA 4 b45_tp
+peek F:4A802 2 b45_id
+peek F:4A87E 1 b45_ix
+peek F:4A87B 1 b45_run
+peek F:4A898 1 b45_md
+peek F:4A7FC 2 b45_hold
+peek F:1A6BC 4 b45_st
+step
+peek F:4A82C 2 b46_bl
+peek F:4A879 1 b46_pc
+peek F:4A7BA 4 b46_tp
+peek F:4A802 2 b46_id
+peek F:4A87E 1 b46_ix
+peek F:4A87B 1 b46_run
+peek F:4A898 1 b46_md
+peek F:4A7FC 2 b46_hold
+peek F:1A6BC 4 b46_st
+step
+peek F:4A82C 2 b47_bl
+peek F:4A879 1 b47_pc
+peek F:4A7BA 4 b47_tp
+peek F:4A802 2 b47_id
+peek F:4A87E 1 b47_ix
+peek F:4A87B 1 b47_run
+peek F:4A898 1 b47_md
+peek F:4A7FC 2 b47_hold
+peek F:1A6BC 4 b47_st
+step
+peek F:4A82C 2 b48_bl
+peek F:4A879 1 b48_pc
+peek F:4A7BA 4 b48_tp
+peek F:4A802 2 b48_id
+peek F:4A87E 1 b48_ix
+peek F:4A87B 1 b48_run
+peek F:4A898 1 b48_md
+peek F:4A7FC 2 b48_hold
+peek F:1A6BC 4 b48_st
+step
+peek F:4A82C 2 b49_bl
+peek F:4A879 1 b49_pc
+peek F:4A7BA 4 b49_tp
+peek F:4A802 2 b49_id
+peek F:4A87E 1 b49_ix
+peek F:4A87B 1 b49_run
+peek F:4A898 1 b49_md
+peek F:4A7FC 2 b49_hold
+peek F:1A6BC 4 b49_st
+step
+peek F:4A82C 2 b50_bl
+peek F:4A879 1 b50_pc
+peek F:4A7BA 4 b50_tp
+peek F:4A802 2 b50_id
+peek F:4A87E 1 b50_ix
+peek F:4A87B 1 b50_run
+peek F:4A898 1 b50_md
+peek F:4A7FC 2 b50_hold
+peek F:1A6BC 4 b50_st
+step
+peek F:4A82C 2 b51_bl
+peek F:4A879 1 b51_pc
+peek F:4A7BA 4 b51_tp
+peek F:4A802 2 b51_id
+peek F:4A87E 1 b51_ix
+peek F:4A87B 1 b51_run
+peek F:4A898 1 b51_md
+peek F:4A7FC 2 b51_hold
+peek F:1A6BC 4 b51_st
+step
+peek F:4A82C 2 b52_bl
+peek F:4A879 1 b52_pc
+peek F:4A7BA 4 b52_tp
+peek F:4A802 2 b52_id
+peek F:4A87E 1 b52_ix
+peek F:4A87B 1 b52_run
+peek F:4A898 1 b52_md
+peek F:4A7FC 2 b52_hold
+peek F:1A6BC 4 b52_st
+step
+peek F:4A82C 2 b53_bl
+peek F:4A879 1 b53_pc
+peek F:4A7BA 4 b53_tp
+peek F:4A802 2 b53_id
+peek F:4A87E 1 b53_ix
+peek F:4A87B 1 b53_run
+peek F:4A898 1 b53_md
+peek F:4A7FC 2 b53_hold
+peek F:1A6BC 4 b53_st
+step
+peek F:4A82C 2 b54_bl
+peek F:4A879 1 b54_pc
+peek F:4A7BA 4 b54_tp
+peek F:4A802 2 b54_id
+peek F:4A87E 1 b54_ix
+peek F:4A87B 1 b54_run
+peek F:4A898 1 b54_md
+peek F:4A7FC 2 b54_hold
+peek F:1A6BC 4 b54_st
+step
+peek F:4A82C 2 b55_bl
+peek F:4A879 1 b55_pc
+peek F:4A7BA 4 b55_tp
+peek F:4A802 2 b55_id
+peek F:4A87E 1 b55_ix
+peek F:4A87B 1 b55_run
+peek F:4A898 1 b55_md
+peek F:4A7FC 2 b55_hold
+peek F:1A6BC 4 b55_st
+step
+peek F:4A82C 2 b56_bl
+peek F:4A879 1 b56_pc
+peek F:4A7BA 4 b56_tp
+peek F:4A802 2 b56_id
+peek F:4A87E 1 b56_ix
+peek F:4A87B 1 b56_run
+peek F:4A898 1 b56_md
+peek F:4A7FC 2 b56_hold
+peek F:1A6BC 4 b56_st
+step
+peek F:4A82C 2 b57_bl
+peek F:4A879 1 b57_pc
+peek F:4A7BA 4 b57_tp
+peek F:4A802 2 b57_id
+peek F:4A87E 1 b57_ix
+peek F:4A87B 1 b57_run
+peek F:4A898 1 b57_md
+peek F:4A7FC 2 b57_hold
+peek F:1A6BC 4 b57_st
+step
+peek F:4A82C 2 b58_bl
+peek F:4A879 1 b58_pc
+peek F:4A7BA 4 b58_tp
+peek F:4A802 2 b58_id
+peek F:4A87E 1 b58_ix
+peek F:4A87B 1 b58_run
+peek F:4A898 1 b58_md
+peek F:4A7FC 2 b58_hold
+peek F:1A6BC 4 b58_st
+step
+peek F:4A82C 2 b59_bl
+peek F:4A879 1 b59_pc
+peek F:4A7BA 4 b59_tp
+peek F:4A802 2 b59_id
+peek F:4A87E 1 b59_ix
+peek F:4A87B 1 b59_run
+peek F:4A898 1 b59_md
+peek F:4A7FC 2 b59_hold
+peek F:1A6BC 4 b59_st
+step
+peek F:4A82C 2 b60_bl
+peek F:4A879 1 b60_pc
+peek F:4A7BA 4 b60_tp
+peek F:4A802 2 b60_id
+peek F:4A87E 1 b60_ix
+peek F:4A87B 1 b60_run
+peek F:4A898 1 b60_md
+peek F:4A7FC 2 b60_hold
+peek F:1A6BC 4 b60_st
+step
+peek F:4A82C 2 b61_bl
+peek F:4A879 1 b61_pc
+peek F:4A7BA 4 b61_tp
+peek F:4A802 2 b61_id
+peek F:4A87E 1 b61_ix
+peek F:4A87B 1 b61_run
+peek F:4A898 1 b61_md
+peek F:4A7FC 2 b61_hold
+peek F:1A6BC 4 b61_st
+step
+peek F:4A82C 2 b62_bl
+peek F:4A879 1 b62_pc
+peek F:4A7BA 4 b62_tp
+peek F:4A802 2 b62_id
+peek F:4A87E 1 b62_ix
+peek F:4A87B 1 b62_run
+peek F:4A898 1 b62_md
+peek F:4A7FC 2 b62_hold
+peek F:1A6BC 4 b62_st
+step
+peek F:4A82C 2 b63_bl
+peek F:4A879 1 b63_pc
+peek F:4A7BA 4 b63_tp
+peek F:4A802 2 b63_id
+peek F:4A87E 1 b63_ix
+peek F:4A87B 1 b63_run
+peek F:4A898 1 b63_md
+peek F:4A7FC 2 b63_hold
+peek F:1A6BC 4 b63_st
+step
+peek F:4A82C 2 b64_bl
+peek F:4A879 1 b64_pc
+peek F:4A7BA 4 b64_tp
+peek F:4A802 2 b64_id
+peek F:4A87E 1 b64_ix
+peek F:4A87B 1 b64_run
+peek F:4A898 1 b64_md
+peek F:4A7FC 2 b64_hold
+peek F:1A6BC 4 b64_st
+step
+peek F:4A82C 2 b65_bl
+peek F:4A879 1 b65_pc
+peek F:4A7BA 4 b65_tp
+peek F:4A802 2 b65_id
+peek F:4A87E 1 b65_ix
+peek F:4A87B 1 b65_run
+peek F:4A898 1 b65_md
+peek F:4A7FC 2 b65_hold
+peek F:1A6BC 4 b65_st
+step
+peek F:4A82C 2 b66_bl
+peek F:4A879 1 b66_pc
+peek F:4A7BA 4 b66_tp
+peek F:4A802 2 b66_id
+peek F:4A87E 1 b66_ix
+peek F:4A87B 1 b66_run
+peek F:4A898 1 b66_md
+peek F:4A7FC 2 b66_hold
+peek F:1A6BC 4 b66_st
+step
+peek F:4A82C 2 b67_bl
+peek F:4A879 1 b67_pc
+peek F:4A7BA 4 b67_tp
+peek F:4A802 2 b67_id
+peek F:4A87E 1 b67_ix
+peek F:4A87B 1 b67_run
+peek F:4A898 1 b67_md
+peek F:4A7FC 2 b67_hold
+peek F:1A6BC 4 b67_st
+step
+peek F:4A82C 2 b68_bl
+peek F:4A879 1 b68_pc
+peek F:4A7BA 4 b68_tp
+peek F:4A802 2 b68_id
+peek F:4A87E 1 b68_ix
+peek F:4A87B 1 b68_run
+peek F:4A898 1 b68_md
+peek F:4A7FC 2 b68_hold
+peek F:1A6BC 4 b68_st
+step
+peek F:4A82C 2 b69_bl
+peek F:4A879 1 b69_pc
+peek F:4A7BA 4 b69_tp
+peek F:4A802 2 b69_id
+peek F:4A87E 1 b69_ix
+peek F:4A87B 1 b69_run
+peek F:4A898 1 b69_md
+peek F:4A7FC 2 b69_hold
+peek F:1A6BC 4 b69_st
+step
+peek F:4A82C 2 b70_bl
+peek F:4A879 1 b70_pc
+peek F:4A7BA 4 b70_tp
+peek F:4A802 2 b70_id
+peek F:4A87E 1 b70_ix
+peek F:4A87B 1 b70_run
+peek F:4A898 1 b70_md
+peek F:4A7FC 2 b70_hold
+peek F:1A6BC 4 b70_st
+step
+peek F:4A82C 2 b71_bl
+peek F:4A879 1 b71_pc
+peek F:4A7BA 4 b71_tp
+peek F:4A802 2 b71_id
+peek F:4A87E 1 b71_ix
+peek F:4A87B 1 b71_run
+peek F:4A898 1 b71_md
+peek F:4A7FC 2 b71_hold
+peek F:1A6BC 4 b71_st
+step
+peek F:4A82C 2 b72_bl
+peek F:4A879 1 b72_pc
+peek F:4A7BA 4 b72_tp
+peek F:4A802 2 b72_id
+peek F:4A87E 1 b72_ix
+peek F:4A87B 1 b72_run
+peek F:4A898 1 b72_md
+peek F:4A7FC 2 b72_hold
+peek F:1A6BC 4 b72_st
+step
+peek F:4A82C 2 b73_bl
+peek F:4A879 1 b73_pc
+peek F:4A7BA 4 b73_tp
+peek F:4A802 2 b73_id
+peek F:4A87E 1 b73_ix
+peek F:4A87B 1 b73_run
+peek F:4A898 1 b73_md
+peek F:4A7FC 2 b73_hold
+peek F:1A6BC 4 b73_st
+step
+peek F:4A82C 2 b74_bl
+peek F:4A879 1 b74_pc
+peek F:4A7BA 4 b74_tp
+peek F:4A802 2 b74_id
+peek F:4A87E 1 b74_ix
+peek F:4A87B 1 b74_run
+peek F:4A898 1 b74_md
+peek F:4A7FC 2 b74_hold
+peek F:1A6BC 4 b74_st
+step
+peek F:4A82C 2 b75_bl
+peek F:4A879 1 b75_pc
+peek F:4A7BA 4 b75_tp
+peek F:4A802 2 b75_id
+peek F:4A87E 1 b75_ix
+peek F:4A87B 1 b75_run
+peek F:4A898 1 b75_md
+peek F:4A7FC 2 b75_hold
+peek F:1A6BC 4 b75_st
+step
+peek F:4A82C 2 b76_bl
+peek F:4A879 1 b76_pc
+peek F:4A7BA 4 b76_tp
+peek F:4A802 2 b76_id
+peek F:4A87E 1 b76_ix
+peek F:4A87B 1 b76_run
+peek F:4A898 1 b76_md
+peek F:4A7FC 2 b76_hold
+peek F:1A6BC 4 b76_st
+step
+peek F:4A82C 2 b77_bl
+peek F:4A879 1 b77_pc
+peek F:4A7BA 4 b77_tp
+peek F:4A802 2 b77_id
+peek F:4A87E 1 b77_ix
+peek F:4A87B 1 b77_run
+peek F:4A898 1 b77_md
+peek F:4A7FC 2 b77_hold
+peek F:1A6BC 4 b77_st
+step
+peek F:4A82C 2 b78_bl
+peek F:4A879 1 b78_pc
+peek F:4A7BA 4 b78_tp
+peek F:4A802 2 b78_id
+peek F:4A87E 1 b78_ix
+peek F:4A87B 1 b78_run
+peek F:4A898 1 b78_md
+peek F:4A7FC 2 b78_hold
+peek F:1A6BC 4 b78_st
+step
+peek F:4A82C 2 b79_bl
+peek F:4A879 1 b79_pc
+peek F:4A7BA 4 b79_tp
+peek F:4A802 2 b79_id
+peek F:4A87E 1 b79_ix
+peek F:4A87B 1 b79_run
+peek F:4A898 1 b79_md
+peek F:4A7FC 2 b79_hold
+peek F:1A6BC 4 b79_st
+step
+peek F:4A82C 2 b80_bl
+peek F:4A879 1 b80_pc
+peek F:4A7BA 4 b80_tp
+peek F:4A802 2 b80_id
+peek F:4A87E 1 b80_ix
+peek F:4A87B 1 b80_run
+peek F:4A898 1 b80_md
+peek F:4A7FC 2 b80_hold
+peek F:1A6BC 4 b80_st
+step
+peek F:4A82C 2 b81_bl
+peek F:4A879 1 b81_pc
+peek F:4A7BA 4 b81_tp
+peek F:4A802 2 b81_id
+peek F:4A87E 1 b81_ix
+peek F:4A87B 1 b81_run
+peek F:4A898 1 b81_md
+peek F:4A7FC 2 b81_hold
+peek F:1A6BC 4 b81_st
+step
+peek F:4A82C 2 b82_bl
+peek F:4A879 1 b82_pc
+peek F:4A7BA 4 b82_tp
+peek F:4A802 2 b82_id
+peek F:4A87E 1 b82_ix
+peek F:4A87B 1 b82_run
+peek F:4A898 1 b82_md
+peek F:4A7FC 2 b82_hold
+peek F:1A6BC 4 b82_st
+step
+peek F:4A82C 2 b83_bl
+peek F:4A879 1 b83_pc
+peek F:4A7BA 4 b83_tp
+peek F:4A802 2 b83_id
+peek F:4A87E 1 b83_ix
+peek F:4A87B 1 b83_run
+peek F:4A898 1 b83_md
+peek F:4A7FC 2 b83_hold
+peek F:1A6BC 4 b83_st
+step
+peek F:4A82C 2 b84_bl
+peek F:4A879 1 b84_pc
+peek F:4A7BA 4 b84_tp
+peek F:4A802 2 b84_id
+peek F:4A87E 1 b84_ix
+peek F:4A87B 1 b84_run
+peek F:4A898 1 b84_md
+peek F:4A7FC 2 b84_hold
+peek F:1A6BC 4 b84_st
+step
+peek F:4A82C 2 b85_bl
+peek F:4A879 1 b85_pc
+peek F:4A7BA 4 b85_tp
+peek F:4A802 2 b85_id
+peek F:4A87E 1 b85_ix
+peek F:4A87B 1 b85_run
+peek F:4A898 1 b85_md
+peek F:4A7FC 2 b85_hold
+peek F:1A6BC 4 b85_st
+step
+peek F:4A82C 2 b86_bl
+peek F:4A879 1 b86_pc
+peek F:4A7BA 4 b86_tp
+peek F:4A802 2 b86_id
+peek F:4A87E 1 b86_ix
+peek F:4A87B 1 b86_run
+peek F:4A898 1 b86_md
+peek F:4A7FC 2 b86_hold
+peek F:1A6BC 4 b86_st
+step
+peek F:4A82C 2 b87_bl
+peek F:4A879 1 b87_pc
+peek F:4A7BA 4 b87_tp
+peek F:4A802 2 b87_id
+peek F:4A87E 1 b87_ix
+peek F:4A87B 1 b87_run
+peek F:4A898 1 b87_md
+peek F:4A7FC 2 b87_hold
+peek F:1A6BC 4 b87_st
+step
+peek F:4A82C 2 b88_bl
+peek F:4A879 1 b88_pc
+peek F:4A7BA 4 b88_tp
+peek F:4A802 2 b88_id
+peek F:4A87E 1 b88_ix
+peek F:4A87B 1 b88_run
+peek F:4A898 1 b88_md
+peek F:4A7FC 2 b88_hold
+peek F:1A6BC 4 b88_st
+step
+peek F:4A82C 2 b89_bl
+peek F:4A879 1 b89_pc
+peek F:4A7BA 4 b89_tp
+peek F:4A802 2 b89_id
+peek F:4A87E 1 b89_ix
+peek F:4A87B 1 b89_run
+peek F:4A898 1 b89_md
+peek F:4A7FC 2 b89_hold
+peek F:1A6BC 4 b89_st
+step
+peek F:4A82C 2 b90_bl
+peek F:4A879 1 b90_pc
+peek F:4A7BA 4 b90_tp
+peek F:4A802 2 b90_id
+peek F:4A87E 1 b90_ix
+peek F:4A87B 1 b90_run
+peek F:4A898 1 b90_md
+peek F:4A7FC 2 b90_hold
+peek F:1A6BC 4 b90_st
+step
+peek F:4A82C 2 b91_bl
+peek F:4A879 1 b91_pc
+peek F:4A7BA 4 b91_tp
+peek F:4A802 2 b91_id
+peek F:4A87E 1 b91_ix
+peek F:4A87B 1 b91_run
+peek F:4A898 1 b91_md
+peek F:4A7FC 2 b91_hold
+peek F:1A6BC 4 b91_st
+step
+peek F:4A82C 2 b92_bl
+peek F:4A879 1 b92_pc
+peek F:4A7BA 4 b92_tp
+peek F:4A802 2 b92_id
+peek F:4A87E 1 b92_ix
+peek F:4A87B 1 b92_run
+peek F:4A898 1 b92_md
+peek F:4A7FC 2 b92_hold
+peek F:1A6BC 4 b92_st
+step
+peek F:4A82C 2 b93_bl
+peek F:4A879 1 b93_pc
+peek F:4A7BA 4 b93_tp
+peek F:4A802 2 b93_id
+peek F:4A87E 1 b93_ix
+peek F:4A87B 1 b93_run
+peek F:4A898 1 b93_md
+peek F:4A7FC 2 b93_hold
+peek F:1A6BC 4 b93_st
+step
+peek F:4A82C 2 b94_bl
+peek F:4A879 1 b94_pc
+peek F:4A7BA 4 b94_tp
+peek F:4A802 2 b94_id
+peek F:4A87E 1 b94_ix
+peek F:4A87B 1 b94_run
+peek F:4A898 1 b94_md
+peek F:4A7FC 2 b94_hold
+peek F:1A6BC 4 b94_st
+step
+peek F:4A82C 2 b95_bl
+peek F:4A879 1 b95_pc
+peek F:4A7BA 4 b95_tp
+peek F:4A802 2 b95_id
+peek F:4A87E 1 b95_ix
+peek F:4A87B 1 b95_run
+peek F:4A898 1 b95_md
+peek F:4A7FC 2 b95_hold
+peek F:1A6BC 4 b95_st
+step
+peek F:4A82C 2 b96_bl
+peek F:4A879 1 b96_pc
+peek F:4A7BA 4 b96_tp
+peek F:4A802 2 b96_id
+peek F:4A87E 1 b96_ix
+peek F:4A87B 1 b96_run
+peek F:4A898 1 b96_md
+peek F:4A7FC 2 b96_hold
+peek F:1A6BC 4 b96_st
+step
+peek F:4A82C 2 b97_bl
+peek F:4A879 1 b97_pc
+peek F:4A7BA 4 b97_tp
+peek F:4A802 2 b97_id
+peek F:4A87E 1 b97_ix
+peek F:4A87B 1 b97_run
+peek F:4A898 1 b97_md
+peek F:4A7FC 2 b97_hold
+peek F:1A6BC 4 b97_st
+step
+peek F:4A82C 2 b98_bl
+peek F:4A879 1 b98_pc
+peek F:4A7BA 4 b98_tp
+peek F:4A802 2 b98_id
+peek F:4A87E 1 b98_ix
+peek F:4A87B 1 b98_run
+peek F:4A898 1 b98_md
+peek F:4A7FC 2 b98_hold
+peek F:1A6BC 4 b98_st
+step
+peek F:4A82C 2 b99_bl
+peek F:4A879 1 b99_pc
+peek F:4A7BA 4 b99_tp
+peek F:4A802 2 b99_id
+peek F:4A87E 1 b99_ix
+peek F:4A87B 1 b99_run
+peek F:4A898 1 b99_md
+peek F:4A7FC 2 b99_hold
+peek F:1A6BC 4 b99_st
+step
+peek F:4A82C 2 b100_bl
+peek F:4A879 1 b100_pc
+peek F:4A7BA 4 b100_tp
+peek F:4A802 2 b100_id
+peek F:4A87E 1 b100_ix
+peek F:4A87B 1 b100_run
+peek F:4A898 1 b100_md
+peek F:4A7FC 2 b100_hold
+peek F:1A6BC 4 b100_st
+step
+peek F:4A82C 2 b101_bl
+peek F:4A879 1 b101_pc
+peek F:4A7BA 4 b101_tp
+peek F:4A802 2 b101_id
+peek F:4A87E 1 b101_ix
+peek F:4A87B 1 b101_run
+peek F:4A898 1 b101_md
+peek F:4A7FC 2 b101_hold
+peek F:1A6BC 4 b101_st
+step
+peek F:4A82C 2 b102_bl
+peek F:4A879 1 b102_pc
+peek F:4A7BA 4 b102_tp
+peek F:4A802 2 b102_id
+peek F:4A87E 1 b102_ix
+peek F:4A87B 1 b102_run
+peek F:4A898 1 b102_md
+peek F:4A7FC 2 b102_hold
+peek F:1A6BC 4 b102_st
+step
+peek F:4A82C 2 b103_bl
+peek F:4A879 1 b103_pc
+peek F:4A7BA 4 b103_tp
+peek F:4A802 2 b103_id
+peek F:4A87E 1 b103_ix
+peek F:4A87B 1 b103_run
+peek F:4A898 1 b103_md
+peek F:4A7FC 2 b103_hold
+peek F:1A6BC 4 b103_st
+step
+peek F:4A82C 2 b104_bl
+peek F:4A879 1 b104_pc
+peek F:4A7BA 4 b104_tp
+peek F:4A802 2 b104_id
+peek F:4A87E 1 b104_ix
+peek F:4A87B 1 b104_run
+peek F:4A898 1 b104_md
+peek F:4A7FC 2 b104_hold
+peek F:1A6BC 4 b104_st
+step
+peek F:4A82C 2 b105_bl
+peek F:4A879 1 b105_pc
+peek F:4A7BA 4 b105_tp
+peek F:4A802 2 b105_id
+peek F:4A87E 1 b105_ix
+peek F:4A87B 1 b105_run
+peek F:4A898 1 b105_md
+peek F:4A7FC 2 b105_hold
+peek F:1A6BC 4 b105_st
+step
+peek F:4A82C 2 b106_bl
+peek F:4A879 1 b106_pc
+peek F:4A7BA 4 b106_tp
+peek F:4A802 2 b106_id
+peek F:4A87E 1 b106_ix
+peek F:4A87B 1 b106_run
+peek F:4A898 1 b106_md
+peek F:4A7FC 2 b106_hold
+peek F:1A6BC 4 b106_st
+step
+peek F:4A82C 2 b107_bl
+peek F:4A879 1 b107_pc
+peek F:4A7BA 4 b107_tp
+peek F:4A802 2 b107_id
+peek F:4A87E 1 b107_ix
+peek F:4A87B 1 b107_run
+peek F:4A898 1 b107_md
+peek F:4A7FC 2 b107_hold
+peek F:1A6BC 4 b107_st
+step
+peek F:4A82C 2 b108_bl
+peek F:4A879 1 b108_pc
+peek F:4A7BA 4 b108_tp
+peek F:4A802 2 b108_id
+peek F:4A87E 1 b108_ix
+peek F:4A87B 1 b108_run
+peek F:4A898 1 b108_md
+peek F:4A7FC 2 b108_hold
+peek F:1A6BC 4 b108_st
+step
+peek F:4A82C 2 b109_bl
+peek F:4A879 1 b109_pc
+peek F:4A7BA 4 b109_tp
+peek F:4A802 2 b109_id
+peek F:4A87E 1 b109_ix
+peek F:4A87B 1 b109_run
+peek F:4A898 1 b109_md
+peek F:4A7FC 2 b109_hold
+peek F:1A6BC 4 b109_st
+step
+peek F:4A82C 2 b110_bl
+peek F:4A879 1 b110_pc
+peek F:4A7BA 4 b110_tp
+peek F:4A802 2 b110_id
+peek F:4A87E 1 b110_ix
+peek F:4A87B 1 b110_run
+peek F:4A898 1 b110_md
+peek F:4A7FC 2 b110_hold
+peek F:1A6BC 4 b110_st
+step
+peek F:4A82C 2 b111_bl
+peek F:4A879 1 b111_pc
+peek F:4A7BA 4 b111_tp
+peek F:4A802 2 b111_id
+peek F:4A87E 1 b111_ix
+peek F:4A87B 1 b111_run
+peek F:4A898 1 b111_md
+peek F:4A7FC 2 b111_hold
+peek F:1A6BC 4 b111_st
+step
+peek F:4A82C 2 b112_bl
+peek F:4A879 1 b112_pc
+peek F:4A7BA 4 b112_tp
+peek F:4A802 2 b112_id
+peek F:4A87E 1 b112_ix
+peek F:4A87B 1 b112_run
+peek F:4A898 1 b112_md
+peek F:4A7FC 2 b112_hold
+peek F:1A6BC 4 b112_st
+step
+peek F:4A82C 2 b113_bl
+peek F:4A879 1 b113_pc
+peek F:4A7BA 4 b113_tp
+peek F:4A802 2 b113_id
+peek F:4A87E 1 b113_ix
+peek F:4A87B 1 b113_run
+peek F:4A898 1 b113_md
+peek F:4A7FC 2 b113_hold
+peek F:1A6BC 4 b113_st
+step
+peek F:4A82C 2 b114_bl
+peek F:4A879 1 b114_pc
+peek F:4A7BA 4 b114_tp
+peek F:4A802 2 b114_id
+peek F:4A87E 1 b114_ix
+peek F:4A87B 1 b114_run
+peek F:4A898 1 b114_md
+peek F:4A7FC 2 b114_hold
+peek F:1A6BC 4 b114_st
+step
+peek F:4A82C 2 b115_bl
+peek F:4A879 1 b115_pc
+peek F:4A7BA 4 b115_tp
+peek F:4A802 2 b115_id
+peek F:4A87E 1 b115_ix
+peek F:4A87B 1 b115_run
+peek F:4A898 1 b115_md
+peek F:4A7FC 2 b115_hold
+peek F:1A6BC 4 b115_st
+step
+peek F:4A82C 2 b116_bl
+peek F:4A879 1 b116_pc
+peek F:4A7BA 4 b116_tp
+peek F:4A802 2 b116_id
+peek F:4A87E 1 b116_ix
+peek F:4A87B 1 b116_run
+peek F:4A898 1 b116_md
+peek F:4A7FC 2 b116_hold
+peek F:1A6BC 4 b116_st
+step
+peek F:4A82C 2 b117_bl
+peek F:4A879 1 b117_pc
+peek F:4A7BA 4 b117_tp
+peek F:4A802 2 b117_id
+peek F:4A87E 1 b117_ix
+peek F:4A87B 1 b117_run
+peek F:4A898 1 b117_md
+peek F:4A7FC 2 b117_hold
+peek F:1A6BC 4 b117_st
+step
+peek F:4A82C 2 b118_bl
+peek F:4A879 1 b118_pc
+peek F:4A7BA 4 b118_tp
+peek F:4A802 2 b118_id
+peek F:4A87E 1 b118_ix
+peek F:4A87B 1 b118_run
+peek F:4A898 1 b118_md
+peek F:4A7FC 2 b118_hold
+peek F:1A6BC 4 b118_st
+step
+peek F:4A82C 2 b119_bl
+peek F:4A879 1 b119_pc
+peek F:4A7BA 4 b119_tp
+peek F:4A802 2 b119_id
+peek F:4A87E 1 b119_ix
+peek F:4A87B 1 b119_run
+peek F:4A898 1 b119_md
+peek F:4A7FC 2 b119_hold
+peek F:1A6BC 4 b119_st
+step
+peek F:4A82C 2 b120_bl
+peek F:4A879 1 b120_pc
+peek F:4A7BA 4 b120_tp
+peek F:4A802 2 b120_id
+peek F:4A87E 1 b120_ix
+peek F:4A87B 1 b120_run
+peek F:4A898 1 b120_md
+peek F:4A7FC 2 b120_hold
+peek F:1A6BC 4 b120_st
+step
+peek F:4A82C 2 b121_bl
+peek F:4A879 1 b121_pc
+peek F:4A7BA 4 b121_tp
+peek F:4A802 2 b121_id
+peek F:4A87E 1 b121_ix
+peek F:4A87B 1 b121_run
+peek F:4A898 1 b121_md
+peek F:4A7FC 2 b121_hold
+peek F:1A6BC 4 b121_st
+step
+peek F:4A82C 2 b122_bl
+peek F:4A879 1 b122_pc
+peek F:4A7BA 4 b122_tp
+peek F:4A802 2 b122_id
+peek F:4A87E 1 b122_ix
+peek F:4A87B 1 b122_run
+peek F:4A898 1 b122_md
+peek F:4A7FC 2 b122_hold
+peek F:1A6BC 4 b122_st
+step
+peek F:4A82C 2 b123_bl
+peek F:4A879 1 b123_pc
+peek F:4A7BA 4 b123_tp
+peek F:4A802 2 b123_id
+peek F:4A87E 1 b123_ix
+peek F:4A87B 1 b123_run
+peek F:4A898 1 b123_md
+peek F:4A7FC 2 b123_hold
+peek F:1A6BC 4 b123_st
+step
+peek F:4A82C 2 b124_bl
+peek F:4A879 1 b124_pc
+peek F:4A7BA 4 b124_tp
+peek F:4A802 2 b124_id
+peek F:4A87E 1 b124_ix
+peek F:4A87B 1 b124_run
+peek F:4A898 1 b124_md
+peek F:4A7FC 2 b124_hold
+peek F:1A6BC 4 b124_st
+step
+peek F:4A82C 2 b125_bl
+peek F:4A879 1 b125_pc
+peek F:4A7BA 4 b125_tp
+peek F:4A802 2 b125_id
+peek F:4A87E 1 b125_ix
+peek F:4A87B 1 b125_run
+peek F:4A898 1 b125_md
+peek F:4A7FC 2 b125_hold
+peek F:1A6BC 4 b125_st
+step
+peek F:4A82C 2 b126_bl
+peek F:4A879 1 b126_pc
+peek F:4A7BA 4 b126_tp
+peek F:4A802 2 b126_id
+peek F:4A87E 1 b126_ix
+peek F:4A87B 1 b126_run
+peek F:4A898 1 b126_md
+peek F:4A7FC 2 b126_hold
+peek F:1A6BC 4 b126_st
+step
+peek F:4A82C 2 b127_bl
+peek F:4A879 1 b127_pc
+peek F:4A7BA 4 b127_tp
+peek F:4A802 2 b127_id
+peek F:4A87E 1 b127_ix
+peek F:4A87B 1 b127_run
+peek F:4A898 1 b127_md
+peek F:4A7FC 2 b127_hold
+peek F:1A6BC 4 b127_st
+step
+peek F:4A82C 2 b128_bl
+peek F:4A879 1 b128_pc
+peek F:4A7BA 4 b128_tp
+peek F:4A802 2 b128_id
+peek F:4A87E 1 b128_ix
+peek F:4A87B 1 b128_run
+peek F:4A898 1 b128_md
+peek F:4A7FC 2 b128_hold
+peek F:1A6BC 4 b128_st
+step
+peek F:4A82C 2 b129_bl
+peek F:4A879 1 b129_pc
+peek F:4A7BA 4 b129_tp
+peek F:4A802 2 b129_id
+peek F:4A87E 1 b129_ix
+peek F:4A87B 1 b129_run
+peek F:4A898 1 b129_md
+peek F:4A7FC 2 b129_hold
+peek F:1A6BC 4 b129_st
+step
+peek F:4A82C 2 b130_bl
+peek F:4A879 1 b130_pc
+peek F:4A7BA 4 b130_tp
+peek F:4A802 2 b130_id
+peek F:4A87E 1 b130_ix
+peek F:4A87B 1 b130_run
+peek F:4A898 1 b130_md
+peek F:4A7FC 2 b130_hold
+peek F:1A6BC 4 b130_st
+step
+peek F:4A82C 2 b131_bl
+peek F:4A879 1 b131_pc
+peek F:4A7BA 4 b131_tp
+peek F:4A802 2 b131_id
+peek F:4A87E 1 b131_ix
+peek F:4A87B 1 b131_run
+peek F:4A898 1 b131_md
+peek F:4A7FC 2 b131_hold
+peek F:1A6BC 4 b131_st
+step
+peek F:4A82C 2 b132_bl
+peek F:4A879 1 b132_pc
+peek F:4A7BA 4 b132_tp
+peek F:4A802 2 b132_id
+peek F:4A87E 1 b132_ix
+peek F:4A87B 1 b132_run
+peek F:4A898 1 b132_md
+peek F:4A7FC 2 b132_hold
+peek F:1A6BC 4 b132_st
+step
+peek F:4A82C 2 b133_bl
+peek F:4A879 1 b133_pc
+peek F:4A7BA 4 b133_tp
+peek F:4A802 2 b133_id
+peek F:4A87E 1 b133_ix
+peek F:4A87B 1 b133_run
+peek F:4A898 1 b133_md
+peek F:4A7FC 2 b133_hold
+peek F:1A6BC 4 b133_st
+step
+peek F:4A82C 2 b134_bl
+peek F:4A879 1 b134_pc
+peek F:4A7BA 4 b134_tp
+peek F:4A802 2 b134_id
+peek F:4A87E 1 b134_ix
+peek F:4A87B 1 b134_run
+peek F:4A898 1 b134_md
+peek F:4A7FC 2 b134_hold
+peek F:1A6BC 4 b134_st
+step
+peek F:4A82C 2 b135_bl
+peek F:4A879 1 b135_pc
+peek F:4A7BA 4 b135_tp
+peek F:4A802 2 b135_id
+peek F:4A87E 1 b135_ix
+peek F:4A87B 1 b135_run
+peek F:4A898 1 b135_md
+peek F:4A7FC 2 b135_hold
+peek F:1A6BC 4 b135_st
+step
+peek F:4A82C 2 b136_bl
+peek F:4A879 1 b136_pc
+peek F:4A7BA 4 b136_tp
+peek F:4A802 2 b136_id
+peek F:4A87E 1 b136_ix
+peek F:4A87B 1 b136_run
+peek F:4A898 1 b136_md
+peek F:4A7FC 2 b136_hold
+peek F:1A6BC 4 b136_st
+step
+peek F:4A82C 2 b137_bl
+peek F:4A879 1 b137_pc
+peek F:4A7BA 4 b137_tp
+peek F:4A802 2 b137_id
+peek F:4A87E 1 b137_ix
+peek F:4A87B 1 b137_run
+peek F:4A898 1 b137_md
+peek F:4A7FC 2 b137_hold
+peek F:1A6BC 4 b137_st
+step
+peek F:4A82C 2 b138_bl
+peek F:4A879 1 b138_pc
+peek F:4A7BA 4 b138_tp
+peek F:4A802 2 b138_id
+peek F:4A87E 1 b138_ix
+peek F:4A87B 1 b138_run
+peek F:4A898 1 b138_md
+peek F:4A7FC 2 b138_hold
+peek F:1A6BC 4 b138_st
+step
+peek F:4A82C 2 b139_bl
+peek F:4A879 1 b139_pc
+peek F:4A7BA 4 b139_tp
+peek F:4A802 2 b139_id
+peek F:4A87E 1 b139_ix
+peek F:4A87B 1 b139_run
+peek F:4A898 1 b139_md
+peek F:4A7FC 2 b139_hold
+peek F:1A6BC 4 b139_st
+step
+peek F:4A82C 2 b140_bl
+peek F:4A879 1 b140_pc
+peek F:4A7BA 4 b140_tp
+peek F:4A802 2 b140_id
+peek F:4A87E 1 b140_ix
+peek F:4A87B 1 b140_run
+peek F:4A898 1 b140_md
+peek F:4A7FC 2 b140_hold
+peek F:1A6BC 4 b140_st
+step
+peek F:4A82C 2 b141_bl
+peek F:4A879 1 b141_pc
+peek F:4A7BA 4 b141_tp
+peek F:4A802 2 b141_id
+peek F:4A87E 1 b141_ix
+peek F:4A87B 1 b141_run
+peek F:4A898 1 b141_md
+peek F:4A7FC 2 b141_hold
+peek F:1A6BC 4 b141_st
+step
+peek F:4A82C 2 b142_bl
+peek F:4A879 1 b142_pc
+peek F:4A7BA 4 b142_tp
+peek F:4A802 2 b142_id
+peek F:4A87E 1 b142_ix
+peek F:4A87B 1 b142_run
+peek F:4A898 1 b142_md
+peek F:4A7FC 2 b142_hold
+peek F:1A6BC 4 b142_st
+step
+peek F:4A82C 2 b143_bl
+peek F:4A879 1 b143_pc
+peek F:4A7BA 4 b143_tp
+peek F:4A802 2 b143_id
+peek F:4A87E 1 b143_ix
+peek F:4A87B 1 b143_run
+peek F:4A898 1 b143_md
+peek F:4A7FC 2 b143_hold
+peek F:1A6BC 4 b143_st
+step
+peek F:4A82C 2 b144_bl
+peek F:4A879 1 b144_pc
+peek F:4A7BA 4 b144_tp
+peek F:4A802 2 b144_id
+peek F:4A87E 1 b144_ix
+peek F:4A87B 1 b144_run
+peek F:4A898 1 b144_md
+peek F:4A7FC 2 b144_hold
+peek F:1A6BC 4 b144_st
+step
+peek F:4A82C 2 b145_bl
+peek F:4A879 1 b145_pc
+peek F:4A7BA 4 b145_tp
+peek F:4A802 2 b145_id
+peek F:4A87E 1 b145_ix
+peek F:4A87B 1 b145_run
+peek F:4A898 1 b145_md
+peek F:4A7FC 2 b145_hold
+peek F:1A6BC 4 b145_st
+step
+peek F:4A82C 2 b146_bl
+peek F:4A879 1 b146_pc
+peek F:4A7BA 4 b146_tp
+peek F:4A802 2 b146_id
+peek F:4A87E 1 b146_ix
+peek F:4A87B 1 b146_run
+peek F:4A898 1 b146_md
+peek F:4A7FC 2 b146_hold
+peek F:1A6BC 4 b146_st
+step
+peek F:4A82C 2 b147_bl
+peek F:4A879 1 b147_pc
+peek F:4A7BA 4 b147_tp
+peek F:4A802 2 b147_id
+peek F:4A87E 1 b147_ix
+peek F:4A87B 1 b147_run
+peek F:4A898 1 b147_md
+peek F:4A7FC 2 b147_hold
+peek F:1A6BC 4 b147_st
+step
+peek F:4A82C 2 b148_bl
+peek F:4A879 1 b148_pc
+peek F:4A7BA 4 b148_tp
+peek F:4A802 2 b148_id
+peek F:4A87E 1 b148_ix
+peek F:4A87B 1 b148_run
+peek F:4A898 1 b148_md
+peek F:4A7FC 2 b148_hold
+peek F:1A6BC 4 b148_st
+step
+peek F:4A82C 2 b149_bl
+peek F:4A879 1 b149_pc
+peek F:4A7BA 4 b149_tp
+peek F:4A802 2 b149_id
+peek F:4A87E 1 b149_ix
+peek F:4A87B 1 b149_run
+peek F:4A898 1 b149_md
+peek F:4A7FC 2 b149_hold
+peek F:1A6BC 4 b149_st
+step
+peek F:4A82C 2 b150_bl
+peek F:4A879 1 b150_pc
+peek F:4A7BA 4 b150_tp
+peek F:4A802 2 b150_id
+peek F:4A87E 1 b150_ix
+peek F:4A87B 1 b150_run
+peek F:4A898 1 b150_md
+peek F:4A7FC 2 b150_hold
+peek F:1A6BC 4 b150_st
+step
+peek F:4A82C 2 b151_bl
+peek F:4A879 1 b151_pc
+peek F:4A7BA 4 b151_tp
+peek F:4A802 2 b151_id
+peek F:4A87E 1 b151_ix
+peek F:4A87B 1 b151_run
+peek F:4A898 1 b151_md
+peek F:4A7FC 2 b151_hold
+peek F:1A6BC 4 b151_st
+step
+peek F:4A82C 2 b152_bl
+peek F:4A879 1 b152_pc
+peek F:4A7BA 4 b152_tp
+peek F:4A802 2 b152_id
+peek F:4A87E 1 b152_ix
+peek F:4A87B 1 b152_run
+peek F:4A898 1 b152_md
+peek F:4A7FC 2 b152_hold
+peek F:1A6BC 4 b152_st
+step
+peek F:4A82C 2 b153_bl
+peek F:4A879 1 b153_pc
+peek F:4A7BA 4 b153_tp
+peek F:4A802 2 b153_id
+peek F:4A87E 1 b153_ix
+peek F:4A87B 1 b153_run
+peek F:4A898 1 b153_md
+peek F:4A7FC 2 b153_hold
+peek F:1A6BC 4 b153_st
+step
+peek F:4A82C 2 b154_bl
+peek F:4A879 1 b154_pc
+peek F:4A7BA 4 b154_tp
+peek F:4A802 2 b154_id
+peek F:4A87E 1 b154_ix
+peek F:4A87B 1 b154_run
+peek F:4A898 1 b154_md
+peek F:4A7FC 2 b154_hold
+peek F:1A6BC 4 b154_st
+step
+peek F:4A82C 2 b155_bl
+peek F:4A879 1 b155_pc
+peek F:4A7BA 4 b155_tp
+peek F:4A802 2 b155_id
+peek F:4A87E 1 b155_ix
+peek F:4A87B 1 b155_run
+peek F:4A898 1 b155_md
+peek F:4A7FC 2 b155_hold
+peek F:1A6BC 4 b155_st
+step
+peek F:4A82C 2 b156_bl
+peek F:4A879 1 b156_pc
+peek F:4A7BA 4 b156_tp
+peek F:4A802 2 b156_id
+peek F:4A87E 1 b156_ix
+peek F:4A87B 1 b156_run
+peek F:4A898 1 b156_md
+peek F:4A7FC 2 b156_hold
+peek F:1A6BC 4 b156_st
+step
+peek F:4A82C 2 b157_bl
+peek F:4A879 1 b157_pc
+peek F:4A7BA 4 b157_tp
+peek F:4A802 2 b157_id
+peek F:4A87E 1 b157_ix
+peek F:4A87B 1 b157_run
+peek F:4A898 1 b157_md
+peek F:4A7FC 2 b157_hold
+peek F:1A6BC 4 b157_st
+step
+peek F:4A82C 2 b158_bl
+peek F:4A879 1 b158_pc
+peek F:4A7BA 4 b158_tp
+peek F:4A802 2 b158_id
+peek F:4A87E 1 b158_ix
+peek F:4A87B 1 b158_run
+peek F:4A898 1 b158_md
+peek F:4A7FC 2 b158_hold
+peek F:1A6BC 4 b158_st
+step
+peek F:4A82C 2 b159_bl
+peek F:4A879 1 b159_pc
+peek F:4A7BA 4 b159_tp
+peek F:4A802 2 b159_id
+peek F:4A87E 1 b159_ix
+peek F:4A87B 1 b159_run
+peek F:4A898 1 b159_md
+peek F:4A7FC 2 b159_hold
+peek F:1A6BC 4 b159_st
+step
+peek F:4A82C 2 b160_bl
+peek F:4A879 1 b160_pc
+peek F:4A7BA 4 b160_tp
+peek F:4A802 2 b160_id
+peek F:4A87E 1 b160_ix
+peek F:4A87B 1 b160_run
+peek F:4A898 1 b160_md
+peek F:4A7FC 2 b160_hold
+peek F:1A6BC 4 b160_st
+step
+peek F:4A82C 2 b161_bl
+peek F:4A879 1 b161_pc
+peek F:4A7BA 4 b161_tp
+peek F:4A802 2 b161_id
+peek F:4A87E 1 b161_ix
+peek F:4A87B 1 b161_run
+peek F:4A898 1 b161_md
+peek F:4A7FC 2 b161_hold
+peek F:1A6BC 4 b161_st
+step
+peek F:4A82C 2 b162_bl
+peek F:4A879 1 b162_pc
+peek F:4A7BA 4 b162_tp
+peek F:4A802 2 b162_id
+peek F:4A87E 1 b162_ix
+peek F:4A87B 1 b162_run
+peek F:4A898 1 b162_md
+peek F:4A7FC 2 b162_hold
+peek F:1A6BC 4 b162_st
+step
+peek F:4A82C 2 b163_bl
+peek F:4A879 1 b163_pc
+peek F:4A7BA 4 b163_tp
+peek F:4A802 2 b163_id
+peek F:4A87E 1 b163_ix
+peek F:4A87B 1 b163_run
+peek F:4A898 1 b163_md
+peek F:4A7FC 2 b163_hold
+peek F:1A6BC 4 b163_st
+step
+peek F:4A82C 2 b164_bl
+peek F:4A879 1 b164_pc
+peek F:4A7BA 4 b164_tp
+peek F:4A802 2 b164_id
+peek F:4A87E 1 b164_ix
+peek F:4A87B 1 b164_run
+peek F:4A898 1 b164_md
+peek F:4A7FC 2 b164_hold
+peek F:1A6BC 4 b164_st
+step
+peek F:4A82C 2 b165_bl
+peek F:4A879 1 b165_pc
+peek F:4A7BA 4 b165_tp
+peek F:4A802 2 b165_id
+peek F:4A87E 1 b165_ix
+peek F:4A87B 1 b165_run
+peek F:4A898 1 b165_md
+peek F:4A7FC 2 b165_hold
+peek F:1A6BC 4 b165_st
+step
+peek F:4A82C 2 b166_bl
+peek F:4A879 1 b166_pc
+peek F:4A7BA 4 b166_tp
+peek F:4A802 2 b166_id
+peek F:4A87E 1 b166_ix
+peek F:4A87B 1 b166_run
+peek F:4A898 1 b166_md
+peek F:4A7FC 2 b166_hold
+peek F:1A6BC 4 b166_st
+step
+peek F:4A82C 2 b167_bl
+peek F:4A879 1 b167_pc
+peek F:4A7BA 4 b167_tp
+peek F:4A802 2 b167_id
+peek F:4A87E 1 b167_ix
+peek F:4A87B 1 b167_run
+peek F:4A898 1 b167_md
+peek F:4A7FC 2 b167_hold
+peek F:1A6BC 4 b167_st
+step
+peek F:4A82C 2 b168_bl
+peek F:4A879 1 b168_pc
+peek F:4A7BA 4 b168_tp
+peek F:4A802 2 b168_id
+peek F:4A87E 1 b168_ix
+peek F:4A87B 1 b168_run
+peek F:4A898 1 b168_md
+peek F:4A7FC 2 b168_hold
+peek F:1A6BC 4 b168_st
+step
+peek F:4A82C 2 b169_bl
+peek F:4A879 1 b169_pc
+peek F:4A7BA 4 b169_tp
+peek F:4A802 2 b169_id
+peek F:4A87E 1 b169_ix
+peek F:4A87B 1 b169_run
+peek F:4A898 1 b169_md
+peek F:4A7FC 2 b169_hold
+peek F:1A6BC 4 b169_st
+step
+peek F:4A82C 2 b170_bl
+peek F:4A879 1 b170_pc
+peek F:4A7BA 4 b170_tp
+peek F:4A802 2 b170_id
+peek F:4A87E 1 b170_ix
+peek F:4A87B 1 b170_run
+peek F:4A898 1 b170_md
+peek F:4A7FC 2 b170_hold
+peek F:1A6BC 4 b170_st
+step
+peek F:4A82C 2 b171_bl
+peek F:4A879 1 b171_pc
+peek F:4A7BA 4 b171_tp
+peek F:4A802 2 b171_id
+peek F:4A87E 1 b171_ix
+peek F:4A87B 1 b171_run
+peek F:4A898 1 b171_md
+peek F:4A7FC 2 b171_hold
+peek F:1A6BC 4 b171_st
+step
+peek F:4A82C 2 b172_bl
+peek F:4A879 1 b172_pc
+peek F:4A7BA 4 b172_tp
+peek F:4A802 2 b172_id
+peek F:4A87E 1 b172_ix
+peek F:4A87B 1 b172_run
+peek F:4A898 1 b172_md
+peek F:4A7FC 2 b172_hold
+peek F:1A6BC 4 b172_st
+step
+peek F:4A82C 2 b173_bl
+peek F:4A879 1 b173_pc
+peek F:4A7BA 4 b173_tp
+peek F:4A802 2 b173_id
+peek F:4A87E 1 b173_ix
+peek F:4A87B 1 b173_run
+peek F:4A898 1 b173_md
+peek F:4A7FC 2 b173_hold
+peek F:1A6BC 4 b173_st
+step
+peek F:4A82C 2 b174_bl
+peek F:4A879 1 b174_pc
+peek F:4A7BA 4 b174_tp
+peek F:4A802 2 b174_id
+peek F:4A87E 1 b174_ix
+peek F:4A87B 1 b174_run
+peek F:4A898 1 b174_md
+peek F:4A7FC 2 b174_hold
+peek F:1A6BC 4 b174_st
+step
+peek F:4A82C 2 b175_bl
+peek F:4A879 1 b175_pc
+peek F:4A7BA 4 b175_tp
+peek F:4A802 2 b175_id
+peek F:4A87E 1 b175_ix
+peek F:4A87B 1 b175_run
+peek F:4A898 1 b175_md
+peek F:4A7FC 2 b175_hold
+peek F:1A6BC 4 b175_st
+step
+peek F:4A82C 2 b176_bl
+peek F:4A879 1 b176_pc
+peek F:4A7BA 4 b176_tp
+peek F:4A802 2 b176_id
+peek F:4A87E 1 b176_ix
+peek F:4A87B 1 b176_run
+peek F:4A898 1 b176_md
+peek F:4A7FC 2 b176_hold
+peek F:1A6BC 4 b176_st
+step
+peek F:4A82C 2 b177_bl
+peek F:4A879 1 b177_pc
+peek F:4A7BA 4 b177_tp
+peek F:4A802 2 b177_id
+peek F:4A87E 1 b177_ix
+peek F:4A87B 1 b177_run
+peek F:4A898 1 b177_md
+peek F:4A7FC 2 b177_hold
+peek F:1A6BC 4 b177_st
+step
+peek F:4A82C 2 b178_bl
+peek F:4A879 1 b178_pc
+peek F:4A7BA 4 b178_tp
+peek F:4A802 2 b178_id
+peek F:4A87E 1 b178_ix
+peek F:4A87B 1 b178_run
+peek F:4A898 1 b178_md
+peek F:4A7FC 2 b178_hold
+peek F:1A6BC 4 b178_st
+step
+peek F:4A82C 2 b179_bl
+peek F:4A879 1 b179_pc
+peek F:4A7BA 4 b179_tp
+peek F:4A802 2 b179_id
+peek F:4A87E 1 b179_ix
+peek F:4A87B 1 b179_run
+peek F:4A898 1 b179_md
+peek F:4A7FC 2 b179_hold
+peek F:1A6BC 4 b179_st
+step
+peek F:4A82C 2 b180_bl
+peek F:4A879 1 b180_pc
+peek F:4A7BA 4 b180_tp
+peek F:4A802 2 b180_id
+peek F:4A87E 1 b180_ix
+peek F:4A87B 1 b180_run
+peek F:4A898 1 b180_md
+peek F:4A7FC 2 b180_hold
+peek F:1A6BC 4 b180_st
+step
+peek F:4A82C 2 b181_bl
+peek F:4A879 1 b181_pc
+peek F:4A7BA 4 b181_tp
+peek F:4A802 2 b181_id
+peek F:4A87E 1 b181_ix
+peek F:4A87B 1 b181_run
+peek F:4A898 1 b181_md
+peek F:4A7FC 2 b181_hold
+peek F:1A6BC 4 b181_st
+step
+peek F:4A82C 2 b182_bl
+peek F:4A879 1 b182_pc
+peek F:4A7BA 4 b182_tp
+peek F:4A802 2 b182_id
+peek F:4A87E 1 b182_ix
+peek F:4A87B 1 b182_run
+peek F:4A898 1 b182_md
+peek F:4A7FC 2 b182_hold
+peek F:1A6BC 4 b182_st
+step
+peek F:4A82C 2 b183_bl
+peek F:4A879 1 b183_pc
+peek F:4A7BA 4 b183_tp
+peek F:4A802 2 b183_id
+peek F:4A87E 1 b183_ix
+peek F:4A87B 1 b183_run
+peek F:4A898 1 b183_md
+peek F:4A7FC 2 b183_hold
+peek F:1A6BC 4 b183_st
+step
+peek F:4A82C 2 b184_bl
+peek F:4A879 1 b184_pc
+peek F:4A7BA 4 b184_tp
+peek F:4A802 2 b184_id
+peek F:4A87E 1 b184_ix
+peek F:4A87B 1 b184_run
+peek F:4A898 1 b184_md
+peek F:4A7FC 2 b184_hold
+peek F:1A6BC 4 b184_st
+step
+peek F:4A82C 2 b185_bl
+peek F:4A879 1 b185_pc
+peek F:4A7BA 4 b185_tp
+peek F:4A802 2 b185_id
+peek F:4A87E 1 b185_ix
+peek F:4A87B 1 b185_run
+peek F:4A898 1 b185_md
+peek F:4A7FC 2 b185_hold
+peek F:1A6BC 4 b185_st
+step
+peek F:4A82C 2 b186_bl
+peek F:4A879 1 b186_pc
+peek F:4A7BA 4 b186_tp
+peek F:4A802 2 b186_id
+peek F:4A87E 1 b186_ix
+peek F:4A87B 1 b186_run
+peek F:4A898 1 b186_md
+peek F:4A7FC 2 b186_hold
+peek F:1A6BC 4 b186_st
+step
+peek F:4A82C 2 b187_bl
+peek F:4A879 1 b187_pc
+peek F:4A7BA 4 b187_tp
+peek F:4A802 2 b187_id
+peek F:4A87E 1 b187_ix
+peek F:4A87B 1 b187_run
+peek F:4A898 1 b187_md
+peek F:4A7FC 2 b187_hold
+peek F:1A6BC 4 b187_st
+step
+peek F:4A82C 2 b188_bl
+peek F:4A879 1 b188_pc
+peek F:4A7BA 4 b188_tp
+peek F:4A802 2 b188_id
+peek F:4A87E 1 b188_ix
+peek F:4A87B 1 b188_run
+peek F:4A898 1 b188_md
+peek F:4A7FC 2 b188_hold
+peek F:1A6BC 4 b188_st
+step
+peek F:4A82C 2 b189_bl
+peek F:4A879 1 b189_pc
+peek F:4A7BA 4 b189_tp
+peek F:4A802 2 b189_id
+peek F:4A87E 1 b189_ix
+peek F:4A87B 1 b189_run
+peek F:4A898 1 b189_md
+peek F:4A7FC 2 b189_hold
+peek F:1A6BC 4 b189_st
+step
+peek F:4A82C 2 b190_bl
+peek F:4A879 1 b190_pc
+peek F:4A7BA 4 b190_tp
+peek F:4A802 2 b190_id
+peek F:4A87E 1 b190_ix
+peek F:4A87B 1 b190_run
+peek F:4A898 1 b190_md
+peek F:4A7FC 2 b190_hold
+peek F:1A6BC 4 b190_st
+step
+peek F:4A82C 2 b191_bl
+peek F:4A879 1 b191_pc
+peek F:4A7BA 4 b191_tp
+peek F:4A802 2 b191_id
+peek F:4A87E 1 b191_ix
+peek F:4A87B 1 b191_run
+peek F:4A898 1 b191_md
+peek F:4A7FC 2 b191_hold
+peek F:1A6BC 4 b191_st
+step
+peek F:4A82C 2 b192_bl
+peek F:4A879 1 b192_pc
+peek F:4A7BA 4 b192_tp
+peek F:4A802 2 b192_id
+peek F:4A87E 1 b192_ix
+peek F:4A87B 1 b192_run
+peek F:4A898 1 b192_md
+peek F:4A7FC 2 b192_hold
+peek F:1A6BC 4 b192_st
+step
+peek F:4A82C 2 b193_bl
+peek F:4A879 1 b193_pc
+peek F:4A7BA 4 b193_tp
+peek F:4A802 2 b193_id
+peek F:4A87E 1 b193_ix
+peek F:4A87B 1 b193_run
+peek F:4A898 1 b193_md
+peek F:4A7FC 2 b193_hold
+peek F:1A6BC 4 b193_st
+step
+peek F:4A82C 2 b194_bl
+peek F:4A879 1 b194_pc
+peek F:4A7BA 4 b194_tp
+peek F:4A802 2 b194_id
+peek F:4A87E 1 b194_ix
+peek F:4A87B 1 b194_run
+peek F:4A898 1 b194_md
+peek F:4A7FC 2 b194_hold
+peek F:1A6BC 4 b194_st
+step
+peek F:4A82C 2 b195_bl
+peek F:4A879 1 b195_pc
+peek F:4A7BA 4 b195_tp
+peek F:4A802 2 b195_id
+peek F:4A87E 1 b195_ix
+peek F:4A87B 1 b195_run
+peek F:4A898 1 b195_md
+peek F:4A7FC 2 b195_hold
+peek F:1A6BC 4 b195_st
+step
+peek F:4A82C 2 b196_bl
+peek F:4A879 1 b196_pc
+peek F:4A7BA 4 b196_tp
+peek F:4A802 2 b196_id
+peek F:4A87E 1 b196_ix
+peek F:4A87B 1 b196_run
+peek F:4A898 1 b196_md
+peek F:4A7FC 2 b196_hold
+peek F:1A6BC 4 b196_st
+step
+peek F:4A82C 2 b197_bl
+peek F:4A879 1 b197_pc
+peek F:4A7BA 4 b197_tp
+peek F:4A802 2 b197_id
+peek F:4A87E 1 b197_ix
+peek F:4A87B 1 b197_run
+peek F:4A898 1 b197_md
+peek F:4A7FC 2 b197_hold
+peek F:1A6BC 4 b197_st
+step
+peek F:4A82C 2 b198_bl
+peek F:4A879 1 b198_pc
+peek F:4A7BA 4 b198_tp
+peek F:4A802 2 b198_id
+peek F:4A87E 1 b198_ix
+peek F:4A87B 1 b198_run
+peek F:4A898 1 b198_md
+peek F:4A7FC 2 b198_hold
+peek F:1A6BC 4 b198_st
+step
+peek F:4A82C 2 b199_bl
+peek F:4A879 1 b199_pc
+peek F:4A7BA 4 b199_tp
+peek F:4A802 2 b199_id
+peek F:4A87E 1 b199_ix
+peek F:4A87B 1 b199_run
+peek F:4A898 1 b199_md
+peek F:4A7FC 2 b199_hold
+peek F:1A6BC 4 b199_st
+step
+peek F:4A82C 2 b200_bl
+peek F:4A879 1 b200_pc
+peek F:4A7BA 4 b200_tp
+peek F:4A802 2 b200_id
+peek F:4A87E 1 b200_ix
+peek F:4A87B 1 b200_run
+peek F:4A898 1 b200_md
+peek F:4A7FC 2 b200_hold
+peek F:1A6BC 4 b200_st
+step
+peek F:4A82C 2 b201_bl
+peek F:4A879 1 b201_pc
+peek F:4A7BA 4 b201_tp
+peek F:4A802 2 b201_id
+peek F:4A87E 1 b201_ix
+peek F:4A87B 1 b201_run
+peek F:4A898 1 b201_md
+peek F:4A7FC 2 b201_hold
+peek F:1A6BC 4 b201_st
+step
+peek F:4A82C 2 b202_bl
+peek F:4A879 1 b202_pc
+peek F:4A7BA 4 b202_tp
+peek F:4A802 2 b202_id
+peek F:4A87E 1 b202_ix
+peek F:4A87B 1 b202_run
+peek F:4A898 1 b202_md
+peek F:4A7FC 2 b202_hold
+peek F:1A6BC 4 b202_st
+step
+peek F:4A82C 2 b203_bl
+peek F:4A879 1 b203_pc
+peek F:4A7BA 4 b203_tp
+peek F:4A802 2 b203_id
+peek F:4A87E 1 b203_ix
+peek F:4A87B 1 b203_run
+peek F:4A898 1 b203_md
+peek F:4A7FC 2 b203_hold
+peek F:1A6BC 4 b203_st
+step
+peek F:4A82C 2 b204_bl
+peek F:4A879 1 b204_pc
+peek F:4A7BA 4 b204_tp
+peek F:4A802 2 b204_id
+peek F:4A87E 1 b204_ix
+peek F:4A87B 1 b204_run
+peek F:4A898 1 b204_md
+peek F:4A7FC 2 b204_hold
+peek F:1A6BC 4 b204_st
+step
+peek F:4A82C 2 b205_bl
+peek F:4A879 1 b205_pc
+peek F:4A7BA 4 b205_tp
+peek F:4A802 2 b205_id
+peek F:4A87E 1 b205_ix
+peek F:4A87B 1 b205_run
+peek F:4A898 1 b205_md
+peek F:4A7FC 2 b205_hold
+peek F:1A6BC 4 b205_st
+step
+peek F:4A82C 2 b206_bl
+peek F:4A879 1 b206_pc
+peek F:4A7BA 4 b206_tp
+peek F:4A802 2 b206_id
+peek F:4A87E 1 b206_ix
+peek F:4A87B 1 b206_run
+peek F:4A898 1 b206_md
+peek F:4A7FC 2 b206_hold
+peek F:1A6BC 4 b206_st
+step
+peek F:4A82C 2 b207_bl
+peek F:4A879 1 b207_pc
+peek F:4A7BA 4 b207_tp
+peek F:4A802 2 b207_id
+peek F:4A87E 1 b207_ix
+peek F:4A87B 1 b207_run
+peek F:4A898 1 b207_md
+peek F:4A7FC 2 b207_hold
+peek F:1A6BC 4 b207_st
+step
+peek F:4A82C 2 b208_bl
+peek F:4A879 1 b208_pc
+peek F:4A7BA 4 b208_tp
+peek F:4A802 2 b208_id
+peek F:4A87E 1 b208_ix
+peek F:4A87B 1 b208_run
+peek F:4A898 1 b208_md
+peek F:4A7FC 2 b208_hold
+peek F:1A6BC 4 b208_st
+step
+peek F:4A82C 2 b209_bl
+peek F:4A879 1 b209_pc
+peek F:4A7BA 4 b209_tp
+peek F:4A802 2 b209_id
+peek F:4A87E 1 b209_ix
+peek F:4A87B 1 b209_run
+peek F:4A898 1 b209_md
+peek F:4A7FC 2 b209_hold
+peek F:1A6BC 4 b209_st
+step
+peek F:4A82C 2 b210_bl
+peek F:4A879 1 b210_pc
+peek F:4A7BA 4 b210_tp
+peek F:4A802 2 b210_id
+peek F:4A87E 1 b210_ix
+peek F:4A87B 1 b210_run
+peek F:4A898 1 b210_md
+peek F:4A7FC 2 b210_hold
+peek F:1A6BC 4 b210_st
+step
+peek F:4A82C 2 b211_bl
+peek F:4A879 1 b211_pc
+peek F:4A7BA 4 b211_tp
+peek F:4A802 2 b211_id
+peek F:4A87E 1 b211_ix
+peek F:4A87B 1 b211_run
+peek F:4A898 1 b211_md
+peek F:4A7FC 2 b211_hold
+peek F:1A6BC 4 b211_st
+step
+peek F:4A82C 2 b212_bl
+peek F:4A879 1 b212_pc
+peek F:4A7BA 4 b212_tp
+peek F:4A802 2 b212_id
+peek F:4A87E 1 b212_ix
+peek F:4A87B 1 b212_run
+peek F:4A898 1 b212_md
+peek F:4A7FC 2 b212_hold
+peek F:1A6BC 4 b212_st
+step
+peek F:4A82C 2 b213_bl
+peek F:4A879 1 b213_pc
+peek F:4A7BA 4 b213_tp
+peek F:4A802 2 b213_id
+peek F:4A87E 1 b213_ix
+peek F:4A87B 1 b213_run
+peek F:4A898 1 b213_md
+peek F:4A7FC 2 b213_hold
+peek F:1A6BC 4 b213_st
+step
+peek F:4A82C 2 b214_bl
+peek F:4A879 1 b214_pc
+peek F:4A7BA 4 b214_tp
+peek F:4A802 2 b214_id
+peek F:4A87E 1 b214_ix
+peek F:4A87B 1 b214_run
+peek F:4A898 1 b214_md
+peek F:4A7FC 2 b214_hold
+peek F:1A6BC 4 b214_st
+step
+peek F:4A82C 2 b215_bl
+peek F:4A879 1 b215_pc
+peek F:4A7BA 4 b215_tp
+peek F:4A802 2 b215_id
+peek F:4A87E 1 b215_ix
+peek F:4A87B 1 b215_run
+peek F:4A898 1 b215_md
+peek F:4A7FC 2 b215_hold
+peek F:1A6BC 4 b215_st
+step
+peek F:4A82C 2 b216_bl
+peek F:4A879 1 b216_pc
+peek F:4A7BA 4 b216_tp
+peek F:4A802 2 b216_id
+peek F:4A87E 1 b216_ix
+peek F:4A87B 1 b216_run
+peek F:4A898 1 b216_md
+peek F:4A7FC 2 b216_hold
+peek F:1A6BC 4 b216_st
+step
+peek F:4A82C 2 b217_bl
+peek F:4A879 1 b217_pc
+peek F:4A7BA 4 b217_tp
+peek F:4A802 2 b217_id
+peek F:4A87E 1 b217_ix
+peek F:4A87B 1 b217_run
+peek F:4A898 1 b217_md
+peek F:4A7FC 2 b217_hold
+peek F:1A6BC 4 b217_st
+step
+peek F:4A82C 2 b218_bl
+peek F:4A879 1 b218_pc
+peek F:4A7BA 4 b218_tp
+peek F:4A802 2 b218_id
+peek F:4A87E 1 b218_ix
+peek F:4A87B 1 b218_run
+peek F:4A898 1 b218_md
+peek F:4A7FC 2 b218_hold
+peek F:1A6BC 4 b218_st
+step
+peek F:4A82C 2 b219_bl
+peek F:4A879 1 b219_pc
+peek F:4A7BA 4 b219_tp
+peek F:4A802 2 b219_id
+peek F:4A87E 1 b219_ix
+peek F:4A87B 1 b219_run
+peek F:4A898 1 b219_md
+peek F:4A7FC 2 b219_hold
+peek F:1A6BC 4 b219_st
+step
+peek F:4A82C 2 b220_bl
+peek F:4A879 1 b220_pc
+peek F:4A7BA 4 b220_tp
+peek F:4A802 2 b220_id
+peek F:4A87E 1 b220_ix
+peek F:4A87B 1 b220_run
+peek F:4A898 1 b220_md
+peek F:4A7FC 2 b220_hold
+peek F:1A6BC 4 b220_st
+step
+peek F:4A82C 2 b221_bl
+peek F:4A879 1 b221_pc
+peek F:4A7BA 4 b221_tp
+peek F:4A802 2 b221_id
+peek F:4A87E 1 b221_ix
+peek F:4A87B 1 b221_run
+peek F:4A898 1 b221_md
+peek F:4A7FC 2 b221_hold
+peek F:1A6BC 4 b221_st
+step
+peek F:4A82C 2 b222_bl
+peek F:4A879 1 b222_pc
+peek F:4A7BA 4 b222_tp
+peek F:4A802 2 b222_id
+peek F:4A87E 1 b222_ix
+peek F:4A87B 1 b222_run
+peek F:4A898 1 b222_md
+peek F:4A7FC 2 b222_hold
+peek F:1A6BC 4 b222_st
+step
+peek F:4A82C 2 b223_bl
+peek F:4A879 1 b223_pc
+peek F:4A7BA 4 b223_tp
+peek F:4A802 2 b223_id
+peek F:4A87E 1 b223_ix
+peek F:4A87B 1 b223_run
+peek F:4A898 1 b223_md
+peek F:4A7FC 2 b223_hold
+peek F:1A6BC 4 b223_st
+step
+peek F:4A82C 2 b224_bl
+peek F:4A879 1 b224_pc
+peek F:4A7BA 4 b224_tp
+peek F:4A802 2 b224_id
+peek F:4A87E 1 b224_ix
+peek F:4A87B 1 b224_run
+peek F:4A898 1 b224_md
+peek F:4A7FC 2 b224_hold
+peek F:1A6BC 4 b224_st
+step
+peek F:4A82C 2 b225_bl
+peek F:4A879 1 b225_pc
+peek F:4A7BA 4 b225_tp
+peek F:4A802 2 b225_id
+peek F:4A87E 1 b225_ix
+peek F:4A87B 1 b225_run
+peek F:4A898 1 b225_md
+peek F:4A7FC 2 b225_hold
+peek F:1A6BC 4 b225_st
+step
+peek F:4A82C 2 b226_bl
+peek F:4A879 1 b226_pc
+peek F:4A7BA 4 b226_tp
+peek F:4A802 2 b226_id
+peek F:4A87E 1 b226_ix
+peek F:4A87B 1 b226_run
+peek F:4A898 1 b226_md
+peek F:4A7FC 2 b226_hold
+peek F:1A6BC 4 b226_st
+step
+peek F:4A82C 2 b227_bl
+peek F:4A879 1 b227_pc
+peek F:4A7BA 4 b227_tp
+peek F:4A802 2 b227_id
+peek F:4A87E 1 b227_ix
+peek F:4A87B 1 b227_run
+peek F:4A898 1 b227_md
+peek F:4A7FC 2 b227_hold
+peek F:1A6BC 4 b227_st
+step
+peek F:4A82C 2 b228_bl
+peek F:4A879 1 b228_pc
+peek F:4A7BA 4 b228_tp
+peek F:4A802 2 b228_id
+peek F:4A87E 1 b228_ix
+peek F:4A87B 1 b228_run
+peek F:4A898 1 b228_md
+peek F:4A7FC 2 b228_hold
+peek F:1A6BC 4 b228_st
+step
+peek F:4A82C 2 b229_bl
+peek F:4A879 1 b229_pc
+peek F:4A7BA 4 b229_tp
+peek F:4A802 2 b229_id
+peek F:4A87E 1 b229_ix
+peek F:4A87B 1 b229_run
+peek F:4A898 1 b229_md
+peek F:4A7FC 2 b229_hold
+peek F:1A6BC 4 b229_st
+step
+peek F:4A82C 2 b230_bl
+peek F:4A879 1 b230_pc
+peek F:4A7BA 4 b230_tp
+peek F:4A802 2 b230_id
+peek F:4A87E 1 b230_ix
+peek F:4A87B 1 b230_run
+peek F:4A898 1 b230_md
+peek F:4A7FC 2 b230_hold
+peek F:1A6BC 4 b230_st
+step
+peek F:4A82C 2 b231_bl
+peek F:4A879 1 b231_pc
+peek F:4A7BA 4 b231_tp
+peek F:4A802 2 b231_id
+peek F:4A87E 1 b231_ix
+peek F:4A87B 1 b231_run
+peek F:4A898 1 b231_md
+peek F:4A7FC 2 b231_hold
+peek F:1A6BC 4 b231_st
+step
+peek F:4A82C 2 b232_bl
+peek F:4A879 1 b232_pc
+peek F:4A7BA 4 b232_tp
+peek F:4A802 2 b232_id
+peek F:4A87E 1 b232_ix
+peek F:4A87B 1 b232_run
+peek F:4A898 1 b232_md
+peek F:4A7FC 2 b232_hold
+peek F:1A6BC 4 b232_st
+step
+peek F:4A82C 2 b233_bl
+peek F:4A879 1 b233_pc
+peek F:4A7BA 4 b233_tp
+peek F:4A802 2 b233_id
+peek F:4A87E 1 b233_ix
+peek F:4A87B 1 b233_run
+peek F:4A898 1 b233_md
+peek F:4A7FC 2 b233_hold
+peek F:1A6BC 4 b233_st
+step
+peek F:4A82C 2 b234_bl
+peek F:4A879 1 b234_pc
+peek F:4A7BA 4 b234_tp
+peek F:4A802 2 b234_id
+peek F:4A87E 1 b234_ix
+peek F:4A87B 1 b234_run
+peek F:4A898 1 b234_md
+peek F:4A7FC 2 b234_hold
+peek F:1A6BC 4 b234_st
+step
+peek F:4A82C 2 b235_bl
+peek F:4A879 1 b235_pc
+peek F:4A7BA 4 b235_tp
+peek F:4A802 2 b235_id
+peek F:4A87E 1 b235_ix
+peek F:4A87B 1 b235_run
+peek F:4A898 1 b235_md
+peek F:4A7FC 2 b235_hold
+peek F:1A6BC 4 b235_st
+step
+peek F:4A82C 2 b236_bl
+peek F:4A879 1 b236_pc
+peek F:4A7BA 4 b236_tp
+peek F:4A802 2 b236_id
+peek F:4A87E 1 b236_ix
+peek F:4A87B 1 b236_run
+peek F:4A898 1 b236_md
+peek F:4A7FC 2 b236_hold
+peek F:1A6BC 4 b236_st
+step
+peek F:4A82C 2 b237_bl
+peek F:4A879 1 b237_pc
+peek F:4A7BA 4 b237_tp
+peek F:4A802 2 b237_id
+peek F:4A87E 1 b237_ix
+peek F:4A87B 1 b237_run
+peek F:4A898 1 b237_md
+peek F:4A7FC 2 b237_hold
+peek F:1A6BC 4 b237_st
+step
+peek F:4A82C 2 b238_bl
+peek F:4A879 1 b238_pc
+peek F:4A7BA 4 b238_tp
+peek F:4A802 2 b238_id
+peek F:4A87E 1 b238_ix
+peek F:4A87B 1 b238_run
+peek F:4A898 1 b238_md
+peek F:4A7FC 2 b238_hold
+peek F:1A6BC 4 b238_st
+step
+peek F:4A82C 2 b239_bl
+peek F:4A879 1 b239_pc
+peek F:4A7BA 4 b239_tp
+peek F:4A802 2 b239_id
+peek F:4A87E 1 b239_ix
+peek F:4A87B 1 b239_run
+peek F:4A898 1 b239_md
+peek F:4A7FC 2 b239_hold
+peek F:1A6BC 4 b239_st
+step
+peek F:4A82C 2 b240_bl
+peek F:4A879 1 b240_pc
+peek F:4A7BA 4 b240_tp
+peek F:4A802 2 b240_id
+peek F:4A87E 1 b240_ix
+peek F:4A87B 1 b240_run
+peek F:4A898 1 b240_md
+peek F:4A7FC 2 b240_hold
+peek F:1A6BC 4 b240_st
+step
+peek F:4A82C 2 b241_bl
+peek F:4A879 1 b241_pc
+peek F:4A7BA 4 b241_tp
+peek F:4A802 2 b241_id
+peek F:4A87E 1 b241_ix
+peek F:4A87B 1 b241_run
+peek F:4A898 1 b241_md
+peek F:4A7FC 2 b241_hold
+peek F:1A6BC 4 b241_st
+step
+peek F:4A82C 2 b242_bl
+peek F:4A879 1 b242_pc
+peek F:4A7BA 4 b242_tp
+peek F:4A802 2 b242_id
+peek F:4A87E 1 b242_ix
+peek F:4A87B 1 b242_run
+peek F:4A898 1 b242_md
+peek F:4A7FC 2 b242_hold
+peek F:1A6BC 4 b242_st
+step
+peek F:4A82C 2 b243_bl
+peek F:4A879 1 b243_pc
+peek F:4A7BA 4 b243_tp
+peek F:4A802 2 b243_id
+peek F:4A87E 1 b243_ix
+peek F:4A87B 1 b243_run
+peek F:4A898 1 b243_md
+peek F:4A7FC 2 b243_hold
+peek F:1A6BC 4 b243_st
+step
+peek F:4A82C 2 b244_bl
+peek F:4A879 1 b244_pc
+peek F:4A7BA 4 b244_tp
+peek F:4A802 2 b244_id
+peek F:4A87E 1 b244_ix
+peek F:4A87B 1 b244_run
+peek F:4A898 1 b244_md
+peek F:4A7FC 2 b244_hold
+peek F:1A6BC 4 b244_st
+step
+peek F:4A82C 2 b245_bl
+peek F:4A879 1 b245_pc
+peek F:4A7BA 4 b245_tp
+peek F:4A802 2 b245_id
+peek F:4A87E 1 b245_ix
+peek F:4A87B 1 b245_run
+peek F:4A898 1 b245_md
+peek F:4A7FC 2 b245_hold
+peek F:1A6BC 4 b245_st
+step
+peek F:4A82C 2 b246_bl
+peek F:4A879 1 b246_pc
+peek F:4A7BA 4 b246_tp
+peek F:4A802 2 b246_id
+peek F:4A87E 1 b246_ix
+peek F:4A87B 1 b246_run
+peek F:4A898 1 b246_md
+peek F:4A7FC 2 b246_hold
+peek F:1A6BC 4 b246_st
+step
+peek F:4A82C 2 b247_bl
+peek F:4A879 1 b247_pc
+peek F:4A7BA 4 b247_tp
+peek F:4A802 2 b247_id
+peek F:4A87E 1 b247_ix
+peek F:4A87B 1 b247_run
+peek F:4A898 1 b247_md
+peek F:4A7FC 2 b247_hold
+peek F:1A6BC 4 b247_st
+step
+peek F:4A82C 2 b248_bl
+peek F:4A879 1 b248_pc
+peek F:4A7BA 4 b248_tp
+peek F:4A802 2 b248_id
+peek F:4A87E 1 b248_ix
+peek F:4A87B 1 b248_run
+peek F:4A898 1 b248_md
+peek F:4A7FC 2 b248_hold
+peek F:1A6BC 4 b248_st
+step
+peek F:4A82C 2 b249_bl
+peek F:4A879 1 b249_pc
+peek F:4A7BA 4 b249_tp
+peek F:4A802 2 b249_id
+peek F:4A87E 1 b249_ix
+peek F:4A87B 1 b249_run
+peek F:4A898 1 b249_md
+peek F:4A7FC 2 b249_hold
+peek F:1A6BC 4 b249_st
+step
+peek F:4A82C 2 b250_bl
+peek F:4A879 1 b250_pc
+peek F:4A7BA 4 b250_tp
+peek F:4A802 2 b250_id
+peek F:4A87E 1 b250_ix
+peek F:4A87B 1 b250_run
+peek F:4A898 1 b250_md
+peek F:4A7FC 2 b250_hold
+peek F:1A6BC 4 b250_st
+step
+peek F:4A82C 2 b251_bl
+peek F:4A879 1 b251_pc
+peek F:4A7BA 4 b251_tp
+peek F:4A802 2 b251_id
+peek F:4A87E 1 b251_ix
+peek F:4A87B 1 b251_run
+peek F:4A898 1 b251_md
+peek F:4A7FC 2 b251_hold
+peek F:1A6BC 4 b251_st
+step
+peek F:4A82C 2 b252_bl
+peek F:4A879 1 b252_pc
+peek F:4A7BA 4 b252_tp
+peek F:4A802 2 b252_id
+peek F:4A87E 1 b252_ix
+peek F:4A87B 1 b252_run
+peek F:4A898 1 b252_md
+peek F:4A7FC 2 b252_hold
+peek F:1A6BC 4 b252_st
+step
+peek F:4A82C 2 b253_bl
+peek F:4A879 1 b253_pc
+peek F:4A7BA 4 b253_tp
+peek F:4A802 2 b253_id
+peek F:4A87E 1 b253_ix
+peek F:4A87B 1 b253_run
+peek F:4A898 1 b253_md
+peek F:4A7FC 2 b253_hold
+peek F:1A6BC 4 b253_st
+step
+peek F:4A82C 2 b254_bl
+peek F:4A879 1 b254_pc
+peek F:4A7BA 4 b254_tp
+peek F:4A802 2 b254_id
+peek F:4A87E 1 b254_ix
+peek F:4A87B 1 b254_run
+peek F:4A898 1 b254_md
+peek F:4A7FC 2 b254_hold
+peek F:1A6BC 4 b254_st
+step
+peek F:4A82C 2 b255_bl
+peek F:4A879 1 b255_pc
+peek F:4A7BA 4 b255_tp
+peek F:4A802 2 b255_id
+peek F:4A87E 1 b255_ix
+peek F:4A87B 1 b255_run
+peek F:4A898 1 b255_md
+peek F:4A7FC 2 b255_hold
+peek F:1A6BC 4 b255_st
+step
+peek F:4A82C 2 b256_bl
+peek F:4A879 1 b256_pc
+peek F:4A7BA 4 b256_tp
+peek F:4A802 2 b256_id
+peek F:4A87E 1 b256_ix
+peek F:4A87B 1 b256_run
+peek F:4A898 1 b256_md
+peek F:4A7FC 2 b256_hold
+peek F:1A6BC 4 b256_st
+step
+peek F:4A82C 2 b257_bl
+peek F:4A879 1 b257_pc
+peek F:4A7BA 4 b257_tp
+peek F:4A802 2 b257_id
+peek F:4A87E 1 b257_ix
+peek F:4A87B 1 b257_run
+peek F:4A898 1 b257_md
+peek F:4A7FC 2 b257_hold
+peek F:1A6BC 4 b257_st
+step
+peek F:4A82C 2 b258_bl
+peek F:4A879 1 b258_pc
+peek F:4A7BA 4 b258_tp
+peek F:4A802 2 b258_id
+peek F:4A87E 1 b258_ix
+peek F:4A87B 1 b258_run
+peek F:4A898 1 b258_md
+peek F:4A7FC 2 b258_hold
+peek F:1A6BC 4 b258_st
+step
+peek F:4A82C 2 b259_bl
+peek F:4A879 1 b259_pc
+peek F:4A7BA 4 b259_tp
+peek F:4A802 2 b259_id
+peek F:4A87E 1 b259_ix
+peek F:4A87B 1 b259_run
+peek F:4A898 1 b259_md
+peek F:4A7FC 2 b259_hold
+peek F:1A6BC 4 b259_st
+step
+peek F:4A82C 2 b260_bl
+peek F:4A879 1 b260_pc
+peek F:4A7BA 4 b260_tp
+peek F:4A802 2 b260_id
+peek F:4A87E 1 b260_ix
+peek F:4A87B 1 b260_run
+peek F:4A898 1 b260_md
+peek F:4A7FC 2 b260_hold
+peek F:1A6BC 4 b260_st
+step
+peek F:4A82C 2 b261_bl
+peek F:4A879 1 b261_pc
+peek F:4A7BA 4 b261_tp
+peek F:4A802 2 b261_id
+peek F:4A87E 1 b261_ix
+peek F:4A87B 1 b261_run
+peek F:4A898 1 b261_md
+peek F:4A7FC 2 b261_hold
+peek F:1A6BC 4 b261_st
+step
+peek F:4A82C 2 b262_bl
+peek F:4A879 1 b262_pc
+peek F:4A7BA 4 b262_tp
+peek F:4A802 2 b262_id
+peek F:4A87E 1 b262_ix
+peek F:4A87B 1 b262_run
+peek F:4A898 1 b262_md
+peek F:4A7FC 2 b262_hold
+peek F:1A6BC 4 b262_st
+step
+peek F:4A82C 2 b263_bl
+peek F:4A879 1 b263_pc
+peek F:4A7BA 4 b263_tp
+peek F:4A802 2 b263_id
+peek F:4A87E 1 b263_ix
+peek F:4A87B 1 b263_run
+peek F:4A898 1 b263_md
+peek F:4A7FC 2 b263_hold
+peek F:1A6BC 4 b263_st
+step
+peek F:4A82C 2 b264_bl
+peek F:4A879 1 b264_pc
+peek F:4A7BA 4 b264_tp
+peek F:4A802 2 b264_id
+peek F:4A87E 1 b264_ix
+peek F:4A87B 1 b264_run
+peek F:4A898 1 b264_md
+peek F:4A7FC 2 b264_hold
+peek F:1A6BC 4 b264_st
+step
+peek F:4A82C 2 b265_bl
+peek F:4A879 1 b265_pc
+peek F:4A7BA 4 b265_tp
+peek F:4A802 2 b265_id
+peek F:4A87E 1 b265_ix
+peek F:4A87B 1 b265_run
+peek F:4A898 1 b265_md
+peek F:4A7FC 2 b265_hold
+peek F:1A6BC 4 b265_st
+step
+peek F:4A82C 2 b266_bl
+peek F:4A879 1 b266_pc
+peek F:4A7BA 4 b266_tp
+peek F:4A802 2 b266_id
+peek F:4A87E 1 b266_ix
+peek F:4A87B 1 b266_run
+peek F:4A898 1 b266_md
+peek F:4A7FC 2 b266_hold
+peek F:1A6BC 4 b266_st
+step
+peek F:4A82C 2 b267_bl
+peek F:4A879 1 b267_pc
+peek F:4A7BA 4 b267_tp
+peek F:4A802 2 b267_id
+peek F:4A87E 1 b267_ix
+peek F:4A87B 1 b267_run
+peek F:4A898 1 b267_md
+peek F:4A7FC 2 b267_hold
+peek F:1A6BC 4 b267_st
+step
+peek F:4A82C 2 b268_bl
+peek F:4A879 1 b268_pc
+peek F:4A7BA 4 b268_tp
+peek F:4A802 2 b268_id
+peek F:4A87E 1 b268_ix
+peek F:4A87B 1 b268_run
+peek F:4A898 1 b268_md
+peek F:4A7FC 2 b268_hold
+peek F:1A6BC 4 b268_st
+step
+peek F:4A82C 2 b269_bl
+peek F:4A879 1 b269_pc
+peek F:4A7BA 4 b269_tp
+peek F:4A802 2 b269_id
+peek F:4A87E 1 b269_ix
+peek F:4A87B 1 b269_run
+peek F:4A898 1 b269_md
+peek F:4A7FC 2 b269_hold
+peek F:1A6BC 4 b269_st
+step
+peek F:4A82C 2 b270_bl
+peek F:4A879 1 b270_pc
+peek F:4A7BA 4 b270_tp
+peek F:4A802 2 b270_id
+peek F:4A87E 1 b270_ix
+peek F:4A87B 1 b270_run
+peek F:4A898 1 b270_md
+peek F:4A7FC 2 b270_hold
+peek F:1A6BC 4 b270_st
+step
+peek F:4A82C 2 b271_bl
+peek F:4A879 1 b271_pc
+peek F:4A7BA 4 b271_tp
+peek F:4A802 2 b271_id
+peek F:4A87E 1 b271_ix
+peek F:4A87B 1 b271_run
+peek F:4A898 1 b271_md
+peek F:4A7FC 2 b271_hold
+peek F:1A6BC 4 b271_st
+step
+peek F:4A82C 2 b272_bl
+peek F:4A879 1 b272_pc
+peek F:4A7BA 4 b272_tp
+peek F:4A802 2 b272_id
+peek F:4A87E 1 b272_ix
+peek F:4A87B 1 b272_run
+peek F:4A898 1 b272_md
+peek F:4A7FC 2 b272_hold
+peek F:1A6BC 4 b272_st
+step
+peek F:4A82C 2 b273_bl
+peek F:4A879 1 b273_pc
+peek F:4A7BA 4 b273_tp
+peek F:4A802 2 b273_id
+peek F:4A87E 1 b273_ix
+peek F:4A87B 1 b273_run
+peek F:4A898 1 b273_md
+peek F:4A7FC 2 b273_hold
+peek F:1A6BC 4 b273_st
+step
+peek F:4A82C 2 b274_bl
+peek F:4A879 1 b274_pc
+peek F:4A7BA 4 b274_tp
+peek F:4A802 2 b274_id
+peek F:4A87E 1 b274_ix
+peek F:4A87B 1 b274_run
+peek F:4A898 1 b274_md
+peek F:4A7FC 2 b274_hold
+peek F:1A6BC 4 b274_st
+step
+peek F:4A82C 2 b275_bl
+peek F:4A879 1 b275_pc
+peek F:4A7BA 4 b275_tp
+peek F:4A802 2 b275_id
+peek F:4A87E 1 b275_ix
+peek F:4A87B 1 b275_run
+peek F:4A898 1 b275_md
+peek F:4A7FC 2 b275_hold
+peek F:1A6BC 4 b275_st
+step
+peek F:4A82C 2 b276_bl
+peek F:4A879 1 b276_pc
+peek F:4A7BA 4 b276_tp
+peek F:4A802 2 b276_id
+peek F:4A87E 1 b276_ix
+peek F:4A87B 1 b276_run
+peek F:4A898 1 b276_md
+peek F:4A7FC 2 b276_hold
+peek F:1A6BC 4 b276_st
+step
+peek F:4A82C 2 b277_bl
+peek F:4A879 1 b277_pc
+peek F:4A7BA 4 b277_tp
+peek F:4A802 2 b277_id
+peek F:4A87E 1 b277_ix
+peek F:4A87B 1 b277_run
+peek F:4A898 1 b277_md
+peek F:4A7FC 2 b277_hold
+peek F:1A6BC 4 b277_st
+step
+peek F:4A82C 2 b278_bl
+peek F:4A879 1 b278_pc
+peek F:4A7BA 4 b278_tp
+peek F:4A802 2 b278_id
+peek F:4A87E 1 b278_ix
+peek F:4A87B 1 b278_run
+peek F:4A898 1 b278_md
+peek F:4A7FC 2 b278_hold
+peek F:1A6BC 4 b278_st
+step
+peek F:4A82C 2 b279_bl
+peek F:4A879 1 b279_pc
+peek F:4A7BA 4 b279_tp
+peek F:4A802 2 b279_id
+peek F:4A87E 1 b279_ix
+peek F:4A87B 1 b279_run
+peek F:4A898 1 b279_md
+peek F:4A7FC 2 b279_hold
+peek F:1A6BC 4 b279_st
+step
+peek F:4A82C 2 b280_bl
+peek F:4A879 1 b280_pc
+peek F:4A7BA 4 b280_tp
+peek F:4A802 2 b280_id
+peek F:4A87E 1 b280_ix
+peek F:4A87B 1 b280_run
+peek F:4A898 1 b280_md
+peek F:4A7FC 2 b280_hold
+peek F:1A6BC 4 b280_st
+step
+peek F:4A82C 2 b281_bl
+peek F:4A879 1 b281_pc
+peek F:4A7BA 4 b281_tp
+peek F:4A802 2 b281_id
+peek F:4A87E 1 b281_ix
+peek F:4A87B 1 b281_run
+peek F:4A898 1 b281_md
+peek F:4A7FC 2 b281_hold
+peek F:1A6BC 4 b281_st
+step
+peek F:4A82C 2 b282_bl
+peek F:4A879 1 b282_pc
+peek F:4A7BA 4 b282_tp
+peek F:4A802 2 b282_id
+peek F:4A87E 1 b282_ix
+peek F:4A87B 1 b282_run
+peek F:4A898 1 b282_md
+peek F:4A7FC 2 b282_hold
+peek F:1A6BC 4 b282_st
+step
+peek F:4A82C 2 b283_bl
+peek F:4A879 1 b283_pc
+peek F:4A7BA 4 b283_tp
+peek F:4A802 2 b283_id
+peek F:4A87E 1 b283_ix
+peek F:4A87B 1 b283_run
+peek F:4A898 1 b283_md
+peek F:4A7FC 2 b283_hold
+peek F:1A6BC 4 b283_st
+step
+peek F:4A82C 2 b284_bl
+peek F:4A879 1 b284_pc
+peek F:4A7BA 4 b284_tp
+peek F:4A802 2 b284_id
+peek F:4A87E 1 b284_ix
+peek F:4A87B 1 b284_run
+peek F:4A898 1 b284_md
+peek F:4A7FC 2 b284_hold
+peek F:1A6BC 4 b284_st
+step
+peek F:4A82C 2 b285_bl
+peek F:4A879 1 b285_pc
+peek F:4A7BA 4 b285_tp
+peek F:4A802 2 b285_id
+peek F:4A87E 1 b285_ix
+peek F:4A87B 1 b285_run
+peek F:4A898 1 b285_md
+peek F:4A7FC 2 b285_hold
+peek F:1A6BC 4 b285_st
+step
+peek F:4A82C 2 b286_bl
+peek F:4A879 1 b286_pc
+peek F:4A7BA 4 b286_tp
+peek F:4A802 2 b286_id
+peek F:4A87E 1 b286_ix
+peek F:4A87B 1 b286_run
+peek F:4A898 1 b286_md
+peek F:4A7FC 2 b286_hold
+peek F:1A6BC 4 b286_st
+step
+peek F:4A82C 2 b287_bl
+peek F:4A879 1 b287_pc
+peek F:4A7BA 4 b287_tp
+peek F:4A802 2 b287_id
+peek F:4A87E 1 b287_ix
+peek F:4A87B 1 b287_run
+peek F:4A898 1 b287_md
+peek F:4A7FC 2 b287_hold
+peek F:1A6BC 4 b287_st
+step
+peek F:4A82C 2 b288_bl
+peek F:4A879 1 b288_pc
+peek F:4A7BA 4 b288_tp
+peek F:4A802 2 b288_id
+peek F:4A87E 1 b288_ix
+peek F:4A87B 1 b288_run
+peek F:4A898 1 b288_md
+peek F:4A7FC 2 b288_hold
+peek F:1A6BC 4 b288_st
+step
+peek F:4A82C 2 b289_bl
+peek F:4A879 1 b289_pc
+peek F:4A7BA 4 b289_tp
+peek F:4A802 2 b289_id
+peek F:4A87E 1 b289_ix
+peek F:4A87B 1 b289_run
+peek F:4A898 1 b289_md
+peek F:4A7FC 2 b289_hold
+peek F:1A6BC 4 b289_st
+step
+peek F:4A82C 2 b290_bl
+peek F:4A879 1 b290_pc
+peek F:4A7BA 4 b290_tp
+peek F:4A802 2 b290_id
+peek F:4A87E 1 b290_ix
+peek F:4A87B 1 b290_run
+peek F:4A898 1 b290_md
+peek F:4A7FC 2 b290_hold
+peek F:1A6BC 4 b290_st
+step
+peek F:4A82C 2 b291_bl
+peek F:4A879 1 b291_pc
+peek F:4A7BA 4 b291_tp
+peek F:4A802 2 b291_id
+peek F:4A87E 1 b291_ix
+peek F:4A87B 1 b291_run
+peek F:4A898 1 b291_md
+peek F:4A7FC 2 b291_hold
+peek F:1A6BC 4 b291_st
+step
+peek F:4A82C 2 b292_bl
+peek F:4A879 1 b292_pc
+peek F:4A7BA 4 b292_tp
+peek F:4A802 2 b292_id
+peek F:4A87E 1 b292_ix
+peek F:4A87B 1 b292_run
+peek F:4A898 1 b292_md
+peek F:4A7FC 2 b292_hold
+peek F:1A6BC 4 b292_st
+step
+peek F:4A82C 2 b293_bl
+peek F:4A879 1 b293_pc
+peek F:4A7BA 4 b293_tp
+peek F:4A802 2 b293_id
+peek F:4A87E 1 b293_ix
+peek F:4A87B 1 b293_run
+peek F:4A898 1 b293_md
+peek F:4A7FC 2 b293_hold
+peek F:1A6BC 4 b293_st
+step
+peek F:4A82C 2 b294_bl
+peek F:4A879 1 b294_pc
+peek F:4A7BA 4 b294_tp
+peek F:4A802 2 b294_id
+peek F:4A87E 1 b294_ix
+peek F:4A87B 1 b294_run
+peek F:4A898 1 b294_md
+peek F:4A7FC 2 b294_hold
+peek F:1A6BC 4 b294_st
+step
+peek F:4A82C 2 b295_bl
+peek F:4A879 1 b295_pc
+peek F:4A7BA 4 b295_tp
+peek F:4A802 2 b295_id
+peek F:4A87E 1 b295_ix
+peek F:4A87B 1 b295_run
+peek F:4A898 1 b295_md
+peek F:4A7FC 2 b295_hold
+peek F:1A6BC 4 b295_st
+step
+peek F:4A82C 2 b296_bl
+peek F:4A879 1 b296_pc
+peek F:4A7BA 4 b296_tp
+peek F:4A802 2 b296_id
+peek F:4A87E 1 b296_ix
+peek F:4A87B 1 b296_run
+peek F:4A898 1 b296_md
+peek F:4A7FC 2 b296_hold
+peek F:1A6BC 4 b296_st
+step
+peek F:4A82C 2 b297_bl
+peek F:4A879 1 b297_pc
+peek F:4A7BA 4 b297_tp
+peek F:4A802 2 b297_id
+peek F:4A87E 1 b297_ix
+peek F:4A87B 1 b297_run
+peek F:4A898 1 b297_md
+peek F:4A7FC 2 b297_hold
+peek F:1A6BC 4 b297_st
+step
+peek F:4A82C 2 b298_bl
+peek F:4A879 1 b298_pc
+peek F:4A7BA 4 b298_tp
+peek F:4A802 2 b298_id
+peek F:4A87E 1 b298_ix
+peek F:4A87B 1 b298_run
+peek F:4A898 1 b298_md
+peek F:4A7FC 2 b298_hold
+peek F:1A6BC 4 b298_st
+step
+peek F:4A82C 2 b299_bl
+peek F:4A879 1 b299_pc
+peek F:4A7BA 4 b299_tp
+peek F:4A802 2 b299_id
+peek F:4A87E 1 b299_ix
+peek F:4A87B 1 b299_run
+peek F:4A898 1 b299_md
+peek F:4A7FC 2 b299_hold
+peek F:1A6BC 4 b299_st
+step
+peek F:4A82C 2 b300_bl
+peek F:4A879 1 b300_pc
+peek F:4A7BA 4 b300_tp
+peek F:4A802 2 b300_id
+peek F:4A87E 1 b300_ix
+peek F:4A87B 1 b300_run
+peek F:4A898 1 b300_md
+peek F:4A7FC 2 b300_hold
+peek F:1A6BC 4 b300_st
+step
+peek F:4A82C 2 b301_bl
+peek F:4A879 1 b301_pc
+peek F:4A7BA 4 b301_tp
+peek F:4A802 2 b301_id
+peek F:4A87E 1 b301_ix
+peek F:4A87B 1 b301_run
+peek F:4A898 1 b301_md
+peek F:4A7FC 2 b301_hold
+peek F:1A6BC 4 b301_st
+step
+peek F:4A82C 2 b302_bl
+peek F:4A879 1 b302_pc
+peek F:4A7BA 4 b302_tp
+peek F:4A802 2 b302_id
+peek F:4A87E 1 b302_ix
+peek F:4A87B 1 b302_run
+peek F:4A898 1 b302_md
+peek F:4A7FC 2 b302_hold
+peek F:1A6BC 4 b302_st
+step
+peek F:4A82C 2 b303_bl
+peek F:4A879 1 b303_pc
+peek F:4A7BA 4 b303_tp
+peek F:4A802 2 b303_id
+peek F:4A87E 1 b303_ix
+peek F:4A87B 1 b303_run
+peek F:4A898 1 b303_md
+peek F:4A7FC 2 b303_hold
+peek F:1A6BC 4 b303_st
+step
+peek F:4A82C 2 b304_bl
+peek F:4A879 1 b304_pc
+peek F:4A7BA 4 b304_tp
+peek F:4A802 2 b304_id
+peek F:4A87E 1 b304_ix
+peek F:4A87B 1 b304_run
+peek F:4A898 1 b304_md
+peek F:4A7FC 2 b304_hold
+peek F:1A6BC 4 b304_st
+step
+peek F:4A82C 2 b305_bl
+peek F:4A879 1 b305_pc
+peek F:4A7BA 4 b305_tp
+peek F:4A802 2 b305_id
+peek F:4A87E 1 b305_ix
+peek F:4A87B 1 b305_run
+peek F:4A898 1 b305_md
+peek F:4A7FC 2 b305_hold
+peek F:1A6BC 4 b305_st
+step
+peek F:4A82C 2 b306_bl
+peek F:4A879 1 b306_pc
+peek F:4A7BA 4 b306_tp
+peek F:4A802 2 b306_id
+peek F:4A87E 1 b306_ix
+peek F:4A87B 1 b306_run
+peek F:4A898 1 b306_md
+peek F:4A7FC 2 b306_hold
+peek F:1A6BC 4 b306_st
+step
+peek F:4A82C 2 b307_bl
+peek F:4A879 1 b307_pc
+peek F:4A7BA 4 b307_tp
+peek F:4A802 2 b307_id
+peek F:4A87E 1 b307_ix
+peek F:4A87B 1 b307_run
+peek F:4A898 1 b307_md
+peek F:4A7FC 2 b307_hold
+peek F:1A6BC 4 b307_st
+step
+peek F:4A82C 2 b308_bl
+peek F:4A879 1 b308_pc
+peek F:4A7BA 4 b308_tp
+peek F:4A802 2 b308_id
+peek F:4A87E 1 b308_ix
+peek F:4A87B 1 b308_run
+peek F:4A898 1 b308_md
+peek F:4A7FC 2 b308_hold
+peek F:1A6BC 4 b308_st
+step
+peek F:4A82C 2 b309_bl
+peek F:4A879 1 b309_pc
+peek F:4A7BA 4 b309_tp
+peek F:4A802 2 b309_id
+peek F:4A87E 1 b309_ix
+peek F:4A87B 1 b309_run
+peek F:4A898 1 b309_md
+peek F:4A7FC 2 b309_hold
+peek F:1A6BC 4 b309_st
+step
+peek F:4A82C 2 b310_bl
+peek F:4A879 1 b310_pc
+peek F:4A7BA 4 b310_tp
+peek F:4A802 2 b310_id
+peek F:4A87E 1 b310_ix
+peek F:4A87B 1 b310_run
+peek F:4A898 1 b310_md
+peek F:4A7FC 2 b310_hold
+peek F:1A6BC 4 b310_st
+step
+peek F:4A82C 2 b311_bl
+peek F:4A879 1 b311_pc
+peek F:4A7BA 4 b311_tp
+peek F:4A802 2 b311_id
+peek F:4A87E 1 b311_ix
+peek F:4A87B 1 b311_run
+peek F:4A898 1 b311_md
+peek F:4A7FC 2 b311_hold
+peek F:1A6BC 4 b311_st
+step
+peek F:4A82C 2 b312_bl
+peek F:4A879 1 b312_pc
+peek F:4A7BA 4 b312_tp
+peek F:4A802 2 b312_id
+peek F:4A87E 1 b312_ix
+peek F:4A87B 1 b312_run
+peek F:4A898 1 b312_md
+peek F:4A7FC 2 b312_hold
+peek F:1A6BC 4 b312_st
+step
+peek F:4A82C 2 b313_bl
+peek F:4A879 1 b313_pc
+peek F:4A7BA 4 b313_tp
+peek F:4A802 2 b313_id
+peek F:4A87E 1 b313_ix
+peek F:4A87B 1 b313_run
+peek F:4A898 1 b313_md
+peek F:4A7FC 2 b313_hold
+peek F:1A6BC 4 b313_st
+step
+peek F:4A82C 2 b314_bl
+peek F:4A879 1 b314_pc
+peek F:4A7BA 4 b314_tp
+peek F:4A802 2 b314_id
+peek F:4A87E 1 b314_ix
+peek F:4A87B 1 b314_run
+peek F:4A898 1 b314_md
+peek F:4A7FC 2 b314_hold
+peek F:1A6BC 4 b314_st
+step
+peek F:4A82C 2 b315_bl
+peek F:4A879 1 b315_pc
+peek F:4A7BA 4 b315_tp
+peek F:4A802 2 b315_id
+peek F:4A87E 1 b315_ix
+peek F:4A87B 1 b315_run
+peek F:4A898 1 b315_md
+peek F:4A7FC 2 b315_hold
+peek F:1A6BC 4 b315_st
+step
+peek F:4A82C 2 b316_bl
+peek F:4A879 1 b316_pc
+peek F:4A7BA 4 b316_tp
+peek F:4A802 2 b316_id
+peek F:4A87E 1 b316_ix
+peek F:4A87B 1 b316_run
+peek F:4A898 1 b316_md
+peek F:4A7FC 2 b316_hold
+peek F:1A6BC 4 b316_st
+step
+peek F:4A82C 2 b317_bl
+peek F:4A879 1 b317_pc
+peek F:4A7BA 4 b317_tp
+peek F:4A802 2 b317_id
+peek F:4A87E 1 b317_ix
+peek F:4A87B 1 b317_run
+peek F:4A898 1 b317_md
+peek F:4A7FC 2 b317_hold
+peek F:1A6BC 4 b317_st
+step
+peek F:4A82C 2 b318_bl
+peek F:4A879 1 b318_pc
+peek F:4A7BA 4 b318_tp
+peek F:4A802 2 b318_id
+peek F:4A87E 1 b318_ix
+peek F:4A87B 1 b318_run
+peek F:4A898 1 b318_md
+peek F:4A7FC 2 b318_hold
+peek F:1A6BC 4 b318_st
+step
+peek F:4A82C 2 b319_bl
+peek F:4A879 1 b319_pc
+peek F:4A7BA 4 b319_tp
+peek F:4A802 2 b319_id
+peek F:4A87E 1 b319_ix
+peek F:4A87B 1 b319_run
+peek F:4A898 1 b319_md
+peek F:4A7FC 2 b319_hold
+peek F:1A6BC 4 b319_st
+step
+peek F:4A82C 2 b320_bl
+peek F:4A879 1 b320_pc
+peek F:4A7BA 4 b320_tp
+peek F:4A802 2 b320_id
+peek F:4A87E 1 b320_ix
+peek F:4A87B 1 b320_run
+peek F:4A898 1 b320_md
+peek F:4A7FC 2 b320_hold
+peek F:1A6BC 4 b320_st
+step
+peek F:4A82C 2 b321_bl
+peek F:4A879 1 b321_pc
+peek F:4A7BA 4 b321_tp
+peek F:4A802 2 b321_id
+peek F:4A87E 1 b321_ix
+peek F:4A87B 1 b321_run
+peek F:4A898 1 b321_md
+peek F:4A7FC 2 b321_hold
+peek F:1A6BC 4 b321_st
+step
+peek F:4A82C 2 b322_bl
+peek F:4A879 1 b322_pc
+peek F:4A7BA 4 b322_tp
+peek F:4A802 2 b322_id
+peek F:4A87E 1 b322_ix
+peek F:4A87B 1 b322_run
+peek F:4A898 1 b322_md
+peek F:4A7FC 2 b322_hold
+peek F:1A6BC 4 b322_st
+step
+peek F:4A82C 2 b323_bl
+peek F:4A879 1 b323_pc
+peek F:4A7BA 4 b323_tp
+peek F:4A802 2 b323_id
+peek F:4A87E 1 b323_ix
+peek F:4A87B 1 b323_run
+peek F:4A898 1 b323_md
+peek F:4A7FC 2 b323_hold
+peek F:1A6BC 4 b323_st
+step
+peek F:4A82C 2 b324_bl
+peek F:4A879 1 b324_pc
+peek F:4A7BA 4 b324_tp
+peek F:4A802 2 b324_id
+peek F:4A87E 1 b324_ix
+peek F:4A87B 1 b324_run
+peek F:4A898 1 b324_md
+peek F:4A7FC 2 b324_hold
+peek F:1A6BC 4 b324_st
+step
+peek F:4A82C 2 b325_bl
+peek F:4A879 1 b325_pc
+peek F:4A7BA 4 b325_tp
+peek F:4A802 2 b325_id
+peek F:4A87E 1 b325_ix
+peek F:4A87B 1 b325_run
+peek F:4A898 1 b325_md
+peek F:4A7FC 2 b325_hold
+peek F:1A6BC 4 b325_st
+step
+peek F:4A82C 2 b326_bl
+peek F:4A879 1 b326_pc
+peek F:4A7BA 4 b326_tp
+peek F:4A802 2 b326_id
+peek F:4A87E 1 b326_ix
+peek F:4A87B 1 b326_run
+peek F:4A898 1 b326_md
+peek F:4A7FC 2 b326_hold
+peek F:1A6BC 4 b326_st
+step
+peek F:4A82C 2 b327_bl
+peek F:4A879 1 b327_pc
+peek F:4A7BA 4 b327_tp
+peek F:4A802 2 b327_id
+peek F:4A87E 1 b327_ix
+peek F:4A87B 1 b327_run
+peek F:4A898 1 b327_md
+peek F:4A7FC 2 b327_hold
+peek F:1A6BC 4 b327_st
+step
+peek F:4A82C 2 b328_bl
+peek F:4A879 1 b328_pc
+peek F:4A7BA 4 b328_tp
+peek F:4A802 2 b328_id
+peek F:4A87E 1 b328_ix
+peek F:4A87B 1 b328_run
+peek F:4A898 1 b328_md
+peek F:4A7FC 2 b328_hold
+peek F:1A6BC 4 b328_st
+step
+peek F:4A82C 2 b329_bl
+peek F:4A879 1 b329_pc
+peek F:4A7BA 4 b329_tp
+peek F:4A802 2 b329_id
+peek F:4A87E 1 b329_ix
+peek F:4A87B 1 b329_run
+peek F:4A898 1 b329_md
+peek F:4A7FC 2 b329_hold
+peek F:1A6BC 4 b329_st
+step
+peek F:4A82C 2 b330_bl
+peek F:4A879 1 b330_pc
+peek F:4A7BA 4 b330_tp
+peek F:4A802 2 b330_id
+peek F:4A87E 1 b330_ix
+peek F:4A87B 1 b330_run
+peek F:4A898 1 b330_md
+peek F:4A7FC 2 b330_hold
+peek F:1A6BC 4 b330_st
+step
+peek F:4A82C 2 b331_bl
+peek F:4A879 1 b331_pc
+peek F:4A7BA 4 b331_tp
+peek F:4A802 2 b331_id
+peek F:4A87E 1 b331_ix
+peek F:4A87B 1 b331_run
+peek F:4A898 1 b331_md
+peek F:4A7FC 2 b331_hold
+peek F:1A6BC 4 b331_st
+step
+peek F:4A82C 2 b332_bl
+peek F:4A879 1 b332_pc
+peek F:4A7BA 4 b332_tp
+peek F:4A802 2 b332_id
+peek F:4A87E 1 b332_ix
+peek F:4A87B 1 b332_run
+peek F:4A898 1 b332_md
+peek F:4A7FC 2 b332_hold
+peek F:1A6BC 4 b332_st
+step
+peek F:4A82C 2 b333_bl
+peek F:4A879 1 b333_pc
+peek F:4A7BA 4 b333_tp
+peek F:4A802 2 b333_id
+peek F:4A87E 1 b333_ix
+peek F:4A87B 1 b333_run
+peek F:4A898 1 b333_md
+peek F:4A7FC 2 b333_hold
+peek F:1A6BC 4 b333_st
+step
+peek F:4A82C 2 b334_bl
+peek F:4A879 1 b334_pc
+peek F:4A7BA 4 b334_tp
+peek F:4A802 2 b334_id
+peek F:4A87E 1 b334_ix
+peek F:4A87B 1 b334_run
+peek F:4A898 1 b334_md
+peek F:4A7FC 2 b334_hold
+peek F:1A6BC 4 b334_st
+step
+peek F:4A82C 2 b335_bl
+peek F:4A879 1 b335_pc
+peek F:4A7BA 4 b335_tp
+peek F:4A802 2 b335_id
+peek F:4A87E 1 b335_ix
+peek F:4A87B 1 b335_run
+peek F:4A898 1 b335_md
+peek F:4A7FC 2 b335_hold
+peek F:1A6BC 4 b335_st
+step
+peek F:4A82C 2 b336_bl
+peek F:4A879 1 b336_pc
+peek F:4A7BA 4 b336_tp
+peek F:4A802 2 b336_id
+peek F:4A87E 1 b336_ix
+peek F:4A87B 1 b336_run
+peek F:4A898 1 b336_md
+peek F:4A7FC 2 b336_hold
+peek F:1A6BC 4 b336_st
+step
+peek F:4A82C 2 b337_bl
+peek F:4A879 1 b337_pc
+peek F:4A7BA 4 b337_tp
+peek F:4A802 2 b337_id
+peek F:4A87E 1 b337_ix
+peek F:4A87B 1 b337_run
+peek F:4A898 1 b337_md
+peek F:4A7FC 2 b337_hold
+peek F:1A6BC 4 b337_st
+step
+peek F:4A82C 2 b338_bl
+peek F:4A879 1 b338_pc
+peek F:4A7BA 4 b338_tp
+peek F:4A802 2 b338_id
+peek F:4A87E 1 b338_ix
+peek F:4A87B 1 b338_run
+peek F:4A898 1 b338_md
+peek F:4A7FC 2 b338_hold
+peek F:1A6BC 4 b338_st
+step
+peek F:4A82C 2 b339_bl
+peek F:4A879 1 b339_pc
+peek F:4A7BA 4 b339_tp
+peek F:4A802 2 b339_id
+peek F:4A87E 1 b339_ix
+peek F:4A87B 1 b339_run
+peek F:4A898 1 b339_md
+peek F:4A7FC 2 b339_hold
+peek F:1A6BC 4 b339_st
+step
+peek F:4A82C 2 b340_bl
+peek F:4A879 1 b340_pc
+peek F:4A7BA 4 b340_tp
+peek F:4A802 2 b340_id
+peek F:4A87E 1 b340_ix
+peek F:4A87B 1 b340_run
+peek F:4A898 1 b340_md
+peek F:4A7FC 2 b340_hold
+peek F:1A6BC 4 b340_st
+step
+peek F:4A82C 2 b341_bl
+peek F:4A879 1 b341_pc
+peek F:4A7BA 4 b341_tp
+peek F:4A802 2 b341_id
+peek F:4A87E 1 b341_ix
+peek F:4A87B 1 b341_run
+peek F:4A898 1 b341_md
+peek F:4A7FC 2 b341_hold
+peek F:1A6BC 4 b341_st
+step
+peek F:4A82C 2 b342_bl
+peek F:4A879 1 b342_pc
+peek F:4A7BA 4 b342_tp
+peek F:4A802 2 b342_id
+peek F:4A87E 1 b342_ix
+peek F:4A87B 1 b342_run
+peek F:4A898 1 b342_md
+peek F:4A7FC 2 b342_hold
+peek F:1A6BC 4 b342_st
+step
+peek F:4A82C 2 b343_bl
+peek F:4A879 1 b343_pc
+peek F:4A7BA 4 b343_tp
+peek F:4A802 2 b343_id
+peek F:4A87E 1 b343_ix
+peek F:4A87B 1 b343_run
+peek F:4A898 1 b343_md
+peek F:4A7FC 2 b343_hold
+peek F:1A6BC 4 b343_st
+step
+peek F:4A82C 2 b344_bl
+peek F:4A879 1 b344_pc
+peek F:4A7BA 4 b344_tp
+peek F:4A802 2 b344_id
+peek F:4A87E 1 b344_ix
+peek F:4A87B 1 b344_run
+peek F:4A898 1 b344_md
+peek F:4A7FC 2 b344_hold
+peek F:1A6BC 4 b344_st
+step
+peek F:4A82C 2 b345_bl
+peek F:4A879 1 b345_pc
+peek F:4A7BA 4 b345_tp
+peek F:4A802 2 b345_id
+peek F:4A87E 1 b345_ix
+peek F:4A87B 1 b345_run
+peek F:4A898 1 b345_md
+peek F:4A7FC 2 b345_hold
+peek F:1A6BC 4 b345_st
+step
+peek F:4A82C 2 b346_bl
+peek F:4A879 1 b346_pc
+peek F:4A7BA 4 b346_tp
+peek F:4A802 2 b346_id
+peek F:4A87E 1 b346_ix
+peek F:4A87B 1 b346_run
+peek F:4A898 1 b346_md
+peek F:4A7FC 2 b346_hold
+peek F:1A6BC 4 b346_st
+step
+peek F:4A82C 2 b347_bl
+peek F:4A879 1 b347_pc
+peek F:4A7BA 4 b347_tp
+peek F:4A802 2 b347_id
+peek F:4A87E 1 b347_ix
+peek F:4A87B 1 b347_run
+peek F:4A898 1 b347_md
+peek F:4A7FC 2 b347_hold
+peek F:1A6BC 4 b347_st
+step
+peek F:4A82C 2 b348_bl
+peek F:4A879 1 b348_pc
+peek F:4A7BA 4 b348_tp
+peek F:4A802 2 b348_id
+peek F:4A87E 1 b348_ix
+peek F:4A87B 1 b348_run
+peek F:4A898 1 b348_md
+peek F:4A7FC 2 b348_hold
+peek F:1A6BC 4 b348_st
+step
+peek F:4A82C 2 b349_bl
+peek F:4A879 1 b349_pc
+peek F:4A7BA 4 b349_tp
+peek F:4A802 2 b349_id
+peek F:4A87E 1 b349_ix
+peek F:4A87B 1 b349_run
+peek F:4A898 1 b349_md
+peek F:4A7FC 2 b349_hold
+peek F:1A6BC 4 b349_st
+step
+peek F:4A82C 2 b350_bl
+peek F:4A879 1 b350_pc
+peek F:4A7BA 4 b350_tp
+peek F:4A802 2 b350_id
+peek F:4A87E 1 b350_ix
+peek F:4A87B 1 b350_run
+peek F:4A898 1 b350_md
+peek F:4A7FC 2 b350_hold
+peek F:1A6BC 4 b350_st
+step
+peek F:4A82C 2 b351_bl
+peek F:4A879 1 b351_pc
+peek F:4A7BA 4 b351_tp
+peek F:4A802 2 b351_id
+peek F:4A87E 1 b351_ix
+peek F:4A87B 1 b351_run
+peek F:4A898 1 b351_md
+peek F:4A7FC 2 b351_hold
+peek F:1A6BC 4 b351_st
+step
+peek F:4A82C 2 b352_bl
+peek F:4A879 1 b352_pc
+peek F:4A7BA 4 b352_tp
+peek F:4A802 2 b352_id
+peek F:4A87E 1 b352_ix
+peek F:4A87B 1 b352_run
+peek F:4A898 1 b352_md
+peek F:4A7FC 2 b352_hold
+peek F:1A6BC 4 b352_st
+step
+peek F:4A82C 2 b353_bl
+peek F:4A879 1 b353_pc
+peek F:4A7BA 4 b353_tp
+peek F:4A802 2 b353_id
+peek F:4A87E 1 b353_ix
+peek F:4A87B 1 b353_run
+peek F:4A898 1 b353_md
+peek F:4A7FC 2 b353_hold
+peek F:1A6BC 4 b353_st
+step
+peek F:4A82C 2 b354_bl
+peek F:4A879 1 b354_pc
+peek F:4A7BA 4 b354_tp
+peek F:4A802 2 b354_id
+peek F:4A87E 1 b354_ix
+peek F:4A87B 1 b354_run
+peek F:4A898 1 b354_md
+peek F:4A7FC 2 b354_hold
+peek F:1A6BC 4 b354_st
+step
+peek F:4A82C 2 b355_bl
+peek F:4A879 1 b355_pc
+peek F:4A7BA 4 b355_tp
+peek F:4A802 2 b355_id
+peek F:4A87E 1 b355_ix
+peek F:4A87B 1 b355_run
+peek F:4A898 1 b355_md
+peek F:4A7FC 2 b355_hold
+peek F:1A6BC 4 b355_st
+step
+peek F:4A82C 2 b356_bl
+peek F:4A879 1 b356_pc
+peek F:4A7BA 4 b356_tp
+peek F:4A802 2 b356_id
+peek F:4A87E 1 b356_ix
+peek F:4A87B 1 b356_run
+peek F:4A898 1 b356_md
+peek F:4A7FC 2 b356_hold
+peek F:1A6BC 4 b356_st
+step
+peek F:4A82C 2 b357_bl
+peek F:4A879 1 b357_pc
+peek F:4A7BA 4 b357_tp
+peek F:4A802 2 b357_id
+peek F:4A87E 1 b357_ix
+peek F:4A87B 1 b357_run
+peek F:4A898 1 b357_md
+peek F:4A7FC 2 b357_hold
+peek F:1A6BC 4 b357_st
+step
+peek F:4A82C 2 b358_bl
+peek F:4A879 1 b358_pc
+peek F:4A7BA 4 b358_tp
+peek F:4A802 2 b358_id
+peek F:4A87E 1 b358_ix
+peek F:4A87B 1 b358_run
+peek F:4A898 1 b358_md
+peek F:4A7FC 2 b358_hold
+peek F:1A6BC 4 b358_st
+step
+peek F:4A82C 2 b359_bl
+peek F:4A879 1 b359_pc
+peek F:4A7BA 4 b359_tp
+peek F:4A802 2 b359_id
+peek F:4A87E 1 b359_ix
+peek F:4A87B 1 b359_run
+peek F:4A898 1 b359_md
+peek F:4A7FC 2 b359_hold
+peek F:1A6BC 4 b359_st
+step
+peek F:4A82C 2 b360_bl
+peek F:4A879 1 b360_pc
+peek F:4A7BA 4 b360_tp
+peek F:4A802 2 b360_id
+peek F:4A87E 1 b360_ix
+peek F:4A87B 1 b360_run
+peek F:4A898 1 b360_md
+peek F:4A7FC 2 b360_hold
+peek F:1A6BC 4 b360_st
+step
+peek F:4A82C 2 b361_bl
+peek F:4A879 1 b361_pc
+peek F:4A7BA 4 b361_tp
+peek F:4A802 2 b361_id
+peek F:4A87E 1 b361_ix
+peek F:4A87B 1 b361_run
+peek F:4A898 1 b361_md
+peek F:4A7FC 2 b361_hold
+peek F:1A6BC 4 b361_st
+step
+peek F:4A82C 2 b362_bl
+peek F:4A879 1 b362_pc
+peek F:4A7BA 4 b362_tp
+peek F:4A802 2 b362_id
+peek F:4A87E 1 b362_ix
+peek F:4A87B 1 b362_run
+peek F:4A898 1 b362_md
+peek F:4A7FC 2 b362_hold
+peek F:1A6BC 4 b362_st
+step
+peek F:4A82C 2 b363_bl
+peek F:4A879 1 b363_pc
+peek F:4A7BA 4 b363_tp
+peek F:4A802 2 b363_id
+peek F:4A87E 1 b363_ix
+peek F:4A87B 1 b363_run
+peek F:4A898 1 b363_md
+peek F:4A7FC 2 b363_hold
+peek F:1A6BC 4 b363_st
+step
+peek F:4A82C 2 b364_bl
+peek F:4A879 1 b364_pc
+peek F:4A7BA 4 b364_tp
+peek F:4A802 2 b364_id
+peek F:4A87E 1 b364_ix
+peek F:4A87B 1 b364_run
+peek F:4A898 1 b364_md
+peek F:4A7FC 2 b364_hold
+peek F:1A6BC 4 b364_st
+step
+peek F:4A82C 2 b365_bl
+peek F:4A879 1 b365_pc
+peek F:4A7BA 4 b365_tp
+peek F:4A802 2 b365_id
+peek F:4A87E 1 b365_ix
+peek F:4A87B 1 b365_run
+peek F:4A898 1 b365_md
+peek F:4A7FC 2 b365_hold
+peek F:1A6BC 4 b365_st
+step
+peek F:4A82C 2 b366_bl
+peek F:4A879 1 b366_pc
+peek F:4A7BA 4 b366_tp
+peek F:4A802 2 b366_id
+peek F:4A87E 1 b366_ix
+peek F:4A87B 1 b366_run
+peek F:4A898 1 b366_md
+peek F:4A7FC 2 b366_hold
+peek F:1A6BC 4 b366_st
+step
+peek F:4A82C 2 b367_bl
+peek F:4A879 1 b367_pc
+peek F:4A7BA 4 b367_tp
+peek F:4A802 2 b367_id
+peek F:4A87E 1 b367_ix
+peek F:4A87B 1 b367_run
+peek F:4A898 1 b367_md
+peek F:4A7FC 2 b367_hold
+peek F:1A6BC 4 b367_st
+step
+peek F:4A82C 2 b368_bl
+peek F:4A879 1 b368_pc
+peek F:4A7BA 4 b368_tp
+peek F:4A802 2 b368_id
+peek F:4A87E 1 b368_ix
+peek F:4A87B 1 b368_run
+peek F:4A898 1 b368_md
+peek F:4A7FC 2 b368_hold
+peek F:1A6BC 4 b368_st
+step
+peek F:4A82C 2 b369_bl
+peek F:4A879 1 b369_pc
+peek F:4A7BA 4 b369_tp
+peek F:4A802 2 b369_id
+peek F:4A87E 1 b369_ix
+peek F:4A87B 1 b369_run
+peek F:4A898 1 b369_md
+peek F:4A7FC 2 b369_hold
+peek F:1A6BC 4 b369_st
+step
+peek F:4A82C 2 b370_bl
+peek F:4A879 1 b370_pc
+peek F:4A7BA 4 b370_tp
+peek F:4A802 2 b370_id
+peek F:4A87E 1 b370_ix
+peek F:4A87B 1 b370_run
+peek F:4A898 1 b370_md
+peek F:4A7FC 2 b370_hold
+peek F:1A6BC 4 b370_st
+step
+peek F:4A82C 2 b371_bl
+peek F:4A879 1 b371_pc
+peek F:4A7BA 4 b371_tp
+peek F:4A802 2 b371_id
+peek F:4A87E 1 b371_ix
+peek F:4A87B 1 b371_run
+peek F:4A898 1 b371_md
+peek F:4A7FC 2 b371_hold
+peek F:1A6BC 4 b371_st
+step
+peek F:4A82C 2 b372_bl
+peek F:4A879 1 b372_pc
+peek F:4A7BA 4 b372_tp
+peek F:4A802 2 b372_id
+peek F:4A87E 1 b372_ix
+peek F:4A87B 1 b372_run
+peek F:4A898 1 b372_md
+peek F:4A7FC 2 b372_hold
+peek F:1A6BC 4 b372_st
+step
+peek F:4A82C 2 b373_bl
+peek F:4A879 1 b373_pc
+peek F:4A7BA 4 b373_tp
+peek F:4A802 2 b373_id
+peek F:4A87E 1 b373_ix
+peek F:4A87B 1 b373_run
+peek F:4A898 1 b373_md
+peek F:4A7FC 2 b373_hold
+peek F:1A6BC 4 b373_st
+step
+peek F:4A82C 2 b374_bl
+peek F:4A879 1 b374_pc
+peek F:4A7BA 4 b374_tp
+peek F:4A802 2 b374_id
+peek F:4A87E 1 b374_ix
+peek F:4A87B 1 b374_run
+peek F:4A898 1 b374_md
+peek F:4A7FC 2 b374_hold
+peek F:1A6BC 4 b374_st
+step
+peek F:4A82C 2 b375_bl
+peek F:4A879 1 b375_pc
+peek F:4A7BA 4 b375_tp
+peek F:4A802 2 b375_id
+peek F:4A87E 1 b375_ix
+peek F:4A87B 1 b375_run
+peek F:4A898 1 b375_md
+peek F:4A7FC 2 b375_hold
+peek F:1A6BC 4 b375_st
+step
+peek F:4A82C 2 b376_bl
+peek F:4A879 1 b376_pc
+peek F:4A7BA 4 b376_tp
+peek F:4A802 2 b376_id
+peek F:4A87E 1 b376_ix
+peek F:4A87B 1 b376_run
+peek F:4A898 1 b376_md
+peek F:4A7FC 2 b376_hold
+peek F:1A6BC 4 b376_st
+step
+peek F:4A82C 2 b377_bl
+peek F:4A879 1 b377_pc
+peek F:4A7BA 4 b377_tp
+peek F:4A802 2 b377_id
+peek F:4A87E 1 b377_ix
+peek F:4A87B 1 b377_run
+peek F:4A898 1 b377_md
+peek F:4A7FC 2 b377_hold
+peek F:1A6BC 4 b377_st
+step
+peek F:4A82C 2 b378_bl
+peek F:4A879 1 b378_pc
+peek F:4A7BA 4 b378_tp
+peek F:4A802 2 b378_id
+peek F:4A87E 1 b378_ix
+peek F:4A87B 1 b378_run
+peek F:4A898 1 b378_md
+peek F:4A7FC 2 b378_hold
+peek F:1A6BC 4 b378_st
+step
+peek F:4A82C 2 b379_bl
+peek F:4A879 1 b379_pc
+peek F:4A7BA 4 b379_tp
+peek F:4A802 2 b379_id
+peek F:4A87E 1 b379_ix
+peek F:4A87B 1 b379_run
+peek F:4A898 1 b379_md
+peek F:4A7FC 2 b379_hold
+peek F:1A6BC 4 b379_st
+step

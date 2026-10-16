@@ -1,0 +1,40 @@
+# followup-combat-batch-i: the rest of batch h (it hit the 900 s limit after the flight school part 1): flight school part 2, the qualification and the free-flight start
+thaw
+restore extracted/captures/training-code-4.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt 3CCE
+freeze
+step 1800
+peek F:4ABAE 4 t4_clock
+peek F:4ABB0 2 t4_sel
+peek F:4ABD4 1 t4_variant
+peek F:4ABD0 4 t4_off
+peek F:4A95E 1 t4_mode
+peek F:4A992 2 t4_pass
+thaw
+restore extracted/captures/qual-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt F7BD
+freeze
+step 1800
+peek F:4ABAE 4 q_clock
+peek F:4ABB0 2 q_sel
+peek F:4ABD4 1 q_variant
+peek F:4ABD0 4 q_off
+peek F:4A95E 1 q_mode
+peek F:4A992 2 q_pass
+thaw
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 1 0.12
+stepuntil F:4A849 1 eq 1 2500
+step 90
+key 1 0.12
+step 1800
+peek F:4ABAE 4 f1_clock
+peek F:4ABB0 2 f1_sel
+peek F:4ABD4 1 f1_variant
+peek F:4ABD0 4 f1_off
+peek F:4A95E 1 f1_mode
+peek F:4A992 2 f1_pass

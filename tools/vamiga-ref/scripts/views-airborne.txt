@@ -1,0 +1,19 @@
+# External camera from an airborne state (pitch about 30 degrees nose down, heading 28): the camera offsets of ring
+# directions 4, 0, 2 and 8 against the aircraft attitude matrix tell which directions follow pitch and roll.
+# Prerequisite: airborne.vasnap (freeflight-headings.txt). Output: extracted/captures/views/ (git-ignored).
+restore extracted/captures/airborne.vasnap
+wait 0.5
+snapshot extracted/captures/views/a-cockpit.vasnap
+key KPENTER
+wait 2
+snapshot extracted/captures/views/a-ext4.vasnap
+frame extracted/captures/views/a-ext4.ppm
+key KP8
+wait 2
+snapshot extracted/captures/views/a-ext0.vasnap
+key KP6
+wait 2
+snapshot extracted/captures/views/a-ext2.vasnap
+key KP5
+wait 2
+snapshot extracted/captures/views/a-ext8.vasnap

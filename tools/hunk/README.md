@@ -1,0 +1,5 @@
+relocate.py lays out an AmigaDOS hunk executable sequentially from a base address, applies the 32-bit relocations and writes a flat image plus a hunk address map.
+Run: python tools/hunk/relocate.py "extracted/disk/F-18 Interceptor" extracted/interceptor.bin extracted/interceptor.map.json [--base 0x10000]
+Outputs: extracted/interceptor.bin (big-endian 68000 image) and extracted/interceptor.map.json (index, type, addr, size per hunk).
+The outputs derive from copyrighted code and are git-ignored; never commit them. Tests: cd tools/hunk && pytest -q.
+Relocation: the hunk file is parsed directly (RELOC32 runs, RELOC32SHORT/DREL32; RELRELOC32 is rejected and DREL32 is treated as absolute, since the game has neither; a 0xC0000000 memory-flag extension is rejected too). amitools was dropped because it keeps only one run per target hunk in a block and silently lost relocations (fixed 2026-10-13; the old image had 1842 of 2745 in hunk 0). The map also carries `symbols`, `reloc_entries` and `reloc_count` (equal; 8441 for the game).

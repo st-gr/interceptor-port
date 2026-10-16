@@ -1,0 +1,14 @@
+# qualification: menu item 5, carrier qualification (note 08 section 9), 1 tick = 1 core step. The game starts at the credits and the keys drive the screens: any key
+# (tick 3), the menu's '5' (tick 30). The flight starts on the deck after the briefing; the script launches (full throttle), brings the throttle back, puts the hook down
+# and then leaves with ESC, which restarts the selection (the fade-out, the confirmation line, the briefing again). A scripted arrested landing is not part of it: the
+# script language flies only by fixed inputs, so no trap is reached; the success test itself is covered by tests/test_logbook.c. The synthetic asset set carries
+# the same screens and a placeholder flight.
+screens
+ticks 640
+at 3 key 120
+at 30 key 53
+at 250 fkey 10
+at 340 fkey 5
+at 360 btn HOOK
+at 400 btn GEAR
+at 430 btn ESC

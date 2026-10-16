@@ -1,0 +1,27 @@
+# F1 (mode 3) from the countercode prompt snapshot to the first flight passes, in real time (the stepuntil of the dense scripts runs 4 to 6 frames a second):
+# the countercode, the orders, the aircraft prompt (key 1), the approach; snapshot extracted/captures/mb/m3-flight.vasnap and the records of the first flight pass.
+# Prerequisite: extracted/captures/mb/m3-prompt.vasnap (mission-brief-m3-a.txt).  Run with --rw under flock.
+restore extracted/captures/mb/m3-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt 429C
+wait 16
+key 1 0.12
+wait 42
+freeze
+stepuntil F:1A6BC 4 eq 0xC0AA26 900
+step 30
+peek F:4A992 2 st_n
+peek F:4A95E 6 st_a95e
+peek F:4A7F2 4 st_sublist
+peek F:4A927 2 st_a927
+peek F:4AA78 2 st_lock
+peek F:4B23C 128 st_r0
+peek F:4BA3C 128 st_r4
+peek F:4BE3C 128 st_r6
+peek F:4C23C 128 st_r8
+peek F:4C63C 128 st_r10
+peek F:4CA3C 128 st_r12
+peek F:4CE3C 128 st_r14
+peek R:C54498 78 st_log
+snapshot extracted/captures/mb/m3-flight.vasnap
+frame extracted/captures/mb/m3-flight.ppm

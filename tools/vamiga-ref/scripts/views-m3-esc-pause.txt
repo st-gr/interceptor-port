@@ -1,0 +1,1266 @@
+# ESC pressed during a pause (note 06 view item 8, note 05 17.17 rule 9): per-blank log of the pause byte, the gate and the ESC byte; k counts blanks from the key.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+thaw
+key P 0.12
+wait 1.0
+freeze
+peek F:4A866 1 pre_pause
+peek F:4A84D 1 pre_gate
+key ESC 0.12
+peek F:4A8E2 1 k0_v8e2
+peek F:4A866 1 k0_pause
+peek F:4A84D 1 k0_gate
+peek F:1A6BC 4 k0_st
+peek F:4A992 2 k0_n
+step 1
+peek F:4A8E2 1 k1_v8e2
+peek F:4A866 1 k1_pause
+peek F:4A84D 1 k1_gate
+peek F:1A6BC 4 k1_st
+peek F:4A992 2 k1_n
+step 1
+peek F:4A8E2 1 k2_v8e2
+peek F:4A866 1 k2_pause
+peek F:4A84D 1 k2_gate
+peek F:1A6BC 4 k2_st
+peek F:4A992 2 k2_n
+step 1
+peek F:4A8E2 1 k3_v8e2
+peek F:4A866 1 k3_pause
+peek F:4A84D 1 k3_gate
+peek F:1A6BC 4 k3_st
+peek F:4A992 2 k3_n
+step 1
+peek F:4A8E2 1 k4_v8e2
+peek F:4A866 1 k4_pause
+peek F:4A84D 1 k4_gate
+peek F:1A6BC 4 k4_st
+peek F:4A992 2 k4_n
+step 1
+peek F:4A8E2 1 k5_v8e2
+peek F:4A866 1 k5_pause
+peek F:4A84D 1 k5_gate
+peek F:1A6BC 4 k5_st
+peek F:4A992 2 k5_n
+step 1
+peek F:4A8E2 1 k6_v8e2
+peek F:4A866 1 k6_pause
+peek F:4A84D 1 k6_gate
+peek F:1A6BC 4 k6_st
+peek F:4A992 2 k6_n
+step 1
+peek F:4A8E2 1 k7_v8e2
+peek F:4A866 1 k7_pause
+peek F:4A84D 1 k7_gate
+peek F:1A6BC 4 k7_st
+peek F:4A992 2 k7_n
+step 1
+peek F:4A8E2 1 k8_v8e2
+peek F:4A866 1 k8_pause
+peek F:4A84D 1 k8_gate
+peek F:1A6BC 4 k8_st
+peek F:4A992 2 k8_n
+step 1
+peek F:4A8E2 1 k9_v8e2
+peek F:4A866 1 k9_pause
+peek F:4A84D 1 k9_gate
+peek F:1A6BC 4 k9_st
+peek F:4A992 2 k9_n
+step 1
+peek F:4A8E2 1 k10_v8e2
+peek F:4A866 1 k10_pause
+peek F:4A84D 1 k10_gate
+peek F:1A6BC 4 k10_st
+peek F:4A992 2 k10_n
+step 1
+peek F:4A8E2 1 k11_v8e2
+peek F:4A866 1 k11_pause
+peek F:4A84D 1 k11_gate
+peek F:1A6BC 4 k11_st
+peek F:4A992 2 k11_n
+step 1
+peek F:4A8E2 1 k12_v8e2
+peek F:4A866 1 k12_pause
+peek F:4A84D 1 k12_gate
+peek F:1A6BC 4 k12_st
+peek F:4A992 2 k12_n
+step 1
+peek F:4A8E2 1 k13_v8e2
+peek F:4A866 1 k13_pause
+peek F:4A84D 1 k13_gate
+peek F:1A6BC 4 k13_st
+peek F:4A992 2 k13_n
+step 1
+peek F:4A8E2 1 k14_v8e2
+peek F:4A866 1 k14_pause
+peek F:4A84D 1 k14_gate
+peek F:1A6BC 4 k14_st
+peek F:4A992 2 k14_n
+step 1
+peek F:4A8E2 1 k15_v8e2
+peek F:4A866 1 k15_pause
+peek F:4A84D 1 k15_gate
+peek F:1A6BC 4 k15_st
+peek F:4A992 2 k15_n
+step 1
+peek F:4A8E2 1 k16_v8e2
+peek F:4A866 1 k16_pause
+peek F:4A84D 1 k16_gate
+peek F:1A6BC 4 k16_st
+peek F:4A992 2 k16_n
+step 1
+peek F:4A8E2 1 k17_v8e2
+peek F:4A866 1 k17_pause
+peek F:4A84D 1 k17_gate
+peek F:1A6BC 4 k17_st
+peek F:4A992 2 k17_n
+step 1
+peek F:4A8E2 1 k18_v8e2
+peek F:4A866 1 k18_pause
+peek F:4A84D 1 k18_gate
+peek F:1A6BC 4 k18_st
+peek F:4A992 2 k18_n
+step 1
+peek F:4A8E2 1 k19_v8e2
+peek F:4A866 1 k19_pause
+peek F:4A84D 1 k19_gate
+peek F:1A6BC 4 k19_st
+peek F:4A992 2 k19_n
+step 1
+peek F:4A8E2 1 k20_v8e2
+peek F:4A866 1 k20_pause
+peek F:4A84D 1 k20_gate
+peek F:1A6BC 4 k20_st
+peek F:4A992 2 k20_n
+step 1
+peek F:4A8E2 1 k21_v8e2
+peek F:4A866 1 k21_pause
+peek F:4A84D 1 k21_gate
+peek F:1A6BC 4 k21_st
+peek F:4A992 2 k21_n
+step 1
+peek F:4A8E2 1 k22_v8e2
+peek F:4A866 1 k22_pause
+peek F:4A84D 1 k22_gate
+peek F:1A6BC 4 k22_st
+peek F:4A992 2 k22_n
+step 1
+peek F:4A8E2 1 k23_v8e2
+peek F:4A866 1 k23_pause
+peek F:4A84D 1 k23_gate
+peek F:1A6BC 4 k23_st
+peek F:4A992 2 k23_n
+step 1
+peek F:4A8E2 1 k24_v8e2
+peek F:4A866 1 k24_pause
+peek F:4A84D 1 k24_gate
+peek F:1A6BC 4 k24_st
+peek F:4A992 2 k24_n
+step 1
+peek F:4A8E2 1 k25_v8e2
+peek F:4A866 1 k25_pause
+peek F:4A84D 1 k25_gate
+peek F:1A6BC 4 k25_st
+peek F:4A992 2 k25_n
+step 1
+peek F:4A8E2 1 k26_v8e2
+peek F:4A866 1 k26_pause
+peek F:4A84D 1 k26_gate
+peek F:1A6BC 4 k26_st
+peek F:4A992 2 k26_n
+step 1
+peek F:4A8E2 1 k27_v8e2
+peek F:4A866 1 k27_pause
+peek F:4A84D 1 k27_gate
+peek F:1A6BC 4 k27_st
+peek F:4A992 2 k27_n
+step 1
+peek F:4A8E2 1 k28_v8e2
+peek F:4A866 1 k28_pause
+peek F:4A84D 1 k28_gate
+peek F:1A6BC 4 k28_st
+peek F:4A992 2 k28_n
+step 1
+peek F:4A8E2 1 k29_v8e2
+peek F:4A866 1 k29_pause
+peek F:4A84D 1 k29_gate
+peek F:1A6BC 4 k29_st
+peek F:4A992 2 k29_n
+step 1
+peek F:4A8E2 1 k30_v8e2
+peek F:4A866 1 k30_pause
+peek F:4A84D 1 k30_gate
+peek F:1A6BC 4 k30_st
+peek F:4A992 2 k30_n
+step 1
+peek F:4A8E2 1 k31_v8e2
+peek F:4A866 1 k31_pause
+peek F:4A84D 1 k31_gate
+peek F:1A6BC 4 k31_st
+peek F:4A992 2 k31_n
+step 1
+peek F:4A8E2 1 k32_v8e2
+peek F:4A866 1 k32_pause
+peek F:4A84D 1 k32_gate
+peek F:1A6BC 4 k32_st
+peek F:4A992 2 k32_n
+step 1
+peek F:4A8E2 1 k33_v8e2
+peek F:4A866 1 k33_pause
+peek F:4A84D 1 k33_gate
+peek F:1A6BC 4 k33_st
+peek F:4A992 2 k33_n
+step 1
+peek F:4A8E2 1 k34_v8e2
+peek F:4A866 1 k34_pause
+peek F:4A84D 1 k34_gate
+peek F:1A6BC 4 k34_st
+peek F:4A992 2 k34_n
+step 1
+peek F:4A8E2 1 k35_v8e2
+peek F:4A866 1 k35_pause
+peek F:4A84D 1 k35_gate
+peek F:1A6BC 4 k35_st
+peek F:4A992 2 k35_n
+step 1
+peek F:4A8E2 1 k36_v8e2
+peek F:4A866 1 k36_pause
+peek F:4A84D 1 k36_gate
+peek F:1A6BC 4 k36_st
+peek F:4A992 2 k36_n
+step 1
+peek F:4A8E2 1 k37_v8e2
+peek F:4A866 1 k37_pause
+peek F:4A84D 1 k37_gate
+peek F:1A6BC 4 k37_st
+peek F:4A992 2 k37_n
+step 1
+peek F:4A8E2 1 k38_v8e2
+peek F:4A866 1 k38_pause
+peek F:4A84D 1 k38_gate
+peek F:1A6BC 4 k38_st
+peek F:4A992 2 k38_n
+step 1
+peek F:4A8E2 1 k39_v8e2
+peek F:4A866 1 k39_pause
+peek F:4A84D 1 k39_gate
+peek F:1A6BC 4 k39_st
+peek F:4A992 2 k39_n
+step 1
+peek F:4A8E2 1 k40_v8e2
+peek F:4A866 1 k40_pause
+peek F:4A84D 1 k40_gate
+peek F:1A6BC 4 k40_st
+peek F:4A992 2 k40_n
+step 1
+peek F:4A8E2 1 k41_v8e2
+peek F:4A866 1 k41_pause
+peek F:4A84D 1 k41_gate
+peek F:1A6BC 4 k41_st
+peek F:4A992 2 k41_n
+step 1
+peek F:4A8E2 1 k42_v8e2
+peek F:4A866 1 k42_pause
+peek F:4A84D 1 k42_gate
+peek F:1A6BC 4 k42_st
+peek F:4A992 2 k42_n
+step 1
+peek F:4A8E2 1 k43_v8e2
+peek F:4A866 1 k43_pause
+peek F:4A84D 1 k43_gate
+peek F:1A6BC 4 k43_st
+peek F:4A992 2 k43_n
+step 1
+peek F:4A8E2 1 k44_v8e2
+peek F:4A866 1 k44_pause
+peek F:4A84D 1 k44_gate
+peek F:1A6BC 4 k44_st
+peek F:4A992 2 k44_n
+step 1
+peek F:4A8E2 1 k45_v8e2
+peek F:4A866 1 k45_pause
+peek F:4A84D 1 k45_gate
+peek F:1A6BC 4 k45_st
+peek F:4A992 2 k45_n
+step 1
+peek F:4A8E2 1 k46_v8e2
+peek F:4A866 1 k46_pause
+peek F:4A84D 1 k46_gate
+peek F:1A6BC 4 k46_st
+peek F:4A992 2 k46_n
+step 1
+peek F:4A8E2 1 k47_v8e2
+peek F:4A866 1 k47_pause
+peek F:4A84D 1 k47_gate
+peek F:1A6BC 4 k47_st
+peek F:4A992 2 k47_n
+step 1
+peek F:4A8E2 1 k48_v8e2
+peek F:4A866 1 k48_pause
+peek F:4A84D 1 k48_gate
+peek F:1A6BC 4 k48_st
+peek F:4A992 2 k48_n
+step 1
+peek F:4A8E2 1 k49_v8e2
+peek F:4A866 1 k49_pause
+peek F:4A84D 1 k49_gate
+peek F:1A6BC 4 k49_st
+peek F:4A992 2 k49_n
+step 1
+peek F:4A8E2 1 k50_v8e2
+peek F:4A866 1 k50_pause
+peek F:4A84D 1 k50_gate
+peek F:1A6BC 4 k50_st
+peek F:4A992 2 k50_n
+step 1
+peek F:4A8E2 1 k51_v8e2
+peek F:4A866 1 k51_pause
+peek F:4A84D 1 k51_gate
+peek F:1A6BC 4 k51_st
+peek F:4A992 2 k51_n
+step 1
+peek F:4A8E2 1 k52_v8e2
+peek F:4A866 1 k52_pause
+peek F:4A84D 1 k52_gate
+peek F:1A6BC 4 k52_st
+peek F:4A992 2 k52_n
+step 1
+peek F:4A8E2 1 k53_v8e2
+peek F:4A866 1 k53_pause
+peek F:4A84D 1 k53_gate
+peek F:1A6BC 4 k53_st
+peek F:4A992 2 k53_n
+step 1
+peek F:4A8E2 1 k54_v8e2
+peek F:4A866 1 k54_pause
+peek F:4A84D 1 k54_gate
+peek F:1A6BC 4 k54_st
+peek F:4A992 2 k54_n
+step 1
+peek F:4A8E2 1 k55_v8e2
+peek F:4A866 1 k55_pause
+peek F:4A84D 1 k55_gate
+peek F:1A6BC 4 k55_st
+peek F:4A992 2 k55_n
+step 1
+peek F:4A8E2 1 k56_v8e2
+peek F:4A866 1 k56_pause
+peek F:4A84D 1 k56_gate
+peek F:1A6BC 4 k56_st
+peek F:4A992 2 k56_n
+step 1
+peek F:4A8E2 1 k57_v8e2
+peek F:4A866 1 k57_pause
+peek F:4A84D 1 k57_gate
+peek F:1A6BC 4 k57_st
+peek F:4A992 2 k57_n
+step 1
+peek F:4A8E2 1 k58_v8e2
+peek F:4A866 1 k58_pause
+peek F:4A84D 1 k58_gate
+peek F:1A6BC 4 k58_st
+peek F:4A992 2 k58_n
+step 1
+peek F:4A8E2 1 k59_v8e2
+peek F:4A866 1 k59_pause
+peek F:4A84D 1 k59_gate
+peek F:1A6BC 4 k59_st
+peek F:4A992 2 k59_n
+step 1
+peek F:4A8E2 1 k60_v8e2
+peek F:4A866 1 k60_pause
+peek F:4A84D 1 k60_gate
+peek F:1A6BC 4 k60_st
+peek F:4A992 2 k60_n
+step 1
+peek F:4A8E2 1 k61_v8e2
+peek F:4A866 1 k61_pause
+peek F:4A84D 1 k61_gate
+peek F:1A6BC 4 k61_st
+peek F:4A992 2 k61_n
+step 1
+peek F:4A8E2 1 k62_v8e2
+peek F:4A866 1 k62_pause
+peek F:4A84D 1 k62_gate
+peek F:1A6BC 4 k62_st
+peek F:4A992 2 k62_n
+step 1
+peek F:4A8E2 1 k63_v8e2
+peek F:4A866 1 k63_pause
+peek F:4A84D 1 k63_gate
+peek F:1A6BC 4 k63_st
+peek F:4A992 2 k63_n
+step 1
+peek F:4A8E2 1 k64_v8e2
+peek F:4A866 1 k64_pause
+peek F:4A84D 1 k64_gate
+peek F:1A6BC 4 k64_st
+peek F:4A992 2 k64_n
+step 1
+peek F:4A8E2 1 k65_v8e2
+peek F:4A866 1 k65_pause
+peek F:4A84D 1 k65_gate
+peek F:1A6BC 4 k65_st
+peek F:4A992 2 k65_n
+step 1
+peek F:4A8E2 1 k66_v8e2
+peek F:4A866 1 k66_pause
+peek F:4A84D 1 k66_gate
+peek F:1A6BC 4 k66_st
+peek F:4A992 2 k66_n
+step 1
+peek F:4A8E2 1 k67_v8e2
+peek F:4A866 1 k67_pause
+peek F:4A84D 1 k67_gate
+peek F:1A6BC 4 k67_st
+peek F:4A992 2 k67_n
+step 1
+peek F:4A8E2 1 k68_v8e2
+peek F:4A866 1 k68_pause
+peek F:4A84D 1 k68_gate
+peek F:1A6BC 4 k68_st
+peek F:4A992 2 k68_n
+step 1
+peek F:4A8E2 1 k69_v8e2
+peek F:4A866 1 k69_pause
+peek F:4A84D 1 k69_gate
+peek F:1A6BC 4 k69_st
+peek F:4A992 2 k69_n
+step 1
+# P pressed after ESC: from a pause (ESC 10 blanks before P) and from free flight (ESC 10 blanks before P); per-blank pause byte, gate, n and state pointer from the P key (note 06 view item 8, note 05 17.17 rule 9).
+log EP_pause
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+thaw
+key P 0.12
+wait 1.0
+freeze
+key ESC 0.12
+step 1
+step 1
+step 1
+step 1
+step 1
+step 1
+step 1
+step 1
+step 1
+step 1
+key P 0.12
+peek F:4A866 1 EP_pause0_pause
+peek F:4A84D 1 EP_pause0_gate
+peek F:4A992 2 EP_pause0_n
+peek F:1A6BC 4 EP_pause0_st
+step 1
+peek F:4A866 1 EP_pause1_pause
+peek F:4A84D 1 EP_pause1_gate
+peek F:4A992 2 EP_pause1_n
+peek F:1A6BC 4 EP_pause1_st
+step 1
+peek F:4A866 1 EP_pause2_pause
+peek F:4A84D 1 EP_pause2_gate
+peek F:4A992 2 EP_pause2_n
+peek F:1A6BC 4 EP_pause2_st
+step 1
+peek F:4A866 1 EP_pause3_pause
+peek F:4A84D 1 EP_pause3_gate
+peek F:4A992 2 EP_pause3_n
+peek F:1A6BC 4 EP_pause3_st
+step 1
+peek F:4A866 1 EP_pause4_pause
+peek F:4A84D 1 EP_pause4_gate
+peek F:4A992 2 EP_pause4_n
+peek F:1A6BC 4 EP_pause4_st
+step 1
+peek F:4A866 1 EP_pause5_pause
+peek F:4A84D 1 EP_pause5_gate
+peek F:4A992 2 EP_pause5_n
+peek F:1A6BC 4 EP_pause5_st
+step 1
+peek F:4A866 1 EP_pause6_pause
+peek F:4A84D 1 EP_pause6_gate
+peek F:4A992 2 EP_pause6_n
+peek F:1A6BC 4 EP_pause6_st
+step 1
+peek F:4A866 1 EP_pause7_pause
+peek F:4A84D 1 EP_pause7_gate
+peek F:4A992 2 EP_pause7_n
+peek F:1A6BC 4 EP_pause7_st
+step 1
+peek F:4A866 1 EP_pause8_pause
+peek F:4A84D 1 EP_pause8_gate
+peek F:4A992 2 EP_pause8_n
+peek F:1A6BC 4 EP_pause8_st
+step 1
+peek F:4A866 1 EP_pause9_pause
+peek F:4A84D 1 EP_pause9_gate
+peek F:4A992 2 EP_pause9_n
+peek F:1A6BC 4 EP_pause9_st
+step 1
+peek F:4A866 1 EP_pause10_pause
+peek F:4A84D 1 EP_pause10_gate
+peek F:4A992 2 EP_pause10_n
+peek F:1A6BC 4 EP_pause10_st
+step 1
+peek F:4A866 1 EP_pause11_pause
+peek F:4A84D 1 EP_pause11_gate
+peek F:4A992 2 EP_pause11_n
+peek F:1A6BC 4 EP_pause11_st
+step 1
+peek F:4A866 1 EP_pause12_pause
+peek F:4A84D 1 EP_pause12_gate
+peek F:4A992 2 EP_pause12_n
+peek F:1A6BC 4 EP_pause12_st
+step 1
+peek F:4A866 1 EP_pause13_pause
+peek F:4A84D 1 EP_pause13_gate
+peek F:4A992 2 EP_pause13_n
+peek F:1A6BC 4 EP_pause13_st
+step 1
+peek F:4A866 1 EP_pause14_pause
+peek F:4A84D 1 EP_pause14_gate
+peek F:4A992 2 EP_pause14_n
+peek F:1A6BC 4 EP_pause14_st
+step 1
+peek F:4A866 1 EP_pause15_pause
+peek F:4A84D 1 EP_pause15_gate
+peek F:4A992 2 EP_pause15_n
+peek F:1A6BC 4 EP_pause15_st
+step 1
+peek F:4A866 1 EP_pause16_pause
+peek F:4A84D 1 EP_pause16_gate
+peek F:4A992 2 EP_pause16_n
+peek F:1A6BC 4 EP_pause16_st
+step 1
+peek F:4A866 1 EP_pause17_pause
+peek F:4A84D 1 EP_pause17_gate
+peek F:4A992 2 EP_pause17_n
+peek F:1A6BC 4 EP_pause17_st
+step 1
+peek F:4A866 1 EP_pause18_pause
+peek F:4A84D 1 EP_pause18_gate
+peek F:4A992 2 EP_pause18_n
+peek F:1A6BC 4 EP_pause18_st
+step 1
+peek F:4A866 1 EP_pause19_pause
+peek F:4A84D 1 EP_pause19_gate
+peek F:4A992 2 EP_pause19_n
+peek F:1A6BC 4 EP_pause19_st
+step 1
+peek F:4A866 1 EP_pause20_pause
+peek F:4A84D 1 EP_pause20_gate
+peek F:4A992 2 EP_pause20_n
+peek F:1A6BC 4 EP_pause20_st
+step 1
+peek F:4A866 1 EP_pause21_pause
+peek F:4A84D 1 EP_pause21_gate
+peek F:4A992 2 EP_pause21_n
+peek F:1A6BC 4 EP_pause21_st
+step 1
+peek F:4A866 1 EP_pause22_pause
+peek F:4A84D 1 EP_pause22_gate
+peek F:4A992 2 EP_pause22_n
+peek F:1A6BC 4 EP_pause22_st
+step 1
+peek F:4A866 1 EP_pause23_pause
+peek F:4A84D 1 EP_pause23_gate
+peek F:4A992 2 EP_pause23_n
+peek F:1A6BC 4 EP_pause23_st
+step 1
+peek F:4A866 1 EP_pause24_pause
+peek F:4A84D 1 EP_pause24_gate
+peek F:4A992 2 EP_pause24_n
+peek F:1A6BC 4 EP_pause24_st
+step 1
+peek F:4A866 1 EP_pause25_pause
+peek F:4A84D 1 EP_pause25_gate
+peek F:4A992 2 EP_pause25_n
+peek F:1A6BC 4 EP_pause25_st
+step 1
+peek F:4A866 1 EP_pause26_pause
+peek F:4A84D 1 EP_pause26_gate
+peek F:4A992 2 EP_pause26_n
+peek F:1A6BC 4 EP_pause26_st
+step 1
+peek F:4A866 1 EP_pause27_pause
+peek F:4A84D 1 EP_pause27_gate
+peek F:4A992 2 EP_pause27_n
+peek F:1A6BC 4 EP_pause27_st
+step 1
+peek F:4A866 1 EP_pause28_pause
+peek F:4A84D 1 EP_pause28_gate
+peek F:4A992 2 EP_pause28_n
+peek F:1A6BC 4 EP_pause28_st
+step 1
+peek F:4A866 1 EP_pause29_pause
+peek F:4A84D 1 EP_pause29_gate
+peek F:4A992 2 EP_pause29_n
+peek F:1A6BC 4 EP_pause29_st
+step 1
+peek F:4A866 1 EP_pause30_pause
+peek F:4A84D 1 EP_pause30_gate
+peek F:4A992 2 EP_pause30_n
+peek F:1A6BC 4 EP_pause30_st
+step 1
+peek F:4A866 1 EP_pause31_pause
+peek F:4A84D 1 EP_pause31_gate
+peek F:4A992 2 EP_pause31_n
+peek F:1A6BC 4 EP_pause31_st
+step 1
+peek F:4A866 1 EP_pause32_pause
+peek F:4A84D 1 EP_pause32_gate
+peek F:4A992 2 EP_pause32_n
+peek F:1A6BC 4 EP_pause32_st
+step 1
+peek F:4A866 1 EP_pause33_pause
+peek F:4A84D 1 EP_pause33_gate
+peek F:4A992 2 EP_pause33_n
+peek F:1A6BC 4 EP_pause33_st
+step 1
+peek F:4A866 1 EP_pause34_pause
+peek F:4A84D 1 EP_pause34_gate
+peek F:4A992 2 EP_pause34_n
+peek F:1A6BC 4 EP_pause34_st
+step 1
+peek F:4A866 1 EP_pause35_pause
+peek F:4A84D 1 EP_pause35_gate
+peek F:4A992 2 EP_pause35_n
+peek F:1A6BC 4 EP_pause35_st
+step 1
+peek F:4A866 1 EP_pause36_pause
+peek F:4A84D 1 EP_pause36_gate
+peek F:4A992 2 EP_pause36_n
+peek F:1A6BC 4 EP_pause36_st
+step 1
+peek F:4A866 1 EP_pause37_pause
+peek F:4A84D 1 EP_pause37_gate
+peek F:4A992 2 EP_pause37_n
+peek F:1A6BC 4 EP_pause37_st
+step 1
+peek F:4A866 1 EP_pause38_pause
+peek F:4A84D 1 EP_pause38_gate
+peek F:4A992 2 EP_pause38_n
+peek F:1A6BC 4 EP_pause38_st
+step 1
+peek F:4A866 1 EP_pause39_pause
+peek F:4A84D 1 EP_pause39_gate
+peek F:4A992 2 EP_pause39_n
+peek F:1A6BC 4 EP_pause39_st
+step 1
+peek F:4A866 1 EP_pause40_pause
+peek F:4A84D 1 EP_pause40_gate
+peek F:4A992 2 EP_pause40_n
+peek F:1A6BC 4 EP_pause40_st
+step 1
+peek F:4A866 1 EP_pause41_pause
+peek F:4A84D 1 EP_pause41_gate
+peek F:4A992 2 EP_pause41_n
+peek F:1A6BC 4 EP_pause41_st
+step 1
+peek F:4A866 1 EP_pause42_pause
+peek F:4A84D 1 EP_pause42_gate
+peek F:4A992 2 EP_pause42_n
+peek F:1A6BC 4 EP_pause42_st
+step 1
+peek F:4A866 1 EP_pause43_pause
+peek F:4A84D 1 EP_pause43_gate
+peek F:4A992 2 EP_pause43_n
+peek F:1A6BC 4 EP_pause43_st
+step 1
+peek F:4A866 1 EP_pause44_pause
+peek F:4A84D 1 EP_pause44_gate
+peek F:4A992 2 EP_pause44_n
+peek F:1A6BC 4 EP_pause44_st
+step 1
+peek F:4A866 1 EP_pause45_pause
+peek F:4A84D 1 EP_pause45_gate
+peek F:4A992 2 EP_pause45_n
+peek F:1A6BC 4 EP_pause45_st
+step 1
+peek F:4A866 1 EP_pause46_pause
+peek F:4A84D 1 EP_pause46_gate
+peek F:4A992 2 EP_pause46_n
+peek F:1A6BC 4 EP_pause46_st
+step 1
+peek F:4A866 1 EP_pause47_pause
+peek F:4A84D 1 EP_pause47_gate
+peek F:4A992 2 EP_pause47_n
+peek F:1A6BC 4 EP_pause47_st
+step 1
+peek F:4A866 1 EP_pause48_pause
+peek F:4A84D 1 EP_pause48_gate
+peek F:4A992 2 EP_pause48_n
+peek F:1A6BC 4 EP_pause48_st
+step 1
+peek F:4A866 1 EP_pause49_pause
+peek F:4A84D 1 EP_pause49_gate
+peek F:4A992 2 EP_pause49_n
+peek F:1A6BC 4 EP_pause49_st
+step 1
+peek F:4A866 1 EP_pause50_pause
+peek F:4A84D 1 EP_pause50_gate
+peek F:4A992 2 EP_pause50_n
+peek F:1A6BC 4 EP_pause50_st
+step 1
+peek F:4A866 1 EP_pause51_pause
+peek F:4A84D 1 EP_pause51_gate
+peek F:4A992 2 EP_pause51_n
+peek F:1A6BC 4 EP_pause51_st
+step 1
+peek F:4A866 1 EP_pause52_pause
+peek F:4A84D 1 EP_pause52_gate
+peek F:4A992 2 EP_pause52_n
+peek F:1A6BC 4 EP_pause52_st
+step 1
+peek F:4A866 1 EP_pause53_pause
+peek F:4A84D 1 EP_pause53_gate
+peek F:4A992 2 EP_pause53_n
+peek F:1A6BC 4 EP_pause53_st
+step 1
+peek F:4A866 1 EP_pause54_pause
+peek F:4A84D 1 EP_pause54_gate
+peek F:4A992 2 EP_pause54_n
+peek F:1A6BC 4 EP_pause54_st
+step 1
+peek F:4A866 1 EP_pause55_pause
+peek F:4A84D 1 EP_pause55_gate
+peek F:4A992 2 EP_pause55_n
+peek F:1A6BC 4 EP_pause55_st
+step 1
+peek F:4A866 1 EP_pause56_pause
+peek F:4A84D 1 EP_pause56_gate
+peek F:4A992 2 EP_pause56_n
+peek F:1A6BC 4 EP_pause56_st
+step 1
+peek F:4A866 1 EP_pause57_pause
+peek F:4A84D 1 EP_pause57_gate
+peek F:4A992 2 EP_pause57_n
+peek F:1A6BC 4 EP_pause57_st
+step 1
+peek F:4A866 1 EP_pause58_pause
+peek F:4A84D 1 EP_pause58_gate
+peek F:4A992 2 EP_pause58_n
+peek F:1A6BC 4 EP_pause58_st
+step 1
+peek F:4A866 1 EP_pause59_pause
+peek F:4A84D 1 EP_pause59_gate
+peek F:4A992 2 EP_pause59_n
+peek F:1A6BC 4 EP_pause59_st
+step 1
+peek F:4A866 1 EP_pause60_pause
+peek F:4A84D 1 EP_pause60_gate
+peek F:4A992 2 EP_pause60_n
+peek F:1A6BC 4 EP_pause60_st
+step 1
+peek F:4A866 1 EP_pause61_pause
+peek F:4A84D 1 EP_pause61_gate
+peek F:4A992 2 EP_pause61_n
+peek F:1A6BC 4 EP_pause61_st
+step 1
+peek F:4A866 1 EP_pause62_pause
+peek F:4A84D 1 EP_pause62_gate
+peek F:4A992 2 EP_pause62_n
+peek F:1A6BC 4 EP_pause62_st
+step 1
+peek F:4A866 1 EP_pause63_pause
+peek F:4A84D 1 EP_pause63_gate
+peek F:4A992 2 EP_pause63_n
+peek F:1A6BC 4 EP_pause63_st
+step 1
+peek F:4A866 1 EP_pause64_pause
+peek F:4A84D 1 EP_pause64_gate
+peek F:4A992 2 EP_pause64_n
+peek F:1A6BC 4 EP_pause64_st
+step 1
+peek F:4A866 1 EP_pause65_pause
+peek F:4A84D 1 EP_pause65_gate
+peek F:4A992 2 EP_pause65_n
+peek F:1A6BC 4 EP_pause65_st
+step 1
+peek F:4A866 1 EP_pause66_pause
+peek F:4A84D 1 EP_pause66_gate
+peek F:4A992 2 EP_pause66_n
+peek F:1A6BC 4 EP_pause66_st
+step 1
+peek F:4A866 1 EP_pause67_pause
+peek F:4A84D 1 EP_pause67_gate
+peek F:4A992 2 EP_pause67_n
+peek F:1A6BC 4 EP_pause67_st
+step 1
+peek F:4A866 1 EP_pause68_pause
+peek F:4A84D 1 EP_pause68_gate
+peek F:4A992 2 EP_pause68_n
+peek F:1A6BC 4 EP_pause68_st
+step 1
+peek F:4A866 1 EP_pause69_pause
+peek F:4A84D 1 EP_pause69_gate
+peek F:4A992 2 EP_pause69_n
+peek F:1A6BC 4 EP_pause69_st
+step 1
+peek F:4A866 1 EP_pause70_pause
+peek F:4A84D 1 EP_pause70_gate
+peek F:4A992 2 EP_pause70_n
+peek F:1A6BC 4 EP_pause70_st
+step 1
+peek F:4A866 1 EP_pause71_pause
+peek F:4A84D 1 EP_pause71_gate
+peek F:4A992 2 EP_pause71_n
+peek F:1A6BC 4 EP_pause71_st
+step 1
+peek F:4A866 1 EP_pause72_pause
+peek F:4A84D 1 EP_pause72_gate
+peek F:4A992 2 EP_pause72_n
+peek F:1A6BC 4 EP_pause72_st
+step 1
+peek F:4A866 1 EP_pause73_pause
+peek F:4A84D 1 EP_pause73_gate
+peek F:4A992 2 EP_pause73_n
+peek F:1A6BC 4 EP_pause73_st
+step 1
+peek F:4A866 1 EP_pause74_pause
+peek F:4A84D 1 EP_pause74_gate
+peek F:4A992 2 EP_pause74_n
+peek F:1A6BC 4 EP_pause74_st
+step 1
+peek F:4A866 1 EP_pause75_pause
+peek F:4A84D 1 EP_pause75_gate
+peek F:4A992 2 EP_pause75_n
+peek F:1A6BC 4 EP_pause75_st
+step 1
+peek F:4A866 1 EP_pause76_pause
+peek F:4A84D 1 EP_pause76_gate
+peek F:4A992 2 EP_pause76_n
+peek F:1A6BC 4 EP_pause76_st
+step 1
+peek F:4A866 1 EP_pause77_pause
+peek F:4A84D 1 EP_pause77_gate
+peek F:4A992 2 EP_pause77_n
+peek F:1A6BC 4 EP_pause77_st
+step 1
+peek F:4A866 1 EP_pause78_pause
+peek F:4A84D 1 EP_pause78_gate
+peek F:4A992 2 EP_pause78_n
+peek F:1A6BC 4 EP_pause78_st
+step 1
+peek F:4A866 1 EP_pause79_pause
+peek F:4A84D 1 EP_pause79_gate
+peek F:4A992 2 EP_pause79_n
+peek F:1A6BC 4 EP_pause79_st
+step 1
+log EP_flight
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key ESC 0.12
+step 1
+step 1
+step 1
+step 1
+step 1
+step 1
+step 1
+step 1
+step 1
+step 1
+key P 0.12
+peek F:4A866 1 EP_flight0_pause
+peek F:4A84D 1 EP_flight0_gate
+peek F:4A992 2 EP_flight0_n
+peek F:1A6BC 4 EP_flight0_st
+step 1
+peek F:4A866 1 EP_flight1_pause
+peek F:4A84D 1 EP_flight1_gate
+peek F:4A992 2 EP_flight1_n
+peek F:1A6BC 4 EP_flight1_st
+step 1
+peek F:4A866 1 EP_flight2_pause
+peek F:4A84D 1 EP_flight2_gate
+peek F:4A992 2 EP_flight2_n
+peek F:1A6BC 4 EP_flight2_st
+step 1
+peek F:4A866 1 EP_flight3_pause
+peek F:4A84D 1 EP_flight3_gate
+peek F:4A992 2 EP_flight3_n
+peek F:1A6BC 4 EP_flight3_st
+step 1
+peek F:4A866 1 EP_flight4_pause
+peek F:4A84D 1 EP_flight4_gate
+peek F:4A992 2 EP_flight4_n
+peek F:1A6BC 4 EP_flight4_st
+step 1
+peek F:4A866 1 EP_flight5_pause
+peek F:4A84D 1 EP_flight5_gate
+peek F:4A992 2 EP_flight5_n
+peek F:1A6BC 4 EP_flight5_st
+step 1
+peek F:4A866 1 EP_flight6_pause
+peek F:4A84D 1 EP_flight6_gate
+peek F:4A992 2 EP_flight6_n
+peek F:1A6BC 4 EP_flight6_st
+step 1
+peek F:4A866 1 EP_flight7_pause
+peek F:4A84D 1 EP_flight7_gate
+peek F:4A992 2 EP_flight7_n
+peek F:1A6BC 4 EP_flight7_st
+step 1
+peek F:4A866 1 EP_flight8_pause
+peek F:4A84D 1 EP_flight8_gate
+peek F:4A992 2 EP_flight8_n
+peek F:1A6BC 4 EP_flight8_st
+step 1
+peek F:4A866 1 EP_flight9_pause
+peek F:4A84D 1 EP_flight9_gate
+peek F:4A992 2 EP_flight9_n
+peek F:1A6BC 4 EP_flight9_st
+step 1
+peek F:4A866 1 EP_flight10_pause
+peek F:4A84D 1 EP_flight10_gate
+peek F:4A992 2 EP_flight10_n
+peek F:1A6BC 4 EP_flight10_st
+step 1
+peek F:4A866 1 EP_flight11_pause
+peek F:4A84D 1 EP_flight11_gate
+peek F:4A992 2 EP_flight11_n
+peek F:1A6BC 4 EP_flight11_st
+step 1
+peek F:4A866 1 EP_flight12_pause
+peek F:4A84D 1 EP_flight12_gate
+peek F:4A992 2 EP_flight12_n
+peek F:1A6BC 4 EP_flight12_st
+step 1
+peek F:4A866 1 EP_flight13_pause
+peek F:4A84D 1 EP_flight13_gate
+peek F:4A992 2 EP_flight13_n
+peek F:1A6BC 4 EP_flight13_st
+step 1
+peek F:4A866 1 EP_flight14_pause
+peek F:4A84D 1 EP_flight14_gate
+peek F:4A992 2 EP_flight14_n
+peek F:1A6BC 4 EP_flight14_st
+step 1
+peek F:4A866 1 EP_flight15_pause
+peek F:4A84D 1 EP_flight15_gate
+peek F:4A992 2 EP_flight15_n
+peek F:1A6BC 4 EP_flight15_st
+step 1
+peek F:4A866 1 EP_flight16_pause
+peek F:4A84D 1 EP_flight16_gate
+peek F:4A992 2 EP_flight16_n
+peek F:1A6BC 4 EP_flight16_st
+step 1
+peek F:4A866 1 EP_flight17_pause
+peek F:4A84D 1 EP_flight17_gate
+peek F:4A992 2 EP_flight17_n
+peek F:1A6BC 4 EP_flight17_st
+step 1
+peek F:4A866 1 EP_flight18_pause
+peek F:4A84D 1 EP_flight18_gate
+peek F:4A992 2 EP_flight18_n
+peek F:1A6BC 4 EP_flight18_st
+step 1
+peek F:4A866 1 EP_flight19_pause
+peek F:4A84D 1 EP_flight19_gate
+peek F:4A992 2 EP_flight19_n
+peek F:1A6BC 4 EP_flight19_st
+step 1
+peek F:4A866 1 EP_flight20_pause
+peek F:4A84D 1 EP_flight20_gate
+peek F:4A992 2 EP_flight20_n
+peek F:1A6BC 4 EP_flight20_st
+step 1
+peek F:4A866 1 EP_flight21_pause
+peek F:4A84D 1 EP_flight21_gate
+peek F:4A992 2 EP_flight21_n
+peek F:1A6BC 4 EP_flight21_st
+step 1
+peek F:4A866 1 EP_flight22_pause
+peek F:4A84D 1 EP_flight22_gate
+peek F:4A992 2 EP_flight22_n
+peek F:1A6BC 4 EP_flight22_st
+step 1
+peek F:4A866 1 EP_flight23_pause
+peek F:4A84D 1 EP_flight23_gate
+peek F:4A992 2 EP_flight23_n
+peek F:1A6BC 4 EP_flight23_st
+step 1
+peek F:4A866 1 EP_flight24_pause
+peek F:4A84D 1 EP_flight24_gate
+peek F:4A992 2 EP_flight24_n
+peek F:1A6BC 4 EP_flight24_st
+step 1
+peek F:4A866 1 EP_flight25_pause
+peek F:4A84D 1 EP_flight25_gate
+peek F:4A992 2 EP_flight25_n
+peek F:1A6BC 4 EP_flight25_st
+step 1
+peek F:4A866 1 EP_flight26_pause
+peek F:4A84D 1 EP_flight26_gate
+peek F:4A992 2 EP_flight26_n
+peek F:1A6BC 4 EP_flight26_st
+step 1
+peek F:4A866 1 EP_flight27_pause
+peek F:4A84D 1 EP_flight27_gate
+peek F:4A992 2 EP_flight27_n
+peek F:1A6BC 4 EP_flight27_st
+step 1
+peek F:4A866 1 EP_flight28_pause
+peek F:4A84D 1 EP_flight28_gate
+peek F:4A992 2 EP_flight28_n
+peek F:1A6BC 4 EP_flight28_st
+step 1
+peek F:4A866 1 EP_flight29_pause
+peek F:4A84D 1 EP_flight29_gate
+peek F:4A992 2 EP_flight29_n
+peek F:1A6BC 4 EP_flight29_st
+step 1
+peek F:4A866 1 EP_flight30_pause
+peek F:4A84D 1 EP_flight30_gate
+peek F:4A992 2 EP_flight30_n
+peek F:1A6BC 4 EP_flight30_st
+step 1
+peek F:4A866 1 EP_flight31_pause
+peek F:4A84D 1 EP_flight31_gate
+peek F:4A992 2 EP_flight31_n
+peek F:1A6BC 4 EP_flight31_st
+step 1
+peek F:4A866 1 EP_flight32_pause
+peek F:4A84D 1 EP_flight32_gate
+peek F:4A992 2 EP_flight32_n
+peek F:1A6BC 4 EP_flight32_st
+step 1
+peek F:4A866 1 EP_flight33_pause
+peek F:4A84D 1 EP_flight33_gate
+peek F:4A992 2 EP_flight33_n
+peek F:1A6BC 4 EP_flight33_st
+step 1
+peek F:4A866 1 EP_flight34_pause
+peek F:4A84D 1 EP_flight34_gate
+peek F:4A992 2 EP_flight34_n
+peek F:1A6BC 4 EP_flight34_st
+step 1
+peek F:4A866 1 EP_flight35_pause
+peek F:4A84D 1 EP_flight35_gate
+peek F:4A992 2 EP_flight35_n
+peek F:1A6BC 4 EP_flight35_st
+step 1
+peek F:4A866 1 EP_flight36_pause
+peek F:4A84D 1 EP_flight36_gate
+peek F:4A992 2 EP_flight36_n
+peek F:1A6BC 4 EP_flight36_st
+step 1
+peek F:4A866 1 EP_flight37_pause
+peek F:4A84D 1 EP_flight37_gate
+peek F:4A992 2 EP_flight37_n
+peek F:1A6BC 4 EP_flight37_st
+step 1
+peek F:4A866 1 EP_flight38_pause
+peek F:4A84D 1 EP_flight38_gate
+peek F:4A992 2 EP_flight38_n
+peek F:1A6BC 4 EP_flight38_st
+step 1
+peek F:4A866 1 EP_flight39_pause
+peek F:4A84D 1 EP_flight39_gate
+peek F:4A992 2 EP_flight39_n
+peek F:1A6BC 4 EP_flight39_st
+step 1
+peek F:4A866 1 EP_flight40_pause
+peek F:4A84D 1 EP_flight40_gate
+peek F:4A992 2 EP_flight40_n
+peek F:1A6BC 4 EP_flight40_st
+step 1
+peek F:4A866 1 EP_flight41_pause
+peek F:4A84D 1 EP_flight41_gate
+peek F:4A992 2 EP_flight41_n
+peek F:1A6BC 4 EP_flight41_st
+step 1
+peek F:4A866 1 EP_flight42_pause
+peek F:4A84D 1 EP_flight42_gate
+peek F:4A992 2 EP_flight42_n
+peek F:1A6BC 4 EP_flight42_st
+step 1
+peek F:4A866 1 EP_flight43_pause
+peek F:4A84D 1 EP_flight43_gate
+peek F:4A992 2 EP_flight43_n
+peek F:1A6BC 4 EP_flight43_st
+step 1
+peek F:4A866 1 EP_flight44_pause
+peek F:4A84D 1 EP_flight44_gate
+peek F:4A992 2 EP_flight44_n
+peek F:1A6BC 4 EP_flight44_st
+step 1
+peek F:4A866 1 EP_flight45_pause
+peek F:4A84D 1 EP_flight45_gate
+peek F:4A992 2 EP_flight45_n
+peek F:1A6BC 4 EP_flight45_st
+step 1
+peek F:4A866 1 EP_flight46_pause
+peek F:4A84D 1 EP_flight46_gate
+peek F:4A992 2 EP_flight46_n
+peek F:1A6BC 4 EP_flight46_st
+step 1
+peek F:4A866 1 EP_flight47_pause
+peek F:4A84D 1 EP_flight47_gate
+peek F:4A992 2 EP_flight47_n
+peek F:1A6BC 4 EP_flight47_st
+step 1
+peek F:4A866 1 EP_flight48_pause
+peek F:4A84D 1 EP_flight48_gate
+peek F:4A992 2 EP_flight48_n
+peek F:1A6BC 4 EP_flight48_st
+step 1
+peek F:4A866 1 EP_flight49_pause
+peek F:4A84D 1 EP_flight49_gate
+peek F:4A992 2 EP_flight49_n
+peek F:1A6BC 4 EP_flight49_st
+step 1
+peek F:4A866 1 EP_flight50_pause
+peek F:4A84D 1 EP_flight50_gate
+peek F:4A992 2 EP_flight50_n
+peek F:1A6BC 4 EP_flight50_st
+step 1
+peek F:4A866 1 EP_flight51_pause
+peek F:4A84D 1 EP_flight51_gate
+peek F:4A992 2 EP_flight51_n
+peek F:1A6BC 4 EP_flight51_st
+step 1
+peek F:4A866 1 EP_flight52_pause
+peek F:4A84D 1 EP_flight52_gate
+peek F:4A992 2 EP_flight52_n
+peek F:1A6BC 4 EP_flight52_st
+step 1
+peek F:4A866 1 EP_flight53_pause
+peek F:4A84D 1 EP_flight53_gate
+peek F:4A992 2 EP_flight53_n
+peek F:1A6BC 4 EP_flight53_st
+step 1
+peek F:4A866 1 EP_flight54_pause
+peek F:4A84D 1 EP_flight54_gate
+peek F:4A992 2 EP_flight54_n
+peek F:1A6BC 4 EP_flight54_st
+step 1
+peek F:4A866 1 EP_flight55_pause
+peek F:4A84D 1 EP_flight55_gate
+peek F:4A992 2 EP_flight55_n
+peek F:1A6BC 4 EP_flight55_st
+step 1
+peek F:4A866 1 EP_flight56_pause
+peek F:4A84D 1 EP_flight56_gate
+peek F:4A992 2 EP_flight56_n
+peek F:1A6BC 4 EP_flight56_st
+step 1
+peek F:4A866 1 EP_flight57_pause
+peek F:4A84D 1 EP_flight57_gate
+peek F:4A992 2 EP_flight57_n
+peek F:1A6BC 4 EP_flight57_st
+step 1
+peek F:4A866 1 EP_flight58_pause
+peek F:4A84D 1 EP_flight58_gate
+peek F:4A992 2 EP_flight58_n
+peek F:1A6BC 4 EP_flight58_st
+step 1
+peek F:4A866 1 EP_flight59_pause
+peek F:4A84D 1 EP_flight59_gate
+peek F:4A992 2 EP_flight59_n
+peek F:1A6BC 4 EP_flight59_st
+step 1
+peek F:4A866 1 EP_flight60_pause
+peek F:4A84D 1 EP_flight60_gate
+peek F:4A992 2 EP_flight60_n
+peek F:1A6BC 4 EP_flight60_st
+step 1
+peek F:4A866 1 EP_flight61_pause
+peek F:4A84D 1 EP_flight61_gate
+peek F:4A992 2 EP_flight61_n
+peek F:1A6BC 4 EP_flight61_st
+step 1
+peek F:4A866 1 EP_flight62_pause
+peek F:4A84D 1 EP_flight62_gate
+peek F:4A992 2 EP_flight62_n
+peek F:1A6BC 4 EP_flight62_st
+step 1
+peek F:4A866 1 EP_flight63_pause
+peek F:4A84D 1 EP_flight63_gate
+peek F:4A992 2 EP_flight63_n
+peek F:1A6BC 4 EP_flight63_st
+step 1
+peek F:4A866 1 EP_flight64_pause
+peek F:4A84D 1 EP_flight64_gate
+peek F:4A992 2 EP_flight64_n
+peek F:1A6BC 4 EP_flight64_st
+step 1
+peek F:4A866 1 EP_flight65_pause
+peek F:4A84D 1 EP_flight65_gate
+peek F:4A992 2 EP_flight65_n
+peek F:1A6BC 4 EP_flight65_st
+step 1
+peek F:4A866 1 EP_flight66_pause
+peek F:4A84D 1 EP_flight66_gate
+peek F:4A992 2 EP_flight66_n
+peek F:1A6BC 4 EP_flight66_st
+step 1
+peek F:4A866 1 EP_flight67_pause
+peek F:4A84D 1 EP_flight67_gate
+peek F:4A992 2 EP_flight67_n
+peek F:1A6BC 4 EP_flight67_st
+step 1
+peek F:4A866 1 EP_flight68_pause
+peek F:4A84D 1 EP_flight68_gate
+peek F:4A992 2 EP_flight68_n
+peek F:1A6BC 4 EP_flight68_st
+step 1
+peek F:4A866 1 EP_flight69_pause
+peek F:4A84D 1 EP_flight69_gate
+peek F:4A992 2 EP_flight69_n
+peek F:1A6BC 4 EP_flight69_st
+step 1
+peek F:4A866 1 EP_flight70_pause
+peek F:4A84D 1 EP_flight70_gate
+peek F:4A992 2 EP_flight70_n
+peek F:1A6BC 4 EP_flight70_st
+step 1
+peek F:4A866 1 EP_flight71_pause
+peek F:4A84D 1 EP_flight71_gate
+peek F:4A992 2 EP_flight71_n
+peek F:1A6BC 4 EP_flight71_st
+step 1
+peek F:4A866 1 EP_flight72_pause
+peek F:4A84D 1 EP_flight72_gate
+peek F:4A992 2 EP_flight72_n
+peek F:1A6BC 4 EP_flight72_st
+step 1
+peek F:4A866 1 EP_flight73_pause
+peek F:4A84D 1 EP_flight73_gate
+peek F:4A992 2 EP_flight73_n
+peek F:1A6BC 4 EP_flight73_st
+step 1
+peek F:4A866 1 EP_flight74_pause
+peek F:4A84D 1 EP_flight74_gate
+peek F:4A992 2 EP_flight74_n
+peek F:1A6BC 4 EP_flight74_st
+step 1
+peek F:4A866 1 EP_flight75_pause
+peek F:4A84D 1 EP_flight75_gate
+peek F:4A992 2 EP_flight75_n
+peek F:1A6BC 4 EP_flight75_st
+step 1
+peek F:4A866 1 EP_flight76_pause
+peek F:4A84D 1 EP_flight76_gate
+peek F:4A992 2 EP_flight76_n
+peek F:1A6BC 4 EP_flight76_st
+step 1
+peek F:4A866 1 EP_flight77_pause
+peek F:4A84D 1 EP_flight77_gate
+peek F:4A992 2 EP_flight77_n
+peek F:1A6BC 4 EP_flight77_st
+step 1
+peek F:4A866 1 EP_flight78_pause
+peek F:4A84D 1 EP_flight78_gate
+peek F:4A992 2 EP_flight78_n
+peek F:1A6BC 4 EP_flight78_st
+step 1
+peek F:4A866 1 EP_flight79_pause
+peek F:4A84D 1 EP_flight79_gate
+peek F:4A992 2 EP_flight79_n
+peek F:1A6BC 4 EP_flight79_st
+step 1

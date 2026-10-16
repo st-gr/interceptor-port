@@ -1,0 +1,108 @@
+# Head views from the airborne state (pitch 30.5 degrees, heading 28.2): camera angle words V:4AB42/46/4A against the rig composition 0x325B8 (note 03, note 06 head views).
+# Prerequisite: airborne.vasnap. Output: log lines (peek) read by tools/m68k-rig tests / scratch checks; extracted/captures/views3/ (git-ignored).
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP6
+wait 0.7
+wait 0.5
+freeze
+log c1
+peek F:4B23C 160 c1_rec
+peek F:4A85F 1 c1_code
+peek F:4AB40 12 c1_ang
+peek F:4AC90 18 c1_mat
+peek F:4A869 1 c1_a869
+frame extracted/captures/views3/air-c1.ppm
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP6
+wait 0.7
+key KP6
+wait 0.7
+key KP6
+wait 0.7
+wait 0.5
+freeze
+log c3
+peek F:4B23C 160 c3_rec
+peek F:4A85F 1 c3_code
+peek F:4AB40 12 c3_ang
+peek F:4AC90 18 c3_mat
+peek F:4A869 1 c3_a869
+frame extracted/captures/views3/air-c3.ppm
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP2
+wait 0.7
+wait 0.5
+freeze
+log c6
+peek F:4B23C 160 c6_rec
+peek F:4A85F 1 c6_code
+peek F:4AB40 12 c6_ang
+peek F:4AC90 18 c6_mat
+peek F:4A869 1 c6_a869
+frame extracted/captures/views3/air-c6.ppm
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP4
+wait 0.7
+wait 0.5
+freeze
+log c11
+peek F:4B23C 160 c11_rec
+peek F:4A85F 1 c11_code
+peek F:4AB40 12 c11_ang
+peek F:4AC90 18 c11_mat
+peek F:4A869 1 c11_a869
+frame extracted/captures/views3/air-c11.ppm
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP7
+wait 0.7
+wait 0.5
+freeze
+log c12
+peek F:4B23C 160 c12_rec
+peek F:4A85F 1 c12_code
+peek F:4AB40 12 c12_ang
+peek F:4AC90 18 c12_mat
+peek F:4A869 1 c12_a869
+frame extracted/captures/views3/air-c12.ppm
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP1
+wait 0.7
+wait 0.5
+freeze
+log c13
+peek F:4B23C 160 c13_rec
+peek F:4A85F 1 c13_code
+peek F:4AB40 12 c13_ang
+peek F:4AC90 18 c13_mat
+peek F:4A869 1 c13_a869
+frame extracted/captures/views3/air-c13.ppm
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP4
+wait 0.7
+key KP4
+wait 0.7
+key KP4
+wait 0.7
+wait 0.5
+freeze
+log c9
+peek F:4B23C 160 c9_rec
+peek F:4A85F 1 c9_code
+peek F:4AB40 12 c9_ang
+peek F:4AC90 18 c9_mat
+peek F:4A869 1 c9_a869
+frame extracted/captures/views3/air-c9.ppm
+thaw

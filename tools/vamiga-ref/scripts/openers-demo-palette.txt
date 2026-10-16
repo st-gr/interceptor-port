@@ -1,0 +1,39 @@
+# Palette of the attract-mode demo (compare with free flight): colour registers and flag words in the demo snapshot over 30 s.
+restore extracted/captures/demo.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 8
+freeze
+log m0
+peek F:4B23C 512 rec0_m0
+peek F:4CE3C 512 rec14_m0
+peek F:4A700 2336 s71_m0
+colors pal_m0
+frame extracted/captures/openers/demo-0.ppm
+thaw
+wait 8
+freeze
+log m1
+peek F:4B23C 512 rec0_m1
+peek F:4CE3C 512 rec14_m1
+peek F:4A700 2336 s71_m1
+colors pal_m1
+frame extracted/captures/openers/demo-1.ppm
+thaw
+wait 8
+freeze
+log m2
+peek F:4B23C 512 rec0_m2
+peek F:4CE3C 512 rec14_m2
+peek F:4A700 2336 s71_m2
+colors pal_m2
+frame extracted/captures/openers/demo-2.ppm
+thaw
+wait 8
+freeze
+log m3
+peek F:4B23C 512 rec0_m3
+peek F:4CE3C 512 rec14_m3
+peek F:4A700 2336 s71_m3
+colors pal_m3
+frame extracted/captures/openers/demo-3.ppm
+thaw

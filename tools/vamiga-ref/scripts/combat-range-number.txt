@@ -1,0 +1,34 @@
+# Note 07 12.7, the screen position of the range number (0x367DA): from demo.vasnap (mode 3, the AIM-120 selected) run to the first video frame with the lock state V:4A96C = 1
+# (the target designated, in range), then three consecutive frames with the sight's variables and the line buffer of the number, V:4A8B2 (a sign and four digits).
+restore extracted/captures/demo.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+stepuntil F:4A96C 1 eq 1 12000
+peek F:4A992 2 c0_pass
+peek F:4AA78 2 c0_target
+peek F:4A9F6 2 c0_pipper_x
+peek F:4A9F8 2 c0_pipper_y
+peek F:4A9F2 2 c0_tgt_x
+peek F:4A9F4 2 c0_tgt_y
+peek F:4ABFC 2 c0_range_prev
+peek F:4ABFE 2 c0_closing
+peek F:4AAFA 2 c0_zoom
+peek F:4A8B2 6 c0_number
+peek F:4AA3E 2 c0_view_step
+peek F:4A9D0 4 c0_row_offset
+peek F:4AA0C 2 c0_pen
+frame extracted/captures/range-number-0.ppm
+step 1
+peek F:4A992 2 c1_pass
+peek F:4A8B2 6 c1_number
+peek F:4ABFE 2 c1_closing
+frame extracted/captures/range-number-1.ppm
+step 1
+peek F:4A992 2 c2_pass
+peek F:4A8B2 6 c2_number
+peek F:4ABFE 2 c2_closing
+frame extracted/captures/range-number-2.ppm
+step 1
+peek F:4A992 2 c3_pass
+peek F:4A8B2 6 c3_number
+frame extracted/captures/range-number-3.ppm
