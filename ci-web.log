@@ -7,120 +7,120 @@ EMCC_CORES=1 emcc -std=c99 -O2 -sUSE_SDL=2 -sALLOW_MEMORY_GROWTH=1 \
   src/core/ai.c src/core/assets.c src/core/assets_combat.c src/core/assets_flow.c src/core/cockpit.c src/core/entities.c src/core/flight.c src/core/flight_coll.c src/core/flight_tables.c src/core/fx.c src/core/game.c src/core/lists.c src/core/logbook.c src/core/mapmarks.c src/core/missions.c src/core/mover.c src/core/radar.c src/core/replay.c src/core/screen.c src/core/sky.c src/core/sound.c src/core/training.c src/core/weapons.c src/core/world.c src/frontend/sdl/assets.c src/frontend/sdl/audio.c src/frontend/sdl/effects.c src/frontend/sdl/fade.c src/frontend/sdl/hud.c src/frontend/sdl/input.c src/frontend/sdl/logfile.c src/frontend/sdl/main.c src/frontend/sdl/panel.c src/frontend/sdl/raster.c src/frontend/sdl/text.c src/frontend/sdl/video.c -o build/web/interceptor.js
 ports:INFO: retrieving port: sdl2 from https://github.com/libsdl-org/SDL/archive/release-2.32.0.zip
 ports:INFO: unpacking port: sdl2
-cache:INFO: generating port: sysroot/lib/wasm32-emscripten/libSDL2.a... (this will be cached in "/home/runner/work/_temp/c2204817-b263-4911-a7c9-48fa6c79f53d/emsdk-main/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten/libSDL2.a" for subsequent builds)
-system_libs:INFO: compiled 118 inputs in 25.70s
+cache:INFO: generating port: sysroot/lib/wasm32-emscripten/libSDL2.a... (this will be cached in "/home/runner/work/_temp/a01707dd-2fde-4874-95ba-dfeb04281b0b/emsdk-main/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten/libSDL2.a" for subsequent builds)
+system_libs:INFO: compiled 118 inputs in 19.31s
 cache:INFO:  - ok
 cp src/frontend/web/page.js build/web/page.js
 cp tools/extract-js/src/adf.js tools/extract-js/src/cockpit.js tools/extract-js/src/combat.js tools/extract-js/src/errors.js tools/extract-js/src/flight.js tools/extract-js/src/flow.js tools/extract-js/src/hunk.js tools/extract-js/src/ilbm.js tools/extract-js/src/index.js tools/extract-js/src/lists.js tools/extract-js/src/manifest.js tools/extract-js/src/models.js tools/extract-js/src/palette.js tools/extract-js/src/png.js tools/extract-js/src/sky.js tools/extract-js/src/sound_table.js tools/extract-js/src/sounds.js tools/extract-js/src/tables.js tools/extract-js/src/terrain.js tools/extract-js/src/util.js build/web/extract/
 cp tools/extract-js/segments.txt build/web/extract/segments.txt
 build/web:
 total 1248
-drwxr-xr-x 2 runner runner    4096 Oct 16 22:15 extract
--rw-r--r-- 1 runner runner    9354 Oct 16 22:14 index.html
--rw-r--r-- 1 runner runner  193313 Oct 16 22:15 interceptor.js
--rwxr-xr-x 1 runner runner 1054778 Oct 16 22:15 interceptor.wasm
--rw-r--r-- 1 runner runner    5599 Oct 16 22:15 page.js
+drwxr-xr-x 2 runner runner    4096 Oct 16 23:46 extract
+-rw-r--r-- 1 runner runner    9354 Oct 16 23:45 index.html
+-rw-r--r-- 1 runner runner  193313 Oct 16 23:46 interceptor.js
+-rwxr-xr-x 1 runner runner 1054778 Oct 16 23:46 interceptor.wasm
+-rw-r--r-- 1 runner runner    5599 Oct 16 23:46 page.js
 
 build/web/extract:
 total 208
--rw-r--r-- 1 runner runner  7717 Oct 16 22:15 adf.js
--rw-r--r-- 1 runner runner  6747 Oct 16 22:15 cockpit.js
--rw-r--r-- 1 runner runner 15626 Oct 16 22:15 combat.js
--rw-r--r-- 1 runner runner   257 Oct 16 22:15 errors.js
--rw-r--r-- 1 runner runner  7126 Oct 16 22:15 flight.js
--rw-r--r-- 1 runner runner 16245 Oct 16 22:15 flow.js
--rw-r--r-- 1 runner runner  5970 Oct 16 22:15 hunk.js
--rw-r--r-- 1 runner runner  3291 Oct 16 22:15 ilbm.js
--rw-r--r-- 1 runner runner  9749 Oct 16 22:15 index.js
--rw-r--r-- 1 runner runner  9319 Oct 16 22:15 lists.js
--rw-r--r-- 1 runner runner  4217 Oct 16 22:15 manifest.js
--rw-r--r-- 1 runner runner 49687 Oct 16 22:15 models.js
--rw-r--r-- 1 runner runner  3074 Oct 16 22:15 palette.js
--rw-r--r-- 1 runner runner  2588 Oct 16 22:15 png.js
--rw-r--r-- 1 runner runner 10179 Oct 16 22:15 segments.txt
--rw-r--r-- 1 runner runner  1113 Oct 16 22:15 sky.js
--rw-r--r-- 1 runner runner  3940 Oct 16 22:15 sound_table.js
--rw-r--r-- 1 runner runner  2173 Oct 16 22:15 sounds.js
--rw-r--r-- 1 runner runner  5024 Oct 16 22:15 tables.js
--rw-r--r-- 1 runner runner  6646 Oct 16 22:15 terrain.js
--rw-r--r-- 1 runner runner  2649 Oct 16 22:15 util.js
+-rw-r--r-- 1 runner runner  7717 Oct 16 23:46 adf.js
+-rw-r--r-- 1 runner runner  6747 Oct 16 23:46 cockpit.js
+-rw-r--r-- 1 runner runner 15626 Oct 16 23:46 combat.js
+-rw-r--r-- 1 runner runner   257 Oct 16 23:46 errors.js
+-rw-r--r-- 1 runner runner  7126 Oct 16 23:46 flight.js
+-rw-r--r-- 1 runner runner 16245 Oct 16 23:46 flow.js
+-rw-r--r-- 1 runner runner  5970 Oct 16 23:46 hunk.js
+-rw-r--r-- 1 runner runner  3291 Oct 16 23:46 ilbm.js
+-rw-r--r-- 1 runner runner  9749 Oct 16 23:46 index.js
+-rw-r--r-- 1 runner runner  9319 Oct 16 23:46 lists.js
+-rw-r--r-- 1 runner runner  4217 Oct 16 23:46 manifest.js
+-rw-r--r-- 1 runner runner 49687 Oct 16 23:46 models.js
+-rw-r--r-- 1 runner runner  3074 Oct 16 23:46 palette.js
+-rw-r--r-- 1 runner runner  2588 Oct 16 23:46 png.js
+-rw-r--r-- 1 runner runner 10179 Oct 16 23:46 segments.txt
+-rw-r--r-- 1 runner runner  1113 Oct 16 23:46 sky.js
+-rw-r--r-- 1 runner runner  3940 Oct 16 23:46 sound_table.js
+-rw-r--r-- 1 runner runner  2173 Oct 16 23:46 sounds.js
+-rw-r--r-- 1 runner runner  5024 Oct 16 23:46 tables.js
+-rw-r--r-- 1 runner runner  6646 Oct 16 23:46 terrain.js
+-rw-r--r-- 1 runner runner  2649 Oct 16 23:46 util.js
 TAP version 13
 # Subtest: success: every extracted file is created under /assets, progress reported
 ok 1 - success: every extracted file is created under /assets, progress reported
   ---
-  duration_ms: 43.738617
+  duration_ms: 31.368453
   type: 'test'
   ...
 # Subtest: not an ADF: the extractor's message verbatim, nothing created
 ok 2 - not an ADF: the extractor's message verbatim, nothing created
   ---
-  duration_ms: 30.364787
+  duration_ms: 19.937795
   type: 'test'
   ...
 # Subtest: a flux image is refused by name
 ok 3 - a flux image is refused by name
   ---
-  duration_ms: 67.522412
+  duration_ms: 20.671067
   type: 'test'
   ...
 # Subtest: another disk (an ADF without the game's files) is refused
 ok 4 - another disk (an ADF without the game's files) is refused
   ---
-  duration_ms: 48.251502
+  duration_ms: 30.867421
   type: 'test'
   ...
 # Subtest: an unexpected error is wrapped in a plain sentence; a failing FS is reported, not thrown
 ok 5 - an unexpected error is wrapped in a plain sentence; a failing FS is reported, not thrown
   ---
-  duration_ms: 26.81961
+  duration_ms: 26.357377
   type: 'test'
   ...
 # Subtest: writeAssets creates nested directories
 ok 6 - writeAssets creates nested directories
   ---
-  duration_ms: 0.28933
+  duration_ms: 0.290638
   type: 'test'
   ...
 # Subtest: the audio unlock is called when the build has it, else nothing happens
 ok 7 - the audio unlock is called when the build has it, else nothing happens
   ---
-  duration_ms: 0.27874
+  duration_ms: 0.182926
   type: 'test'
   ...
 # Subtest: log storage: mounted at the log directory and loaded before the program starts
 ok 8 - log storage: mounted at the log directory and loaded before the program starts
   ---
-  duration_ms: 2.811074
+  duration_ms: 0.446604
   type: 'test'
   ...
 # Subtest: log storage: a refused load, a missing IDBFS and a throwing mount are not fatal and leave the game in memory
 ok 9 - log storage: a refused load, a missing IDBFS and a throwing mount are not fatal and leave the game in memory
   ---
-  duration_ms: 1.797459
+  duration_ms: 0.295145
   type: 'test'
   ...
 # Subtest: log storage: an open that never answers falls back to the in-memory log after the timeout
 ok 10 - log storage: an open that never answers falls back to the in-memory log after the timeout
   ---
-  duration_ms: 50.694749
+  duration_ms: 50.7593
   type: 'test'
   ...
 # Subtest: log storage: one write at a time, a request during one is run after it, an error is reported
 ok 11 - log storage: one write at a time, a request during one is run after it, an error is reported
   ---
-  duration_ms: 0.356619
+  duration_ms: 0.3972
   type: 'test'
   ...
 # Subtest: the committed table holds comments and hunk lines only: no bytes of the game
 ok 12 - the committed table holds comments and hunk lines only: no bytes of the game
   ---
-  duration_ms: 0.956817
+  duration_ms: 0.730121
   type: 'test'
   ...
 # Subtest: extract with the table on the synthetic disk relocates the spans
 ok 13 - extract with the table on the synthetic disk relocates the spans
   ---
-  duration_ms: 53.514218
+  duration_ms: 26.313761
   type: 'test'
   ...
 1..13
@@ -131,4 +131,4 @@ ok 13 - extract with the table on the synthetic disk relocates the spans
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 499.75817
+# duration_ms 343.935891
