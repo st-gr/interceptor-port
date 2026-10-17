@@ -1,0 +1,439 @@
+# note 08 5.6 / 12.14: V:4A900 and the aircraft screen after the location keys 1, 5, 6 (author: note-0708 fix 2)
+thaw
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 1 0.12
+peek F:4A900 1 k1_s0
+peek F:4A966 1 k1_m0
+step 2
+peek F:4A900 1 k1_s2
+peek F:4A966 1 k1_m2
+peek F:4A849 1 k1_f2
+peek F:4A86D 1 k1_c2
+step 2
+peek F:4A900 1 k1_s4
+peek F:4A966 1 k1_m4
+peek F:4A849 1 k1_f4
+peek F:4A86D 1 k1_c4
+step 2
+peek F:4A900 1 k1_s6
+peek F:4A966 1 k1_m6
+peek F:4A849 1 k1_f6
+peek F:4A86D 1 k1_c6
+step 2
+peek F:4A900 1 k1_s8
+peek F:4A966 1 k1_m8
+peek F:4A849 1 k1_f8
+peek F:4A86D 1 k1_c8
+step 2
+peek F:4A900 1 k1_s10
+peek F:4A966 1 k1_m10
+peek F:4A849 1 k1_f10
+peek F:4A86D 1 k1_c10
+step 2
+peek F:4A900 1 k1_s12
+peek F:4A966 1 k1_m12
+peek F:4A849 1 k1_f12
+peek F:4A86D 1 k1_c12
+step 2
+peek F:4A900 1 k1_s14
+peek F:4A966 1 k1_m14
+peek F:4A849 1 k1_f14
+peek F:4A86D 1 k1_c14
+step 2
+peek F:4A900 1 k1_s16
+peek F:4A966 1 k1_m16
+peek F:4A849 1 k1_f16
+peek F:4A86D 1 k1_c16
+step 2
+peek F:4A900 1 k1_s18
+peek F:4A966 1 k1_m18
+peek F:4A849 1 k1_f18
+peek F:4A86D 1 k1_c18
+step 2
+peek F:4A900 1 k1_s20
+peek F:4A966 1 k1_m20
+peek F:4A849 1 k1_f20
+peek F:4A86D 1 k1_c20
+step 2
+peek F:4A900 1 k1_s22
+peek F:4A966 1 k1_m22
+peek F:4A849 1 k1_f22
+peek F:4A86D 1 k1_c22
+step 2
+peek F:4A900 1 k1_s24
+peek F:4A966 1 k1_m24
+peek F:4A849 1 k1_f24
+peek F:4A86D 1 k1_c24
+step 2
+peek F:4A900 1 k1_s26
+peek F:4A966 1 k1_m26
+peek F:4A849 1 k1_f26
+peek F:4A86D 1 k1_c26
+step 2
+peek F:4A900 1 k1_s28
+peek F:4A966 1 k1_m28
+peek F:4A849 1 k1_f28
+peek F:4A86D 1 k1_c28
+step 2
+peek F:4A900 1 k1_s30
+peek F:4A966 1 k1_m30
+peek F:4A849 1 k1_f30
+peek F:4A86D 1 k1_c30
+step 2
+peek F:4A900 1 k1_s32
+peek F:4A966 1 k1_m32
+peek F:4A849 1 k1_f32
+peek F:4A86D 1 k1_c32
+step 2
+peek F:4A900 1 k1_s34
+peek F:4A966 1 k1_m34
+peek F:4A849 1 k1_f34
+peek F:4A86D 1 k1_c34
+step 2
+peek F:4A900 1 k1_s36
+peek F:4A966 1 k1_m36
+peek F:4A849 1 k1_f36
+peek F:4A86D 1 k1_c36
+step 2
+peek F:4A900 1 k1_s38
+peek F:4A966 1 k1_m38
+peek F:4A849 1 k1_f38
+peek F:4A86D 1 k1_c38
+step 2
+peek F:4A900 1 k1_s40
+peek F:4A966 1 k1_m40
+peek F:4A849 1 k1_f40
+peek F:4A86D 1 k1_c40
+step 2
+peek F:4A900 1 k1_s42
+peek F:4A966 1 k1_m42
+peek F:4A849 1 k1_f42
+peek F:4A86D 1 k1_c42
+step 2
+peek F:4A900 1 k1_s44
+peek F:4A966 1 k1_m44
+peek F:4A849 1 k1_f44
+peek F:4A86D 1 k1_c44
+step 2
+peek F:4A900 1 k1_s46
+peek F:4A966 1 k1_m46
+peek F:4A849 1 k1_f46
+peek F:4A86D 1 k1_c46
+step 2
+peek F:4A900 1 k1_s48
+peek F:4A966 1 k1_m48
+peek F:4A849 1 k1_f48
+peek F:4A86D 1 k1_c48
+step 2
+peek F:4A900 1 k1_s50
+peek F:4A966 1 k1_m50
+peek F:4A849 1 k1_f50
+peek F:4A86D 1 k1_c50
+stepuntil F:4A849 1 eq 1 2500
+peek F:4A900 1 k1_a0
+peek F:4A966 1 k1_am
+peek F:4A90F 1 k1_ad
+frame extracted/captures/note0708-k1-a.ppm
+step 6
+frame extracted/captures/note0708-k1-b.ppm
+step 90
+peek F:4A900 1 k1_a90
+peek F:4A966 1 k1_am90
+frame extracted/captures/note0708-k1-c.ppm
+peek F:4A93B 1 k1_ctr
+step 1
+frame extracted/captures/note0708-k1-d.ppm
+thaw
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 5 0.12
+peek F:4A900 1 k5_s0
+peek F:4A966 1 k5_m0
+step 2
+peek F:4A900 1 k5_s2
+peek F:4A966 1 k5_m2
+peek F:4A849 1 k5_f2
+peek F:4A86D 1 k5_c2
+step 2
+peek F:4A900 1 k5_s4
+peek F:4A966 1 k5_m4
+peek F:4A849 1 k5_f4
+peek F:4A86D 1 k5_c4
+step 2
+peek F:4A900 1 k5_s6
+peek F:4A966 1 k5_m6
+peek F:4A849 1 k5_f6
+peek F:4A86D 1 k5_c6
+step 2
+peek F:4A900 1 k5_s8
+peek F:4A966 1 k5_m8
+peek F:4A849 1 k5_f8
+peek F:4A86D 1 k5_c8
+step 2
+peek F:4A900 1 k5_s10
+peek F:4A966 1 k5_m10
+peek F:4A849 1 k5_f10
+peek F:4A86D 1 k5_c10
+step 2
+peek F:4A900 1 k5_s12
+peek F:4A966 1 k5_m12
+peek F:4A849 1 k5_f12
+peek F:4A86D 1 k5_c12
+step 2
+peek F:4A900 1 k5_s14
+peek F:4A966 1 k5_m14
+peek F:4A849 1 k5_f14
+peek F:4A86D 1 k5_c14
+step 2
+peek F:4A900 1 k5_s16
+peek F:4A966 1 k5_m16
+peek F:4A849 1 k5_f16
+peek F:4A86D 1 k5_c16
+step 2
+peek F:4A900 1 k5_s18
+peek F:4A966 1 k5_m18
+peek F:4A849 1 k5_f18
+peek F:4A86D 1 k5_c18
+step 2
+peek F:4A900 1 k5_s20
+peek F:4A966 1 k5_m20
+peek F:4A849 1 k5_f20
+peek F:4A86D 1 k5_c20
+step 2
+peek F:4A900 1 k5_s22
+peek F:4A966 1 k5_m22
+peek F:4A849 1 k5_f22
+peek F:4A86D 1 k5_c22
+step 2
+peek F:4A900 1 k5_s24
+peek F:4A966 1 k5_m24
+peek F:4A849 1 k5_f24
+peek F:4A86D 1 k5_c24
+step 2
+peek F:4A900 1 k5_s26
+peek F:4A966 1 k5_m26
+peek F:4A849 1 k5_f26
+peek F:4A86D 1 k5_c26
+step 2
+peek F:4A900 1 k5_s28
+peek F:4A966 1 k5_m28
+peek F:4A849 1 k5_f28
+peek F:4A86D 1 k5_c28
+step 2
+peek F:4A900 1 k5_s30
+peek F:4A966 1 k5_m30
+peek F:4A849 1 k5_f30
+peek F:4A86D 1 k5_c30
+step 2
+peek F:4A900 1 k5_s32
+peek F:4A966 1 k5_m32
+peek F:4A849 1 k5_f32
+peek F:4A86D 1 k5_c32
+step 2
+peek F:4A900 1 k5_s34
+peek F:4A966 1 k5_m34
+peek F:4A849 1 k5_f34
+peek F:4A86D 1 k5_c34
+step 2
+peek F:4A900 1 k5_s36
+peek F:4A966 1 k5_m36
+peek F:4A849 1 k5_f36
+peek F:4A86D 1 k5_c36
+step 2
+peek F:4A900 1 k5_s38
+peek F:4A966 1 k5_m38
+peek F:4A849 1 k5_f38
+peek F:4A86D 1 k5_c38
+step 2
+peek F:4A900 1 k5_s40
+peek F:4A966 1 k5_m40
+peek F:4A849 1 k5_f40
+peek F:4A86D 1 k5_c40
+step 2
+peek F:4A900 1 k5_s42
+peek F:4A966 1 k5_m42
+peek F:4A849 1 k5_f42
+peek F:4A86D 1 k5_c42
+step 2
+peek F:4A900 1 k5_s44
+peek F:4A966 1 k5_m44
+peek F:4A849 1 k5_f44
+peek F:4A86D 1 k5_c44
+step 2
+peek F:4A900 1 k5_s46
+peek F:4A966 1 k5_m46
+peek F:4A849 1 k5_f46
+peek F:4A86D 1 k5_c46
+step 2
+peek F:4A900 1 k5_s48
+peek F:4A966 1 k5_m48
+peek F:4A849 1 k5_f48
+peek F:4A86D 1 k5_c48
+step 2
+peek F:4A900 1 k5_s50
+peek F:4A966 1 k5_m50
+peek F:4A849 1 k5_f50
+peek F:4A86D 1 k5_c50
+stepuntil F:4A849 1 eq 1 2500
+peek F:4A900 1 k5_a0
+peek F:4A966 1 k5_am
+peek F:4A90F 1 k5_ad
+frame extracted/captures/note0708-k5-a.ppm
+step 6
+frame extracted/captures/note0708-k5-b.ppm
+step 90
+peek F:4A900 1 k5_a90
+peek F:4A966 1 k5_am90
+frame extracted/captures/note0708-k5-c.ppm
+peek F:4A93B 1 k5_ctr
+step 1
+frame extracted/captures/note0708-k5-d.ppm
+thaw
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 6 0.12
+peek F:4A900 1 k6_s0
+peek F:4A966 1 k6_m0
+step 2
+peek F:4A900 1 k6_s2
+peek F:4A966 1 k6_m2
+peek F:4A849 1 k6_f2
+peek F:4A86D 1 k6_c2
+step 2
+peek F:4A900 1 k6_s4
+peek F:4A966 1 k6_m4
+peek F:4A849 1 k6_f4
+peek F:4A86D 1 k6_c4
+step 2
+peek F:4A900 1 k6_s6
+peek F:4A966 1 k6_m6
+peek F:4A849 1 k6_f6
+peek F:4A86D 1 k6_c6
+step 2
+peek F:4A900 1 k6_s8
+peek F:4A966 1 k6_m8
+peek F:4A849 1 k6_f8
+peek F:4A86D 1 k6_c8
+step 2
+peek F:4A900 1 k6_s10
+peek F:4A966 1 k6_m10
+peek F:4A849 1 k6_f10
+peek F:4A86D 1 k6_c10
+step 2
+peek F:4A900 1 k6_s12
+peek F:4A966 1 k6_m12
+peek F:4A849 1 k6_f12
+peek F:4A86D 1 k6_c12
+step 2
+peek F:4A900 1 k6_s14
+peek F:4A966 1 k6_m14
+peek F:4A849 1 k6_f14
+peek F:4A86D 1 k6_c14
+step 2
+peek F:4A900 1 k6_s16
+peek F:4A966 1 k6_m16
+peek F:4A849 1 k6_f16
+peek F:4A86D 1 k6_c16
+step 2
+peek F:4A900 1 k6_s18
+peek F:4A966 1 k6_m18
+peek F:4A849 1 k6_f18
+peek F:4A86D 1 k6_c18
+step 2
+peek F:4A900 1 k6_s20
+peek F:4A966 1 k6_m20
+peek F:4A849 1 k6_f20
+peek F:4A86D 1 k6_c20
+step 2
+peek F:4A900 1 k6_s22
+peek F:4A966 1 k6_m22
+peek F:4A849 1 k6_f22
+peek F:4A86D 1 k6_c22
+step 2
+peek F:4A900 1 k6_s24
+peek F:4A966 1 k6_m24
+peek F:4A849 1 k6_f24
+peek F:4A86D 1 k6_c24
+step 2
+peek F:4A900 1 k6_s26
+peek F:4A966 1 k6_m26
+peek F:4A849 1 k6_f26
+peek F:4A86D 1 k6_c26
+step 2
+peek F:4A900 1 k6_s28
+peek F:4A966 1 k6_m28
+peek F:4A849 1 k6_f28
+peek F:4A86D 1 k6_c28
+step 2
+peek F:4A900 1 k6_s30
+peek F:4A966 1 k6_m30
+peek F:4A849 1 k6_f30
+peek F:4A86D 1 k6_c30
+step 2
+peek F:4A900 1 k6_s32
+peek F:4A966 1 k6_m32
+peek F:4A849 1 k6_f32
+peek F:4A86D 1 k6_c32
+step 2
+peek F:4A900 1 k6_s34
+peek F:4A966 1 k6_m34
+peek F:4A849 1 k6_f34
+peek F:4A86D 1 k6_c34
+step 2
+peek F:4A900 1 k6_s36
+peek F:4A966 1 k6_m36
+peek F:4A849 1 k6_f36
+peek F:4A86D 1 k6_c36
+step 2
+peek F:4A900 1 k6_s38
+peek F:4A966 1 k6_m38
+peek F:4A849 1 k6_f38
+peek F:4A86D 1 k6_c38
+step 2
+peek F:4A900 1 k6_s40
+peek F:4A966 1 k6_m40
+peek F:4A849 1 k6_f40
+peek F:4A86D 1 k6_c40
+step 2
+peek F:4A900 1 k6_s42
+peek F:4A966 1 k6_m42
+peek F:4A849 1 k6_f42
+peek F:4A86D 1 k6_c42
+step 2
+peek F:4A900 1 k6_s44
+peek F:4A966 1 k6_m44
+peek F:4A849 1 k6_f44
+peek F:4A86D 1 k6_c44
+step 2
+peek F:4A900 1 k6_s46
+peek F:4A966 1 k6_m46
+peek F:4A849 1 k6_f46
+peek F:4A86D 1 k6_c46
+step 2
+peek F:4A900 1 k6_s48
+peek F:4A966 1 k6_m48
+peek F:4A849 1 k6_f48
+peek F:4A86D 1 k6_c48
+step 2
+peek F:4A900 1 k6_s50
+peek F:4A966 1 k6_m50
+peek F:4A849 1 k6_f50
+peek F:4A86D 1 k6_c50
+stepuntil F:4A849 1 eq 1 2500
+peek F:4A900 1 k6_a0
+peek F:4A966 1 k6_am
+peek F:4A90F 1 k6_ad
+frame extracted/captures/note0708-k6-a.ppm
+step 6
+frame extracted/captures/note0708-k6-b.ppm
+step 90
+peek F:4A900 1 k6_a90
+peek F:4A966 1 k6_am90
+frame extracted/captures/note0708-k6-c.ppm
+peek F:4A93B 1 k6_ctr
+step 1
+frame extracted/captures/note0708-k6-d.ppm

@@ -1,0 +1,47 @@
+# note 07 7.7 / 12.5 (milestone 7 task 3): the chaff drawer and the entity drawer, which first within a pass (head-on external view).
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key KPENTER 0.12
+step 20
+key KP8 0.12
+stepuntil F:4A992 2 eq 271 600
+step 4
+poke F:4A943 1 1
+runto F:3140C 10
+peek F:4A992 2 c0_pass
+peek F:4AD2A 64 c0_slot0
+runto F:21C44 10
+peek F:4A992 2 e0_pass
+peek F:4AA6E 2 e0_rec
+runto F:3140C 10
+peek F:4A992 2 c1_pass
+peek F:4AD2A 64 c1_slot0
+runto F:21C44 10
+peek F:4A992 2 e1_pass
+peek F:4AA6E 2 e1_rec
+runto F:3140C 10
+peek F:4A992 2 c2_pass
+peek F:4AD2A 64 c2_slot0
+runto F:21C44 10
+peek F:4A992 2 e2_pass
+peek F:4AA6E 2 e2_rec
+runto F:3140C 10
+peek F:4A992 2 c3_pass
+peek F:4AD2A 64 c3_slot0
+runto F:21C44 10
+peek F:4A992 2 e3_pass
+peek F:4AA6E 2 e3_rec
+runto F:3140C 10
+peek F:4A992 2 c4_pass
+peek F:4AD2A 64 c4_slot0
+runto F:21C44 10
+peek F:4A992 2 e4_pass
+peek F:4AA6E 2 e4_rec
+runto F:3140C 10
+peek F:4A992 2 c5_pass
+peek F:4AD2A 64 c5_slot0
+runto F:21C44 10
+peek F:4A992 2 e5_pass
+peek F:4AA6E 2 e5_rec

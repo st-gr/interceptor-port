@@ -1,0 +1,18 @@
+# note 08 section 9: menu item 5 (carrier qualification) from the credits snapshot to the security prompt, snapshot qual-prompt.vasnap
+# (the challenge is frozen in it: later scripts type its answer with `code`). The challenge shown in this run is read with peek (4 nibbles at V:4A87F).
+# Run:  build/vamiga-ref/ref --rom disks/kick12.rom --adf extracted/interceptor-autoboot.adf --script <this> --log extracted/captures/logs/flow-qual-prompt.txt
+restore extracted/captures/credits.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key SPACE
+wait 6
+key RETURN
+wait 6
+key 5
+wait 8
+freeze
+peek F:4A87F 4 chal
+peek F:4A883 8 ans
+peek F:4A95E 1 mode
+frame extracted/captures/logs/qual-prompt.ppm
+snapshot extracted/captures/qual-prompt.vasnap
+thaw

@@ -1,0 +1,12 @@
+# sound-boot: cold boot of the autoboot disk with the audio register trace and the recording; 8,200 frames (164 s of emulated time) are stepped
+# (the game loads for about 150 s, plays its start-up sound, shows the credits).
+wait 1
+freeze
+audtrace on frame
+wav extracted/captures/audio/sound-boot.wav start
+step 8200
+wav extracted/captures/audio/sound-boot.wav stop
+audtrace off
+peek R:BFE001 1 ciaa_pra
+peek R:BFE201 1 ciaa_ddra
+peek R:BFD000 1 ciab_pra

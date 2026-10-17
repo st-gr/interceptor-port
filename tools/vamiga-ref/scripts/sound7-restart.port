@@ -1,0 +1,4 @@
+# the port's side of sound7-restart: SHIFT-ESC from the air (the stop of the voices, the music restart and the menu list's clicks). Run: build/sound7_port assets FILE
+start deck
+ticks 60
+at 20 btn SHIFT_ESC

@@ -1,0 +1,17 @@
+{
+  "name": "interceptor-extract-js",
+  "version": "27.0.0",
+  "description": "The asset extractor of the F/A-18 Interceptor port, in JavaScript, for the browser build. Byte-identical to tools/extract (Python).",
+  "type": "module",
+  "private": true,
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 \"test/*.test.js\""
+  }
+}

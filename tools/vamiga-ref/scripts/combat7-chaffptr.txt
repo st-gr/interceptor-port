@@ -1,0 +1,17 @@
+# note 07 7.7 (milestone 7 task 3): the plane pointers of the point routine at the chaff drawer.
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key KPENTER 0.12
+step 20
+key KP8 0.12
+stepuntil F:4A992 2 eq 271 600
+step 4
+poke F:4A943 1 1
+runto F:3140C 10
+peek F:4A992 2 y_pass
+peek F:4A76E 4 y_ptr
+peek F:4A79E 6 y_clip
+peek F:4AA0C 2 y_pen
+peek R:C4227E 16 y_table

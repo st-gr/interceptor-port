@@ -1,0 +1,1523 @@
+# (no freeze: single-word reads) Time dependence of V:4A90C (see 01b): carrier deck, engine idle, constant altitude, 300 samples one second apart: 4A908..4A912, frame counter 4A992, timer seconds 4ABAA, colour registers; a frame every 15 s.
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+peek F:4A908 12 t000_b
+peek F:4A992 2 t000_f
+peek F:4ABAA 8 t000_c
+colors t000_pal
+frame extracted/captures/openers/clk-000.ppm
+wait 0.9
+peek F:4A908 12 t001_b
+peek F:4A992 2 t001_f
+peek F:4ABAA 8 t001_c
+colors t001_pal
+wait 0.9
+peek F:4A908 12 t002_b
+peek F:4A992 2 t002_f
+peek F:4ABAA 8 t002_c
+colors t002_pal
+wait 0.9
+peek F:4A908 12 t003_b
+peek F:4A992 2 t003_f
+peek F:4ABAA 8 t003_c
+colors t003_pal
+wait 0.9
+peek F:4A908 12 t004_b
+peek F:4A992 2 t004_f
+peek F:4ABAA 8 t004_c
+colors t004_pal
+wait 0.9
+peek F:4A908 12 t005_b
+peek F:4A992 2 t005_f
+peek F:4ABAA 8 t005_c
+colors t005_pal
+wait 0.9
+peek F:4A908 12 t006_b
+peek F:4A992 2 t006_f
+peek F:4ABAA 8 t006_c
+colors t006_pal
+wait 0.9
+peek F:4A908 12 t007_b
+peek F:4A992 2 t007_f
+peek F:4ABAA 8 t007_c
+colors t007_pal
+wait 0.9
+peek F:4A908 12 t008_b
+peek F:4A992 2 t008_f
+peek F:4ABAA 8 t008_c
+colors t008_pal
+wait 0.9
+peek F:4A908 12 t009_b
+peek F:4A992 2 t009_f
+peek F:4ABAA 8 t009_c
+colors t009_pal
+wait 0.9
+peek F:4A908 12 t010_b
+peek F:4A992 2 t010_f
+peek F:4ABAA 8 t010_c
+colors t010_pal
+wait 0.9
+peek F:4A908 12 t011_b
+peek F:4A992 2 t011_f
+peek F:4ABAA 8 t011_c
+colors t011_pal
+wait 0.9
+peek F:4A908 12 t012_b
+peek F:4A992 2 t012_f
+peek F:4ABAA 8 t012_c
+colors t012_pal
+wait 0.9
+peek F:4A908 12 t013_b
+peek F:4A992 2 t013_f
+peek F:4ABAA 8 t013_c
+colors t013_pal
+wait 0.9
+peek F:4A908 12 t014_b
+peek F:4A992 2 t014_f
+peek F:4ABAA 8 t014_c
+colors t014_pal
+wait 0.9
+peek F:4A908 12 t015_b
+peek F:4A992 2 t015_f
+peek F:4ABAA 8 t015_c
+colors t015_pal
+frame extracted/captures/openers/clk-015.ppm
+wait 0.9
+peek F:4A908 12 t016_b
+peek F:4A992 2 t016_f
+peek F:4ABAA 8 t016_c
+colors t016_pal
+wait 0.9
+peek F:4A908 12 t017_b
+peek F:4A992 2 t017_f
+peek F:4ABAA 8 t017_c
+colors t017_pal
+wait 0.9
+peek F:4A908 12 t018_b
+peek F:4A992 2 t018_f
+peek F:4ABAA 8 t018_c
+colors t018_pal
+wait 0.9
+peek F:4A908 12 t019_b
+peek F:4A992 2 t019_f
+peek F:4ABAA 8 t019_c
+colors t019_pal
+wait 0.9
+peek F:4A908 12 t020_b
+peek F:4A992 2 t020_f
+peek F:4ABAA 8 t020_c
+colors t020_pal
+wait 0.9
+peek F:4A908 12 t021_b
+peek F:4A992 2 t021_f
+peek F:4ABAA 8 t021_c
+colors t021_pal
+wait 0.9
+peek F:4A908 12 t022_b
+peek F:4A992 2 t022_f
+peek F:4ABAA 8 t022_c
+colors t022_pal
+wait 0.9
+peek F:4A908 12 t023_b
+peek F:4A992 2 t023_f
+peek F:4ABAA 8 t023_c
+colors t023_pal
+wait 0.9
+peek F:4A908 12 t024_b
+peek F:4A992 2 t024_f
+peek F:4ABAA 8 t024_c
+colors t024_pal
+wait 0.9
+peek F:4A908 12 t025_b
+peek F:4A992 2 t025_f
+peek F:4ABAA 8 t025_c
+colors t025_pal
+wait 0.9
+peek F:4A908 12 t026_b
+peek F:4A992 2 t026_f
+peek F:4ABAA 8 t026_c
+colors t026_pal
+wait 0.9
+peek F:4A908 12 t027_b
+peek F:4A992 2 t027_f
+peek F:4ABAA 8 t027_c
+colors t027_pal
+wait 0.9
+peek F:4A908 12 t028_b
+peek F:4A992 2 t028_f
+peek F:4ABAA 8 t028_c
+colors t028_pal
+wait 0.9
+peek F:4A908 12 t029_b
+peek F:4A992 2 t029_f
+peek F:4ABAA 8 t029_c
+colors t029_pal
+wait 0.9
+peek F:4A908 12 t030_b
+peek F:4A992 2 t030_f
+peek F:4ABAA 8 t030_c
+colors t030_pal
+frame extracted/captures/openers/clk-030.ppm
+wait 0.9
+peek F:4A908 12 t031_b
+peek F:4A992 2 t031_f
+peek F:4ABAA 8 t031_c
+colors t031_pal
+wait 0.9
+peek F:4A908 12 t032_b
+peek F:4A992 2 t032_f
+peek F:4ABAA 8 t032_c
+colors t032_pal
+wait 0.9
+peek F:4A908 12 t033_b
+peek F:4A992 2 t033_f
+peek F:4ABAA 8 t033_c
+colors t033_pal
+wait 0.9
+peek F:4A908 12 t034_b
+peek F:4A992 2 t034_f
+peek F:4ABAA 8 t034_c
+colors t034_pal
+wait 0.9
+peek F:4A908 12 t035_b
+peek F:4A992 2 t035_f
+peek F:4ABAA 8 t035_c
+colors t035_pal
+wait 0.9
+peek F:4A908 12 t036_b
+peek F:4A992 2 t036_f
+peek F:4ABAA 8 t036_c
+colors t036_pal
+wait 0.9
+peek F:4A908 12 t037_b
+peek F:4A992 2 t037_f
+peek F:4ABAA 8 t037_c
+colors t037_pal
+wait 0.9
+peek F:4A908 12 t038_b
+peek F:4A992 2 t038_f
+peek F:4ABAA 8 t038_c
+colors t038_pal
+wait 0.9
+peek F:4A908 12 t039_b
+peek F:4A992 2 t039_f
+peek F:4ABAA 8 t039_c
+colors t039_pal
+wait 0.9
+peek F:4A908 12 t040_b
+peek F:4A992 2 t040_f
+peek F:4ABAA 8 t040_c
+colors t040_pal
+wait 0.9
+peek F:4A908 12 t041_b
+peek F:4A992 2 t041_f
+peek F:4ABAA 8 t041_c
+colors t041_pal
+wait 0.9
+peek F:4A908 12 t042_b
+peek F:4A992 2 t042_f
+peek F:4ABAA 8 t042_c
+colors t042_pal
+wait 0.9
+peek F:4A908 12 t043_b
+peek F:4A992 2 t043_f
+peek F:4ABAA 8 t043_c
+colors t043_pal
+wait 0.9
+peek F:4A908 12 t044_b
+peek F:4A992 2 t044_f
+peek F:4ABAA 8 t044_c
+colors t044_pal
+wait 0.9
+peek F:4A908 12 t045_b
+peek F:4A992 2 t045_f
+peek F:4ABAA 8 t045_c
+colors t045_pal
+frame extracted/captures/openers/clk-045.ppm
+wait 0.9
+peek F:4A908 12 t046_b
+peek F:4A992 2 t046_f
+peek F:4ABAA 8 t046_c
+colors t046_pal
+wait 0.9
+peek F:4A908 12 t047_b
+peek F:4A992 2 t047_f
+peek F:4ABAA 8 t047_c
+colors t047_pal
+wait 0.9
+peek F:4A908 12 t048_b
+peek F:4A992 2 t048_f
+peek F:4ABAA 8 t048_c
+colors t048_pal
+wait 0.9
+peek F:4A908 12 t049_b
+peek F:4A992 2 t049_f
+peek F:4ABAA 8 t049_c
+colors t049_pal
+wait 0.9
+peek F:4A908 12 t050_b
+peek F:4A992 2 t050_f
+peek F:4ABAA 8 t050_c
+colors t050_pal
+wait 0.9
+peek F:4A908 12 t051_b
+peek F:4A992 2 t051_f
+peek F:4ABAA 8 t051_c
+colors t051_pal
+wait 0.9
+peek F:4A908 12 t052_b
+peek F:4A992 2 t052_f
+peek F:4ABAA 8 t052_c
+colors t052_pal
+wait 0.9
+peek F:4A908 12 t053_b
+peek F:4A992 2 t053_f
+peek F:4ABAA 8 t053_c
+colors t053_pal
+wait 0.9
+peek F:4A908 12 t054_b
+peek F:4A992 2 t054_f
+peek F:4ABAA 8 t054_c
+colors t054_pal
+wait 0.9
+peek F:4A908 12 t055_b
+peek F:4A992 2 t055_f
+peek F:4ABAA 8 t055_c
+colors t055_pal
+wait 0.9
+peek F:4A908 12 t056_b
+peek F:4A992 2 t056_f
+peek F:4ABAA 8 t056_c
+colors t056_pal
+wait 0.9
+peek F:4A908 12 t057_b
+peek F:4A992 2 t057_f
+peek F:4ABAA 8 t057_c
+colors t057_pal
+wait 0.9
+peek F:4A908 12 t058_b
+peek F:4A992 2 t058_f
+peek F:4ABAA 8 t058_c
+colors t058_pal
+wait 0.9
+peek F:4A908 12 t059_b
+peek F:4A992 2 t059_f
+peek F:4ABAA 8 t059_c
+colors t059_pal
+wait 0.9
+peek F:4A908 12 t060_b
+peek F:4A992 2 t060_f
+peek F:4ABAA 8 t060_c
+colors t060_pal
+frame extracted/captures/openers/clk-060.ppm
+wait 0.9
+peek F:4A908 12 t061_b
+peek F:4A992 2 t061_f
+peek F:4ABAA 8 t061_c
+colors t061_pal
+wait 0.9
+peek F:4A908 12 t062_b
+peek F:4A992 2 t062_f
+peek F:4ABAA 8 t062_c
+colors t062_pal
+wait 0.9
+peek F:4A908 12 t063_b
+peek F:4A992 2 t063_f
+peek F:4ABAA 8 t063_c
+colors t063_pal
+wait 0.9
+peek F:4A908 12 t064_b
+peek F:4A992 2 t064_f
+peek F:4ABAA 8 t064_c
+colors t064_pal
+wait 0.9
+peek F:4A908 12 t065_b
+peek F:4A992 2 t065_f
+peek F:4ABAA 8 t065_c
+colors t065_pal
+wait 0.9
+peek F:4A908 12 t066_b
+peek F:4A992 2 t066_f
+peek F:4ABAA 8 t066_c
+colors t066_pal
+wait 0.9
+peek F:4A908 12 t067_b
+peek F:4A992 2 t067_f
+peek F:4ABAA 8 t067_c
+colors t067_pal
+wait 0.9
+peek F:4A908 12 t068_b
+peek F:4A992 2 t068_f
+peek F:4ABAA 8 t068_c
+colors t068_pal
+wait 0.9
+peek F:4A908 12 t069_b
+peek F:4A992 2 t069_f
+peek F:4ABAA 8 t069_c
+colors t069_pal
+wait 0.9
+peek F:4A908 12 t070_b
+peek F:4A992 2 t070_f
+peek F:4ABAA 8 t070_c
+colors t070_pal
+wait 0.9
+peek F:4A908 12 t071_b
+peek F:4A992 2 t071_f
+peek F:4ABAA 8 t071_c
+colors t071_pal
+wait 0.9
+peek F:4A908 12 t072_b
+peek F:4A992 2 t072_f
+peek F:4ABAA 8 t072_c
+colors t072_pal
+wait 0.9
+peek F:4A908 12 t073_b
+peek F:4A992 2 t073_f
+peek F:4ABAA 8 t073_c
+colors t073_pal
+wait 0.9
+peek F:4A908 12 t074_b
+peek F:4A992 2 t074_f
+peek F:4ABAA 8 t074_c
+colors t074_pal
+wait 0.9
+peek F:4A908 12 t075_b
+peek F:4A992 2 t075_f
+peek F:4ABAA 8 t075_c
+colors t075_pal
+frame extracted/captures/openers/clk-075.ppm
+wait 0.9
+peek F:4A908 12 t076_b
+peek F:4A992 2 t076_f
+peek F:4ABAA 8 t076_c
+colors t076_pal
+wait 0.9
+peek F:4A908 12 t077_b
+peek F:4A992 2 t077_f
+peek F:4ABAA 8 t077_c
+colors t077_pal
+wait 0.9
+peek F:4A908 12 t078_b
+peek F:4A992 2 t078_f
+peek F:4ABAA 8 t078_c
+colors t078_pal
+wait 0.9
+peek F:4A908 12 t079_b
+peek F:4A992 2 t079_f
+peek F:4ABAA 8 t079_c
+colors t079_pal
+wait 0.9
+peek F:4A908 12 t080_b
+peek F:4A992 2 t080_f
+peek F:4ABAA 8 t080_c
+colors t080_pal
+wait 0.9
+peek F:4A908 12 t081_b
+peek F:4A992 2 t081_f
+peek F:4ABAA 8 t081_c
+colors t081_pal
+wait 0.9
+peek F:4A908 12 t082_b
+peek F:4A992 2 t082_f
+peek F:4ABAA 8 t082_c
+colors t082_pal
+wait 0.9
+peek F:4A908 12 t083_b
+peek F:4A992 2 t083_f
+peek F:4ABAA 8 t083_c
+colors t083_pal
+wait 0.9
+peek F:4A908 12 t084_b
+peek F:4A992 2 t084_f
+peek F:4ABAA 8 t084_c
+colors t084_pal
+wait 0.9
+peek F:4A908 12 t085_b
+peek F:4A992 2 t085_f
+peek F:4ABAA 8 t085_c
+colors t085_pal
+wait 0.9
+peek F:4A908 12 t086_b
+peek F:4A992 2 t086_f
+peek F:4ABAA 8 t086_c
+colors t086_pal
+wait 0.9
+peek F:4A908 12 t087_b
+peek F:4A992 2 t087_f
+peek F:4ABAA 8 t087_c
+colors t087_pal
+wait 0.9
+peek F:4A908 12 t088_b
+peek F:4A992 2 t088_f
+peek F:4ABAA 8 t088_c
+colors t088_pal
+wait 0.9
+peek F:4A908 12 t089_b
+peek F:4A992 2 t089_f
+peek F:4ABAA 8 t089_c
+colors t089_pal
+wait 0.9
+peek F:4A908 12 t090_b
+peek F:4A992 2 t090_f
+peek F:4ABAA 8 t090_c
+colors t090_pal
+frame extracted/captures/openers/clk-090.ppm
+wait 0.9
+peek F:4A908 12 t091_b
+peek F:4A992 2 t091_f
+peek F:4ABAA 8 t091_c
+colors t091_pal
+wait 0.9
+peek F:4A908 12 t092_b
+peek F:4A992 2 t092_f
+peek F:4ABAA 8 t092_c
+colors t092_pal
+wait 0.9
+peek F:4A908 12 t093_b
+peek F:4A992 2 t093_f
+peek F:4ABAA 8 t093_c
+colors t093_pal
+wait 0.9
+peek F:4A908 12 t094_b
+peek F:4A992 2 t094_f
+peek F:4ABAA 8 t094_c
+colors t094_pal
+wait 0.9
+peek F:4A908 12 t095_b
+peek F:4A992 2 t095_f
+peek F:4ABAA 8 t095_c
+colors t095_pal
+wait 0.9
+peek F:4A908 12 t096_b
+peek F:4A992 2 t096_f
+peek F:4ABAA 8 t096_c
+colors t096_pal
+wait 0.9
+peek F:4A908 12 t097_b
+peek F:4A992 2 t097_f
+peek F:4ABAA 8 t097_c
+colors t097_pal
+wait 0.9
+peek F:4A908 12 t098_b
+peek F:4A992 2 t098_f
+peek F:4ABAA 8 t098_c
+colors t098_pal
+wait 0.9
+peek F:4A908 12 t099_b
+peek F:4A992 2 t099_f
+peek F:4ABAA 8 t099_c
+colors t099_pal
+wait 0.9
+peek F:4A908 12 t100_b
+peek F:4A992 2 t100_f
+peek F:4ABAA 8 t100_c
+colors t100_pal
+wait 0.9
+peek F:4A908 12 t101_b
+peek F:4A992 2 t101_f
+peek F:4ABAA 8 t101_c
+colors t101_pal
+wait 0.9
+peek F:4A908 12 t102_b
+peek F:4A992 2 t102_f
+peek F:4ABAA 8 t102_c
+colors t102_pal
+wait 0.9
+peek F:4A908 12 t103_b
+peek F:4A992 2 t103_f
+peek F:4ABAA 8 t103_c
+colors t103_pal
+wait 0.9
+peek F:4A908 12 t104_b
+peek F:4A992 2 t104_f
+peek F:4ABAA 8 t104_c
+colors t104_pal
+wait 0.9
+peek F:4A908 12 t105_b
+peek F:4A992 2 t105_f
+peek F:4ABAA 8 t105_c
+colors t105_pal
+frame extracted/captures/openers/clk-105.ppm
+wait 0.9
+peek F:4A908 12 t106_b
+peek F:4A992 2 t106_f
+peek F:4ABAA 8 t106_c
+colors t106_pal
+wait 0.9
+peek F:4A908 12 t107_b
+peek F:4A992 2 t107_f
+peek F:4ABAA 8 t107_c
+colors t107_pal
+wait 0.9
+peek F:4A908 12 t108_b
+peek F:4A992 2 t108_f
+peek F:4ABAA 8 t108_c
+colors t108_pal
+wait 0.9
+peek F:4A908 12 t109_b
+peek F:4A992 2 t109_f
+peek F:4ABAA 8 t109_c
+colors t109_pal
+wait 0.9
+peek F:4A908 12 t110_b
+peek F:4A992 2 t110_f
+peek F:4ABAA 8 t110_c
+colors t110_pal
+wait 0.9
+peek F:4A908 12 t111_b
+peek F:4A992 2 t111_f
+peek F:4ABAA 8 t111_c
+colors t111_pal
+wait 0.9
+peek F:4A908 12 t112_b
+peek F:4A992 2 t112_f
+peek F:4ABAA 8 t112_c
+colors t112_pal
+wait 0.9
+peek F:4A908 12 t113_b
+peek F:4A992 2 t113_f
+peek F:4ABAA 8 t113_c
+colors t113_pal
+wait 0.9
+peek F:4A908 12 t114_b
+peek F:4A992 2 t114_f
+peek F:4ABAA 8 t114_c
+colors t114_pal
+wait 0.9
+peek F:4A908 12 t115_b
+peek F:4A992 2 t115_f
+peek F:4ABAA 8 t115_c
+colors t115_pal
+wait 0.9
+peek F:4A908 12 t116_b
+peek F:4A992 2 t116_f
+peek F:4ABAA 8 t116_c
+colors t116_pal
+wait 0.9
+peek F:4A908 12 t117_b
+peek F:4A992 2 t117_f
+peek F:4ABAA 8 t117_c
+colors t117_pal
+wait 0.9
+peek F:4A908 12 t118_b
+peek F:4A992 2 t118_f
+peek F:4ABAA 8 t118_c
+colors t118_pal
+wait 0.9
+peek F:4A908 12 t119_b
+peek F:4A992 2 t119_f
+peek F:4ABAA 8 t119_c
+colors t119_pal
+wait 0.9
+peek F:4A908 12 t120_b
+peek F:4A992 2 t120_f
+peek F:4ABAA 8 t120_c
+colors t120_pal
+frame extracted/captures/openers/clk-120.ppm
+wait 0.9
+peek F:4A908 12 t121_b
+peek F:4A992 2 t121_f
+peek F:4ABAA 8 t121_c
+colors t121_pal
+wait 0.9
+peek F:4A908 12 t122_b
+peek F:4A992 2 t122_f
+peek F:4ABAA 8 t122_c
+colors t122_pal
+wait 0.9
+peek F:4A908 12 t123_b
+peek F:4A992 2 t123_f
+peek F:4ABAA 8 t123_c
+colors t123_pal
+wait 0.9
+peek F:4A908 12 t124_b
+peek F:4A992 2 t124_f
+peek F:4ABAA 8 t124_c
+colors t124_pal
+wait 0.9
+peek F:4A908 12 t125_b
+peek F:4A992 2 t125_f
+peek F:4ABAA 8 t125_c
+colors t125_pal
+wait 0.9
+peek F:4A908 12 t126_b
+peek F:4A992 2 t126_f
+peek F:4ABAA 8 t126_c
+colors t126_pal
+wait 0.9
+peek F:4A908 12 t127_b
+peek F:4A992 2 t127_f
+peek F:4ABAA 8 t127_c
+colors t127_pal
+wait 0.9
+peek F:4A908 12 t128_b
+peek F:4A992 2 t128_f
+peek F:4ABAA 8 t128_c
+colors t128_pal
+wait 0.9
+peek F:4A908 12 t129_b
+peek F:4A992 2 t129_f
+peek F:4ABAA 8 t129_c
+colors t129_pal
+wait 0.9
+peek F:4A908 12 t130_b
+peek F:4A992 2 t130_f
+peek F:4ABAA 8 t130_c
+colors t130_pal
+wait 0.9
+peek F:4A908 12 t131_b
+peek F:4A992 2 t131_f
+peek F:4ABAA 8 t131_c
+colors t131_pal
+wait 0.9
+peek F:4A908 12 t132_b
+peek F:4A992 2 t132_f
+peek F:4ABAA 8 t132_c
+colors t132_pal
+wait 0.9
+peek F:4A908 12 t133_b
+peek F:4A992 2 t133_f
+peek F:4ABAA 8 t133_c
+colors t133_pal
+wait 0.9
+peek F:4A908 12 t134_b
+peek F:4A992 2 t134_f
+peek F:4ABAA 8 t134_c
+colors t134_pal
+wait 0.9
+peek F:4A908 12 t135_b
+peek F:4A992 2 t135_f
+peek F:4ABAA 8 t135_c
+colors t135_pal
+frame extracted/captures/openers/clk-135.ppm
+wait 0.9
+peek F:4A908 12 t136_b
+peek F:4A992 2 t136_f
+peek F:4ABAA 8 t136_c
+colors t136_pal
+wait 0.9
+peek F:4A908 12 t137_b
+peek F:4A992 2 t137_f
+peek F:4ABAA 8 t137_c
+colors t137_pal
+wait 0.9
+peek F:4A908 12 t138_b
+peek F:4A992 2 t138_f
+peek F:4ABAA 8 t138_c
+colors t138_pal
+wait 0.9
+peek F:4A908 12 t139_b
+peek F:4A992 2 t139_f
+peek F:4ABAA 8 t139_c
+colors t139_pal
+wait 0.9
+peek F:4A908 12 t140_b
+peek F:4A992 2 t140_f
+peek F:4ABAA 8 t140_c
+colors t140_pal
+wait 0.9
+peek F:4A908 12 t141_b
+peek F:4A992 2 t141_f
+peek F:4ABAA 8 t141_c
+colors t141_pal
+wait 0.9
+peek F:4A908 12 t142_b
+peek F:4A992 2 t142_f
+peek F:4ABAA 8 t142_c
+colors t142_pal
+wait 0.9
+peek F:4A908 12 t143_b
+peek F:4A992 2 t143_f
+peek F:4ABAA 8 t143_c
+colors t143_pal
+wait 0.9
+peek F:4A908 12 t144_b
+peek F:4A992 2 t144_f
+peek F:4ABAA 8 t144_c
+colors t144_pal
+wait 0.9
+peek F:4A908 12 t145_b
+peek F:4A992 2 t145_f
+peek F:4ABAA 8 t145_c
+colors t145_pal
+wait 0.9
+peek F:4A908 12 t146_b
+peek F:4A992 2 t146_f
+peek F:4ABAA 8 t146_c
+colors t146_pal
+wait 0.9
+peek F:4A908 12 t147_b
+peek F:4A992 2 t147_f
+peek F:4ABAA 8 t147_c
+colors t147_pal
+wait 0.9
+peek F:4A908 12 t148_b
+peek F:4A992 2 t148_f
+peek F:4ABAA 8 t148_c
+colors t148_pal
+wait 0.9
+peek F:4A908 12 t149_b
+peek F:4A992 2 t149_f
+peek F:4ABAA 8 t149_c
+colors t149_pal
+wait 0.9
+peek F:4A908 12 t150_b
+peek F:4A992 2 t150_f
+peek F:4ABAA 8 t150_c
+colors t150_pal
+frame extracted/captures/openers/clk-150.ppm
+wait 0.9
+peek F:4A908 12 t151_b
+peek F:4A992 2 t151_f
+peek F:4ABAA 8 t151_c
+colors t151_pal
+wait 0.9
+peek F:4A908 12 t152_b
+peek F:4A992 2 t152_f
+peek F:4ABAA 8 t152_c
+colors t152_pal
+wait 0.9
+peek F:4A908 12 t153_b
+peek F:4A992 2 t153_f
+peek F:4ABAA 8 t153_c
+colors t153_pal
+wait 0.9
+peek F:4A908 12 t154_b
+peek F:4A992 2 t154_f
+peek F:4ABAA 8 t154_c
+colors t154_pal
+wait 0.9
+peek F:4A908 12 t155_b
+peek F:4A992 2 t155_f
+peek F:4ABAA 8 t155_c
+colors t155_pal
+wait 0.9
+peek F:4A908 12 t156_b
+peek F:4A992 2 t156_f
+peek F:4ABAA 8 t156_c
+colors t156_pal
+wait 0.9
+peek F:4A908 12 t157_b
+peek F:4A992 2 t157_f
+peek F:4ABAA 8 t157_c
+colors t157_pal
+wait 0.9
+peek F:4A908 12 t158_b
+peek F:4A992 2 t158_f
+peek F:4ABAA 8 t158_c
+colors t158_pal
+wait 0.9
+peek F:4A908 12 t159_b
+peek F:4A992 2 t159_f
+peek F:4ABAA 8 t159_c
+colors t159_pal
+wait 0.9
+peek F:4A908 12 t160_b
+peek F:4A992 2 t160_f
+peek F:4ABAA 8 t160_c
+colors t160_pal
+wait 0.9
+peek F:4A908 12 t161_b
+peek F:4A992 2 t161_f
+peek F:4ABAA 8 t161_c
+colors t161_pal
+wait 0.9
+peek F:4A908 12 t162_b
+peek F:4A992 2 t162_f
+peek F:4ABAA 8 t162_c
+colors t162_pal
+wait 0.9
+peek F:4A908 12 t163_b
+peek F:4A992 2 t163_f
+peek F:4ABAA 8 t163_c
+colors t163_pal
+wait 0.9
+peek F:4A908 12 t164_b
+peek F:4A992 2 t164_f
+peek F:4ABAA 8 t164_c
+colors t164_pal
+wait 0.9
+peek F:4A908 12 t165_b
+peek F:4A992 2 t165_f
+peek F:4ABAA 8 t165_c
+colors t165_pal
+frame extracted/captures/openers/clk-165.ppm
+wait 0.9
+peek F:4A908 12 t166_b
+peek F:4A992 2 t166_f
+peek F:4ABAA 8 t166_c
+colors t166_pal
+wait 0.9
+peek F:4A908 12 t167_b
+peek F:4A992 2 t167_f
+peek F:4ABAA 8 t167_c
+colors t167_pal
+wait 0.9
+peek F:4A908 12 t168_b
+peek F:4A992 2 t168_f
+peek F:4ABAA 8 t168_c
+colors t168_pal
+wait 0.9
+peek F:4A908 12 t169_b
+peek F:4A992 2 t169_f
+peek F:4ABAA 8 t169_c
+colors t169_pal
+wait 0.9
+peek F:4A908 12 t170_b
+peek F:4A992 2 t170_f
+peek F:4ABAA 8 t170_c
+colors t170_pal
+wait 0.9
+peek F:4A908 12 t171_b
+peek F:4A992 2 t171_f
+peek F:4ABAA 8 t171_c
+colors t171_pal
+wait 0.9
+peek F:4A908 12 t172_b
+peek F:4A992 2 t172_f
+peek F:4ABAA 8 t172_c
+colors t172_pal
+wait 0.9
+peek F:4A908 12 t173_b
+peek F:4A992 2 t173_f
+peek F:4ABAA 8 t173_c
+colors t173_pal
+wait 0.9
+peek F:4A908 12 t174_b
+peek F:4A992 2 t174_f
+peek F:4ABAA 8 t174_c
+colors t174_pal
+wait 0.9
+peek F:4A908 12 t175_b
+peek F:4A992 2 t175_f
+peek F:4ABAA 8 t175_c
+colors t175_pal
+wait 0.9
+peek F:4A908 12 t176_b
+peek F:4A992 2 t176_f
+peek F:4ABAA 8 t176_c
+colors t176_pal
+wait 0.9
+peek F:4A908 12 t177_b
+peek F:4A992 2 t177_f
+peek F:4ABAA 8 t177_c
+colors t177_pal
+wait 0.9
+peek F:4A908 12 t178_b
+peek F:4A992 2 t178_f
+peek F:4ABAA 8 t178_c
+colors t178_pal
+wait 0.9
+peek F:4A908 12 t179_b
+peek F:4A992 2 t179_f
+peek F:4ABAA 8 t179_c
+colors t179_pal
+wait 0.9
+peek F:4A908 12 t180_b
+peek F:4A992 2 t180_f
+peek F:4ABAA 8 t180_c
+colors t180_pal
+frame extracted/captures/openers/clk-180.ppm
+wait 0.9
+peek F:4A908 12 t181_b
+peek F:4A992 2 t181_f
+peek F:4ABAA 8 t181_c
+colors t181_pal
+wait 0.9
+peek F:4A908 12 t182_b
+peek F:4A992 2 t182_f
+peek F:4ABAA 8 t182_c
+colors t182_pal
+wait 0.9
+peek F:4A908 12 t183_b
+peek F:4A992 2 t183_f
+peek F:4ABAA 8 t183_c
+colors t183_pal
+wait 0.9
+peek F:4A908 12 t184_b
+peek F:4A992 2 t184_f
+peek F:4ABAA 8 t184_c
+colors t184_pal
+wait 0.9
+peek F:4A908 12 t185_b
+peek F:4A992 2 t185_f
+peek F:4ABAA 8 t185_c
+colors t185_pal
+wait 0.9
+peek F:4A908 12 t186_b
+peek F:4A992 2 t186_f
+peek F:4ABAA 8 t186_c
+colors t186_pal
+wait 0.9
+peek F:4A908 12 t187_b
+peek F:4A992 2 t187_f
+peek F:4ABAA 8 t187_c
+colors t187_pal
+wait 0.9
+peek F:4A908 12 t188_b
+peek F:4A992 2 t188_f
+peek F:4ABAA 8 t188_c
+colors t188_pal
+wait 0.9
+peek F:4A908 12 t189_b
+peek F:4A992 2 t189_f
+peek F:4ABAA 8 t189_c
+colors t189_pal
+wait 0.9
+peek F:4A908 12 t190_b
+peek F:4A992 2 t190_f
+peek F:4ABAA 8 t190_c
+colors t190_pal
+wait 0.9
+peek F:4A908 12 t191_b
+peek F:4A992 2 t191_f
+peek F:4ABAA 8 t191_c
+colors t191_pal
+wait 0.9
+peek F:4A908 12 t192_b
+peek F:4A992 2 t192_f
+peek F:4ABAA 8 t192_c
+colors t192_pal
+wait 0.9
+peek F:4A908 12 t193_b
+peek F:4A992 2 t193_f
+peek F:4ABAA 8 t193_c
+colors t193_pal
+wait 0.9
+peek F:4A908 12 t194_b
+peek F:4A992 2 t194_f
+peek F:4ABAA 8 t194_c
+colors t194_pal
+wait 0.9
+peek F:4A908 12 t195_b
+peek F:4A992 2 t195_f
+peek F:4ABAA 8 t195_c
+colors t195_pal
+frame extracted/captures/openers/clk-195.ppm
+wait 0.9
+peek F:4A908 12 t196_b
+peek F:4A992 2 t196_f
+peek F:4ABAA 8 t196_c
+colors t196_pal
+wait 0.9
+peek F:4A908 12 t197_b
+peek F:4A992 2 t197_f
+peek F:4ABAA 8 t197_c
+colors t197_pal
+wait 0.9
+peek F:4A908 12 t198_b
+peek F:4A992 2 t198_f
+peek F:4ABAA 8 t198_c
+colors t198_pal
+wait 0.9
+peek F:4A908 12 t199_b
+peek F:4A992 2 t199_f
+peek F:4ABAA 8 t199_c
+colors t199_pal
+wait 0.9
+peek F:4A908 12 t200_b
+peek F:4A992 2 t200_f
+peek F:4ABAA 8 t200_c
+colors t200_pal
+wait 0.9
+peek F:4A908 12 t201_b
+peek F:4A992 2 t201_f
+peek F:4ABAA 8 t201_c
+colors t201_pal
+wait 0.9
+peek F:4A908 12 t202_b
+peek F:4A992 2 t202_f
+peek F:4ABAA 8 t202_c
+colors t202_pal
+wait 0.9
+peek F:4A908 12 t203_b
+peek F:4A992 2 t203_f
+peek F:4ABAA 8 t203_c
+colors t203_pal
+wait 0.9
+peek F:4A908 12 t204_b
+peek F:4A992 2 t204_f
+peek F:4ABAA 8 t204_c
+colors t204_pal
+wait 0.9
+peek F:4A908 12 t205_b
+peek F:4A992 2 t205_f
+peek F:4ABAA 8 t205_c
+colors t205_pal
+wait 0.9
+peek F:4A908 12 t206_b
+peek F:4A992 2 t206_f
+peek F:4ABAA 8 t206_c
+colors t206_pal
+wait 0.9
+peek F:4A908 12 t207_b
+peek F:4A992 2 t207_f
+peek F:4ABAA 8 t207_c
+colors t207_pal
+wait 0.9
+peek F:4A908 12 t208_b
+peek F:4A992 2 t208_f
+peek F:4ABAA 8 t208_c
+colors t208_pal
+wait 0.9
+peek F:4A908 12 t209_b
+peek F:4A992 2 t209_f
+peek F:4ABAA 8 t209_c
+colors t209_pal
+wait 0.9
+peek F:4A908 12 t210_b
+peek F:4A992 2 t210_f
+peek F:4ABAA 8 t210_c
+colors t210_pal
+frame extracted/captures/openers/clk-210.ppm
+wait 0.9
+peek F:4A908 12 t211_b
+peek F:4A992 2 t211_f
+peek F:4ABAA 8 t211_c
+colors t211_pal
+wait 0.9
+peek F:4A908 12 t212_b
+peek F:4A992 2 t212_f
+peek F:4ABAA 8 t212_c
+colors t212_pal
+wait 0.9
+peek F:4A908 12 t213_b
+peek F:4A992 2 t213_f
+peek F:4ABAA 8 t213_c
+colors t213_pal
+wait 0.9
+peek F:4A908 12 t214_b
+peek F:4A992 2 t214_f
+peek F:4ABAA 8 t214_c
+colors t214_pal
+wait 0.9
+peek F:4A908 12 t215_b
+peek F:4A992 2 t215_f
+peek F:4ABAA 8 t215_c
+colors t215_pal
+wait 0.9
+peek F:4A908 12 t216_b
+peek F:4A992 2 t216_f
+peek F:4ABAA 8 t216_c
+colors t216_pal
+wait 0.9
+peek F:4A908 12 t217_b
+peek F:4A992 2 t217_f
+peek F:4ABAA 8 t217_c
+colors t217_pal
+wait 0.9
+peek F:4A908 12 t218_b
+peek F:4A992 2 t218_f
+peek F:4ABAA 8 t218_c
+colors t218_pal
+wait 0.9
+peek F:4A908 12 t219_b
+peek F:4A992 2 t219_f
+peek F:4ABAA 8 t219_c
+colors t219_pal
+wait 0.9
+peek F:4A908 12 t220_b
+peek F:4A992 2 t220_f
+peek F:4ABAA 8 t220_c
+colors t220_pal
+wait 0.9
+peek F:4A908 12 t221_b
+peek F:4A992 2 t221_f
+peek F:4ABAA 8 t221_c
+colors t221_pal
+wait 0.9
+peek F:4A908 12 t222_b
+peek F:4A992 2 t222_f
+peek F:4ABAA 8 t222_c
+colors t222_pal
+wait 0.9
+peek F:4A908 12 t223_b
+peek F:4A992 2 t223_f
+peek F:4ABAA 8 t223_c
+colors t223_pal
+wait 0.9
+peek F:4A908 12 t224_b
+peek F:4A992 2 t224_f
+peek F:4ABAA 8 t224_c
+colors t224_pal
+wait 0.9
+peek F:4A908 12 t225_b
+peek F:4A992 2 t225_f
+peek F:4ABAA 8 t225_c
+colors t225_pal
+frame extracted/captures/openers/clk-225.ppm
+wait 0.9
+peek F:4A908 12 t226_b
+peek F:4A992 2 t226_f
+peek F:4ABAA 8 t226_c
+colors t226_pal
+wait 0.9
+peek F:4A908 12 t227_b
+peek F:4A992 2 t227_f
+peek F:4ABAA 8 t227_c
+colors t227_pal
+wait 0.9
+peek F:4A908 12 t228_b
+peek F:4A992 2 t228_f
+peek F:4ABAA 8 t228_c
+colors t228_pal
+wait 0.9
+peek F:4A908 12 t229_b
+peek F:4A992 2 t229_f
+peek F:4ABAA 8 t229_c
+colors t229_pal
+wait 0.9
+peek F:4A908 12 t230_b
+peek F:4A992 2 t230_f
+peek F:4ABAA 8 t230_c
+colors t230_pal
+wait 0.9
+peek F:4A908 12 t231_b
+peek F:4A992 2 t231_f
+peek F:4ABAA 8 t231_c
+colors t231_pal
+wait 0.9
+peek F:4A908 12 t232_b
+peek F:4A992 2 t232_f
+peek F:4ABAA 8 t232_c
+colors t232_pal
+wait 0.9
+peek F:4A908 12 t233_b
+peek F:4A992 2 t233_f
+peek F:4ABAA 8 t233_c
+colors t233_pal
+wait 0.9
+peek F:4A908 12 t234_b
+peek F:4A992 2 t234_f
+peek F:4ABAA 8 t234_c
+colors t234_pal
+wait 0.9
+peek F:4A908 12 t235_b
+peek F:4A992 2 t235_f
+peek F:4ABAA 8 t235_c
+colors t235_pal
+wait 0.9
+peek F:4A908 12 t236_b
+peek F:4A992 2 t236_f
+peek F:4ABAA 8 t236_c
+colors t236_pal
+wait 0.9
+peek F:4A908 12 t237_b
+peek F:4A992 2 t237_f
+peek F:4ABAA 8 t237_c
+colors t237_pal
+wait 0.9
+peek F:4A908 12 t238_b
+peek F:4A992 2 t238_f
+peek F:4ABAA 8 t238_c
+colors t238_pal
+wait 0.9
+peek F:4A908 12 t239_b
+peek F:4A992 2 t239_f
+peek F:4ABAA 8 t239_c
+colors t239_pal
+wait 0.9
+peek F:4A908 12 t240_b
+peek F:4A992 2 t240_f
+peek F:4ABAA 8 t240_c
+colors t240_pal
+frame extracted/captures/openers/clk-240.ppm
+wait 0.9
+peek F:4A908 12 t241_b
+peek F:4A992 2 t241_f
+peek F:4ABAA 8 t241_c
+colors t241_pal
+wait 0.9
+peek F:4A908 12 t242_b
+peek F:4A992 2 t242_f
+peek F:4ABAA 8 t242_c
+colors t242_pal
+wait 0.9
+peek F:4A908 12 t243_b
+peek F:4A992 2 t243_f
+peek F:4ABAA 8 t243_c
+colors t243_pal
+wait 0.9
+peek F:4A908 12 t244_b
+peek F:4A992 2 t244_f
+peek F:4ABAA 8 t244_c
+colors t244_pal
+wait 0.9
+peek F:4A908 12 t245_b
+peek F:4A992 2 t245_f
+peek F:4ABAA 8 t245_c
+colors t245_pal
+wait 0.9
+peek F:4A908 12 t246_b
+peek F:4A992 2 t246_f
+peek F:4ABAA 8 t246_c
+colors t246_pal
+wait 0.9
+peek F:4A908 12 t247_b
+peek F:4A992 2 t247_f
+peek F:4ABAA 8 t247_c
+colors t247_pal
+wait 0.9
+peek F:4A908 12 t248_b
+peek F:4A992 2 t248_f
+peek F:4ABAA 8 t248_c
+colors t248_pal
+wait 0.9
+peek F:4A908 12 t249_b
+peek F:4A992 2 t249_f
+peek F:4ABAA 8 t249_c
+colors t249_pal
+wait 0.9
+peek F:4A908 12 t250_b
+peek F:4A992 2 t250_f
+peek F:4ABAA 8 t250_c
+colors t250_pal
+wait 0.9
+peek F:4A908 12 t251_b
+peek F:4A992 2 t251_f
+peek F:4ABAA 8 t251_c
+colors t251_pal
+wait 0.9
+peek F:4A908 12 t252_b
+peek F:4A992 2 t252_f
+peek F:4ABAA 8 t252_c
+colors t252_pal
+wait 0.9
+peek F:4A908 12 t253_b
+peek F:4A992 2 t253_f
+peek F:4ABAA 8 t253_c
+colors t253_pal
+wait 0.9
+peek F:4A908 12 t254_b
+peek F:4A992 2 t254_f
+peek F:4ABAA 8 t254_c
+colors t254_pal
+wait 0.9
+peek F:4A908 12 t255_b
+peek F:4A992 2 t255_f
+peek F:4ABAA 8 t255_c
+colors t255_pal
+frame extracted/captures/openers/clk-255.ppm
+wait 0.9
+peek F:4A908 12 t256_b
+peek F:4A992 2 t256_f
+peek F:4ABAA 8 t256_c
+colors t256_pal
+wait 0.9
+peek F:4A908 12 t257_b
+peek F:4A992 2 t257_f
+peek F:4ABAA 8 t257_c
+colors t257_pal
+wait 0.9
+peek F:4A908 12 t258_b
+peek F:4A992 2 t258_f
+peek F:4ABAA 8 t258_c
+colors t258_pal
+wait 0.9
+peek F:4A908 12 t259_b
+peek F:4A992 2 t259_f
+peek F:4ABAA 8 t259_c
+colors t259_pal
+wait 0.9
+peek F:4A908 12 t260_b
+peek F:4A992 2 t260_f
+peek F:4ABAA 8 t260_c
+colors t260_pal
+wait 0.9
+peek F:4A908 12 t261_b
+peek F:4A992 2 t261_f
+peek F:4ABAA 8 t261_c
+colors t261_pal
+wait 0.9
+peek F:4A908 12 t262_b
+peek F:4A992 2 t262_f
+peek F:4ABAA 8 t262_c
+colors t262_pal
+wait 0.9
+peek F:4A908 12 t263_b
+peek F:4A992 2 t263_f
+peek F:4ABAA 8 t263_c
+colors t263_pal
+wait 0.9
+peek F:4A908 12 t264_b
+peek F:4A992 2 t264_f
+peek F:4ABAA 8 t264_c
+colors t264_pal
+wait 0.9
+peek F:4A908 12 t265_b
+peek F:4A992 2 t265_f
+peek F:4ABAA 8 t265_c
+colors t265_pal
+wait 0.9
+peek F:4A908 12 t266_b
+peek F:4A992 2 t266_f
+peek F:4ABAA 8 t266_c
+colors t266_pal
+wait 0.9
+peek F:4A908 12 t267_b
+peek F:4A992 2 t267_f
+peek F:4ABAA 8 t267_c
+colors t267_pal
+wait 0.9
+peek F:4A908 12 t268_b
+peek F:4A992 2 t268_f
+peek F:4ABAA 8 t268_c
+colors t268_pal
+wait 0.9
+peek F:4A908 12 t269_b
+peek F:4A992 2 t269_f
+peek F:4ABAA 8 t269_c
+colors t269_pal
+wait 0.9
+peek F:4A908 12 t270_b
+peek F:4A992 2 t270_f
+peek F:4ABAA 8 t270_c
+colors t270_pal
+frame extracted/captures/openers/clk-270.ppm
+wait 0.9
+peek F:4A908 12 t271_b
+peek F:4A992 2 t271_f
+peek F:4ABAA 8 t271_c
+colors t271_pal
+wait 0.9
+peek F:4A908 12 t272_b
+peek F:4A992 2 t272_f
+peek F:4ABAA 8 t272_c
+colors t272_pal
+wait 0.9
+peek F:4A908 12 t273_b
+peek F:4A992 2 t273_f
+peek F:4ABAA 8 t273_c
+colors t273_pal
+wait 0.9
+peek F:4A908 12 t274_b
+peek F:4A992 2 t274_f
+peek F:4ABAA 8 t274_c
+colors t274_pal
+wait 0.9
+peek F:4A908 12 t275_b
+peek F:4A992 2 t275_f
+peek F:4ABAA 8 t275_c
+colors t275_pal
+wait 0.9
+peek F:4A908 12 t276_b
+peek F:4A992 2 t276_f
+peek F:4ABAA 8 t276_c
+colors t276_pal
+wait 0.9
+peek F:4A908 12 t277_b
+peek F:4A992 2 t277_f
+peek F:4ABAA 8 t277_c
+colors t277_pal
+wait 0.9
+peek F:4A908 12 t278_b
+peek F:4A992 2 t278_f
+peek F:4ABAA 8 t278_c
+colors t278_pal
+wait 0.9
+peek F:4A908 12 t279_b
+peek F:4A992 2 t279_f
+peek F:4ABAA 8 t279_c
+colors t279_pal
+wait 0.9
+peek F:4A908 12 t280_b
+peek F:4A992 2 t280_f
+peek F:4ABAA 8 t280_c
+colors t280_pal
+wait 0.9
+peek F:4A908 12 t281_b
+peek F:4A992 2 t281_f
+peek F:4ABAA 8 t281_c
+colors t281_pal
+wait 0.9
+peek F:4A908 12 t282_b
+peek F:4A992 2 t282_f
+peek F:4ABAA 8 t282_c
+colors t282_pal
+wait 0.9
+peek F:4A908 12 t283_b
+peek F:4A992 2 t283_f
+peek F:4ABAA 8 t283_c
+colors t283_pal
+wait 0.9
+peek F:4A908 12 t284_b
+peek F:4A992 2 t284_f
+peek F:4ABAA 8 t284_c
+colors t284_pal
+wait 0.9
+peek F:4A908 12 t285_b
+peek F:4A992 2 t285_f
+peek F:4ABAA 8 t285_c
+colors t285_pal
+frame extracted/captures/openers/clk-285.ppm
+wait 0.9
+peek F:4A908 12 t286_b
+peek F:4A992 2 t286_f
+peek F:4ABAA 8 t286_c
+colors t286_pal
+wait 0.9
+peek F:4A908 12 t287_b
+peek F:4A992 2 t287_f
+peek F:4ABAA 8 t287_c
+colors t287_pal
+wait 0.9
+peek F:4A908 12 t288_b
+peek F:4A992 2 t288_f
+peek F:4ABAA 8 t288_c
+colors t288_pal
+wait 0.9
+peek F:4A908 12 t289_b
+peek F:4A992 2 t289_f
+peek F:4ABAA 8 t289_c
+colors t289_pal
+wait 0.9
+peek F:4A908 12 t290_b
+peek F:4A992 2 t290_f
+peek F:4ABAA 8 t290_c
+colors t290_pal
+wait 0.9
+peek F:4A908 12 t291_b
+peek F:4A992 2 t291_f
+peek F:4ABAA 8 t291_c
+colors t291_pal
+wait 0.9
+peek F:4A908 12 t292_b
+peek F:4A992 2 t292_f
+peek F:4ABAA 8 t292_c
+colors t292_pal
+wait 0.9
+peek F:4A908 12 t293_b
+peek F:4A992 2 t293_f
+peek F:4ABAA 8 t293_c
+colors t293_pal
+wait 0.9
+peek F:4A908 12 t294_b
+peek F:4A992 2 t294_f
+peek F:4ABAA 8 t294_c
+colors t294_pal
+wait 0.9
+peek F:4A908 12 t295_b
+peek F:4A992 2 t295_f
+peek F:4ABAA 8 t295_c
+colors t295_pal
+wait 0.9
+peek F:4A908 12 t296_b
+peek F:4A992 2 t296_f
+peek F:4ABAA 8 t296_c
+colors t296_pal
+wait 0.9
+peek F:4A908 12 t297_b
+peek F:4A992 2 t297_f
+peek F:4ABAA 8 t297_c
+colors t297_pal
+wait 0.9
+peek F:4A908 12 t298_b
+peek F:4A992 2 t298_f
+peek F:4ABAA 8 t298_c
+colors t298_pal
+wait 0.9
+peek F:4A908 12 t299_b
+peek F:4A992 2 t299_f
+peek F:4ABAA 8 t299_c
+colors t299_pal
+wait 0.9

@@ -1,0 +1,10 @@
+# demo: menu item 1 (note 08 section 7), 1 tick = 1 core step. The game starts at the credits and the keys drive the screens: any key (credits; the log-disk check passes, no prompt), the menu's digit 1. The synthetic asset set carries an invented stream and no flight model: its golden asserts the mode sequence (credits,
+# menu, flight) and the ESC restart; the local real-asset golden also carries the flight of the shipped demo.
+# seed 9: the selector draw of the demo path (07 2.4) gives k = 0 (the stored variant 0) and the offsets (-2, -1), the original's most common demo start (variant 0, (-2, +-1): 8 of 13 captured demo starts sat at exactly 1,172). The default seed 1 draws variant 1 with (-1, 0), the measured 1,170 case (1 of 13).
+seed 9
+screens
+ticks 260
+at 4 key 120
+at 20 key 49
+# ESC during the demo: the fade-out, the reset, the direct restart (7.7)
+at 150 btn ESC

@@ -1,0 +1,858 @@
+# Simulation step rate: the step counter 0x4A992 against the vertical-blank counter 0x4A82C (50 Hz), one sample per second, 70 s per scene. No freeze (single-word reads); the machine runs in real time.
+# a: cockpit, level-ish flight over sea from the carrier; b: cockpit over the bay area (level flight from airborne.vasnap); c: external view; d: carrier deck idle.
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key F10
+wait 11
+key DOWN 0.2
+peek F:4A82C 2 a000_v
+peek F:4A992 2 a000_f
+wait 0.95
+peek F:4A82C 2 a001_v
+peek F:4A992 2 a001_f
+wait 0.95
+peek F:4A82C 2 a002_v
+peek F:4A992 2 a002_f
+wait 0.95
+peek F:4A82C 2 a003_v
+peek F:4A992 2 a003_f
+wait 0.95
+peek F:4A82C 2 a004_v
+peek F:4A992 2 a004_f
+wait 0.95
+peek F:4A82C 2 a005_v
+peek F:4A992 2 a005_f
+wait 0.95
+peek F:4A82C 2 a006_v
+peek F:4A992 2 a006_f
+wait 0.95
+peek F:4A82C 2 a007_v
+peek F:4A992 2 a007_f
+wait 0.95
+peek F:4A82C 2 a008_v
+peek F:4A992 2 a008_f
+wait 0.95
+peek F:4A82C 2 a009_v
+peek F:4A992 2 a009_f
+wait 0.95
+peek F:4A82C 2 a010_v
+peek F:4A992 2 a010_f
+wait 0.95
+peek F:4A82C 2 a011_v
+peek F:4A992 2 a011_f
+wait 0.95
+peek F:4A82C 2 a012_v
+peek F:4A992 2 a012_f
+wait 0.95
+peek F:4A82C 2 a013_v
+peek F:4A992 2 a013_f
+wait 0.95
+peek F:4A82C 2 a014_v
+peek F:4A992 2 a014_f
+wait 0.95
+peek F:4A82C 2 a015_v
+peek F:4A992 2 a015_f
+wait 0.95
+peek F:4A82C 2 a016_v
+peek F:4A992 2 a016_f
+wait 0.95
+peek F:4A82C 2 a017_v
+peek F:4A992 2 a017_f
+wait 0.95
+peek F:4A82C 2 a018_v
+peek F:4A992 2 a018_f
+wait 0.95
+peek F:4A82C 2 a019_v
+peek F:4A992 2 a019_f
+wait 0.95
+peek F:4A82C 2 a020_v
+peek F:4A992 2 a020_f
+wait 0.95
+peek F:4A82C 2 a021_v
+peek F:4A992 2 a021_f
+wait 0.95
+peek F:4A82C 2 a022_v
+peek F:4A992 2 a022_f
+wait 0.95
+peek F:4A82C 2 a023_v
+peek F:4A992 2 a023_f
+wait 0.95
+peek F:4A82C 2 a024_v
+peek F:4A992 2 a024_f
+wait 0.95
+peek F:4A82C 2 a025_v
+peek F:4A992 2 a025_f
+wait 0.95
+peek F:4A82C 2 a026_v
+peek F:4A992 2 a026_f
+wait 0.95
+peek F:4A82C 2 a027_v
+peek F:4A992 2 a027_f
+wait 0.95
+peek F:4A82C 2 a028_v
+peek F:4A992 2 a028_f
+wait 0.95
+peek F:4A82C 2 a029_v
+peek F:4A992 2 a029_f
+wait 0.95
+peek F:4A82C 2 a030_v
+peek F:4A992 2 a030_f
+wait 0.95
+peek F:4A82C 2 a031_v
+peek F:4A992 2 a031_f
+wait 0.95
+peek F:4A82C 2 a032_v
+peek F:4A992 2 a032_f
+wait 0.95
+peek F:4A82C 2 a033_v
+peek F:4A992 2 a033_f
+wait 0.95
+peek F:4A82C 2 a034_v
+peek F:4A992 2 a034_f
+wait 0.95
+peek F:4A82C 2 a035_v
+peek F:4A992 2 a035_f
+wait 0.95
+peek F:4A82C 2 a036_v
+peek F:4A992 2 a036_f
+wait 0.95
+peek F:4A82C 2 a037_v
+peek F:4A992 2 a037_f
+wait 0.95
+peek F:4A82C 2 a038_v
+peek F:4A992 2 a038_f
+wait 0.95
+peek F:4A82C 2 a039_v
+peek F:4A992 2 a039_f
+wait 0.95
+peek F:4A82C 2 a040_v
+peek F:4A992 2 a040_f
+wait 0.95
+peek F:4A82C 2 a041_v
+peek F:4A992 2 a041_f
+wait 0.95
+peek F:4A82C 2 a042_v
+peek F:4A992 2 a042_f
+wait 0.95
+peek F:4A82C 2 a043_v
+peek F:4A992 2 a043_f
+wait 0.95
+peek F:4A82C 2 a044_v
+peek F:4A992 2 a044_f
+wait 0.95
+peek F:4A82C 2 a045_v
+peek F:4A992 2 a045_f
+wait 0.95
+peek F:4A82C 2 a046_v
+peek F:4A992 2 a046_f
+wait 0.95
+peek F:4A82C 2 a047_v
+peek F:4A992 2 a047_f
+wait 0.95
+peek F:4A82C 2 a048_v
+peek F:4A992 2 a048_f
+wait 0.95
+peek F:4A82C 2 a049_v
+peek F:4A992 2 a049_f
+wait 0.95
+peek F:4A82C 2 a050_v
+peek F:4A992 2 a050_f
+wait 0.95
+peek F:4A82C 2 a051_v
+peek F:4A992 2 a051_f
+wait 0.95
+peek F:4A82C 2 a052_v
+peek F:4A992 2 a052_f
+wait 0.95
+peek F:4A82C 2 a053_v
+peek F:4A992 2 a053_f
+wait 0.95
+peek F:4A82C 2 a054_v
+peek F:4A992 2 a054_f
+wait 0.95
+peek F:4A82C 2 a055_v
+peek F:4A992 2 a055_f
+wait 0.95
+peek F:4A82C 2 a056_v
+peek F:4A992 2 a056_f
+wait 0.95
+peek F:4A82C 2 a057_v
+peek F:4A992 2 a057_f
+wait 0.95
+peek F:4A82C 2 a058_v
+peek F:4A992 2 a058_f
+wait 0.95
+peek F:4A82C 2 a059_v
+peek F:4A992 2 a059_f
+wait 0.95
+peek F:4A82C 2 a060_v
+peek F:4A992 2 a060_f
+wait 0.95
+peek F:4A82C 2 a061_v
+peek F:4A992 2 a061_f
+wait 0.95
+peek F:4A82C 2 a062_v
+peek F:4A992 2 a062_f
+wait 0.95
+peek F:4A82C 2 a063_v
+peek F:4A992 2 a063_f
+wait 0.95
+peek F:4A82C 2 a064_v
+peek F:4A992 2 a064_f
+wait 0.95
+peek F:4A82C 2 a065_v
+peek F:4A992 2 a065_f
+wait 0.95
+peek F:4A82C 2 a066_v
+peek F:4A992 2 a066_f
+wait 0.95
+peek F:4A82C 2 a067_v
+peek F:4A992 2 a067_f
+wait 0.95
+peek F:4A82C 2 a068_v
+peek F:4A992 2 a068_f
+wait 0.95
+peek F:4A82C 2 a069_v
+peek F:4A992 2 a069_f
+wait 0.95
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+holduntil UP F:4B2A2 gt -1
+wait 1
+peek F:4A82C 2 b000_v
+peek F:4A992 2 b000_f
+wait 0.95
+peek F:4A82C 2 b001_v
+peek F:4A992 2 b001_f
+wait 0.95
+peek F:4A82C 2 b002_v
+peek F:4A992 2 b002_f
+wait 0.95
+peek F:4A82C 2 b003_v
+peek F:4A992 2 b003_f
+wait 0.95
+peek F:4A82C 2 b004_v
+peek F:4A992 2 b004_f
+wait 0.95
+peek F:4A82C 2 b005_v
+peek F:4A992 2 b005_f
+wait 0.95
+peek F:4A82C 2 b006_v
+peek F:4A992 2 b006_f
+wait 0.95
+peek F:4A82C 2 b007_v
+peek F:4A992 2 b007_f
+wait 0.95
+peek F:4A82C 2 b008_v
+peek F:4A992 2 b008_f
+wait 0.95
+peek F:4A82C 2 b009_v
+peek F:4A992 2 b009_f
+wait 0.95
+peek F:4A82C 2 b010_v
+peek F:4A992 2 b010_f
+wait 0.95
+peek F:4A82C 2 b011_v
+peek F:4A992 2 b011_f
+wait 0.95
+peek F:4A82C 2 b012_v
+peek F:4A992 2 b012_f
+wait 0.95
+peek F:4A82C 2 b013_v
+peek F:4A992 2 b013_f
+wait 0.95
+peek F:4A82C 2 b014_v
+peek F:4A992 2 b014_f
+wait 0.95
+peek F:4A82C 2 b015_v
+peek F:4A992 2 b015_f
+wait 0.95
+peek F:4A82C 2 b016_v
+peek F:4A992 2 b016_f
+wait 0.95
+peek F:4A82C 2 b017_v
+peek F:4A992 2 b017_f
+wait 0.95
+peek F:4A82C 2 b018_v
+peek F:4A992 2 b018_f
+wait 0.95
+peek F:4A82C 2 b019_v
+peek F:4A992 2 b019_f
+wait 0.95
+peek F:4A82C 2 b020_v
+peek F:4A992 2 b020_f
+wait 0.95
+peek F:4A82C 2 b021_v
+peek F:4A992 2 b021_f
+wait 0.95
+peek F:4A82C 2 b022_v
+peek F:4A992 2 b022_f
+wait 0.95
+peek F:4A82C 2 b023_v
+peek F:4A992 2 b023_f
+wait 0.95
+peek F:4A82C 2 b024_v
+peek F:4A992 2 b024_f
+wait 0.95
+peek F:4A82C 2 b025_v
+peek F:4A992 2 b025_f
+wait 0.95
+peek F:4A82C 2 b026_v
+peek F:4A992 2 b026_f
+wait 0.95
+peek F:4A82C 2 b027_v
+peek F:4A992 2 b027_f
+wait 0.95
+peek F:4A82C 2 b028_v
+peek F:4A992 2 b028_f
+wait 0.95
+peek F:4A82C 2 b029_v
+peek F:4A992 2 b029_f
+wait 0.95
+peek F:4A82C 2 b030_v
+peek F:4A992 2 b030_f
+wait 0.95
+peek F:4A82C 2 b031_v
+peek F:4A992 2 b031_f
+wait 0.95
+peek F:4A82C 2 b032_v
+peek F:4A992 2 b032_f
+wait 0.95
+peek F:4A82C 2 b033_v
+peek F:4A992 2 b033_f
+wait 0.95
+peek F:4A82C 2 b034_v
+peek F:4A992 2 b034_f
+wait 0.95
+peek F:4A82C 2 b035_v
+peek F:4A992 2 b035_f
+wait 0.95
+peek F:4A82C 2 b036_v
+peek F:4A992 2 b036_f
+wait 0.95
+peek F:4A82C 2 b037_v
+peek F:4A992 2 b037_f
+wait 0.95
+peek F:4A82C 2 b038_v
+peek F:4A992 2 b038_f
+wait 0.95
+peek F:4A82C 2 b039_v
+peek F:4A992 2 b039_f
+wait 0.95
+peek F:4A82C 2 b040_v
+peek F:4A992 2 b040_f
+wait 0.95
+peek F:4A82C 2 b041_v
+peek F:4A992 2 b041_f
+wait 0.95
+peek F:4A82C 2 b042_v
+peek F:4A992 2 b042_f
+wait 0.95
+peek F:4A82C 2 b043_v
+peek F:4A992 2 b043_f
+wait 0.95
+peek F:4A82C 2 b044_v
+peek F:4A992 2 b044_f
+wait 0.95
+peek F:4A82C 2 b045_v
+peek F:4A992 2 b045_f
+wait 0.95
+peek F:4A82C 2 b046_v
+peek F:4A992 2 b046_f
+wait 0.95
+peek F:4A82C 2 b047_v
+peek F:4A992 2 b047_f
+wait 0.95
+peek F:4A82C 2 b048_v
+peek F:4A992 2 b048_f
+wait 0.95
+peek F:4A82C 2 b049_v
+peek F:4A992 2 b049_f
+wait 0.95
+peek F:4A82C 2 b050_v
+peek F:4A992 2 b050_f
+wait 0.95
+peek F:4A82C 2 b051_v
+peek F:4A992 2 b051_f
+wait 0.95
+peek F:4A82C 2 b052_v
+peek F:4A992 2 b052_f
+wait 0.95
+peek F:4A82C 2 b053_v
+peek F:4A992 2 b053_f
+wait 0.95
+peek F:4A82C 2 b054_v
+peek F:4A992 2 b054_f
+wait 0.95
+peek F:4A82C 2 b055_v
+peek F:4A992 2 b055_f
+wait 0.95
+peek F:4A82C 2 b056_v
+peek F:4A992 2 b056_f
+wait 0.95
+peek F:4A82C 2 b057_v
+peek F:4A992 2 b057_f
+wait 0.95
+peek F:4A82C 2 b058_v
+peek F:4A992 2 b058_f
+wait 0.95
+peek F:4A82C 2 b059_v
+peek F:4A992 2 b059_f
+wait 0.95
+peek F:4A82C 2 b060_v
+peek F:4A992 2 b060_f
+wait 0.95
+peek F:4A82C 2 b061_v
+peek F:4A992 2 b061_f
+wait 0.95
+peek F:4A82C 2 b062_v
+peek F:4A992 2 b062_f
+wait 0.95
+peek F:4A82C 2 b063_v
+peek F:4A992 2 b063_f
+wait 0.95
+peek F:4A82C 2 b064_v
+peek F:4A992 2 b064_f
+wait 0.95
+peek F:4A82C 2 b065_v
+peek F:4A992 2 b065_f
+wait 0.95
+peek F:4A82C 2 b066_v
+peek F:4A992 2 b066_f
+wait 0.95
+peek F:4A82C 2 b067_v
+peek F:4A992 2 b067_f
+wait 0.95
+peek F:4A82C 2 b068_v
+peek F:4A992 2 b068_f
+wait 0.95
+peek F:4A82C 2 b069_v
+peek F:4A992 2 b069_f
+wait 0.95
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KPENTER
+wait 2
+peek F:4A82C 2 c000_v
+peek F:4A992 2 c000_f
+wait 0.95
+peek F:4A82C 2 c001_v
+peek F:4A992 2 c001_f
+wait 0.95
+peek F:4A82C 2 c002_v
+peek F:4A992 2 c002_f
+wait 0.95
+peek F:4A82C 2 c003_v
+peek F:4A992 2 c003_f
+wait 0.95
+peek F:4A82C 2 c004_v
+peek F:4A992 2 c004_f
+wait 0.95
+peek F:4A82C 2 c005_v
+peek F:4A992 2 c005_f
+wait 0.95
+peek F:4A82C 2 c006_v
+peek F:4A992 2 c006_f
+wait 0.95
+peek F:4A82C 2 c007_v
+peek F:4A992 2 c007_f
+wait 0.95
+peek F:4A82C 2 c008_v
+peek F:4A992 2 c008_f
+wait 0.95
+peek F:4A82C 2 c009_v
+peek F:4A992 2 c009_f
+wait 0.95
+peek F:4A82C 2 c010_v
+peek F:4A992 2 c010_f
+wait 0.95
+peek F:4A82C 2 c011_v
+peek F:4A992 2 c011_f
+wait 0.95
+peek F:4A82C 2 c012_v
+peek F:4A992 2 c012_f
+wait 0.95
+peek F:4A82C 2 c013_v
+peek F:4A992 2 c013_f
+wait 0.95
+peek F:4A82C 2 c014_v
+peek F:4A992 2 c014_f
+wait 0.95
+peek F:4A82C 2 c015_v
+peek F:4A992 2 c015_f
+wait 0.95
+peek F:4A82C 2 c016_v
+peek F:4A992 2 c016_f
+wait 0.95
+peek F:4A82C 2 c017_v
+peek F:4A992 2 c017_f
+wait 0.95
+peek F:4A82C 2 c018_v
+peek F:4A992 2 c018_f
+wait 0.95
+peek F:4A82C 2 c019_v
+peek F:4A992 2 c019_f
+wait 0.95
+peek F:4A82C 2 c020_v
+peek F:4A992 2 c020_f
+wait 0.95
+peek F:4A82C 2 c021_v
+peek F:4A992 2 c021_f
+wait 0.95
+peek F:4A82C 2 c022_v
+peek F:4A992 2 c022_f
+wait 0.95
+peek F:4A82C 2 c023_v
+peek F:4A992 2 c023_f
+wait 0.95
+peek F:4A82C 2 c024_v
+peek F:4A992 2 c024_f
+wait 0.95
+peek F:4A82C 2 c025_v
+peek F:4A992 2 c025_f
+wait 0.95
+peek F:4A82C 2 c026_v
+peek F:4A992 2 c026_f
+wait 0.95
+peek F:4A82C 2 c027_v
+peek F:4A992 2 c027_f
+wait 0.95
+peek F:4A82C 2 c028_v
+peek F:4A992 2 c028_f
+wait 0.95
+peek F:4A82C 2 c029_v
+peek F:4A992 2 c029_f
+wait 0.95
+peek F:4A82C 2 c030_v
+peek F:4A992 2 c030_f
+wait 0.95
+peek F:4A82C 2 c031_v
+peek F:4A992 2 c031_f
+wait 0.95
+peek F:4A82C 2 c032_v
+peek F:4A992 2 c032_f
+wait 0.95
+peek F:4A82C 2 c033_v
+peek F:4A992 2 c033_f
+wait 0.95
+peek F:4A82C 2 c034_v
+peek F:4A992 2 c034_f
+wait 0.95
+peek F:4A82C 2 c035_v
+peek F:4A992 2 c035_f
+wait 0.95
+peek F:4A82C 2 c036_v
+peek F:4A992 2 c036_f
+wait 0.95
+peek F:4A82C 2 c037_v
+peek F:4A992 2 c037_f
+wait 0.95
+peek F:4A82C 2 c038_v
+peek F:4A992 2 c038_f
+wait 0.95
+peek F:4A82C 2 c039_v
+peek F:4A992 2 c039_f
+wait 0.95
+peek F:4A82C 2 c040_v
+peek F:4A992 2 c040_f
+wait 0.95
+peek F:4A82C 2 c041_v
+peek F:4A992 2 c041_f
+wait 0.95
+peek F:4A82C 2 c042_v
+peek F:4A992 2 c042_f
+wait 0.95
+peek F:4A82C 2 c043_v
+peek F:4A992 2 c043_f
+wait 0.95
+peek F:4A82C 2 c044_v
+peek F:4A992 2 c044_f
+wait 0.95
+peek F:4A82C 2 c045_v
+peek F:4A992 2 c045_f
+wait 0.95
+peek F:4A82C 2 c046_v
+peek F:4A992 2 c046_f
+wait 0.95
+peek F:4A82C 2 c047_v
+peek F:4A992 2 c047_f
+wait 0.95
+peek F:4A82C 2 c048_v
+peek F:4A992 2 c048_f
+wait 0.95
+peek F:4A82C 2 c049_v
+peek F:4A992 2 c049_f
+wait 0.95
+peek F:4A82C 2 c050_v
+peek F:4A992 2 c050_f
+wait 0.95
+peek F:4A82C 2 c051_v
+peek F:4A992 2 c051_f
+wait 0.95
+peek F:4A82C 2 c052_v
+peek F:4A992 2 c052_f
+wait 0.95
+peek F:4A82C 2 c053_v
+peek F:4A992 2 c053_f
+wait 0.95
+peek F:4A82C 2 c054_v
+peek F:4A992 2 c054_f
+wait 0.95
+peek F:4A82C 2 c055_v
+peek F:4A992 2 c055_f
+wait 0.95
+peek F:4A82C 2 c056_v
+peek F:4A992 2 c056_f
+wait 0.95
+peek F:4A82C 2 c057_v
+peek F:4A992 2 c057_f
+wait 0.95
+peek F:4A82C 2 c058_v
+peek F:4A992 2 c058_f
+wait 0.95
+peek F:4A82C 2 c059_v
+peek F:4A992 2 c059_f
+wait 0.95
+peek F:4A82C 2 c060_v
+peek F:4A992 2 c060_f
+wait 0.95
+peek F:4A82C 2 c061_v
+peek F:4A992 2 c061_f
+wait 0.95
+peek F:4A82C 2 c062_v
+peek F:4A992 2 c062_f
+wait 0.95
+peek F:4A82C 2 c063_v
+peek F:4A992 2 c063_f
+wait 0.95
+peek F:4A82C 2 c064_v
+peek F:4A992 2 c064_f
+wait 0.95
+peek F:4A82C 2 c065_v
+peek F:4A992 2 c065_f
+wait 0.95
+peek F:4A82C 2 c066_v
+peek F:4A992 2 c066_f
+wait 0.95
+peek F:4A82C 2 c067_v
+peek F:4A992 2 c067_f
+wait 0.95
+peek F:4A82C 2 c068_v
+peek F:4A992 2 c068_f
+wait 0.95
+peek F:4A82C 2 c069_v
+peek F:4A992 2 c069_f
+wait 0.95
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+peek F:4A82C 2 d000_v
+peek F:4A992 2 d000_f
+wait 0.95
+peek F:4A82C 2 d001_v
+peek F:4A992 2 d001_f
+wait 0.95
+peek F:4A82C 2 d002_v
+peek F:4A992 2 d002_f
+wait 0.95
+peek F:4A82C 2 d003_v
+peek F:4A992 2 d003_f
+wait 0.95
+peek F:4A82C 2 d004_v
+peek F:4A992 2 d004_f
+wait 0.95
+peek F:4A82C 2 d005_v
+peek F:4A992 2 d005_f
+wait 0.95
+peek F:4A82C 2 d006_v
+peek F:4A992 2 d006_f
+wait 0.95
+peek F:4A82C 2 d007_v
+peek F:4A992 2 d007_f
+wait 0.95
+peek F:4A82C 2 d008_v
+peek F:4A992 2 d008_f
+wait 0.95
+peek F:4A82C 2 d009_v
+peek F:4A992 2 d009_f
+wait 0.95
+peek F:4A82C 2 d010_v
+peek F:4A992 2 d010_f
+wait 0.95
+peek F:4A82C 2 d011_v
+peek F:4A992 2 d011_f
+wait 0.95
+peek F:4A82C 2 d012_v
+peek F:4A992 2 d012_f
+wait 0.95
+peek F:4A82C 2 d013_v
+peek F:4A992 2 d013_f
+wait 0.95
+peek F:4A82C 2 d014_v
+peek F:4A992 2 d014_f
+wait 0.95
+peek F:4A82C 2 d015_v
+peek F:4A992 2 d015_f
+wait 0.95
+peek F:4A82C 2 d016_v
+peek F:4A992 2 d016_f
+wait 0.95
+peek F:4A82C 2 d017_v
+peek F:4A992 2 d017_f
+wait 0.95
+peek F:4A82C 2 d018_v
+peek F:4A992 2 d018_f
+wait 0.95
+peek F:4A82C 2 d019_v
+peek F:4A992 2 d019_f
+wait 0.95
+peek F:4A82C 2 d020_v
+peek F:4A992 2 d020_f
+wait 0.95
+peek F:4A82C 2 d021_v
+peek F:4A992 2 d021_f
+wait 0.95
+peek F:4A82C 2 d022_v
+peek F:4A992 2 d022_f
+wait 0.95
+peek F:4A82C 2 d023_v
+peek F:4A992 2 d023_f
+wait 0.95
+peek F:4A82C 2 d024_v
+peek F:4A992 2 d024_f
+wait 0.95
+peek F:4A82C 2 d025_v
+peek F:4A992 2 d025_f
+wait 0.95
+peek F:4A82C 2 d026_v
+peek F:4A992 2 d026_f
+wait 0.95
+peek F:4A82C 2 d027_v
+peek F:4A992 2 d027_f
+wait 0.95
+peek F:4A82C 2 d028_v
+peek F:4A992 2 d028_f
+wait 0.95
+peek F:4A82C 2 d029_v
+peek F:4A992 2 d029_f
+wait 0.95
+peek F:4A82C 2 d030_v
+peek F:4A992 2 d030_f
+wait 0.95
+peek F:4A82C 2 d031_v
+peek F:4A992 2 d031_f
+wait 0.95
+peek F:4A82C 2 d032_v
+peek F:4A992 2 d032_f
+wait 0.95
+peek F:4A82C 2 d033_v
+peek F:4A992 2 d033_f
+wait 0.95
+peek F:4A82C 2 d034_v
+peek F:4A992 2 d034_f
+wait 0.95
+peek F:4A82C 2 d035_v
+peek F:4A992 2 d035_f
+wait 0.95
+peek F:4A82C 2 d036_v
+peek F:4A992 2 d036_f
+wait 0.95
+peek F:4A82C 2 d037_v
+peek F:4A992 2 d037_f
+wait 0.95
+peek F:4A82C 2 d038_v
+peek F:4A992 2 d038_f
+wait 0.95
+peek F:4A82C 2 d039_v
+peek F:4A992 2 d039_f
+wait 0.95
+peek F:4A82C 2 d040_v
+peek F:4A992 2 d040_f
+wait 0.95
+peek F:4A82C 2 d041_v
+peek F:4A992 2 d041_f
+wait 0.95
+peek F:4A82C 2 d042_v
+peek F:4A992 2 d042_f
+wait 0.95
+peek F:4A82C 2 d043_v
+peek F:4A992 2 d043_f
+wait 0.95
+peek F:4A82C 2 d044_v
+peek F:4A992 2 d044_f
+wait 0.95
+peek F:4A82C 2 d045_v
+peek F:4A992 2 d045_f
+wait 0.95
+peek F:4A82C 2 d046_v
+peek F:4A992 2 d046_f
+wait 0.95
+peek F:4A82C 2 d047_v
+peek F:4A992 2 d047_f
+wait 0.95
+peek F:4A82C 2 d048_v
+peek F:4A992 2 d048_f
+wait 0.95
+peek F:4A82C 2 d049_v
+peek F:4A992 2 d049_f
+wait 0.95
+peek F:4A82C 2 d050_v
+peek F:4A992 2 d050_f
+wait 0.95
+peek F:4A82C 2 d051_v
+peek F:4A992 2 d051_f
+wait 0.95
+peek F:4A82C 2 d052_v
+peek F:4A992 2 d052_f
+wait 0.95
+peek F:4A82C 2 d053_v
+peek F:4A992 2 d053_f
+wait 0.95
+peek F:4A82C 2 d054_v
+peek F:4A992 2 d054_f
+wait 0.95
+peek F:4A82C 2 d055_v
+peek F:4A992 2 d055_f
+wait 0.95
+peek F:4A82C 2 d056_v
+peek F:4A992 2 d056_f
+wait 0.95
+peek F:4A82C 2 d057_v
+peek F:4A992 2 d057_f
+wait 0.95
+peek F:4A82C 2 d058_v
+peek F:4A992 2 d058_f
+wait 0.95
+peek F:4A82C 2 d059_v
+peek F:4A992 2 d059_f
+wait 0.95
+peek F:4A82C 2 d060_v
+peek F:4A992 2 d060_f
+wait 0.95
+peek F:4A82C 2 d061_v
+peek F:4A992 2 d061_f
+wait 0.95
+peek F:4A82C 2 d062_v
+peek F:4A992 2 d062_f
+wait 0.95
+peek F:4A82C 2 d063_v
+peek F:4A992 2 d063_f
+wait 0.95
+peek F:4A82C 2 d064_v
+peek F:4A992 2 d064_f
+wait 0.95
+peek F:4A82C 2 d065_v
+peek F:4A992 2 d065_f
+wait 0.95
+peek F:4A82C 2 d066_v
+peek F:4A992 2 d066_f
+wait 0.95
+peek F:4A82C 2 d067_v
+peek F:4A992 2 d067_f
+wait 0.95
+peek F:4A82C 2 d068_v
+peek F:4A992 2 d068_f
+wait 0.95
+peek F:4A82C 2 d069_v
+peek F:4A992 2 d069_f
+wait 0.95

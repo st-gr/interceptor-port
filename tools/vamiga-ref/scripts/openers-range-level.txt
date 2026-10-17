@@ -1,0 +1,247 @@
+# Does a tiny 4AA6A hide the world? Climb slowly through 10240 ft from airborne.vasnap in near-level flight and look at the terrain: frames with 4AB30, 4AA6A and the record logged.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 14
+key UP 1.6
+key DOWN 0.12
+wait 1
+freeze
+log h0
+peek F:4B23C 128 rec0_h0
+peek F:4AA00 256 st_h0
+peek F:4AB00 128 cam_h0
+frame extracted/captures/openers/lv-00.ppm
+thaw
+wait 1.5
+freeze
+log h1
+peek F:4B23C 128 rec0_h1
+peek F:4AA00 256 st_h1
+peek F:4AB00 128 cam_h1
+frame extracted/captures/openers/lv-01.ppm
+thaw
+wait 1.5
+freeze
+log h2
+peek F:4B23C 128 rec0_h2
+peek F:4AA00 256 st_h2
+peek F:4AB00 128 cam_h2
+frame extracted/captures/openers/lv-02.ppm
+thaw
+wait 1.5
+freeze
+log h3
+peek F:4B23C 128 rec0_h3
+peek F:4AA00 256 st_h3
+peek F:4AB00 128 cam_h3
+frame extracted/captures/openers/lv-03.ppm
+thaw
+wait 1.5
+freeze
+log h4
+peek F:4B23C 128 rec0_h4
+peek F:4AA00 256 st_h4
+peek F:4AB00 128 cam_h4
+frame extracted/captures/openers/lv-04.ppm
+thaw
+wait 1.5
+freeze
+log h5
+peek F:4B23C 128 rec0_h5
+peek F:4AA00 256 st_h5
+peek F:4AB00 128 cam_h5
+frame extracted/captures/openers/lv-05.ppm
+thaw
+wait 1.5
+freeze
+log h6
+peek F:4B23C 128 rec0_h6
+peek F:4AA00 256 st_h6
+peek F:4AB00 128 cam_h6
+frame extracted/captures/openers/lv-06.ppm
+thaw
+wait 1.5
+freeze
+log h7
+peek F:4B23C 128 rec0_h7
+peek F:4AA00 256 st_h7
+peek F:4AB00 128 cam_h7
+frame extracted/captures/openers/lv-07.ppm
+thaw
+wait 1.5
+freeze
+log h8
+peek F:4B23C 128 rec0_h8
+peek F:4AA00 256 st_h8
+peek F:4AB00 128 cam_h8
+frame extracted/captures/openers/lv-08.ppm
+thaw
+wait 1.5
+freeze
+log h9
+peek F:4B23C 128 rec0_h9
+peek F:4AA00 256 st_h9
+peek F:4AB00 128 cam_h9
+frame extracted/captures/openers/lv-09.ppm
+thaw
+wait 1.5
+freeze
+log h10
+peek F:4B23C 128 rec0_h10
+peek F:4AA00 256 st_h10
+peek F:4AB00 128 cam_h10
+frame extracted/captures/openers/lv-10.ppm
+thaw
+wait 1.5
+freeze
+log h11
+peek F:4B23C 128 rec0_h11
+peek F:4AA00 256 st_h11
+peek F:4AB00 128 cam_h11
+frame extracted/captures/openers/lv-11.ppm
+thaw
+wait 1.5
+freeze
+log h12
+peek F:4B23C 128 rec0_h12
+peek F:4AA00 256 st_h12
+peek F:4AB00 128 cam_h12
+frame extracted/captures/openers/lv-12.ppm
+thaw
+wait 1.5
+freeze
+log h13
+peek F:4B23C 128 rec0_h13
+peek F:4AA00 256 st_h13
+peek F:4AB00 128 cam_h13
+frame extracted/captures/openers/lv-13.ppm
+thaw
+wait 1.5
+freeze
+log h14
+peek F:4B23C 128 rec0_h14
+peek F:4AA00 256 st_h14
+peek F:4AB00 128 cam_h14
+frame extracted/captures/openers/lv-14.ppm
+thaw
+wait 1.5
+freeze
+log h15
+peek F:4B23C 128 rec0_h15
+peek F:4AA00 256 st_h15
+peek F:4AB00 128 cam_h15
+frame extracted/captures/openers/lv-15.ppm
+thaw
+wait 1.5
+freeze
+log h16
+peek F:4B23C 128 rec0_h16
+peek F:4AA00 256 st_h16
+peek F:4AB00 128 cam_h16
+frame extracted/captures/openers/lv-16.ppm
+thaw
+wait 1.5
+freeze
+log h17
+peek F:4B23C 128 rec0_h17
+peek F:4AA00 256 st_h17
+peek F:4AB00 128 cam_h17
+frame extracted/captures/openers/lv-17.ppm
+thaw
+wait 1.5
+freeze
+log h18
+peek F:4B23C 128 rec0_h18
+peek F:4AA00 256 st_h18
+peek F:4AB00 128 cam_h18
+frame extracted/captures/openers/lv-18.ppm
+thaw
+wait 1.5
+freeze
+log h19
+peek F:4B23C 128 rec0_h19
+peek F:4AA00 256 st_h19
+peek F:4AB00 128 cam_h19
+frame extracted/captures/openers/lv-19.ppm
+thaw
+wait 1.5
+freeze
+log h20
+peek F:4B23C 128 rec0_h20
+peek F:4AA00 256 st_h20
+peek F:4AB00 128 cam_h20
+frame extracted/captures/openers/lv-20.ppm
+thaw
+wait 1.5
+freeze
+log h21
+peek F:4B23C 128 rec0_h21
+peek F:4AA00 256 st_h21
+peek F:4AB00 128 cam_h21
+frame extracted/captures/openers/lv-21.ppm
+thaw
+wait 1.5
+freeze
+log h22
+peek F:4B23C 128 rec0_h22
+peek F:4AA00 256 st_h22
+peek F:4AB00 128 cam_h22
+frame extracted/captures/openers/lv-22.ppm
+thaw
+wait 1.5
+freeze
+log h23
+peek F:4B23C 128 rec0_h23
+peek F:4AA00 256 st_h23
+peek F:4AB00 128 cam_h23
+frame extracted/captures/openers/lv-23.ppm
+thaw
+wait 1.5
+freeze
+log h24
+peek F:4B23C 128 rec0_h24
+peek F:4AA00 256 st_h24
+peek F:4AB00 128 cam_h24
+frame extracted/captures/openers/lv-24.ppm
+thaw
+wait 1.5
+freeze
+log h25
+peek F:4B23C 128 rec0_h25
+peek F:4AA00 256 st_h25
+peek F:4AB00 128 cam_h25
+frame extracted/captures/openers/lv-25.ppm
+thaw
+wait 1.5
+freeze
+log h26
+peek F:4B23C 128 rec0_h26
+peek F:4AA00 256 st_h26
+peek F:4AB00 128 cam_h26
+frame extracted/captures/openers/lv-26.ppm
+thaw
+wait 1.5
+freeze
+log h27
+peek F:4B23C 128 rec0_h27
+peek F:4AA00 256 st_h27
+peek F:4AB00 128 cam_h27
+frame extracted/captures/openers/lv-27.ppm
+thaw
+wait 1.5
+freeze
+log h28
+peek F:4B23C 128 rec0_h28
+peek F:4AA00 256 st_h28
+peek F:4AB00 128 cam_h28
+frame extracted/captures/openers/lv-28.ppm
+thaw
+wait 1.5
+freeze
+log h29
+peek F:4B23C 128 rec0_h29
+peek F:4AA00 256 st_h29
+peek F:4AB00 128 cam_h29
+frame extracted/captures/openers/lv-29.ppm
+thaw
+wait 1.5

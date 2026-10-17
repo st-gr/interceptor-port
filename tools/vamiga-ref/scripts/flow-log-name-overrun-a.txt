@@ -1,0 +1,23 @@
+# note 08 section 10.5: the name-entry overrun reaching the record's counters: 11 letters, a SPACE as the 12th character, 15 more letters (13th to 27th), RETURN;
+# then the log screen (menu item 8) and the saved file. Prerequisite: extracted/captures/name-prompt.vasnap (flow-log-name-prompt.txt).
+# Run with --rw and --log extracted/captures/logs/flow-log-name-overrun-a.txt
+restore extracted/captures/name-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+type ABCDEFGHIJK ABCDEFGHIJKLMNO
+wait 1
+freeze
+peek F:4A8AD 2 rem_pos
+peek R:C54498 78 rec_before_return
+frame extracted/captures/logs/log-overrun-a-typed.ppm
+thaw
+key RETURN 0.3
+wait 12
+freeze
+peek R:C54498 78 rec_after_return
+peek F:4A898 1 g898
+thaw
+key 8 0.3
+wait 6
+frame extracted/captures/logs/log-overrun-a-screen.ppm
+savedisk extracted/captures/logs/log-overrun-a.adf

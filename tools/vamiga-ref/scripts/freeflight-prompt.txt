@@ -1,0 +1,14 @@
+# Menu -> free flight -> security prompt, then freeze the prompt in a snapshot.
+# The challenge (4 characters) is random per run: it depends on the emulated time of the key presses,
+# which jitter with wall-clock waits. So look at extracted/captures/security-prompt.ppm, derive the
+# countercode with the codewheel (docs/re/01a-reference-captures.md, "Answering the prompt"), and type it
+# in freeflight-takeoff.txt, which restores THIS snapshot (the challenge is frozen inside it).
+restore extracted/captures/credits.vasnap
+key SPACE
+wait 8
+key RETURN
+wait 8
+key 2
+wait 6
+frame extracted/captures/security-prompt.ppm
+snapshot extracted/captures/code-prompt.vasnap

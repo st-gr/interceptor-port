@@ -1,0 +1,105 @@
+# mission-f5: menu key F5, the fifth mission (game mode 7, the cruise missile, note 08 12.8): success when the cruise missile is shot down (the record leaves its flying state with the
+# out-of-control bit set); failure 0xFE when it stops flying otherwise (it detonates).
+# 1 tick = 1 core step, the game starts at the credits: any key (tick 3), the continuing welcome of a log with a player record (tick 133), the menu's F5 (tick 175). The flight log is imported
+# by the script ("log": qualified, tours 2, the completion bytes 0 0 0 1 1 1 1 1 0) and the placement generator is seeded with 1 ("seed 1": m = 46, jitter 0, selector 0x1013, variant 2, offsets (-1, 0) cells; note 07 2.4: the
+# selector is 20,000 x m + the mission's delta + a jitter of the 13-entry list, so every seed picks a placement and the earlier fight, found for another one, no longer reached the success code). The location is the carrier and
+# fixed for the mission: the approach, the notice and the wait run by themselves and the first flight step is tick 516.
+# The fight is a closed-loop run recorded against this port (a throwaway steering tool, not committed): a catapult launch with F10 at tick 520, a pull at 604 (stick back until 619), the gear at 630, the weapon
+# select (one press, the AIM-120) at 644, then from tick 633 a bank-to-turn controller on the lead point of the cruise missile (bang-bang roll and pitch on the stick, the intercept solved from the missile's
+# velocity), T (designate) until the cruise missile is the designated target, and FIRE whenever the fire prompt shows (several shots); the tool's parameters were found by a seeded random search (the 20th
+# candidate). The stick and trigger changes are the events below. It reaches the END CODE 0xFF (success) at tick 907, the outcome list typing from tick 917 and the flight resuming at tick 926 (the end code 1). No game text in the columns.
+# Milestone 7 history: the click cost 5,350 and the measured typing times (note 08 3.8) and then the final round (note 08 12.14 C14 and 5.13: the missions' approach is the mover's from the briefing camera, and the first flight pass follows the outcome resume by one step) re-timed this script twice; the values above are the current ones. The seed and the inputs are unchanged and the run still reaches the end code 0xFF.
+# The real "at" lines after tick 400 moved by +23 in the final round (+1 in the click-cost round); the synthetic "sat" lines by +99.
+screens
+seed 1
+log 0 0 0 1 1 1 1 1 0
+ticks 944
+# SYNTHETIC RUN (CI): "synthflight" gives the synthetic world the invented flight tables (all zero) and the invented mission tables of tests/world_synth.h (scenario rows, templates, position blocks, briefing chain, ai.bin), so the F-key starts the mission;
+# "synthtrig" adds two more invented rows: a quarter-wave table (a plain ramp, so that an attitude of zero builds the unit matrix; with the all-zero table every matrix is zero) and a hard-point row of the player's long-range missile 14,592 position units
+# above the owner (so the launched missile starts at the cruise missile's forced height, 45,056, with the same x and z); "synthfrom 175" keeps the "at" lines up to the menu key and drops the real fight; the "sat" lines are the synthetic fight.
+# F5, the success path of note 08 12.8 (the cruise missile stops flying with the out-of-control bit set): the flight sim starts at tick 458 (the placement, the notice and the wait are shorter than in the real run), one SELECT press (461) takes the long-range
+# missile (note 07 7.1: the selector goes 0 -> 3), FIRE (464) launches it: the contact scan finds the cruise missile inside the inner box of a cruise-class record (0x1000 on every axis, note 07 10.2) and makes the marks of 10.3 (out of control, crashed),
+# the cruise missile is freed by its dying expiry and the script counts down: END CODE 0xFF at tick 480, code 1 at 490. The world has no velocities (the length table is zero, nothing moves), so nothing flies: the hit is the launch position against the placed record.
+# Without the FIRE line the run stays at the code 0 to the end of the 800 ticks.
+synthflight
+synthtrig
+synthfrom 175
+synthetic 899
+sat 461 btn SELECT_WEAPON 1
+sat 462 btn SELECT_WEAPON 0
+sat 464 btn FIRE 1
+sat 465 btn FIRE 0
+# the credits (any key), the continuing welcome (any key), the menu's F5
+at 3 key 120
+at 133 key 120
+at 175 fkey 5
+at 520 fkey 10
+at 604 stick 0 12000
+at 619 stick 0 0
+at 630 btn GEAR
+at 633 stick 12000 -12000
+at 633 btn TARGET 1
+at 644 btn SELECT_WEAPON 1
+at 646 stick 0 -12000
+at 649 stick 0 0
+at 650 stick 12000 0
+at 652 stick 12000 12000
+at 654 stick 0 12000
+at 657 stick -12000 12000
+at 662 stick -12000 0
+at 663 stick -12000 -12000
+at 672 stick 0 -12000
+at 676 stick -12000 -12000
+at 681 stick -12000 0
+at 682 stick -12000 12000
+at 686 stick 0 12000
+at 690 stick 12000 12000
+at 701 stick 12000 0
+at 702 stick 12000 -12000
+at 704 stick 0 -12000
+at 720 stick 0 0
+at 721 stick 0 12000
+at 731 stick -12000 12000
+at 735 stick -12000 0
+at 737 stick -12000 -12000
+at 746 stick 0 -12000
+at 747 stick 0 0
+at 749 stick 0 12000
+at 755 stick 12000 12000
+at 757 stick 12000 0
+at 759 stick 12000 -12000
+at 767 stick 0 -12000
+at 773 stick 12000 -12000
+at 775 stick 12000 12000
+at 781 stick 0 12000
+at 789 btn FIRE 1
+at 791 btn FIRE 0
+at 793 stick 12000 12000
+at 795 stick -12000 12000
+at 798 stick -12000 0
+at 799 stick -12000 -12000
+at 806 stick 0 -12000
+at 809 btn FIRE 1
+at 811 btn FIRE 0
+at 819 stick 0 12000
+at 829 btn FIRE 1
+at 831 btn FIRE 0
+at 838 stick 12000 -12000
+at 843 stick 0 -12000
+at 849 btn FIRE 1
+at 851 btn FIRE 0
+at 855 stick 12000 -12000
+at 859 stick 12000 12000
+at 869 btn FIRE 1
+at 870 stick 0 12000
+at 871 btn FIRE 0
+at 888 stick -12000 12000
+at 889 btn FIRE 1
+at 891 btn FIRE 0
+at 892 btn TARGET 1
+at 894 stick -12000 0
+at 895 stick -12000 -12000
+at 895 btn TARGET 1
+at 898 btn TARGET 1
+at 901 btn TARGET 1
+at 904 btn TARGET 1

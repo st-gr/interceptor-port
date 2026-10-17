@@ -1,0 +1,14 @@
+# note 07 12.1 (milestone 7 task 3): the first call of the redraw helper 0x1EFF4 after V:4A992 = 92 in a free flight from the aircraft screen.
+thaw
+restore extracted/captures/aircraft-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 1 0.12
+stepuntil F:4A992 2 eq 92 3000
+peek F:4A8EE 2 before_panel
+peek F:1A6BC 4 before_state
+peek F:4A966 1 before_cammode
+runto F:1EFF4 40
+peek F:4A8EE 2 at_panel
+peek F:1A6BC 4 at_state
+peek F:4A992 2 at_pass

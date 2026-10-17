@@ -1,0 +1,38 @@
+# note 07 12.1 (milestone 7 task 3): the blitter starts of 6 passes after KP-ENTER, with the pc of each BLTSIZE write.
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key KPENTER 0.12
+blittrace on
+runto F:11124 300
+peek F:4A992 2 s0_pass
+peek F:4A8EE 2 s0_panel
+peek F:4A83D 1 s0_view
+peek F:4AA3E 2 s0_winext
+runto F:11124 300
+peek F:4A992 2 s1_pass
+peek F:4A8EE 2 s1_panel
+peek F:4A83D 1 s1_view
+peek F:4AA3E 2 s1_winext
+runto F:11124 300
+peek F:4A992 2 s2_pass
+peek F:4A8EE 2 s2_panel
+peek F:4A83D 1 s2_view
+peek F:4AA3E 2 s2_winext
+runto F:11124 300
+peek F:4A992 2 s3_pass
+peek F:4A8EE 2 s3_panel
+peek F:4A83D 1 s3_view
+peek F:4AA3E 2 s3_winext
+runto F:11124 300
+peek F:4A992 2 s4_pass
+peek F:4A8EE 2 s4_panel
+peek F:4A83D 1 s4_view
+peek F:4AA3E 2 s4_winext
+runto F:11124 300
+peek F:4A992 2 s5_pass
+peek F:4A8EE 2 s5_panel
+peek F:4A83D 1 s5_view
+peek F:4AA3E 2 s5_winext
+blittrace off

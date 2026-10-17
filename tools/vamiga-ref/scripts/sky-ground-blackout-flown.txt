@@ -1,0 +1,73 @@
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+log s0
+peek F:4B23C 160 rec_s0
+peek F:4A940 2 l940_s0
+peek F:4A958 4 l958_s0
+peek F:4A9FE 2 c9fe_s0
+peek F:4ABAA 4 clk_s0
+thaw
+holduntil LEFT F:4B2A6 gt 6000 6
+freeze
+log s1
+peek F:4B23C 160 rec_s1
+peek F:4A940 2 l940_s1
+peek F:4A958 4 l958_s1
+peek F:4A9FE 2 c9fe_s1
+peek F:4ABAA 4 clk_s1
+thaw
+holduntil DOWN F:4A940 gt 400 8
+freeze
+log s2
+peek F:4B23C 160 rec_s2
+peek F:4A940 2 l940_s2
+peek F:4A958 4 l958_s2
+peek F:4A9FE 2 c9fe_s2
+peek F:4ABAA 4 clk_s2
+thaw
+wait 0.5
+freeze
+log s3
+peek F:4B23C 160 rec_s3
+peek F:4A940 2 l940_s3
+peek F:4A958 4 l958_s3
+peek F:4A9FE 2 c9fe_s3
+peek F:4ABAA 4 clk_s3
+thaw
+wait 0.5
+freeze
+log s4
+peek F:4B23C 160 rec_s4
+peek F:4A940 2 l940_s4
+peek F:4A958 4 l958_s4
+peek F:4A9FE 2 c9fe_s4
+peek F:4ABAA 4 clk_s4
+thaw
+wait 1
+freeze
+log s5
+peek F:4B23C 160 rec_s5
+peek F:4A940 2 l940_s5
+peek F:4A958 4 l958_s5
+peek F:4A9FE 2 c9fe_s5
+peek F:4ABAA 4 clk_s5
+thaw
+wait 1
+freeze
+log s6
+peek F:4B23C 160 rec_s6
+peek F:4A940 2 l940_s6
+peek F:4A958 4 l958_s6
+peek F:4A9FE 2 c9fe_s6
+peek F:4ABAA 4 clk_s6
+thaw
+wait 1
+freeze
+log s7
+peek F:4B23C 160 rec_s7
+peek F:4A940 2 l940_s7
+peek F:4A958 4 l958_s7
+peek F:4A9FE 2 c9fe_s7
+peek F:4ABAA 4 clk_s7
+thaw

@@ -1,0 +1,22 @@
+# Display-list capture (docs/re/04a-display-lists.md, Verified by): the three draw queues and the state the builder reads, at the carrier deck and in the airborne snapshot.
+# Run:  build/vamiga-ref/ref --rom disks/kick12.rom --adf extracted/interceptor.adf --script tools/vamiga-ref/scripts/openers-lists.txt --log extracted/captures/logs/lists.txt
+# Labels per scene (deck, air): s71_ = state hunk 71 from 0x4A700 (2336 bytes), recs_ = the 16 entity records (0x4B23C, 8192), sec_ = the 16 secondary objects (0x4D23C, 512),
+# act_ = direct-entity list (0x53A2A, 64), q_ = the three queues A, B, C (0x53A4A, 5040 = 3 x 1680). The rig test tools/m68k-rig/tests/test_lists_diff.c reads the log.
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A700 2336 s71_deck
+peek F:4B23C 8192 recs_deck
+peek F:4D23C 512 sec_deck
+peek F:53A2A 64 act_deck
+peek F:53A4A 5040 q_deck
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A700 2336 s71_air
+peek F:4B23C 8192 recs_air
+peek F:4D23C 512 sec_air
+peek F:53A2A 64 act_air
+peek F:53A4A 5040 q_air
+thaw

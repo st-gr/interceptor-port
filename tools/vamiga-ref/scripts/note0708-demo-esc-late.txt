@@ -1,0 +1,2128 @@
+# note 08 7.7: ESC 36, 39 and 42 blanks after the demo's fade-in state first runs (after the 34-blank boundary, before the fade-in ends); author note-0708 fix 2
+thaw
+log RUN_ESC_AT_36
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 1
+stepuntil F:1A6BC 4 eq 0xC096C4 3000
+step 35
+key ESC
+peek F:4A958 1 t36_0_lvl
+peek F:4A959 1 t36_0_tgt
+peek F:1A6BC 4 t36_0_st
+peek F:4A84D 1 t36_0_gate
+peek F:4A866 1 t36_0_pause
+peek F:4A8E2 1 t36_0_esc
+step
+peek F:4A958 1 t36_1_lvl
+peek F:4A959 1 t36_1_tgt
+peek F:1A6BC 4 t36_1_st
+peek F:4A84D 1 t36_1_gate
+peek F:4A866 1 t36_1_pause
+peek F:4A8E2 1 t36_1_esc
+step
+peek F:4A958 1 t36_2_lvl
+peek F:4A959 1 t36_2_tgt
+peek F:1A6BC 4 t36_2_st
+peek F:4A84D 1 t36_2_gate
+peek F:4A866 1 t36_2_pause
+peek F:4A8E2 1 t36_2_esc
+step
+peek F:4A958 1 t36_3_lvl
+peek F:4A959 1 t36_3_tgt
+peek F:1A6BC 4 t36_3_st
+peek F:4A84D 1 t36_3_gate
+peek F:4A866 1 t36_3_pause
+peek F:4A8E2 1 t36_3_esc
+step
+peek F:4A958 1 t36_4_lvl
+peek F:4A959 1 t36_4_tgt
+peek F:1A6BC 4 t36_4_st
+peek F:4A84D 1 t36_4_gate
+peek F:4A866 1 t36_4_pause
+peek F:4A8E2 1 t36_4_esc
+step
+peek F:4A958 1 t36_5_lvl
+peek F:4A959 1 t36_5_tgt
+peek F:1A6BC 4 t36_5_st
+peek F:4A84D 1 t36_5_gate
+peek F:4A866 1 t36_5_pause
+peek F:4A8E2 1 t36_5_esc
+step
+peek F:4A958 1 t36_6_lvl
+peek F:4A959 1 t36_6_tgt
+peek F:1A6BC 4 t36_6_st
+peek F:4A84D 1 t36_6_gate
+peek F:4A866 1 t36_6_pause
+peek F:4A8E2 1 t36_6_esc
+step
+peek F:4A958 1 t36_7_lvl
+peek F:4A959 1 t36_7_tgt
+peek F:1A6BC 4 t36_7_st
+peek F:4A84D 1 t36_7_gate
+peek F:4A866 1 t36_7_pause
+peek F:4A8E2 1 t36_7_esc
+step
+peek F:4A958 1 t36_8_lvl
+peek F:4A959 1 t36_8_tgt
+peek F:1A6BC 4 t36_8_st
+peek F:4A84D 1 t36_8_gate
+peek F:4A866 1 t36_8_pause
+peek F:4A8E2 1 t36_8_esc
+step
+peek F:4A958 1 t36_9_lvl
+peek F:4A959 1 t36_9_tgt
+peek F:1A6BC 4 t36_9_st
+peek F:4A84D 1 t36_9_gate
+peek F:4A866 1 t36_9_pause
+peek F:4A8E2 1 t36_9_esc
+step
+peek F:4A958 1 t36_10_lvl
+peek F:4A959 1 t36_10_tgt
+peek F:1A6BC 4 t36_10_st
+peek F:4A84D 1 t36_10_gate
+peek F:4A866 1 t36_10_pause
+peek F:4A8E2 1 t36_10_esc
+step
+peek F:4A958 1 t36_11_lvl
+peek F:4A959 1 t36_11_tgt
+peek F:1A6BC 4 t36_11_st
+peek F:4A84D 1 t36_11_gate
+peek F:4A866 1 t36_11_pause
+peek F:4A8E2 1 t36_11_esc
+step
+peek F:4A958 1 t36_12_lvl
+peek F:4A959 1 t36_12_tgt
+peek F:1A6BC 4 t36_12_st
+peek F:4A84D 1 t36_12_gate
+peek F:4A866 1 t36_12_pause
+peek F:4A8E2 1 t36_12_esc
+step
+peek F:4A958 1 t36_13_lvl
+peek F:4A959 1 t36_13_tgt
+peek F:1A6BC 4 t36_13_st
+peek F:4A84D 1 t36_13_gate
+peek F:4A866 1 t36_13_pause
+peek F:4A8E2 1 t36_13_esc
+step
+peek F:4A958 1 t36_14_lvl
+peek F:4A959 1 t36_14_tgt
+peek F:1A6BC 4 t36_14_st
+peek F:4A84D 1 t36_14_gate
+peek F:4A866 1 t36_14_pause
+peek F:4A8E2 1 t36_14_esc
+step
+peek F:4A958 1 t36_15_lvl
+peek F:4A959 1 t36_15_tgt
+peek F:1A6BC 4 t36_15_st
+peek F:4A84D 1 t36_15_gate
+peek F:4A866 1 t36_15_pause
+peek F:4A8E2 1 t36_15_esc
+step
+peek F:4A958 1 t36_16_lvl
+peek F:4A959 1 t36_16_tgt
+peek F:1A6BC 4 t36_16_st
+peek F:4A84D 1 t36_16_gate
+peek F:4A866 1 t36_16_pause
+peek F:4A8E2 1 t36_16_esc
+step
+peek F:4A958 1 t36_17_lvl
+peek F:4A959 1 t36_17_tgt
+peek F:1A6BC 4 t36_17_st
+peek F:4A84D 1 t36_17_gate
+peek F:4A866 1 t36_17_pause
+peek F:4A8E2 1 t36_17_esc
+step
+peek F:4A958 1 t36_18_lvl
+peek F:4A959 1 t36_18_tgt
+peek F:1A6BC 4 t36_18_st
+peek F:4A84D 1 t36_18_gate
+peek F:4A866 1 t36_18_pause
+peek F:4A8E2 1 t36_18_esc
+step
+peek F:4A958 1 t36_19_lvl
+peek F:4A959 1 t36_19_tgt
+peek F:1A6BC 4 t36_19_st
+peek F:4A84D 1 t36_19_gate
+peek F:4A866 1 t36_19_pause
+peek F:4A8E2 1 t36_19_esc
+step
+peek F:4A958 1 t36_20_lvl
+peek F:4A959 1 t36_20_tgt
+peek F:1A6BC 4 t36_20_st
+peek F:4A84D 1 t36_20_gate
+peek F:4A866 1 t36_20_pause
+peek F:4A8E2 1 t36_20_esc
+step
+peek F:4A958 1 t36_21_lvl
+peek F:4A959 1 t36_21_tgt
+peek F:1A6BC 4 t36_21_st
+peek F:4A84D 1 t36_21_gate
+peek F:4A866 1 t36_21_pause
+peek F:4A8E2 1 t36_21_esc
+step
+peek F:4A958 1 t36_22_lvl
+peek F:4A959 1 t36_22_tgt
+peek F:1A6BC 4 t36_22_st
+peek F:4A84D 1 t36_22_gate
+peek F:4A866 1 t36_22_pause
+peek F:4A8E2 1 t36_22_esc
+step
+peek F:4A958 1 t36_23_lvl
+peek F:4A959 1 t36_23_tgt
+peek F:1A6BC 4 t36_23_st
+peek F:4A84D 1 t36_23_gate
+peek F:4A866 1 t36_23_pause
+peek F:4A8E2 1 t36_23_esc
+step
+peek F:4A958 1 t36_24_lvl
+peek F:4A959 1 t36_24_tgt
+peek F:1A6BC 4 t36_24_st
+peek F:4A84D 1 t36_24_gate
+peek F:4A866 1 t36_24_pause
+peek F:4A8E2 1 t36_24_esc
+step
+peek F:4A958 1 t36_25_lvl
+peek F:4A959 1 t36_25_tgt
+peek F:1A6BC 4 t36_25_st
+peek F:4A84D 1 t36_25_gate
+peek F:4A866 1 t36_25_pause
+peek F:4A8E2 1 t36_25_esc
+step
+peek F:4A958 1 t36_26_lvl
+peek F:4A959 1 t36_26_tgt
+peek F:1A6BC 4 t36_26_st
+peek F:4A84D 1 t36_26_gate
+peek F:4A866 1 t36_26_pause
+peek F:4A8E2 1 t36_26_esc
+step
+peek F:4A958 1 t36_27_lvl
+peek F:4A959 1 t36_27_tgt
+peek F:1A6BC 4 t36_27_st
+peek F:4A84D 1 t36_27_gate
+peek F:4A866 1 t36_27_pause
+peek F:4A8E2 1 t36_27_esc
+step
+peek F:4A958 1 t36_28_lvl
+peek F:4A959 1 t36_28_tgt
+peek F:1A6BC 4 t36_28_st
+peek F:4A84D 1 t36_28_gate
+peek F:4A866 1 t36_28_pause
+peek F:4A8E2 1 t36_28_esc
+step
+peek F:4A958 1 t36_29_lvl
+peek F:4A959 1 t36_29_tgt
+peek F:1A6BC 4 t36_29_st
+peek F:4A84D 1 t36_29_gate
+peek F:4A866 1 t36_29_pause
+peek F:4A8E2 1 t36_29_esc
+step
+peek F:4A958 1 t36_30_lvl
+peek F:4A959 1 t36_30_tgt
+peek F:1A6BC 4 t36_30_st
+peek F:4A84D 1 t36_30_gate
+peek F:4A866 1 t36_30_pause
+peek F:4A8E2 1 t36_30_esc
+step
+peek F:4A958 1 t36_31_lvl
+peek F:4A959 1 t36_31_tgt
+peek F:1A6BC 4 t36_31_st
+peek F:4A84D 1 t36_31_gate
+peek F:4A866 1 t36_31_pause
+peek F:4A8E2 1 t36_31_esc
+step
+peek F:4A958 1 t36_32_lvl
+peek F:4A959 1 t36_32_tgt
+peek F:1A6BC 4 t36_32_st
+peek F:4A84D 1 t36_32_gate
+peek F:4A866 1 t36_32_pause
+peek F:4A8E2 1 t36_32_esc
+step
+peek F:4A958 1 t36_33_lvl
+peek F:4A959 1 t36_33_tgt
+peek F:1A6BC 4 t36_33_st
+peek F:4A84D 1 t36_33_gate
+peek F:4A866 1 t36_33_pause
+peek F:4A8E2 1 t36_33_esc
+step
+peek F:4A958 1 t36_34_lvl
+peek F:4A959 1 t36_34_tgt
+peek F:1A6BC 4 t36_34_st
+peek F:4A84D 1 t36_34_gate
+peek F:4A866 1 t36_34_pause
+peek F:4A8E2 1 t36_34_esc
+step
+peek F:4A958 1 t36_35_lvl
+peek F:4A959 1 t36_35_tgt
+peek F:1A6BC 4 t36_35_st
+peek F:4A84D 1 t36_35_gate
+peek F:4A866 1 t36_35_pause
+peek F:4A8E2 1 t36_35_esc
+step
+peek F:4A958 1 t36_36_lvl
+peek F:4A959 1 t36_36_tgt
+peek F:1A6BC 4 t36_36_st
+peek F:4A84D 1 t36_36_gate
+peek F:4A866 1 t36_36_pause
+peek F:4A8E2 1 t36_36_esc
+step
+peek F:4A958 1 t36_37_lvl
+peek F:4A959 1 t36_37_tgt
+peek F:1A6BC 4 t36_37_st
+peek F:4A84D 1 t36_37_gate
+peek F:4A866 1 t36_37_pause
+peek F:4A8E2 1 t36_37_esc
+step
+peek F:4A958 1 t36_38_lvl
+peek F:4A959 1 t36_38_tgt
+peek F:1A6BC 4 t36_38_st
+peek F:4A84D 1 t36_38_gate
+peek F:4A866 1 t36_38_pause
+peek F:4A8E2 1 t36_38_esc
+step
+peek F:4A958 1 t36_39_lvl
+peek F:4A959 1 t36_39_tgt
+peek F:1A6BC 4 t36_39_st
+peek F:4A84D 1 t36_39_gate
+peek F:4A866 1 t36_39_pause
+peek F:4A8E2 1 t36_39_esc
+step
+peek F:4A958 1 t36_40_lvl
+peek F:4A959 1 t36_40_tgt
+peek F:1A6BC 4 t36_40_st
+peek F:4A84D 1 t36_40_gate
+peek F:4A866 1 t36_40_pause
+peek F:4A8E2 1 t36_40_esc
+step
+peek F:4A958 1 t36_41_lvl
+peek F:4A959 1 t36_41_tgt
+peek F:1A6BC 4 t36_41_st
+peek F:4A84D 1 t36_41_gate
+peek F:4A866 1 t36_41_pause
+peek F:4A8E2 1 t36_41_esc
+step
+peek F:4A958 1 t36_42_lvl
+peek F:4A959 1 t36_42_tgt
+peek F:1A6BC 4 t36_42_st
+peek F:4A84D 1 t36_42_gate
+peek F:4A866 1 t36_42_pause
+peek F:4A8E2 1 t36_42_esc
+step
+peek F:4A958 1 t36_43_lvl
+peek F:4A959 1 t36_43_tgt
+peek F:1A6BC 4 t36_43_st
+peek F:4A84D 1 t36_43_gate
+peek F:4A866 1 t36_43_pause
+peek F:4A8E2 1 t36_43_esc
+step
+peek F:4A958 1 t36_44_lvl
+peek F:4A959 1 t36_44_tgt
+peek F:1A6BC 4 t36_44_st
+peek F:4A84D 1 t36_44_gate
+peek F:4A866 1 t36_44_pause
+peek F:4A8E2 1 t36_44_esc
+step
+peek F:4A958 1 t36_45_lvl
+peek F:4A959 1 t36_45_tgt
+peek F:1A6BC 4 t36_45_st
+peek F:4A84D 1 t36_45_gate
+peek F:4A866 1 t36_45_pause
+peek F:4A8E2 1 t36_45_esc
+step
+peek F:4A958 1 t36_46_lvl
+peek F:4A959 1 t36_46_tgt
+peek F:1A6BC 4 t36_46_st
+peek F:4A84D 1 t36_46_gate
+peek F:4A866 1 t36_46_pause
+peek F:4A8E2 1 t36_46_esc
+step
+peek F:4A958 1 t36_47_lvl
+peek F:4A959 1 t36_47_tgt
+peek F:1A6BC 4 t36_47_st
+peek F:4A84D 1 t36_47_gate
+peek F:4A866 1 t36_47_pause
+peek F:4A8E2 1 t36_47_esc
+step
+peek F:4A958 1 t36_48_lvl
+peek F:4A959 1 t36_48_tgt
+peek F:1A6BC 4 t36_48_st
+peek F:4A84D 1 t36_48_gate
+peek F:4A866 1 t36_48_pause
+peek F:4A8E2 1 t36_48_esc
+step
+peek F:4A958 1 t36_49_lvl
+peek F:4A959 1 t36_49_tgt
+peek F:1A6BC 4 t36_49_st
+peek F:4A84D 1 t36_49_gate
+peek F:4A866 1 t36_49_pause
+peek F:4A8E2 1 t36_49_esc
+step
+peek F:4A958 1 t36_50_lvl
+peek F:4A959 1 t36_50_tgt
+peek F:1A6BC 4 t36_50_st
+peek F:4A84D 1 t36_50_gate
+peek F:4A866 1 t36_50_pause
+peek F:4A8E2 1 t36_50_esc
+step
+peek F:4A958 1 t36_51_lvl
+peek F:4A959 1 t36_51_tgt
+peek F:1A6BC 4 t36_51_st
+peek F:4A84D 1 t36_51_gate
+peek F:4A866 1 t36_51_pause
+peek F:4A8E2 1 t36_51_esc
+step
+peek F:4A958 1 t36_52_lvl
+peek F:4A959 1 t36_52_tgt
+peek F:1A6BC 4 t36_52_st
+peek F:4A84D 1 t36_52_gate
+peek F:4A866 1 t36_52_pause
+peek F:4A8E2 1 t36_52_esc
+step
+peek F:4A958 1 t36_53_lvl
+peek F:4A959 1 t36_53_tgt
+peek F:1A6BC 4 t36_53_st
+peek F:4A84D 1 t36_53_gate
+peek F:4A866 1 t36_53_pause
+peek F:4A8E2 1 t36_53_esc
+step
+peek F:4A958 1 t36_54_lvl
+peek F:4A959 1 t36_54_tgt
+peek F:1A6BC 4 t36_54_st
+peek F:4A84D 1 t36_54_gate
+peek F:4A866 1 t36_54_pause
+peek F:4A8E2 1 t36_54_esc
+step
+peek F:4A958 1 t36_55_lvl
+peek F:4A959 1 t36_55_tgt
+peek F:1A6BC 4 t36_55_st
+peek F:4A84D 1 t36_55_gate
+peek F:4A866 1 t36_55_pause
+peek F:4A8E2 1 t36_55_esc
+step
+peek F:4A958 1 t36_56_lvl
+peek F:4A959 1 t36_56_tgt
+peek F:1A6BC 4 t36_56_st
+peek F:4A84D 1 t36_56_gate
+peek F:4A866 1 t36_56_pause
+peek F:4A8E2 1 t36_56_esc
+step
+peek F:4A958 1 t36_57_lvl
+peek F:4A959 1 t36_57_tgt
+peek F:1A6BC 4 t36_57_st
+peek F:4A84D 1 t36_57_gate
+peek F:4A866 1 t36_57_pause
+peek F:4A8E2 1 t36_57_esc
+step
+peek F:4A958 1 t36_58_lvl
+peek F:4A959 1 t36_58_tgt
+peek F:1A6BC 4 t36_58_st
+peek F:4A84D 1 t36_58_gate
+peek F:4A866 1 t36_58_pause
+peek F:4A8E2 1 t36_58_esc
+step
+peek F:4A958 1 t36_59_lvl
+peek F:4A959 1 t36_59_tgt
+peek F:1A6BC 4 t36_59_st
+peek F:4A84D 1 t36_59_gate
+peek F:4A866 1 t36_59_pause
+peek F:4A8E2 1 t36_59_esc
+step
+peek F:4A958 1 t36_60_lvl
+peek F:4A959 1 t36_60_tgt
+peek F:1A6BC 4 t36_60_st
+peek F:4A84D 1 t36_60_gate
+peek F:4A866 1 t36_60_pause
+peek F:4A8E2 1 t36_60_esc
+step
+peek F:4A958 1 t36_61_lvl
+peek F:4A959 1 t36_61_tgt
+peek F:1A6BC 4 t36_61_st
+peek F:4A84D 1 t36_61_gate
+peek F:4A866 1 t36_61_pause
+peek F:4A8E2 1 t36_61_esc
+step
+peek F:4A958 1 t36_62_lvl
+peek F:4A959 1 t36_62_tgt
+peek F:1A6BC 4 t36_62_st
+peek F:4A84D 1 t36_62_gate
+peek F:4A866 1 t36_62_pause
+peek F:4A8E2 1 t36_62_esc
+step
+peek F:4A958 1 t36_63_lvl
+peek F:4A959 1 t36_63_tgt
+peek F:1A6BC 4 t36_63_st
+peek F:4A84D 1 t36_63_gate
+peek F:4A866 1 t36_63_pause
+peek F:4A8E2 1 t36_63_esc
+step
+peek F:4A958 1 t36_64_lvl
+peek F:4A959 1 t36_64_tgt
+peek F:1A6BC 4 t36_64_st
+peek F:4A84D 1 t36_64_gate
+peek F:4A866 1 t36_64_pause
+peek F:4A8E2 1 t36_64_esc
+step
+peek F:4A958 1 t36_65_lvl
+peek F:4A959 1 t36_65_tgt
+peek F:1A6BC 4 t36_65_st
+peek F:4A84D 1 t36_65_gate
+peek F:4A866 1 t36_65_pause
+peek F:4A8E2 1 t36_65_esc
+step
+peek F:4A958 1 t36_66_lvl
+peek F:4A959 1 t36_66_tgt
+peek F:1A6BC 4 t36_66_st
+peek F:4A84D 1 t36_66_gate
+peek F:4A866 1 t36_66_pause
+peek F:4A8E2 1 t36_66_esc
+step
+peek F:4A958 1 t36_67_lvl
+peek F:4A959 1 t36_67_tgt
+peek F:1A6BC 4 t36_67_st
+peek F:4A84D 1 t36_67_gate
+peek F:4A866 1 t36_67_pause
+peek F:4A8E2 1 t36_67_esc
+step
+peek F:4A958 1 t36_68_lvl
+peek F:4A959 1 t36_68_tgt
+peek F:1A6BC 4 t36_68_st
+peek F:4A84D 1 t36_68_gate
+peek F:4A866 1 t36_68_pause
+peek F:4A8E2 1 t36_68_esc
+step
+peek F:4A958 1 t36_69_lvl
+peek F:4A959 1 t36_69_tgt
+peek F:1A6BC 4 t36_69_st
+peek F:4A84D 1 t36_69_gate
+peek F:4A866 1 t36_69_pause
+peek F:4A8E2 1 t36_69_esc
+step
+peek F:4A958 1 t36_70_lvl
+peek F:4A959 1 t36_70_tgt
+peek F:1A6BC 4 t36_70_st
+peek F:4A84D 1 t36_70_gate
+peek F:4A866 1 t36_70_pause
+peek F:4A8E2 1 t36_70_esc
+step
+peek F:4A958 1 t36_71_lvl
+peek F:4A959 1 t36_71_tgt
+peek F:1A6BC 4 t36_71_st
+peek F:4A84D 1 t36_71_gate
+peek F:4A866 1 t36_71_pause
+peek F:4A8E2 1 t36_71_esc
+step
+peek F:4A958 1 t36_72_lvl
+peek F:4A959 1 t36_72_tgt
+peek F:1A6BC 4 t36_72_st
+peek F:4A84D 1 t36_72_gate
+peek F:4A866 1 t36_72_pause
+peek F:4A8E2 1 t36_72_esc
+step
+peek F:4A958 1 t36_73_lvl
+peek F:4A959 1 t36_73_tgt
+peek F:1A6BC 4 t36_73_st
+peek F:4A84D 1 t36_73_gate
+peek F:4A866 1 t36_73_pause
+peek F:4A8E2 1 t36_73_esc
+step
+peek F:4A958 1 t36_74_lvl
+peek F:4A959 1 t36_74_tgt
+peek F:1A6BC 4 t36_74_st
+peek F:4A84D 1 t36_74_gate
+peek F:4A866 1 t36_74_pause
+peek F:4A8E2 1 t36_74_esc
+step
+peek F:4A958 1 t36_75_lvl
+peek F:4A959 1 t36_75_tgt
+peek F:1A6BC 4 t36_75_st
+peek F:4A84D 1 t36_75_gate
+peek F:4A866 1 t36_75_pause
+peek F:4A8E2 1 t36_75_esc
+step
+peek F:4A958 1 t36_76_lvl
+peek F:4A959 1 t36_76_tgt
+peek F:1A6BC 4 t36_76_st
+peek F:4A84D 1 t36_76_gate
+peek F:4A866 1 t36_76_pause
+peek F:4A8E2 1 t36_76_esc
+step
+peek F:4A958 1 t36_77_lvl
+peek F:4A959 1 t36_77_tgt
+peek F:1A6BC 4 t36_77_st
+peek F:4A84D 1 t36_77_gate
+peek F:4A866 1 t36_77_pause
+peek F:4A8E2 1 t36_77_esc
+step
+peek F:4A958 1 t36_78_lvl
+peek F:4A959 1 t36_78_tgt
+peek F:1A6BC 4 t36_78_st
+peek F:4A84D 1 t36_78_gate
+peek F:4A866 1 t36_78_pause
+peek F:4A8E2 1 t36_78_esc
+step
+peek F:4A958 1 t36_79_lvl
+peek F:4A959 1 t36_79_tgt
+peek F:1A6BC 4 t36_79_st
+peek F:4A84D 1 t36_79_gate
+peek F:4A866 1 t36_79_pause
+peek F:4A8E2 1 t36_79_esc
+step
+peek F:4A958 1 t36_80_lvl
+peek F:4A959 1 t36_80_tgt
+peek F:1A6BC 4 t36_80_st
+peek F:4A84D 1 t36_80_gate
+peek F:4A866 1 t36_80_pause
+peek F:4A8E2 1 t36_80_esc
+step
+peek F:4A958 1 t36_81_lvl
+peek F:4A959 1 t36_81_tgt
+peek F:1A6BC 4 t36_81_st
+peek F:4A84D 1 t36_81_gate
+peek F:4A866 1 t36_81_pause
+peek F:4A8E2 1 t36_81_esc
+step
+peek F:4A958 1 t36_82_lvl
+peek F:4A959 1 t36_82_tgt
+peek F:1A6BC 4 t36_82_st
+peek F:4A84D 1 t36_82_gate
+peek F:4A866 1 t36_82_pause
+peek F:4A8E2 1 t36_82_esc
+step
+peek F:4A958 1 t36_83_lvl
+peek F:4A959 1 t36_83_tgt
+peek F:1A6BC 4 t36_83_st
+peek F:4A84D 1 t36_83_gate
+peek F:4A866 1 t36_83_pause
+peek F:4A8E2 1 t36_83_esc
+step
+peek F:4A958 1 t36_84_lvl
+peek F:4A959 1 t36_84_tgt
+peek F:1A6BC 4 t36_84_st
+peek F:4A84D 1 t36_84_gate
+peek F:4A866 1 t36_84_pause
+peek F:4A8E2 1 t36_84_esc
+step
+peek F:4A958 1 t36_85_lvl
+peek F:4A959 1 t36_85_tgt
+peek F:1A6BC 4 t36_85_st
+peek F:4A84D 1 t36_85_gate
+peek F:4A866 1 t36_85_pause
+peek F:4A8E2 1 t36_85_esc
+step
+peek F:4A958 1 t36_86_lvl
+peek F:4A959 1 t36_86_tgt
+peek F:1A6BC 4 t36_86_st
+peek F:4A84D 1 t36_86_gate
+peek F:4A866 1 t36_86_pause
+peek F:4A8E2 1 t36_86_esc
+step
+peek F:4A958 1 t36_87_lvl
+peek F:4A959 1 t36_87_tgt
+peek F:1A6BC 4 t36_87_st
+peek F:4A84D 1 t36_87_gate
+peek F:4A866 1 t36_87_pause
+peek F:4A8E2 1 t36_87_esc
+step
+peek F:4A958 1 t36_88_lvl
+peek F:4A959 1 t36_88_tgt
+peek F:1A6BC 4 t36_88_st
+peek F:4A84D 1 t36_88_gate
+peek F:4A866 1 t36_88_pause
+peek F:4A8E2 1 t36_88_esc
+step
+peek F:4A958 1 t36_89_lvl
+peek F:4A959 1 t36_89_tgt
+peek F:1A6BC 4 t36_89_st
+peek F:4A84D 1 t36_89_gate
+peek F:4A866 1 t36_89_pause
+peek F:4A8E2 1 t36_89_esc
+step
+peek F:4A958 1 t36_90_lvl
+peek F:4A959 1 t36_90_tgt
+peek F:1A6BC 4 t36_90_st
+peek F:4A84D 1 t36_90_gate
+peek F:4A866 1 t36_90_pause
+peek F:4A8E2 1 t36_90_esc
+step
+peek F:4A958 1 t36_91_lvl
+peek F:4A959 1 t36_91_tgt
+peek F:1A6BC 4 t36_91_st
+peek F:4A84D 1 t36_91_gate
+peek F:4A866 1 t36_91_pause
+peek F:4A8E2 1 t36_91_esc
+step
+peek F:4A958 1 t36_92_lvl
+peek F:4A959 1 t36_92_tgt
+peek F:1A6BC 4 t36_92_st
+peek F:4A84D 1 t36_92_gate
+peek F:4A866 1 t36_92_pause
+peek F:4A8E2 1 t36_92_esc
+step
+peek F:4A958 1 t36_93_lvl
+peek F:4A959 1 t36_93_tgt
+peek F:1A6BC 4 t36_93_st
+peek F:4A84D 1 t36_93_gate
+peek F:4A866 1 t36_93_pause
+peek F:4A8E2 1 t36_93_esc
+step
+peek F:4A958 1 t36_94_lvl
+peek F:4A959 1 t36_94_tgt
+peek F:1A6BC 4 t36_94_st
+peek F:4A84D 1 t36_94_gate
+peek F:4A866 1 t36_94_pause
+peek F:4A8E2 1 t36_94_esc
+step
+peek F:4A958 1 t36_95_lvl
+peek F:4A959 1 t36_95_tgt
+peek F:1A6BC 4 t36_95_st
+peek F:4A84D 1 t36_95_gate
+peek F:4A866 1 t36_95_pause
+peek F:4A8E2 1 t36_95_esc
+step
+peek F:4A958 1 t36_96_lvl
+peek F:4A959 1 t36_96_tgt
+peek F:1A6BC 4 t36_96_st
+peek F:4A84D 1 t36_96_gate
+peek F:4A866 1 t36_96_pause
+peek F:4A8E2 1 t36_96_esc
+step
+peek F:4A958 1 t36_97_lvl
+peek F:4A959 1 t36_97_tgt
+peek F:1A6BC 4 t36_97_st
+peek F:4A84D 1 t36_97_gate
+peek F:4A866 1 t36_97_pause
+peek F:4A8E2 1 t36_97_esc
+step
+peek F:4A958 1 t36_98_lvl
+peek F:4A959 1 t36_98_tgt
+peek F:1A6BC 4 t36_98_st
+peek F:4A84D 1 t36_98_gate
+peek F:4A866 1 t36_98_pause
+peek F:4A8E2 1 t36_98_esc
+step
+peek F:4A958 1 t36_99_lvl
+peek F:4A959 1 t36_99_tgt
+peek F:1A6BC 4 t36_99_st
+peek F:4A84D 1 t36_99_gate
+peek F:4A866 1 t36_99_pause
+peek F:4A8E2 1 t36_99_esc
+step
+thaw
+log RUN_ESC_AT_39
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 1
+stepuntil F:1A6BC 4 eq 0xC096C4 3000
+step 38
+key ESC
+peek F:4A958 1 t39_0_lvl
+peek F:4A959 1 t39_0_tgt
+peek F:1A6BC 4 t39_0_st
+peek F:4A84D 1 t39_0_gate
+peek F:4A866 1 t39_0_pause
+peek F:4A8E2 1 t39_0_esc
+step
+peek F:4A958 1 t39_1_lvl
+peek F:4A959 1 t39_1_tgt
+peek F:1A6BC 4 t39_1_st
+peek F:4A84D 1 t39_1_gate
+peek F:4A866 1 t39_1_pause
+peek F:4A8E2 1 t39_1_esc
+step
+peek F:4A958 1 t39_2_lvl
+peek F:4A959 1 t39_2_tgt
+peek F:1A6BC 4 t39_2_st
+peek F:4A84D 1 t39_2_gate
+peek F:4A866 1 t39_2_pause
+peek F:4A8E2 1 t39_2_esc
+step
+peek F:4A958 1 t39_3_lvl
+peek F:4A959 1 t39_3_tgt
+peek F:1A6BC 4 t39_3_st
+peek F:4A84D 1 t39_3_gate
+peek F:4A866 1 t39_3_pause
+peek F:4A8E2 1 t39_3_esc
+step
+peek F:4A958 1 t39_4_lvl
+peek F:4A959 1 t39_4_tgt
+peek F:1A6BC 4 t39_4_st
+peek F:4A84D 1 t39_4_gate
+peek F:4A866 1 t39_4_pause
+peek F:4A8E2 1 t39_4_esc
+step
+peek F:4A958 1 t39_5_lvl
+peek F:4A959 1 t39_5_tgt
+peek F:1A6BC 4 t39_5_st
+peek F:4A84D 1 t39_5_gate
+peek F:4A866 1 t39_5_pause
+peek F:4A8E2 1 t39_5_esc
+step
+peek F:4A958 1 t39_6_lvl
+peek F:4A959 1 t39_6_tgt
+peek F:1A6BC 4 t39_6_st
+peek F:4A84D 1 t39_6_gate
+peek F:4A866 1 t39_6_pause
+peek F:4A8E2 1 t39_6_esc
+step
+peek F:4A958 1 t39_7_lvl
+peek F:4A959 1 t39_7_tgt
+peek F:1A6BC 4 t39_7_st
+peek F:4A84D 1 t39_7_gate
+peek F:4A866 1 t39_7_pause
+peek F:4A8E2 1 t39_7_esc
+step
+peek F:4A958 1 t39_8_lvl
+peek F:4A959 1 t39_8_tgt
+peek F:1A6BC 4 t39_8_st
+peek F:4A84D 1 t39_8_gate
+peek F:4A866 1 t39_8_pause
+peek F:4A8E2 1 t39_8_esc
+step
+peek F:4A958 1 t39_9_lvl
+peek F:4A959 1 t39_9_tgt
+peek F:1A6BC 4 t39_9_st
+peek F:4A84D 1 t39_9_gate
+peek F:4A866 1 t39_9_pause
+peek F:4A8E2 1 t39_9_esc
+step
+peek F:4A958 1 t39_10_lvl
+peek F:4A959 1 t39_10_tgt
+peek F:1A6BC 4 t39_10_st
+peek F:4A84D 1 t39_10_gate
+peek F:4A866 1 t39_10_pause
+peek F:4A8E2 1 t39_10_esc
+step
+peek F:4A958 1 t39_11_lvl
+peek F:4A959 1 t39_11_tgt
+peek F:1A6BC 4 t39_11_st
+peek F:4A84D 1 t39_11_gate
+peek F:4A866 1 t39_11_pause
+peek F:4A8E2 1 t39_11_esc
+step
+peek F:4A958 1 t39_12_lvl
+peek F:4A959 1 t39_12_tgt
+peek F:1A6BC 4 t39_12_st
+peek F:4A84D 1 t39_12_gate
+peek F:4A866 1 t39_12_pause
+peek F:4A8E2 1 t39_12_esc
+step
+peek F:4A958 1 t39_13_lvl
+peek F:4A959 1 t39_13_tgt
+peek F:1A6BC 4 t39_13_st
+peek F:4A84D 1 t39_13_gate
+peek F:4A866 1 t39_13_pause
+peek F:4A8E2 1 t39_13_esc
+step
+peek F:4A958 1 t39_14_lvl
+peek F:4A959 1 t39_14_tgt
+peek F:1A6BC 4 t39_14_st
+peek F:4A84D 1 t39_14_gate
+peek F:4A866 1 t39_14_pause
+peek F:4A8E2 1 t39_14_esc
+step
+peek F:4A958 1 t39_15_lvl
+peek F:4A959 1 t39_15_tgt
+peek F:1A6BC 4 t39_15_st
+peek F:4A84D 1 t39_15_gate
+peek F:4A866 1 t39_15_pause
+peek F:4A8E2 1 t39_15_esc
+step
+peek F:4A958 1 t39_16_lvl
+peek F:4A959 1 t39_16_tgt
+peek F:1A6BC 4 t39_16_st
+peek F:4A84D 1 t39_16_gate
+peek F:4A866 1 t39_16_pause
+peek F:4A8E2 1 t39_16_esc
+step
+peek F:4A958 1 t39_17_lvl
+peek F:4A959 1 t39_17_tgt
+peek F:1A6BC 4 t39_17_st
+peek F:4A84D 1 t39_17_gate
+peek F:4A866 1 t39_17_pause
+peek F:4A8E2 1 t39_17_esc
+step
+peek F:4A958 1 t39_18_lvl
+peek F:4A959 1 t39_18_tgt
+peek F:1A6BC 4 t39_18_st
+peek F:4A84D 1 t39_18_gate
+peek F:4A866 1 t39_18_pause
+peek F:4A8E2 1 t39_18_esc
+step
+peek F:4A958 1 t39_19_lvl
+peek F:4A959 1 t39_19_tgt
+peek F:1A6BC 4 t39_19_st
+peek F:4A84D 1 t39_19_gate
+peek F:4A866 1 t39_19_pause
+peek F:4A8E2 1 t39_19_esc
+step
+peek F:4A958 1 t39_20_lvl
+peek F:4A959 1 t39_20_tgt
+peek F:1A6BC 4 t39_20_st
+peek F:4A84D 1 t39_20_gate
+peek F:4A866 1 t39_20_pause
+peek F:4A8E2 1 t39_20_esc
+step
+peek F:4A958 1 t39_21_lvl
+peek F:4A959 1 t39_21_tgt
+peek F:1A6BC 4 t39_21_st
+peek F:4A84D 1 t39_21_gate
+peek F:4A866 1 t39_21_pause
+peek F:4A8E2 1 t39_21_esc
+step
+peek F:4A958 1 t39_22_lvl
+peek F:4A959 1 t39_22_tgt
+peek F:1A6BC 4 t39_22_st
+peek F:4A84D 1 t39_22_gate
+peek F:4A866 1 t39_22_pause
+peek F:4A8E2 1 t39_22_esc
+step
+peek F:4A958 1 t39_23_lvl
+peek F:4A959 1 t39_23_tgt
+peek F:1A6BC 4 t39_23_st
+peek F:4A84D 1 t39_23_gate
+peek F:4A866 1 t39_23_pause
+peek F:4A8E2 1 t39_23_esc
+step
+peek F:4A958 1 t39_24_lvl
+peek F:4A959 1 t39_24_tgt
+peek F:1A6BC 4 t39_24_st
+peek F:4A84D 1 t39_24_gate
+peek F:4A866 1 t39_24_pause
+peek F:4A8E2 1 t39_24_esc
+step
+peek F:4A958 1 t39_25_lvl
+peek F:4A959 1 t39_25_tgt
+peek F:1A6BC 4 t39_25_st
+peek F:4A84D 1 t39_25_gate
+peek F:4A866 1 t39_25_pause
+peek F:4A8E2 1 t39_25_esc
+step
+peek F:4A958 1 t39_26_lvl
+peek F:4A959 1 t39_26_tgt
+peek F:1A6BC 4 t39_26_st
+peek F:4A84D 1 t39_26_gate
+peek F:4A866 1 t39_26_pause
+peek F:4A8E2 1 t39_26_esc
+step
+peek F:4A958 1 t39_27_lvl
+peek F:4A959 1 t39_27_tgt
+peek F:1A6BC 4 t39_27_st
+peek F:4A84D 1 t39_27_gate
+peek F:4A866 1 t39_27_pause
+peek F:4A8E2 1 t39_27_esc
+step
+peek F:4A958 1 t39_28_lvl
+peek F:4A959 1 t39_28_tgt
+peek F:1A6BC 4 t39_28_st
+peek F:4A84D 1 t39_28_gate
+peek F:4A866 1 t39_28_pause
+peek F:4A8E2 1 t39_28_esc
+step
+peek F:4A958 1 t39_29_lvl
+peek F:4A959 1 t39_29_tgt
+peek F:1A6BC 4 t39_29_st
+peek F:4A84D 1 t39_29_gate
+peek F:4A866 1 t39_29_pause
+peek F:4A8E2 1 t39_29_esc
+step
+peek F:4A958 1 t39_30_lvl
+peek F:4A959 1 t39_30_tgt
+peek F:1A6BC 4 t39_30_st
+peek F:4A84D 1 t39_30_gate
+peek F:4A866 1 t39_30_pause
+peek F:4A8E2 1 t39_30_esc
+step
+peek F:4A958 1 t39_31_lvl
+peek F:4A959 1 t39_31_tgt
+peek F:1A6BC 4 t39_31_st
+peek F:4A84D 1 t39_31_gate
+peek F:4A866 1 t39_31_pause
+peek F:4A8E2 1 t39_31_esc
+step
+peek F:4A958 1 t39_32_lvl
+peek F:4A959 1 t39_32_tgt
+peek F:1A6BC 4 t39_32_st
+peek F:4A84D 1 t39_32_gate
+peek F:4A866 1 t39_32_pause
+peek F:4A8E2 1 t39_32_esc
+step
+peek F:4A958 1 t39_33_lvl
+peek F:4A959 1 t39_33_tgt
+peek F:1A6BC 4 t39_33_st
+peek F:4A84D 1 t39_33_gate
+peek F:4A866 1 t39_33_pause
+peek F:4A8E2 1 t39_33_esc
+step
+peek F:4A958 1 t39_34_lvl
+peek F:4A959 1 t39_34_tgt
+peek F:1A6BC 4 t39_34_st
+peek F:4A84D 1 t39_34_gate
+peek F:4A866 1 t39_34_pause
+peek F:4A8E2 1 t39_34_esc
+step
+peek F:4A958 1 t39_35_lvl
+peek F:4A959 1 t39_35_tgt
+peek F:1A6BC 4 t39_35_st
+peek F:4A84D 1 t39_35_gate
+peek F:4A866 1 t39_35_pause
+peek F:4A8E2 1 t39_35_esc
+step
+peek F:4A958 1 t39_36_lvl
+peek F:4A959 1 t39_36_tgt
+peek F:1A6BC 4 t39_36_st
+peek F:4A84D 1 t39_36_gate
+peek F:4A866 1 t39_36_pause
+peek F:4A8E2 1 t39_36_esc
+step
+peek F:4A958 1 t39_37_lvl
+peek F:4A959 1 t39_37_tgt
+peek F:1A6BC 4 t39_37_st
+peek F:4A84D 1 t39_37_gate
+peek F:4A866 1 t39_37_pause
+peek F:4A8E2 1 t39_37_esc
+step
+peek F:4A958 1 t39_38_lvl
+peek F:4A959 1 t39_38_tgt
+peek F:1A6BC 4 t39_38_st
+peek F:4A84D 1 t39_38_gate
+peek F:4A866 1 t39_38_pause
+peek F:4A8E2 1 t39_38_esc
+step
+peek F:4A958 1 t39_39_lvl
+peek F:4A959 1 t39_39_tgt
+peek F:1A6BC 4 t39_39_st
+peek F:4A84D 1 t39_39_gate
+peek F:4A866 1 t39_39_pause
+peek F:4A8E2 1 t39_39_esc
+step
+peek F:4A958 1 t39_40_lvl
+peek F:4A959 1 t39_40_tgt
+peek F:1A6BC 4 t39_40_st
+peek F:4A84D 1 t39_40_gate
+peek F:4A866 1 t39_40_pause
+peek F:4A8E2 1 t39_40_esc
+step
+peek F:4A958 1 t39_41_lvl
+peek F:4A959 1 t39_41_tgt
+peek F:1A6BC 4 t39_41_st
+peek F:4A84D 1 t39_41_gate
+peek F:4A866 1 t39_41_pause
+peek F:4A8E2 1 t39_41_esc
+step
+peek F:4A958 1 t39_42_lvl
+peek F:4A959 1 t39_42_tgt
+peek F:1A6BC 4 t39_42_st
+peek F:4A84D 1 t39_42_gate
+peek F:4A866 1 t39_42_pause
+peek F:4A8E2 1 t39_42_esc
+step
+peek F:4A958 1 t39_43_lvl
+peek F:4A959 1 t39_43_tgt
+peek F:1A6BC 4 t39_43_st
+peek F:4A84D 1 t39_43_gate
+peek F:4A866 1 t39_43_pause
+peek F:4A8E2 1 t39_43_esc
+step
+peek F:4A958 1 t39_44_lvl
+peek F:4A959 1 t39_44_tgt
+peek F:1A6BC 4 t39_44_st
+peek F:4A84D 1 t39_44_gate
+peek F:4A866 1 t39_44_pause
+peek F:4A8E2 1 t39_44_esc
+step
+peek F:4A958 1 t39_45_lvl
+peek F:4A959 1 t39_45_tgt
+peek F:1A6BC 4 t39_45_st
+peek F:4A84D 1 t39_45_gate
+peek F:4A866 1 t39_45_pause
+peek F:4A8E2 1 t39_45_esc
+step
+peek F:4A958 1 t39_46_lvl
+peek F:4A959 1 t39_46_tgt
+peek F:1A6BC 4 t39_46_st
+peek F:4A84D 1 t39_46_gate
+peek F:4A866 1 t39_46_pause
+peek F:4A8E2 1 t39_46_esc
+step
+peek F:4A958 1 t39_47_lvl
+peek F:4A959 1 t39_47_tgt
+peek F:1A6BC 4 t39_47_st
+peek F:4A84D 1 t39_47_gate
+peek F:4A866 1 t39_47_pause
+peek F:4A8E2 1 t39_47_esc
+step
+peek F:4A958 1 t39_48_lvl
+peek F:4A959 1 t39_48_tgt
+peek F:1A6BC 4 t39_48_st
+peek F:4A84D 1 t39_48_gate
+peek F:4A866 1 t39_48_pause
+peek F:4A8E2 1 t39_48_esc
+step
+peek F:4A958 1 t39_49_lvl
+peek F:4A959 1 t39_49_tgt
+peek F:1A6BC 4 t39_49_st
+peek F:4A84D 1 t39_49_gate
+peek F:4A866 1 t39_49_pause
+peek F:4A8E2 1 t39_49_esc
+step
+peek F:4A958 1 t39_50_lvl
+peek F:4A959 1 t39_50_tgt
+peek F:1A6BC 4 t39_50_st
+peek F:4A84D 1 t39_50_gate
+peek F:4A866 1 t39_50_pause
+peek F:4A8E2 1 t39_50_esc
+step
+peek F:4A958 1 t39_51_lvl
+peek F:4A959 1 t39_51_tgt
+peek F:1A6BC 4 t39_51_st
+peek F:4A84D 1 t39_51_gate
+peek F:4A866 1 t39_51_pause
+peek F:4A8E2 1 t39_51_esc
+step
+peek F:4A958 1 t39_52_lvl
+peek F:4A959 1 t39_52_tgt
+peek F:1A6BC 4 t39_52_st
+peek F:4A84D 1 t39_52_gate
+peek F:4A866 1 t39_52_pause
+peek F:4A8E2 1 t39_52_esc
+step
+peek F:4A958 1 t39_53_lvl
+peek F:4A959 1 t39_53_tgt
+peek F:1A6BC 4 t39_53_st
+peek F:4A84D 1 t39_53_gate
+peek F:4A866 1 t39_53_pause
+peek F:4A8E2 1 t39_53_esc
+step
+peek F:4A958 1 t39_54_lvl
+peek F:4A959 1 t39_54_tgt
+peek F:1A6BC 4 t39_54_st
+peek F:4A84D 1 t39_54_gate
+peek F:4A866 1 t39_54_pause
+peek F:4A8E2 1 t39_54_esc
+step
+peek F:4A958 1 t39_55_lvl
+peek F:4A959 1 t39_55_tgt
+peek F:1A6BC 4 t39_55_st
+peek F:4A84D 1 t39_55_gate
+peek F:4A866 1 t39_55_pause
+peek F:4A8E2 1 t39_55_esc
+step
+peek F:4A958 1 t39_56_lvl
+peek F:4A959 1 t39_56_tgt
+peek F:1A6BC 4 t39_56_st
+peek F:4A84D 1 t39_56_gate
+peek F:4A866 1 t39_56_pause
+peek F:4A8E2 1 t39_56_esc
+step
+peek F:4A958 1 t39_57_lvl
+peek F:4A959 1 t39_57_tgt
+peek F:1A6BC 4 t39_57_st
+peek F:4A84D 1 t39_57_gate
+peek F:4A866 1 t39_57_pause
+peek F:4A8E2 1 t39_57_esc
+step
+peek F:4A958 1 t39_58_lvl
+peek F:4A959 1 t39_58_tgt
+peek F:1A6BC 4 t39_58_st
+peek F:4A84D 1 t39_58_gate
+peek F:4A866 1 t39_58_pause
+peek F:4A8E2 1 t39_58_esc
+step
+peek F:4A958 1 t39_59_lvl
+peek F:4A959 1 t39_59_tgt
+peek F:1A6BC 4 t39_59_st
+peek F:4A84D 1 t39_59_gate
+peek F:4A866 1 t39_59_pause
+peek F:4A8E2 1 t39_59_esc
+step
+peek F:4A958 1 t39_60_lvl
+peek F:4A959 1 t39_60_tgt
+peek F:1A6BC 4 t39_60_st
+peek F:4A84D 1 t39_60_gate
+peek F:4A866 1 t39_60_pause
+peek F:4A8E2 1 t39_60_esc
+step
+peek F:4A958 1 t39_61_lvl
+peek F:4A959 1 t39_61_tgt
+peek F:1A6BC 4 t39_61_st
+peek F:4A84D 1 t39_61_gate
+peek F:4A866 1 t39_61_pause
+peek F:4A8E2 1 t39_61_esc
+step
+peek F:4A958 1 t39_62_lvl
+peek F:4A959 1 t39_62_tgt
+peek F:1A6BC 4 t39_62_st
+peek F:4A84D 1 t39_62_gate
+peek F:4A866 1 t39_62_pause
+peek F:4A8E2 1 t39_62_esc
+step
+peek F:4A958 1 t39_63_lvl
+peek F:4A959 1 t39_63_tgt
+peek F:1A6BC 4 t39_63_st
+peek F:4A84D 1 t39_63_gate
+peek F:4A866 1 t39_63_pause
+peek F:4A8E2 1 t39_63_esc
+step
+peek F:4A958 1 t39_64_lvl
+peek F:4A959 1 t39_64_tgt
+peek F:1A6BC 4 t39_64_st
+peek F:4A84D 1 t39_64_gate
+peek F:4A866 1 t39_64_pause
+peek F:4A8E2 1 t39_64_esc
+step
+peek F:4A958 1 t39_65_lvl
+peek F:4A959 1 t39_65_tgt
+peek F:1A6BC 4 t39_65_st
+peek F:4A84D 1 t39_65_gate
+peek F:4A866 1 t39_65_pause
+peek F:4A8E2 1 t39_65_esc
+step
+peek F:4A958 1 t39_66_lvl
+peek F:4A959 1 t39_66_tgt
+peek F:1A6BC 4 t39_66_st
+peek F:4A84D 1 t39_66_gate
+peek F:4A866 1 t39_66_pause
+peek F:4A8E2 1 t39_66_esc
+step
+peek F:4A958 1 t39_67_lvl
+peek F:4A959 1 t39_67_tgt
+peek F:1A6BC 4 t39_67_st
+peek F:4A84D 1 t39_67_gate
+peek F:4A866 1 t39_67_pause
+peek F:4A8E2 1 t39_67_esc
+step
+peek F:4A958 1 t39_68_lvl
+peek F:4A959 1 t39_68_tgt
+peek F:1A6BC 4 t39_68_st
+peek F:4A84D 1 t39_68_gate
+peek F:4A866 1 t39_68_pause
+peek F:4A8E2 1 t39_68_esc
+step
+peek F:4A958 1 t39_69_lvl
+peek F:4A959 1 t39_69_tgt
+peek F:1A6BC 4 t39_69_st
+peek F:4A84D 1 t39_69_gate
+peek F:4A866 1 t39_69_pause
+peek F:4A8E2 1 t39_69_esc
+step
+peek F:4A958 1 t39_70_lvl
+peek F:4A959 1 t39_70_tgt
+peek F:1A6BC 4 t39_70_st
+peek F:4A84D 1 t39_70_gate
+peek F:4A866 1 t39_70_pause
+peek F:4A8E2 1 t39_70_esc
+step
+peek F:4A958 1 t39_71_lvl
+peek F:4A959 1 t39_71_tgt
+peek F:1A6BC 4 t39_71_st
+peek F:4A84D 1 t39_71_gate
+peek F:4A866 1 t39_71_pause
+peek F:4A8E2 1 t39_71_esc
+step
+peek F:4A958 1 t39_72_lvl
+peek F:4A959 1 t39_72_tgt
+peek F:1A6BC 4 t39_72_st
+peek F:4A84D 1 t39_72_gate
+peek F:4A866 1 t39_72_pause
+peek F:4A8E2 1 t39_72_esc
+step
+peek F:4A958 1 t39_73_lvl
+peek F:4A959 1 t39_73_tgt
+peek F:1A6BC 4 t39_73_st
+peek F:4A84D 1 t39_73_gate
+peek F:4A866 1 t39_73_pause
+peek F:4A8E2 1 t39_73_esc
+step
+peek F:4A958 1 t39_74_lvl
+peek F:4A959 1 t39_74_tgt
+peek F:1A6BC 4 t39_74_st
+peek F:4A84D 1 t39_74_gate
+peek F:4A866 1 t39_74_pause
+peek F:4A8E2 1 t39_74_esc
+step
+peek F:4A958 1 t39_75_lvl
+peek F:4A959 1 t39_75_tgt
+peek F:1A6BC 4 t39_75_st
+peek F:4A84D 1 t39_75_gate
+peek F:4A866 1 t39_75_pause
+peek F:4A8E2 1 t39_75_esc
+step
+peek F:4A958 1 t39_76_lvl
+peek F:4A959 1 t39_76_tgt
+peek F:1A6BC 4 t39_76_st
+peek F:4A84D 1 t39_76_gate
+peek F:4A866 1 t39_76_pause
+peek F:4A8E2 1 t39_76_esc
+step
+peek F:4A958 1 t39_77_lvl
+peek F:4A959 1 t39_77_tgt
+peek F:1A6BC 4 t39_77_st
+peek F:4A84D 1 t39_77_gate
+peek F:4A866 1 t39_77_pause
+peek F:4A8E2 1 t39_77_esc
+step
+peek F:4A958 1 t39_78_lvl
+peek F:4A959 1 t39_78_tgt
+peek F:1A6BC 4 t39_78_st
+peek F:4A84D 1 t39_78_gate
+peek F:4A866 1 t39_78_pause
+peek F:4A8E2 1 t39_78_esc
+step
+peek F:4A958 1 t39_79_lvl
+peek F:4A959 1 t39_79_tgt
+peek F:1A6BC 4 t39_79_st
+peek F:4A84D 1 t39_79_gate
+peek F:4A866 1 t39_79_pause
+peek F:4A8E2 1 t39_79_esc
+step
+peek F:4A958 1 t39_80_lvl
+peek F:4A959 1 t39_80_tgt
+peek F:1A6BC 4 t39_80_st
+peek F:4A84D 1 t39_80_gate
+peek F:4A866 1 t39_80_pause
+peek F:4A8E2 1 t39_80_esc
+step
+peek F:4A958 1 t39_81_lvl
+peek F:4A959 1 t39_81_tgt
+peek F:1A6BC 4 t39_81_st
+peek F:4A84D 1 t39_81_gate
+peek F:4A866 1 t39_81_pause
+peek F:4A8E2 1 t39_81_esc
+step
+peek F:4A958 1 t39_82_lvl
+peek F:4A959 1 t39_82_tgt
+peek F:1A6BC 4 t39_82_st
+peek F:4A84D 1 t39_82_gate
+peek F:4A866 1 t39_82_pause
+peek F:4A8E2 1 t39_82_esc
+step
+peek F:4A958 1 t39_83_lvl
+peek F:4A959 1 t39_83_tgt
+peek F:1A6BC 4 t39_83_st
+peek F:4A84D 1 t39_83_gate
+peek F:4A866 1 t39_83_pause
+peek F:4A8E2 1 t39_83_esc
+step
+peek F:4A958 1 t39_84_lvl
+peek F:4A959 1 t39_84_tgt
+peek F:1A6BC 4 t39_84_st
+peek F:4A84D 1 t39_84_gate
+peek F:4A866 1 t39_84_pause
+peek F:4A8E2 1 t39_84_esc
+step
+peek F:4A958 1 t39_85_lvl
+peek F:4A959 1 t39_85_tgt
+peek F:1A6BC 4 t39_85_st
+peek F:4A84D 1 t39_85_gate
+peek F:4A866 1 t39_85_pause
+peek F:4A8E2 1 t39_85_esc
+step
+peek F:4A958 1 t39_86_lvl
+peek F:4A959 1 t39_86_tgt
+peek F:1A6BC 4 t39_86_st
+peek F:4A84D 1 t39_86_gate
+peek F:4A866 1 t39_86_pause
+peek F:4A8E2 1 t39_86_esc
+step
+peek F:4A958 1 t39_87_lvl
+peek F:4A959 1 t39_87_tgt
+peek F:1A6BC 4 t39_87_st
+peek F:4A84D 1 t39_87_gate
+peek F:4A866 1 t39_87_pause
+peek F:4A8E2 1 t39_87_esc
+step
+peek F:4A958 1 t39_88_lvl
+peek F:4A959 1 t39_88_tgt
+peek F:1A6BC 4 t39_88_st
+peek F:4A84D 1 t39_88_gate
+peek F:4A866 1 t39_88_pause
+peek F:4A8E2 1 t39_88_esc
+step
+peek F:4A958 1 t39_89_lvl
+peek F:4A959 1 t39_89_tgt
+peek F:1A6BC 4 t39_89_st
+peek F:4A84D 1 t39_89_gate
+peek F:4A866 1 t39_89_pause
+peek F:4A8E2 1 t39_89_esc
+step
+peek F:4A958 1 t39_90_lvl
+peek F:4A959 1 t39_90_tgt
+peek F:1A6BC 4 t39_90_st
+peek F:4A84D 1 t39_90_gate
+peek F:4A866 1 t39_90_pause
+peek F:4A8E2 1 t39_90_esc
+step
+peek F:4A958 1 t39_91_lvl
+peek F:4A959 1 t39_91_tgt
+peek F:1A6BC 4 t39_91_st
+peek F:4A84D 1 t39_91_gate
+peek F:4A866 1 t39_91_pause
+peek F:4A8E2 1 t39_91_esc
+step
+peek F:4A958 1 t39_92_lvl
+peek F:4A959 1 t39_92_tgt
+peek F:1A6BC 4 t39_92_st
+peek F:4A84D 1 t39_92_gate
+peek F:4A866 1 t39_92_pause
+peek F:4A8E2 1 t39_92_esc
+step
+peek F:4A958 1 t39_93_lvl
+peek F:4A959 1 t39_93_tgt
+peek F:1A6BC 4 t39_93_st
+peek F:4A84D 1 t39_93_gate
+peek F:4A866 1 t39_93_pause
+peek F:4A8E2 1 t39_93_esc
+step
+peek F:4A958 1 t39_94_lvl
+peek F:4A959 1 t39_94_tgt
+peek F:1A6BC 4 t39_94_st
+peek F:4A84D 1 t39_94_gate
+peek F:4A866 1 t39_94_pause
+peek F:4A8E2 1 t39_94_esc
+step
+peek F:4A958 1 t39_95_lvl
+peek F:4A959 1 t39_95_tgt
+peek F:1A6BC 4 t39_95_st
+peek F:4A84D 1 t39_95_gate
+peek F:4A866 1 t39_95_pause
+peek F:4A8E2 1 t39_95_esc
+step
+peek F:4A958 1 t39_96_lvl
+peek F:4A959 1 t39_96_tgt
+peek F:1A6BC 4 t39_96_st
+peek F:4A84D 1 t39_96_gate
+peek F:4A866 1 t39_96_pause
+peek F:4A8E2 1 t39_96_esc
+step
+peek F:4A958 1 t39_97_lvl
+peek F:4A959 1 t39_97_tgt
+peek F:1A6BC 4 t39_97_st
+peek F:4A84D 1 t39_97_gate
+peek F:4A866 1 t39_97_pause
+peek F:4A8E2 1 t39_97_esc
+step
+peek F:4A958 1 t39_98_lvl
+peek F:4A959 1 t39_98_tgt
+peek F:1A6BC 4 t39_98_st
+peek F:4A84D 1 t39_98_gate
+peek F:4A866 1 t39_98_pause
+peek F:4A8E2 1 t39_98_esc
+step
+peek F:4A958 1 t39_99_lvl
+peek F:4A959 1 t39_99_tgt
+peek F:1A6BC 4 t39_99_st
+peek F:4A84D 1 t39_99_gate
+peek F:4A866 1 t39_99_pause
+peek F:4A8E2 1 t39_99_esc
+step
+thaw
+log RUN_ESC_AT_42
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 1
+stepuntil F:1A6BC 4 eq 0xC096C4 3000
+step 41
+key ESC
+peek F:4A958 1 t42_0_lvl
+peek F:4A959 1 t42_0_tgt
+peek F:1A6BC 4 t42_0_st
+peek F:4A84D 1 t42_0_gate
+peek F:4A866 1 t42_0_pause
+peek F:4A8E2 1 t42_0_esc
+step
+peek F:4A958 1 t42_1_lvl
+peek F:4A959 1 t42_1_tgt
+peek F:1A6BC 4 t42_1_st
+peek F:4A84D 1 t42_1_gate
+peek F:4A866 1 t42_1_pause
+peek F:4A8E2 1 t42_1_esc
+step
+peek F:4A958 1 t42_2_lvl
+peek F:4A959 1 t42_2_tgt
+peek F:1A6BC 4 t42_2_st
+peek F:4A84D 1 t42_2_gate
+peek F:4A866 1 t42_2_pause
+peek F:4A8E2 1 t42_2_esc
+step
+peek F:4A958 1 t42_3_lvl
+peek F:4A959 1 t42_3_tgt
+peek F:1A6BC 4 t42_3_st
+peek F:4A84D 1 t42_3_gate
+peek F:4A866 1 t42_3_pause
+peek F:4A8E2 1 t42_3_esc
+step
+peek F:4A958 1 t42_4_lvl
+peek F:4A959 1 t42_4_tgt
+peek F:1A6BC 4 t42_4_st
+peek F:4A84D 1 t42_4_gate
+peek F:4A866 1 t42_4_pause
+peek F:4A8E2 1 t42_4_esc
+step
+peek F:4A958 1 t42_5_lvl
+peek F:4A959 1 t42_5_tgt
+peek F:1A6BC 4 t42_5_st
+peek F:4A84D 1 t42_5_gate
+peek F:4A866 1 t42_5_pause
+peek F:4A8E2 1 t42_5_esc
+step
+peek F:4A958 1 t42_6_lvl
+peek F:4A959 1 t42_6_tgt
+peek F:1A6BC 4 t42_6_st
+peek F:4A84D 1 t42_6_gate
+peek F:4A866 1 t42_6_pause
+peek F:4A8E2 1 t42_6_esc
+step
+peek F:4A958 1 t42_7_lvl
+peek F:4A959 1 t42_7_tgt
+peek F:1A6BC 4 t42_7_st
+peek F:4A84D 1 t42_7_gate
+peek F:4A866 1 t42_7_pause
+peek F:4A8E2 1 t42_7_esc
+step
+peek F:4A958 1 t42_8_lvl
+peek F:4A959 1 t42_8_tgt
+peek F:1A6BC 4 t42_8_st
+peek F:4A84D 1 t42_8_gate
+peek F:4A866 1 t42_8_pause
+peek F:4A8E2 1 t42_8_esc
+step
+peek F:4A958 1 t42_9_lvl
+peek F:4A959 1 t42_9_tgt
+peek F:1A6BC 4 t42_9_st
+peek F:4A84D 1 t42_9_gate
+peek F:4A866 1 t42_9_pause
+peek F:4A8E2 1 t42_9_esc
+step
+peek F:4A958 1 t42_10_lvl
+peek F:4A959 1 t42_10_tgt
+peek F:1A6BC 4 t42_10_st
+peek F:4A84D 1 t42_10_gate
+peek F:4A866 1 t42_10_pause
+peek F:4A8E2 1 t42_10_esc
+step
+peek F:4A958 1 t42_11_lvl
+peek F:4A959 1 t42_11_tgt
+peek F:1A6BC 4 t42_11_st
+peek F:4A84D 1 t42_11_gate
+peek F:4A866 1 t42_11_pause
+peek F:4A8E2 1 t42_11_esc
+step
+peek F:4A958 1 t42_12_lvl
+peek F:4A959 1 t42_12_tgt
+peek F:1A6BC 4 t42_12_st
+peek F:4A84D 1 t42_12_gate
+peek F:4A866 1 t42_12_pause
+peek F:4A8E2 1 t42_12_esc
+step
+peek F:4A958 1 t42_13_lvl
+peek F:4A959 1 t42_13_tgt
+peek F:1A6BC 4 t42_13_st
+peek F:4A84D 1 t42_13_gate
+peek F:4A866 1 t42_13_pause
+peek F:4A8E2 1 t42_13_esc
+step
+peek F:4A958 1 t42_14_lvl
+peek F:4A959 1 t42_14_tgt
+peek F:1A6BC 4 t42_14_st
+peek F:4A84D 1 t42_14_gate
+peek F:4A866 1 t42_14_pause
+peek F:4A8E2 1 t42_14_esc
+step
+peek F:4A958 1 t42_15_lvl
+peek F:4A959 1 t42_15_tgt
+peek F:1A6BC 4 t42_15_st
+peek F:4A84D 1 t42_15_gate
+peek F:4A866 1 t42_15_pause
+peek F:4A8E2 1 t42_15_esc
+step
+peek F:4A958 1 t42_16_lvl
+peek F:4A959 1 t42_16_tgt
+peek F:1A6BC 4 t42_16_st
+peek F:4A84D 1 t42_16_gate
+peek F:4A866 1 t42_16_pause
+peek F:4A8E2 1 t42_16_esc
+step
+peek F:4A958 1 t42_17_lvl
+peek F:4A959 1 t42_17_tgt
+peek F:1A6BC 4 t42_17_st
+peek F:4A84D 1 t42_17_gate
+peek F:4A866 1 t42_17_pause
+peek F:4A8E2 1 t42_17_esc
+step
+peek F:4A958 1 t42_18_lvl
+peek F:4A959 1 t42_18_tgt
+peek F:1A6BC 4 t42_18_st
+peek F:4A84D 1 t42_18_gate
+peek F:4A866 1 t42_18_pause
+peek F:4A8E2 1 t42_18_esc
+step
+peek F:4A958 1 t42_19_lvl
+peek F:4A959 1 t42_19_tgt
+peek F:1A6BC 4 t42_19_st
+peek F:4A84D 1 t42_19_gate
+peek F:4A866 1 t42_19_pause
+peek F:4A8E2 1 t42_19_esc
+step
+peek F:4A958 1 t42_20_lvl
+peek F:4A959 1 t42_20_tgt
+peek F:1A6BC 4 t42_20_st
+peek F:4A84D 1 t42_20_gate
+peek F:4A866 1 t42_20_pause
+peek F:4A8E2 1 t42_20_esc
+step
+peek F:4A958 1 t42_21_lvl
+peek F:4A959 1 t42_21_tgt
+peek F:1A6BC 4 t42_21_st
+peek F:4A84D 1 t42_21_gate
+peek F:4A866 1 t42_21_pause
+peek F:4A8E2 1 t42_21_esc
+step
+peek F:4A958 1 t42_22_lvl
+peek F:4A959 1 t42_22_tgt
+peek F:1A6BC 4 t42_22_st
+peek F:4A84D 1 t42_22_gate
+peek F:4A866 1 t42_22_pause
+peek F:4A8E2 1 t42_22_esc
+step
+peek F:4A958 1 t42_23_lvl
+peek F:4A959 1 t42_23_tgt
+peek F:1A6BC 4 t42_23_st
+peek F:4A84D 1 t42_23_gate
+peek F:4A866 1 t42_23_pause
+peek F:4A8E2 1 t42_23_esc
+step
+peek F:4A958 1 t42_24_lvl
+peek F:4A959 1 t42_24_tgt
+peek F:1A6BC 4 t42_24_st
+peek F:4A84D 1 t42_24_gate
+peek F:4A866 1 t42_24_pause
+peek F:4A8E2 1 t42_24_esc
+step
+peek F:4A958 1 t42_25_lvl
+peek F:4A959 1 t42_25_tgt
+peek F:1A6BC 4 t42_25_st
+peek F:4A84D 1 t42_25_gate
+peek F:4A866 1 t42_25_pause
+peek F:4A8E2 1 t42_25_esc
+step
+peek F:4A958 1 t42_26_lvl
+peek F:4A959 1 t42_26_tgt
+peek F:1A6BC 4 t42_26_st
+peek F:4A84D 1 t42_26_gate
+peek F:4A866 1 t42_26_pause
+peek F:4A8E2 1 t42_26_esc
+step
+peek F:4A958 1 t42_27_lvl
+peek F:4A959 1 t42_27_tgt
+peek F:1A6BC 4 t42_27_st
+peek F:4A84D 1 t42_27_gate
+peek F:4A866 1 t42_27_pause
+peek F:4A8E2 1 t42_27_esc
+step
+peek F:4A958 1 t42_28_lvl
+peek F:4A959 1 t42_28_tgt
+peek F:1A6BC 4 t42_28_st
+peek F:4A84D 1 t42_28_gate
+peek F:4A866 1 t42_28_pause
+peek F:4A8E2 1 t42_28_esc
+step
+peek F:4A958 1 t42_29_lvl
+peek F:4A959 1 t42_29_tgt
+peek F:1A6BC 4 t42_29_st
+peek F:4A84D 1 t42_29_gate
+peek F:4A866 1 t42_29_pause
+peek F:4A8E2 1 t42_29_esc
+step
+peek F:4A958 1 t42_30_lvl
+peek F:4A959 1 t42_30_tgt
+peek F:1A6BC 4 t42_30_st
+peek F:4A84D 1 t42_30_gate
+peek F:4A866 1 t42_30_pause
+peek F:4A8E2 1 t42_30_esc
+step
+peek F:4A958 1 t42_31_lvl
+peek F:4A959 1 t42_31_tgt
+peek F:1A6BC 4 t42_31_st
+peek F:4A84D 1 t42_31_gate
+peek F:4A866 1 t42_31_pause
+peek F:4A8E2 1 t42_31_esc
+step
+peek F:4A958 1 t42_32_lvl
+peek F:4A959 1 t42_32_tgt
+peek F:1A6BC 4 t42_32_st
+peek F:4A84D 1 t42_32_gate
+peek F:4A866 1 t42_32_pause
+peek F:4A8E2 1 t42_32_esc
+step
+peek F:4A958 1 t42_33_lvl
+peek F:4A959 1 t42_33_tgt
+peek F:1A6BC 4 t42_33_st
+peek F:4A84D 1 t42_33_gate
+peek F:4A866 1 t42_33_pause
+peek F:4A8E2 1 t42_33_esc
+step
+peek F:4A958 1 t42_34_lvl
+peek F:4A959 1 t42_34_tgt
+peek F:1A6BC 4 t42_34_st
+peek F:4A84D 1 t42_34_gate
+peek F:4A866 1 t42_34_pause
+peek F:4A8E2 1 t42_34_esc
+step
+peek F:4A958 1 t42_35_lvl
+peek F:4A959 1 t42_35_tgt
+peek F:1A6BC 4 t42_35_st
+peek F:4A84D 1 t42_35_gate
+peek F:4A866 1 t42_35_pause
+peek F:4A8E2 1 t42_35_esc
+step
+peek F:4A958 1 t42_36_lvl
+peek F:4A959 1 t42_36_tgt
+peek F:1A6BC 4 t42_36_st
+peek F:4A84D 1 t42_36_gate
+peek F:4A866 1 t42_36_pause
+peek F:4A8E2 1 t42_36_esc
+step
+peek F:4A958 1 t42_37_lvl
+peek F:4A959 1 t42_37_tgt
+peek F:1A6BC 4 t42_37_st
+peek F:4A84D 1 t42_37_gate
+peek F:4A866 1 t42_37_pause
+peek F:4A8E2 1 t42_37_esc
+step
+peek F:4A958 1 t42_38_lvl
+peek F:4A959 1 t42_38_tgt
+peek F:1A6BC 4 t42_38_st
+peek F:4A84D 1 t42_38_gate
+peek F:4A866 1 t42_38_pause
+peek F:4A8E2 1 t42_38_esc
+step
+peek F:4A958 1 t42_39_lvl
+peek F:4A959 1 t42_39_tgt
+peek F:1A6BC 4 t42_39_st
+peek F:4A84D 1 t42_39_gate
+peek F:4A866 1 t42_39_pause
+peek F:4A8E2 1 t42_39_esc
+step
+peek F:4A958 1 t42_40_lvl
+peek F:4A959 1 t42_40_tgt
+peek F:1A6BC 4 t42_40_st
+peek F:4A84D 1 t42_40_gate
+peek F:4A866 1 t42_40_pause
+peek F:4A8E2 1 t42_40_esc
+step
+peek F:4A958 1 t42_41_lvl
+peek F:4A959 1 t42_41_tgt
+peek F:1A6BC 4 t42_41_st
+peek F:4A84D 1 t42_41_gate
+peek F:4A866 1 t42_41_pause
+peek F:4A8E2 1 t42_41_esc
+step
+peek F:4A958 1 t42_42_lvl
+peek F:4A959 1 t42_42_tgt
+peek F:1A6BC 4 t42_42_st
+peek F:4A84D 1 t42_42_gate
+peek F:4A866 1 t42_42_pause
+peek F:4A8E2 1 t42_42_esc
+step
+peek F:4A958 1 t42_43_lvl
+peek F:4A959 1 t42_43_tgt
+peek F:1A6BC 4 t42_43_st
+peek F:4A84D 1 t42_43_gate
+peek F:4A866 1 t42_43_pause
+peek F:4A8E2 1 t42_43_esc
+step
+peek F:4A958 1 t42_44_lvl
+peek F:4A959 1 t42_44_tgt
+peek F:1A6BC 4 t42_44_st
+peek F:4A84D 1 t42_44_gate
+peek F:4A866 1 t42_44_pause
+peek F:4A8E2 1 t42_44_esc
+step
+peek F:4A958 1 t42_45_lvl
+peek F:4A959 1 t42_45_tgt
+peek F:1A6BC 4 t42_45_st
+peek F:4A84D 1 t42_45_gate
+peek F:4A866 1 t42_45_pause
+peek F:4A8E2 1 t42_45_esc
+step
+peek F:4A958 1 t42_46_lvl
+peek F:4A959 1 t42_46_tgt
+peek F:1A6BC 4 t42_46_st
+peek F:4A84D 1 t42_46_gate
+peek F:4A866 1 t42_46_pause
+peek F:4A8E2 1 t42_46_esc
+step
+peek F:4A958 1 t42_47_lvl
+peek F:4A959 1 t42_47_tgt
+peek F:1A6BC 4 t42_47_st
+peek F:4A84D 1 t42_47_gate
+peek F:4A866 1 t42_47_pause
+peek F:4A8E2 1 t42_47_esc
+step
+peek F:4A958 1 t42_48_lvl
+peek F:4A959 1 t42_48_tgt
+peek F:1A6BC 4 t42_48_st
+peek F:4A84D 1 t42_48_gate
+peek F:4A866 1 t42_48_pause
+peek F:4A8E2 1 t42_48_esc
+step
+peek F:4A958 1 t42_49_lvl
+peek F:4A959 1 t42_49_tgt
+peek F:1A6BC 4 t42_49_st
+peek F:4A84D 1 t42_49_gate
+peek F:4A866 1 t42_49_pause
+peek F:4A8E2 1 t42_49_esc
+step
+peek F:4A958 1 t42_50_lvl
+peek F:4A959 1 t42_50_tgt
+peek F:1A6BC 4 t42_50_st
+peek F:4A84D 1 t42_50_gate
+peek F:4A866 1 t42_50_pause
+peek F:4A8E2 1 t42_50_esc
+step
+peek F:4A958 1 t42_51_lvl
+peek F:4A959 1 t42_51_tgt
+peek F:1A6BC 4 t42_51_st
+peek F:4A84D 1 t42_51_gate
+peek F:4A866 1 t42_51_pause
+peek F:4A8E2 1 t42_51_esc
+step
+peek F:4A958 1 t42_52_lvl
+peek F:4A959 1 t42_52_tgt
+peek F:1A6BC 4 t42_52_st
+peek F:4A84D 1 t42_52_gate
+peek F:4A866 1 t42_52_pause
+peek F:4A8E2 1 t42_52_esc
+step
+peek F:4A958 1 t42_53_lvl
+peek F:4A959 1 t42_53_tgt
+peek F:1A6BC 4 t42_53_st
+peek F:4A84D 1 t42_53_gate
+peek F:4A866 1 t42_53_pause
+peek F:4A8E2 1 t42_53_esc
+step
+peek F:4A958 1 t42_54_lvl
+peek F:4A959 1 t42_54_tgt
+peek F:1A6BC 4 t42_54_st
+peek F:4A84D 1 t42_54_gate
+peek F:4A866 1 t42_54_pause
+peek F:4A8E2 1 t42_54_esc
+step
+peek F:4A958 1 t42_55_lvl
+peek F:4A959 1 t42_55_tgt
+peek F:1A6BC 4 t42_55_st
+peek F:4A84D 1 t42_55_gate
+peek F:4A866 1 t42_55_pause
+peek F:4A8E2 1 t42_55_esc
+step
+peek F:4A958 1 t42_56_lvl
+peek F:4A959 1 t42_56_tgt
+peek F:1A6BC 4 t42_56_st
+peek F:4A84D 1 t42_56_gate
+peek F:4A866 1 t42_56_pause
+peek F:4A8E2 1 t42_56_esc
+step
+peek F:4A958 1 t42_57_lvl
+peek F:4A959 1 t42_57_tgt
+peek F:1A6BC 4 t42_57_st
+peek F:4A84D 1 t42_57_gate
+peek F:4A866 1 t42_57_pause
+peek F:4A8E2 1 t42_57_esc
+step
+peek F:4A958 1 t42_58_lvl
+peek F:4A959 1 t42_58_tgt
+peek F:1A6BC 4 t42_58_st
+peek F:4A84D 1 t42_58_gate
+peek F:4A866 1 t42_58_pause
+peek F:4A8E2 1 t42_58_esc
+step
+peek F:4A958 1 t42_59_lvl
+peek F:4A959 1 t42_59_tgt
+peek F:1A6BC 4 t42_59_st
+peek F:4A84D 1 t42_59_gate
+peek F:4A866 1 t42_59_pause
+peek F:4A8E2 1 t42_59_esc
+step
+peek F:4A958 1 t42_60_lvl
+peek F:4A959 1 t42_60_tgt
+peek F:1A6BC 4 t42_60_st
+peek F:4A84D 1 t42_60_gate
+peek F:4A866 1 t42_60_pause
+peek F:4A8E2 1 t42_60_esc
+step
+peek F:4A958 1 t42_61_lvl
+peek F:4A959 1 t42_61_tgt
+peek F:1A6BC 4 t42_61_st
+peek F:4A84D 1 t42_61_gate
+peek F:4A866 1 t42_61_pause
+peek F:4A8E2 1 t42_61_esc
+step
+peek F:4A958 1 t42_62_lvl
+peek F:4A959 1 t42_62_tgt
+peek F:1A6BC 4 t42_62_st
+peek F:4A84D 1 t42_62_gate
+peek F:4A866 1 t42_62_pause
+peek F:4A8E2 1 t42_62_esc
+step
+peek F:4A958 1 t42_63_lvl
+peek F:4A959 1 t42_63_tgt
+peek F:1A6BC 4 t42_63_st
+peek F:4A84D 1 t42_63_gate
+peek F:4A866 1 t42_63_pause
+peek F:4A8E2 1 t42_63_esc
+step
+peek F:4A958 1 t42_64_lvl
+peek F:4A959 1 t42_64_tgt
+peek F:1A6BC 4 t42_64_st
+peek F:4A84D 1 t42_64_gate
+peek F:4A866 1 t42_64_pause
+peek F:4A8E2 1 t42_64_esc
+step
+peek F:4A958 1 t42_65_lvl
+peek F:4A959 1 t42_65_tgt
+peek F:1A6BC 4 t42_65_st
+peek F:4A84D 1 t42_65_gate
+peek F:4A866 1 t42_65_pause
+peek F:4A8E2 1 t42_65_esc
+step
+peek F:4A958 1 t42_66_lvl
+peek F:4A959 1 t42_66_tgt
+peek F:1A6BC 4 t42_66_st
+peek F:4A84D 1 t42_66_gate
+peek F:4A866 1 t42_66_pause
+peek F:4A8E2 1 t42_66_esc
+step
+peek F:4A958 1 t42_67_lvl
+peek F:4A959 1 t42_67_tgt
+peek F:1A6BC 4 t42_67_st
+peek F:4A84D 1 t42_67_gate
+peek F:4A866 1 t42_67_pause
+peek F:4A8E2 1 t42_67_esc
+step
+peek F:4A958 1 t42_68_lvl
+peek F:4A959 1 t42_68_tgt
+peek F:1A6BC 4 t42_68_st
+peek F:4A84D 1 t42_68_gate
+peek F:4A866 1 t42_68_pause
+peek F:4A8E2 1 t42_68_esc
+step
+peek F:4A958 1 t42_69_lvl
+peek F:4A959 1 t42_69_tgt
+peek F:1A6BC 4 t42_69_st
+peek F:4A84D 1 t42_69_gate
+peek F:4A866 1 t42_69_pause
+peek F:4A8E2 1 t42_69_esc
+step
+peek F:4A958 1 t42_70_lvl
+peek F:4A959 1 t42_70_tgt
+peek F:1A6BC 4 t42_70_st
+peek F:4A84D 1 t42_70_gate
+peek F:4A866 1 t42_70_pause
+peek F:4A8E2 1 t42_70_esc
+step
+peek F:4A958 1 t42_71_lvl
+peek F:4A959 1 t42_71_tgt
+peek F:1A6BC 4 t42_71_st
+peek F:4A84D 1 t42_71_gate
+peek F:4A866 1 t42_71_pause
+peek F:4A8E2 1 t42_71_esc
+step
+peek F:4A958 1 t42_72_lvl
+peek F:4A959 1 t42_72_tgt
+peek F:1A6BC 4 t42_72_st
+peek F:4A84D 1 t42_72_gate
+peek F:4A866 1 t42_72_pause
+peek F:4A8E2 1 t42_72_esc
+step
+peek F:4A958 1 t42_73_lvl
+peek F:4A959 1 t42_73_tgt
+peek F:1A6BC 4 t42_73_st
+peek F:4A84D 1 t42_73_gate
+peek F:4A866 1 t42_73_pause
+peek F:4A8E2 1 t42_73_esc
+step
+peek F:4A958 1 t42_74_lvl
+peek F:4A959 1 t42_74_tgt
+peek F:1A6BC 4 t42_74_st
+peek F:4A84D 1 t42_74_gate
+peek F:4A866 1 t42_74_pause
+peek F:4A8E2 1 t42_74_esc
+step
+peek F:4A958 1 t42_75_lvl
+peek F:4A959 1 t42_75_tgt
+peek F:1A6BC 4 t42_75_st
+peek F:4A84D 1 t42_75_gate
+peek F:4A866 1 t42_75_pause
+peek F:4A8E2 1 t42_75_esc
+step
+peek F:4A958 1 t42_76_lvl
+peek F:4A959 1 t42_76_tgt
+peek F:1A6BC 4 t42_76_st
+peek F:4A84D 1 t42_76_gate
+peek F:4A866 1 t42_76_pause
+peek F:4A8E2 1 t42_76_esc
+step
+peek F:4A958 1 t42_77_lvl
+peek F:4A959 1 t42_77_tgt
+peek F:1A6BC 4 t42_77_st
+peek F:4A84D 1 t42_77_gate
+peek F:4A866 1 t42_77_pause
+peek F:4A8E2 1 t42_77_esc
+step
+peek F:4A958 1 t42_78_lvl
+peek F:4A959 1 t42_78_tgt
+peek F:1A6BC 4 t42_78_st
+peek F:4A84D 1 t42_78_gate
+peek F:4A866 1 t42_78_pause
+peek F:4A8E2 1 t42_78_esc
+step
+peek F:4A958 1 t42_79_lvl
+peek F:4A959 1 t42_79_tgt
+peek F:1A6BC 4 t42_79_st
+peek F:4A84D 1 t42_79_gate
+peek F:4A866 1 t42_79_pause
+peek F:4A8E2 1 t42_79_esc
+step
+peek F:4A958 1 t42_80_lvl
+peek F:4A959 1 t42_80_tgt
+peek F:1A6BC 4 t42_80_st
+peek F:4A84D 1 t42_80_gate
+peek F:4A866 1 t42_80_pause
+peek F:4A8E2 1 t42_80_esc
+step
+peek F:4A958 1 t42_81_lvl
+peek F:4A959 1 t42_81_tgt
+peek F:1A6BC 4 t42_81_st
+peek F:4A84D 1 t42_81_gate
+peek F:4A866 1 t42_81_pause
+peek F:4A8E2 1 t42_81_esc
+step
+peek F:4A958 1 t42_82_lvl
+peek F:4A959 1 t42_82_tgt
+peek F:1A6BC 4 t42_82_st
+peek F:4A84D 1 t42_82_gate
+peek F:4A866 1 t42_82_pause
+peek F:4A8E2 1 t42_82_esc
+step
+peek F:4A958 1 t42_83_lvl
+peek F:4A959 1 t42_83_tgt
+peek F:1A6BC 4 t42_83_st
+peek F:4A84D 1 t42_83_gate
+peek F:4A866 1 t42_83_pause
+peek F:4A8E2 1 t42_83_esc
+step
+peek F:4A958 1 t42_84_lvl
+peek F:4A959 1 t42_84_tgt
+peek F:1A6BC 4 t42_84_st
+peek F:4A84D 1 t42_84_gate
+peek F:4A866 1 t42_84_pause
+peek F:4A8E2 1 t42_84_esc
+step
+peek F:4A958 1 t42_85_lvl
+peek F:4A959 1 t42_85_tgt
+peek F:1A6BC 4 t42_85_st
+peek F:4A84D 1 t42_85_gate
+peek F:4A866 1 t42_85_pause
+peek F:4A8E2 1 t42_85_esc
+step
+peek F:4A958 1 t42_86_lvl
+peek F:4A959 1 t42_86_tgt
+peek F:1A6BC 4 t42_86_st
+peek F:4A84D 1 t42_86_gate
+peek F:4A866 1 t42_86_pause
+peek F:4A8E2 1 t42_86_esc
+step
+peek F:4A958 1 t42_87_lvl
+peek F:4A959 1 t42_87_tgt
+peek F:1A6BC 4 t42_87_st
+peek F:4A84D 1 t42_87_gate
+peek F:4A866 1 t42_87_pause
+peek F:4A8E2 1 t42_87_esc
+step
+peek F:4A958 1 t42_88_lvl
+peek F:4A959 1 t42_88_tgt
+peek F:1A6BC 4 t42_88_st
+peek F:4A84D 1 t42_88_gate
+peek F:4A866 1 t42_88_pause
+peek F:4A8E2 1 t42_88_esc
+step
+peek F:4A958 1 t42_89_lvl
+peek F:4A959 1 t42_89_tgt
+peek F:1A6BC 4 t42_89_st
+peek F:4A84D 1 t42_89_gate
+peek F:4A866 1 t42_89_pause
+peek F:4A8E2 1 t42_89_esc
+step
+peek F:4A958 1 t42_90_lvl
+peek F:4A959 1 t42_90_tgt
+peek F:1A6BC 4 t42_90_st
+peek F:4A84D 1 t42_90_gate
+peek F:4A866 1 t42_90_pause
+peek F:4A8E2 1 t42_90_esc
+step
+peek F:4A958 1 t42_91_lvl
+peek F:4A959 1 t42_91_tgt
+peek F:1A6BC 4 t42_91_st
+peek F:4A84D 1 t42_91_gate
+peek F:4A866 1 t42_91_pause
+peek F:4A8E2 1 t42_91_esc
+step
+peek F:4A958 1 t42_92_lvl
+peek F:4A959 1 t42_92_tgt
+peek F:1A6BC 4 t42_92_st
+peek F:4A84D 1 t42_92_gate
+peek F:4A866 1 t42_92_pause
+peek F:4A8E2 1 t42_92_esc
+step
+peek F:4A958 1 t42_93_lvl
+peek F:4A959 1 t42_93_tgt
+peek F:1A6BC 4 t42_93_st
+peek F:4A84D 1 t42_93_gate
+peek F:4A866 1 t42_93_pause
+peek F:4A8E2 1 t42_93_esc
+step
+peek F:4A958 1 t42_94_lvl
+peek F:4A959 1 t42_94_tgt
+peek F:1A6BC 4 t42_94_st
+peek F:4A84D 1 t42_94_gate
+peek F:4A866 1 t42_94_pause
+peek F:4A8E2 1 t42_94_esc
+step
+peek F:4A958 1 t42_95_lvl
+peek F:4A959 1 t42_95_tgt
+peek F:1A6BC 4 t42_95_st
+peek F:4A84D 1 t42_95_gate
+peek F:4A866 1 t42_95_pause
+peek F:4A8E2 1 t42_95_esc
+step
+peek F:4A958 1 t42_96_lvl
+peek F:4A959 1 t42_96_tgt
+peek F:1A6BC 4 t42_96_st
+peek F:4A84D 1 t42_96_gate
+peek F:4A866 1 t42_96_pause
+peek F:4A8E2 1 t42_96_esc
+step
+peek F:4A958 1 t42_97_lvl
+peek F:4A959 1 t42_97_tgt
+peek F:1A6BC 4 t42_97_st
+peek F:4A84D 1 t42_97_gate
+peek F:4A866 1 t42_97_pause
+peek F:4A8E2 1 t42_97_esc
+step
+peek F:4A958 1 t42_98_lvl
+peek F:4A959 1 t42_98_tgt
+peek F:1A6BC 4 t42_98_st
+peek F:4A84D 1 t42_98_gate
+peek F:4A866 1 t42_98_pause
+peek F:4A8E2 1 t42_98_esc
+step
+peek F:4A958 1 t42_99_lvl
+peek F:4A959 1 t42_99_tgt
+peek F:1A6BC 4 t42_99_st
+peek F:4A84D 1 t42_99_gate
+peek F:4A866 1 t42_99_pause
+peek F:4A8E2 1 t42_99_esc
+step

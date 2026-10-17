@@ -1,0 +1,5 @@
+# note 08 section 10: boot the game disk (shipped `config`), write-enabled, to the credits screen and save the snapshot.
+# Run:  build/vamiga-ref/ref --rw --rom disks/kick12.rom --adf extracted/interceptor-autoboot.adf --script <this>
+wait 150
+frame extracted/captures/logs/credits-rw.ppm
+snapshot extracted/captures/credits-rw.vasnap

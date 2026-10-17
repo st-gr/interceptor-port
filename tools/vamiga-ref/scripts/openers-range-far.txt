@@ -1,0 +1,247 @@
+# Carrier visibility, far leg: same start, sampling begins after 28 s more flying; distances 6.2M to 10.0M position units.
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key F10
+wait 11
+key DOWN 0.2
+wait 28
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p0
+peek F:4CE3C 128 c0
+peek F:4AA00 256 a0
+peek F:4AB00 128 b0
+frame extracted/captures/openers/v00.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p1
+peek F:4CE3C 128 c1
+peek F:4AA00 256 a1
+peek F:4AB00 128 b1
+frame extracted/captures/openers/v01.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p2
+peek F:4CE3C 128 c2
+peek F:4AA00 256 a2
+peek F:4AB00 128 b2
+frame extracted/captures/openers/v02.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p3
+peek F:4CE3C 128 c3
+peek F:4AA00 256 a3
+peek F:4AB00 128 b3
+frame extracted/captures/openers/v03.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p4
+peek F:4CE3C 128 c4
+peek F:4AA00 256 a4
+peek F:4AB00 128 b4
+frame extracted/captures/openers/v04.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p5
+peek F:4CE3C 128 c5
+peek F:4AA00 256 a5
+peek F:4AB00 128 b5
+frame extracted/captures/openers/v05.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p6
+peek F:4CE3C 128 c6
+peek F:4AA00 256 a6
+peek F:4AB00 128 b6
+frame extracted/captures/openers/v06.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p7
+peek F:4CE3C 128 c7
+peek F:4AA00 256 a7
+peek F:4AB00 128 b7
+frame extracted/captures/openers/v07.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p8
+peek F:4CE3C 128 c8
+peek F:4AA00 256 a8
+peek F:4AB00 128 b8
+frame extracted/captures/openers/v08.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p9
+peek F:4CE3C 128 c9
+peek F:4AA00 256 a9
+peek F:4AB00 128 b9
+frame extracted/captures/openers/v09.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p10
+peek F:4CE3C 128 c10
+peek F:4AA00 256 a10
+peek F:4AB00 128 b10
+frame extracted/captures/openers/v10.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p11
+peek F:4CE3C 128 c11
+peek F:4AA00 256 a11
+peek F:4AB00 128 b11
+frame extracted/captures/openers/v11.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p12
+peek F:4CE3C 128 c12
+peek F:4AA00 256 a12
+peek F:4AB00 128 b12
+frame extracted/captures/openers/v12.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p13
+peek F:4CE3C 128 c13
+peek F:4AA00 256 a13
+peek F:4AB00 128 b13
+frame extracted/captures/openers/v13.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p14
+peek F:4CE3C 128 c14
+peek F:4AA00 256 a14
+peek F:4AB00 128 b14
+frame extracted/captures/openers/v14.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p15
+peek F:4CE3C 128 c15
+peek F:4AA00 256 a15
+peek F:4AB00 128 b15
+frame extracted/captures/openers/v15.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p16
+peek F:4CE3C 128 c16
+peek F:4AA00 256 a16
+peek F:4AB00 128 b16
+frame extracted/captures/openers/v16.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p17
+peek F:4CE3C 128 c17
+peek F:4AA00 256 a17
+peek F:4AB00 128 b17
+frame extracted/captures/openers/v17.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p18
+peek F:4CE3C 128 c18
+peek F:4AA00 256 a18
+peek F:4AB00 128 b18
+frame extracted/captures/openers/v18.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p19
+peek F:4CE3C 128 c19
+peek F:4AA00 256 a19
+peek F:4AB00 128 b19
+frame extracted/captures/openers/v19.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p20
+peek F:4CE3C 128 c20
+peek F:4AA00 256 a20
+peek F:4AB00 128 b20
+frame extracted/captures/openers/v20.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p21
+peek F:4CE3C 128 c21
+peek F:4AA00 256 a21
+peek F:4AB00 128 b21
+frame extracted/captures/openers/v21.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p22
+peek F:4CE3C 128 c22
+peek F:4AA00 256 a22
+peek F:4AB00 128 b22
+frame extracted/captures/openers/v22.ppm
+thaw
+wait 0.5
+key KP2
+wait 0.4
+freeze
+peek F:4B23C 128 p23
+peek F:4CE3C 128 c23
+peek F:4AA00 256 a23
+peek F:4AB00 128 b23
+frame extracted/captures/openers/v23.ppm
+thaw
+wait 0.5

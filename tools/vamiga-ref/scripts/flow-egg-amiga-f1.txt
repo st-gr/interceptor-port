@@ -1,0 +1,24 @@
+# Note 08 section 11.2: the left Amiga key, then F1, at the location selection (the F-key acts as the index 10 if the flag was set).
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A900 1 before_loc
+thaw
+key 0x66
+key F1
+wait 2
+freeze
+peek F:4A900 1 after_loc
+peek F:4A966 1 after_phase
+peek F:4A931 1 amiga_flag
+peek F:4A928 1 preset
+frame extracted/captures/egg-amiga-f1.ppm
+thaw
+wait 14
+freeze
+peek F:4A900 1 fl_loc
+peek F:4A901 1 fl_ac
+peek F:4B250 12 fl_xyz
+peek F:4B23C 2 fl_w0
+frame extracted/captures/egg-amiga-f1-flight.ppm
+thaw

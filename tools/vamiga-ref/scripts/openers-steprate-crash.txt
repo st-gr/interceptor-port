@@ -1,0 +1,18 @@
+# Frames of the crash in the city step-rate run: same start as openers-steprate-stall2.txt (UP held until the pitch passes the mark, then the aircraft flies into the ground one cell short of the airfield, y 1800 = runway height, not the sea); frames just before, during and after the 95-blank stall.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+holduntil UP F:4B2A2 gt -1
+wait 1
+freeze
+step 1085
+peek F:4B254 4 k1085_y
+frame /tmp/cr/k1085.ppm
+step 30
+peek F:4B254 4 k1115_y
+frame /tmp/cr/k1115.ppm
+step 60
+peek F:4A992 2 k1175_f
+frame /tmp/cr/k1175.ppm
+step 60
+peek F:4A992 2 k1235_f
+frame /tmp/cr/k1235.ppm

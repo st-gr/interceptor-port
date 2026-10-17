@@ -1,0 +1,35 @@
+# Note 08 section 11: the hidden fifth start. At the location selection (four numbers on the map) the digit 5 is accepted:
+# V:4A900 = 4 (the second-ship deck block 0x47B1E). Then aircraft 1 and a look at the start.
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A900 1 before_loc
+peek F:4A966 1 before_phase
+thaw
+key 6
+wait 1
+freeze
+peek F:4A900 1 after6_loc
+peek F:4A966 1 after6_phase
+frame extracted/captures/egg-loc-after6.ppm
+thaw
+key 5
+wait 2
+freeze
+peek F:4A900 1 after5_loc
+peek F:4A966 1 after5_phase
+peek F:4A849 1 after5_acsel
+frame extracted/captures/egg-loc-after5.ppm
+thaw
+key 1
+wait 12
+freeze
+peek F:4A900 1 fl_loc
+peek F:4A901 1 fl_ac
+peek F:4A95E 1 fl_mode
+peek F:4A966 1 fl_phase
+peek F:4B23C 2 fl_w0
+peek F:4B250 12 fl_xyz
+peek F:4B258 4 fl_hdg
+frame extracted/captures/egg-loc-flight5.ppm
+thaw

@@ -1,0 +1,22 @@
+# F2 (mode 4): the number of world passes of the camera approach 0x12D58 (step counter V:4A992 at its first and last pass), real time then stepuntil; note 08 6.4 / 13.5
+restore extracted/captures/mb/m4-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt 3284
+wait 24
+freeze
+peek F:1A6BC 4 s0_st
+peek F:4A992 2 s0_n
+peek F:4A82C 2 s0_bl
+stepuntil F:1A6BC 4 eq 0xC0A880 3000
+peek F:4A992 2 a_n
+peek F:4A82C 2 a_bl
+stepuntil F:1A6BC 4 eq 0xC0A8E0 4000
+peek F:4A992 2 b_n
+peek F:4A82C 2 b_bl
+stepuntil F:1A6BC 4 eq 0xC0A976 1500
+peek F:4A992 2 c_n
+peek F:4A82C 2 c_bl
+peek F:4A802 8 c_txt
+stepuntil F:1A6BC 4 eq 0xC0AA26 1500
+peek F:4A992 2 d_n
+peek F:4A82C 2 d_bl

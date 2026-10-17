@@ -1,0 +1,311 @@
+# note 08 5.8: pass length (V:4A93B, once per pass) on the location screen after the caption, the aircraft screen after the caption and in the approach; author note-0708 fix 2
+thaw
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A879 1 loc0_0
+step 1
+peek F:4A879 1 loc0_1
+step 1
+peek F:4A879 1 loc0_2
+step 1
+peek F:4A879 1 loc0_3
+step 1
+peek F:4A879 1 loc0_4
+step 1
+peek F:4A879 1 loc0_5
+step 1
+peek F:4A879 1 loc0_6
+step 1
+peek F:4A879 1 loc0_7
+step 1
+peek F:4A879 1 loc0_8
+step 1
+peek F:4A879 1 loc0_9
+step 1
+peek F:4A879 1 loc0_10
+step 1
+peek F:4A879 1 loc0_11
+step 1
+peek F:4A879 1 loc0_12
+step 1
+peek F:4A879 1 loc0_13
+step 1
+peek F:4A879 1 loc0_14
+step 1
+peek F:4A879 1 loc0_15
+step 1
+peek F:4A879 1 loc0_16
+step 1
+peek F:4A879 1 loc0_17
+step 1
+peek F:4A879 1 loc0_18
+step 1
+peek F:4A879 1 loc0_19
+step 1
+peek F:4A879 1 loc0_20
+step 1
+peek F:4A879 1 loc0_21
+step 1
+peek F:4A879 1 loc0_22
+step 1
+peek F:4A879 1 loc0_23
+step 1
+peek F:4A879 1 loc0_24
+step 1
+peek F:4A879 1 loc0_25
+step 1
+peek F:4A879 1 loc0_26
+step 1
+peek F:4A879 1 loc0_27
+step 1
+peek F:4A879 1 loc0_28
+step 1
+peek F:4A879 1 loc0_29
+step 1
+key 1 0.12
+stepuntil F:4A849 1 eq 1 2500
+step 150
+peek F:4A879 1 air_0
+step 1
+peek F:4A879 1 air_1
+step 1
+peek F:4A879 1 air_2
+step 1
+peek F:4A879 1 air_3
+step 1
+peek F:4A879 1 air_4
+step 1
+peek F:4A879 1 air_5
+step 1
+peek F:4A879 1 air_6
+step 1
+peek F:4A879 1 air_7
+step 1
+peek F:4A879 1 air_8
+step 1
+peek F:4A879 1 air_9
+step 1
+peek F:4A879 1 air_10
+step 1
+peek F:4A879 1 air_11
+step 1
+peek F:4A879 1 air_12
+step 1
+peek F:4A879 1 air_13
+step 1
+peek F:4A879 1 air_14
+step 1
+peek F:4A879 1 air_15
+step 1
+peek F:4A879 1 air_16
+step 1
+peek F:4A879 1 air_17
+step 1
+peek F:4A879 1 air_18
+step 1
+peek F:4A879 1 air_19
+step 1
+peek F:4A879 1 air_20
+step 1
+peek F:4A879 1 air_21
+step 1
+peek F:4A879 1 air_22
+step 1
+peek F:4A879 1 air_23
+step 1
+peek F:4A879 1 air_24
+step 1
+peek F:4A879 1 air_25
+step 1
+peek F:4A879 1 air_26
+step 1
+peek F:4A879 1 air_27
+step 1
+peek F:4A879 1 air_28
+step 1
+peek F:4A879 1 air_29
+step 1
+peek F:4A879 1 air_30
+step 1
+peek F:4A879 1 air_31
+step 1
+peek F:4A879 1 air_32
+step 1
+peek F:4A879 1 air_33
+step 1
+peek F:4A879 1 air_34
+step 1
+peek F:4A879 1 air_35
+step 1
+peek F:4A879 1 air_36
+step 1
+peek F:4A879 1 air_37
+step 1
+peek F:4A879 1 air_38
+step 1
+peek F:4A879 1 air_39
+step 1
+peek F:4A879 1 air_40
+step 1
+peek F:4A879 1 air_41
+step 1
+peek F:4A879 1 air_42
+step 1
+peek F:4A879 1 air_43
+step 1
+peek F:4A879 1 air_44
+step 1
+peek F:4A879 1 air_45
+step 1
+peek F:4A879 1 air_46
+step 1
+peek F:4A879 1 air_47
+step 1
+peek F:4A879 1 air_48
+step 1
+peek F:4A879 1 air_49
+step 1
+peek F:4A879 1 air_50
+step 1
+peek F:4A879 1 air_51
+step 1
+peek F:4A879 1 air_52
+step 1
+peek F:4A879 1 air_53
+step 1
+peek F:4A879 1 air_54
+step 1
+peek F:4A879 1 air_55
+step 1
+peek F:4A879 1 air_56
+step 1
+peek F:4A879 1 air_57
+step 1
+peek F:4A879 1 air_58
+step 1
+peek F:4A879 1 air_59
+step 1
+key 1 0.12
+stepuntil F:1A6BC 4 eq 0xC0A880 1500
+step 20
+peek F:4A879 1 app_0
+step 1
+peek F:4A879 1 app_1
+step 1
+peek F:4A879 1 app_2
+step 1
+peek F:4A879 1 app_3
+step 1
+peek F:4A879 1 app_4
+step 1
+peek F:4A879 1 app_5
+step 1
+peek F:4A879 1 app_6
+step 1
+peek F:4A879 1 app_7
+step 1
+peek F:4A879 1 app_8
+step 1
+peek F:4A879 1 app_9
+step 1
+peek F:4A879 1 app_10
+step 1
+peek F:4A879 1 app_11
+step 1
+peek F:4A879 1 app_12
+step 1
+peek F:4A879 1 app_13
+step 1
+peek F:4A879 1 app_14
+step 1
+peek F:4A879 1 app_15
+step 1
+peek F:4A879 1 app_16
+step 1
+peek F:4A879 1 app_17
+step 1
+peek F:4A879 1 app_18
+step 1
+peek F:4A879 1 app_19
+step 1
+peek F:4A879 1 app_20
+step 1
+peek F:4A879 1 app_21
+step 1
+peek F:4A879 1 app_22
+step 1
+peek F:4A879 1 app_23
+step 1
+peek F:4A879 1 app_24
+step 1
+peek F:4A879 1 app_25
+step 1
+peek F:4A879 1 app_26
+step 1
+peek F:4A879 1 app_27
+step 1
+peek F:4A879 1 app_28
+step 1
+peek F:4A879 1 app_29
+step 1
+peek F:4A879 1 app_30
+step 1
+peek F:4A879 1 app_31
+step 1
+peek F:4A879 1 app_32
+step 1
+peek F:4A879 1 app_33
+step 1
+peek F:4A879 1 app_34
+step 1
+peek F:4A879 1 app_35
+step 1
+peek F:4A879 1 app_36
+step 1
+peek F:4A879 1 app_37
+step 1
+peek F:4A879 1 app_38
+step 1
+peek F:4A879 1 app_39
+step 1
+peek F:4A879 1 app_40
+step 1
+peek F:4A879 1 app_41
+step 1
+peek F:4A879 1 app_42
+step 1
+peek F:4A879 1 app_43
+step 1
+peek F:4A879 1 app_44
+step 1
+peek F:4A879 1 app_45
+step 1
+peek F:4A879 1 app_46
+step 1
+peek F:4A879 1 app_47
+step 1
+peek F:4A879 1 app_48
+step 1
+peek F:4A879 1 app_49
+step 1
+peek F:4A879 1 app_50
+step 1
+peek F:4A879 1 app_51
+step 1
+peek F:4A879 1 app_52
+step 1
+peek F:4A879 1 app_53
+step 1
+peek F:4A879 1 app_54
+step 1
+peek F:4A879 1 app_55
+step 1
+peek F:4A879 1 app_56
+step 1
+peek F:4A879 1 app_57
+step 1
+peek F:4A879 1 app_58
+step 1
+peek F:4A879 1 app_59
+step 1

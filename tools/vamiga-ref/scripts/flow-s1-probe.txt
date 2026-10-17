@@ -1,0 +1,16 @@
+# Probe: variables on the credits screen (credits.vasnap), then in the menu.
+restore extracted/captures/credits.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A83F 1 c_83f
+peek F:4A95E 1 c_95e
+peek F:4A88B 1 c_88b
+peek F:4A88D 1 c_88d
+peek F:4A849 1 c_849
+peek F:1A6BC 4 c_state
+peek F:4AB8E 2 c_cd
+peek F:4A802 4 c_txt
+peek F:4A898 1 c_898
+peek F:4A87B 1 c_87b
+peek F:4A720 4 c_720
+peek F:4A958 2 c_fade

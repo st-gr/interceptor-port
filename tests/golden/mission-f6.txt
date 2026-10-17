@@ -1,0 +1,1621 @@
+# mission-f6: menu key F6, the sixth mission (game mode 8, the default kill-count script, note 08 12.9): success when four counted aircraft are destroyed (V:4A963 >= V:4A962, the cap 4).
+# 1 tick = 1 core step, the game starts at the credits: any key (tick 3), the continuing welcome of a log with a player record (tick 133), the menu's F6 (tick 175). The flight log is imported
+# by the script ("log": qualified, tours 2, the completion bytes 0 0 0 1 1 1 1 1 0, so F2 to F6 are on the menu) and the placement generator is seeded with 629 ("seed 629": m = 46 and the jitter -2, the selector 0x1021, the placement of the earlier golden, which seed 1 no longer draws;
+# variant 0, offsets (0, 0) cells). The location is the carrier and fixed for a mission, so no selection key is needed: the approach, the notice (the mission texts run through the text engine) and
+# the wait run by themselves and the first flight step is tick 526. Since milestone 6 the placement selector is the measured one (note 07 2.4: 20,000 x m + the start path's delta + a jitter from the 13-entry list, m drawn from the seeded generator), so "seed N" picks a placement; the seed was chosen to draw the same selector as before, so the fight below is unchanged.
+# The fight is a scripted input sequence recorded from a closed-loop pursuit run against this port (a throwaway steering tool: a catapult launch with F10 at tick 530, the gear at 639, then
+# a bank-to-turn controller on the nearest hostile aircraft with proportional pitch and rudder near the nose, T (designate) and SPACE (the AIM-120 and AIM-9 shots whenever the fire prompt shows),
+# the weapon select, the tool's parameters found by a random search; the sticks and the rudder are its events below, one per change). It reaches the END CODE 0xFF (success): the fourth
+# kill is at tick 8819 (V:4A850 = ff in the end column), the flight resumes with the code 1 at tick 8838. Every column is a number or a state: no game text. The synthetic asset set has no
+# flight tables of its own: "synthflight" below gives it the invented ones, so the same menu key starts the mission there and the synthetic run (909 ticks) ends with the END CODE 0xFF at tick 715.
+# Milestone 7 history: the click cost 5,350 and the measured typing times (note 08 3.8) and then the final round (note 08 12.14 C14 and 5.13: the missions' approach is the mover's from the briefing camera, and the first flight pass follows the outcome resume by one step) re-timed this script twice; the values above are the current ones. The seed and the inputs are unchanged and the run still reaches the end code 0xFF.
+# The real "at" lines after tick 400 moved by +14 in the final round (+3 in the click-cost round); the synthetic "sat" lines by +109.
+screens
+seed 629
+log 0 0 0 1 1 1 1 1 0
+ticks 8907
+# SYNTHETIC RUN (CI): "synthflight" gives the synthetic world the invented flight tables (all zero) and the invented mission tables of tests/world_synth.h (scenario rows, templates, position blocks, briefing chain, ai.bin), so the F-key starts the mission; "synthfrom 175" keeps the
+# "at" lines up to the menu key and drops the real fight; the "sat" lines are the synthetic fight. F6: two hostile aircraft are placed right below the stationary start, the gun shoots them from 669; the kill count reaches the cap 2: END CODE 0xFF at tick 715, resume code 1 at 725.
+synthflight
+synthfrom 175
+synthetic 909
+sat 622 fkey 10
+sat 639 btn SELECT_WEAPON 1
+sat 639 btn SELECT_WEAPON 0
+sat 644 btn SELECT_WEAPON 1
+sat 644 btn SELECT_WEAPON 0
+sat 649 btn SELECT_WEAPON 1
+sat 649 btn SELECT_WEAPON 0
+sat 669 btn FIRE 1
+sat 749 btn FIRE 0
+# the credits (any key), the continuing welcome (any key), the menu's F6
+at 3 key 120
+at 133 key 120
+at 175 fkey 6
+at 530 fkey 10
+at 606 btn FIRE
+at 608 btn FIRE 0
+at 614 stick 0 12000
+at 629 stick 0 0
+at 639 btn GEAR
+at 659 stick 0 12000
+at 659 throttle 32000
+at 665 btn SELECT_WEAPON
+at 665 btn SELECT_WEAPON 0
+at 665 btn TARGET
+at 683 stick 12000 12000
+at 721 stick -12000 12000
+at 725 stick 0 12000
+at 767 stick -12000 0
+at 771 stick -12000 12000
+at 777 stick 12000 12000
+at 783 stick -12000 12000
+at 787 stick 12000 12000
+at 789 stick -12000 12000
+at 791 stick 12000 12000
+at 793 stick -12000 12000
+at 809 stick 0 12000
+at 827 stick -12000 12000
+at 833 stick -12000 0
+at 843 stick 12000 0
+at 851 stick -12000 0
+at 859 stick 12000 0
+at 867 stick -12000 0
+at 875 stick 12000 0
+at 883 stick -12000 0
+at 891 stick 12000 0
+at 899 stick -12000 0
+at 907 stick 12000 0
+at 913 stick -12000 0
+at 917 stick 12000 0
+at 921 stick -12000 0
+at 927 stick 12000 0
+at 933 stick -12000 0
+at 939 stick 12000 0
+at 945 stick -12000 0
+at 951 stick 12000 0
+at 957 stick -12000 0
+at 963 stick 12000 0
+at 969 stick -12000 0
+at 975 stick 12000 0
+at 981 stick -12000 0
+at 987 stick 12000 0
+at 991 stick -12000 0
+at 995 stick 12000 0
+at 999 stick -12000 0
+at 1003 stick 12000 0
+at 1007 stick -12000 0
+at 1011 stick 12000 0
+at 1015 stick -12000 0
+at 1019 stick 12000 0
+at 1023 stick -12000 0
+at 1027 stick 12000 0
+at 1031 stick -12000 0
+at 1035 stick 12000 0
+at 1039 stick -12000 0
+at 1043 stick 12000 0
+at 1047 stick -12000 0
+at 1051 stick 12000 0
+at 1055 stick -12000 0
+at 1059 stick 12000 0
+at 1063 stick -12000 0
+at 1067 stick 12000 0
+at 1071 stick -12000 0
+at 1075 stick 12000 0
+at 1079 stick -12000 0
+at 1083 stick 12000 0
+at 1087 stick -12000 0
+at 1091 stick 12000 0
+at 1095 stick -12000 0
+at 1099 stick 12000 0
+at 1103 stick -12000 0
+at 1107 stick 12000 0
+at 1111 stick -12000 0
+at 1115 stick 12000 0
+at 1119 stick -12000 0
+at 1123 stick 12000 0
+at 1127 stick -12000 0
+at 1131 stick 12000 0
+at 1135 stick -12000 0
+at 1139 stick 12000 0
+at 1143 stick -12000 0
+at 1147 stick 12000 0
+at 1151 stick -12000 0
+at 1155 stick 12000 0
+at 1159 stick -12000 0
+at 1163 stick 12000 0
+at 1167 stick -12000 0
+at 1171 stick 12000 0
+at 1175 stick -12000 0
+at 1179 stick 12000 0
+at 1183 stick -12000 0
+at 1187 stick 12000 0
+at 1191 stick -12000 0
+at 1195 stick 12000 0
+at 1199 stick -12000 0
+at 1203 stick 12000 0
+at 1207 stick -12000 0
+at 1211 stick 12000 0
+at 1215 stick -12000 0
+at 1219 stick 12000 0
+at 1223 stick -12000 0
+at 1227 stick 12000 0
+at 1231 stick -12000 0
+at 1235 stick 12000 0
+at 1239 stick -12000 0
+at 1243 stick 12000 0
+at 1247 stick -12000 0
+at 1251 stick 12000 0
+at 1255 stick -12000 0
+at 1259 stick 12000 0
+at 1263 stick -12000 0
+at 1267 stick 12000 0
+at 1271 stick -12000 0
+at 1275 stick 12000 0
+at 1279 stick -12000 0
+at 1283 stick 12000 0
+at 1287 stick -12000 0
+at 1291 stick 12000 0
+at 1295 stick -12000 0
+at 1299 stick 12000 0
+at 1303 stick -12000 0
+at 1307 stick 12000 0
+at 1311 stick -12000 0
+at 1315 stick 12000 0
+at 1319 stick -12000 0
+at 1323 stick 12000 0
+at 1327 stick -12000 0
+at 1333 stick 12000 0
+at 1339 stick -12000 0
+at 1345 stick 12000 0
+at 1351 stick -12000 0
+at 1357 stick 12000 0
+at 1363 stick -12000 0
+at 1369 stick 12000 0
+at 1375 stick -12000 0
+at 1381 stick 12000 0
+at 1387 stick -12000 0
+at 1393 stick 12000 0
+at 1397 stick -12000 0
+at 1401 stick 12000 0
+at 1405 stick -12000 0
+at 1409 stick 12000 0
+at 1413 stick -12000 0
+at 1417 stick 12000 0
+at 1421 stick -12000 0
+at 1427 stick 12000 0
+at 1433 stick -12000 0
+at 1439 stick 12000 0
+at 1445 stick -12000 0
+at 1451 stick 12000 0
+at 1457 stick -12000 0
+at 1463 stick 12000 0
+at 1469 stick -12000 0
+at 1475 stick 12000 0
+at 1479 stick -12000 0
+at 1483 stick 12000 0
+at 1487 stick -12000 0
+at 1491 stick 12000 0
+at 1495 stick -12000 0
+at 1499 stick 12000 0
+at 1503 stick -12000 0
+at 1507 stick 12000 0
+at 1511 stick -12000 0
+at 1515 stick 12000 0
+at 1519 stick -12000 0
+at 1525 stick 12000 0
+at 1531 stick -12000 0
+at 1537 stick 12000 0
+at 1543 stick -12000 0
+at 1549 stick 12000 0
+at 1555 stick -12000 0
+at 1561 stick 12000 0
+at 1567 stick -12000 0
+at 1573 stick 12000 0
+at 1579 stick -12000 0
+at 1585 stick 12000 0
+at 1589 stick -12000 0
+at 1593 stick 12000 0
+at 1597 stick -12000 0
+at 1601 stick 12000 0
+at 1605 stick -12000 0
+at 1609 stick 12000 0
+at 1613 stick -12000 0
+at 1617 stick 12000 0
+at 1621 stick -12000 0
+at 1625 stick 12000 0
+at 1629 stick -12000 0
+at 1633 stick 12000 0
+at 1637 stick -12000 0
+at 1643 stick 12000 0
+at 1649 stick -12000 0
+at 1655 stick 12000 0
+at 1661 stick -12000 0
+at 1667 stick 12000 0
+at 1673 stick -12000 0
+at 1679 stick 12000 0
+at 1685 stick -12000 0
+at 1691 stick 12000 0
+at 1697 stick -12000 0
+at 1703 stick 12000 0
+at 1709 stick -12000 0
+at 1715 stick 12000 0
+at 1721 stick -12000 12000
+at 1727 stick 12000 12000
+at 1731 stick -12000 12000
+at 1735 stick 12000 12000
+at 1739 stick -12000 12000
+at 1745 stick 12000 12000
+at 1751 stick 0 12000
+at 1779 stick -12000 12000
+at 1781 stick 0 -12000
+at 1795 stick -12000 0
+at 1805 stick 0 -12000
+at 1813 stick -12000 0
+at 1821 stick 0 -12000
+at 1827 stick -12000 0
+at 1835 stick 0 -12000
+at 1839 stick 0 -5973
+at 1839 rudder -1786
+at 1841 stick 0 -4603
+at 1841 rudder -1145
+at 1843 stick 0 -4242
+at 1843 rudder -1079
+at 1845 stick 0 -4376
+at 1845 rudder -772
+at 1847 stick 0 -4507
+at 1847 rudder -459
+at 1849 stick 0 -4641
+at 1849 rudder -135
+at 1851 stick 0 -4779
+at 1851 rudder 203
+at 1853 stick 0 -4922
+at 1853 rudder 556
+at 1855 stick 0 -5070
+at 1855 rudder 921
+at 1857 stick 0 -5222
+at 1857 rudder 1307
+at 1859 stick 0 -5382
+at 1859 rudder 1707
+at 1861 stick 0 -5545
+at 1861 rudder 2123
+at 1863 stick 0 -5717
+at 1863 rudder 2558
+at 1865 stick 0 -5896
+at 1865 rudder 3007
+at 1867 stick 0 -6075
+at 1867 rudder 3483
+at 1869 stick 12000 0
+at 1869 rudder 0
+at 1879 stick 0 -12000
+at 1885 stick 12000 0
+at 1895 stick 0 -12000
+at 1901 stick 12000 0
+at 1903 stick 0 -5228
+at 1903 rudder 3498
+at 1905 stick 0 -5017
+at 1905 rudder 4034
+at 1907 stick 0 -5316
+at 1907 rudder 4405
+at 1909 stick 12000 0
+at 1909 rudder 0
+at 1917 stick 0 -12000
+at 1925 stick 0 -4169
+at 1925 rudder 2190
+at 1927 stick 0 -886
+at 1927 rudder 2171
+at 1929 stick 0 601
+at 1929 rudder 2166
+at 1931 stick 0 161
+at 1931 rudder 2335
+at 1933 stick 0 -363
+at 1933 rudder 2443
+at 1935 stick 0 -1213
+at 1935 rudder 2392
+at 1937 stick 0 -2094
+at 1937 rudder 2335
+at 1939 stick 0 -3010
+at 1939 rudder 2280
+at 1941 stick 0 -3967
+at 1941 rudder 2214
+at 1943 stick 0 -4974
+at 1943 rudder 2145
+at 1945 stick 0 -6031
+at 1945 rudder 2077
+at 1947 stick 0 -7153
+at 1947 rudder 2005
+at 1949 stick 0 -12000
+at 1949 rudder 0
+at 1955 stick 0 -6924
+at 1955 rudder 1890
+at 1957 stick 0 -5794
+at 1957 rudder 1741
+at 1959 stick 0 -6716
+at 1959 rudder 1949
+at 1961 stick 0 -12000
+at 1961 rudder 0
+at 1967 stick 0 -6719
+at 1967 rudder 2398
+at 1969 stick 0 -5309
+at 1969 rudder 2082
+at 1971 stick 0 -6327
+at 1971 rudder 2275
+at 1973 stick 0 -12000
+at 1973 rudder 0
+at 1981 stick 0 -5012
+at 1981 rudder 1871
+at 1983 stick 0 -3349
+at 1983 rudder 1817
+at 1985 stick 0 -3268
+at 1985 rudder 2013
+at 1987 stick 0 -4262
+at 1987 rudder 2028
+at 1989 stick 0 -6146
+at 1989 rudder 1924
+at 1991 stick 0 -12000
+at 1991 rudder 0
+at 2001 stick 0 -4252
+at 2001 rudder 1245
+at 2003 stick 0 -1949
+at 2003 rudder 1533
+at 2005 stick 0 -2163
+at 2005 rudder 1402
+at 2007 stick 0 -3790
+at 2007 rudder 842
+at 2009 stick 0 12000
+at 2009 rudder 0
+at 2033 stick -12000 12000
+at 2039 stick 12000 12000
+at 2047 stick 0 12000
+at 2069 stick 12000 12000
+at 2073 stick 12000 0
+at 2079 stick 0 -12000
+at 2081 stick 12000 0
+at 2089 stick -12000 0
+at 2097 stick 12000 0
+at 2103 stick -12000 0
+at 2109 stick 12000 0
+at 2113 stick -12000 0
+at 2115 stick -12000 12000
+at 2119 stick 12000 12000
+at 2125 stick -12000 12000
+at 2133 stick 12000 12000
+at 2139 stick 0 12000
+at 2161 stick 12000 12000
+at 2167 stick 12000 0
+at 2169 stick 0 -12000
+at 2173 stick 12000 0
+at 2181 stick -12000 0
+at 2187 stick 12000 0
+at 2193 stick -12000 12000
+at 2199 stick 12000 12000
+at 2205 stick -12000 12000
+at 2215 stick 0 12000
+at 2233 stick -12000 12000
+at 2241 stick -12000 0
+at 2249 stick 12000 0
+at 2261 stick -12000 0
+at 2263 stick -12000 12000
+at 2269 stick 12000 12000
+at 2279 stick -12000 12000
+at 2283 stick 12000 12000
+at 2287 stick 0 12000
+at 2305 stick 12000 12000
+at 2315 stick 12000 0
+at 2321 stick -12000 0
+at 2331 stick 12000 0
+at 2333 stick 12000 12000
+at 2339 stick -12000 12000
+at 2347 stick 12000 12000
+at 2357 stick 0 12000
+at 2377 stick 12000 12000
+at 2381 stick 12000 0
+at 2387 stick 0 -12000
+at 2391 stick 12000 0
+at 2397 stick -12000 0
+at 2405 stick 12000 0
+at 2411 stick -12000 0
+at 2415 stick -12000 12000
+at 2417 stick 12000 12000
+at 2423 stick -12000 12000
+at 2431 stick 12000 12000
+at 2433 stick -12000 12000
+at 2437 stick 0 12000
+at 2459 stick -12000 12000
+at 2463 stick -12000 0
+at 2467 stick 0 -12000
+at 2471 stick -12000 0
+at 2479 stick 12000 0
+at 2485 stick -12000 0
+at 2491 stick 12000 0
+at 2495 stick -12000 0
+at 2497 stick -12000 12000
+at 2499 stick 12000 12000
+at 2503 stick -12000 12000
+at 2511 stick 12000 12000
+at 2515 stick -12000 12000
+at 2519 stick 0 12000
+at 2541 stick -12000 12000
+at 2547 stick -12000 0
+at 2555 stick 12000 0
+at 2565 stick -12000 0
+at 2575 stick 12000 0
+at 2579 stick 12000 12000
+at 2583 stick -12000 12000
+at 2591 stick 12000 12000
+at 2595 stick -12000 12000
+at 2609 stick 0 12000
+at 2629 stick -12000 12000
+at 2637 stick -12000 0
+at 2647 stick 12000 0
+at 2657 stick -12000 0
+at 2667 stick 12000 0
+at 2675 stick -12000 0
+at 2683 stick 12000 0
+at 2689 stick -12000 0
+at 2693 stick 12000 0
+at 2695 stick -12000 0
+at 2699 stick 12000 0
+at 2703 stick -12000 0
+at 2707 stick -12000 12000
+at 2709 stick 12000 12000
+at 2715 stick -12000 12000
+at 2721 stick 12000 12000
+at 2725 stick -12000 12000
+at 2775 btn TARGET
+at 2775 stick 0 12000
+at 2783 stick 12000 12000
+at 2785 stick 12000 0
+at 2787 stick 0 -12000
+at 2801 stick -12000 0
+at 2815 stick 0 -12000
+at 2835 stick -12000 0
+at 2841 stick 0 -12000
+at 2857 stick -12000 0
+at 2865 stick 0 -12000
+at 2879 stick 0 -1470
+at 2879 rudder -1816
+at 2881 stick 0 4499
+at 2881 rudder -1824
+at 2883 stick 0 12000
+at 2883 rudder 0
+at 2885 stick -12000 12000
+at 2893 btn FIRE
+at 2893 btn FIRE 0
+at 2893 stick -12000 0
+at 2897 stick 0 -12000
+at 2903 stick -12000 0
+at 2909 throttle 14000
+at 2917 stick -12000 12000
+at 2919 stick 12000 12000
+at 2921 throttle 32000
+at 2971 stick -12000 12000
+at 2973 stick 0 12000
+at 3001 stick 12000 12000
+at 3003 stick 12000 0
+at 3009 stick 0 -12000
+at 3011 stick 12000 0
+at 3021 stick 12000 12000
+at 3023 stick -12000 12000
+at 3031 stick 12000 12000
+at 3035 stick 0 12000
+at 3063 throttle 14000
+at 3083 throttle 32000
+at 3099 stick -12000 12000
+at 3103 stick -12000 0
+at 3105 stick 0 -12000
+at 3123 stick -12000 0
+at 3131 stick 0 -12000
+at 3149 stick 0 3839
+at 3149 rudder -1247
+at 3151 stick 0 12000
+at 3151 rudder 0
+at 3159 stick 12000 12000
+at 3161 stick 0 2270
+at 3161 rudder 5507
+at 3163 stick 12000 0
+at 3163 rudder 0
+at 3171 stick 0 -12000
+at 3179 stick 12000 0
+at 3185 stick 0 -12000
+at 3195 stick 12000 0
+at 3203 stick 0 -12000
+at 3215 stick 12000 0
+at 3221 stick 0 -12000
+at 3231 stick 12000 0
+at 3237 stick 0 -12000
+at 3247 stick 0 -3984
+at 3247 rudder -2905
+at 3249 stick 0 -663
+at 3249 rudder -4210
+at 3251 stick 0 739
+at 3251 rudder -5578
+at 3253 stick -12000 12000
+at 3253 rudder 0
+at 3257 stick -12000 0
+at 3265 stick 0 -12000
+at 3279 stick -12000 0
+at 3291 stick 0 -12000
+at 3299 stick 0 -3789
+at 3299 rudder 3091
+at 3301 stick 0 -1195
+at 3301 rudder 4243
+at 3303 stick 0 189
+at 3303 rudder 5390
+at 3305 stick 12000 12000
+at 3305 rudder 0
+at 3309 stick 12000 0
+at 3317 stick 0 -12000
+at 3329 stick 12000 0
+at 3339 stick 0 -12000
+at 3351 stick 0 -42
+at 3351 rudder 2186
+at 3353 stick 0 4150
+at 3353 rudder 1299
+at 3355 stick 0 5588
+at 3355 rudder 186
+at 3357 stick 0 5743
+at 3357 rudder -703
+at 3359 stick 0 4533
+at 3359 rudder -1840
+at 3361 stick 0 2678
+at 3361 rudder -2578
+at 3363 stick 0 1070
+at 3363 rudder -3256
+at 3365 stick 0 -972
+at 3365 rudder -4068
+at 3367 stick 0 -3702
+at 3367 rudder -5089
+at 3369 stick -12000 0
+at 3369 rudder 0
+at 3377 stick 0 -12000
+at 3391 stick -12000 0
+at 3403 stick 0 -12000
+at 3413 stick 12000 0
+at 3415 stick 0 -2202
+at 3415 rudder 5376
+at 3417 stick 12000 12000
+at 3417 rudder 0
+at 3421 stick 12000 0
+at 3429 stick 0 -12000
+at 3443 stick 0 -2619
+at 3443 rudder 4667
+at 3445 stick 0 2946
+at 3445 rudder 4862
+at 3447 stick 12000 12000
+at 3447 rudder 0
+at 3451 stick 0 1161
+at 3451 rudder 5518
+at 3453 stick 0 -2140
+at 3453 rudder 5403
+at 3455 stick 12000 0
+at 3455 rudder 0
+at 3459 stick 0 -12000
+at 3471 stick 0 -2716
+at 3471 rudder 841
+at 3473 stick 0 626
+at 3473 rudder -13
+at 3475 stick 0 1825
+at 3475 rudder -841
+at 3477 stick 0 1282
+at 3477 rudder -1851
+at 3479 stick 0 -229
+at 3479 rudder -2907
+at 3481 stick 0 -2323
+at 3481 rudder -3488
+at 3483 stick 0 -5295
+at 3483 rudder -4240
+at 3485 stick -12000 0
+at 3485 rudder 0
+at 3489 stick 0 -12000
+at 3497 stick -12000 0
+at 3503 stick 0 -12000
+at 3515 stick -12000 0
+at 3523 stick 0 -12000
+at 3535 stick -12000 0
+at 3537 stick 0 -2836
+at 3537 rudder -2508
+at 3539 stick 0 -1378
+at 3539 rudder -2115
+at 3541 stick 0 -1747
+at 3541 rudder -1589
+at 3543 stick 0 -2726
+at 3543 rudder -1137
+at 3545 stick 0 -4063
+at 3545 rudder -488
+at 3547 stick 0 -5315
+at 3547 rudder 116
+at 3549 stick 0 -6957
+at 3549 rudder 897
+at 3551 stick 0 -12000
+at 3551 rudder 0
+at 3559 stick 12000 0
+at 3571 stick 0 -12000
+at 3583 stick 0 -4306
+at 3583 rudder 6
+at 3585 stick 0 -286
+at 3585 rudder -843
+at 3587 stick 0 239
+at 3587 rudder -2136
+at 3589 stick 0 -391
+at 3589 rudder -3167
+at 3591 stick 0 -2196
+at 3591 rudder -4393
+at 3593 stick -12000 0
+at 3593 rudder 0
+at 3601 stick 0 -12000
+at 3611 stick -12000 0
+at 3617 stick 0 -12000
+at 3629 stick -12000 0
+at 3637 stick 0 -12000
+at 3645 stick 0 -7205
+at 3645 rudder -401
+at 3647 stick 0 -5832
+at 3647 rudder 633
+at 3649 stick 0 -5941
+at 3649 rudder 1153
+at 3651 stick 0 -7305
+at 3651 rudder 1863
+at 3653 stick 0 -12000
+at 3653 rudder 0
+at 3659 stick 12000 0
+at 3667 stick 0 -12000
+at 3675 stick 12000 0
+at 3683 stick 0 -12000
+at 3695 stick 12000 0
+at 3697 stick 0 -1173
+at 3697 rudder 4642
+at 3699 stick 0 -252
+at 3699 rudder 4202
+at 3701 stick 0 -206
+at 3701 rudder 4033
+at 3703 stick 0 -1821
+at 3703 rudder 3910
+at 3705 stick 0 -3691
+at 3705 rudder 3723
+at 3707 stick 0 -6027
+at 3707 rudder 3491
+at 3709 stick 0 -12000
+at 3709 rudder 0
+at 3717 stick 0 -7494
+at 3717 rudder 1996
+at 3719 stick 0 -6238
+at 3719 rudder 1410
+at 3721 stick 0 -7210
+at 3721 rudder 964
+at 3723 stick 0 -12000
+at 3723 rudder 0
+at 3733 stick 0 -4419
+at 3733 rudder -1707
+at 3735 stick 0 -2258
+at 3735 rudder -2305
+at 3737 stick 0 -2022
+at 3737 rudder -3070
+at 3739 stick 0 -3040
+at 3739 rudder -3450
+at 3741 stick 0 -5254
+at 3741 rudder -4008
+at 3743 stick -12000 0
+at 3743 rudder 0
+at 3747 stick 0 -12000
+at 3755 stick -12000 0
+at 3761 stick 0 -12000
+at 3773 stick -12000 0
+at 3783 stick 0 -12000
+at 3795 stick 0 -2212
+at 3795 rudder 3450
+at 3797 stick 0 3369
+at 3797 rudder 4468
+at 3799 stick 12000 12000
+at 3799 rudder 0
+at 3807 stick 12000 0
+at 3811 stick 0 -12000
+at 3825 stick 0 -7496
+at 3825 rudder 945
+at 3827 stick 0 -2391
+at 3827 rudder 375
+at 3829 stick 0 -147
+at 3829 rudder -54
+at 3831 stick 0 -135
+at 3831 rudder -666
+at 3833 stick 0 -1589
+at 3833 rudder -871
+at 3835 stick 0 -3854
+at 3835 rudder -1184
+at 3837 stick 0 -6225
+at 3837 rudder -1556
+at 3839 stick 0 -12000
+at 3839 rudder 0
+at 3849 stick 0 -4250
+at 3849 rudder -4195
+at 3851 stick 0 -1915
+at 3851 rudder -4799
+at 3853 stick 0 -1881
+at 3853 rudder -5593
+at 3855 stick -12000 0
+at 3855 rudder 0
+at 3863 stick 0 -12000
+at 3875 stick -12000 0
+at 3877 stick 0 -2030
+at 3877 rudder -5232
+at 3879 stick 0 -1303
+at 3879 rudder -5182
+at 3881 stick 0 -2351
+at 3881 rudder -5161
+at 3883 stick 0 -3807
+at 3883 rudder -5045
+at 3885 stick -12000 0
+at 3885 rudder 0
+at 3889 stick 0 -12000
+at 3901 stick 0 -1444
+at 3901 rudder -456
+at 3903 stick 0 3056
+at 3903 rudder 57
+at 3905 stick 0 4893
+at 3905 rudder 148
+at 3907 stick 0 5181
+at 3907 rudder 302
+at 3909 stick 0 4568
+at 3909 rudder 675
+at 3911 stick 0 3792
+at 3911 rudder 1103
+at 3913 stick 0 2973
+at 3913 rudder 1583
+at 3915 stick 0 1888
+at 3915 rudder 2079
+at 3917 stick 0 582
+at 3917 rudder 2649
+at 3919 stick 0 -1029
+at 3919 rudder 3306
+at 3921 stick 0 -2923
+at 3921 rudder 4005
+at 3923 stick 12000 0
+at 3923 rudder 0
+at 3929 stick 0 -12000
+at 3939 stick 12000 0
+at 3947 stick 0 -12000
+at 3959 stick 0 -2314
+at 3959 rudder 2921
+at 3961 stick 0 1367
+at 3961 rudder 2254
+at 3963 stick 0 2321
+at 3963 rudder 1654
+at 3965 stick 0 1959
+at 3965 rudder 934
+at 3967 stick 0 -158
+at 3967 rudder 520
+at 3969 stick 0 -2529
+at 3969 rudder -3
+at 3971 stick 0 -5184
+at 3971 rudder -579
+at 3973 stick 0 -7588
+at 3973 rudder -1093
+at 3975 stick 0 -12000
+at 3975 rudder 0
+at 3985 stick -12000 0
+at 3995 stick 0 -12000
+at 4009 stick 0 -1333
+at 4009 rudder -2509
+at 4011 stick 0 3997
+at 4011 rudder -1907
+at 4013 stick 0 6288
+at 4013 rudder -1821
+at 4015 stick 0 6931
+at 4015 rudder -1907
+at 4017 stick 0 6319
+at 4017 rudder -1708
+at 4019 stick 0 5108
+at 4019 rudder -1349
+at 4021 stick 0 3897
+at 4021 rudder -992
+at 4023 stick 0 2449
+at 4023 rudder -540
+at 4025 stick 0 515
+at 4025 rudder -7
+at 4027 stick 0 -1325
+at 4027 rudder 482
+at 4029 stick 0 -3236
+at 4029 rudder 1006
+at 4031 stick 0 -5568
+at 4031 rudder 1328
+at 4033 stick 0 -12000
+at 4033 rudder 0
+at 4041 stick 12000 0
+at 4049 stick 0 -12000
+at 4059 stick 12000 0
+at 4061 stick 0 -4803
+at 4061 rudder 4784
+at 4063 stick 12000 0
+at 4063 rudder 0
+at 4069 stick 0 -12000
+at 4079 stick 0 -6733
+at 4079 rudder 1644
+at 4081 stick 0 -4290
+at 4081 rudder 855
+at 4083 stick 0 -4492
+at 4083 rudder 27
+at 4085 stick 0 -6068
+at 4085 rudder -1000
+at 4087 stick 0 -12000
+at 4087 rudder 0
+at 4095 stick -12000 0
+at 4103 stick 0 -12000
+at 4113 stick -12000 0
+at 4119 stick 0 -12000
+at 4131 stick -12000 0
+at 4133 stick 0 -3346
+at 4133 rudder -4314
+at 4135 stick 0 -2190
+at 4135 rudder -4001
+at 4137 stick 0 -2716
+at 4137 rudder -3978
+at 4139 stick 0 -4005
+at 4139 rudder -3745
+at 4141 stick 0 -6287
+at 4141 rudder -3323
+at 4143 stick 0 -12000
+at 4143 rudder 0
+at 4153 stick 0 -4263
+at 4153 rudder -1407
+at 4155 stick 0 -916
+at 4155 rudder -1206
+at 4157 stick 0 -30
+at 4157 rudder -659
+at 4159 stick 0 -815
+at 4159 rudder -380
+at 4161 stick 0 -2148
+at 4161 rudder 48
+at 4163 stick 0 -4312
+at 4163 rudder 669
+at 4165 stick 0 -6563
+at 4165 rudder 1324
+at 4167 stick 0 -12000
+at 4167 rudder 0
+at 4175 stick 12000 0
+at 4177 stick 0 -4924
+at 4177 rudder 4573
+at 4179 stick 12000 0
+at 4179 rudder 0
+at 4187 stick 0 -12000
+at 4195 stick 12000 0
+at 4199 stick 0 -12000
+at 4209 stick 0 -3964
+at 4209 rudder 2497
+at 4211 stick 0 -1449
+at 4211 rudder 1982
+at 4213 stick 0 -1002
+at 4213 rudder 1301
+at 4215 stick 0 -2066
+at 4215 rudder 890
+at 4217 stick 0 -4096
+at 4217 rudder 622
+at 4219 stick 0 -6451
+at 4219 rudder 307
+at 4221 stick 0 -12000
+at 4221 rudder 0
+at 4231 stick 0 -5704
+at 4231 rudder -2728
+at 4233 stick 0 -3352
+at 4233 rudder -3361
+at 4235 stick 0 -3305
+at 4235 rudder -4131
+at 4237 stick 0 -4223
+at 4237 rudder -4781
+at 4239 stick -12000 0
+at 4239 rudder 0
+at 4245 stick 0 -12000
+at 4257 stick -12000 0
+at 4267 stick 0 -12000
+at 4279 stick 0 -1745
+at 4279 rudder 2726
+at 4281 stick 0 2923
+at 4281 rudder 3415
+at 4283 stick 0 5097
+at 4283 rudder 4334
+at 4285 stick 12000 12000
+at 4285 rudder 0
+at 4291 stick 12000 0
+at 4297 stick 0 -12000
+at 4311 stick 0 -387
+at 4311 rudder 440
+at 4313 stick 0 4364
+at 4313 rudder -421
+at 4315 stick 0 6105
+at 4315 rudder -913
+at 4317 stick 0 5853
+at 4317 rudder -1683
+at 4319 stick 0 5115
+at 4319 rudder -2270
+at 4321 stick 0 3283
+at 4321 rudder -2755
+at 4323 stick 0 1002
+at 4323 rudder -3341
+at 4325 stick 0 -1411
+at 4325 rudder -3926
+at 4327 stick 0 -3978
+at 4327 rudder -4562
+at 4329 stick -12000 0
+at 4329 rudder 0
+at 4333 stick 0 -12000
+at 4341 stick -12000 0
+at 4345 stick 0 -12000
+at 4355 stick -12000 0
+at 4361 stick 0 -12000
+at 4373 stick -12000 0
+at 4383 btn FIRE
+at 4383 btn FIRE 0
+at 4383 stick 0 -12000
+at 4393 stick 0 -3722
+at 4393 rudder 3692
+at 4395 stick 0 -155
+at 4395 rudder 4976
+at 4397 stick 0 1661
+at 4397 rudder 5708
+at 4399 stick 12000 12000
+at 4399 rudder 0
+at 4405 stick 12000 0
+at 4411 stick 0 -12000
+at 4423 btn TARGET
+at 4423 stick 0 12000
+at 4455 stick -12000 12000
+at 4459 stick -12000 0
+at 4461 stick 0 -12000
+at 4479 stick -12000 0
+at 4487 stick 0 -12000
+at 4503 stick 0 1061
+at 4503 rudder 911
+at 4505 stick 0 7458
+at 4505 rudder 1131
+at 4507 stick 0 12000
+at 4507 rudder 0
+at 4511 stick 0 7445
+at 4511 rudder 794
+at 4513 stick 0 4632
+at 4513 rudder 310
+at 4515 stick 0 1757
+at 4515 rudder -110
+at 4517 stick 0 -178
+at 4517 rudder -844
+at 4519 stick 0 -2928
+at 4519 rudder -1921
+at 4521 stick 0 -5987
+at 4521 rudder -3311
+at 4523 stick -12000 0
+at 4523 rudder 0
+at 4527 btn FIRE
+at 4527 btn FIRE 0
+at 4533 stick 0 -12000
+at 4535 stick -12000 0
+at 4549 stick 12000 0
+at 4551 stick 12000 12000
+at 4555 stick -12000 12000
+at 4563 stick 12000 12000
+at 4579 btn TARGET
+at 4595 stick -12000 12000
+at 4599 stick 0 12000
+at 4605 btn TARGET
+at 4621 stick -12000 12000
+at 4625 stick -12000 0
+at 4629 stick 0 -12000
+at 4631 btn TARGET
+at 4645 stick -12000 0
+at 4651 stick 0 -12000
+at 4657 btn TARGET
+at 4667 stick -12000 0
+at 4671 stick 0 -12000
+at 4683 btn TARGET
+at 4691 stick -12000 0
+at 4693 stick -12000 12000
+at 4701 stick -12000 0
+at 4703 stick 0 -12000
+at 4709 btn TARGET
+at 4715 stick 0 -4542
+at 4715 rudder 4897
+at 4717 stick 0 992
+at 4717 rudder 5352
+at 4719 stick 12000 12000
+at 4719 rudder 0
+at 4725 stick 12000 0
+at 4731 stick 0 -12000
+at 4735 btn TARGET
+at 4741 stick 0 -3186
+at 4741 rudder -1041
+at 4743 stick 0 1416
+at 4743 rudder -1861
+at 4745 stick 0 3941
+at 4745 rudder -2433
+at 4747 stick 0 4767
+at 4747 rudder -3434
+at 4749 stick 0 4835
+at 4749 rudder -4249
+at 4751 stick -12000 12000
+at 4751 rudder 0
+at 4757 stick -12000 0
+at 4761 btn TARGET
+at 4763 stick 0 -12000
+at 4773 stick -12000 0
+at 4783 stick 12000 12000
+at 4787 btn TARGET
+at 4797 stick -12000 12000
+at 4879 stick 12000 12000
+at 4881 stick 0 12000
+at 4905 stick 12000 12000
+at 4907 stick 12000 0
+at 4909 stick 0 -12000
+at 4927 stick 12000 0
+at 4935 stick 0 -12000
+at 4953 stick 12000 0
+at 4955 stick 0 -467
+at 4955 rudder 4394
+at 4957 stick 0 -457
+at 4957 rudder 3642
+at 4959 stick 0 -2595
+at 4959 rudder 2735
+at 4961 stick 0 -6798
+at 4961 rudder 2133
+at 4963 stick 0 -12000
+at 4963 rudder 0
+at 4979 stick 0 -2452
+at 4979 rudder -4701
+at 4981 stick 0 1063
+at 4981 rudder -5547
+at 4983 stick -12000 12000
+at 4983 rudder 0
+at 4985 stick -12000 0
+at 4991 stick 0 -12000
+at 5009 stick 0 -4302
+at 5009 rudder -1058
+at 5011 stick 0 881
+at 5011 rudder -748
+at 5013 stick 0 1029
+at 5013 rudder -433
+at 5015 stick 0 -1065
+at 5015 rudder -232
+at 5017 stick 0 -5155
+at 5017 rudder 143
+at 5019 stick 0 -12000
+at 5019 rudder 0
+at 5035 stick 0 -1881
+at 5035 rudder 3319
+at 5037 stick 0 2155
+at 5037 rudder 3737
+at 5039 stick 0 1346
+at 5039 rudder 4107
+at 5041 stick 0 -1912
+at 5041 rudder 4376
+at 5043 stick 12000 0
+at 5043 rudder 0
+at 5047 stick 0 -12000
+at 5063 stick 12000 0
+at 5065 stick 0 -5133
+at 5065 rudder 4176
+at 5067 stick 12000 0
+at 5067 rudder 0
+at 5069 stick 0 -12000
+at 5083 stick 0 -5610
+at 5083 rudder 1554
+at 5085 stick 0 -3819
+at 5085 rudder 1081
+at 5087 stick 0 -5617
+at 5087 rudder 668
+at 5089 stick 0 -12000
+at 5089 rudder 0
+at 5103 stick 0 -6167
+at 5103 rudder -2354
+at 5105 stick 0 -4031
+at 5105 rudder -2776
+at 5107 stick 0 -5867
+at 5107 rudder -3493
+at 5109 stick 0 -12000
+at 5109 rudder 0
+at 5121 stick -12000 0
+at 5127 stick 0 -12000
+at 5145 stick 0 36
+at 5145 rudder -3205
+at 5147 stick 0 5122
+at 5147 rudder -2765
+at 5149 stick 0 5156
+at 5149 rudder -2468
+at 5151 stick 0 2960
+at 5151 rudder -2324
+at 5153 stick 0 -1254
+at 5153 rudder -2059
+at 5155 stick 0 -6281
+at 5155 rudder -1752
+at 5157 stick 0 -12000
+at 5157 rudder 0
+at 5173 stick 0 -6182
+at 5173 rudder 842
+at 5175 stick 0 -2921
+at 5175 rudder 1224
+at 5177 stick 0 -4133
+at 5177 rudder 1293
+at 5179 stick 0 -7529
+at 5179 rudder 1500
+at 5181 stick 0 -12000
+at 5181 rudder 0
+at 5197 stick 0 -5161
+at 5197 rudder 3429
+at 5199 stick 0 -1638
+at 5199 rudder 3845
+at 5201 stick 0 -2144
+at 5201 rudder 3904
+at 5203 stick 0 -5022
+at 5203 rudder 4097
+at 5205 stick 12000 0
+at 5205 rudder 0
+at 5207 stick 0 -12000
+at 5223 stick 0 -3677
+at 5223 rudder 3853
+at 5225 stick 0 616
+at 5225 rudder 3825
+at 5227 stick 0 342
+at 5227 rudder 3862
+at 5229 stick 0 -1927
+at 5229 rudder 3930
+at 5231 stick 12000 0
+at 5231 rudder 0
+at 5233 stick 0 -12000
+at 5249 stick 0 947
+at 5249 rudder 2647
+at 5251 stick 0 4526
+at 5251 rudder 2508
+at 5253 stick 0 3682
+at 5253 rudder 2516
+at 5255 stick 0 627
+at 5255 rudder 2443
+at 5257 stick 0 -3457
+at 5257 rudder 2335
+at 5259 stick 0 -12000
+at 5259 rudder 0
+at 5275 stick 0 -1865
+at 5275 rudder 1328
+at 5277 stick 0 1254
+at 5277 rudder 708
+at 5279 stick 0 348
+at 5279 rudder 387
+at 5281 stick 0 -3200
+at 5281 rudder 276
+at 5283 stick 0 -7967
+at 5283 rudder 117
+at 5285 stick 0 -12000
+at 5285 rudder 0
+at 5301 stick 0 -7578
+at 5301 rudder -1697
+at 5303 stick 0 -4674
+at 5303 rudder -1580
+at 5305 stick 0 -5769
+at 5305 rudder -1611
+at 5307 stick 0 -12000
+at 5307 rudder 0
+at 5323 stick 0 -1462
+at 5323 rudder -2623
+at 5325 stick 0 1910
+at 5325 rudder -3220
+at 5327 stick 0 876
+at 5327 rudder -3228
+at 5329 stick 0 -2326
+at 5329 rudder -3320
+at 5331 stick 0 -6503
+at 5331 rudder -3450
+at 5333 stick 0 -12000
+at 5333 rudder 0
+at 5349 stick -12000 0
+at 5351 stick 0 -683
+at 5351 rudder -5894
+at 5353 stick -12000 12000
+at 5353 rudder 0
+at 5355 stick -12000 0
+at 5359 stick 0 -12000
+at 5375 stick 0 -3873
+at 5375 rudder -1106
+at 5377 stick 0 -305
+at 5377 rudder -403
+at 5379 stick 0 -1011
+at 5379 rudder 337
+at 5381 stick 0 -4027
+at 5381 rudder 736
+at 5383 stick 0 -12000
+at 5383 rudder 0
+at 5397 stick 12000 0
+at 5403 stick 0 -12000
+at 5419 stick 0 -4727
+at 5419 rudder 2391
+at 5421 stick 0 -1783
+at 5421 rudder 1890
+at 5423 stick 0 -2747
+at 5423 rudder 1267
+at 5425 stick 0 -6277
+at 5425 rudder 789
+at 5427 stick 0 -12000
+at 5427 rudder 0
+at 5443 stick 0 -3839
+at 5443 rudder -2448
+at 5445 stick 0 -367
+at 5445 rudder -2883
+at 5447 stick 0 -863
+at 5447 rudder -3459
+at 5449 stick 0 -3951
+at 5449 rudder -3909
+at 5451 stick -12000 0
+at 5451 rudder 0
+at 5453 stick 0 -12000
+at 5467 stick -12000 0
+at 5473 stick 0 -12000
+at 5491 stick 0 1674
+at 5491 rudder -2149
+at 5493 stick 0 6415
+at 5493 rudder -1978
+at 5495 stick 0 5751
+at 5495 rudder -1618
+at 5497 stick 0 2446
+at 5497 rudder -1325
+at 5499 stick 0 -2099
+at 5499 rudder -927
+at 5501 stick 0 -12000
+at 5501 rudder 0
+at 5519 stick 0 903
+at 5519 rudder 3222
+at 5521 stick 0 6015
+at 5521 rudder 3685
+at 5523 stick 0 5602
+at 5523 rudder 4211
+at 5525 stick 0 2657
+at 5525 rudder 4667
+at 5527 stick 0 -1611
+at 5527 rudder 5252
+at 5529 stick 12000 0
+at 5529 rudder 0
+at 5533 stick 0 -12000
+at 5549 stick 12000 0
+at 5557 stick 0 -12000
+at 5571 stick 0 -5625
+at 5571 rudder -3363
+at 5573 stick 0 -2342
+at 5573 rudder -4196
+at 5575 stick 0 -2591
+at 5575 rudder -5260
+at 5577 stick -12000 0
+at 5577 rudder 0
+at 5583 stick 0 -12000
+at 5597 btn FIRE
+at 5597 btn FIRE 0
+at 5601 btn SELECT_WEAPON
+at 5601 btn SELECT_WEAPON 0
+at 5601 stick -12000 0
+at 5607 throttle 14000
+at 5609 stick 0 -12000
+at 5613 stick -12000 0
+at 5615 stick -12000 12000
+at 5617 stick 12000 12000
+at 5623 throttle 32000
+at 5625 stick -12000 12000
+at 5627 stick 12000 12000
+at 5629 stick 0 12000
+at 5651 stick 12000 12000
+at 5659 stick 12000 0
+at 5667 stick -12000 0
+at 5675 stick 12000 0
+at 5679 stick 12000 12000
+at 5687 stick -12000 12000
+at 5689 stick 12000 12000
+at 5703 stick 0 12000
+at 5747 stick 12000 12000
+at 5755 stick 12000 0
+at 5757 throttle 14000
+at 5769 stick 12000 12000
+at 5775 stick -12000 12000
+at 5777 throttle 32000
+at 5779 stick 12000 12000
+at 5807 stick 0 12000
+at 5833 stick -12000 12000
+at 5843 stick -12000 0
+at 5851 stick 12000 0
+at 5855 stick 12000 12000
+at 5855 throttle 14000
+at 5859 stick -12000 12000
+at 5861 throttle 32000
+at 5889 stick 12000 12000
+at 5895 stick 0 12000
+at 5913 stick 12000 12000
+at 5923 stick 12000 0
+at 5929 stick -12000 0
+at 5935 stick -12000 12000
+at 5937 stick 12000 12000
+at 5941 stick -12000 12000
+at 6029 stick 12000 12000
+at 6033 stick 0 12000
+at 6063 stick 12000 12000
+at 6077 stick 0 12000
+at 6085 stick 12000 12000
+at 6113 stick -12000 12000
+at 6137 stick 0 12000
+at 6147 stick -12000 12000
+at 6169 throttle 14000
+at 6189 stick 12000 12000
+at 6193 throttle 32000
+at 6217 stick -12000 12000
+at 6227 throttle 14000
+at 6255 stick 0 12000
+at 6263 stick 12000 12000
+at 6271 stick 12000 0
+at 6277 throttle 32000
+at 6279 stick 12000 12000
+at 6285 stick -12000 12000
+at 6297 stick 12000 12000
+at 6301 stick -12000 12000
+at 6313 stick 12000 12000
+at 6319 stick -12000 12000
+at 6333 stick 12000 12000
+at 6339 stick -12000 12000
+at 6347 stick 12000 12000
+at 6355 stick -12000 12000
+at 6363 stick 12000 12000
+at 6371 stick -12000 12000
+at 6379 stick 12000 12000
+at 6385 stick -12000 12000
+at 6393 stick 12000 12000
+at 6397 stick -12000 12000
+at 6405 stick 12000 12000
+at 6407 stick -12000 12000
+at 6413 stick 12000 12000
+at 6415 stick -12000 12000
+at 6423 stick 12000 12000
+at 6427 stick -12000 12000
+at 6459 throttle 14000
+at 6469 stick 12000 12000
+at 6489 stick -12000 12000
+at 6503 throttle 32000
+at 6513 stick 12000 12000
+at 6857 stick 0 12000
+at 6889 throttle 14000
+at 6897 stick -12000 12000
+at 6909 throttle 32000
+at 6915 stick 0 12000
+at 6923 stick -12000 12000
+at 7021 stick 12000 12000
+at 7025 stick 0 12000
+at 7053 stick -12000 12000
+at 7055 stick 0 -12000
+at 7065 stick -12000 0
+at 7073 stick 0 -12000
+at 7077 stick -12000 0
+at 7089 stick 12000 0
+at 7091 stick 12000 12000
+at 7101 stick -12000 12000
+at 7103 stick 12000 12000
+at 7129 stick -12000 12000
+at 7145 stick 0 12000
+at 7165 stick -12000 12000
+at 7181 stick -12000 0
+at 7185 stick -12000 12000
+at 7189 stick 12000 12000
+at 7201 stick -12000 12000
+at 7211 stick 0 12000
+at 7239 stick 12000 12000
+at 7267 stick -12000 12000
+at 7269 stick 12000 12000
+at 7339 stick -12000 12000
+at 7347 throttle 14000
+at 7367 stick 0 12000
+at 7379 stick 12000 12000
+at 7387 stick 12000 0
+at 7395 stick -12000 0
+at 7399 throttle 32000
+at 7403 stick -12000 12000
+at 7409 stick 12000 12000
+at 7417 stick -12000 12000
+at 7423 stick 0 12000
+at 7445 stick -12000 12000
+at 7451 stick -12000 0
+at 7455 stick 0 -12000
+at 7457 stick -12000 0
+at 7467 stick 12000 0
+at 7473 stick -12000 0
+at 7477 stick -12000 12000
+at 7481 stick 12000 12000
+at 7485 stick -12000 12000
+at 7495 stick 12000 12000
+at 7497 stick -12000 12000
+at 7503 stick 0 12000
+at 7525 stick -12000 12000
+at 7535 stick -12000 0
+at 7543 stick 12000 0
+at 7551 stick -12000 0
+at 7553 stick -12000 12000
+at 7557 stick 12000 12000
+at 7563 stick -12000 12000
+at 7571 stick 0 12000
+at 7597 stick -12000 12000
+at 7599 throttle 14000
+at 7601 stick -12000 0
+at 7607 stick -12000 12000
+at 7617 throttle 32000
+at 7631 stick 12000 12000
+at 7749 stick -12000 12000
+at 7753 stick 0 12000
+at 7755 throttle 14000
+at 7771 stick -12000 12000
+at 7785 throttle 32000
+at 7809 stick 12000 12000
+at 7945 stick 0 12000
+at 7953 stick 12000 12000
+at 7971 stick 12000 0
+at 7973 stick 12000 12000
+at 7977 stick -12000 12000
+at 7989 stick 12000 12000
+at 8021 stick -12000 12000
+at 8023 stick 0 12000
+at 8055 throttle 14000
+at 8069 throttle 32000
+at 8077 stick -12000 12000
+at 8081 stick -12000 0
+at 8085 stick 0 -12000
+at 8095 btn FIRE
+at 8095 btn FIRE 0
+at 8099 stick 0 251
+at 8099 rudder -2571
+at 8101 stick 0 12000
+at 8101 rudder 0
+at 8115 stick 0 3608
+at 8115 rudder 4272
+at 8117 stick 0 -2653
+at 8117 rudder 4876
+at 8119 stick 12000 0
+at 8119 rudder 0
+at 8127 btn TARGET
+at 8127 stick 0 -12000
+at 8139 stick 0 -4031
+at 8139 rudder 3769
+at 8141 stick 0 -143
+at 8141 rudder 2214
+at 8143 stick 0 477
+at 8143 rudder 104
+at 8145 stick 0 -104
+at 8145 rudder -1945
+at 8147 stick 0 -1380
+at 8147 rudder -4682
+at 8149 stick -12000 0
+at 8149 rudder 0
+at 8153 btn TARGET
+at 8159 throttle 14000
+at 8161 stick 0 -12000
+at 8167 stick -12000 0
+at 8177 stick 12000 0
+at 8179 btn TARGET
+at 8181 throttle 32000
+at 8183 stick -12000 0
+at 8187 stick -12000 12000
+at 8191 stick 12000 12000
+at 8197 stick -12000 12000
+at 8205 btn TARGET
+at 8207 stick 12000 12000
+at 8213 stick 0 12000
+at 8231 btn TARGET
+at 8245 stick 12000 12000
+at 8247 stick 0 12000
+at 8249 stick 0 6000
+at 8271 btn TARGET
+at 8271 stick 0 12000
+at 8299 stick 12000 0
+at 8315 stick -12000 0
+at 8325 stick 12000 0
+at 8333 stick -12000 0
+at 8339 stick 12000 12000
+at 8343 stick -12000 12000
+at 8347 stick 12000 12000
+at 8351 stick -12000 12000
+at 8355 stick 12000 12000
+at 8361 stick -12000 12000
+at 8365 stick 12000 12000
+at 8367 stick 0 12000
+at 8393 stick 12000 12000
+at 8395 stick 12000 0
+at 8399 stick 0 -12000
+at 8411 stick 12000 0
+at 8423 stick -12000 0
+at 8431 stick 12000 0
+at 8437 stick -12000 0
+at 8443 stick 12000 0
+at 8449 stick -12000 12000
+at 8455 stick 12000 12000
+at 8461 stick -12000 12000
+at 8469 stick 12000 12000
+at 8471 stick 0 12000
+at 8497 stick 0 -12000
+at 8515 stick -12000 0
+at 8523 stick 0 -12000
+at 8541 stick 0 -2490
+at 8541 rudder -4263
+at 8543 stick 0 2772
+at 8543 rudder -3870
+at 8545 stick 0 3378
+at 8545 rudder -3315
+at 8547 stick 0 875
+at 8547 rudder -2950
+at 8549 stick 0 -3228
+at 8549 rudder -2360
+at 8551 stick 0 -12000
+at 8551 rudder 0
+at 8567 stick 0 -2592
+at 8567 rudder 2858
+at 8569 stick 0 617
+at 8569 rudder 3413
+at 8571 stick 0 -638
+at 8571 rudder 3959
+at 8573 stick 0 -4319
+at 8573 rudder 4528
+at 8575 stick 12000 0
+at 8575 rudder 0
+at 8577 stick 0 -12000
+at 8591 stick 12000 0
+at 8595 stick 0 -12000
+at 8609 stick 12000 0
+at 8615 stick 0 -12000
+at 8631 stick 0 -4266
+at 8631 rudder -2343
+at 8633 stick 0 23
+at 8633 rudder -3159
+at 8635 stick 0 270
+at 8635 rudder -3944
+at 8637 stick 0 -2298
+at 8637 rudder -4975
+at 8639 stick -12000 0
+at 8639 rudder 0
+at 8643 stick 0 -12000
+at 8655 stick -12000 0
+at 8661 stick 0 -12000
+at 8679 stick -12000 0
+at 8681 stick 0 -2988
+at 8681 rudder -5354
+at 8683 stick 0 -3113
+at 8683 rudder -4937
+at 8685 stick -12000 0
+at 8685 rudder 0
+at 8687 stick 0 -12000
+at 8705 stick 0 -330
+at 8705 rudder 3102
+at 8707 stick 0 3874
+at 8707 rudder 4335
+at 8709 stick 12000 12000
+at 8709 rudder 0
+at 8713 stick 12000 0
+at 8717 stick 0 -12000
+at 8737 stick 0 2470
+at 8737 rudder -1402
+at 8739 stick 0 12000
+at 8739 rudder 0
+at 8747 btn FIRE
+at 8747 btn FIRE 0
+at 8749 stick 0 4400
+at 8749 rudder -3694
+at 8751 stick 0 1861
+at 8751 rudder -4067
+at 8753 btn SELECT_WEAPON
+at 8753 btn SELECT_WEAPON 0
+at 8753 stick 0 2663
+at 8753 rudder -4755
+at 8755 stick -12000 12000
+at 8755 rudder 0
+at 8759 stick 0 12000
+at 8759 throttle 14000
+at 8777 throttle 32000
+at 8785 stick 12000 0
+at 8787 stick 0 -12000
+at 8797 stick 12000 0
+at 8805 stick 0 -12000
+at 8815 stick 12000 0
+at 8819 stick 0 -12000
+at 8849 stick -12000 0
+at 8851 stick -12000 12000
+at 8859 stick -12000 0
+at 8865 stick 0 -12000
+at 8869 stick -12000 0
+at 8879 stick 12000 0
+at 8885 stick -12000 0
+at 8887 stick -12000 12000
+at 8891 stick 12000 12000
+at 8895 stick -12000 12000
+at 8901 stick 12000 12000
+at 8905 stick -12000 12000
+at 8913 stick 0 12000

@@ -1,0 +1,71 @@
+# note 08 section 9: carrier qualification (menu item 5, mode 9), a successful arrested landing.
+# Prerequisite: extracted/captures/qual-prompt-rw.vasnap (flow-qual-prompt-rw.txt). Run with
+#   build/vamiga-ref/ref --rw --rom disks/kick12.rom --adf extracted/scratch/q/zero.adf --script <this> --log extracted/captures/logs/flow-qual-landing-rw.txt
+# The launch is flown (F10 on the catapult). The approach is staged with poke, as the rig example E6 of note 05: the player is put 260000 units
+# astern of the carrier on the deck line (x unchanged = carrier x + 11264, heading 0), y = 37472, S = W = 1700, T = 40, hook down (W2 bit 0x8000).
+restore extracted/captures/qual-prompt-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt D631
+wait 14
+key SPACE
+wait 8
+key F10 0.5
+wait 3
+freeze
+log STAGE
+stepuntil F:4B240 1 eq 0 600
+peek F:4B23C 128 pre
+poke F:4B254 4 37472
+poke F:4B258 4 273942624
+poke F:4B2A8 2 1700
+poke F:4B2AA 2 1700
+poke F:4B267 1 40
+poke F:4B23E 2 0xA002
+peek F:4A94F 1 allow
+stepuntil F:4B23E 2 and 0x4000 200
+peek F:4B23C 128 caught
+peek F:4A850 1 res
+peek F:4A98A 2 v98a
+frame extracted/captures/logs/qual-landing-caught.ppm
+stepuntil F:4B2AA 2 eq 0 1500
+peek F:4B23C 128 stopped
+peek F:4A850 1 res
+peek F:4A98A 2 v98a
+peek F:4A8E2 1 e2
+peek F:1A6BC 4 state
+frame extracted/captures/logs/qual-landing-stopped.ppm
+stepuntil F:4A850 1 ne 0 600
+peek F:4A850 1 res
+peek F:4A8E2 1 e2
+peek F:4A978 2 v978
+peek F:1A6BC 4 state
+peek F:4A802 24 txt
+peek F:4A8E4 1 e4
+peek R:C54498 78 rec
+frame extracted/captures/logs/qual-landing-ok0.ppm
+step 25
+frame extracted/captures/logs/qual-landing-ok25.ppm
+peek F:1A6BC 4 state
+peek F:4A802 24 txt
+step 50
+frame extracted/captures/logs/qual-landing-ok75.ppm
+peek F:1A6BC 4 state
+peek F:4A802 24 txt
+peek F:4AB8E 2 cnt
+step 100
+frame extracted/captures/logs/qual-landing-ok175.ppm
+peek F:1A6BC 4 state
+peek F:4A802 24 txt
+peek F:4AB8E 2 cnt
+peek F:4A95E 1 mode
+peek F:4A8E3 1 e3
+peek R:C54498 78 rec2
+thaw
+wait 6
+freeze
+savedisk extracted/captures/logs/qual-landing-rw.adf
+peek F:1A6BC 4 state
+peek F:4A802 24 txt
+peek F:4AB8E 2 cnt
+peek F:4A87D 1 dirty
+frame extracted/captures/logs/qual-landing-end.ppm

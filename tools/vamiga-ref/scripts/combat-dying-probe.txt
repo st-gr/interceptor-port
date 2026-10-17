@@ -1,0 +1,23 @@
+# note 07 section 5: the airborne snapshot's player record and the variables the dying staging needs
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4B23C 512 rec0
+peek F:4B43C 512 rec1
+peek F:4B63C 256 rec2
+peek F:4BE3C 256 rec7
+peek F:4C23C 128 rec8
+peek F:4C43C 128 rec9
+peek F:4C63C 128 rec10
+peek F:4C83C 128 rec11
+peek F:4CA3C 128 rec12
+peek F:4CC3C 128 rec13
+peek F:4CE3C 128 rec14
+peek F:4D03C 128 rec15
+peek F:4A984 2 v984
+peek F:4A846 1 v846
+peek F:4A95E 1 mode
+peek F:4A963 1 kills
+peek F:4A992 2 frame
+peek F:4A994 2 viewed
+peek F:4AA78 2 lock

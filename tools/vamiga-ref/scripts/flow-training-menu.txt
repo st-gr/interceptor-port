@@ -1,0 +1,9 @@
+# Credits -> log-disk prompt -> main menu; saves the snapshot the flow-training-* scripts restore.
+# Prerequisite: extracted/captures/credits.vasnap (boot-to-credits.txt). Writes extracted/captures/training-menu.vasnap.
+restore extracted/captures/credits.vasnap
+key SPACE
+wait 8
+key RETURN
+wait 8
+frame extracted/captures/training-menu.ppm
+snapshot extracted/captures/training-menu.vasnap

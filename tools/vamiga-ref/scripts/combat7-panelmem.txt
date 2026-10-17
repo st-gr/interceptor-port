@@ -1,0 +1,84 @@
+# note 07 12.1 (milestone 7 task 3): the band rows of both pages and the frame, per pass after KP-ENTER.
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key KPENTER 0.12
+runto F:11124 20
+peek F:4A992 2 s0_pass
+peek F:4A8EE 2 s0_panel
+peek F:4AA3C 2 s0_row
+frame extracted/captures/combat7/panel-00.ppm
+peek R:11DA8 800 s0_a0
+peek R:13CE8 800 s0_a1
+peek R:15C28 800 s0_a2
+peek R:17B68 800 s0_a3
+peek R:4CD18 800 s0_b0
+peek R:4EC58 800 s0_b1
+peek R:50B98 800 s0_b2
+peek R:52AD8 800 s0_b3
+runto F:11124 20
+peek F:4A992 2 s1_pass
+peek F:4A8EE 2 s1_panel
+peek F:4AA3C 2 s1_row
+frame extracted/captures/combat7/panel-01.ppm
+peek R:11DA8 800 s1_a0
+peek R:13CE8 800 s1_a1
+peek R:15C28 800 s1_a2
+peek R:17B68 800 s1_a3
+peek R:4CD18 800 s1_b0
+peek R:4EC58 800 s1_b1
+peek R:50B98 800 s1_b2
+peek R:52AD8 800 s1_b3
+runto F:11124 20
+peek F:4A992 2 s2_pass
+peek F:4A8EE 2 s2_panel
+peek F:4AA3C 2 s2_row
+frame extracted/captures/combat7/panel-02.ppm
+peek R:11DA8 800 s2_a0
+peek R:13CE8 800 s2_a1
+peek R:15C28 800 s2_a2
+peek R:17B68 800 s2_a3
+peek R:4CD18 800 s2_b0
+peek R:4EC58 800 s2_b1
+peek R:50B98 800 s2_b2
+peek R:52AD8 800 s2_b3
+runto F:11124 20
+peek F:4A992 2 s3_pass
+peek F:4A8EE 2 s3_panel
+peek F:4AA3C 2 s3_row
+frame extracted/captures/combat7/panel-03.ppm
+peek R:11DA8 800 s3_a0
+peek R:13CE8 800 s3_a1
+peek R:15C28 800 s3_a2
+peek R:17B68 800 s3_a3
+peek R:4CD18 800 s3_b0
+peek R:4EC58 800 s3_b1
+peek R:50B98 800 s3_b2
+peek R:52AD8 800 s3_b3
+runto F:11124 20
+peek F:4A992 2 s4_pass
+peek F:4A8EE 2 s4_panel
+peek F:4AA3C 2 s4_row
+frame extracted/captures/combat7/panel-04.ppm
+peek R:11DA8 800 s4_a0
+peek R:13CE8 800 s4_a1
+peek R:15C28 800 s4_a2
+peek R:17B68 800 s4_a3
+peek R:4CD18 800 s4_b0
+peek R:4EC58 800 s4_b1
+peek R:50B98 800 s4_b2
+peek R:52AD8 800 s4_b3
+runto F:11124 20
+peek F:4A992 2 s5_pass
+peek F:4A8EE 2 s5_panel
+peek F:4AA3C 2 s5_row
+frame extracted/captures/combat7/panel-05.ppm
+peek R:11DA8 800 s5_a0
+peek R:13CE8 800 s5_a1
+peek R:15C28 800 s5_a2
+peek R:17B68 800 s5_a3
+peek R:4CD18 800 s5_b0
+peek R:4EC58 800 s5_b1
+peek R:50B98 800 s5_b2
+peek R:52AD8 800 s5_b3

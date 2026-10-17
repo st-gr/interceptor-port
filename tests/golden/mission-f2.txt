@@ -1,0 +1,56 @@
+# mission-f2: menu key F2, the second mission (game mode 4, Air Force One, note 08 12.6): success when Air Force One is down and slow and both attackers are gone; failure 0xFE when it is
+# destroyed (0xFD when the player's own hit did it).
+# 1 tick = 1 core step, the game starts at the credits: any key (tick 3), the continuing welcome of a log with a player record (tick 133), the menu's F2 (tick 175). The flight log is imported
+# by the script ("log": qualified, tours 2, the completion bytes 0 0 0 1 1 1 1 1 0, so F2 is on the menu) and the placement generator is seeded with 14 ("seed 14": the selector 0xF594, variant 0, offsets
+# (-2, +1) cells). The location is the carrier and fixed for the mission: the approach, the notice and the wait run by themselves and the first flight step is tick 518. Since milestone 6 the placement selector is the measured one (note 07 2.4: 20,000 x m + the start path's delta + a jitter of -3 to +3, m drawn from the seeded generator), so "seed N" picks a placement; the earlier fight no longer reached the success code and was found again against the new placement.
+# The fight is a scripted input sequence found by a seeded hill-climbing search against this port (deterministic: a catapult launch with F10 at tick 522, a pull at 606, the gear at 631, the weapon
+# select, then stick deflections, T (designate) and one SPACE (fire) at the ticks below). It reaches the END CODE 0xFF (success) at tick 3292 (both attackers gone, the airliner down), the outcome
+# list typing from tick 3302 and the flight resuming at tick 3336 (the end code 1). No game text in the columns.
+# Milestone 7 history: the click cost 5,350 and the measured typing times (note 08 3.8) and then the final round (note 08 12.14 C14 and 5.13: the missions' approach is the mover's from the briefing camera, and the first flight pass follows the outcome resume by one step) re-timed this script twice; the values above are the current ones. The seed and the inputs are unchanged and the run still reaches the end code 0xFF.
+# The real "at" lines after tick 400 moved by +10 in the final round (+2 in the click-cost round); the synthetic "sat" lines by +96.
+screens
+seed 14
+log 0 0 0 1 1 1 1 1 0
+ticks 3402
+# SYNTHETIC RUN (CI): "synthflight" gives the synthetic world the invented flight tables (all zero) and the invented mission tables of tests/world_synth.h (scenario rows, templates, position blocks, briefing chain, ai.bin), so the F-key starts the mission; "synthfrom 175" keeps the
+# "at" lines up to the menu key and drops the real fight; "sat" lines would be the synthetic fight (none here). F2: the principal aircraft is placed on the ground (height 0) with no fighters, so the parked-and-alone test holds: END CODE 0xFF at tick 472, resume code 1 at 486.
+synthflight
+synthfrom 175
+synthetic 596
+# the credits (any key), the continuing welcome (any key), the menu's F2
+at 3 key 120
+at 133 key 120
+at 175 fkey 2
+at 522 fkey 10
+at 606 stick 0 12000
+at 621 stick 0 0
+at 631 btn GEAR
+at 633 btn SELECT_WEAPON
+at 674 btn SELECT_WEAPON
+at 701 stick -12000 -12000
+at 730 stick 0 0
+at 731 stick -12000 12000
+at 742 stick 0 -12000
+at 769 stick -12000 0
+at 787 btn TARGET
+at 857 stick -12000 12000
+at 905 btn TARGET
+at 907 stick 0 0
+at 1017 stick 12000 12000
+at 1043 btn TARGET
+at 1091 btn TARGET
+at 1131 stick 12000 -12000
+at 1138 btn TARGET
+at 1143 stick -12000 -12000
+at 1205 stick 0 12000
+at 1242 stick 12000 -12000
+at 1255 stick -12000 0
+at 1262 btn TARGET
+at 1274 btn SELECT_WEAPON
+at 1331 btn TARGET
+at 1425 btn TARGET
+at 1428 btn TARGET
+at 1508 stick -12000 -12000
+at 1522 btn SELECT_WEAPON
+at 1626 btn SELECT_WEAPON
+at 1789 btn FIRE

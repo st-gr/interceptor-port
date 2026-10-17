@@ -1,0 +1,7 @@
+# the port's side of sound7-fixedcam: SHIFT-KP-ENTER (the fixed camera), the gear sound requested in it, KP-ENTER back to the ring camera, the gear sound again. Run: build/sound7_port assets FILE
+start deck
+ticks 200
+at 5 btn FIXED_CAMERA
+at 15 geardown
+at 40 kp 11
+at 60 geardown

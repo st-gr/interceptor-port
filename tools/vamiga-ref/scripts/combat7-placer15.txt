@@ -1,0 +1,2431 @@
+# note 07 2.1 step 5 (milestone 7 task 3): the placer and a class 0x15 record with a non-zero cell x.
+# --- run kept
+thaw
+restore extracted/captures/mb/m3-flight.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A95E 1 8
+poke F:4A962 1 9
+poke F:4A961 1 0
+poke F:4BA3C 2 0x0000
+poke F:4BA9E 1 0x15
+poke F:4BA42 2 1
+poke F:4B242 2 76
+poke F:4B244 2 76
+poke F:4B250 4 0x13000000
+poke F:4B258 4 0x13000000
+step 1
+peek F:4A992 2 kept_f0_pass
+peek F:4BA3C 128 kept_f0_r4
+peek F:4A855 1 kept_f0_regionbits
+peek F:4A961 3 kept_f0_counts
+peek F:2600C 100 kept_f0_desc
+step 1
+peek F:4A992 2 kept_f1_pass
+peek F:4BA3C 128 kept_f1_r4
+peek F:4A855 1 kept_f1_regionbits
+peek F:4A961 3 kept_f1_counts
+peek F:2600C 100 kept_f1_desc
+step 1
+peek F:4A992 2 kept_f2_pass
+peek F:4BA3C 128 kept_f2_r4
+peek F:4A855 1 kept_f2_regionbits
+peek F:4A961 3 kept_f2_counts
+peek F:2600C 100 kept_f2_desc
+step 1
+peek F:4A992 2 kept_f3_pass
+peek F:4BA3C 128 kept_f3_r4
+peek F:4A855 1 kept_f3_regionbits
+peek F:4A961 3 kept_f3_counts
+peek F:2600C 100 kept_f3_desc
+step 1
+peek F:4A992 2 kept_f4_pass
+peek F:4BA3C 128 kept_f4_r4
+peek F:4A855 1 kept_f4_regionbits
+peek F:4A961 3 kept_f4_counts
+peek F:2600C 100 kept_f4_desc
+step 1
+peek F:4A992 2 kept_f5_pass
+peek F:4BA3C 128 kept_f5_r4
+peek F:4A855 1 kept_f5_regionbits
+peek F:4A961 3 kept_f5_counts
+peek F:2600C 100 kept_f5_desc
+step 1
+peek F:4A992 2 kept_f6_pass
+peek F:4BA3C 128 kept_f6_r4
+peek F:4A855 1 kept_f6_regionbits
+peek F:4A961 3 kept_f6_counts
+peek F:2600C 100 kept_f6_desc
+step 1
+peek F:4A992 2 kept_f7_pass
+peek F:4BA3C 128 kept_f7_r4
+peek F:4A855 1 kept_f7_regionbits
+peek F:4A961 3 kept_f7_counts
+peek F:2600C 100 kept_f7_desc
+step 1
+peek F:4A992 2 kept_f8_pass
+peek F:4BA3C 128 kept_f8_r4
+peek F:4A855 1 kept_f8_regionbits
+peek F:4A961 3 kept_f8_counts
+peek F:2600C 100 kept_f8_desc
+step 1
+peek F:4A992 2 kept_f9_pass
+peek F:4BA3C 128 kept_f9_r4
+peek F:4A855 1 kept_f9_regionbits
+peek F:4A961 3 kept_f9_counts
+peek F:2600C 100 kept_f9_desc
+step 1
+peek F:4A992 2 kept_f10_pass
+peek F:4BA3C 128 kept_f10_r4
+peek F:4A855 1 kept_f10_regionbits
+peek F:4A961 3 kept_f10_counts
+peek F:2600C 100 kept_f10_desc
+step 1
+peek F:4A992 2 kept_f11_pass
+peek F:4BA3C 128 kept_f11_r4
+peek F:4A855 1 kept_f11_regionbits
+peek F:4A961 3 kept_f11_counts
+peek F:2600C 100 kept_f11_desc
+step 1
+peek F:4A992 2 kept_f12_pass
+peek F:4BA3C 128 kept_f12_r4
+peek F:4A855 1 kept_f12_regionbits
+peek F:4A961 3 kept_f12_counts
+peek F:2600C 100 kept_f12_desc
+step 1
+peek F:4A992 2 kept_f13_pass
+peek F:4BA3C 128 kept_f13_r4
+peek F:4A855 1 kept_f13_regionbits
+peek F:4A961 3 kept_f13_counts
+peek F:2600C 100 kept_f13_desc
+step 1
+peek F:4A992 2 kept_f14_pass
+peek F:4BA3C 128 kept_f14_r4
+peek F:4A855 1 kept_f14_regionbits
+peek F:4A961 3 kept_f14_counts
+peek F:2600C 100 kept_f14_desc
+step 1
+peek F:4A992 2 kept_f15_pass
+peek F:4BA3C 128 kept_f15_r4
+peek F:4A855 1 kept_f15_regionbits
+peek F:4A961 3 kept_f15_counts
+peek F:2600C 100 kept_f15_desc
+step 1
+peek F:4A992 2 kept_f16_pass
+peek F:4BA3C 128 kept_f16_r4
+peek F:4A855 1 kept_f16_regionbits
+peek F:4A961 3 kept_f16_counts
+peek F:2600C 100 kept_f16_desc
+step 1
+peek F:4A992 2 kept_f17_pass
+peek F:4BA3C 128 kept_f17_r4
+peek F:4A855 1 kept_f17_regionbits
+peek F:4A961 3 kept_f17_counts
+peek F:2600C 100 kept_f17_desc
+step 1
+peek F:4A992 2 kept_f18_pass
+peek F:4BA3C 128 kept_f18_r4
+peek F:4A855 1 kept_f18_regionbits
+peek F:4A961 3 kept_f18_counts
+peek F:2600C 100 kept_f18_desc
+step 1
+peek F:4A992 2 kept_f19_pass
+peek F:4BA3C 128 kept_f19_r4
+peek F:4A855 1 kept_f19_regionbits
+peek F:4A961 3 kept_f19_counts
+peek F:2600C 100 kept_f19_desc
+step 1
+peek F:4A992 2 kept_f20_pass
+peek F:4BA3C 128 kept_f20_r4
+peek F:4A855 1 kept_f20_regionbits
+peek F:4A961 3 kept_f20_counts
+peek F:2600C 100 kept_f20_desc
+step 1
+peek F:4A992 2 kept_f21_pass
+peek F:4BA3C 128 kept_f21_r4
+peek F:4A855 1 kept_f21_regionbits
+peek F:4A961 3 kept_f21_counts
+peek F:2600C 100 kept_f21_desc
+step 1
+peek F:4A992 2 kept_f22_pass
+peek F:4BA3C 128 kept_f22_r4
+peek F:4A855 1 kept_f22_regionbits
+peek F:4A961 3 kept_f22_counts
+peek F:2600C 100 kept_f22_desc
+step 1
+peek F:4A992 2 kept_f23_pass
+peek F:4BA3C 128 kept_f23_r4
+peek F:4A855 1 kept_f23_regionbits
+peek F:4A961 3 kept_f23_counts
+peek F:2600C 100 kept_f23_desc
+step 1
+peek F:4A992 2 kept_f24_pass
+peek F:4BA3C 128 kept_f24_r4
+peek F:4A855 1 kept_f24_regionbits
+peek F:4A961 3 kept_f24_counts
+peek F:2600C 100 kept_f24_desc
+step 1
+peek F:4A992 2 kept_f25_pass
+peek F:4BA3C 128 kept_f25_r4
+peek F:4A855 1 kept_f25_regionbits
+peek F:4A961 3 kept_f25_counts
+peek F:2600C 100 kept_f25_desc
+step 1
+peek F:4A992 2 kept_f26_pass
+peek F:4BA3C 128 kept_f26_r4
+peek F:4A855 1 kept_f26_regionbits
+peek F:4A961 3 kept_f26_counts
+peek F:2600C 100 kept_f26_desc
+step 1
+peek F:4A992 2 kept_f27_pass
+peek F:4BA3C 128 kept_f27_r4
+peek F:4A855 1 kept_f27_regionbits
+peek F:4A961 3 kept_f27_counts
+peek F:2600C 100 kept_f27_desc
+step 1
+peek F:4A992 2 kept_f28_pass
+peek F:4BA3C 128 kept_f28_r4
+peek F:4A855 1 kept_f28_regionbits
+peek F:4A961 3 kept_f28_counts
+peek F:2600C 100 kept_f28_desc
+step 1
+peek F:4A992 2 kept_f29_pass
+peek F:4BA3C 128 kept_f29_r4
+peek F:4A855 1 kept_f29_regionbits
+peek F:4A961 3 kept_f29_counts
+peek F:2600C 100 kept_f29_desc
+step 1
+peek F:4A992 2 kept_f30_pass
+peek F:4BA3C 128 kept_f30_r4
+peek F:4A855 1 kept_f30_regionbits
+peek F:4A961 3 kept_f30_counts
+peek F:2600C 100 kept_f30_desc
+step 1
+peek F:4A992 2 kept_f31_pass
+peek F:4BA3C 128 kept_f31_r4
+peek F:4A855 1 kept_f31_regionbits
+peek F:4A961 3 kept_f31_counts
+peek F:2600C 100 kept_f31_desc
+step 1
+peek F:4A992 2 kept_f32_pass
+peek F:4BA3C 128 kept_f32_r4
+peek F:4A855 1 kept_f32_regionbits
+peek F:4A961 3 kept_f32_counts
+peek F:2600C 100 kept_f32_desc
+step 1
+peek F:4A992 2 kept_f33_pass
+peek F:4BA3C 128 kept_f33_r4
+peek F:4A855 1 kept_f33_regionbits
+peek F:4A961 3 kept_f33_counts
+peek F:2600C 100 kept_f33_desc
+step 1
+peek F:4A992 2 kept_f34_pass
+peek F:4BA3C 128 kept_f34_r4
+peek F:4A855 1 kept_f34_regionbits
+peek F:4A961 3 kept_f34_counts
+peek F:2600C 100 kept_f34_desc
+step 1
+peek F:4A992 2 kept_f35_pass
+peek F:4BA3C 128 kept_f35_r4
+peek F:4A855 1 kept_f35_regionbits
+peek F:4A961 3 kept_f35_counts
+peek F:2600C 100 kept_f35_desc
+step 1
+peek F:4A992 2 kept_f36_pass
+peek F:4BA3C 128 kept_f36_r4
+peek F:4A855 1 kept_f36_regionbits
+peek F:4A961 3 kept_f36_counts
+peek F:2600C 100 kept_f36_desc
+step 1
+peek F:4A992 2 kept_f37_pass
+peek F:4BA3C 128 kept_f37_r4
+peek F:4A855 1 kept_f37_regionbits
+peek F:4A961 3 kept_f37_counts
+peek F:2600C 100 kept_f37_desc
+step 1
+peek F:4A992 2 kept_f38_pass
+peek F:4BA3C 128 kept_f38_r4
+peek F:4A855 1 kept_f38_regionbits
+peek F:4A961 3 kept_f38_counts
+peek F:2600C 100 kept_f38_desc
+step 1
+peek F:4A992 2 kept_f39_pass
+peek F:4BA3C 128 kept_f39_r4
+peek F:4A855 1 kept_f39_regionbits
+peek F:4A961 3 kept_f39_counts
+peek F:2600C 100 kept_f39_desc
+step 1
+peek F:4A992 2 kept_f40_pass
+peek F:4BA3C 128 kept_f40_r4
+peek F:4A855 1 kept_f40_regionbits
+peek F:4A961 3 kept_f40_counts
+peek F:2600C 100 kept_f40_desc
+step 1
+peek F:4A992 2 kept_f41_pass
+peek F:4BA3C 128 kept_f41_r4
+peek F:4A855 1 kept_f41_regionbits
+peek F:4A961 3 kept_f41_counts
+peek F:2600C 100 kept_f41_desc
+step 1
+peek F:4A992 2 kept_f42_pass
+peek F:4BA3C 128 kept_f42_r4
+peek F:4A855 1 kept_f42_regionbits
+peek F:4A961 3 kept_f42_counts
+peek F:2600C 100 kept_f42_desc
+step 1
+peek F:4A992 2 kept_f43_pass
+peek F:4BA3C 128 kept_f43_r4
+peek F:4A855 1 kept_f43_regionbits
+peek F:4A961 3 kept_f43_counts
+peek F:2600C 100 kept_f43_desc
+step 1
+peek F:4A992 2 kept_f44_pass
+peek F:4BA3C 128 kept_f44_r4
+peek F:4A855 1 kept_f44_regionbits
+peek F:4A961 3 kept_f44_counts
+peek F:2600C 100 kept_f44_desc
+step 1
+peek F:4A992 2 kept_f45_pass
+peek F:4BA3C 128 kept_f45_r4
+peek F:4A855 1 kept_f45_regionbits
+peek F:4A961 3 kept_f45_counts
+peek F:2600C 100 kept_f45_desc
+step 1
+peek F:4A992 2 kept_f46_pass
+peek F:4BA3C 128 kept_f46_r4
+peek F:4A855 1 kept_f46_regionbits
+peek F:4A961 3 kept_f46_counts
+peek F:2600C 100 kept_f46_desc
+step 1
+peek F:4A992 2 kept_f47_pass
+peek F:4BA3C 128 kept_f47_r4
+peek F:4A855 1 kept_f47_regionbits
+peek F:4A961 3 kept_f47_counts
+peek F:2600C 100 kept_f47_desc
+step 1
+peek F:4A992 2 kept_f48_pass
+peek F:4BA3C 128 kept_f48_r4
+peek F:4A855 1 kept_f48_regionbits
+peek F:4A961 3 kept_f48_counts
+peek F:2600C 100 kept_f48_desc
+step 1
+peek F:4A992 2 kept_f49_pass
+peek F:4BA3C 128 kept_f49_r4
+peek F:4A855 1 kept_f49_regionbits
+peek F:4A961 3 kept_f49_counts
+peek F:2600C 100 kept_f49_desc
+step 1
+peek F:4A992 2 kept_f50_pass
+peek F:4BA3C 128 kept_f50_r4
+peek F:4A855 1 kept_f50_regionbits
+peek F:4A961 3 kept_f50_counts
+peek F:2600C 100 kept_f50_desc
+step 1
+peek F:4A992 2 kept_f51_pass
+peek F:4BA3C 128 kept_f51_r4
+peek F:4A855 1 kept_f51_regionbits
+peek F:4A961 3 kept_f51_counts
+peek F:2600C 100 kept_f51_desc
+step 1
+peek F:4A992 2 kept_f52_pass
+peek F:4BA3C 128 kept_f52_r4
+peek F:4A855 1 kept_f52_regionbits
+peek F:4A961 3 kept_f52_counts
+peek F:2600C 100 kept_f52_desc
+step 1
+peek F:4A992 2 kept_f53_pass
+peek F:4BA3C 128 kept_f53_r4
+peek F:4A855 1 kept_f53_regionbits
+peek F:4A961 3 kept_f53_counts
+peek F:2600C 100 kept_f53_desc
+step 1
+peek F:4A992 2 kept_f54_pass
+peek F:4BA3C 128 kept_f54_r4
+peek F:4A855 1 kept_f54_regionbits
+peek F:4A961 3 kept_f54_counts
+peek F:2600C 100 kept_f54_desc
+step 1
+peek F:4A992 2 kept_f55_pass
+peek F:4BA3C 128 kept_f55_r4
+peek F:4A855 1 kept_f55_regionbits
+peek F:4A961 3 kept_f55_counts
+peek F:2600C 100 kept_f55_desc
+step 1
+peek F:4A992 2 kept_f56_pass
+peek F:4BA3C 128 kept_f56_r4
+peek F:4A855 1 kept_f56_regionbits
+peek F:4A961 3 kept_f56_counts
+peek F:2600C 100 kept_f56_desc
+step 1
+peek F:4A992 2 kept_f57_pass
+peek F:4BA3C 128 kept_f57_r4
+peek F:4A855 1 kept_f57_regionbits
+peek F:4A961 3 kept_f57_counts
+peek F:2600C 100 kept_f57_desc
+step 1
+peek F:4A992 2 kept_f58_pass
+peek F:4BA3C 128 kept_f58_r4
+peek F:4A855 1 kept_f58_regionbits
+peek F:4A961 3 kept_f58_counts
+peek F:2600C 100 kept_f58_desc
+step 1
+peek F:4A992 2 kept_f59_pass
+peek F:4BA3C 128 kept_f59_r4
+peek F:4A855 1 kept_f59_regionbits
+peek F:4A961 3 kept_f59_counts
+peek F:2600C 100 kept_f59_desc
+step 1
+peek F:4A992 2 kept_f60_pass
+peek F:4BA3C 128 kept_f60_r4
+peek F:4A855 1 kept_f60_regionbits
+peek F:4A961 3 kept_f60_counts
+peek F:2600C 100 kept_f60_desc
+step 1
+peek F:4A992 2 kept_f61_pass
+peek F:4BA3C 128 kept_f61_r4
+peek F:4A855 1 kept_f61_regionbits
+peek F:4A961 3 kept_f61_counts
+peek F:2600C 100 kept_f61_desc
+step 1
+peek F:4A992 2 kept_f62_pass
+peek F:4BA3C 128 kept_f62_r4
+peek F:4A855 1 kept_f62_regionbits
+peek F:4A961 3 kept_f62_counts
+peek F:2600C 100 kept_f62_desc
+step 1
+peek F:4A992 2 kept_f63_pass
+peek F:4BA3C 128 kept_f63_r4
+peek F:4A855 1 kept_f63_regionbits
+peek F:4A961 3 kept_f63_counts
+peek F:2600C 100 kept_f63_desc
+step 1
+peek F:4A992 2 kept_f64_pass
+peek F:4BA3C 128 kept_f64_r4
+peek F:4A855 1 kept_f64_regionbits
+peek F:4A961 3 kept_f64_counts
+peek F:2600C 100 kept_f64_desc
+step 1
+peek F:4A992 2 kept_f65_pass
+peek F:4BA3C 128 kept_f65_r4
+peek F:4A855 1 kept_f65_regionbits
+peek F:4A961 3 kept_f65_counts
+peek F:2600C 100 kept_f65_desc
+step 1
+peek F:4A992 2 kept_f66_pass
+peek F:4BA3C 128 kept_f66_r4
+peek F:4A855 1 kept_f66_regionbits
+peek F:4A961 3 kept_f66_counts
+peek F:2600C 100 kept_f66_desc
+step 1
+peek F:4A992 2 kept_f67_pass
+peek F:4BA3C 128 kept_f67_r4
+peek F:4A855 1 kept_f67_regionbits
+peek F:4A961 3 kept_f67_counts
+peek F:2600C 100 kept_f67_desc
+step 1
+peek F:4A992 2 kept_f68_pass
+peek F:4BA3C 128 kept_f68_r4
+peek F:4A855 1 kept_f68_regionbits
+peek F:4A961 3 kept_f68_counts
+peek F:2600C 100 kept_f68_desc
+step 1
+peek F:4A992 2 kept_f69_pass
+peek F:4BA3C 128 kept_f69_r4
+peek F:4A855 1 kept_f69_regionbits
+peek F:4A961 3 kept_f69_counts
+peek F:2600C 100 kept_f69_desc
+step 1
+peek F:4A992 2 kept_f70_pass
+peek F:4BA3C 128 kept_f70_r4
+peek F:4A855 1 kept_f70_regionbits
+peek F:4A961 3 kept_f70_counts
+peek F:2600C 100 kept_f70_desc
+step 1
+peek F:4A992 2 kept_f71_pass
+peek F:4BA3C 128 kept_f71_r4
+peek F:4A855 1 kept_f71_regionbits
+peek F:4A961 3 kept_f71_counts
+peek F:2600C 100 kept_f71_desc
+step 1
+peek F:4A992 2 kept_f72_pass
+peek F:4BA3C 128 kept_f72_r4
+peek F:4A855 1 kept_f72_regionbits
+peek F:4A961 3 kept_f72_counts
+peek F:2600C 100 kept_f72_desc
+step 1
+peek F:4A992 2 kept_f73_pass
+peek F:4BA3C 128 kept_f73_r4
+peek F:4A855 1 kept_f73_regionbits
+peek F:4A961 3 kept_f73_counts
+peek F:2600C 100 kept_f73_desc
+step 1
+peek F:4A992 2 kept_f74_pass
+peek F:4BA3C 128 kept_f74_r4
+peek F:4A855 1 kept_f74_regionbits
+peek F:4A961 3 kept_f74_counts
+peek F:2600C 100 kept_f74_desc
+step 1
+peek F:4A992 2 kept_f75_pass
+peek F:4BA3C 128 kept_f75_r4
+peek F:4A855 1 kept_f75_regionbits
+peek F:4A961 3 kept_f75_counts
+peek F:2600C 100 kept_f75_desc
+step 1
+peek F:4A992 2 kept_f76_pass
+peek F:4BA3C 128 kept_f76_r4
+peek F:4A855 1 kept_f76_regionbits
+peek F:4A961 3 kept_f76_counts
+peek F:2600C 100 kept_f76_desc
+step 1
+peek F:4A992 2 kept_f77_pass
+peek F:4BA3C 128 kept_f77_r4
+peek F:4A855 1 kept_f77_regionbits
+peek F:4A961 3 kept_f77_counts
+peek F:2600C 100 kept_f77_desc
+step 1
+peek F:4A992 2 kept_f78_pass
+peek F:4BA3C 128 kept_f78_r4
+peek F:4A855 1 kept_f78_regionbits
+peek F:4A961 3 kept_f78_counts
+peek F:2600C 100 kept_f78_desc
+step 1
+peek F:4A992 2 kept_f79_pass
+peek F:4BA3C 128 kept_f79_r4
+peek F:4A855 1 kept_f79_regionbits
+peek F:4A961 3 kept_f79_counts
+peek F:2600C 100 kept_f79_desc
+step 1
+peek F:4A992 2 kept_f80_pass
+peek F:4BA3C 128 kept_f80_r4
+peek F:4A855 1 kept_f80_regionbits
+peek F:4A961 3 kept_f80_counts
+peek F:2600C 100 kept_f80_desc
+step 1
+peek F:4A992 2 kept_f81_pass
+peek F:4BA3C 128 kept_f81_r4
+peek F:4A855 1 kept_f81_regionbits
+peek F:4A961 3 kept_f81_counts
+peek F:2600C 100 kept_f81_desc
+step 1
+peek F:4A992 2 kept_f82_pass
+peek F:4BA3C 128 kept_f82_r4
+peek F:4A855 1 kept_f82_regionbits
+peek F:4A961 3 kept_f82_counts
+peek F:2600C 100 kept_f82_desc
+step 1
+peek F:4A992 2 kept_f83_pass
+peek F:4BA3C 128 kept_f83_r4
+peek F:4A855 1 kept_f83_regionbits
+peek F:4A961 3 kept_f83_counts
+peek F:2600C 100 kept_f83_desc
+step 1
+peek F:4A992 2 kept_f84_pass
+peek F:4BA3C 128 kept_f84_r4
+peek F:4A855 1 kept_f84_regionbits
+peek F:4A961 3 kept_f84_counts
+peek F:2600C 100 kept_f84_desc
+step 1
+peek F:4A992 2 kept_f85_pass
+peek F:4BA3C 128 kept_f85_r4
+peek F:4A855 1 kept_f85_regionbits
+peek F:4A961 3 kept_f85_counts
+peek F:2600C 100 kept_f85_desc
+step 1
+peek F:4A992 2 kept_f86_pass
+peek F:4BA3C 128 kept_f86_r4
+peek F:4A855 1 kept_f86_regionbits
+peek F:4A961 3 kept_f86_counts
+peek F:2600C 100 kept_f86_desc
+step 1
+peek F:4A992 2 kept_f87_pass
+peek F:4BA3C 128 kept_f87_r4
+peek F:4A855 1 kept_f87_regionbits
+peek F:4A961 3 kept_f87_counts
+peek F:2600C 100 kept_f87_desc
+step 1
+peek F:4A992 2 kept_f88_pass
+peek F:4BA3C 128 kept_f88_r4
+peek F:4A855 1 kept_f88_regionbits
+peek F:4A961 3 kept_f88_counts
+peek F:2600C 100 kept_f88_desc
+step 1
+peek F:4A992 2 kept_f89_pass
+peek F:4BA3C 128 kept_f89_r4
+peek F:4A855 1 kept_f89_regionbits
+peek F:4A961 3 kept_f89_counts
+peek F:2600C 100 kept_f89_desc
+step 1
+peek F:4A992 2 kept_f90_pass
+peek F:4BA3C 128 kept_f90_r4
+peek F:4A855 1 kept_f90_regionbits
+peek F:4A961 3 kept_f90_counts
+peek F:2600C 100 kept_f90_desc
+step 1
+peek F:4A992 2 kept_f91_pass
+peek F:4BA3C 128 kept_f91_r4
+peek F:4A855 1 kept_f91_regionbits
+peek F:4A961 3 kept_f91_counts
+peek F:2600C 100 kept_f91_desc
+step 1
+peek F:4A992 2 kept_f92_pass
+peek F:4BA3C 128 kept_f92_r4
+peek F:4A855 1 kept_f92_regionbits
+peek F:4A961 3 kept_f92_counts
+peek F:2600C 100 kept_f92_desc
+step 1
+peek F:4A992 2 kept_f93_pass
+peek F:4BA3C 128 kept_f93_r4
+peek F:4A855 1 kept_f93_regionbits
+peek F:4A961 3 kept_f93_counts
+peek F:2600C 100 kept_f93_desc
+step 1
+peek F:4A992 2 kept_f94_pass
+peek F:4BA3C 128 kept_f94_r4
+peek F:4A855 1 kept_f94_regionbits
+peek F:4A961 3 kept_f94_counts
+peek F:2600C 100 kept_f94_desc
+step 1
+peek F:4A992 2 kept_f95_pass
+peek F:4BA3C 128 kept_f95_r4
+peek F:4A855 1 kept_f95_regionbits
+peek F:4A961 3 kept_f95_counts
+peek F:2600C 100 kept_f95_desc
+step 1
+peek F:4A992 2 kept_f96_pass
+peek F:4BA3C 128 kept_f96_r4
+peek F:4A855 1 kept_f96_regionbits
+peek F:4A961 3 kept_f96_counts
+peek F:2600C 100 kept_f96_desc
+step 1
+peek F:4A992 2 kept_f97_pass
+peek F:4BA3C 128 kept_f97_r4
+peek F:4A855 1 kept_f97_regionbits
+peek F:4A961 3 kept_f97_counts
+peek F:2600C 100 kept_f97_desc
+step 1
+peek F:4A992 2 kept_f98_pass
+peek F:4BA3C 128 kept_f98_r4
+peek F:4A855 1 kept_f98_regionbits
+peek F:4A961 3 kept_f98_counts
+peek F:2600C 100 kept_f98_desc
+step 1
+peek F:4A992 2 kept_f99_pass
+peek F:4BA3C 128 kept_f99_r4
+peek F:4A855 1 kept_f99_regionbits
+peek F:4A961 3 kept_f99_counts
+peek F:2600C 100 kept_f99_desc
+step 1
+peek F:4A992 2 kept_f100_pass
+peek F:4BA3C 128 kept_f100_r4
+peek F:4A855 1 kept_f100_regionbits
+peek F:4A961 3 kept_f100_counts
+peek F:2600C 100 kept_f100_desc
+step 1
+peek F:4A992 2 kept_f101_pass
+peek F:4BA3C 128 kept_f101_r4
+peek F:4A855 1 kept_f101_regionbits
+peek F:4A961 3 kept_f101_counts
+peek F:2600C 100 kept_f101_desc
+step 1
+peek F:4A992 2 kept_f102_pass
+peek F:4BA3C 128 kept_f102_r4
+peek F:4A855 1 kept_f102_regionbits
+peek F:4A961 3 kept_f102_counts
+peek F:2600C 100 kept_f102_desc
+step 1
+peek F:4A992 2 kept_f103_pass
+peek F:4BA3C 128 kept_f103_r4
+peek F:4A855 1 kept_f103_regionbits
+peek F:4A961 3 kept_f103_counts
+peek F:2600C 100 kept_f103_desc
+step 1
+peek F:4A992 2 kept_f104_pass
+peek F:4BA3C 128 kept_f104_r4
+peek F:4A855 1 kept_f104_regionbits
+peek F:4A961 3 kept_f104_counts
+peek F:2600C 100 kept_f104_desc
+step 1
+peek F:4A992 2 kept_f105_pass
+peek F:4BA3C 128 kept_f105_r4
+peek F:4A855 1 kept_f105_regionbits
+peek F:4A961 3 kept_f105_counts
+peek F:2600C 100 kept_f105_desc
+step 1
+peek F:4A992 2 kept_f106_pass
+peek F:4BA3C 128 kept_f106_r4
+peek F:4A855 1 kept_f106_regionbits
+peek F:4A961 3 kept_f106_counts
+peek F:2600C 100 kept_f106_desc
+step 1
+peek F:4A992 2 kept_f107_pass
+peek F:4BA3C 128 kept_f107_r4
+peek F:4A855 1 kept_f107_regionbits
+peek F:4A961 3 kept_f107_counts
+peek F:2600C 100 kept_f107_desc
+step 1
+peek F:4A992 2 kept_f108_pass
+peek F:4BA3C 128 kept_f108_r4
+peek F:4A855 1 kept_f108_regionbits
+peek F:4A961 3 kept_f108_counts
+peek F:2600C 100 kept_f108_desc
+step 1
+peek F:4A992 2 kept_f109_pass
+peek F:4BA3C 128 kept_f109_r4
+peek F:4A855 1 kept_f109_regionbits
+peek F:4A961 3 kept_f109_counts
+peek F:2600C 100 kept_f109_desc
+step 1
+peek F:4A992 2 kept_f110_pass
+peek F:4BA3C 128 kept_f110_r4
+peek F:4A855 1 kept_f110_regionbits
+peek F:4A961 3 kept_f110_counts
+peek F:2600C 100 kept_f110_desc
+step 1
+peek F:4A992 2 kept_f111_pass
+peek F:4BA3C 128 kept_f111_r4
+peek F:4A855 1 kept_f111_regionbits
+peek F:4A961 3 kept_f111_counts
+peek F:2600C 100 kept_f111_desc
+step 1
+peek F:4A992 2 kept_f112_pass
+peek F:4BA3C 128 kept_f112_r4
+peek F:4A855 1 kept_f112_regionbits
+peek F:4A961 3 kept_f112_counts
+peek F:2600C 100 kept_f112_desc
+step 1
+peek F:4A992 2 kept_f113_pass
+peek F:4BA3C 128 kept_f113_r4
+peek F:4A855 1 kept_f113_regionbits
+peek F:4A961 3 kept_f113_counts
+peek F:2600C 100 kept_f113_desc
+step 1
+peek F:4A992 2 kept_f114_pass
+peek F:4BA3C 128 kept_f114_r4
+peek F:4A855 1 kept_f114_regionbits
+peek F:4A961 3 kept_f114_counts
+peek F:2600C 100 kept_f114_desc
+step 1
+peek F:4A992 2 kept_f115_pass
+peek F:4BA3C 128 kept_f115_r4
+peek F:4A855 1 kept_f115_regionbits
+peek F:4A961 3 kept_f115_counts
+peek F:2600C 100 kept_f115_desc
+step 1
+peek F:4A992 2 kept_f116_pass
+peek F:4BA3C 128 kept_f116_r4
+peek F:4A855 1 kept_f116_regionbits
+peek F:4A961 3 kept_f116_counts
+peek F:2600C 100 kept_f116_desc
+step 1
+peek F:4A992 2 kept_f117_pass
+peek F:4BA3C 128 kept_f117_r4
+peek F:4A855 1 kept_f117_regionbits
+peek F:4A961 3 kept_f117_counts
+peek F:2600C 100 kept_f117_desc
+step 1
+peek F:4A992 2 kept_f118_pass
+peek F:4BA3C 128 kept_f118_r4
+peek F:4A855 1 kept_f118_regionbits
+peek F:4A961 3 kept_f118_counts
+peek F:2600C 100 kept_f118_desc
+step 1
+peek F:4A992 2 kept_f119_pass
+peek F:4BA3C 128 kept_f119_r4
+peek F:4A855 1 kept_f119_regionbits
+peek F:4A961 3 kept_f119_counts
+peek F:2600C 100 kept_f119_desc
+step 1
+peek F:4A992 2 kept_f120_pass
+peek F:4BA3C 128 kept_f120_r4
+peek F:4A855 1 kept_f120_regionbits
+peek F:4A961 3 kept_f120_counts
+peek F:2600C 100 kept_f120_desc
+step 1
+peek F:4A992 2 kept_f121_pass
+peek F:4BA3C 128 kept_f121_r4
+peek F:4A855 1 kept_f121_regionbits
+peek F:4A961 3 kept_f121_counts
+peek F:2600C 100 kept_f121_desc
+step 1
+peek F:4A992 2 kept_f122_pass
+peek F:4BA3C 128 kept_f122_r4
+peek F:4A855 1 kept_f122_regionbits
+peek F:4A961 3 kept_f122_counts
+peek F:2600C 100 kept_f122_desc
+step 1
+peek F:4A992 2 kept_f123_pass
+peek F:4BA3C 128 kept_f123_r4
+peek F:4A855 1 kept_f123_regionbits
+peek F:4A961 3 kept_f123_counts
+peek F:2600C 100 kept_f123_desc
+step 1
+peek F:4A992 2 kept_f124_pass
+peek F:4BA3C 128 kept_f124_r4
+peek F:4A855 1 kept_f124_regionbits
+peek F:4A961 3 kept_f124_counts
+peek F:2600C 100 kept_f124_desc
+step 1
+peek F:4A992 2 kept_f125_pass
+peek F:4BA3C 128 kept_f125_r4
+peek F:4A855 1 kept_f125_regionbits
+peek F:4A961 3 kept_f125_counts
+peek F:2600C 100 kept_f125_desc
+step 1
+peek F:4A992 2 kept_f126_pass
+peek F:4BA3C 128 kept_f126_r4
+peek F:4A855 1 kept_f126_regionbits
+peek F:4A961 3 kept_f126_counts
+peek F:2600C 100 kept_f126_desc
+step 1
+peek F:4A992 2 kept_f127_pass
+peek F:4BA3C 128 kept_f127_r4
+peek F:4A855 1 kept_f127_regionbits
+peek F:4A961 3 kept_f127_counts
+peek F:2600C 100 kept_f127_desc
+step 1
+peek F:4A992 2 kept_f128_pass
+peek F:4BA3C 128 kept_f128_r4
+peek F:4A855 1 kept_f128_regionbits
+peek F:4A961 3 kept_f128_counts
+peek F:2600C 100 kept_f128_desc
+step 1
+peek F:4A992 2 kept_f129_pass
+peek F:4BA3C 128 kept_f129_r4
+peek F:4A855 1 kept_f129_regionbits
+peek F:4A961 3 kept_f129_counts
+peek F:2600C 100 kept_f129_desc
+step 1
+peek F:4A992 2 kept_f130_pass
+peek F:4BA3C 128 kept_f130_r4
+peek F:4A855 1 kept_f130_regionbits
+peek F:4A961 3 kept_f130_counts
+peek F:2600C 100 kept_f130_desc
+step 1
+peek F:4A992 2 kept_f131_pass
+peek F:4BA3C 128 kept_f131_r4
+peek F:4A855 1 kept_f131_regionbits
+peek F:4A961 3 kept_f131_counts
+peek F:2600C 100 kept_f131_desc
+step 1
+peek F:4A992 2 kept_f132_pass
+peek F:4BA3C 128 kept_f132_r4
+peek F:4A855 1 kept_f132_regionbits
+peek F:4A961 3 kept_f132_counts
+peek F:2600C 100 kept_f132_desc
+step 1
+peek F:4A992 2 kept_f133_pass
+peek F:4BA3C 128 kept_f133_r4
+peek F:4A855 1 kept_f133_regionbits
+peek F:4A961 3 kept_f133_counts
+peek F:2600C 100 kept_f133_desc
+step 1
+peek F:4A992 2 kept_f134_pass
+peek F:4BA3C 128 kept_f134_r4
+peek F:4A855 1 kept_f134_regionbits
+peek F:4A961 3 kept_f134_counts
+peek F:2600C 100 kept_f134_desc
+step 1
+peek F:4A992 2 kept_f135_pass
+peek F:4BA3C 128 kept_f135_r4
+peek F:4A855 1 kept_f135_regionbits
+peek F:4A961 3 kept_f135_counts
+peek F:2600C 100 kept_f135_desc
+step 1
+peek F:4A992 2 kept_f136_pass
+peek F:4BA3C 128 kept_f136_r4
+peek F:4A855 1 kept_f136_regionbits
+peek F:4A961 3 kept_f136_counts
+peek F:2600C 100 kept_f136_desc
+step 1
+peek F:4A992 2 kept_f137_pass
+peek F:4BA3C 128 kept_f137_r4
+peek F:4A855 1 kept_f137_regionbits
+peek F:4A961 3 kept_f137_counts
+peek F:2600C 100 kept_f137_desc
+step 1
+peek F:4A992 2 kept_f138_pass
+peek F:4BA3C 128 kept_f138_r4
+peek F:4A855 1 kept_f138_regionbits
+peek F:4A961 3 kept_f138_counts
+peek F:2600C 100 kept_f138_desc
+step 1
+peek F:4A992 2 kept_f139_pass
+peek F:4BA3C 128 kept_f139_r4
+peek F:4A855 1 kept_f139_regionbits
+peek F:4A961 3 kept_f139_counts
+peek F:2600C 100 kept_f139_desc
+step 1
+peek F:4A992 2 kept_f140_pass
+peek F:4BA3C 128 kept_f140_r4
+peek F:4A855 1 kept_f140_regionbits
+peek F:4A961 3 kept_f140_counts
+peek F:2600C 100 kept_f140_desc
+step 1
+peek F:4A992 2 kept_f141_pass
+peek F:4BA3C 128 kept_f141_r4
+peek F:4A855 1 kept_f141_regionbits
+peek F:4A961 3 kept_f141_counts
+peek F:2600C 100 kept_f141_desc
+step 1
+peek F:4A992 2 kept_f142_pass
+peek F:4BA3C 128 kept_f142_r4
+peek F:4A855 1 kept_f142_regionbits
+peek F:4A961 3 kept_f142_counts
+peek F:2600C 100 kept_f142_desc
+step 1
+peek F:4A992 2 kept_f143_pass
+peek F:4BA3C 128 kept_f143_r4
+peek F:4A855 1 kept_f143_regionbits
+peek F:4A961 3 kept_f143_counts
+peek F:2600C 100 kept_f143_desc
+step 1
+peek F:4A992 2 kept_f144_pass
+peek F:4BA3C 128 kept_f144_r4
+peek F:4A855 1 kept_f144_regionbits
+peek F:4A961 3 kept_f144_counts
+peek F:2600C 100 kept_f144_desc
+step 1
+peek F:4A992 2 kept_f145_pass
+peek F:4BA3C 128 kept_f145_r4
+peek F:4A855 1 kept_f145_regionbits
+peek F:4A961 3 kept_f145_counts
+peek F:2600C 100 kept_f145_desc
+step 1
+peek F:4A992 2 kept_f146_pass
+peek F:4BA3C 128 kept_f146_r4
+peek F:4A855 1 kept_f146_regionbits
+peek F:4A961 3 kept_f146_counts
+peek F:2600C 100 kept_f146_desc
+step 1
+peek F:4A992 2 kept_f147_pass
+peek F:4BA3C 128 kept_f147_r4
+peek F:4A855 1 kept_f147_regionbits
+peek F:4A961 3 kept_f147_counts
+peek F:2600C 100 kept_f147_desc
+step 1
+peek F:4A992 2 kept_f148_pass
+peek F:4BA3C 128 kept_f148_r4
+peek F:4A855 1 kept_f148_regionbits
+peek F:4A961 3 kept_f148_counts
+peek F:2600C 100 kept_f148_desc
+step 1
+peek F:4A992 2 kept_f149_pass
+peek F:4BA3C 128 kept_f149_r4
+peek F:4A855 1 kept_f149_regionbits
+peek F:4A961 3 kept_f149_counts
+peek F:2600C 100 kept_f149_desc
+step 1
+peek F:4A992 2 kept_f150_pass
+peek F:4BA3C 128 kept_f150_r4
+peek F:4A855 1 kept_f150_regionbits
+peek F:4A961 3 kept_f150_counts
+peek F:2600C 100 kept_f150_desc
+step 1
+peek F:4A992 2 kept_f151_pass
+peek F:4BA3C 128 kept_f151_r4
+peek F:4A855 1 kept_f151_regionbits
+peek F:4A961 3 kept_f151_counts
+peek F:2600C 100 kept_f151_desc
+step 1
+peek F:4A992 2 kept_f152_pass
+peek F:4BA3C 128 kept_f152_r4
+peek F:4A855 1 kept_f152_regionbits
+peek F:4A961 3 kept_f152_counts
+peek F:2600C 100 kept_f152_desc
+step 1
+peek F:4A992 2 kept_f153_pass
+peek F:4BA3C 128 kept_f153_r4
+peek F:4A855 1 kept_f153_regionbits
+peek F:4A961 3 kept_f153_counts
+peek F:2600C 100 kept_f153_desc
+step 1
+peek F:4A992 2 kept_f154_pass
+peek F:4BA3C 128 kept_f154_r4
+peek F:4A855 1 kept_f154_regionbits
+peek F:4A961 3 kept_f154_counts
+peek F:2600C 100 kept_f154_desc
+step 1
+peek F:4A992 2 kept_f155_pass
+peek F:4BA3C 128 kept_f155_r4
+peek F:4A855 1 kept_f155_regionbits
+peek F:4A961 3 kept_f155_counts
+peek F:2600C 100 kept_f155_desc
+step 1
+peek F:4A992 2 kept_f156_pass
+peek F:4BA3C 128 kept_f156_r4
+peek F:4A855 1 kept_f156_regionbits
+peek F:4A961 3 kept_f156_counts
+peek F:2600C 100 kept_f156_desc
+step 1
+peek F:4A992 2 kept_f157_pass
+peek F:4BA3C 128 kept_f157_r4
+peek F:4A855 1 kept_f157_regionbits
+peek F:4A961 3 kept_f157_counts
+peek F:2600C 100 kept_f157_desc
+step 1
+peek F:4A992 2 kept_f158_pass
+peek F:4BA3C 128 kept_f158_r4
+peek F:4A855 1 kept_f158_regionbits
+peek F:4A961 3 kept_f158_counts
+peek F:2600C 100 kept_f158_desc
+step 1
+peek F:4A992 2 kept_f159_pass
+peek F:4BA3C 128 kept_f159_r4
+peek F:4A855 1 kept_f159_regionbits
+peek F:4A961 3 kept_f159_counts
+peek F:2600C 100 kept_f159_desc
+step 1
+peek F:4A992 2 kept_f160_pass
+peek F:4BA3C 128 kept_f160_r4
+peek F:4A855 1 kept_f160_regionbits
+peek F:4A961 3 kept_f160_counts
+peek F:2600C 100 kept_f160_desc
+step 1
+peek F:4A992 2 kept_f161_pass
+peek F:4BA3C 128 kept_f161_r4
+peek F:4A855 1 kept_f161_regionbits
+peek F:4A961 3 kept_f161_counts
+peek F:2600C 100 kept_f161_desc
+step 1
+peek F:4A992 2 kept_f162_pass
+peek F:4BA3C 128 kept_f162_r4
+peek F:4A855 1 kept_f162_regionbits
+peek F:4A961 3 kept_f162_counts
+peek F:2600C 100 kept_f162_desc
+step 1
+peek F:4A992 2 kept_f163_pass
+peek F:4BA3C 128 kept_f163_r4
+peek F:4A855 1 kept_f163_regionbits
+peek F:4A961 3 kept_f163_counts
+peek F:2600C 100 kept_f163_desc
+step 1
+peek F:4A992 2 kept_f164_pass
+peek F:4BA3C 128 kept_f164_r4
+peek F:4A855 1 kept_f164_regionbits
+peek F:4A961 3 kept_f164_counts
+peek F:2600C 100 kept_f164_desc
+step 1
+peek F:4A992 2 kept_f165_pass
+peek F:4BA3C 128 kept_f165_r4
+peek F:4A855 1 kept_f165_regionbits
+peek F:4A961 3 kept_f165_counts
+peek F:2600C 100 kept_f165_desc
+step 1
+peek F:4A992 2 kept_f166_pass
+peek F:4BA3C 128 kept_f166_r4
+peek F:4A855 1 kept_f166_regionbits
+peek F:4A961 3 kept_f166_counts
+peek F:2600C 100 kept_f166_desc
+step 1
+peek F:4A992 2 kept_f167_pass
+peek F:4BA3C 128 kept_f167_r4
+peek F:4A855 1 kept_f167_regionbits
+peek F:4A961 3 kept_f167_counts
+peek F:2600C 100 kept_f167_desc
+step 1
+peek F:4A992 2 kept_f168_pass
+peek F:4BA3C 128 kept_f168_r4
+peek F:4A855 1 kept_f168_regionbits
+peek F:4A961 3 kept_f168_counts
+peek F:2600C 100 kept_f168_desc
+step 1
+peek F:4A992 2 kept_f169_pass
+peek F:4BA3C 128 kept_f169_r4
+peek F:4A855 1 kept_f169_regionbits
+peek F:4A961 3 kept_f169_counts
+peek F:2600C 100 kept_f169_desc
+step 1
+peek F:4A992 2 kept_f170_pass
+peek F:4BA3C 128 kept_f170_r4
+peek F:4A855 1 kept_f170_regionbits
+peek F:4A961 3 kept_f170_counts
+peek F:2600C 100 kept_f170_desc
+step 1
+peek F:4A992 2 kept_f171_pass
+peek F:4BA3C 128 kept_f171_r4
+peek F:4A855 1 kept_f171_regionbits
+peek F:4A961 3 kept_f171_counts
+peek F:2600C 100 kept_f171_desc
+step 1
+peek F:4A992 2 kept_f172_pass
+peek F:4BA3C 128 kept_f172_r4
+peek F:4A855 1 kept_f172_regionbits
+peek F:4A961 3 kept_f172_counts
+peek F:2600C 100 kept_f172_desc
+step 1
+peek F:4A992 2 kept_f173_pass
+peek F:4BA3C 128 kept_f173_r4
+peek F:4A855 1 kept_f173_regionbits
+peek F:4A961 3 kept_f173_counts
+peek F:2600C 100 kept_f173_desc
+step 1
+peek F:4A992 2 kept_f174_pass
+peek F:4BA3C 128 kept_f174_r4
+peek F:4A855 1 kept_f174_regionbits
+peek F:4A961 3 kept_f174_counts
+peek F:2600C 100 kept_f174_desc
+step 1
+peek F:4A992 2 kept_f175_pass
+peek F:4BA3C 128 kept_f175_r4
+peek F:4A855 1 kept_f175_regionbits
+peek F:4A961 3 kept_f175_counts
+peek F:2600C 100 kept_f175_desc
+step 1
+peek F:4A992 2 kept_f176_pass
+peek F:4BA3C 128 kept_f176_r4
+peek F:4A855 1 kept_f176_regionbits
+peek F:4A961 3 kept_f176_counts
+peek F:2600C 100 kept_f176_desc
+step 1
+peek F:4A992 2 kept_f177_pass
+peek F:4BA3C 128 kept_f177_r4
+peek F:4A855 1 kept_f177_regionbits
+peek F:4A961 3 kept_f177_counts
+peek F:2600C 100 kept_f177_desc
+step 1
+peek F:4A992 2 kept_f178_pass
+peek F:4BA3C 128 kept_f178_r4
+peek F:4A855 1 kept_f178_regionbits
+peek F:4A961 3 kept_f178_counts
+peek F:2600C 100 kept_f178_desc
+step 1
+peek F:4A992 2 kept_f179_pass
+peek F:4BA3C 128 kept_f179_r4
+peek F:4A855 1 kept_f179_regionbits
+peek F:4A961 3 kept_f179_counts
+peek F:2600C 100 kept_f179_desc
+step 1
+peek F:4A992 2 kept_f180_pass
+peek F:4BA3C 128 kept_f180_r4
+peek F:4A855 1 kept_f180_regionbits
+peek F:4A961 3 kept_f180_counts
+peek F:2600C 100 kept_f180_desc
+step 1
+peek F:4A992 2 kept_f181_pass
+peek F:4BA3C 128 kept_f181_r4
+peek F:4A855 1 kept_f181_regionbits
+peek F:4A961 3 kept_f181_counts
+peek F:2600C 100 kept_f181_desc
+step 1
+peek F:4A992 2 kept_f182_pass
+peek F:4BA3C 128 kept_f182_r4
+peek F:4A855 1 kept_f182_regionbits
+peek F:4A961 3 kept_f182_counts
+peek F:2600C 100 kept_f182_desc
+step 1
+peek F:4A992 2 kept_f183_pass
+peek F:4BA3C 128 kept_f183_r4
+peek F:4A855 1 kept_f183_regionbits
+peek F:4A961 3 kept_f183_counts
+peek F:2600C 100 kept_f183_desc
+step 1
+peek F:4A992 2 kept_f184_pass
+peek F:4BA3C 128 kept_f184_r4
+peek F:4A855 1 kept_f184_regionbits
+peek F:4A961 3 kept_f184_counts
+peek F:2600C 100 kept_f184_desc
+step 1
+peek F:4A992 2 kept_f185_pass
+peek F:4BA3C 128 kept_f185_r4
+peek F:4A855 1 kept_f185_regionbits
+peek F:4A961 3 kept_f185_counts
+peek F:2600C 100 kept_f185_desc
+step 1
+peek F:4A992 2 kept_f186_pass
+peek F:4BA3C 128 kept_f186_r4
+peek F:4A855 1 kept_f186_regionbits
+peek F:4A961 3 kept_f186_counts
+peek F:2600C 100 kept_f186_desc
+step 1
+peek F:4A992 2 kept_f187_pass
+peek F:4BA3C 128 kept_f187_r4
+peek F:4A855 1 kept_f187_regionbits
+peek F:4A961 3 kept_f187_counts
+peek F:2600C 100 kept_f187_desc
+step 1
+peek F:4A992 2 kept_f188_pass
+peek F:4BA3C 128 kept_f188_r4
+peek F:4A855 1 kept_f188_regionbits
+peek F:4A961 3 kept_f188_counts
+peek F:2600C 100 kept_f188_desc
+step 1
+peek F:4A992 2 kept_f189_pass
+peek F:4BA3C 128 kept_f189_r4
+peek F:4A855 1 kept_f189_regionbits
+peek F:4A961 3 kept_f189_counts
+peek F:2600C 100 kept_f189_desc
+step 1
+peek F:4A992 2 kept_f190_pass
+peek F:4BA3C 128 kept_f190_r4
+peek F:4A855 1 kept_f190_regionbits
+peek F:4A961 3 kept_f190_counts
+peek F:2600C 100 kept_f190_desc
+step 1
+peek F:4A992 2 kept_f191_pass
+peek F:4BA3C 128 kept_f191_r4
+peek F:4A855 1 kept_f191_regionbits
+peek F:4A961 3 kept_f191_counts
+peek F:2600C 100 kept_f191_desc
+step 1
+peek F:4A992 2 kept_f192_pass
+peek F:4BA3C 128 kept_f192_r4
+peek F:4A855 1 kept_f192_regionbits
+peek F:4A961 3 kept_f192_counts
+peek F:2600C 100 kept_f192_desc
+step 1
+peek F:4A992 2 kept_f193_pass
+peek F:4BA3C 128 kept_f193_r4
+peek F:4A855 1 kept_f193_regionbits
+peek F:4A961 3 kept_f193_counts
+peek F:2600C 100 kept_f193_desc
+step 1
+peek F:4A992 2 kept_f194_pass
+peek F:4BA3C 128 kept_f194_r4
+peek F:4A855 1 kept_f194_regionbits
+peek F:4A961 3 kept_f194_counts
+peek F:2600C 100 kept_f194_desc
+step 1
+peek F:4A992 2 kept_f195_pass
+peek F:4BA3C 128 kept_f195_r4
+peek F:4A855 1 kept_f195_regionbits
+peek F:4A961 3 kept_f195_counts
+peek F:2600C 100 kept_f195_desc
+step 1
+peek F:4A992 2 kept_f196_pass
+peek F:4BA3C 128 kept_f196_r4
+peek F:4A855 1 kept_f196_regionbits
+peek F:4A961 3 kept_f196_counts
+peek F:2600C 100 kept_f196_desc
+step 1
+peek F:4A992 2 kept_f197_pass
+peek F:4BA3C 128 kept_f197_r4
+peek F:4A855 1 kept_f197_regionbits
+peek F:4A961 3 kept_f197_counts
+peek F:2600C 100 kept_f197_desc
+step 1
+peek F:4A992 2 kept_f198_pass
+peek F:4BA3C 128 kept_f198_r4
+peek F:4A855 1 kept_f198_regionbits
+peek F:4A961 3 kept_f198_counts
+peek F:2600C 100 kept_f198_desc
+step 1
+peek F:4A992 2 kept_f199_pass
+peek F:4BA3C 128 kept_f199_r4
+peek F:4A855 1 kept_f199_regionbits
+peek F:4A961 3 kept_f199_counts
+peek F:2600C 100 kept_f199_desc
+# --- run control
+thaw
+restore extracted/captures/mb/m3-flight.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+poke F:4A95E 1 8
+poke F:4A962 1 9
+poke F:4A961 1 0
+poke F:4BA3C 2 0x0000
+poke F:4BA9E 1 0x00
+poke F:4BA42 2 0
+poke F:4B242 2 76
+poke F:4B244 2 76
+poke F:4B250 4 0x13000000
+poke F:4B258 4 0x13000000
+step 1
+peek F:4A992 2 control_f0_pass
+peek F:4BA3C 128 control_f0_r4
+peek F:4A855 1 control_f0_regionbits
+peek F:4A961 3 control_f0_counts
+peek F:2600C 100 control_f0_desc
+step 1
+peek F:4A992 2 control_f1_pass
+peek F:4BA3C 128 control_f1_r4
+peek F:4A855 1 control_f1_regionbits
+peek F:4A961 3 control_f1_counts
+peek F:2600C 100 control_f1_desc
+step 1
+peek F:4A992 2 control_f2_pass
+peek F:4BA3C 128 control_f2_r4
+peek F:4A855 1 control_f2_regionbits
+peek F:4A961 3 control_f2_counts
+peek F:2600C 100 control_f2_desc
+step 1
+peek F:4A992 2 control_f3_pass
+peek F:4BA3C 128 control_f3_r4
+peek F:4A855 1 control_f3_regionbits
+peek F:4A961 3 control_f3_counts
+peek F:2600C 100 control_f3_desc
+step 1
+peek F:4A992 2 control_f4_pass
+peek F:4BA3C 128 control_f4_r4
+peek F:4A855 1 control_f4_regionbits
+peek F:4A961 3 control_f4_counts
+peek F:2600C 100 control_f4_desc
+step 1
+peek F:4A992 2 control_f5_pass
+peek F:4BA3C 128 control_f5_r4
+peek F:4A855 1 control_f5_regionbits
+peek F:4A961 3 control_f5_counts
+peek F:2600C 100 control_f5_desc
+step 1
+peek F:4A992 2 control_f6_pass
+peek F:4BA3C 128 control_f6_r4
+peek F:4A855 1 control_f6_regionbits
+peek F:4A961 3 control_f6_counts
+peek F:2600C 100 control_f6_desc
+step 1
+peek F:4A992 2 control_f7_pass
+peek F:4BA3C 128 control_f7_r4
+peek F:4A855 1 control_f7_regionbits
+peek F:4A961 3 control_f7_counts
+peek F:2600C 100 control_f7_desc
+step 1
+peek F:4A992 2 control_f8_pass
+peek F:4BA3C 128 control_f8_r4
+peek F:4A855 1 control_f8_regionbits
+peek F:4A961 3 control_f8_counts
+peek F:2600C 100 control_f8_desc
+step 1
+peek F:4A992 2 control_f9_pass
+peek F:4BA3C 128 control_f9_r4
+peek F:4A855 1 control_f9_regionbits
+peek F:4A961 3 control_f9_counts
+peek F:2600C 100 control_f9_desc
+step 1
+peek F:4A992 2 control_f10_pass
+peek F:4BA3C 128 control_f10_r4
+peek F:4A855 1 control_f10_regionbits
+peek F:4A961 3 control_f10_counts
+peek F:2600C 100 control_f10_desc
+step 1
+peek F:4A992 2 control_f11_pass
+peek F:4BA3C 128 control_f11_r4
+peek F:4A855 1 control_f11_regionbits
+peek F:4A961 3 control_f11_counts
+peek F:2600C 100 control_f11_desc
+step 1
+peek F:4A992 2 control_f12_pass
+peek F:4BA3C 128 control_f12_r4
+peek F:4A855 1 control_f12_regionbits
+peek F:4A961 3 control_f12_counts
+peek F:2600C 100 control_f12_desc
+step 1
+peek F:4A992 2 control_f13_pass
+peek F:4BA3C 128 control_f13_r4
+peek F:4A855 1 control_f13_regionbits
+peek F:4A961 3 control_f13_counts
+peek F:2600C 100 control_f13_desc
+step 1
+peek F:4A992 2 control_f14_pass
+peek F:4BA3C 128 control_f14_r4
+peek F:4A855 1 control_f14_regionbits
+peek F:4A961 3 control_f14_counts
+peek F:2600C 100 control_f14_desc
+step 1
+peek F:4A992 2 control_f15_pass
+peek F:4BA3C 128 control_f15_r4
+peek F:4A855 1 control_f15_regionbits
+peek F:4A961 3 control_f15_counts
+peek F:2600C 100 control_f15_desc
+step 1
+peek F:4A992 2 control_f16_pass
+peek F:4BA3C 128 control_f16_r4
+peek F:4A855 1 control_f16_regionbits
+peek F:4A961 3 control_f16_counts
+peek F:2600C 100 control_f16_desc
+step 1
+peek F:4A992 2 control_f17_pass
+peek F:4BA3C 128 control_f17_r4
+peek F:4A855 1 control_f17_regionbits
+peek F:4A961 3 control_f17_counts
+peek F:2600C 100 control_f17_desc
+step 1
+peek F:4A992 2 control_f18_pass
+peek F:4BA3C 128 control_f18_r4
+peek F:4A855 1 control_f18_regionbits
+peek F:4A961 3 control_f18_counts
+peek F:2600C 100 control_f18_desc
+step 1
+peek F:4A992 2 control_f19_pass
+peek F:4BA3C 128 control_f19_r4
+peek F:4A855 1 control_f19_regionbits
+peek F:4A961 3 control_f19_counts
+peek F:2600C 100 control_f19_desc
+step 1
+peek F:4A992 2 control_f20_pass
+peek F:4BA3C 128 control_f20_r4
+peek F:4A855 1 control_f20_regionbits
+peek F:4A961 3 control_f20_counts
+peek F:2600C 100 control_f20_desc
+step 1
+peek F:4A992 2 control_f21_pass
+peek F:4BA3C 128 control_f21_r4
+peek F:4A855 1 control_f21_regionbits
+peek F:4A961 3 control_f21_counts
+peek F:2600C 100 control_f21_desc
+step 1
+peek F:4A992 2 control_f22_pass
+peek F:4BA3C 128 control_f22_r4
+peek F:4A855 1 control_f22_regionbits
+peek F:4A961 3 control_f22_counts
+peek F:2600C 100 control_f22_desc
+step 1
+peek F:4A992 2 control_f23_pass
+peek F:4BA3C 128 control_f23_r4
+peek F:4A855 1 control_f23_regionbits
+peek F:4A961 3 control_f23_counts
+peek F:2600C 100 control_f23_desc
+step 1
+peek F:4A992 2 control_f24_pass
+peek F:4BA3C 128 control_f24_r4
+peek F:4A855 1 control_f24_regionbits
+peek F:4A961 3 control_f24_counts
+peek F:2600C 100 control_f24_desc
+step 1
+peek F:4A992 2 control_f25_pass
+peek F:4BA3C 128 control_f25_r4
+peek F:4A855 1 control_f25_regionbits
+peek F:4A961 3 control_f25_counts
+peek F:2600C 100 control_f25_desc
+step 1
+peek F:4A992 2 control_f26_pass
+peek F:4BA3C 128 control_f26_r4
+peek F:4A855 1 control_f26_regionbits
+peek F:4A961 3 control_f26_counts
+peek F:2600C 100 control_f26_desc
+step 1
+peek F:4A992 2 control_f27_pass
+peek F:4BA3C 128 control_f27_r4
+peek F:4A855 1 control_f27_regionbits
+peek F:4A961 3 control_f27_counts
+peek F:2600C 100 control_f27_desc
+step 1
+peek F:4A992 2 control_f28_pass
+peek F:4BA3C 128 control_f28_r4
+peek F:4A855 1 control_f28_regionbits
+peek F:4A961 3 control_f28_counts
+peek F:2600C 100 control_f28_desc
+step 1
+peek F:4A992 2 control_f29_pass
+peek F:4BA3C 128 control_f29_r4
+peek F:4A855 1 control_f29_regionbits
+peek F:4A961 3 control_f29_counts
+peek F:2600C 100 control_f29_desc
+step 1
+peek F:4A992 2 control_f30_pass
+peek F:4BA3C 128 control_f30_r4
+peek F:4A855 1 control_f30_regionbits
+peek F:4A961 3 control_f30_counts
+peek F:2600C 100 control_f30_desc
+step 1
+peek F:4A992 2 control_f31_pass
+peek F:4BA3C 128 control_f31_r4
+peek F:4A855 1 control_f31_regionbits
+peek F:4A961 3 control_f31_counts
+peek F:2600C 100 control_f31_desc
+step 1
+peek F:4A992 2 control_f32_pass
+peek F:4BA3C 128 control_f32_r4
+peek F:4A855 1 control_f32_regionbits
+peek F:4A961 3 control_f32_counts
+peek F:2600C 100 control_f32_desc
+step 1
+peek F:4A992 2 control_f33_pass
+peek F:4BA3C 128 control_f33_r4
+peek F:4A855 1 control_f33_regionbits
+peek F:4A961 3 control_f33_counts
+peek F:2600C 100 control_f33_desc
+step 1
+peek F:4A992 2 control_f34_pass
+peek F:4BA3C 128 control_f34_r4
+peek F:4A855 1 control_f34_regionbits
+peek F:4A961 3 control_f34_counts
+peek F:2600C 100 control_f34_desc
+step 1
+peek F:4A992 2 control_f35_pass
+peek F:4BA3C 128 control_f35_r4
+peek F:4A855 1 control_f35_regionbits
+peek F:4A961 3 control_f35_counts
+peek F:2600C 100 control_f35_desc
+step 1
+peek F:4A992 2 control_f36_pass
+peek F:4BA3C 128 control_f36_r4
+peek F:4A855 1 control_f36_regionbits
+peek F:4A961 3 control_f36_counts
+peek F:2600C 100 control_f36_desc
+step 1
+peek F:4A992 2 control_f37_pass
+peek F:4BA3C 128 control_f37_r4
+peek F:4A855 1 control_f37_regionbits
+peek F:4A961 3 control_f37_counts
+peek F:2600C 100 control_f37_desc
+step 1
+peek F:4A992 2 control_f38_pass
+peek F:4BA3C 128 control_f38_r4
+peek F:4A855 1 control_f38_regionbits
+peek F:4A961 3 control_f38_counts
+peek F:2600C 100 control_f38_desc
+step 1
+peek F:4A992 2 control_f39_pass
+peek F:4BA3C 128 control_f39_r4
+peek F:4A855 1 control_f39_regionbits
+peek F:4A961 3 control_f39_counts
+peek F:2600C 100 control_f39_desc
+step 1
+peek F:4A992 2 control_f40_pass
+peek F:4BA3C 128 control_f40_r4
+peek F:4A855 1 control_f40_regionbits
+peek F:4A961 3 control_f40_counts
+peek F:2600C 100 control_f40_desc
+step 1
+peek F:4A992 2 control_f41_pass
+peek F:4BA3C 128 control_f41_r4
+peek F:4A855 1 control_f41_regionbits
+peek F:4A961 3 control_f41_counts
+peek F:2600C 100 control_f41_desc
+step 1
+peek F:4A992 2 control_f42_pass
+peek F:4BA3C 128 control_f42_r4
+peek F:4A855 1 control_f42_regionbits
+peek F:4A961 3 control_f42_counts
+peek F:2600C 100 control_f42_desc
+step 1
+peek F:4A992 2 control_f43_pass
+peek F:4BA3C 128 control_f43_r4
+peek F:4A855 1 control_f43_regionbits
+peek F:4A961 3 control_f43_counts
+peek F:2600C 100 control_f43_desc
+step 1
+peek F:4A992 2 control_f44_pass
+peek F:4BA3C 128 control_f44_r4
+peek F:4A855 1 control_f44_regionbits
+peek F:4A961 3 control_f44_counts
+peek F:2600C 100 control_f44_desc
+step 1
+peek F:4A992 2 control_f45_pass
+peek F:4BA3C 128 control_f45_r4
+peek F:4A855 1 control_f45_regionbits
+peek F:4A961 3 control_f45_counts
+peek F:2600C 100 control_f45_desc
+step 1
+peek F:4A992 2 control_f46_pass
+peek F:4BA3C 128 control_f46_r4
+peek F:4A855 1 control_f46_regionbits
+peek F:4A961 3 control_f46_counts
+peek F:2600C 100 control_f46_desc
+step 1
+peek F:4A992 2 control_f47_pass
+peek F:4BA3C 128 control_f47_r4
+peek F:4A855 1 control_f47_regionbits
+peek F:4A961 3 control_f47_counts
+peek F:2600C 100 control_f47_desc
+step 1
+peek F:4A992 2 control_f48_pass
+peek F:4BA3C 128 control_f48_r4
+peek F:4A855 1 control_f48_regionbits
+peek F:4A961 3 control_f48_counts
+peek F:2600C 100 control_f48_desc
+step 1
+peek F:4A992 2 control_f49_pass
+peek F:4BA3C 128 control_f49_r4
+peek F:4A855 1 control_f49_regionbits
+peek F:4A961 3 control_f49_counts
+peek F:2600C 100 control_f49_desc
+step 1
+peek F:4A992 2 control_f50_pass
+peek F:4BA3C 128 control_f50_r4
+peek F:4A855 1 control_f50_regionbits
+peek F:4A961 3 control_f50_counts
+peek F:2600C 100 control_f50_desc
+step 1
+peek F:4A992 2 control_f51_pass
+peek F:4BA3C 128 control_f51_r4
+peek F:4A855 1 control_f51_regionbits
+peek F:4A961 3 control_f51_counts
+peek F:2600C 100 control_f51_desc
+step 1
+peek F:4A992 2 control_f52_pass
+peek F:4BA3C 128 control_f52_r4
+peek F:4A855 1 control_f52_regionbits
+peek F:4A961 3 control_f52_counts
+peek F:2600C 100 control_f52_desc
+step 1
+peek F:4A992 2 control_f53_pass
+peek F:4BA3C 128 control_f53_r4
+peek F:4A855 1 control_f53_regionbits
+peek F:4A961 3 control_f53_counts
+peek F:2600C 100 control_f53_desc
+step 1
+peek F:4A992 2 control_f54_pass
+peek F:4BA3C 128 control_f54_r4
+peek F:4A855 1 control_f54_regionbits
+peek F:4A961 3 control_f54_counts
+peek F:2600C 100 control_f54_desc
+step 1
+peek F:4A992 2 control_f55_pass
+peek F:4BA3C 128 control_f55_r4
+peek F:4A855 1 control_f55_regionbits
+peek F:4A961 3 control_f55_counts
+peek F:2600C 100 control_f55_desc
+step 1
+peek F:4A992 2 control_f56_pass
+peek F:4BA3C 128 control_f56_r4
+peek F:4A855 1 control_f56_regionbits
+peek F:4A961 3 control_f56_counts
+peek F:2600C 100 control_f56_desc
+step 1
+peek F:4A992 2 control_f57_pass
+peek F:4BA3C 128 control_f57_r4
+peek F:4A855 1 control_f57_regionbits
+peek F:4A961 3 control_f57_counts
+peek F:2600C 100 control_f57_desc
+step 1
+peek F:4A992 2 control_f58_pass
+peek F:4BA3C 128 control_f58_r4
+peek F:4A855 1 control_f58_regionbits
+peek F:4A961 3 control_f58_counts
+peek F:2600C 100 control_f58_desc
+step 1
+peek F:4A992 2 control_f59_pass
+peek F:4BA3C 128 control_f59_r4
+peek F:4A855 1 control_f59_regionbits
+peek F:4A961 3 control_f59_counts
+peek F:2600C 100 control_f59_desc
+step 1
+peek F:4A992 2 control_f60_pass
+peek F:4BA3C 128 control_f60_r4
+peek F:4A855 1 control_f60_regionbits
+peek F:4A961 3 control_f60_counts
+peek F:2600C 100 control_f60_desc
+step 1
+peek F:4A992 2 control_f61_pass
+peek F:4BA3C 128 control_f61_r4
+peek F:4A855 1 control_f61_regionbits
+peek F:4A961 3 control_f61_counts
+peek F:2600C 100 control_f61_desc
+step 1
+peek F:4A992 2 control_f62_pass
+peek F:4BA3C 128 control_f62_r4
+peek F:4A855 1 control_f62_regionbits
+peek F:4A961 3 control_f62_counts
+peek F:2600C 100 control_f62_desc
+step 1
+peek F:4A992 2 control_f63_pass
+peek F:4BA3C 128 control_f63_r4
+peek F:4A855 1 control_f63_regionbits
+peek F:4A961 3 control_f63_counts
+peek F:2600C 100 control_f63_desc
+step 1
+peek F:4A992 2 control_f64_pass
+peek F:4BA3C 128 control_f64_r4
+peek F:4A855 1 control_f64_regionbits
+peek F:4A961 3 control_f64_counts
+peek F:2600C 100 control_f64_desc
+step 1
+peek F:4A992 2 control_f65_pass
+peek F:4BA3C 128 control_f65_r4
+peek F:4A855 1 control_f65_regionbits
+peek F:4A961 3 control_f65_counts
+peek F:2600C 100 control_f65_desc
+step 1
+peek F:4A992 2 control_f66_pass
+peek F:4BA3C 128 control_f66_r4
+peek F:4A855 1 control_f66_regionbits
+peek F:4A961 3 control_f66_counts
+peek F:2600C 100 control_f66_desc
+step 1
+peek F:4A992 2 control_f67_pass
+peek F:4BA3C 128 control_f67_r4
+peek F:4A855 1 control_f67_regionbits
+peek F:4A961 3 control_f67_counts
+peek F:2600C 100 control_f67_desc
+step 1
+peek F:4A992 2 control_f68_pass
+peek F:4BA3C 128 control_f68_r4
+peek F:4A855 1 control_f68_regionbits
+peek F:4A961 3 control_f68_counts
+peek F:2600C 100 control_f68_desc
+step 1
+peek F:4A992 2 control_f69_pass
+peek F:4BA3C 128 control_f69_r4
+peek F:4A855 1 control_f69_regionbits
+peek F:4A961 3 control_f69_counts
+peek F:2600C 100 control_f69_desc
+step 1
+peek F:4A992 2 control_f70_pass
+peek F:4BA3C 128 control_f70_r4
+peek F:4A855 1 control_f70_regionbits
+peek F:4A961 3 control_f70_counts
+peek F:2600C 100 control_f70_desc
+step 1
+peek F:4A992 2 control_f71_pass
+peek F:4BA3C 128 control_f71_r4
+peek F:4A855 1 control_f71_regionbits
+peek F:4A961 3 control_f71_counts
+peek F:2600C 100 control_f71_desc
+step 1
+peek F:4A992 2 control_f72_pass
+peek F:4BA3C 128 control_f72_r4
+peek F:4A855 1 control_f72_regionbits
+peek F:4A961 3 control_f72_counts
+peek F:2600C 100 control_f72_desc
+step 1
+peek F:4A992 2 control_f73_pass
+peek F:4BA3C 128 control_f73_r4
+peek F:4A855 1 control_f73_regionbits
+peek F:4A961 3 control_f73_counts
+peek F:2600C 100 control_f73_desc
+step 1
+peek F:4A992 2 control_f74_pass
+peek F:4BA3C 128 control_f74_r4
+peek F:4A855 1 control_f74_regionbits
+peek F:4A961 3 control_f74_counts
+peek F:2600C 100 control_f74_desc
+step 1
+peek F:4A992 2 control_f75_pass
+peek F:4BA3C 128 control_f75_r4
+peek F:4A855 1 control_f75_regionbits
+peek F:4A961 3 control_f75_counts
+peek F:2600C 100 control_f75_desc
+step 1
+peek F:4A992 2 control_f76_pass
+peek F:4BA3C 128 control_f76_r4
+peek F:4A855 1 control_f76_regionbits
+peek F:4A961 3 control_f76_counts
+peek F:2600C 100 control_f76_desc
+step 1
+peek F:4A992 2 control_f77_pass
+peek F:4BA3C 128 control_f77_r4
+peek F:4A855 1 control_f77_regionbits
+peek F:4A961 3 control_f77_counts
+peek F:2600C 100 control_f77_desc
+step 1
+peek F:4A992 2 control_f78_pass
+peek F:4BA3C 128 control_f78_r4
+peek F:4A855 1 control_f78_regionbits
+peek F:4A961 3 control_f78_counts
+peek F:2600C 100 control_f78_desc
+step 1
+peek F:4A992 2 control_f79_pass
+peek F:4BA3C 128 control_f79_r4
+peek F:4A855 1 control_f79_regionbits
+peek F:4A961 3 control_f79_counts
+peek F:2600C 100 control_f79_desc
+step 1
+peek F:4A992 2 control_f80_pass
+peek F:4BA3C 128 control_f80_r4
+peek F:4A855 1 control_f80_regionbits
+peek F:4A961 3 control_f80_counts
+peek F:2600C 100 control_f80_desc
+step 1
+peek F:4A992 2 control_f81_pass
+peek F:4BA3C 128 control_f81_r4
+peek F:4A855 1 control_f81_regionbits
+peek F:4A961 3 control_f81_counts
+peek F:2600C 100 control_f81_desc
+step 1
+peek F:4A992 2 control_f82_pass
+peek F:4BA3C 128 control_f82_r4
+peek F:4A855 1 control_f82_regionbits
+peek F:4A961 3 control_f82_counts
+peek F:2600C 100 control_f82_desc
+step 1
+peek F:4A992 2 control_f83_pass
+peek F:4BA3C 128 control_f83_r4
+peek F:4A855 1 control_f83_regionbits
+peek F:4A961 3 control_f83_counts
+peek F:2600C 100 control_f83_desc
+step 1
+peek F:4A992 2 control_f84_pass
+peek F:4BA3C 128 control_f84_r4
+peek F:4A855 1 control_f84_regionbits
+peek F:4A961 3 control_f84_counts
+peek F:2600C 100 control_f84_desc
+step 1
+peek F:4A992 2 control_f85_pass
+peek F:4BA3C 128 control_f85_r4
+peek F:4A855 1 control_f85_regionbits
+peek F:4A961 3 control_f85_counts
+peek F:2600C 100 control_f85_desc
+step 1
+peek F:4A992 2 control_f86_pass
+peek F:4BA3C 128 control_f86_r4
+peek F:4A855 1 control_f86_regionbits
+peek F:4A961 3 control_f86_counts
+peek F:2600C 100 control_f86_desc
+step 1
+peek F:4A992 2 control_f87_pass
+peek F:4BA3C 128 control_f87_r4
+peek F:4A855 1 control_f87_regionbits
+peek F:4A961 3 control_f87_counts
+peek F:2600C 100 control_f87_desc
+step 1
+peek F:4A992 2 control_f88_pass
+peek F:4BA3C 128 control_f88_r4
+peek F:4A855 1 control_f88_regionbits
+peek F:4A961 3 control_f88_counts
+peek F:2600C 100 control_f88_desc
+step 1
+peek F:4A992 2 control_f89_pass
+peek F:4BA3C 128 control_f89_r4
+peek F:4A855 1 control_f89_regionbits
+peek F:4A961 3 control_f89_counts
+peek F:2600C 100 control_f89_desc
+step 1
+peek F:4A992 2 control_f90_pass
+peek F:4BA3C 128 control_f90_r4
+peek F:4A855 1 control_f90_regionbits
+peek F:4A961 3 control_f90_counts
+peek F:2600C 100 control_f90_desc
+step 1
+peek F:4A992 2 control_f91_pass
+peek F:4BA3C 128 control_f91_r4
+peek F:4A855 1 control_f91_regionbits
+peek F:4A961 3 control_f91_counts
+peek F:2600C 100 control_f91_desc
+step 1
+peek F:4A992 2 control_f92_pass
+peek F:4BA3C 128 control_f92_r4
+peek F:4A855 1 control_f92_regionbits
+peek F:4A961 3 control_f92_counts
+peek F:2600C 100 control_f92_desc
+step 1
+peek F:4A992 2 control_f93_pass
+peek F:4BA3C 128 control_f93_r4
+peek F:4A855 1 control_f93_regionbits
+peek F:4A961 3 control_f93_counts
+peek F:2600C 100 control_f93_desc
+step 1
+peek F:4A992 2 control_f94_pass
+peek F:4BA3C 128 control_f94_r4
+peek F:4A855 1 control_f94_regionbits
+peek F:4A961 3 control_f94_counts
+peek F:2600C 100 control_f94_desc
+step 1
+peek F:4A992 2 control_f95_pass
+peek F:4BA3C 128 control_f95_r4
+peek F:4A855 1 control_f95_regionbits
+peek F:4A961 3 control_f95_counts
+peek F:2600C 100 control_f95_desc
+step 1
+peek F:4A992 2 control_f96_pass
+peek F:4BA3C 128 control_f96_r4
+peek F:4A855 1 control_f96_regionbits
+peek F:4A961 3 control_f96_counts
+peek F:2600C 100 control_f96_desc
+step 1
+peek F:4A992 2 control_f97_pass
+peek F:4BA3C 128 control_f97_r4
+peek F:4A855 1 control_f97_regionbits
+peek F:4A961 3 control_f97_counts
+peek F:2600C 100 control_f97_desc
+step 1
+peek F:4A992 2 control_f98_pass
+peek F:4BA3C 128 control_f98_r4
+peek F:4A855 1 control_f98_regionbits
+peek F:4A961 3 control_f98_counts
+peek F:2600C 100 control_f98_desc
+step 1
+peek F:4A992 2 control_f99_pass
+peek F:4BA3C 128 control_f99_r4
+peek F:4A855 1 control_f99_regionbits
+peek F:4A961 3 control_f99_counts
+peek F:2600C 100 control_f99_desc
+step 1
+peek F:4A992 2 control_f100_pass
+peek F:4BA3C 128 control_f100_r4
+peek F:4A855 1 control_f100_regionbits
+peek F:4A961 3 control_f100_counts
+peek F:2600C 100 control_f100_desc
+step 1
+peek F:4A992 2 control_f101_pass
+peek F:4BA3C 128 control_f101_r4
+peek F:4A855 1 control_f101_regionbits
+peek F:4A961 3 control_f101_counts
+peek F:2600C 100 control_f101_desc
+step 1
+peek F:4A992 2 control_f102_pass
+peek F:4BA3C 128 control_f102_r4
+peek F:4A855 1 control_f102_regionbits
+peek F:4A961 3 control_f102_counts
+peek F:2600C 100 control_f102_desc
+step 1
+peek F:4A992 2 control_f103_pass
+peek F:4BA3C 128 control_f103_r4
+peek F:4A855 1 control_f103_regionbits
+peek F:4A961 3 control_f103_counts
+peek F:2600C 100 control_f103_desc
+step 1
+peek F:4A992 2 control_f104_pass
+peek F:4BA3C 128 control_f104_r4
+peek F:4A855 1 control_f104_regionbits
+peek F:4A961 3 control_f104_counts
+peek F:2600C 100 control_f104_desc
+step 1
+peek F:4A992 2 control_f105_pass
+peek F:4BA3C 128 control_f105_r4
+peek F:4A855 1 control_f105_regionbits
+peek F:4A961 3 control_f105_counts
+peek F:2600C 100 control_f105_desc
+step 1
+peek F:4A992 2 control_f106_pass
+peek F:4BA3C 128 control_f106_r4
+peek F:4A855 1 control_f106_regionbits
+peek F:4A961 3 control_f106_counts
+peek F:2600C 100 control_f106_desc
+step 1
+peek F:4A992 2 control_f107_pass
+peek F:4BA3C 128 control_f107_r4
+peek F:4A855 1 control_f107_regionbits
+peek F:4A961 3 control_f107_counts
+peek F:2600C 100 control_f107_desc
+step 1
+peek F:4A992 2 control_f108_pass
+peek F:4BA3C 128 control_f108_r4
+peek F:4A855 1 control_f108_regionbits
+peek F:4A961 3 control_f108_counts
+peek F:2600C 100 control_f108_desc
+step 1
+peek F:4A992 2 control_f109_pass
+peek F:4BA3C 128 control_f109_r4
+peek F:4A855 1 control_f109_regionbits
+peek F:4A961 3 control_f109_counts
+peek F:2600C 100 control_f109_desc
+step 1
+peek F:4A992 2 control_f110_pass
+peek F:4BA3C 128 control_f110_r4
+peek F:4A855 1 control_f110_regionbits
+peek F:4A961 3 control_f110_counts
+peek F:2600C 100 control_f110_desc
+step 1
+peek F:4A992 2 control_f111_pass
+peek F:4BA3C 128 control_f111_r4
+peek F:4A855 1 control_f111_regionbits
+peek F:4A961 3 control_f111_counts
+peek F:2600C 100 control_f111_desc
+step 1
+peek F:4A992 2 control_f112_pass
+peek F:4BA3C 128 control_f112_r4
+peek F:4A855 1 control_f112_regionbits
+peek F:4A961 3 control_f112_counts
+peek F:2600C 100 control_f112_desc
+step 1
+peek F:4A992 2 control_f113_pass
+peek F:4BA3C 128 control_f113_r4
+peek F:4A855 1 control_f113_regionbits
+peek F:4A961 3 control_f113_counts
+peek F:2600C 100 control_f113_desc
+step 1
+peek F:4A992 2 control_f114_pass
+peek F:4BA3C 128 control_f114_r4
+peek F:4A855 1 control_f114_regionbits
+peek F:4A961 3 control_f114_counts
+peek F:2600C 100 control_f114_desc
+step 1
+peek F:4A992 2 control_f115_pass
+peek F:4BA3C 128 control_f115_r4
+peek F:4A855 1 control_f115_regionbits
+peek F:4A961 3 control_f115_counts
+peek F:2600C 100 control_f115_desc
+step 1
+peek F:4A992 2 control_f116_pass
+peek F:4BA3C 128 control_f116_r4
+peek F:4A855 1 control_f116_regionbits
+peek F:4A961 3 control_f116_counts
+peek F:2600C 100 control_f116_desc
+step 1
+peek F:4A992 2 control_f117_pass
+peek F:4BA3C 128 control_f117_r4
+peek F:4A855 1 control_f117_regionbits
+peek F:4A961 3 control_f117_counts
+peek F:2600C 100 control_f117_desc
+step 1
+peek F:4A992 2 control_f118_pass
+peek F:4BA3C 128 control_f118_r4
+peek F:4A855 1 control_f118_regionbits
+peek F:4A961 3 control_f118_counts
+peek F:2600C 100 control_f118_desc
+step 1
+peek F:4A992 2 control_f119_pass
+peek F:4BA3C 128 control_f119_r4
+peek F:4A855 1 control_f119_regionbits
+peek F:4A961 3 control_f119_counts
+peek F:2600C 100 control_f119_desc
+step 1
+peek F:4A992 2 control_f120_pass
+peek F:4BA3C 128 control_f120_r4
+peek F:4A855 1 control_f120_regionbits
+peek F:4A961 3 control_f120_counts
+peek F:2600C 100 control_f120_desc
+step 1
+peek F:4A992 2 control_f121_pass
+peek F:4BA3C 128 control_f121_r4
+peek F:4A855 1 control_f121_regionbits
+peek F:4A961 3 control_f121_counts
+peek F:2600C 100 control_f121_desc
+step 1
+peek F:4A992 2 control_f122_pass
+peek F:4BA3C 128 control_f122_r4
+peek F:4A855 1 control_f122_regionbits
+peek F:4A961 3 control_f122_counts
+peek F:2600C 100 control_f122_desc
+step 1
+peek F:4A992 2 control_f123_pass
+peek F:4BA3C 128 control_f123_r4
+peek F:4A855 1 control_f123_regionbits
+peek F:4A961 3 control_f123_counts
+peek F:2600C 100 control_f123_desc
+step 1
+peek F:4A992 2 control_f124_pass
+peek F:4BA3C 128 control_f124_r4
+peek F:4A855 1 control_f124_regionbits
+peek F:4A961 3 control_f124_counts
+peek F:2600C 100 control_f124_desc
+step 1
+peek F:4A992 2 control_f125_pass
+peek F:4BA3C 128 control_f125_r4
+peek F:4A855 1 control_f125_regionbits
+peek F:4A961 3 control_f125_counts
+peek F:2600C 100 control_f125_desc
+step 1
+peek F:4A992 2 control_f126_pass
+peek F:4BA3C 128 control_f126_r4
+peek F:4A855 1 control_f126_regionbits
+peek F:4A961 3 control_f126_counts
+peek F:2600C 100 control_f126_desc
+step 1
+peek F:4A992 2 control_f127_pass
+peek F:4BA3C 128 control_f127_r4
+peek F:4A855 1 control_f127_regionbits
+peek F:4A961 3 control_f127_counts
+peek F:2600C 100 control_f127_desc
+step 1
+peek F:4A992 2 control_f128_pass
+peek F:4BA3C 128 control_f128_r4
+peek F:4A855 1 control_f128_regionbits
+peek F:4A961 3 control_f128_counts
+peek F:2600C 100 control_f128_desc
+step 1
+peek F:4A992 2 control_f129_pass
+peek F:4BA3C 128 control_f129_r4
+peek F:4A855 1 control_f129_regionbits
+peek F:4A961 3 control_f129_counts
+peek F:2600C 100 control_f129_desc
+step 1
+peek F:4A992 2 control_f130_pass
+peek F:4BA3C 128 control_f130_r4
+peek F:4A855 1 control_f130_regionbits
+peek F:4A961 3 control_f130_counts
+peek F:2600C 100 control_f130_desc
+step 1
+peek F:4A992 2 control_f131_pass
+peek F:4BA3C 128 control_f131_r4
+peek F:4A855 1 control_f131_regionbits
+peek F:4A961 3 control_f131_counts
+peek F:2600C 100 control_f131_desc
+step 1
+peek F:4A992 2 control_f132_pass
+peek F:4BA3C 128 control_f132_r4
+peek F:4A855 1 control_f132_regionbits
+peek F:4A961 3 control_f132_counts
+peek F:2600C 100 control_f132_desc
+step 1
+peek F:4A992 2 control_f133_pass
+peek F:4BA3C 128 control_f133_r4
+peek F:4A855 1 control_f133_regionbits
+peek F:4A961 3 control_f133_counts
+peek F:2600C 100 control_f133_desc
+step 1
+peek F:4A992 2 control_f134_pass
+peek F:4BA3C 128 control_f134_r4
+peek F:4A855 1 control_f134_regionbits
+peek F:4A961 3 control_f134_counts
+peek F:2600C 100 control_f134_desc
+step 1
+peek F:4A992 2 control_f135_pass
+peek F:4BA3C 128 control_f135_r4
+peek F:4A855 1 control_f135_regionbits
+peek F:4A961 3 control_f135_counts
+peek F:2600C 100 control_f135_desc
+step 1
+peek F:4A992 2 control_f136_pass
+peek F:4BA3C 128 control_f136_r4
+peek F:4A855 1 control_f136_regionbits
+peek F:4A961 3 control_f136_counts
+peek F:2600C 100 control_f136_desc
+step 1
+peek F:4A992 2 control_f137_pass
+peek F:4BA3C 128 control_f137_r4
+peek F:4A855 1 control_f137_regionbits
+peek F:4A961 3 control_f137_counts
+peek F:2600C 100 control_f137_desc
+step 1
+peek F:4A992 2 control_f138_pass
+peek F:4BA3C 128 control_f138_r4
+peek F:4A855 1 control_f138_regionbits
+peek F:4A961 3 control_f138_counts
+peek F:2600C 100 control_f138_desc
+step 1
+peek F:4A992 2 control_f139_pass
+peek F:4BA3C 128 control_f139_r4
+peek F:4A855 1 control_f139_regionbits
+peek F:4A961 3 control_f139_counts
+peek F:2600C 100 control_f139_desc
+step 1
+peek F:4A992 2 control_f140_pass
+peek F:4BA3C 128 control_f140_r4
+peek F:4A855 1 control_f140_regionbits
+peek F:4A961 3 control_f140_counts
+peek F:2600C 100 control_f140_desc
+step 1
+peek F:4A992 2 control_f141_pass
+peek F:4BA3C 128 control_f141_r4
+peek F:4A855 1 control_f141_regionbits
+peek F:4A961 3 control_f141_counts
+peek F:2600C 100 control_f141_desc
+step 1
+peek F:4A992 2 control_f142_pass
+peek F:4BA3C 128 control_f142_r4
+peek F:4A855 1 control_f142_regionbits
+peek F:4A961 3 control_f142_counts
+peek F:2600C 100 control_f142_desc
+step 1
+peek F:4A992 2 control_f143_pass
+peek F:4BA3C 128 control_f143_r4
+peek F:4A855 1 control_f143_regionbits
+peek F:4A961 3 control_f143_counts
+peek F:2600C 100 control_f143_desc
+step 1
+peek F:4A992 2 control_f144_pass
+peek F:4BA3C 128 control_f144_r4
+peek F:4A855 1 control_f144_regionbits
+peek F:4A961 3 control_f144_counts
+peek F:2600C 100 control_f144_desc
+step 1
+peek F:4A992 2 control_f145_pass
+peek F:4BA3C 128 control_f145_r4
+peek F:4A855 1 control_f145_regionbits
+peek F:4A961 3 control_f145_counts
+peek F:2600C 100 control_f145_desc
+step 1
+peek F:4A992 2 control_f146_pass
+peek F:4BA3C 128 control_f146_r4
+peek F:4A855 1 control_f146_regionbits
+peek F:4A961 3 control_f146_counts
+peek F:2600C 100 control_f146_desc
+step 1
+peek F:4A992 2 control_f147_pass
+peek F:4BA3C 128 control_f147_r4
+peek F:4A855 1 control_f147_regionbits
+peek F:4A961 3 control_f147_counts
+peek F:2600C 100 control_f147_desc
+step 1
+peek F:4A992 2 control_f148_pass
+peek F:4BA3C 128 control_f148_r4
+peek F:4A855 1 control_f148_regionbits
+peek F:4A961 3 control_f148_counts
+peek F:2600C 100 control_f148_desc
+step 1
+peek F:4A992 2 control_f149_pass
+peek F:4BA3C 128 control_f149_r4
+peek F:4A855 1 control_f149_regionbits
+peek F:4A961 3 control_f149_counts
+peek F:2600C 100 control_f149_desc
+step 1
+peek F:4A992 2 control_f150_pass
+peek F:4BA3C 128 control_f150_r4
+peek F:4A855 1 control_f150_regionbits
+peek F:4A961 3 control_f150_counts
+peek F:2600C 100 control_f150_desc
+step 1
+peek F:4A992 2 control_f151_pass
+peek F:4BA3C 128 control_f151_r4
+peek F:4A855 1 control_f151_regionbits
+peek F:4A961 3 control_f151_counts
+peek F:2600C 100 control_f151_desc
+step 1
+peek F:4A992 2 control_f152_pass
+peek F:4BA3C 128 control_f152_r4
+peek F:4A855 1 control_f152_regionbits
+peek F:4A961 3 control_f152_counts
+peek F:2600C 100 control_f152_desc
+step 1
+peek F:4A992 2 control_f153_pass
+peek F:4BA3C 128 control_f153_r4
+peek F:4A855 1 control_f153_regionbits
+peek F:4A961 3 control_f153_counts
+peek F:2600C 100 control_f153_desc
+step 1
+peek F:4A992 2 control_f154_pass
+peek F:4BA3C 128 control_f154_r4
+peek F:4A855 1 control_f154_regionbits
+peek F:4A961 3 control_f154_counts
+peek F:2600C 100 control_f154_desc
+step 1
+peek F:4A992 2 control_f155_pass
+peek F:4BA3C 128 control_f155_r4
+peek F:4A855 1 control_f155_regionbits
+peek F:4A961 3 control_f155_counts
+peek F:2600C 100 control_f155_desc
+step 1
+peek F:4A992 2 control_f156_pass
+peek F:4BA3C 128 control_f156_r4
+peek F:4A855 1 control_f156_regionbits
+peek F:4A961 3 control_f156_counts
+peek F:2600C 100 control_f156_desc
+step 1
+peek F:4A992 2 control_f157_pass
+peek F:4BA3C 128 control_f157_r4
+peek F:4A855 1 control_f157_regionbits
+peek F:4A961 3 control_f157_counts
+peek F:2600C 100 control_f157_desc
+step 1
+peek F:4A992 2 control_f158_pass
+peek F:4BA3C 128 control_f158_r4
+peek F:4A855 1 control_f158_regionbits
+peek F:4A961 3 control_f158_counts
+peek F:2600C 100 control_f158_desc
+step 1
+peek F:4A992 2 control_f159_pass
+peek F:4BA3C 128 control_f159_r4
+peek F:4A855 1 control_f159_regionbits
+peek F:4A961 3 control_f159_counts
+peek F:2600C 100 control_f159_desc
+step 1
+peek F:4A992 2 control_f160_pass
+peek F:4BA3C 128 control_f160_r4
+peek F:4A855 1 control_f160_regionbits
+peek F:4A961 3 control_f160_counts
+peek F:2600C 100 control_f160_desc
+step 1
+peek F:4A992 2 control_f161_pass
+peek F:4BA3C 128 control_f161_r4
+peek F:4A855 1 control_f161_regionbits
+peek F:4A961 3 control_f161_counts
+peek F:2600C 100 control_f161_desc
+step 1
+peek F:4A992 2 control_f162_pass
+peek F:4BA3C 128 control_f162_r4
+peek F:4A855 1 control_f162_regionbits
+peek F:4A961 3 control_f162_counts
+peek F:2600C 100 control_f162_desc
+step 1
+peek F:4A992 2 control_f163_pass
+peek F:4BA3C 128 control_f163_r4
+peek F:4A855 1 control_f163_regionbits
+peek F:4A961 3 control_f163_counts
+peek F:2600C 100 control_f163_desc
+step 1
+peek F:4A992 2 control_f164_pass
+peek F:4BA3C 128 control_f164_r4
+peek F:4A855 1 control_f164_regionbits
+peek F:4A961 3 control_f164_counts
+peek F:2600C 100 control_f164_desc
+step 1
+peek F:4A992 2 control_f165_pass
+peek F:4BA3C 128 control_f165_r4
+peek F:4A855 1 control_f165_regionbits
+peek F:4A961 3 control_f165_counts
+peek F:2600C 100 control_f165_desc
+step 1
+peek F:4A992 2 control_f166_pass
+peek F:4BA3C 128 control_f166_r4
+peek F:4A855 1 control_f166_regionbits
+peek F:4A961 3 control_f166_counts
+peek F:2600C 100 control_f166_desc
+step 1
+peek F:4A992 2 control_f167_pass
+peek F:4BA3C 128 control_f167_r4
+peek F:4A855 1 control_f167_regionbits
+peek F:4A961 3 control_f167_counts
+peek F:2600C 100 control_f167_desc
+step 1
+peek F:4A992 2 control_f168_pass
+peek F:4BA3C 128 control_f168_r4
+peek F:4A855 1 control_f168_regionbits
+peek F:4A961 3 control_f168_counts
+peek F:2600C 100 control_f168_desc
+step 1
+peek F:4A992 2 control_f169_pass
+peek F:4BA3C 128 control_f169_r4
+peek F:4A855 1 control_f169_regionbits
+peek F:4A961 3 control_f169_counts
+peek F:2600C 100 control_f169_desc
+step 1
+peek F:4A992 2 control_f170_pass
+peek F:4BA3C 128 control_f170_r4
+peek F:4A855 1 control_f170_regionbits
+peek F:4A961 3 control_f170_counts
+peek F:2600C 100 control_f170_desc
+step 1
+peek F:4A992 2 control_f171_pass
+peek F:4BA3C 128 control_f171_r4
+peek F:4A855 1 control_f171_regionbits
+peek F:4A961 3 control_f171_counts
+peek F:2600C 100 control_f171_desc
+step 1
+peek F:4A992 2 control_f172_pass
+peek F:4BA3C 128 control_f172_r4
+peek F:4A855 1 control_f172_regionbits
+peek F:4A961 3 control_f172_counts
+peek F:2600C 100 control_f172_desc
+step 1
+peek F:4A992 2 control_f173_pass
+peek F:4BA3C 128 control_f173_r4
+peek F:4A855 1 control_f173_regionbits
+peek F:4A961 3 control_f173_counts
+peek F:2600C 100 control_f173_desc
+step 1
+peek F:4A992 2 control_f174_pass
+peek F:4BA3C 128 control_f174_r4
+peek F:4A855 1 control_f174_regionbits
+peek F:4A961 3 control_f174_counts
+peek F:2600C 100 control_f174_desc
+step 1
+peek F:4A992 2 control_f175_pass
+peek F:4BA3C 128 control_f175_r4
+peek F:4A855 1 control_f175_regionbits
+peek F:4A961 3 control_f175_counts
+peek F:2600C 100 control_f175_desc
+step 1
+peek F:4A992 2 control_f176_pass
+peek F:4BA3C 128 control_f176_r4
+peek F:4A855 1 control_f176_regionbits
+peek F:4A961 3 control_f176_counts
+peek F:2600C 100 control_f176_desc
+step 1
+peek F:4A992 2 control_f177_pass
+peek F:4BA3C 128 control_f177_r4
+peek F:4A855 1 control_f177_regionbits
+peek F:4A961 3 control_f177_counts
+peek F:2600C 100 control_f177_desc
+step 1
+peek F:4A992 2 control_f178_pass
+peek F:4BA3C 128 control_f178_r4
+peek F:4A855 1 control_f178_regionbits
+peek F:4A961 3 control_f178_counts
+peek F:2600C 100 control_f178_desc
+step 1
+peek F:4A992 2 control_f179_pass
+peek F:4BA3C 128 control_f179_r4
+peek F:4A855 1 control_f179_regionbits
+peek F:4A961 3 control_f179_counts
+peek F:2600C 100 control_f179_desc
+step 1
+peek F:4A992 2 control_f180_pass
+peek F:4BA3C 128 control_f180_r4
+peek F:4A855 1 control_f180_regionbits
+peek F:4A961 3 control_f180_counts
+peek F:2600C 100 control_f180_desc
+step 1
+peek F:4A992 2 control_f181_pass
+peek F:4BA3C 128 control_f181_r4
+peek F:4A855 1 control_f181_regionbits
+peek F:4A961 3 control_f181_counts
+peek F:2600C 100 control_f181_desc
+step 1
+peek F:4A992 2 control_f182_pass
+peek F:4BA3C 128 control_f182_r4
+peek F:4A855 1 control_f182_regionbits
+peek F:4A961 3 control_f182_counts
+peek F:2600C 100 control_f182_desc
+step 1
+peek F:4A992 2 control_f183_pass
+peek F:4BA3C 128 control_f183_r4
+peek F:4A855 1 control_f183_regionbits
+peek F:4A961 3 control_f183_counts
+peek F:2600C 100 control_f183_desc
+step 1
+peek F:4A992 2 control_f184_pass
+peek F:4BA3C 128 control_f184_r4
+peek F:4A855 1 control_f184_regionbits
+peek F:4A961 3 control_f184_counts
+peek F:2600C 100 control_f184_desc
+step 1
+peek F:4A992 2 control_f185_pass
+peek F:4BA3C 128 control_f185_r4
+peek F:4A855 1 control_f185_regionbits
+peek F:4A961 3 control_f185_counts
+peek F:2600C 100 control_f185_desc
+step 1
+peek F:4A992 2 control_f186_pass
+peek F:4BA3C 128 control_f186_r4
+peek F:4A855 1 control_f186_regionbits
+peek F:4A961 3 control_f186_counts
+peek F:2600C 100 control_f186_desc
+step 1
+peek F:4A992 2 control_f187_pass
+peek F:4BA3C 128 control_f187_r4
+peek F:4A855 1 control_f187_regionbits
+peek F:4A961 3 control_f187_counts
+peek F:2600C 100 control_f187_desc
+step 1
+peek F:4A992 2 control_f188_pass
+peek F:4BA3C 128 control_f188_r4
+peek F:4A855 1 control_f188_regionbits
+peek F:4A961 3 control_f188_counts
+peek F:2600C 100 control_f188_desc
+step 1
+peek F:4A992 2 control_f189_pass
+peek F:4BA3C 128 control_f189_r4
+peek F:4A855 1 control_f189_regionbits
+peek F:4A961 3 control_f189_counts
+peek F:2600C 100 control_f189_desc
+step 1
+peek F:4A992 2 control_f190_pass
+peek F:4BA3C 128 control_f190_r4
+peek F:4A855 1 control_f190_regionbits
+peek F:4A961 3 control_f190_counts
+peek F:2600C 100 control_f190_desc
+step 1
+peek F:4A992 2 control_f191_pass
+peek F:4BA3C 128 control_f191_r4
+peek F:4A855 1 control_f191_regionbits
+peek F:4A961 3 control_f191_counts
+peek F:2600C 100 control_f191_desc
+step 1
+peek F:4A992 2 control_f192_pass
+peek F:4BA3C 128 control_f192_r4
+peek F:4A855 1 control_f192_regionbits
+peek F:4A961 3 control_f192_counts
+peek F:2600C 100 control_f192_desc
+step 1
+peek F:4A992 2 control_f193_pass
+peek F:4BA3C 128 control_f193_r4
+peek F:4A855 1 control_f193_regionbits
+peek F:4A961 3 control_f193_counts
+peek F:2600C 100 control_f193_desc
+step 1
+peek F:4A992 2 control_f194_pass
+peek F:4BA3C 128 control_f194_r4
+peek F:4A855 1 control_f194_regionbits
+peek F:4A961 3 control_f194_counts
+peek F:2600C 100 control_f194_desc
+step 1
+peek F:4A992 2 control_f195_pass
+peek F:4BA3C 128 control_f195_r4
+peek F:4A855 1 control_f195_regionbits
+peek F:4A961 3 control_f195_counts
+peek F:2600C 100 control_f195_desc
+step 1
+peek F:4A992 2 control_f196_pass
+peek F:4BA3C 128 control_f196_r4
+peek F:4A855 1 control_f196_regionbits
+peek F:4A961 3 control_f196_counts
+peek F:2600C 100 control_f196_desc
+step 1
+peek F:4A992 2 control_f197_pass
+peek F:4BA3C 128 control_f197_r4
+peek F:4A855 1 control_f197_regionbits
+peek F:4A961 3 control_f197_counts
+peek F:2600C 100 control_f197_desc
+step 1
+peek F:4A992 2 control_f198_pass
+peek F:4BA3C 128 control_f198_r4
+peek F:4A855 1 control_f198_regionbits
+peek F:4A961 3 control_f198_counts
+peek F:2600C 100 control_f198_desc
+step 1
+peek F:4A992 2 control_f199_pass
+peek F:4BA3C 128 control_f199_r4
+peek F:4A855 1 control_f199_regionbits
+peek F:4A961 3 control_f199_counts
+peek F:2600C 100 control_f199_desc

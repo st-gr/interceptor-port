@@ -1,0 +1,18 @@
+# the port's side of sound7-gun: two bursts in the cockpit view (36-blank hold = 6 steps, 120 blanks apart), the outside view, two more bursts. Run: build/sound7_port assets FILE
+start deck
+ticks 400
+at 1 btn SELECT_WEAPON 1
+at 2 btn SELECT_WEAPON 0
+at 3 btn SELECT_WEAPON 1
+at 4 btn SELECT_WEAPON 0
+at 5 btn SELECT_WEAPON 1
+at 6 btn SELECT_WEAPON 0
+at 8 btn FIRE 1
+at 14 btn FIRE 0
+at 30 btn FIRE 1
+at 36 btn FIRE 0
+at 60 kp 11
+at 70 btn FIRE 1
+at 76 btn FIRE 0
+at 100 btn FIRE 1
+at 106 btn FIRE 0

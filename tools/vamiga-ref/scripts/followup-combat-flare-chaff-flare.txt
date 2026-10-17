@@ -1,0 +1,612 @@
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key KPENTER 0.12
+stepuntil F:4A992 2 eq 271 600
+step 4
+colors pal
+peek F:4A83D 1 view
+peek F:4A992 2 pass0
+frame extracted/captures/followup/fc-flare-000.ppm
+poke F:4A943 1 2
+step 1
+peek F:4A992 2 f1_pass
+peek F:4AD2A 192 f1_pool
+peek F:4A943 3 f1_req
+peek F:4AB1A 24 f1_cam
+peek F:4AC90 18 f1_mat
+peek F:4AA04 4 f1_cell
+peek F:4A79E 6 f1_clip
+frame extracted/captures/followup/fc-flare-001.ppm
+step 1
+peek F:4A992 2 f2_pass
+peek F:4AD2A 192 f2_pool
+peek F:4A943 3 f2_req
+peek F:4AB1A 24 f2_cam
+peek F:4AC90 18 f2_mat
+peek F:4AA04 4 f2_cell
+peek F:4A79E 6 f2_clip
+frame extracted/captures/followup/fc-flare-002.ppm
+step 1
+peek F:4A992 2 f3_pass
+peek F:4AD2A 192 f3_pool
+peek F:4A943 3 f3_req
+peek F:4AB1A 24 f3_cam
+peek F:4AC90 18 f3_mat
+peek F:4AA04 4 f3_cell
+peek F:4A79E 6 f3_clip
+frame extracted/captures/followup/fc-flare-003.ppm
+step 1
+peek F:4A992 2 f4_pass
+peek F:4AD2A 192 f4_pool
+peek F:4A943 3 f4_req
+peek F:4AB1A 24 f4_cam
+peek F:4AC90 18 f4_mat
+peek F:4AA04 4 f4_cell
+peek F:4A79E 6 f4_clip
+frame extracted/captures/followup/fc-flare-004.ppm
+step 1
+peek F:4A992 2 f5_pass
+peek F:4AD2A 192 f5_pool
+peek F:4A943 3 f5_req
+peek F:4AB1A 24 f5_cam
+peek F:4AC90 18 f5_mat
+peek F:4AA04 4 f5_cell
+peek F:4A79E 6 f5_clip
+frame extracted/captures/followup/fc-flare-005.ppm
+step 1
+peek F:4A992 2 f6_pass
+peek F:4AD2A 192 f6_pool
+peek F:4A943 3 f6_req
+peek F:4AB1A 24 f6_cam
+peek F:4AC90 18 f6_mat
+peek F:4AA04 4 f6_cell
+peek F:4A79E 6 f6_clip
+frame extracted/captures/followup/fc-flare-006.ppm
+step 1
+peek F:4A992 2 f7_pass
+peek F:4AD2A 192 f7_pool
+peek F:4A943 3 f7_req
+peek F:4AB1A 24 f7_cam
+peek F:4AC90 18 f7_mat
+peek F:4AA04 4 f7_cell
+peek F:4A79E 6 f7_clip
+frame extracted/captures/followup/fc-flare-007.ppm
+step 1
+peek F:4A992 2 f8_pass
+peek F:4AD2A 192 f8_pool
+peek F:4A943 3 f8_req
+peek F:4AB1A 24 f8_cam
+peek F:4AC90 18 f8_mat
+peek F:4AA04 4 f8_cell
+peek F:4A79E 6 f8_clip
+frame extracted/captures/followup/fc-flare-008.ppm
+step 1
+peek F:4A992 2 f9_pass
+peek F:4AD2A 192 f9_pool
+peek F:4A943 3 f9_req
+peek F:4AB1A 24 f9_cam
+peek F:4AC90 18 f9_mat
+peek F:4AA04 4 f9_cell
+peek F:4A79E 6 f9_clip
+frame extracted/captures/followup/fc-flare-009.ppm
+step 1
+peek F:4A992 2 f10_pass
+peek F:4AD2A 192 f10_pool
+peek F:4A943 3 f10_req
+peek F:4AB1A 24 f10_cam
+peek F:4AC90 18 f10_mat
+peek F:4AA04 4 f10_cell
+peek F:4A79E 6 f10_clip
+frame extracted/captures/followup/fc-flare-010.ppm
+step 1
+peek F:4A992 2 f11_pass
+peek F:4AD2A 192 f11_pool
+peek F:4A943 3 f11_req
+peek F:4AB1A 24 f11_cam
+peek F:4AC90 18 f11_mat
+peek F:4AA04 4 f11_cell
+peek F:4A79E 6 f11_clip
+frame extracted/captures/followup/fc-flare-011.ppm
+step 1
+peek F:4A992 2 f12_pass
+peek F:4AD2A 192 f12_pool
+peek F:4A943 3 f12_req
+peek F:4AB1A 24 f12_cam
+peek F:4AC90 18 f12_mat
+peek F:4AA04 4 f12_cell
+peek F:4A79E 6 f12_clip
+frame extracted/captures/followup/fc-flare-012.ppm
+step 1
+peek F:4A992 2 f13_pass
+peek F:4AD2A 192 f13_pool
+peek F:4A943 3 f13_req
+peek F:4AB1A 24 f13_cam
+peek F:4AC90 18 f13_mat
+peek F:4AA04 4 f13_cell
+peek F:4A79E 6 f13_clip
+frame extracted/captures/followup/fc-flare-013.ppm
+step 1
+peek F:4A992 2 f14_pass
+peek F:4AD2A 192 f14_pool
+peek F:4A943 3 f14_req
+peek F:4AB1A 24 f14_cam
+peek F:4AC90 18 f14_mat
+peek F:4AA04 4 f14_cell
+peek F:4A79E 6 f14_clip
+frame extracted/captures/followup/fc-flare-014.ppm
+step 1
+peek F:4A992 2 f15_pass
+peek F:4AD2A 192 f15_pool
+peek F:4A943 3 f15_req
+peek F:4AB1A 24 f15_cam
+peek F:4AC90 18 f15_mat
+peek F:4AA04 4 f15_cell
+peek F:4A79E 6 f15_clip
+frame extracted/captures/followup/fc-flare-015.ppm
+step 1
+peek F:4A992 2 f16_pass
+peek F:4AD2A 192 f16_pool
+peek F:4A943 3 f16_req
+peek F:4AB1A 24 f16_cam
+peek F:4AC90 18 f16_mat
+peek F:4AA04 4 f16_cell
+peek F:4A79E 6 f16_clip
+frame extracted/captures/followup/fc-flare-016.ppm
+step 1
+peek F:4A992 2 f17_pass
+peek F:4AD2A 192 f17_pool
+peek F:4A943 3 f17_req
+peek F:4AB1A 24 f17_cam
+peek F:4AC90 18 f17_mat
+peek F:4AA04 4 f17_cell
+peek F:4A79E 6 f17_clip
+frame extracted/captures/followup/fc-flare-017.ppm
+step 1
+peek F:4A992 2 f18_pass
+peek F:4AD2A 192 f18_pool
+peek F:4A943 3 f18_req
+peek F:4AB1A 24 f18_cam
+peek F:4AC90 18 f18_mat
+peek F:4AA04 4 f18_cell
+peek F:4A79E 6 f18_clip
+frame extracted/captures/followup/fc-flare-018.ppm
+step 1
+peek F:4A992 2 f19_pass
+peek F:4AD2A 192 f19_pool
+peek F:4A943 3 f19_req
+peek F:4AB1A 24 f19_cam
+peek F:4AC90 18 f19_mat
+peek F:4AA04 4 f19_cell
+peek F:4A79E 6 f19_clip
+frame extracted/captures/followup/fc-flare-019.ppm
+step 1
+peek F:4A992 2 f20_pass
+peek F:4AD2A 192 f20_pool
+peek F:4A943 3 f20_req
+peek F:4AB1A 24 f20_cam
+peek F:4AC90 18 f20_mat
+peek F:4AA04 4 f20_cell
+peek F:4A79E 6 f20_clip
+frame extracted/captures/followup/fc-flare-020.ppm
+step 1
+peek F:4A992 2 f21_pass
+peek F:4AD2A 192 f21_pool
+peek F:4A943 3 f21_req
+peek F:4AB1A 24 f21_cam
+peek F:4AC90 18 f21_mat
+peek F:4AA04 4 f21_cell
+peek F:4A79E 6 f21_clip
+frame extracted/captures/followup/fc-flare-021.ppm
+step 1
+peek F:4A992 2 f22_pass
+peek F:4AD2A 192 f22_pool
+peek F:4A943 3 f22_req
+peek F:4AB1A 24 f22_cam
+peek F:4AC90 18 f22_mat
+peek F:4AA04 4 f22_cell
+peek F:4A79E 6 f22_clip
+frame extracted/captures/followup/fc-flare-022.ppm
+step 1
+peek F:4A992 2 f23_pass
+peek F:4AD2A 192 f23_pool
+peek F:4A943 3 f23_req
+peek F:4AB1A 24 f23_cam
+peek F:4AC90 18 f23_mat
+peek F:4AA04 4 f23_cell
+peek F:4A79E 6 f23_clip
+frame extracted/captures/followup/fc-flare-023.ppm
+step 1
+peek F:4A992 2 f24_pass
+peek F:4AD2A 192 f24_pool
+peek F:4A943 3 f24_req
+peek F:4AB1A 24 f24_cam
+peek F:4AC90 18 f24_mat
+peek F:4AA04 4 f24_cell
+peek F:4A79E 6 f24_clip
+frame extracted/captures/followup/fc-flare-024.ppm
+step 1
+peek F:4A992 2 f25_pass
+peek F:4AD2A 192 f25_pool
+peek F:4A943 3 f25_req
+peek F:4AB1A 24 f25_cam
+peek F:4AC90 18 f25_mat
+peek F:4AA04 4 f25_cell
+peek F:4A79E 6 f25_clip
+frame extracted/captures/followup/fc-flare-025.ppm
+step 1
+peek F:4A992 2 f26_pass
+peek F:4AD2A 192 f26_pool
+peek F:4A943 3 f26_req
+peek F:4AB1A 24 f26_cam
+peek F:4AC90 18 f26_mat
+peek F:4AA04 4 f26_cell
+peek F:4A79E 6 f26_clip
+frame extracted/captures/followup/fc-flare-026.ppm
+step 1
+peek F:4A992 2 f27_pass
+peek F:4AD2A 192 f27_pool
+peek F:4A943 3 f27_req
+peek F:4AB1A 24 f27_cam
+peek F:4AC90 18 f27_mat
+peek F:4AA04 4 f27_cell
+peek F:4A79E 6 f27_clip
+frame extracted/captures/followup/fc-flare-027.ppm
+step 1
+peek F:4A992 2 f28_pass
+peek F:4AD2A 192 f28_pool
+peek F:4A943 3 f28_req
+peek F:4AB1A 24 f28_cam
+peek F:4AC90 18 f28_mat
+peek F:4AA04 4 f28_cell
+peek F:4A79E 6 f28_clip
+frame extracted/captures/followup/fc-flare-028.ppm
+step 1
+peek F:4A992 2 f29_pass
+peek F:4AD2A 192 f29_pool
+peek F:4A943 3 f29_req
+peek F:4AB1A 24 f29_cam
+peek F:4AC90 18 f29_mat
+peek F:4AA04 4 f29_cell
+peek F:4A79E 6 f29_clip
+frame extracted/captures/followup/fc-flare-029.ppm
+step 1
+peek F:4A992 2 f30_pass
+peek F:4AD2A 192 f30_pool
+peek F:4A943 3 f30_req
+peek F:4AB1A 24 f30_cam
+peek F:4AC90 18 f30_mat
+peek F:4AA04 4 f30_cell
+peek F:4A79E 6 f30_clip
+frame extracted/captures/followup/fc-flare-030.ppm
+step 1
+peek F:4A992 2 f31_pass
+peek F:4AD2A 192 f31_pool
+peek F:4A943 3 f31_req
+peek F:4AB1A 24 f31_cam
+peek F:4AC90 18 f31_mat
+peek F:4AA04 4 f31_cell
+peek F:4A79E 6 f31_clip
+frame extracted/captures/followup/fc-flare-031.ppm
+step 1
+peek F:4A992 2 f32_pass
+peek F:4AD2A 192 f32_pool
+peek F:4A943 3 f32_req
+peek F:4AB1A 24 f32_cam
+peek F:4AC90 18 f32_mat
+peek F:4AA04 4 f32_cell
+peek F:4A79E 6 f32_clip
+frame extracted/captures/followup/fc-flare-032.ppm
+step 1
+peek F:4A992 2 f33_pass
+peek F:4AD2A 192 f33_pool
+peek F:4A943 3 f33_req
+peek F:4AB1A 24 f33_cam
+peek F:4AC90 18 f33_mat
+peek F:4AA04 4 f33_cell
+peek F:4A79E 6 f33_clip
+frame extracted/captures/followup/fc-flare-033.ppm
+step 1
+peek F:4A992 2 f34_pass
+peek F:4AD2A 192 f34_pool
+peek F:4A943 3 f34_req
+peek F:4AB1A 24 f34_cam
+peek F:4AC90 18 f34_mat
+peek F:4AA04 4 f34_cell
+peek F:4A79E 6 f34_clip
+frame extracted/captures/followup/fc-flare-034.ppm
+step 1
+peek F:4A992 2 f35_pass
+peek F:4AD2A 192 f35_pool
+peek F:4A943 3 f35_req
+peek F:4AB1A 24 f35_cam
+peek F:4AC90 18 f35_mat
+peek F:4AA04 4 f35_cell
+peek F:4A79E 6 f35_clip
+frame extracted/captures/followup/fc-flare-035.ppm
+step 1
+peek F:4A992 2 f36_pass
+peek F:4AD2A 192 f36_pool
+peek F:4A943 3 f36_req
+peek F:4AB1A 24 f36_cam
+peek F:4AC90 18 f36_mat
+peek F:4AA04 4 f36_cell
+peek F:4A79E 6 f36_clip
+frame extracted/captures/followup/fc-flare-036.ppm
+step 1
+peek F:4A992 2 f37_pass
+peek F:4AD2A 192 f37_pool
+peek F:4A943 3 f37_req
+peek F:4AB1A 24 f37_cam
+peek F:4AC90 18 f37_mat
+peek F:4AA04 4 f37_cell
+peek F:4A79E 6 f37_clip
+frame extracted/captures/followup/fc-flare-037.ppm
+step 1
+peek F:4A992 2 f38_pass
+peek F:4AD2A 192 f38_pool
+peek F:4A943 3 f38_req
+peek F:4AB1A 24 f38_cam
+peek F:4AC90 18 f38_mat
+peek F:4AA04 4 f38_cell
+peek F:4A79E 6 f38_clip
+frame extracted/captures/followup/fc-flare-038.ppm
+step 1
+peek F:4A992 2 f39_pass
+peek F:4AD2A 192 f39_pool
+peek F:4A943 3 f39_req
+peek F:4AB1A 24 f39_cam
+peek F:4AC90 18 f39_mat
+peek F:4AA04 4 f39_cell
+peek F:4A79E 6 f39_clip
+frame extracted/captures/followup/fc-flare-039.ppm
+step 1
+peek F:4A992 2 f40_pass
+peek F:4AD2A 192 f40_pool
+peek F:4A943 3 f40_req
+peek F:4AB1A 24 f40_cam
+peek F:4AC90 18 f40_mat
+peek F:4AA04 4 f40_cell
+peek F:4A79E 6 f40_clip
+frame extracted/captures/followup/fc-flare-040.ppm
+step 1
+peek F:4A992 2 f41_pass
+peek F:4AD2A 192 f41_pool
+peek F:4A943 3 f41_req
+peek F:4AB1A 24 f41_cam
+peek F:4AC90 18 f41_mat
+peek F:4AA04 4 f41_cell
+peek F:4A79E 6 f41_clip
+frame extracted/captures/followup/fc-flare-041.ppm
+step 1
+peek F:4A992 2 f42_pass
+peek F:4AD2A 192 f42_pool
+peek F:4A943 3 f42_req
+peek F:4AB1A 24 f42_cam
+peek F:4AC90 18 f42_mat
+peek F:4AA04 4 f42_cell
+peek F:4A79E 6 f42_clip
+frame extracted/captures/followup/fc-flare-042.ppm
+step 1
+peek F:4A992 2 f43_pass
+peek F:4AD2A 192 f43_pool
+peek F:4A943 3 f43_req
+peek F:4AB1A 24 f43_cam
+peek F:4AC90 18 f43_mat
+peek F:4AA04 4 f43_cell
+peek F:4A79E 6 f43_clip
+frame extracted/captures/followup/fc-flare-043.ppm
+step 1
+peek F:4A992 2 f44_pass
+peek F:4AD2A 192 f44_pool
+peek F:4A943 3 f44_req
+peek F:4AB1A 24 f44_cam
+peek F:4AC90 18 f44_mat
+peek F:4AA04 4 f44_cell
+peek F:4A79E 6 f44_clip
+frame extracted/captures/followup/fc-flare-044.ppm
+step 1
+peek F:4A992 2 f45_pass
+peek F:4AD2A 192 f45_pool
+peek F:4A943 3 f45_req
+peek F:4AB1A 24 f45_cam
+peek F:4AC90 18 f45_mat
+peek F:4AA04 4 f45_cell
+peek F:4A79E 6 f45_clip
+frame extracted/captures/followup/fc-flare-045.ppm
+step 1
+peek F:4A992 2 f46_pass
+peek F:4AD2A 192 f46_pool
+peek F:4A943 3 f46_req
+peek F:4AB1A 24 f46_cam
+peek F:4AC90 18 f46_mat
+peek F:4AA04 4 f46_cell
+peek F:4A79E 6 f46_clip
+frame extracted/captures/followup/fc-flare-046.ppm
+step 1
+peek F:4A992 2 f47_pass
+peek F:4AD2A 192 f47_pool
+peek F:4A943 3 f47_req
+peek F:4AB1A 24 f47_cam
+peek F:4AC90 18 f47_mat
+peek F:4AA04 4 f47_cell
+peek F:4A79E 6 f47_clip
+frame extracted/captures/followup/fc-flare-047.ppm
+step 1
+peek F:4A992 2 f48_pass
+peek F:4AD2A 192 f48_pool
+peek F:4A943 3 f48_req
+peek F:4AB1A 24 f48_cam
+peek F:4AC90 18 f48_mat
+peek F:4AA04 4 f48_cell
+peek F:4A79E 6 f48_clip
+frame extracted/captures/followup/fc-flare-048.ppm
+step 1
+peek F:4A992 2 f49_pass
+peek F:4AD2A 192 f49_pool
+peek F:4A943 3 f49_req
+peek F:4AB1A 24 f49_cam
+peek F:4AC90 18 f49_mat
+peek F:4AA04 4 f49_cell
+peek F:4A79E 6 f49_clip
+frame extracted/captures/followup/fc-flare-049.ppm
+step 1
+peek F:4A992 2 f50_pass
+peek F:4AD2A 192 f50_pool
+peek F:4A943 3 f50_req
+peek F:4AB1A 24 f50_cam
+peek F:4AC90 18 f50_mat
+peek F:4AA04 4 f50_cell
+peek F:4A79E 6 f50_clip
+frame extracted/captures/followup/fc-flare-050.ppm
+step 1
+peek F:4A992 2 f51_pass
+peek F:4AD2A 192 f51_pool
+peek F:4A943 3 f51_req
+peek F:4AB1A 24 f51_cam
+peek F:4AC90 18 f51_mat
+peek F:4AA04 4 f51_cell
+peek F:4A79E 6 f51_clip
+frame extracted/captures/followup/fc-flare-051.ppm
+step 1
+peek F:4A992 2 f52_pass
+peek F:4AD2A 192 f52_pool
+peek F:4A943 3 f52_req
+peek F:4AB1A 24 f52_cam
+peek F:4AC90 18 f52_mat
+peek F:4AA04 4 f52_cell
+peek F:4A79E 6 f52_clip
+frame extracted/captures/followup/fc-flare-052.ppm
+step 1
+peek F:4A992 2 f53_pass
+peek F:4AD2A 192 f53_pool
+peek F:4A943 3 f53_req
+peek F:4AB1A 24 f53_cam
+peek F:4AC90 18 f53_mat
+peek F:4AA04 4 f53_cell
+peek F:4A79E 6 f53_clip
+frame extracted/captures/followup/fc-flare-053.ppm
+step 1
+peek F:4A992 2 f54_pass
+peek F:4AD2A 192 f54_pool
+peek F:4A943 3 f54_req
+peek F:4AB1A 24 f54_cam
+peek F:4AC90 18 f54_mat
+peek F:4AA04 4 f54_cell
+peek F:4A79E 6 f54_clip
+frame extracted/captures/followup/fc-flare-054.ppm
+step 1
+peek F:4A992 2 f55_pass
+peek F:4AD2A 192 f55_pool
+peek F:4A943 3 f55_req
+peek F:4AB1A 24 f55_cam
+peek F:4AC90 18 f55_mat
+peek F:4AA04 4 f55_cell
+peek F:4A79E 6 f55_clip
+frame extracted/captures/followup/fc-flare-055.ppm
+step 1
+peek F:4A992 2 f56_pass
+peek F:4AD2A 192 f56_pool
+peek F:4A943 3 f56_req
+peek F:4AB1A 24 f56_cam
+peek F:4AC90 18 f56_mat
+peek F:4AA04 4 f56_cell
+peek F:4A79E 6 f56_clip
+frame extracted/captures/followup/fc-flare-056.ppm
+step 1
+peek F:4A992 2 f57_pass
+peek F:4AD2A 192 f57_pool
+peek F:4A943 3 f57_req
+peek F:4AB1A 24 f57_cam
+peek F:4AC90 18 f57_mat
+peek F:4AA04 4 f57_cell
+peek F:4A79E 6 f57_clip
+frame extracted/captures/followup/fc-flare-057.ppm
+step 1
+peek F:4A992 2 f58_pass
+peek F:4AD2A 192 f58_pool
+peek F:4A943 3 f58_req
+peek F:4AB1A 24 f58_cam
+peek F:4AC90 18 f58_mat
+peek F:4AA04 4 f58_cell
+peek F:4A79E 6 f58_clip
+frame extracted/captures/followup/fc-flare-058.ppm
+step 1
+peek F:4A992 2 f59_pass
+peek F:4AD2A 192 f59_pool
+peek F:4A943 3 f59_req
+peek F:4AB1A 24 f59_cam
+peek F:4AC90 18 f59_mat
+peek F:4AA04 4 f59_cell
+peek F:4A79E 6 f59_clip
+frame extracted/captures/followup/fc-flare-059.ppm
+step 1
+peek F:4A992 2 f60_pass
+peek F:4AD2A 192 f60_pool
+peek F:4A943 3 f60_req
+peek F:4AB1A 24 f60_cam
+peek F:4AC90 18 f60_mat
+peek F:4AA04 4 f60_cell
+peek F:4A79E 6 f60_clip
+frame extracted/captures/followup/fc-flare-060.ppm
+step 12
+frame extracted/captures/followup/fc-flare-061.ppm
+step 12
+frame extracted/captures/followup/fc-flare-073.ppm
+step 12
+frame extracted/captures/followup/fc-flare-085.ppm
+step 12
+frame extracted/captures/followup/fc-flare-097.ppm
+step 12
+frame extracted/captures/followup/fc-flare-109.ppm
+step 12
+frame extracted/captures/followup/fc-flare-121.ppm
+step 12
+frame extracted/captures/followup/fc-flare-133.ppm
+step 12
+frame extracted/captures/followup/fc-flare-145.ppm
+step 12
+frame extracted/captures/followup/fc-flare-157.ppm
+step 12
+frame extracted/captures/followup/fc-flare-169.ppm
+step 12
+frame extracted/captures/followup/fc-flare-181.ppm
+step 12
+frame extracted/captures/followup/fc-flare-193.ppm
+step 12
+frame extracted/captures/followup/fc-flare-205.ppm
+step 12
+frame extracted/captures/followup/fc-flare-217.ppm
+step 12
+frame extracted/captures/followup/fc-flare-229.ppm
+step 12
+frame extracted/captures/followup/fc-flare-241.ppm
+step 12
+frame extracted/captures/followup/fc-flare-253.ppm
+step 12
+frame extracted/captures/followup/fc-flare-265.ppm
+step 12
+frame extracted/captures/followup/fc-flare-277.ppm
+step 12
+frame extracted/captures/followup/fc-flare-289.ppm
+step 12
+frame extracted/captures/followup/fc-flare-301.ppm
+step 12
+frame extracted/captures/followup/fc-flare-313.ppm
+step 12
+frame extracted/captures/followup/fc-flare-325.ppm
+step 12
+frame extracted/captures/followup/fc-flare-337.ppm
+step 12
+frame extracted/captures/followup/fc-flare-349.ppm
+step 12
+frame extracted/captures/followup/fc-flare-361.ppm
+step 12
+frame extracted/captures/followup/fc-flare-373.ppm
+step 12
+frame extracted/captures/followup/fc-flare-385.ppm
+step 12
+frame extracted/captures/followup/fc-flare-397.ppm
+peek F:4AC90 18 viewmat
+peek F:4AB2A 8 camoff
+peek F:4AB1A 12 campos

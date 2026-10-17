@@ -1,0 +1,36 @@
+# RETURN (raw 0x44) in free flight (V:4A95E = 1): the handler at 0x1E8A6, on the deck and in the air (note 05, 17.17).
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4B23C 32 deck_before_rec
+peek F:4B29F 1 deck_before_p63
+peek F:4A8FB 2 deck_before_ammo
+peek F:4AA52 4 deck_before_reqs
+peek F:4A94F 1 deck_before_allow
+key RETURN 0.12
+step 6
+peek F:4B23C 32 deck_after_rec
+peek F:4B29F 1 deck_after_p63
+peek F:4A8FB 2 deck_after_ammo
+peek F:4AA52 4 deck_after_reqs
+peek F:4A94F 1 deck_after_allow
+frame extracted/captures/return-deck-after.ppm
+step 30
+peek F:4B23C 32 deck_30_rec
+peek F:4A8FB 2 deck_30_ammo
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4B23C 32 air_before_rec
+peek F:4B29F 1 air_before_p63
+peek F:4A8FB 2 air_before_ammo
+peek F:4AA52 4 air_before_reqs
+key RETURN 0.12
+step 6
+peek F:4B23C 32 air_after_rec
+peek F:4B29F 1 air_after_p63
+peek F:4A8FB 2 air_after_ammo
+peek F:4AA52 4 air_after_reqs
+step 30
+peek F:4B23C 32 air_30_rec
+peek F:4A8FB 2 air_30_ammo

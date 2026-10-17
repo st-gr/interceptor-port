@@ -1,0 +1,11 @@
+# sound-cia: the CIA port registers and the sound enable longs in the credits snapshot (note 10 1.5, 2.3)
+restore extracted/captures/credits.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek R:BFE001 1 ciaa_pra
+peek R:BFE201 1 ciaa_ddra
+peek R:BFD000 1 ciab_pra
+peek R:BFD200 1 ciab_ddra
+peek F:4AC10 4 enable
+peek F:54FBE 4 master
+peek F:4A88F 1 flag

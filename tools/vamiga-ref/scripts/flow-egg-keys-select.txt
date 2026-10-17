@@ -1,0 +1,39 @@
+# Note 08 section 11: keys at the selection screens. P (pause) and Z / DEL at the location selection, then digits.
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A866 1 p0_pause
+peek F:4A966 1 p0_phase
+peek F:4A930 1 p0_shift
+thaw
+key P
+wait 1
+freeze
+peek F:4A866 1 p1_pause
+peek F:4A966 1 p1_phase
+frame extracted/captures/egg-select-after-p.ppm
+thaw
+key P
+wait 1
+freeze
+peek F:4A866 1 p2_pause
+peek F:4A966 1 p2_phase
+thaw
+key 0x31
+wait 1
+key 0x46
+wait 1
+freeze
+peek F:4A866 1 z_pause
+peek F:4A966 1 z_phase
+peek F:4A900 1 z_loc
+frame extracted/captures/egg-select-after-z.ppm
+thaw
+key 0x66
+key 2
+wait 1.5
+freeze
+peek F:4A900 1 am_loc
+peek F:4A966 1 am_phase
+peek F:4A931 1 am_flag
+thaw

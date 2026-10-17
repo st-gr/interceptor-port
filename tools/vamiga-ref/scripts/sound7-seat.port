@@ -1,0 +1,5 @@
+# the port's side of sound7-seat: SHIFT-E (the ejection), the gear sound requested while the camera is on the seat. Run: build/sound7_port assets FILE
+start deck
+ticks 200
+at 5 btn EJECT
+at 50 geardown

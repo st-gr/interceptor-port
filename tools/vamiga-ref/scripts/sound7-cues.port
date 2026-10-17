@@ -1,0 +1,8 @@
+# the port's side of sound7-cues: the cue bits 0x10, 0x800, 0x40, 0x01 poked one at a time into V:4AC0C (the aircraft record's cue long), then 0x10 right after 0x01. Run: build/sound7_port assets FILE
+start deck
+ticks 400
+at 3 cue 10
+at 20 cue 800
+at 40 cue 40
+at 80 cue 1
+at 105 cue 10

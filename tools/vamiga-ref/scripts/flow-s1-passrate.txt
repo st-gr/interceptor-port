@@ -1,0 +1,184 @@
+# Pass rate on the credits screen: V:4AB8E (decremented once per pass) and the blank counter V:4A82C per blank.
+restore extracted/captures/credits.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4AB8E 2 b0_cd
+peek F:4A82C 2 b0_bl
+step
+peek F:4AB8E 2 b1_cd
+peek F:4A82C 2 b1_bl
+step
+peek F:4AB8E 2 b2_cd
+peek F:4A82C 2 b2_bl
+step
+peek F:4AB8E 2 b3_cd
+peek F:4A82C 2 b3_bl
+step
+peek F:4AB8E 2 b4_cd
+peek F:4A82C 2 b4_bl
+step
+peek F:4AB8E 2 b5_cd
+peek F:4A82C 2 b5_bl
+step
+peek F:4AB8E 2 b6_cd
+peek F:4A82C 2 b6_bl
+step
+peek F:4AB8E 2 b7_cd
+peek F:4A82C 2 b7_bl
+step
+peek F:4AB8E 2 b8_cd
+peek F:4A82C 2 b8_bl
+step
+peek F:4AB8E 2 b9_cd
+peek F:4A82C 2 b9_bl
+step
+peek F:4AB8E 2 b10_cd
+peek F:4A82C 2 b10_bl
+step
+peek F:4AB8E 2 b11_cd
+peek F:4A82C 2 b11_bl
+step
+peek F:4AB8E 2 b12_cd
+peek F:4A82C 2 b12_bl
+step
+peek F:4AB8E 2 b13_cd
+peek F:4A82C 2 b13_bl
+step
+peek F:4AB8E 2 b14_cd
+peek F:4A82C 2 b14_bl
+step
+peek F:4AB8E 2 b15_cd
+peek F:4A82C 2 b15_bl
+step
+peek F:4AB8E 2 b16_cd
+peek F:4A82C 2 b16_bl
+step
+peek F:4AB8E 2 b17_cd
+peek F:4A82C 2 b17_bl
+step
+peek F:4AB8E 2 b18_cd
+peek F:4A82C 2 b18_bl
+step
+peek F:4AB8E 2 b19_cd
+peek F:4A82C 2 b19_bl
+step
+peek F:4AB8E 2 b20_cd
+peek F:4A82C 2 b20_bl
+step
+peek F:4AB8E 2 b21_cd
+peek F:4A82C 2 b21_bl
+step
+peek F:4AB8E 2 b22_cd
+peek F:4A82C 2 b22_bl
+step
+peek F:4AB8E 2 b23_cd
+peek F:4A82C 2 b23_bl
+step
+peek F:4AB8E 2 b24_cd
+peek F:4A82C 2 b24_bl
+step
+peek F:4AB8E 2 b25_cd
+peek F:4A82C 2 b25_bl
+step
+peek F:4AB8E 2 b26_cd
+peek F:4A82C 2 b26_bl
+step
+peek F:4AB8E 2 b27_cd
+peek F:4A82C 2 b27_bl
+step
+peek F:4AB8E 2 b28_cd
+peek F:4A82C 2 b28_bl
+step
+peek F:4AB8E 2 b29_cd
+peek F:4A82C 2 b29_bl
+step
+peek F:4AB8E 2 b30_cd
+peek F:4A82C 2 b30_bl
+step
+peek F:4AB8E 2 b31_cd
+peek F:4A82C 2 b31_bl
+step
+peek F:4AB8E 2 b32_cd
+peek F:4A82C 2 b32_bl
+step
+peek F:4AB8E 2 b33_cd
+peek F:4A82C 2 b33_bl
+step
+peek F:4AB8E 2 b34_cd
+peek F:4A82C 2 b34_bl
+step
+peek F:4AB8E 2 b35_cd
+peek F:4A82C 2 b35_bl
+step
+peek F:4AB8E 2 b36_cd
+peek F:4A82C 2 b36_bl
+step
+peek F:4AB8E 2 b37_cd
+peek F:4A82C 2 b37_bl
+step
+peek F:4AB8E 2 b38_cd
+peek F:4A82C 2 b38_bl
+step
+peek F:4AB8E 2 b39_cd
+peek F:4A82C 2 b39_bl
+step
+peek F:4AB8E 2 b40_cd
+peek F:4A82C 2 b40_bl
+step
+peek F:4AB8E 2 b41_cd
+peek F:4A82C 2 b41_bl
+step
+peek F:4AB8E 2 b42_cd
+peek F:4A82C 2 b42_bl
+step
+peek F:4AB8E 2 b43_cd
+peek F:4A82C 2 b43_bl
+step
+peek F:4AB8E 2 b44_cd
+peek F:4A82C 2 b44_bl
+step
+peek F:4AB8E 2 b45_cd
+peek F:4A82C 2 b45_bl
+step
+peek F:4AB8E 2 b46_cd
+peek F:4A82C 2 b46_bl
+step
+peek F:4AB8E 2 b47_cd
+peek F:4A82C 2 b47_bl
+step
+peek F:4AB8E 2 b48_cd
+peek F:4A82C 2 b48_bl
+step
+peek F:4AB8E 2 b49_cd
+peek F:4A82C 2 b49_bl
+step
+peek F:4AB8E 2 b50_cd
+peek F:4A82C 2 b50_bl
+step
+peek F:4AB8E 2 b51_cd
+peek F:4A82C 2 b51_bl
+step
+peek F:4AB8E 2 b52_cd
+peek F:4A82C 2 b52_bl
+step
+peek F:4AB8E 2 b53_cd
+peek F:4A82C 2 b53_bl
+step
+peek F:4AB8E 2 b54_cd
+peek F:4A82C 2 b54_bl
+step
+peek F:4AB8E 2 b55_cd
+peek F:4A82C 2 b55_bl
+step
+peek F:4AB8E 2 b56_cd
+peek F:4A82C 2 b56_bl
+step
+peek F:4AB8E 2 b57_cd
+peek F:4A82C 2 b57_bl
+step
+peek F:4AB8E 2 b58_cd
+peek F:4A82C 2 b58_bl
+step
+peek F:4AB8E 2 b59_cd
+peek F:4A82C 2 b59_bl
+step

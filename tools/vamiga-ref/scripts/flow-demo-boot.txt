@@ -1,0 +1,28 @@
+# Note 08 section 7: the replay buffers at boot. credits.vasnap and flow-menu.vasnap: stream pointers, record-end pointer, capacity and
+# replay mode before any flight has been started (menu item 1 needs V:54E5C non-zero).
+restore extracted/captures/credits.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:54E44 4 credits_start
+peek F:54E48 4 credits_count
+peek F:54E4C 4 credits_recend
+peek F:54E50 4 credits_ev
+peek F:54E58 4 credits_ep
+peek F:54E5C 4 credits_kp
+peek F:4A903 1 credits_m903
+peek F:4A848 1 credits_rec
+peek F:4A901 1 credits_ac
+peek F:4A704 2 credits_c704
+peek F:4A708 2 credits_c708
+peek F:4A70C 2 credits_c70c
+restore extracted/captures/flow-menu.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:54E44 4 menu_start
+peek F:54E4C 4 menu_recend
+peek F:54E58 4 menu_ep
+peek F:54E5C 4 menu_kp
+peek F:4A903 1 menu_m903
+peek F:4A95E 1 menu_mode
+peek F:4A901 1 menu_ac
+peek F:4A900 1 menu_loc

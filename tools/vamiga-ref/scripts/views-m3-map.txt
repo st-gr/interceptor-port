@@ -1,0 +1,277 @@
+# Map view (M), KP-Enter in the map, M in the external view, cockpit zoom keys and the first external aim frames (note 06).
+# Staged from cockpit-ground.vasnap; output read through tools/vamiga-ref/logparse.py; frames in extracted/captures/views3/ (git-ignored).
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key M
+wait 0.25
+log m_a
+peek F:4A83C 320 m_a_v
+peek F:4AA3C 8 m_a_hud
+peek F:4AB1A 80 m_a_cam
+peek F:4ACEA 48 m_a_pos
+peek F:4A71C 4 m_a_alt
+peek F:4A992 2 m_a_n
+peek F:4B23C 160 m_a_rec
+peek F:4AAF6 6 m_a_zoom
+peek F:4AB78 4 m_a_aimout
+wait 0.6
+log m_b
+peek F:4A83C 320 m_b_v
+peek F:4AA3C 8 m_b_hud
+peek F:4AB1A 80 m_b_cam
+peek F:4ACEA 48 m_b_pos
+peek F:4A71C 4 m_b_alt
+peek F:4A992 2 m_b_n
+peek F:4B23C 160 m_b_rec
+peek F:4AAF6 6 m_b_zoom
+peek F:4AB78 4 m_b_aimout
+wait 2
+log m_c
+peek F:4A83C 320 m_c_v
+peek F:4AA3C 8 m_c_hud
+peek F:4AB1A 80 m_c_cam
+peek F:4ACEA 48 m_c_pos
+peek F:4A71C 4 m_c_alt
+peek F:4A992 2 m_c_n
+peek F:4B23C 160 m_c_rec
+peek F:4AAF6 6 m_c_zoom
+peek F:4AB78 4 m_c_aimout
+frame extracted/captures/views3/m-map.ppm
+key KPENTER
+wait 0.4
+log mk_a
+peek F:4A83C 320 mk_a_v
+peek F:4AA3C 8 mk_a_hud
+peek F:4AB1A 80 mk_a_cam
+peek F:4ACEA 48 mk_a_pos
+peek F:4A71C 4 mk_a_alt
+peek F:4A992 2 mk_a_n
+peek F:4B23C 160 mk_a_rec
+peek F:4AAF6 6 mk_a_zoom
+peek F:4AB78 4 mk_a_aimout
+wait 2
+log mk_b
+peek F:4A83C 320 mk_b_v
+peek F:4AA3C 8 mk_b_hud
+peek F:4AB1A 80 mk_b_cam
+peek F:4ACEA 48 mk_b_pos
+peek F:4A71C 4 mk_b_alt
+peek F:4A992 2 mk_b_n
+peek F:4B23C 160 mk_b_rec
+peek F:4AAF6 6 mk_b_zoom
+peek F:4AB78 4 mk_b_aimout
+frame extracted/captures/views3/m-after-kpenter.ppm
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KPENTER
+wait 2
+log e_a
+peek F:4A83C 320 e_a_v
+peek F:4AA3C 8 e_a_hud
+peek F:4AB1A 80 e_a_cam
+peek F:4ACEA 48 e_a_pos
+peek F:4A71C 4 e_a_alt
+peek F:4A992 2 e_a_n
+peek F:4B23C 160 e_a_rec
+peek F:4AAF6 6 e_a_zoom
+peek F:4AB78 4 e_a_aimout
+key M
+wait 2
+log em_a
+peek F:4A83C 320 em_a_v
+peek F:4AA3C 8 em_a_hud
+peek F:4AB1A 80 em_a_cam
+peek F:4ACEA 48 em_a_pos
+peek F:4A71C 4 em_a_alt
+peek F:4A992 2 em_a_n
+peek F:4B23C 160 em_a_rec
+peek F:4AAF6 6 em_a_zoom
+peek F:4AB78 4 em_a_aimout
+frame extracted/captures/views3/em-map.ppm
+key M
+wait 2
+log emm_a
+peek F:4A83C 320 emm_a_v
+peek F:4AA3C 8 emm_a_hud
+peek F:4AB1A 80 emm_a_cam
+peek F:4ACEA 48 emm_a_pos
+peek F:4A71C 4 emm_a_alt
+peek F:4A992 2 emm_a_n
+peek F:4B23C 160 emm_a_rec
+peek F:4AAF6 6 emm_a_zoom
+peek F:4AB78 4 emm_a_aimout
+frame extracted/captures/views3/emm-back.ppm
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key RBRACKET
+wait 0.5
+log zr0
+peek F:4A83C 320 zr0_v
+peek F:4AA3C 8 zr0_hud
+peek F:4AB1A 80 zr0_cam
+peek F:4ACEA 48 zr0_pos
+peek F:4A71C 4 zr0_alt
+peek F:4A992 2 zr0_n
+peek F:4B23C 160 zr0_rec
+peek F:4AAF6 6 zr0_zoom
+peek F:4AB78 4 zr0_aimout
+key RBRACKET
+wait 0.5
+log zr1
+peek F:4A83C 320 zr1_v
+peek F:4AA3C 8 zr1_hud
+peek F:4AB1A 80 zr1_cam
+peek F:4ACEA 48 zr1_pos
+peek F:4A71C 4 zr1_alt
+peek F:4A992 2 zr1_n
+peek F:4B23C 160 zr1_rec
+peek F:4AAF6 6 zr1_zoom
+peek F:4AB78 4 zr1_aimout
+key RBRACKET
+wait 0.5
+log zr2
+peek F:4A83C 320 zr2_v
+peek F:4AA3C 8 zr2_hud
+peek F:4AB1A 80 zr2_cam
+peek F:4ACEA 48 zr2_pos
+peek F:4A71C 4 zr2_alt
+peek F:4A992 2 zr2_n
+peek F:4B23C 160 zr2_rec
+peek F:4AAF6 6 zr2_zoom
+peek F:4AB78 4 zr2_aimout
+key LBRACKET
+wait 0.5
+log zl0
+peek F:4A83C 320 zl0_v
+peek F:4AA3C 8 zl0_hud
+peek F:4AB1A 80 zl0_cam
+peek F:4ACEA 48 zl0_pos
+peek F:4A71C 4 zl0_alt
+peek F:4A992 2 zl0_n
+peek F:4B23C 160 zl0_rec
+peek F:4AAF6 6 zl0_zoom
+peek F:4AB78 4 zl0_aimout
+key LBRACKET
+wait 0.5
+log zl1
+peek F:4A83C 320 zl1_v
+peek F:4AA3C 8 zl1_hud
+peek F:4AB1A 80 zl1_cam
+peek F:4ACEA 48 zl1_pos
+peek F:4A71C 4 zl1_alt
+peek F:4A992 2 zl1_n
+peek F:4B23C 160 zl1_rec
+peek F:4AAF6 6 zl1_zoom
+peek F:4AB78 4 zl1_aimout
+key LBRACKET
+wait 0.5
+log zl2
+peek F:4A83C 320 zl2_v
+peek F:4AA3C 8 zl2_hud
+peek F:4AB1A 80 zl2_cam
+peek F:4ACEA 48 zl2_pos
+peek F:4A71C 4 zl2_alt
+peek F:4A992 2 zl2_n
+peek F:4B23C 160 zl2_rec
+peek F:4AAF6 6 zl2_zoom
+peek F:4AB78 4 zl2_aimout
+key LBRACKET
+wait 0.5
+log zl3
+peek F:4A83C 320 zl3_v
+peek F:4AA3C 8 zl3_hud
+peek F:4AB1A 80 zl3_cam
+peek F:4ACEA 48 zl3_pos
+peek F:4A71C 4 zl3_alt
+peek F:4A992 2 zl3_n
+peek F:4B23C 160 zl3_rec
+peek F:4AAF6 6 zl3_zoom
+peek F:4AB78 4 zl3_aimout
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KPENTER
+wait 1.5
+key LBRACKET
+wait 0.8
+log el0
+peek F:4A83C 320 el0_v
+peek F:4AA3C 8 el0_hud
+peek F:4AB1A 80 el0_cam
+peek F:4ACEA 48 el0_pos
+peek F:4A71C 4 el0_alt
+peek F:4A992 2 el0_n
+peek F:4B23C 160 el0_rec
+peek F:4AAF6 6 el0_zoom
+peek F:4AB78 4 el0_aimout
+key LBRACKET
+wait 0.8
+log el1
+peek F:4A83C 320 el1_v
+peek F:4AA3C 8 el1_hud
+peek F:4AB1A 80 el1_cam
+peek F:4ACEA 48 el1_pos
+peek F:4A71C 4 el1_alt
+peek F:4A992 2 el1_n
+peek F:4B23C 160 el1_rec
+peek F:4AAF6 6 el1_zoom
+peek F:4AB78 4 el1_aimout
+key LBRACKET
+wait 0.8
+log el2
+peek F:4A83C 320 el2_v
+peek F:4AA3C 8 el2_hud
+peek F:4AB1A 80 el2_cam
+peek F:4ACEA 48 el2_pos
+peek F:4A71C 4 el2_alt
+peek F:4A992 2 el2_n
+peek F:4B23C 160 el2_rec
+peek F:4AAF6 6 el2_zoom
+peek F:4AB78 4 el2_aimout
+key LBRACKET
+wait 0.8
+log el3
+peek F:4A83C 320 el3_v
+peek F:4AA3C 8 el3_hud
+peek F:4AB1A 80 el3_cam
+peek F:4ACEA 48 el3_pos
+peek F:4A71C 4 el3_alt
+peek F:4A992 2 el3_n
+peek F:4B23C 160 el3_rec
+peek F:4AAF6 6 el3_zoom
+peek F:4AB78 4 el3_aimout
+key M
+wait 1.5
+log el_m
+peek F:4A83C 320 el_m_v
+peek F:4AA3C 8 el_m_hud
+peek F:4AB1A 80 el_m_cam
+peek F:4ACEA 48 el_m_pos
+peek F:4A71C 4 el_m_alt
+peek F:4A992 2 el_m_n
+peek F:4B23C 160 el_m_rec
+peek F:4AAF6 6 el_m_zoom
+peek F:4AB78 4 el_m_aimout
+key RBRACKET
+wait 1
+log el_m_r
+peek F:4A83C 320 el_m_r_v
+peek F:4AA3C 8 el_m_r_hud
+peek F:4AB1A 80 el_m_r_cam
+peek F:4ACEA 48 el_m_r_pos
+peek F:4A71C 4 el_m_r_alt
+peek F:4A992 2 el_m_r_n
+peek F:4B23C 160 el_m_r_rec
+peek F:4AAF6 6 el_m_r_zoom
+peek F:4AB78 4 el_m_r_aimout
+key M
+wait 1.5
+log el_mm
+peek F:4A83C 320 el_mm_v
+peek F:4AA3C 8 el_mm_hud
+peek F:4AB1A 80 el_mm_cam
+peek F:4ACEA 48 el_mm_pos
+peek F:4A71C 4 el_mm_alt
+peek F:4A992 2 el_mm_n
+peek F:4B23C 160 el_mm_rec
+peek F:4AAF6 6 el_mm_zoom
+peek F:4AB78 4 el_mm_aimout

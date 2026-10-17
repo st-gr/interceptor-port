@@ -1,0 +1,45 @@
+# takeoff-and-circuit: 600 flight ticks after the screens (75 s at FLIGHT_STEP_HZ = 8), runway start, scripted through the core's input events.
+# Keypad keys are the single keypad event: 6 head right, 11 enter (cockpit <-> external), release = kpup.
+# The start goes through the screens by their keys (note 08 section 5), 1 tick = 1 core step: any key on the credits (tick 3), the menu's '2' free flight (30), the
+# location '1' (70, the first airfield: the runway), the aircraft '1' (130, the F/A-18), then the 118-step approach of the airfield 1 start runs unskipped (KP-ENTER would skip it), the notice
+# and the four-step wait; the first flight step is tick 268 (the approach is 118 passes for the location key 1, then 2 + 6 passes, note 08 12.14 N1, C13; it was 262 with a flat 112). Every later tick is the old flight script's tick + 268.
+screens
+at 3 key 120
+at 30 key 50
+at 70 key 49
+at 130 key 49
+ticks 868
+# the brake is left alone (off); full throttle by the F10 preset (a press event, no release)
+at 269 fkey 10
+# rotate at about 150 kt: stick back (pull), then ease off
+at 353 stick 0 12000
+at 368 stick 0 4000
+# gear up once airborne
+at 378 btn GEAR
+# climbing right turn: a short roll right, then centre the stick (the bank holds)
+at 398 stick 12000 6000
+at 403 stick 0 4000
+# roll the wings back with a short left roll
+at 458 stick -12000 0
+at 463 stick 0 0
+# head glance to the right (KP6 press, release; the head view ends 4 to 5 s later)
+at 498 kp 6
+at 504 kpup 6
+# external view (KP-Enter), the distance level one closer (], press and release), back to the cockpit
+at 548 kp 11
+at 563 btn RBRACKET 1
+at 564 btn RBRACKET 0
+at 588 kp 11
+# the map (M) and back
+at 618 btn TOWER
+at 648 btn TOWER
+# pause (ticks 754 to 764: ten steps paused), unpause
+at 678 btn PAUSE
+at 688 btn PAUSE
+# HUD off, on
+at 718 btn HUD_TOGGLE
+at 748 btn HUD_TOGGLE
+# throttle back to the F5 preset, a short air brake pulse (the brake key toggles)
+at 788 fkey 5
+at 808 btn BRAKE
+at 828 btn BRAKE

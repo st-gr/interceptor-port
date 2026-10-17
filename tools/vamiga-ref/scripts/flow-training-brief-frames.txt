@@ -1,0 +1,20 @@
+# Note 08 8.1: the briefing screens of training parts 1 and 2 (frames at 300 and 600 blanks after the countercode) and record 4's cell bytes behind them.
+restore extracted/captures/training-code-3.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt 194A
+freeze
+step 300
+peek F:4BA3C 32 p1_rec4_300
+peek F:4BA3C 2 p1_w0
+frame extracted/captures/flow-training-brief1-300.ppm
+step 300
+frame extracted/captures/flow-training-brief1-600.ppm
+restore extracted/captures/training-code-4.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt 3CCE
+freeze
+step 300
+peek F:4BA3C 32 p2_rec4_300
+frame extracted/captures/flow-training-brief2-300.ppm
+step 300
+frame extracted/captures/flow-training-brief2-600.ppm

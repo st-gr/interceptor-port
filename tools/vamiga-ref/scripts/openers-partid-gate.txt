@@ -1,0 +1,145 @@
+# Part id +0x7B (note 04a, section 8a): the gate case (pitch above v = 600) stepped one blank at a time, to see the order of the pitch update, the band and the store.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+holduntil UP F:4B2A2 gt 4700 12
+freeze
+log blank_1
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_2
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_3
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_4
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_5
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_6
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_7
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_8
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_9
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_10
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_11
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_12
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_13
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step
+log blank_14
+peek F:4B2A2 2 pitchw
+peek F:4A923 1 v923
+peek F:4A83E 1 v83e
+peek F:4B2B7 1 pid
+peek F:4AB30 4 eye
+peek F:4A992 2 step
+peek F:4A8ED 1 v8ed
+peek F:4AA6E 2 curent
+step

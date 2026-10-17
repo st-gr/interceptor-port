@@ -1,0 +1,78 @@
+# followup-combat-batch-h: the selector clock at the other start paths (note 07 2.4): modes 5 and 7 (F3, F5 from the briefing prompt snapshots), the flight school's two parts, the qualification, and the free-flight start (location key 1, aircraft 1)
+thaw
+restore extracted/captures/mb/m5-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt 4218
+freeze
+step 1100
+stepuntil F:1A6BC 4 eq 0xC0AA26 3500
+peek F:4ABAE 4 m5_clock
+peek F:4ABB0 2 m5_sel
+peek F:4ABD4 1 m5_variant
+peek F:4ABD0 4 m5_off
+peek F:4A95E 1 m5_mode
+peek F:4A992 2 m5_pass
+thaw
+restore extracted/captures/mb/m7-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt 5C9C
+freeze
+step 1100
+stepuntil F:1A6BC 4 eq 0xC0AA26 3500
+peek F:4ABAE 4 m7_clock
+peek F:4ABB0 2 m7_sel
+peek F:4ABD4 1 m7_variant
+peek F:4ABD0 4 m7_off
+peek F:4A95E 1 m7_mode
+peek F:4A992 2 m7_pass
+thaw
+restore extracted/captures/training-code-3.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt 194A
+freeze
+step 3000
+peek F:4ABAE 4 t3_clock
+peek F:4ABB0 2 t3_sel
+peek F:4ABD4 1 t3_variant
+peek F:4ABD0 4 t3_off
+peek F:4A95E 1 t3_mode
+peek F:4A992 2 t3_pass
+thaw
+restore extracted/captures/training-code-4.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt 3CCE
+freeze
+step 3000
+peek F:4ABAE 4 t4_clock
+peek F:4ABB0 2 t4_sel
+peek F:4ABD4 1 t4_variant
+peek F:4ABD0 4 t4_off
+peek F:4A95E 1 t4_mode
+peek F:4A992 2 t4_pass
+thaw
+restore extracted/captures/qual-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt F7BD
+freeze
+step 3000
+peek F:4ABAE 4 q_clock
+peek F:4ABB0 2 q_sel
+peek F:4ABD4 1 q_variant
+peek F:4ABD0 4 q_off
+peek F:4A95E 1 q_mode
+peek F:4A992 2 q_pass
+thaw
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 1 0.12
+stepuntil F:4A849 1 eq 1 2500
+step 90
+key 1 0.12
+step 3000
+peek F:4ABAE 4 f1_clock
+peek F:4ABB0 2 f1_sel
+peek F:4ABD4 1 f1_variant
+peek F:4ABD0 4 f1_off
+peek F:4A95E 1 f1_mode
+peek F:4A992 2 f1_pass

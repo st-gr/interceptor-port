@@ -1,0 +1,55 @@
+# mission-f1: menu key F1, the first mission (game mode 3, identification, note 08 12.5): the script wins when the mission-1 contact counter V:4A927 is negative, 31 radar contacts of any aircraft
+# in the scope window with a target designated. It has no failure code. The radar walk owns the counter (radar_t.mission1) and the game feeds it to the script (missions_view_t.in_ident): the run
+# reaches END CODE 0xFF at tick 1482 (33 ticks of 0xFF, then the outcome screens: the code 1 at 1515 when the flight resumes); the old time-out at tick 4200 was the unwired counter.
+# 1 tick = 1 core step, the game starts at the credits: any key (tick 3), the continuing welcome of a log with a player record (tick 133), the menu's F1 (tick 175). The flight log is imported by the
+# script ("log": qualified, tours 2) and the placement generator is seeded with 57 ("seed 57"). F1 asks for the aircraft after the location: the aircraft digit '1' (the F/A-18) at tick 395; the
+# approach, the notice and the wait follow by themselves and the first flight step is tick 552.
+# The flight is a scripted input sequence found by a seeded random search for a close pass of the unknown aircraft with no weapon used (the mission forbids opening fire): a catapult launch with
+# F10 at tick 554, a pull at 638, the gear at 663, then stick deflections and T (designate) at the ticks below. The run is cut at tick 1600 (the first script ran on to 4200); the pass count is the tick.
+# Since milestone 6 the placement selector is the measured one (note 07 2.4: 20,000 x m + the start path's delta + a jitter of -3 to +3, m drawn from the seeded generator), so "seed N" picks a placement: seed 57 draws m = 18 and the jitter -4, selector 0x8488:
+# variant 0, offsets (0, +2) cells, the placement of the earlier golden (the earlier selector 0xA289 of seed 17 is not reachable with the jitter list: its low six bits, 9, are not drawable for this mission, 8 is the nearest and gives the same variant and
+# offsets); the inputs below are unchanged and give the same end tick. Found by running the script with other seeds.
+# Milestone 7 history: the click cost 5,350 and the measured typing times (note 08 3.8) and then the final round (note 08 12.14 C14 and 5.13: the missions' approach is the mover's from the briefing camera, and the first flight pass follows the outcome resume by one step) re-timed this script twice; the values above are the current ones. The seed and the inputs are unchanged and the run still reaches the end code 0xFF.
+# The real "at" lines after tick 400 moved by +5 in the final round (0 in the click-cost round); the synthetic "sat" lines by -8.
+screens
+seed 57
+log 0 0 0 1 1 1 1 1 0
+ticks 1605
+# SYNTHETIC RUN (CI): "synthflight" gives the synthetic world the invented flight tables (all zero) and the invented mission tables of tests/world_synth.h (scenario rows, templates, position blocks, briefing chain, ai.bin), so the F-key starts the mission; "synthfrom 395" keeps the
+# "at" lines up to tick 395 (the screens) and drops the real fight; the "sat" lines are the synthetic fight (they apply to the synthetic run only). The all-zero physics leave every aircraft where the placement put it. F1: three unknown aircraft ahead, the designation at 625 starts the 30-pass contact count: END CODE 0xFF at tick 643, resume code 1 at 653.
+synthflight
+synthfrom 395
+synthetic 800
+sat 402 fkey 10
+sat 625 btn TARGET
+# the credits (any key), the continuing welcome (any key), the menu's F1
+at 3 key 120
+at 133 key 120
+at 175 fkey 1
+# the briefing chain runs by itself (the location is fixed, the approach and the notice are not skipped); the flight starts at the tick the header names
+at 395 key 49
+at 554 fkey 10
+at 638 stick 0 12000
+at 653 stick 0 0
+at 663 btn GEAR
+at 680 btn TARGET
+at 733 stick -12000 -12000
+at 733 stick -12000 12000
+at 734 stick 0 0
+at 753 btn TARGET
+at 782 btn TARGET
+at 796 btn TARGET
+at 817 btn TARGET
+at 900 stick 0 12000
+at 924 btn TARGET
+at 1053 btn TARGET
+at 1122 btn TARGET
+at 1130 btn TARGET
+at 1166 btn TARGET
+at 1216 btn TARGET
+at 1327 btn TARGET
+at 1337 btn TARGET
+at 1358 stick 12000 -12000
+at 1423 btn TARGET
+at 1485 btn TARGET
+at 1488 stick -12000 0

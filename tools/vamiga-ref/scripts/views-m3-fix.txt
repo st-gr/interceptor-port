@@ -1,0 +1,1500 @@
+# Note-fix round (views): ring keys KP3 and KP-dot in the cockpit, M in an external view, the pause (keys that act, the head hold timer), the hold timer seconds.
+# Staged from cockpit-ground.vasnap (note 06 'Head views', 'View kinds, settled'); logs in extracted/captures/logs/views-m3-fix.txt (S1, S3, S4, S4b, S6) and views-m3-fix2.txt (T2, T4, T5).
+log S1_KP3
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key KP3 0.12
+step 1
+peek F:4A96A 1 s1KP3_0_dir
+peek F:4A910 1 s1KP3_0_req
+peek F:4A968 1 s1KP3_0_echo
+peek F:4A83D 1 s1KP3_0_view
+peek F:4A85F 1 s1KP3_0_code
+peek F:4A949 1 s1KP3_0_hold
+step 1
+peek F:4A96A 1 s1KP3_1_dir
+peek F:4A910 1 s1KP3_1_req
+peek F:4A968 1 s1KP3_1_echo
+peek F:4A83D 1 s1KP3_1_view
+peek F:4A85F 1 s1KP3_1_code
+peek F:4A949 1 s1KP3_1_hold
+step 1
+peek F:4A96A 1 s1KP3_2_dir
+peek F:4A910 1 s1KP3_2_req
+peek F:4A968 1 s1KP3_2_echo
+peek F:4A83D 1 s1KP3_2_view
+peek F:4A85F 1 s1KP3_2_code
+peek F:4A949 1 s1KP3_2_hold
+step 1
+peek F:4A96A 1 s1KP3_3_dir
+peek F:4A910 1 s1KP3_3_req
+peek F:4A968 1 s1KP3_3_echo
+peek F:4A83D 1 s1KP3_3_view
+peek F:4A85F 1 s1KP3_3_code
+peek F:4A949 1 s1KP3_3_hold
+step 1
+peek F:4A96A 1 s1KP3_4_dir
+peek F:4A910 1 s1KP3_4_req
+peek F:4A968 1 s1KP3_4_echo
+peek F:4A83D 1 s1KP3_4_view
+peek F:4A85F 1 s1KP3_4_code
+peek F:4A949 1 s1KP3_4_hold
+step 1
+peek F:4A96A 1 s1KP3_5_dir
+peek F:4A910 1 s1KP3_5_req
+peek F:4A968 1 s1KP3_5_echo
+peek F:4A83D 1 s1KP3_5_view
+peek F:4A85F 1 s1KP3_5_code
+peek F:4A949 1 s1KP3_5_hold
+step 1
+peek F:4A96A 1 s1KP3_6_dir
+peek F:4A910 1 s1KP3_6_req
+peek F:4A968 1 s1KP3_6_echo
+peek F:4A83D 1 s1KP3_6_view
+peek F:4A85F 1 s1KP3_6_code
+peek F:4A949 1 s1KP3_6_hold
+step 1
+peek F:4A96A 1 s1KP3_7_dir
+peek F:4A910 1 s1KP3_7_req
+peek F:4A968 1 s1KP3_7_echo
+peek F:4A83D 1 s1KP3_7_view
+peek F:4A85F 1 s1KP3_7_code
+peek F:4A949 1 s1KP3_7_hold
+log S1_KPDOT
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key KPDOT 0.12
+step 1
+peek F:4A96A 1 s1KPDOT_0_dir
+peek F:4A910 1 s1KPDOT_0_req
+peek F:4A968 1 s1KPDOT_0_echo
+peek F:4A83D 1 s1KPDOT_0_view
+peek F:4A85F 1 s1KPDOT_0_code
+peek F:4A949 1 s1KPDOT_0_hold
+step 1
+peek F:4A96A 1 s1KPDOT_1_dir
+peek F:4A910 1 s1KPDOT_1_req
+peek F:4A968 1 s1KPDOT_1_echo
+peek F:4A83D 1 s1KPDOT_1_view
+peek F:4A85F 1 s1KPDOT_1_code
+peek F:4A949 1 s1KPDOT_1_hold
+step 1
+peek F:4A96A 1 s1KPDOT_2_dir
+peek F:4A910 1 s1KPDOT_2_req
+peek F:4A968 1 s1KPDOT_2_echo
+peek F:4A83D 1 s1KPDOT_2_view
+peek F:4A85F 1 s1KPDOT_2_code
+peek F:4A949 1 s1KPDOT_2_hold
+step 1
+peek F:4A96A 1 s1KPDOT_3_dir
+peek F:4A910 1 s1KPDOT_3_req
+peek F:4A968 1 s1KPDOT_3_echo
+peek F:4A83D 1 s1KPDOT_3_view
+peek F:4A85F 1 s1KPDOT_3_code
+peek F:4A949 1 s1KPDOT_3_hold
+step 1
+peek F:4A96A 1 s1KPDOT_4_dir
+peek F:4A910 1 s1KPDOT_4_req
+peek F:4A968 1 s1KPDOT_4_echo
+peek F:4A83D 1 s1KPDOT_4_view
+peek F:4A85F 1 s1KPDOT_4_code
+peek F:4A949 1 s1KPDOT_4_hold
+step 1
+peek F:4A96A 1 s1KPDOT_5_dir
+peek F:4A910 1 s1KPDOT_5_req
+peek F:4A968 1 s1KPDOT_5_echo
+peek F:4A83D 1 s1KPDOT_5_view
+peek F:4A85F 1 s1KPDOT_5_code
+peek F:4A949 1 s1KPDOT_5_hold
+step 1
+peek F:4A96A 1 s1KPDOT_6_dir
+peek F:4A910 1 s1KPDOT_6_req
+peek F:4A968 1 s1KPDOT_6_echo
+peek F:4A83D 1 s1KPDOT_6_view
+peek F:4A85F 1 s1KPDOT_6_code
+peek F:4A949 1 s1KPDOT_6_hold
+step 1
+peek F:4A96A 1 s1KPDOT_7_dir
+peek F:4A910 1 s1KPDOT_7_req
+peek F:4A968 1 s1KPDOT_7_echo
+peek F:4A83D 1 s1KPDOT_7_view
+peek F:4A85F 1 s1KPDOT_7_code
+peek F:4A949 1 s1KPDOT_7_hold
+log S3_M_external
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key KPENTER 0.12
+step 14
+peek F:4A83D 1 s3a_view
+peek F:4A8EB 1 s3a_saved
+peek F:4A865 1 s3a_map
+peek F:4A97E 2 s3a_req
+poke F:4A8EB 1 0x55
+key M 0.12
+step 1
+peek F:4A83D 1 s3b_0_view
+peek F:4A8EB 1 s3b_0_saved
+peek F:4A865 1 s3b_0_map
+peek F:4A97E 2 s3b_0_req
+peek F:4AA3C 2 s3b_0_row
+peek F:4ACFA 4 s3b_0_alt
+step 1
+peek F:4A83D 1 s3b_1_view
+peek F:4A8EB 1 s3b_1_saved
+peek F:4A865 1 s3b_1_map
+peek F:4A97E 2 s3b_1_req
+peek F:4AA3C 2 s3b_1_row
+peek F:4ACFA 4 s3b_1_alt
+step 1
+peek F:4A83D 1 s3b_2_view
+peek F:4A8EB 1 s3b_2_saved
+peek F:4A865 1 s3b_2_map
+peek F:4A97E 2 s3b_2_req
+peek F:4AA3C 2 s3b_2_row
+peek F:4ACFA 4 s3b_2_alt
+step 1
+peek F:4A83D 1 s3b_3_view
+peek F:4A8EB 1 s3b_3_saved
+peek F:4A865 1 s3b_3_map
+peek F:4A97E 2 s3b_3_req
+peek F:4AA3C 2 s3b_3_row
+peek F:4ACFA 4 s3b_3_alt
+step 1
+peek F:4A83D 1 s3b_4_view
+peek F:4A8EB 1 s3b_4_saved
+peek F:4A865 1 s3b_4_map
+peek F:4A97E 2 s3b_4_req
+peek F:4AA3C 2 s3b_4_row
+peek F:4ACFA 4 s3b_4_alt
+step 1
+peek F:4A83D 1 s3b_5_view
+peek F:4A8EB 1 s3b_5_saved
+peek F:4A865 1 s3b_5_map
+peek F:4A97E 2 s3b_5_req
+peek F:4AA3C 2 s3b_5_row
+peek F:4ACFA 4 s3b_5_alt
+step 1
+peek F:4A83D 1 s3b_6_view
+peek F:4A8EB 1 s3b_6_saved
+peek F:4A865 1 s3b_6_map
+peek F:4A97E 2 s3b_6_req
+peek F:4AA3C 2 s3b_6_row
+peek F:4ACFA 4 s3b_6_alt
+step 1
+peek F:4A83D 1 s3b_7_view
+peek F:4A8EB 1 s3b_7_saved
+peek F:4A865 1 s3b_7_map
+peek F:4A97E 2 s3b_7_req
+peek F:4AA3C 2 s3b_7_row
+peek F:4ACFA 4 s3b_7_alt
+step 1
+peek F:4A83D 1 s3b_8_view
+peek F:4A8EB 1 s3b_8_saved
+peek F:4A865 1 s3b_8_map
+peek F:4A97E 2 s3b_8_req
+peek F:4AA3C 2 s3b_8_row
+peek F:4ACFA 4 s3b_8_alt
+step 1
+peek F:4A83D 1 s3b_9_view
+peek F:4A8EB 1 s3b_9_saved
+peek F:4A865 1 s3b_9_map
+peek F:4A97E 2 s3b_9_req
+peek F:4AA3C 2 s3b_9_row
+peek F:4ACFA 4 s3b_9_alt
+step 1
+peek F:4A83D 1 s3b_10_view
+peek F:4A8EB 1 s3b_10_saved
+peek F:4A865 1 s3b_10_map
+peek F:4A97E 2 s3b_10_req
+peek F:4AA3C 2 s3b_10_row
+peek F:4ACFA 4 s3b_10_alt
+step 1
+peek F:4A83D 1 s3b_11_view
+peek F:4A8EB 1 s3b_11_saved
+peek F:4A865 1 s3b_11_map
+peek F:4A97E 2 s3b_11_req
+peek F:4AA3C 2 s3b_11_row
+peek F:4ACFA 4 s3b_11_alt
+step 1
+peek F:4A83D 1 s3b_12_view
+peek F:4A8EB 1 s3b_12_saved
+peek F:4A865 1 s3b_12_map
+peek F:4A97E 2 s3b_12_req
+peek F:4AA3C 2 s3b_12_row
+peek F:4ACFA 4 s3b_12_alt
+step 1
+peek F:4A83D 1 s3b_13_view
+peek F:4A8EB 1 s3b_13_saved
+peek F:4A865 1 s3b_13_map
+peek F:4A97E 2 s3b_13_req
+peek F:4AA3C 2 s3b_13_row
+peek F:4ACFA 4 s3b_13_alt
+step 1
+peek F:4A83D 1 s3b_14_view
+peek F:4A8EB 1 s3b_14_saved
+peek F:4A865 1 s3b_14_map
+peek F:4A97E 2 s3b_14_req
+peek F:4AA3C 2 s3b_14_row
+peek F:4ACFA 4 s3b_14_alt
+step 1
+peek F:4A83D 1 s3b_15_view
+peek F:4A8EB 1 s3b_15_saved
+peek F:4A865 1 s3b_15_map
+peek F:4A97E 2 s3b_15_req
+peek F:4AA3C 2 s3b_15_row
+peek F:4ACFA 4 s3b_15_alt
+log S4_pause_keys
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4B2B8 1 s4_0_gear
+peek F:4B23C 4 s4_0_w0w1
+peek F:4A8FF 1 s4_0_hookb
+peek F:4A859 1 s4_0_hud
+peek F:4B2A1 1 s4_0_stick
+peek F:4A8E2 1 s4_0_esc
+peek F:4A866 1 s4_0_pause
+peek F:4A8E6 3 s4_0_axes
+thaw
+key P 0.12
+wait 1.0
+freeze
+peek F:4B2B8 1 s4_p_gear
+peek F:4B23C 4 s4_p_w0w1
+peek F:4A8FF 1 s4_p_hookb
+peek F:4A859 1 s4_p_hud
+peek F:4B2A1 1 s4_p_stick
+peek F:4A8E2 1 s4_p_esc
+peek F:4A866 1 s4_p_pause
+peek F:4A8E6 3 s4_p_axes
+thaw
+key G 0.12
+wait 0.6
+freeze
+peek F:4B2B8 1 s4_g_gear
+peek F:4B23C 4 s4_g_w0w1
+peek F:4A8FF 1 s4_g_hookb
+peek F:4A859 1 s4_g_hud
+peek F:4B2A1 1 s4_g_stick
+peek F:4A8E2 1 s4_g_esc
+peek F:4A866 1 s4_g_pause
+peek F:4A8E6 3 s4_g_axes
+thaw
+key A 0.12
+wait 0.6
+freeze
+peek F:4B2B8 1 s4_a_gear
+peek F:4B23C 4 s4_a_w0w1
+peek F:4A8FF 1 s4_a_hookb
+peek F:4A859 1 s4_a_hud
+peek F:4B2A1 1 s4_a_stick
+peek F:4A8E2 1 s4_a_esc
+peek F:4A866 1 s4_a_pause
+peek F:4A8E6 3 s4_a_axes
+thaw
+key H 0.12
+wait 0.6
+freeze
+peek F:4B2B8 1 s4_h_gear
+peek F:4B23C 4 s4_h_w0w1
+peek F:4A8FF 1 s4_h_hookb
+peek F:4A859 1 s4_h_hud
+peek F:4B2A1 1 s4_h_stick
+peek F:4A8E2 1 s4_h_esc
+peek F:4A866 1 s4_h_pause
+peek F:4A8E6 3 s4_h_axes
+thaw
+key BACKSPACE 0.12
+wait 0.6
+freeze
+peek F:4B2B8 1 s4_bs_gear
+peek F:4B23C 4 s4_bs_w0w1
+peek F:4A8FF 1 s4_bs_hookb
+peek F:4A859 1 s4_bs_hud
+peek F:4B2A1 1 s4_bs_stick
+peek F:4A8E2 1 s4_bs_esc
+peek F:4A866 1 s4_bs_pause
+peek F:4A8E6 3 s4_bs_axes
+thaw
+key 0 0.12
+wait 0.6
+freeze
+peek F:4B2B8 1 s4_m0_gear
+peek F:4B23C 4 s4_m0_w0w1
+peek F:4A8FF 1 s4_m0_hookb
+peek F:4A859 1 s4_m0_hud
+peek F:4B2A1 1 s4_m0_stick
+peek F:4A8E2 1 s4_m0_esc
+peek F:4A866 1 s4_m0_pause
+peek F:4A8E6 3 s4_m0_axes
+thaw
+key MINUS 0.12
+wait 0.6
+freeze
+peek F:4B2B8 1 s4_mm_gear
+peek F:4B23C 4 s4_mm_w0w1
+peek F:4A8FF 1 s4_mm_hookb
+peek F:4A859 1 s4_mm_hud
+peek F:4B2A1 1 s4_mm_stick
+peek F:4A8E2 1 s4_mm_esc
+peek F:4A866 1 s4_mm_pause
+peek F:4A8E6 3 s4_mm_axes
+thaw
+key UP 0.12
+wait 0.6
+freeze
+peek F:4B2B8 1 s4_up_gear
+peek F:4B23C 4 s4_up_w0w1
+peek F:4A8FF 1 s4_up_hookb
+peek F:4A859 1 s4_up_hud
+peek F:4B2A1 1 s4_up_stick
+peek F:4A8E2 1 s4_up_esc
+peek F:4A866 1 s4_up_pause
+peek F:4A8E6 3 s4_up_axes
+thaw
+key ESC 0.12
+wait 0.6
+freeze
+peek F:4B2B8 1 s4_esc_gear
+peek F:4B23C 4 s4_esc_w0w1
+peek F:4A8FF 1 s4_esc_hookb
+peek F:4A859 1 s4_esc_hud
+peek F:4B2A1 1 s4_esc_stick
+peek F:4A8E2 1 s4_esc_esc
+peek F:4A866 1 s4_esc_pause
+peek F:4A8E6 3 s4_esc_axes
+thaw
+key P 0.12
+wait 1.0
+freeze
+peek F:4B2B8 1 s4_u_gear
+peek F:4B23C 4 s4_u_w0w1
+peek F:4A8FF 1 s4_u_hookb
+peek F:4A859 1 s4_u_hud
+peek F:4B2A1 1 s4_u_stick
+peek F:4A8E2 1 s4_u_esc
+peek F:4A866 1 s4_u_pause
+peek F:4A8E6 3 s4_u_axes
+log S4b_hold_in_pause
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+thaw
+key P 0.12
+wait 0.8
+key KP6 0.12
+wait 0.3
+peek F:4A949 1 s4b_k_hold
+peek F:4A85F 1 s4b_k_code
+peek F:4ABAA 4 s4b_k_secs
+peek F:4ABBA 4 s4b_k_last
+peek F:4A866 1 s4b_k_pause
+peek F:4A992 2 s4b_k_n
+wait 1.0
+peek F:4A949 1 s4b_0_hold
+peek F:4A85F 1 s4b_0_code
+peek F:4ABAA 4 s4b_0_secs
+peek F:4ABBA 4 s4b_0_last
+peek F:4A866 1 s4b_0_pause
+peek F:4A992 2 s4b_0_n
+wait 1.0
+peek F:4A949 1 s4b_1_hold
+peek F:4A85F 1 s4b_1_code
+peek F:4ABAA 4 s4b_1_secs
+peek F:4ABBA 4 s4b_1_last
+peek F:4A866 1 s4b_1_pause
+peek F:4A992 2 s4b_1_n
+wait 1.0
+peek F:4A949 1 s4b_2_hold
+peek F:4A85F 1 s4b_2_code
+peek F:4ABAA 4 s4b_2_secs
+peek F:4ABBA 4 s4b_2_last
+peek F:4A866 1 s4b_2_pause
+peek F:4A992 2 s4b_2_n
+wait 1.0
+peek F:4A949 1 s4b_3_hold
+peek F:4A85F 1 s4b_3_code
+peek F:4ABAA 4 s4b_3_secs
+peek F:4ABBA 4 s4b_3_last
+peek F:4A866 1 s4b_3_pause
+peek F:4A992 2 s4b_3_n
+wait 1.0
+peek F:4A949 1 s4b_4_hold
+peek F:4A85F 1 s4b_4_code
+peek F:4ABAA 4 s4b_4_secs
+peek F:4ABBA 4 s4b_4_last
+peek F:4A866 1 s4b_4_pause
+peek F:4A992 2 s4b_4_n
+wait 1.0
+peek F:4A949 1 s4b_5_hold
+peek F:4A85F 1 s4b_5_code
+peek F:4ABAA 4 s4b_5_secs
+peek F:4ABBA 4 s4b_5_last
+peek F:4A866 1 s4b_5_pause
+peek F:4A992 2 s4b_5_n
+wait 1.0
+peek F:4A949 1 s4b_6_hold
+peek F:4A85F 1 s4b_6_code
+peek F:4ABAA 4 s4b_6_secs
+peek F:4ABBA 4 s4b_6_last
+peek F:4A866 1 s4b_6_pause
+peek F:4A992 2 s4b_6_n
+wait 1.0
+peek F:4A949 1 s4b_7_hold
+peek F:4A85F 1 s4b_7_code
+peek F:4ABAA 4 s4b_7_secs
+peek F:4ABBA 4 s4b_7_last
+peek F:4A866 1 s4b_7_pause
+peek F:4A992 2 s4b_7_n
+wait 1.0
+peek F:4A949 1 s4b_8_hold
+peek F:4A85F 1 s4b_8_code
+peek F:4ABAA 4 s4b_8_secs
+peek F:4ABBA 4 s4b_8_last
+peek F:4A866 1 s4b_8_pause
+peek F:4A992 2 s4b_8_n
+wait 1.0
+peek F:4A949 1 s4b_9_hold
+peek F:4A85F 1 s4b_9_code
+peek F:4ABAA 4 s4b_9_secs
+peek F:4ABBA 4 s4b_9_last
+peek F:4A866 1 s4b_9_pause
+peek F:4A992 2 s4b_9_n
+key P 0.12
+wait 1.0
+peek F:4A949 1 s4b_u0_hold
+peek F:4A85F 1 s4b_u0_code
+peek F:4ABAA 4 s4b_u0_secs
+peek F:4ABBA 4 s4b_u0_last
+peek F:4A866 1 s4b_u0_pause
+peek F:4A992 2 s4b_u0_n
+wait 1.0
+peek F:4A949 1 s4b_u1_hold
+peek F:4A85F 1 s4b_u1_code
+peek F:4ABAA 4 s4b_u1_secs
+peek F:4ABBA 4 s4b_u1_last
+peek F:4A866 1 s4b_u1_pause
+peek F:4A992 2 s4b_u1_n
+wait 1.0
+peek F:4A949 1 s4b_u2_hold
+peek F:4A85F 1 s4b_u2_code
+peek F:4ABAA 4 s4b_u2_secs
+peek F:4ABBA 4 s4b_u2_last
+peek F:4A866 1 s4b_u2_pause
+peek F:4A992 2 s4b_u2_n
+wait 1.0
+peek F:4A949 1 s4b_u3_hold
+peek F:4A85F 1 s4b_u3_code
+peek F:4ABAA 4 s4b_u3_secs
+peek F:4ABBA 4 s4b_u3_last
+peek F:4A866 1 s4b_u3_pause
+peek F:4A992 2 s4b_u3_n
+wait 1.0
+peek F:4A949 1 s4b_u4_hold
+peek F:4A85F 1 s4b_u4_code
+peek F:4ABAA 4 s4b_u4_secs
+peek F:4ABBA 4 s4b_u4_last
+peek F:4A866 1 s4b_u4_pause
+peek F:4A992 2 s4b_u4_n
+wait 1.0
+peek F:4A949 1 s4b_u5_hold
+peek F:4A85F 1 s4b_u5_code
+peek F:4ABAA 4 s4b_u5_secs
+peek F:4ABBA 4 s4b_u5_last
+peek F:4A866 1 s4b_u5_pause
+peek F:4A992 2 s4b_u5_n
+wait 1.0
+peek F:4A949 1 s4b_u6_hold
+peek F:4A85F 1 s4b_u6_code
+peek F:4ABAA 4 s4b_u6_secs
+peek F:4ABBA 4 s4b_u6_last
+peek F:4A866 1 s4b_u6_pause
+peek F:4A992 2 s4b_u6_n
+wait 1.0
+peek F:4A949 1 s4b_u7_hold
+peek F:4A85F 1 s4b_u7_code
+peek F:4ABAA 4 s4b_u7_secs
+peek F:4ABBA 4 s4b_u7_last
+peek F:4A866 1 s4b_u7_pause
+peek F:4A992 2 s4b_u7_n
+wait 1.0
+peek F:4A949 1 s4b_u8_hold
+peek F:4A85F 1 s4b_u8_code
+peek F:4ABAA 4 s4b_u8_secs
+peek F:4ABBA 4 s4b_u8_last
+peek F:4A866 1 s4b_u8_pause
+peek F:4A992 2 s4b_u8_n
+wait 1.0
+peek F:4A949 1 s4b_u9_hold
+peek F:4A85F 1 s4b_u9_code
+peek F:4ABAA 4 s4b_u9_secs
+peek F:4ABBA 4 s4b_u9_last
+peek F:4A866 1 s4b_u9_pause
+peek F:4A992 2 s4b_u9_n
+log S6_hold_phase
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key KP6 0.12
+step 5
+peek F:4A949 1 s6_0_hold
+peek F:4ABAA 4 s6_0_secs
+peek F:4ABBA 4 s6_0_last
+peek F:4A992 2 s6_0_n
+peek F:4A85F 1 s6_0_code
+step 5
+peek F:4A949 1 s6_1_hold
+peek F:4ABAA 4 s6_1_secs
+peek F:4ABBA 4 s6_1_last
+peek F:4A992 2 s6_1_n
+peek F:4A85F 1 s6_1_code
+step 5
+peek F:4A949 1 s6_2_hold
+peek F:4ABAA 4 s6_2_secs
+peek F:4ABBA 4 s6_2_last
+peek F:4A992 2 s6_2_n
+peek F:4A85F 1 s6_2_code
+step 5
+peek F:4A949 1 s6_3_hold
+peek F:4ABAA 4 s6_3_secs
+peek F:4ABBA 4 s6_3_last
+peek F:4A992 2 s6_3_n
+peek F:4A85F 1 s6_3_code
+step 5
+peek F:4A949 1 s6_4_hold
+peek F:4ABAA 4 s6_4_secs
+peek F:4ABBA 4 s6_4_last
+peek F:4A992 2 s6_4_n
+peek F:4A85F 1 s6_4_code
+step 5
+peek F:4A949 1 s6_5_hold
+peek F:4ABAA 4 s6_5_secs
+peek F:4ABBA 4 s6_5_last
+peek F:4A992 2 s6_5_n
+peek F:4A85F 1 s6_5_code
+step 5
+peek F:4A949 1 s6_6_hold
+peek F:4ABAA 4 s6_6_secs
+peek F:4ABBA 4 s6_6_last
+peek F:4A992 2 s6_6_n
+peek F:4A85F 1 s6_6_code
+step 5
+peek F:4A949 1 s6_7_hold
+peek F:4ABAA 4 s6_7_secs
+peek F:4ABBA 4 s6_7_last
+peek F:4A992 2 s6_7_n
+peek F:4A85F 1 s6_7_code
+step 5
+peek F:4A949 1 s6_8_hold
+peek F:4ABAA 4 s6_8_secs
+peek F:4ABBA 4 s6_8_last
+peek F:4A992 2 s6_8_n
+peek F:4A85F 1 s6_8_code
+step 5
+peek F:4A949 1 s6_9_hold
+peek F:4ABAA 4 s6_9_secs
+peek F:4ABBA 4 s6_9_last
+peek F:4A992 2 s6_9_n
+peek F:4A85F 1 s6_9_code
+step 5
+peek F:4A949 1 s6_10_hold
+peek F:4ABAA 4 s6_10_secs
+peek F:4ABBA 4 s6_10_last
+peek F:4A992 2 s6_10_n
+peek F:4A85F 1 s6_10_code
+step 5
+peek F:4A949 1 s6_11_hold
+peek F:4ABAA 4 s6_11_secs
+peek F:4ABBA 4 s6_11_last
+peek F:4A992 2 s6_11_n
+peek F:4A85F 1 s6_11_code
+step 5
+peek F:4A949 1 s6_12_hold
+peek F:4ABAA 4 s6_12_secs
+peek F:4ABBA 4 s6_12_last
+peek F:4A992 2 s6_12_n
+peek F:4A85F 1 s6_12_code
+step 5
+peek F:4A949 1 s6_13_hold
+peek F:4ABAA 4 s6_13_secs
+peek F:4ABBA 4 s6_13_last
+peek F:4A992 2 s6_13_n
+peek F:4A85F 1 s6_13_code
+step 5
+peek F:4A949 1 s6_14_hold
+peek F:4ABAA 4 s6_14_secs
+peek F:4ABBA 4 s6_14_last
+peek F:4A992 2 s6_14_n
+peek F:4A85F 1 s6_14_code
+step 5
+peek F:4A949 1 s6_15_hold
+peek F:4ABAA 4 s6_15_secs
+peek F:4ABBA 4 s6_15_last
+peek F:4A992 2 s6_15_n
+peek F:4A85F 1 s6_15_code
+step 5
+peek F:4A949 1 s6_16_hold
+peek F:4ABAA 4 s6_16_secs
+peek F:4ABBA 4 s6_16_last
+peek F:4A992 2 s6_16_n
+peek F:4A85F 1 s6_16_code
+step 5
+peek F:4A949 1 s6_17_hold
+peek F:4ABAA 4 s6_17_secs
+peek F:4ABBA 4 s6_17_last
+peek F:4A992 2 s6_17_n
+peek F:4A85F 1 s6_17_code
+step 5
+peek F:4A949 1 s6_18_hold
+peek F:4ABAA 4 s6_18_secs
+peek F:4ABBA 4 s6_18_last
+peek F:4A992 2 s6_18_n
+peek F:4A85F 1 s6_18_code
+step 5
+peek F:4A949 1 s6_19_hold
+peek F:4ABAA 4 s6_19_secs
+peek F:4ABBA 4 s6_19_last
+peek F:4A992 2 s6_19_n
+peek F:4A85F 1 s6_19_code
+step 5
+peek F:4A949 1 s6_20_hold
+peek F:4ABAA 4 s6_20_secs
+peek F:4ABBA 4 s6_20_last
+peek F:4A992 2 s6_20_n
+peek F:4A85F 1 s6_20_code
+step 5
+peek F:4A949 1 s6_21_hold
+peek F:4ABAA 4 s6_21_secs
+peek F:4ABBA 4 s6_21_last
+peek F:4A992 2 s6_21_n
+peek F:4A85F 1 s6_21_code
+step 5
+peek F:4A949 1 s6_22_hold
+peek F:4ABAA 4 s6_22_secs
+peek F:4ABBA 4 s6_22_last
+peek F:4A992 2 s6_22_n
+peek F:4A85F 1 s6_22_code
+step 5
+peek F:4A949 1 s6_23_hold
+peek F:4ABAA 4 s6_23_secs
+peek F:4ABBA 4 s6_23_last
+peek F:4A992 2 s6_23_n
+peek F:4A85F 1 s6_23_code
+step 5
+peek F:4A949 1 s6_24_hold
+peek F:4ABAA 4 s6_24_secs
+peek F:4ABBA 4 s6_24_last
+peek F:4A992 2 s6_24_n
+peek F:4A85F 1 s6_24_code
+step 5
+peek F:4A949 1 s6_25_hold
+peek F:4ABAA 4 s6_25_secs
+peek F:4ABBA 4 s6_25_last
+peek F:4A992 2 s6_25_n
+peek F:4A85F 1 s6_25_code
+step 5
+peek F:4A949 1 s6_26_hold
+peek F:4ABAA 4 s6_26_secs
+peek F:4ABBA 4 s6_26_last
+peek F:4A992 2 s6_26_n
+peek F:4A85F 1 s6_26_code
+step 5
+peek F:4A949 1 s6_27_hold
+peek F:4ABAA 4 s6_27_secs
+peek F:4ABBA 4 s6_27_last
+peek F:4A992 2 s6_27_n
+peek F:4A85F 1 s6_27_code
+step 5
+peek F:4A949 1 s6_28_hold
+peek F:4ABAA 4 s6_28_secs
+peek F:4ABBA 4 s6_28_last
+peek F:4A992 2 s6_28_n
+peek F:4A85F 1 s6_28_code
+step 5
+peek F:4A949 1 s6_29_hold
+peek F:4ABAA 4 s6_29_secs
+peek F:4ABBA 4 s6_29_last
+peek F:4A992 2 s6_29_n
+peek F:4A85F 1 s6_29_code
+step 5
+peek F:4A949 1 s6_30_hold
+peek F:4ABAA 4 s6_30_secs
+peek F:4ABBA 4 s6_30_last
+peek F:4A992 2 s6_30_n
+peek F:4A85F 1 s6_30_code
+step 5
+peek F:4A949 1 s6_31_hold
+peek F:4ABAA 4 s6_31_secs
+peek F:4ABBA 4 s6_31_last
+peek F:4A992 2 s6_31_n
+peek F:4A85F 1 s6_31_code
+step 5
+peek F:4A949 1 s6_32_hold
+peek F:4ABAA 4 s6_32_secs
+peek F:4ABBA 4 s6_32_last
+peek F:4A992 2 s6_32_n
+peek F:4A85F 1 s6_32_code
+step 5
+peek F:4A949 1 s6_33_hold
+peek F:4ABAA 4 s6_33_secs
+peek F:4ABBA 4 s6_33_last
+peek F:4A992 2 s6_33_n
+peek F:4A85F 1 s6_33_code
+step 5
+peek F:4A949 1 s6_34_hold
+peek F:4ABAA 4 s6_34_secs
+peek F:4ABBA 4 s6_34_last
+peek F:4A992 2 s6_34_n
+peek F:4A85F 1 s6_34_code
+step 5
+peek F:4A949 1 s6_35_hold
+peek F:4ABAA 4 s6_35_secs
+peek F:4ABBA 4 s6_35_last
+peek F:4A992 2 s6_35_n
+peek F:4A85F 1 s6_35_code
+step 5
+peek F:4A949 1 s6_36_hold
+peek F:4ABAA 4 s6_36_secs
+peek F:4ABBA 4 s6_36_last
+peek F:4A992 2 s6_36_n
+peek F:4A85F 1 s6_36_code
+step 5
+peek F:4A949 1 s6_37_hold
+peek F:4ABAA 4 s6_37_secs
+peek F:4ABBA 4 s6_37_last
+peek F:4A992 2 s6_37_n
+peek F:4A85F 1 s6_37_code
+step 5
+peek F:4A949 1 s6_38_hold
+peek F:4ABAA 4 s6_38_secs
+peek F:4ABBA 4 s6_38_last
+peek F:4A992 2 s6_38_n
+peek F:4A85F 1 s6_38_code
+step 5
+peek F:4A949 1 s6_39_hold
+peek F:4ABAA 4 s6_39_secs
+peek F:4ABBA 4 s6_39_last
+peek F:4A992 2 s6_39_n
+peek F:4A85F 1 s6_39_code
+step 5
+peek F:4A949 1 s6_40_hold
+peek F:4ABAA 4 s6_40_secs
+peek F:4ABBA 4 s6_40_last
+peek F:4A992 2 s6_40_n
+peek F:4A85F 1 s6_40_code
+step 5
+peek F:4A949 1 s6_41_hold
+peek F:4ABAA 4 s6_41_secs
+peek F:4ABBA 4 s6_41_last
+peek F:4A992 2 s6_41_n
+peek F:4A85F 1 s6_41_code
+step 5
+peek F:4A949 1 s6_42_hold
+peek F:4ABAA 4 s6_42_secs
+peek F:4ABBA 4 s6_42_last
+peek F:4A992 2 s6_42_n
+peek F:4A85F 1 s6_42_code
+step 5
+peek F:4A949 1 s6_43_hold
+peek F:4ABAA 4 s6_43_secs
+peek F:4ABBA 4 s6_43_last
+peek F:4A992 2 s6_43_n
+peek F:4A85F 1 s6_43_code
+step 5
+peek F:4A949 1 s6_44_hold
+peek F:4ABAA 4 s6_44_secs
+peek F:4ABBA 4 s6_44_last
+peek F:4A992 2 s6_44_n
+peek F:4A85F 1 s6_44_code
+step 5
+peek F:4A949 1 s6_45_hold
+peek F:4ABAA 4 s6_45_secs
+peek F:4ABBA 4 s6_45_last
+peek F:4A992 2 s6_45_n
+peek F:4A85F 1 s6_45_code
+step 5
+peek F:4A949 1 s6_46_hold
+peek F:4ABAA 4 s6_46_secs
+peek F:4ABBA 4 s6_46_last
+peek F:4A992 2 s6_46_n
+peek F:4A85F 1 s6_46_code
+step 5
+peek F:4A949 1 s6_47_hold
+peek F:4ABAA 4 s6_47_secs
+peek F:4ABBA 4 s6_47_last
+peek F:4A992 2 s6_47_n
+peek F:4A85F 1 s6_47_code
+step 5
+peek F:4A949 1 s6_48_hold
+peek F:4ABAA 4 s6_48_secs
+peek F:4ABBA 4 s6_48_last
+peek F:4A992 2 s6_48_n
+peek F:4A85F 1 s6_48_code
+step 5
+peek F:4A949 1 s6_49_hold
+peek F:4ABAA 4 s6_49_secs
+peek F:4ABBA 4 s6_49_last
+peek F:4A992 2 s6_49_n
+peek F:4A85F 1 s6_49_code
+step 5
+peek F:4A949 1 s6_50_hold
+peek F:4ABAA 4 s6_50_secs
+peek F:4ABBA 4 s6_50_last
+peek F:4A992 2 s6_50_n
+peek F:4A85F 1 s6_50_code
+step 5
+peek F:4A949 1 s6_51_hold
+peek F:4ABAA 4 s6_51_secs
+peek F:4ABBA 4 s6_51_last
+peek F:4A992 2 s6_51_n
+peek F:4A85F 1 s6_51_code
+step 5
+peek F:4A949 1 s6_52_hold
+peek F:4ABAA 4 s6_52_secs
+peek F:4ABBA 4 s6_52_last
+peek F:4A992 2 s6_52_n
+peek F:4A85F 1 s6_52_code
+step 5
+peek F:4A949 1 s6_53_hold
+peek F:4ABAA 4 s6_53_secs
+peek F:4ABBA 4 s6_53_last
+peek F:4A992 2 s6_53_n
+peek F:4A85F 1 s6_53_code
+step 5
+peek F:4A949 1 s6_54_hold
+peek F:4ABAA 4 s6_54_secs
+peek F:4ABBA 4 s6_54_last
+peek F:4A992 2 s6_54_n
+peek F:4A85F 1 s6_54_code
+step 5
+peek F:4A949 1 s6_55_hold
+peek F:4ABAA 4 s6_55_secs
+peek F:4ABBA 4 s6_55_last
+peek F:4A992 2 s6_55_n
+peek F:4A85F 1 s6_55_code
+step 5
+peek F:4A949 1 s6_56_hold
+peek F:4ABAA 4 s6_56_secs
+peek F:4ABBA 4 s6_56_last
+peek F:4A992 2 s6_56_n
+peek F:4A85F 1 s6_56_code
+step 5
+peek F:4A949 1 s6_57_hold
+peek F:4ABAA 4 s6_57_secs
+peek F:4ABBA 4 s6_57_last
+peek F:4A992 2 s6_57_n
+peek F:4A85F 1 s6_57_code
+step 5
+peek F:4A949 1 s6_58_hold
+peek F:4ABAA 4 s6_58_secs
+peek F:4ABBA 4 s6_58_last
+peek F:4A992 2 s6_58_n
+peek F:4A85F 1 s6_58_code
+step 5
+peek F:4A949 1 s6_59_hold
+peek F:4ABAA 4 s6_59_secs
+peek F:4ABBA 4 s6_59_last
+peek F:4A992 2 s6_59_n
+peek F:4A85F 1 s6_59_code
+step 5
+peek F:4A949 1 s6_60_hold
+peek F:4ABAA 4 s6_60_secs
+peek F:4ABBA 4 s6_60_last
+peek F:4A992 2 s6_60_n
+peek F:4A85F 1 s6_60_code
+step 5
+peek F:4A949 1 s6_61_hold
+peek F:4ABAA 4 s6_61_secs
+peek F:4ABBA 4 s6_61_last
+peek F:4A992 2 s6_61_n
+peek F:4A85F 1 s6_61_code
+step 5
+peek F:4A949 1 s6_62_hold
+peek F:4ABAA 4 s6_62_secs
+peek F:4ABBA 4 s6_62_last
+peek F:4A992 2 s6_62_n
+peek F:4A85F 1 s6_62_code
+step 5
+peek F:4A949 1 s6_63_hold
+peek F:4ABAA 4 s6_63_secs
+peek F:4ABBA 4 s6_63_last
+peek F:4A992 2 s6_63_n
+peek F:4A85F 1 s6_63_code
+step 5
+peek F:4A949 1 s6_64_hold
+peek F:4ABAA 4 s6_64_secs
+peek F:4ABBA 4 s6_64_last
+peek F:4A992 2 s6_64_n
+peek F:4A85F 1 s6_64_code
+step 5
+peek F:4A949 1 s6_65_hold
+peek F:4ABAA 4 s6_65_secs
+peek F:4ABBA 4 s6_65_last
+peek F:4A992 2 s6_65_n
+peek F:4A85F 1 s6_65_code
+step 5
+peek F:4A949 1 s6_66_hold
+peek F:4ABAA 4 s6_66_secs
+peek F:4ABBA 4 s6_66_last
+peek F:4A992 2 s6_66_n
+peek F:4A85F 1 s6_66_code
+step 5
+peek F:4A949 1 s6_67_hold
+peek F:4ABAA 4 s6_67_secs
+peek F:4ABBA 4 s6_67_last
+peek F:4A992 2 s6_67_n
+peek F:4A85F 1 s6_67_code
+step 5
+peek F:4A949 1 s6_68_hold
+peek F:4ABAA 4 s6_68_secs
+peek F:4ABBA 4 s6_68_last
+peek F:4A992 2 s6_68_n
+peek F:4A85F 1 s6_68_code
+step 5
+peek F:4A949 1 s6_69_hold
+peek F:4ABAA 4 s6_69_secs
+peek F:4ABBA 4 s6_69_last
+peek F:4A992 2 s6_69_n
+peek F:4A85F 1 s6_69_code
+step 5
+peek F:4A949 1 s6_70_hold
+peek F:4ABAA 4 s6_70_secs
+peek F:4ABBA 4 s6_70_last
+peek F:4A992 2 s6_70_n
+peek F:4A85F 1 s6_70_code
+step 5
+peek F:4A949 1 s6_71_hold
+peek F:4ABAA 4 s6_71_secs
+peek F:4ABBA 4 s6_71_last
+peek F:4A992 2 s6_71_n
+peek F:4A85F 1 s6_71_code
+step 5
+peek F:4A949 1 s6_72_hold
+peek F:4ABAA 4 s6_72_secs
+peek F:4ABBA 4 s6_72_last
+peek F:4A992 2 s6_72_n
+peek F:4A85F 1 s6_72_code
+step 5
+peek F:4A949 1 s6_73_hold
+peek F:4ABAA 4 s6_73_secs
+peek F:4ABBA 4 s6_73_last
+peek F:4A992 2 s6_73_n
+peek F:4A85F 1 s6_73_code
+step 5
+peek F:4A949 1 s6_74_hold
+peek F:4ABAA 4 s6_74_secs
+peek F:4ABBA 4 s6_74_last
+peek F:4A992 2 s6_74_n
+peek F:4A85F 1 s6_74_code
+step 5
+peek F:4A949 1 s6_75_hold
+peek F:4ABAA 4 s6_75_secs
+peek F:4ABBA 4 s6_75_last
+peek F:4A992 2 s6_75_n
+peek F:4A85F 1 s6_75_code
+step 5
+peek F:4A949 1 s6_76_hold
+peek F:4ABAA 4 s6_76_secs
+peek F:4ABBA 4 s6_76_last
+peek F:4A992 2 s6_76_n
+peek F:4A85F 1 s6_76_code
+step 5
+peek F:4A949 1 s6_77_hold
+peek F:4ABAA 4 s6_77_secs
+peek F:4ABBA 4 s6_77_last
+peek F:4A992 2 s6_77_n
+peek F:4A85F 1 s6_77_code
+step 5
+peek F:4A949 1 s6_78_hold
+peek F:4ABAA 4 s6_78_secs
+peek F:4ABBA 4 s6_78_last
+peek F:4A992 2 s6_78_n
+peek F:4A85F 1 s6_78_code
+step 5
+peek F:4A949 1 s6_79_hold
+peek F:4ABAA 4 s6_79_secs
+peek F:4ABBA 4 s6_79_last
+peek F:4A992 2 s6_79_n
+peek F:4A85F 1 s6_79_code
+step 5
+peek F:4A949 1 s6_80_hold
+peek F:4ABAA 4 s6_80_secs
+peek F:4ABBA 4 s6_80_last
+peek F:4A992 2 s6_80_n
+peek F:4A85F 1 s6_80_code
+step 5
+peek F:4A949 1 s6_81_hold
+peek F:4ABAA 4 s6_81_secs
+peek F:4ABBA 4 s6_81_last
+peek F:4A992 2 s6_81_n
+peek F:4A85F 1 s6_81_code
+step 5
+peek F:4A949 1 s6_82_hold
+peek F:4ABAA 4 s6_82_secs
+peek F:4ABBA 4 s6_82_last
+peek F:4A992 2 s6_82_n
+peek F:4A85F 1 s6_82_code
+step 5
+peek F:4A949 1 s6_83_hold
+peek F:4ABAA 4 s6_83_secs
+peek F:4ABBA 4 s6_83_last
+peek F:4A992 2 s6_83_n
+peek F:4A85F 1 s6_83_code
+step 5
+peek F:4A949 1 s6_84_hold
+peek F:4ABAA 4 s6_84_secs
+peek F:4ABBA 4 s6_84_last
+peek F:4A992 2 s6_84_n
+peek F:4A85F 1 s6_84_code
+step 5
+peek F:4A949 1 s6_85_hold
+peek F:4ABAA 4 s6_85_secs
+peek F:4ABBA 4 s6_85_last
+peek F:4A992 2 s6_85_n
+peek F:4A85F 1 s6_85_code
+step 5
+peek F:4A949 1 s6_86_hold
+peek F:4ABAA 4 s6_86_secs
+peek F:4ABBA 4 s6_86_last
+peek F:4A992 2 s6_86_n
+peek F:4A85F 1 s6_86_code
+step 5
+peek F:4A949 1 s6_87_hold
+peek F:4ABAA 4 s6_87_secs
+peek F:4ABBA 4 s6_87_last
+peek F:4A992 2 s6_87_n
+peek F:4A85F 1 s6_87_code
+step 5
+peek F:4A949 1 s6_88_hold
+peek F:4ABAA 4 s6_88_secs
+peek F:4ABBA 4 s6_88_last
+peek F:4A992 2 s6_88_n
+peek F:4A85F 1 s6_88_code
+step 5
+peek F:4A949 1 s6_89_hold
+peek F:4ABAA 4 s6_89_secs
+peek F:4ABBA 4 s6_89_last
+peek F:4A992 2 s6_89_n
+peek F:4A85F 1 s6_89_code
+step 5
+peek F:4A949 1 s6_90_hold
+peek F:4ABAA 4 s6_90_secs
+peek F:4ABBA 4 s6_90_last
+peek F:4A992 2 s6_90_n
+peek F:4A85F 1 s6_90_code
+step 5
+peek F:4A949 1 s6_91_hold
+peek F:4ABAA 4 s6_91_secs
+peek F:4ABBA 4 s6_91_last
+peek F:4A992 2 s6_91_n
+peek F:4A85F 1 s6_91_code
+step 5
+peek F:4A949 1 s6_92_hold
+peek F:4ABAA 4 s6_92_secs
+peek F:4ABBA 4 s6_92_last
+peek F:4A992 2 s6_92_n
+peek F:4A85F 1 s6_92_code
+step 5
+peek F:4A949 1 s6_93_hold
+peek F:4ABAA 4 s6_93_secs
+peek F:4ABBA 4 s6_93_last
+peek F:4A992 2 s6_93_n
+peek F:4A85F 1 s6_93_code
+step 5
+peek F:4A949 1 s6_94_hold
+peek F:4ABAA 4 s6_94_secs
+peek F:4ABBA 4 s6_94_last
+peek F:4A992 2 s6_94_n
+peek F:4A85F 1 s6_94_code
+step 5
+peek F:4A949 1 s6_95_hold
+peek F:4ABAA 4 s6_95_secs
+peek F:4ABBA 4 s6_95_last
+peek F:4A992 2 s6_95_n
+peek F:4A85F 1 s6_95_code
+step 5
+peek F:4A949 1 s6_96_hold
+peek F:4ABAA 4 s6_96_secs
+peek F:4ABBA 4 s6_96_last
+peek F:4A992 2 s6_96_n
+peek F:4A85F 1 s6_96_code
+step 5
+peek F:4A949 1 s6_97_hold
+peek F:4ABAA 4 s6_97_secs
+peek F:4ABBA 4 s6_97_last
+peek F:4A992 2 s6_97_n
+peek F:4A85F 1 s6_97_code
+step 5
+peek F:4A949 1 s6_98_hold
+peek F:4ABAA 4 s6_98_secs
+peek F:4ABBA 4 s6_98_last
+peek F:4A992 2 s6_98_n
+peek F:4A85F 1 s6_98_code
+step 5
+peek F:4A949 1 s6_99_hold
+peek F:4ABAA 4 s6_99_secs
+peek F:4ABBA 4 s6_99_last
+peek F:4A992 2 s6_99_n
+peek F:4A85F 1 s6_99_code
+step 5
+peek F:4A949 1 s6_100_hold
+peek F:4ABAA 4 s6_100_secs
+peek F:4ABBA 4 s6_100_last
+peek F:4A992 2 s6_100_n
+peek F:4A85F 1 s6_100_code
+step 5
+peek F:4A949 1 s6_101_hold
+peek F:4ABAA 4 s6_101_secs
+peek F:4ABBA 4 s6_101_last
+peek F:4A992 2 s6_101_n
+peek F:4A85F 1 s6_101_code
+step 5
+peek F:4A949 1 s6_102_hold
+peek F:4ABAA 4 s6_102_secs
+peek F:4ABBA 4 s6_102_last
+peek F:4A992 2 s6_102_n
+peek F:4A85F 1 s6_102_code
+step 5
+peek F:4A949 1 s6_103_hold
+peek F:4ABAA 4 s6_103_secs
+peek F:4ABBA 4 s6_103_last
+peek F:4A992 2 s6_103_n
+peek F:4A85F 1 s6_103_code
+step 5
+peek F:4A949 1 s6_104_hold
+peek F:4ABAA 4 s6_104_secs
+peek F:4ABBA 4 s6_104_last
+peek F:4A992 2 s6_104_n
+peek F:4A85F 1 s6_104_code
+step 5
+peek F:4A949 1 s6_105_hold
+peek F:4ABAA 4 s6_105_secs
+peek F:4ABBA 4 s6_105_last
+peek F:4A992 2 s6_105_n
+peek F:4A85F 1 s6_105_code
+step 5
+peek F:4A949 1 s6_106_hold
+peek F:4ABAA 4 s6_106_secs
+peek F:4ABBA 4 s6_106_last
+peek F:4A992 2 s6_106_n
+peek F:4A85F 1 s6_106_code
+step 5
+peek F:4A949 1 s6_107_hold
+peek F:4ABAA 4 s6_107_secs
+peek F:4ABBA 4 s6_107_last
+peek F:4A992 2 s6_107_n
+peek F:4A85F 1 s6_107_code
+step 5
+peek F:4A949 1 s6_108_hold
+peek F:4ABAA 4 s6_108_secs
+peek F:4ABBA 4 s6_108_last
+peek F:4A992 2 s6_108_n
+peek F:4A85F 1 s6_108_code
+step 5
+peek F:4A949 1 s6_109_hold
+peek F:4ABAA 4 s6_109_secs
+peek F:4ABBA 4 s6_109_last
+peek F:4A992 2 s6_109_n
+peek F:4A85F 1 s6_109_code
+step 5
+peek F:4A949 1 s6_110_hold
+peek F:4ABAA 4 s6_110_secs
+peek F:4ABBA 4 s6_110_last
+peek F:4A992 2 s6_110_n
+peek F:4A85F 1 s6_110_code
+step 5
+peek F:4A949 1 s6_111_hold
+peek F:4ABAA 4 s6_111_secs
+peek F:4ABBA 4 s6_111_last
+peek F:4A992 2 s6_111_n
+peek F:4A85F 1 s6_111_code
+step 5
+peek F:4A949 1 s6_112_hold
+peek F:4ABAA 4 s6_112_secs
+peek F:4ABBA 4 s6_112_last
+peek F:4A992 2 s6_112_n
+peek F:4A85F 1 s6_112_code
+step 5
+peek F:4A949 1 s6_113_hold
+peek F:4ABAA 4 s6_113_secs
+peek F:4ABBA 4 s6_113_last
+peek F:4A992 2 s6_113_n
+peek F:4A85F 1 s6_113_code
+step 5
+peek F:4A949 1 s6_114_hold
+peek F:4ABAA 4 s6_114_secs
+peek F:4ABBA 4 s6_114_last
+peek F:4A992 2 s6_114_n
+peek F:4A85F 1 s6_114_code
+step 5
+peek F:4A949 1 s6_115_hold
+peek F:4ABAA 4 s6_115_secs
+peek F:4ABBA 4 s6_115_last
+peek F:4A992 2 s6_115_n
+peek F:4A85F 1 s6_115_code
+step 5
+peek F:4A949 1 s6_116_hold
+peek F:4ABAA 4 s6_116_secs
+peek F:4ABBA 4 s6_116_last
+peek F:4A992 2 s6_116_n
+peek F:4A85F 1 s6_116_code
+step 5
+peek F:4A949 1 s6_117_hold
+peek F:4ABAA 4 s6_117_secs
+peek F:4ABBA 4 s6_117_last
+peek F:4A992 2 s6_117_n
+peek F:4A85F 1 s6_117_code
+step 5
+peek F:4A949 1 s6_118_hold
+peek F:4ABAA 4 s6_118_secs
+peek F:4ABBA 4 s6_118_last
+peek F:4A992 2 s6_118_n
+peek F:4A85F 1 s6_118_code
+step 5
+peek F:4A949 1 s6_119_hold
+peek F:4ABAA 4 s6_119_secs
+peek F:4ABBA 4 s6_119_last
+peek F:4A992 2 s6_119_n
+peek F:4A85F 1 s6_119_code
+step 5
+peek F:4A949 1 s6_120_hold
+peek F:4ABAA 4 s6_120_secs
+peek F:4ABBA 4 s6_120_last
+peek F:4A992 2 s6_120_n
+peek F:4A85F 1 s6_120_code
+step 5
+peek F:4A949 1 s6_121_hold
+peek F:4ABAA 4 s6_121_secs
+peek F:4ABBA 4 s6_121_last
+peek F:4A992 2 s6_121_n
+peek F:4A85F 1 s6_121_code
+step 5
+peek F:4A949 1 s6_122_hold
+peek F:4ABAA 4 s6_122_secs
+peek F:4ABBA 4 s6_122_last
+peek F:4A992 2 s6_122_n
+peek F:4A85F 1 s6_122_code
+step 5
+peek F:4A949 1 s6_123_hold
+peek F:4ABAA 4 s6_123_secs
+peek F:4ABBA 4 s6_123_last
+peek F:4A992 2 s6_123_n
+peek F:4A85F 1 s6_123_code
+step 5
+peek F:4A949 1 s6_124_hold
+peek F:4ABAA 4 s6_124_secs
+peek F:4ABBA 4 s6_124_last
+peek F:4A992 2 s6_124_n
+peek F:4A85F 1 s6_124_code
+step 5
+peek F:4A949 1 s6_125_hold
+peek F:4ABAA 4 s6_125_secs
+peek F:4ABBA 4 s6_125_last
+peek F:4A992 2 s6_125_n
+peek F:4A85F 1 s6_125_code
+step 5
+peek F:4A949 1 s6_126_hold
+peek F:4ABAA 4 s6_126_secs
+peek F:4ABBA 4 s6_126_last
+peek F:4A992 2 s6_126_n
+peek F:4A85F 1 s6_126_code
+step 5
+peek F:4A949 1 s6_127_hold
+peek F:4ABAA 4 s6_127_secs
+peek F:4ABBA 4 s6_127_last
+peek F:4A992 2 s6_127_n
+peek F:4A85F 1 s6_127_code
+step 5
+peek F:4A949 1 s6_128_hold
+peek F:4ABAA 4 s6_128_secs
+peek F:4ABBA 4 s6_128_last
+peek F:4A992 2 s6_128_n
+peek F:4A85F 1 s6_128_code
+step 5
+peek F:4A949 1 s6_129_hold
+peek F:4ABAA 4 s6_129_secs
+peek F:4ABBA 4 s6_129_last
+peek F:4A992 2 s6_129_n
+peek F:4A85F 1 s6_129_code
+step 5
+peek F:4A949 1 s6_130_hold
+peek F:4ABAA 4 s6_130_secs
+peek F:4ABBA 4 s6_130_last
+peek F:4A992 2 s6_130_n
+peek F:4A85F 1 s6_130_code
+step 5
+peek F:4A949 1 s6_131_hold
+peek F:4ABAA 4 s6_131_secs
+peek F:4ABBA 4 s6_131_last
+peek F:4A992 2 s6_131_n
+peek F:4A85F 1 s6_131_code
+step 5
+peek F:4A949 1 s6_132_hold
+peek F:4ABAA 4 s6_132_secs
+peek F:4ABBA 4 s6_132_last
+peek F:4A992 2 s6_132_n
+peek F:4A85F 1 s6_132_code
+step 5
+peek F:4A949 1 s6_133_hold
+peek F:4ABAA 4 s6_133_secs
+peek F:4ABBA 4 s6_133_last
+peek F:4A992 2 s6_133_n
+peek F:4A85F 1 s6_133_code
+step 5
+peek F:4A949 1 s6_134_hold
+peek F:4ABAA 4 s6_134_secs
+peek F:4ABBA 4 s6_134_last
+peek F:4A992 2 s6_134_n
+peek F:4A85F 1 s6_134_code
+step 5
+peek F:4A949 1 s6_135_hold
+peek F:4ABAA 4 s6_135_secs
+peek F:4ABBA 4 s6_135_last
+peek F:4A992 2 s6_135_n
+peek F:4A85F 1 s6_135_code
+step 5
+peek F:4A949 1 s6_136_hold
+peek F:4ABAA 4 s6_136_secs
+peek F:4ABBA 4 s6_136_last
+peek F:4A992 2 s6_136_n
+peek F:4A85F 1 s6_136_code
+step 5
+peek F:4A949 1 s6_137_hold
+peek F:4ABAA 4 s6_137_secs
+peek F:4ABBA 4 s6_137_last
+peek F:4A992 2 s6_137_n
+peek F:4A85F 1 s6_137_code
+step 5
+peek F:4A949 1 s6_138_hold
+peek F:4ABAA 4 s6_138_secs
+peek F:4ABBA 4 s6_138_last
+peek F:4A992 2 s6_138_n
+peek F:4A85F 1 s6_138_code
+step 5
+peek F:4A949 1 s6_139_hold
+peek F:4ABAA 4 s6_139_secs
+peek F:4ABBA 4 s6_139_last
+peek F:4A992 2 s6_139_n
+peek F:4A85F 1 s6_139_code
+step 5
+peek F:4A949 1 s6_140_hold
+peek F:4ABAA 4 s6_140_secs
+peek F:4ABBA 4 s6_140_last
+peek F:4A992 2 s6_140_n
+peek F:4A85F 1 s6_140_code
+step 5
+peek F:4A949 1 s6_141_hold
+peek F:4ABAA 4 s6_141_secs
+peek F:4ABBA 4 s6_141_last
+peek F:4A992 2 s6_141_n
+peek F:4A85F 1 s6_141_code
+step 5
+peek F:4A949 1 s6_142_hold
+peek F:4ABAA 4 s6_142_secs
+peek F:4ABBA 4 s6_142_last
+peek F:4A992 2 s6_142_n
+peek F:4A85F 1 s6_142_code
+step 5
+peek F:4A949 1 s6_143_hold
+peek F:4ABAA 4 s6_143_secs
+peek F:4ABBA 4 s6_143_last
+peek F:4A992 2 s6_143_n
+peek F:4A85F 1 s6_143_code
+step 5
+peek F:4A949 1 s6_144_hold
+peek F:4ABAA 4 s6_144_secs
+peek F:4ABBA 4 s6_144_last
+peek F:4A992 2 s6_144_n
+peek F:4A85F 1 s6_144_code
+step 5
+peek F:4A949 1 s6_145_hold
+peek F:4ABAA 4 s6_145_secs
+peek F:4ABBA 4 s6_145_last
+peek F:4A992 2 s6_145_n
+peek F:4A85F 1 s6_145_code
+step 5
+peek F:4A949 1 s6_146_hold
+peek F:4ABAA 4 s6_146_secs
+peek F:4ABBA 4 s6_146_last
+peek F:4A992 2 s6_146_n
+peek F:4A85F 1 s6_146_code
+step 5
+peek F:4A949 1 s6_147_hold
+peek F:4ABAA 4 s6_147_secs
+peek F:4ABBA 4 s6_147_last
+peek F:4A992 2 s6_147_n
+peek F:4A85F 1 s6_147_code
+step 5
+peek F:4A949 1 s6_148_hold
+peek F:4ABAA 4 s6_148_secs
+peek F:4ABBA 4 s6_148_last
+peek F:4A992 2 s6_148_n
+peek F:4A85F 1 s6_148_code
+step 5
+peek F:4A949 1 s6_149_hold
+peek F:4ABAA 4 s6_149_secs
+peek F:4ABBA 4 s6_149_last
+peek F:4A992 2 s6_149_n
+peek F:4A85F 1 s6_149_code
+step 5
+peek F:4A949 1 s6_150_hold
+peek F:4ABAA 4 s6_150_secs
+peek F:4ABBA 4 s6_150_last
+peek F:4A992 2 s6_150_n
+peek F:4A85F 1 s6_150_code
+step 5
+peek F:4A949 1 s6_151_hold
+peek F:4ABAA 4 s6_151_secs
+peek F:4ABBA 4 s6_151_last
+peek F:4A992 2 s6_151_n
+peek F:4A85F 1 s6_151_code
+step 5
+peek F:4A949 1 s6_152_hold
+peek F:4ABAA 4 s6_152_secs
+peek F:4ABBA 4 s6_152_last
+peek F:4A992 2 s6_152_n
+peek F:4A85F 1 s6_152_code
+step 5
+peek F:4A949 1 s6_153_hold
+peek F:4ABAA 4 s6_153_secs
+peek F:4ABBA 4 s6_153_last
+peek F:4A992 2 s6_153_n
+peek F:4A85F 1 s6_153_code
+step 5
+peek F:4A949 1 s6_154_hold
+peek F:4ABAA 4 s6_154_secs
+peek F:4ABBA 4 s6_154_last
+peek F:4A992 2 s6_154_n
+peek F:4A85F 1 s6_154_code
+step 5
+peek F:4A949 1 s6_155_hold
+peek F:4ABAA 4 s6_155_secs
+peek F:4ABBA 4 s6_155_last
+peek F:4A992 2 s6_155_n
+peek F:4A85F 1 s6_155_code
+step 5
+peek F:4A949 1 s6_156_hold
+peek F:4ABAA 4 s6_156_secs
+peek F:4ABBA 4 s6_156_last
+peek F:4A992 2 s6_156_n
+peek F:4A85F 1 s6_156_code
+step 5
+peek F:4A949 1 s6_157_hold
+peek F:4ABAA 4 s6_157_secs
+peek F:4ABBA 4 s6_157_last
+peek F:4A992 2 s6_157_n
+peek F:4A85F 1 s6_157_code
+step 5
+peek F:4A949 1 s6_158_hold
+peek F:4ABAA 4 s6_158_secs
+peek F:4ABBA 4 s6_158_last
+peek F:4A992 2 s6_158_n
+peek F:4A85F 1 s6_158_code
+step 5
+peek F:4A949 1 s6_159_hold
+peek F:4ABAA 4 s6_159_secs
+peek F:4ABBA 4 s6_159_last
+peek F:4A992 2 s6_159_n
+peek F:4A85F 1 s6_159_code

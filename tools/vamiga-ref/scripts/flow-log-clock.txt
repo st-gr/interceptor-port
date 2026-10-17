@@ -1,0 +1,29 @@
+# note 08 section 10: the mission clock (V:4ABAA seconds, V:4A9CC start, the record's flight-time long at +8). From the free-flight airborne snapshot:
+# 500 blanks (10 s of emulated time) in the air, then ESC (the mission ends, the clock is added to +8). Prerequisite: extracted/captures/airborne.vasnap.
+# Run with --log extracted/captures/logs/flow-log-clock.txt
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek R:C54498 16 rec0
+peek F:4A9CC 4 start
+peek F:4A9C4 4 c4
+peek F:4A9C8 4 c8
+peek F:4A9C0 4 c0
+peek F:4ABAA 4 now
+peek F:4B23C 8 w0
+step 500
+peek F:4A9CC 4 start1
+peek F:4A9C4 4 c4_1
+peek F:4A9C8 4 c8_1
+peek F:4A9C0 4 c0_1
+peek F:4ABAA 4 now1
+thaw
+key ESC 0.3
+wait 3
+freeze
+peek R:C54498 16 rec1
+peek F:4A9CC 4 start2
+peek F:4A9C8 4 c8_2
+peek F:4ABAA 4 now2
+peek F:1A6BC 4 state
+thaw

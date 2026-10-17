@@ -1,0 +1,281 @@
+# Note 08 section 7 (second version: stepuntil on the step counter V:4A992 = N; the key pointer then reads N+1, i.e. the reader of step N has run; the player record is read at that blank and again 3 blanks later, rec2: equal means the step's motion had already been done at the first sample): the demo played from demo.vasnap (step 47 of the stream) to its end, with a checkpoint of the player record every
+# 100 stream steps: the key pointer V:54E5C = start + k (start = 0xC544E8 in this snapshot). Per checkpoint: blank counter, step counter,
+# game mode, replay mode, crash allowance, view, W0/W2 and the first 0x80 bytes of the player record (position +0x14, +0x18, +0x1C,
+# attitude +0x66..+0x6A, speed, fuel, commands).  No crash may occur (W0 bit 0x0200, V:4A94F stays 3).
+restore extracted/captures/demo.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:54E44 4 start
+stepuntil F:4A992 2 eq 100 6000
+log CP_100
+peek F:4A82C 2 100_blank
+peek F:54E5C 4 100_kp
+peek F:4A992 2 100_n
+peek F:4A95E 1 100_mode
+peek F:4A903 1 100_m903
+peek F:4A94F 1 100_allow
+peek F:4A83D 1 100_view
+peek F:4B23C 128 100_rec
+step 3
+peek F:54E5C 4 100_kp2
+peek F:4B23C 128 100_rec2
+stepuntil F:4A992 2 eq 200 6000
+log CP_200
+peek F:4A82C 2 200_blank
+peek F:54E5C 4 200_kp
+peek F:4A992 2 200_n
+peek F:4A95E 1 200_mode
+peek F:4A903 1 200_m903
+peek F:4A94F 1 200_allow
+peek F:4A83D 1 200_view
+peek F:4B23C 128 200_rec
+step 3
+peek F:54E5C 4 200_kp2
+peek F:4B23C 128 200_rec2
+stepuntil F:4A992 2 eq 300 6000
+log CP_300
+peek F:4A82C 2 300_blank
+peek F:54E5C 4 300_kp
+peek F:4A992 2 300_n
+peek F:4A95E 1 300_mode
+peek F:4A903 1 300_m903
+peek F:4A94F 1 300_allow
+peek F:4A83D 1 300_view
+peek F:4B23C 128 300_rec
+step 3
+peek F:54E5C 4 300_kp2
+peek F:4B23C 128 300_rec2
+stepuntil F:4A992 2 eq 400 6000
+log CP_400
+peek F:4A82C 2 400_blank
+peek F:54E5C 4 400_kp
+peek F:4A992 2 400_n
+peek F:4A95E 1 400_mode
+peek F:4A903 1 400_m903
+peek F:4A94F 1 400_allow
+peek F:4A83D 1 400_view
+peek F:4B23C 128 400_rec
+step 3
+peek F:54E5C 4 400_kp2
+peek F:4B23C 128 400_rec2
+stepuntil F:4A992 2 eq 500 6000
+log CP_500
+peek F:4A82C 2 500_blank
+peek F:54E5C 4 500_kp
+peek F:4A992 2 500_n
+peek F:4A95E 1 500_mode
+peek F:4A903 1 500_m903
+peek F:4A94F 1 500_allow
+peek F:4A83D 1 500_view
+peek F:4B23C 128 500_rec
+step 3
+peek F:54E5C 4 500_kp2
+peek F:4B23C 128 500_rec2
+stepuntil F:4A992 2 eq 600 6000
+log CP_600
+peek F:4A82C 2 600_blank
+peek F:54E5C 4 600_kp
+peek F:4A992 2 600_n
+peek F:4A95E 1 600_mode
+peek F:4A903 1 600_m903
+peek F:4A94F 1 600_allow
+peek F:4A83D 1 600_view
+peek F:4B23C 128 600_rec
+step 3
+peek F:54E5C 4 600_kp2
+peek F:4B23C 128 600_rec2
+stepuntil F:4A992 2 eq 700 6000
+log CP_700
+peek F:4A82C 2 700_blank
+peek F:54E5C 4 700_kp
+peek F:4A992 2 700_n
+peek F:4A95E 1 700_mode
+peek F:4A903 1 700_m903
+peek F:4A94F 1 700_allow
+peek F:4A83D 1 700_view
+peek F:4B23C 128 700_rec
+step 3
+peek F:54E5C 4 700_kp2
+peek F:4B23C 128 700_rec2
+stepuntil F:4A992 2 eq 800 6000
+log CP_800
+peek F:4A82C 2 800_blank
+peek F:54E5C 4 800_kp
+peek F:4A992 2 800_n
+peek F:4A95E 1 800_mode
+peek F:4A903 1 800_m903
+peek F:4A94F 1 800_allow
+peek F:4A83D 1 800_view
+peek F:4B23C 128 800_rec
+step 3
+peek F:54E5C 4 800_kp2
+peek F:4B23C 128 800_rec2
+stepuntil F:4A992 2 eq 900 6000
+log CP_900
+peek F:4A82C 2 900_blank
+peek F:54E5C 4 900_kp
+peek F:4A992 2 900_n
+peek F:4A95E 1 900_mode
+peek F:4A903 1 900_m903
+peek F:4A94F 1 900_allow
+peek F:4A83D 1 900_view
+peek F:4B23C 128 900_rec
+step 3
+peek F:54E5C 4 900_kp2
+peek F:4B23C 128 900_rec2
+stepuntil F:4A992 2 eq 1000 6000
+log CP_1000
+peek F:4A82C 2 1000_blank
+peek F:54E5C 4 1000_kp
+peek F:4A992 2 1000_n
+peek F:4A95E 1 1000_mode
+peek F:4A903 1 1000_m903
+peek F:4A94F 1 1000_allow
+peek F:4A83D 1 1000_view
+peek F:4B23C 128 1000_rec
+step 3
+peek F:54E5C 4 1000_kp2
+peek F:4B23C 128 1000_rec2
+stepuntil F:4A992 2 eq 1100 6000
+log CP_1100
+peek F:4A82C 2 1100_blank
+peek F:54E5C 4 1100_kp
+peek F:4A992 2 1100_n
+peek F:4A95E 1 1100_mode
+peek F:4A903 1 1100_m903
+peek F:4A94F 1 1100_allow
+peek F:4A83D 1 1100_view
+peek F:4B23C 128 1100_rec
+step 3
+peek F:54E5C 4 1100_kp2
+peek F:4B23C 128 1100_rec2
+stepuntil F:4A992 2 eq 1200 6000
+log CP_1200
+peek F:4A82C 2 1200_blank
+peek F:54E5C 4 1200_kp
+peek F:4A992 2 1200_n
+peek F:4A95E 1 1200_mode
+peek F:4A903 1 1200_m903
+peek F:4A94F 1 1200_allow
+peek F:4A83D 1 1200_view
+peek F:4B23C 128 1200_rec
+step 3
+peek F:54E5C 4 1200_kp2
+peek F:4B23C 128 1200_rec2
+stepuntil F:4A992 2 eq 1300 6000
+log CP_1300
+peek F:4A82C 2 1300_blank
+peek F:54E5C 4 1300_kp
+peek F:4A992 2 1300_n
+peek F:4A95E 1 1300_mode
+peek F:4A903 1 1300_m903
+peek F:4A94F 1 1300_allow
+peek F:4A83D 1 1300_view
+peek F:4B23C 128 1300_rec
+step 3
+peek F:54E5C 4 1300_kp2
+peek F:4B23C 128 1300_rec2
+stepuntil F:4A992 2 eq 1400 6000
+log CP_1400
+peek F:4A82C 2 1400_blank
+peek F:54E5C 4 1400_kp
+peek F:4A992 2 1400_n
+peek F:4A95E 1 1400_mode
+peek F:4A903 1 1400_m903
+peek F:4A94F 1 1400_allow
+peek F:4A83D 1 1400_view
+peek F:4B23C 128 1400_rec
+step 3
+peek F:54E5C 4 1400_kp2
+peek F:4B23C 128 1400_rec2
+stepuntil F:4A992 2 eq 1500 6000
+log CP_1500
+peek F:4A82C 2 1500_blank
+peek F:54E5C 4 1500_kp
+peek F:4A992 2 1500_n
+peek F:4A95E 1 1500_mode
+peek F:4A903 1 1500_m903
+peek F:4A94F 1 1500_allow
+peek F:4A83D 1 1500_view
+peek F:4B23C 128 1500_rec
+step 3
+peek F:54E5C 4 1500_kp2
+peek F:4B23C 128 1500_rec2
+stepuntil F:4A992 2 eq 1600 6000
+log CP_1600
+peek F:4A82C 2 1600_blank
+peek F:54E5C 4 1600_kp
+peek F:4A992 2 1600_n
+peek F:4A95E 1 1600_mode
+peek F:4A903 1 1600_m903
+peek F:4A94F 1 1600_allow
+peek F:4A83D 1 1600_view
+peek F:4B23C 128 1600_rec
+step 3
+peek F:54E5C 4 1600_kp2
+peek F:4B23C 128 1600_rec2
+stepuntil F:4A992 2 eq 1700 6000
+log CP_1700
+peek F:4A82C 2 1700_blank
+peek F:54E5C 4 1700_kp
+peek F:4A992 2 1700_n
+peek F:4A95E 1 1700_mode
+peek F:4A903 1 1700_m903
+peek F:4A94F 1 1700_allow
+peek F:4A83D 1 1700_view
+peek F:4B23C 128 1700_rec
+step 3
+peek F:54E5C 4 1700_kp2
+peek F:4B23C 128 1700_rec2
+stepuntil F:4A992 2 eq 1800 6000
+log CP_1800
+peek F:4A82C 2 1800_blank
+peek F:54E5C 4 1800_kp
+peek F:4A992 2 1800_n
+peek F:4A95E 1 1800_mode
+peek F:4A903 1 1800_m903
+peek F:4A94F 1 1800_allow
+peek F:4A83D 1 1800_view
+peek F:4B23C 128 1800_rec
+step 3
+peek F:54E5C 4 1800_kp2
+peek F:4B23C 128 1800_rec2
+stepuntil F:4A992 2 eq 1900 6000
+log CP_1900
+peek F:4A82C 2 1900_blank
+peek F:54E5C 4 1900_kp
+peek F:4A992 2 1900_n
+peek F:4A95E 1 1900_mode
+peek F:4A903 1 1900_m903
+peek F:4A94F 1 1900_allow
+peek F:4A83D 1 1900_view
+peek F:4B23C 128 1900_rec
+step 3
+peek F:54E5C 4 1900_kp2
+peek F:4B23C 128 1900_rec2
+stepuntil F:4A992 2 eq 2040 6000
+log CP_2040
+peek F:4A82C 2 2040_blank
+peek F:54E5C 4 2040_kp
+peek F:4A992 2 2040_n
+peek F:4A95E 1 2040_mode
+peek F:4A903 1 2040_m903
+peek F:4A94F 1 2040_allow
+peek F:4A83D 1 2040_view
+peek F:4B23C 128 2040_rec
+step 3
+peek F:54E5C 4 2040_kp2
+peek F:4B23C 128 2040_rec2
+stepuntil F:4A992 2 eq 2044 6000
+log CP_2044
+peek F:4A82C 2 2044_blank
+peek F:54E5C 4 2044_kp
+peek F:4A992 2 2044_n
+peek F:4A95E 1 2044_mode
+peek F:4A903 1 2044_m903
+peek F:4A94F 1 2044_allow
+peek F:4A83D 1 2044_view
+peek F:4B23C 128 2044_rec
+step 3
+peek F:54E5C 4 2044_kp2
+peek F:4B23C 128 2044_rec2

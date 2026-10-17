@@ -1,0 +1,16 @@
+# Note 08 section 11: the mouse button state word in the airborne snapshot (V:4A836 = 1 with no input, after a click) and the CIA port.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:1A84A 2 ciacopy
+peek F:4A836 2 btnstate
+peek F:4A838 2 btnstate2
+peek F:4A890 1 mousethr
+peek R:BFE001 1 ciapra
+thaw
+click
+wait 0.3
+freeze
+peek F:4A836 2 btn_after_click
+peek F:4A838 2 btn2_after_click
+thaw

@@ -1,0 +1,248 @@
+# note 07 12.5 (milestone 7 task 3): the whole tracer pool (slots 0 to 19) at a gun kill in the chase view, one video frame per sample.
+# The target's hit nibble (record 8 +0x3C) is poked to 2, so that the kill needs hits in 1 passes and earlier tracers are in the pool when it falls;
+# the trigger goes down at frame 0 and frames 0 to 18 are logged.
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+copy F:25F44 F:260AC 20
+poke F:4C23C 4 0x11400100
+poke F:4C240 4 0x00000041
+poke F:4C244 4 0x00420000
+poke F:4C248 4 0x09133926
+poke F:4C24C 4 0x000008FA
+poke F:4C250 4 0x10491398
+poke F:4C254 4 0x0008FA90
+poke F:4C258 4 0x10B926FC
+poke F:4C25C 4 0x00000000
+poke F:4C260 4 0x00000000
+poke F:4C264 4 0x0000005A
+poke F:4C268 4 0xFFFF0041
+poke F:4C26C 4 0x18001800
+poke F:4C270 4 0x00000000
+poke F:4C274 4 0xFF000E00
+poke F:4C278 4 0x0000FFFF
+poke F:4C27C 4 0xE5340000
+poke F:4C280 4 0x21600000
+poke F:4C284 4 0x32040000
+poke F:4C288 4 0x00280000
+poke F:4C28C 4 0x00000000
+poke F:4C290 4 0x00000000
+poke F:4C294 4 0x00000000
+poke F:4C298 4 0x00FF0344
+poke F:4C29C 4 0x01F4123D
+poke F:4C2A0 4 0x100066F8
+poke F:4C2A4 4 0x08D00000
+poke F:4C2A8 4 0x108C108C
+poke F:4C2AC 4 0x00FF0061
+poke F:4C2B0 4 0xA8000000
+poke F:4C2B4 4 0x00000300
+poke F:4C2B8 4 0xE0030000
+poke F:4C2BC 4 0x38670000
+poke F:4C2C0 4 0x1E3E0F5A
+poke F:4C2C4 4 0x3725E35F
+poke F:4C2C8 4 0xE5F2207C
+poke F:4C2CC 4 0x30993867
+poke F:4C2D0 4 0x0F5AE5F1
+poke F:4C2D4 4 0x00003725
+poke F:4C2D8 4 0x207C1E3E
+poke F:4C2DC 4 0xE35F3099
+poke F:4C278 1 0x02
+poke F:4B29F 1 0x1D
+poke F:4B29B 1 0x44
+poke F:4AA78 2 0x1000
+key KPENTER 0.12
+step 20
+poke F:4AA78 2 0x1000
+keydown SPACE
+step 1
+peek F:4AD2A 1280 f0_pool
+peek F:4ACF6 12 f0_cam
+peek F:4B23C 128 f0_r0
+peek F:4C23C 128 f0_r8
+peek F:4A83D 1 f0_view
+peek F:4A865 1 f0_4A865
+peek F:4AA78 2 f0_4AA78
+peek F:4A984 2 f0_4A984
+peek F:4AB98 2 f0_4AB98
+step 1
+peek F:4AD2A 1280 f1_pool
+peek F:4ACF6 12 f1_cam
+peek F:4B23C 128 f1_r0
+peek F:4C23C 128 f1_r8
+peek F:4A83D 1 f1_view
+peek F:4A865 1 f1_4A865
+peek F:4AA78 2 f1_4AA78
+peek F:4A984 2 f1_4A984
+peek F:4AB98 2 f1_4AB98
+step 1
+peek F:4AD2A 1280 f2_pool
+peek F:4ACF6 12 f2_cam
+peek F:4B23C 128 f2_r0
+peek F:4C23C 128 f2_r8
+peek F:4A83D 1 f2_view
+peek F:4A865 1 f2_4A865
+peek F:4AA78 2 f2_4AA78
+peek F:4A984 2 f2_4A984
+peek F:4AB98 2 f2_4AB98
+step 1
+peek F:4AD2A 1280 f3_pool
+peek F:4ACF6 12 f3_cam
+peek F:4B23C 128 f3_r0
+peek F:4C23C 128 f3_r8
+peek F:4A83D 1 f3_view
+peek F:4A865 1 f3_4A865
+peek F:4AA78 2 f3_4AA78
+peek F:4A984 2 f3_4A984
+peek F:4AB98 2 f3_4AB98
+step 1
+peek F:4AD2A 1280 f4_pool
+peek F:4ACF6 12 f4_cam
+peek F:4B23C 128 f4_r0
+peek F:4C23C 128 f4_r8
+peek F:4A83D 1 f4_view
+peek F:4A865 1 f4_4A865
+peek F:4AA78 2 f4_4AA78
+peek F:4A984 2 f4_4A984
+peek F:4AB98 2 f4_4AB98
+step 1
+peek F:4AD2A 1280 f5_pool
+peek F:4ACF6 12 f5_cam
+peek F:4B23C 128 f5_r0
+peek F:4C23C 128 f5_r8
+peek F:4A83D 1 f5_view
+peek F:4A865 1 f5_4A865
+peek F:4AA78 2 f5_4AA78
+peek F:4A984 2 f5_4A984
+peek F:4AB98 2 f5_4AB98
+step 1
+peek F:4AD2A 1280 f6_pool
+peek F:4ACF6 12 f6_cam
+peek F:4B23C 128 f6_r0
+peek F:4C23C 128 f6_r8
+peek F:4A83D 1 f6_view
+peek F:4A865 1 f6_4A865
+peek F:4AA78 2 f6_4AA78
+peek F:4A984 2 f6_4A984
+peek F:4AB98 2 f6_4AB98
+step 1
+peek F:4AD2A 1280 f7_pool
+peek F:4ACF6 12 f7_cam
+peek F:4B23C 128 f7_r0
+peek F:4C23C 128 f7_r8
+peek F:4A83D 1 f7_view
+peek F:4A865 1 f7_4A865
+peek F:4AA78 2 f7_4AA78
+peek F:4A984 2 f7_4A984
+peek F:4AB98 2 f7_4AB98
+step 1
+peek F:4AD2A 1280 f8_pool
+peek F:4ACF6 12 f8_cam
+peek F:4B23C 128 f8_r0
+peek F:4C23C 128 f8_r8
+peek F:4A83D 1 f8_view
+peek F:4A865 1 f8_4A865
+peek F:4AA78 2 f8_4AA78
+peek F:4A984 2 f8_4A984
+peek F:4AB98 2 f8_4AB98
+step 1
+peek F:4AD2A 1280 f9_pool
+peek F:4ACF6 12 f9_cam
+peek F:4B23C 128 f9_r0
+peek F:4C23C 128 f9_r8
+peek F:4A83D 1 f9_view
+peek F:4A865 1 f9_4A865
+peek F:4AA78 2 f9_4AA78
+peek F:4A984 2 f9_4A984
+peek F:4AB98 2 f9_4AB98
+step 1
+peek F:4AD2A 1280 f10_pool
+peek F:4ACF6 12 f10_cam
+peek F:4B23C 128 f10_r0
+peek F:4C23C 128 f10_r8
+peek F:4A83D 1 f10_view
+peek F:4A865 1 f10_4A865
+peek F:4AA78 2 f10_4AA78
+peek F:4A984 2 f10_4A984
+peek F:4AB98 2 f10_4AB98
+step 1
+peek F:4AD2A 1280 f11_pool
+peek F:4ACF6 12 f11_cam
+peek F:4B23C 128 f11_r0
+peek F:4C23C 128 f11_r8
+peek F:4A83D 1 f11_view
+peek F:4A865 1 f11_4A865
+peek F:4AA78 2 f11_4AA78
+peek F:4A984 2 f11_4A984
+peek F:4AB98 2 f11_4AB98
+step 1
+peek F:4AD2A 1280 f12_pool
+peek F:4ACF6 12 f12_cam
+peek F:4B23C 128 f12_r0
+peek F:4C23C 128 f12_r8
+peek F:4A83D 1 f12_view
+peek F:4A865 1 f12_4A865
+peek F:4AA78 2 f12_4AA78
+peek F:4A984 2 f12_4A984
+peek F:4AB98 2 f12_4AB98
+step 1
+peek F:4AD2A 1280 f13_pool
+peek F:4ACF6 12 f13_cam
+peek F:4B23C 128 f13_r0
+peek F:4C23C 128 f13_r8
+peek F:4A83D 1 f13_view
+peek F:4A865 1 f13_4A865
+peek F:4AA78 2 f13_4AA78
+peek F:4A984 2 f13_4A984
+peek F:4AB98 2 f13_4AB98
+step 1
+peek F:4AD2A 1280 f14_pool
+peek F:4ACF6 12 f14_cam
+peek F:4B23C 128 f14_r0
+peek F:4C23C 128 f14_r8
+peek F:4A83D 1 f14_view
+peek F:4A865 1 f14_4A865
+peek F:4AA78 2 f14_4AA78
+peek F:4A984 2 f14_4A984
+peek F:4AB98 2 f14_4AB98
+step 1
+peek F:4AD2A 1280 f15_pool
+peek F:4ACF6 12 f15_cam
+peek F:4B23C 128 f15_r0
+peek F:4C23C 128 f15_r8
+peek F:4A83D 1 f15_view
+peek F:4A865 1 f15_4A865
+peek F:4AA78 2 f15_4AA78
+peek F:4A984 2 f15_4A984
+peek F:4AB98 2 f15_4AB98
+step 1
+peek F:4AD2A 1280 f16_pool
+peek F:4ACF6 12 f16_cam
+peek F:4B23C 128 f16_r0
+peek F:4C23C 128 f16_r8
+peek F:4A83D 1 f16_view
+peek F:4A865 1 f16_4A865
+peek F:4AA78 2 f16_4AA78
+peek F:4A984 2 f16_4A984
+peek F:4AB98 2 f16_4AB98
+step 1
+peek F:4AD2A 1280 f17_pool
+peek F:4ACF6 12 f17_cam
+peek F:4B23C 128 f17_r0
+peek F:4C23C 128 f17_r8
+peek F:4A83D 1 f17_view
+peek F:4A865 1 f17_4A865
+peek F:4AA78 2 f17_4AA78
+peek F:4A984 2 f17_4A984
+peek F:4AB98 2 f17_4AB98
+step 1
+peek F:4AD2A 1280 f18_pool
+peek F:4ACF6 12 f18_cam
+peek F:4B23C 128 f18_r0
+peek F:4C23C 128 f18_r8
+peek F:4A83D 1 f18_view
+peek F:4A865 1 f18_4A865
+peek F:4AA78 2 f18_4AA78
+peek F:4A984 2 f18_4A984
+peek F:4AB98 2 f18_4AB98
+keyup SPACE

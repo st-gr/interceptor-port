@@ -1,0 +1,84 @@
+# Head-hold timer: V:4A949 against the timer seconds V:4ABAA after a KP6 press and release (note 06 Head views).
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP6
+wait 0.5
+peek F:4ABAA 4 t0_sec
+peek F:4A949 1 t0_hold
+peek F:4A85F 1 t0_code
+peek F:4ABBA 4 t0_prev
+wait 0.5
+peek F:4ABAA 4 t1_sec
+peek F:4A949 1 t1_hold
+peek F:4A85F 1 t1_code
+peek F:4ABBA 4 t1_prev
+wait 0.5
+peek F:4ABAA 4 t2_sec
+peek F:4A949 1 t2_hold
+peek F:4A85F 1 t2_code
+peek F:4ABBA 4 t2_prev
+wait 0.5
+peek F:4ABAA 4 t3_sec
+peek F:4A949 1 t3_hold
+peek F:4A85F 1 t3_code
+peek F:4ABBA 4 t3_prev
+wait 0.5
+peek F:4ABAA 4 t4_sec
+peek F:4A949 1 t4_hold
+peek F:4A85F 1 t4_code
+peek F:4ABBA 4 t4_prev
+wait 0.5
+peek F:4ABAA 4 t5_sec
+peek F:4A949 1 t5_hold
+peek F:4A85F 1 t5_code
+peek F:4ABBA 4 t5_prev
+wait 0.5
+peek F:4ABAA 4 t6_sec
+peek F:4A949 1 t6_hold
+peek F:4A85F 1 t6_code
+peek F:4ABBA 4 t6_prev
+wait 0.5
+peek F:4ABAA 4 t7_sec
+peek F:4A949 1 t7_hold
+peek F:4A85F 1 t7_code
+peek F:4ABBA 4 t7_prev
+wait 0.5
+peek F:4ABAA 4 t8_sec
+peek F:4A949 1 t8_hold
+peek F:4A85F 1 t8_code
+peek F:4ABBA 4 t8_prev
+wait 0.5
+peek F:4ABAA 4 t9_sec
+peek F:4A949 1 t9_hold
+peek F:4A85F 1 t9_code
+peek F:4ABBA 4 t9_prev
+wait 0.5
+peek F:4ABAA 4 t10_sec
+peek F:4A949 1 t10_hold
+peek F:4A85F 1 t10_code
+peek F:4ABBA 4 t10_prev
+wait 0.5
+peek F:4ABAA 4 t11_sec
+peek F:4A949 1 t11_hold
+peek F:4A85F 1 t11_code
+peek F:4ABBA 4 t11_prev
+wait 0.5
+peek F:4ABAA 4 t12_sec
+peek F:4A949 1 t12_hold
+peek F:4A85F 1 t12_code
+peek F:4ABBA 4 t12_prev
+wait 0.5
+peek F:4ABAA 4 t13_sec
+peek F:4A949 1 t13_hold
+peek F:4A85F 1 t13_code
+peek F:4ABBA 4 t13_prev
+wait 0.5
+peek F:4ABAA 4 t14_sec
+peek F:4A949 1 t14_hold
+peek F:4A85F 1 t14_code
+peek F:4ABBA 4 t14_prev
+wait 0.5
+peek F:4ABAA 4 t15_sec
+peek F:4A949 1 t15_hold
+peek F:4A85F 1 t15_code
+peek F:4ABBA 4 t15_prev

@@ -1,0 +1,546 @@
+# note 08 section 10: name entry (callsign) experiments from name-prompt.vasnap: letters, BACKSPACE, non-letter keys, an overlong name, RETURN.
+# Prerequisite: extracted/captures/name-prompt.vasnap (flow-log-name-prompt.txt). Run with --rw and --log extracted/captures/logs/flow-log-name-entry.txt
+restore extracted/captures/name-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+freeze
+peek F:4A8AD 1 s0_rem
+peek F:4A8AE 1 s0_pos
+peek F:4A8AF 3 s0_ring_wr_rd_cnt
+peek F:4A899 10 s0_ring
+peek F:4A896 2 s0_s896
+peek F:4A898 1 s0_g898
+peek F:4A85B 1 s0_k85b
+peek F:4A8A3 12 s0_typed
+peek R:C544B6 24 s0_name
+peek R:C54498 8 s0_rec0
+peek F:1A6BC 4 s0_state
+thaw
+key A 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 KA_rem
+peek F:4A8AE 1 KA_pos
+peek F:4A8AF 3 KA_ring_wr_rd_cnt
+peek F:4A899 10 KA_ring
+peek F:4A896 2 KA_s896
+peek F:4A898 1 KA_g898
+peek F:4A85B 1 KA_k85b
+peek F:4A8A3 12 KA_typed
+peek R:C544B6 24 KA_name
+peek R:C54498 8 KA_rec0
+peek F:1A6BC 4 KA_state
+thaw
+key B 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 KB_rem
+peek F:4A8AE 1 KB_pos
+peek F:4A8AF 3 KB_ring_wr_rd_cnt
+peek F:4A899 10 KB_ring
+peek F:4A896 2 KB_s896
+peek F:4A898 1 KB_g898
+peek F:4A85B 1 KB_k85b
+peek F:4A8A3 12 KB_typed
+peek R:C544B6 24 KB_name
+peek R:C54498 8 KB_rec0
+peek F:1A6BC 4 KB_state
+thaw
+key C 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 KC_rem
+peek F:4A8AE 1 KC_pos
+peek F:4A8AF 3 KC_ring_wr_rd_cnt
+peek F:4A899 10 KC_ring
+peek F:4A896 2 KC_s896
+peek F:4A898 1 KC_g898
+peek F:4A85B 1 KC_k85b
+peek F:4A8A3 12 KC_typed
+peek R:C544B6 24 KC_name
+peek R:C54498 8 KC_rec0
+peek F:1A6BC 4 KC_state
+thaw
+key BACKSPACE 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 BS1_rem
+peek F:4A8AE 1 BS1_pos
+peek F:4A8AF 3 BS1_ring_wr_rd_cnt
+peek F:4A899 10 BS1_ring
+peek F:4A896 2 BS1_s896
+peek F:4A898 1 BS1_g898
+peek F:4A85B 1 BS1_k85b
+peek F:4A8A3 12 BS1_typed
+peek R:C544B6 24 BS1_name
+peek R:C54498 8 BS1_rec0
+peek F:1A6BC 4 BS1_state
+thaw
+key MINUS 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 MINUS_rem
+peek F:4A8AE 1 MINUS_pos
+peek F:4A8AF 3 MINUS_ring_wr_rd_cnt
+peek F:4A899 10 MINUS_ring
+peek F:4A896 2 MINUS_s896
+peek F:4A898 1 MINUS_g898
+peek F:4A85B 1 MINUS_k85b
+peek F:4A8A3 12 MINUS_typed
+peek R:C544B6 24 MINUS_name
+peek R:C54498 8 MINUS_rec0
+peek F:1A6BC 4 MINUS_state
+thaw
+key EQUALS 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 EQ_rem
+peek F:4A8AE 1 EQ_pos
+peek F:4A8AF 3 EQ_ring_wr_rd_cnt
+peek F:4A899 10 EQ_ring
+peek F:4A896 2 EQ_s896
+peek F:4A898 1 EQ_g898
+peek F:4A85B 1 EQ_k85b
+peek F:4A8A3 12 EQ_typed
+peek R:C544B6 24 EQ_name
+peek R:C54498 8 EQ_rec0
+peek F:1A6BC 4 EQ_state
+thaw
+key F1 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 F1_rem
+peek F:4A8AE 1 F1_pos
+peek F:4A8AF 3 F1_ring_wr_rd_cnt
+peek F:4A899 10 F1_ring
+peek F:4A896 2 F1_s896
+peek F:4A898 1 F1_g898
+peek F:4A85B 1 F1_k85b
+peek F:4A8A3 12 F1_typed
+peek R:C544B6 24 F1_name
+peek R:C54498 8 F1_rec0
+peek F:1A6BC 4 F1_state
+thaw
+key UP 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 UP_rem
+peek F:4A8AE 1 UP_pos
+peek F:4A8AF 3 UP_ring_wr_rd_cnt
+peek F:4A899 10 UP_ring
+peek F:4A896 2 UP_s896
+peek F:4A898 1 UP_g898
+peek F:4A85B 1 UP_k85b
+peek F:4A8A3 12 UP_typed
+peek R:C544B6 24 UP_name
+peek R:C54498 8 UP_rec0
+peek F:1A6BC 4 UP_state
+thaw
+key KP5 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 KP5_rem
+peek F:4A8AE 1 KP5_pos
+peek F:4A8AF 3 KP5_ring_wr_rd_cnt
+peek F:4A899 10 KP5_ring
+peek F:4A896 2 KP5_s896
+peek F:4A898 1 KP5_g898
+peek F:4A85B 1 KP5_k85b
+peek F:4A8A3 12 KP5_typed
+peek R:C544B6 24 KP5_name
+peek R:C54498 8 KP5_rec0
+peek F:1A6BC 4 KP5_state
+thaw
+key LSHIFT 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 LSH_rem
+peek F:4A8AE 1 LSH_pos
+peek F:4A8AF 3 LSH_ring_wr_rd_cnt
+peek F:4A899 10 LSH_ring
+peek F:4A896 2 LSH_s896
+peek F:4A898 1 LSH_g898
+peek F:4A85B 1 LSH_k85b
+peek F:4A8A3 12 LSH_typed
+peek R:C544B6 24 LSH_name
+peek R:C54498 8 LSH_rec0
+peek F:1A6BC 4 LSH_state
+thaw
+key SPACE 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 SPC_rem
+peek F:4A8AE 1 SPC_pos
+peek F:4A8AF 3 SPC_ring_wr_rd_cnt
+peek F:4A899 10 SPC_ring
+peek F:4A896 2 SPC_s896
+peek F:4A898 1 SPC_g898
+peek F:4A85B 1 SPC_k85b
+peek F:4A8A3 12 SPC_typed
+peek R:C544B6 24 SPC_name
+peek R:C54498 8 SPC_rec0
+peek F:1A6BC 4 SPC_state
+thaw
+key 1 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 D1_rem
+peek F:4A8AE 1 D1_pos
+peek F:4A8AF 3 D1_ring_wr_rd_cnt
+peek F:4A899 10 D1_ring
+peek F:4A896 2 D1_s896
+peek F:4A898 1 D1_g898
+peek F:4A85B 1 D1_k85b
+peek F:4A8A3 12 D1_typed
+peek R:C544B6 24 D1_name
+peek R:C54498 8 D1_rec0
+peek F:1A6BC 4 D1_state
+thaw
+key BACKSPACE 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 BS2_rem
+peek F:4A8AE 1 BS2_pos
+peek F:4A8AF 3 BS2_ring_wr_rd_cnt
+peek F:4A899 10 BS2_ring
+peek F:4A896 2 BS2_s896
+peek F:4A898 1 BS2_g898
+peek F:4A85B 1 BS2_k85b
+peek F:4A8A3 12 BS2_typed
+peek R:C544B6 24 BS2_name
+peek R:C54498 8 BS2_rec0
+peek F:1A6BC 4 BS2_state
+thaw
+key BACKSPACE 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 BS3_rem
+peek F:4A8AE 1 BS3_pos
+peek F:4A8AF 3 BS3_ring_wr_rd_cnt
+peek F:4A899 10 BS3_ring
+peek F:4A896 2 BS3_s896
+peek F:4A898 1 BS3_g898
+peek F:4A85B 1 BS3_k85b
+peek F:4A8A3 12 BS3_typed
+peek R:C544B6 24 BS3_name
+peek R:C54498 8 BS3_rec0
+peek F:1A6BC 4 BS3_state
+thaw
+key BACKSPACE 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 BS4_rem
+peek F:4A8AE 1 BS4_pos
+peek F:4A8AF 3 BS4_ring_wr_rd_cnt
+peek F:4A899 10 BS4_ring
+peek F:4A896 2 BS4_s896
+peek F:4A898 1 BS4_g898
+peek F:4A85B 1 BS4_k85b
+peek F:4A8A3 12 BS4_typed
+peek R:C544B6 24 BS4_name
+peek R:C54498 8 BS4_rec0
+peek F:1A6BC 4 BS4_state
+thaw
+key BACKSPACE 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 BS5_rem
+peek F:4A8AE 1 BS5_pos
+peek F:4A8AF 3 BS5_ring_wr_rd_cnt
+peek F:4A899 10 BS5_ring
+peek F:4A896 2 BS5_s896
+peek F:4A898 1 BS5_g898
+peek F:4A85B 1 BS5_k85b
+peek F:4A8A3 12 BS5_typed
+peek R:C544B6 24 BS5_name
+peek R:C54498 8 BS5_rec0
+peek F:1A6BC 4 BS5_state
+thaw
+key BACKSPACE 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 BS6_rem
+peek F:4A8AE 1 BS6_pos
+peek F:4A8AF 3 BS6_ring_wr_rd_cnt
+peek F:4A899 10 BS6_ring
+peek F:4A896 2 BS6_s896
+peek F:4A898 1 BS6_g898
+peek F:4A85B 1 BS6_k85b
+peek F:4A8A3 12 BS6_typed
+peek R:C544B6 24 BS6_name
+peek R:C54498 8 BS6_rec0
+peek F:1A6BC 4 BS6_state
+thaw
+key BACKSPACE 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 BS7_rem
+peek F:4A8AE 1 BS7_pos
+peek F:4A8AF 3 BS7_ring_wr_rd_cnt
+peek F:4A899 10 BS7_ring
+peek F:4A896 2 BS7_s896
+peek F:4A898 1 BS7_g898
+peek F:4A85B 1 BS7_k85b
+peek F:4A8A3 12 BS7_typed
+peek R:C544B6 24 BS7_name
+peek R:C54498 8 BS7_rec0
+peek F:1A6BC 4 BS7_state
+thaw
+key BACKSPACE 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 BS8_rem
+peek F:4A8AE 1 BS8_pos
+peek F:4A8AF 3 BS8_ring_wr_rd_cnt
+peek F:4A899 10 BS8_ring
+peek F:4A896 2 BS8_s896
+peek F:4A898 1 BS8_g898
+peek F:4A85B 1 BS8_k85b
+peek F:4A8A3 12 BS8_typed
+peek R:C544B6 24 BS8_name
+peek R:C54498 8 BS8_rec0
+peek F:1A6BC 4 BS8_state
+thaw
+frame extracted/captures/logs/log-name-typed-empty.ppm
+key A 0.3
+wait 0.7
+key B 0.3
+wait 0.7
+key C 0.3
+wait 0.7
+key D 0.3
+wait 0.7
+key E 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 L05_rem
+peek F:4A8AE 1 L05_pos
+peek F:4A8AF 3 L05_ring_wr_rd_cnt
+peek F:4A899 10 L05_ring
+peek F:4A896 2 L05_s896
+peek F:4A898 1 L05_g898
+peek F:4A85B 1 L05_k85b
+peek F:4A8A3 12 L05_typed
+peek R:C544B6 24 L05_name
+peek R:C54498 8 L05_rec0
+peek F:1A6BC 4 L05_state
+thaw
+key F 0.3
+wait 0.7
+key G 0.3
+wait 0.7
+key H 0.3
+wait 0.7
+key I 0.3
+wait 0.7
+key J 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 L10_rem
+peek F:4A8AE 1 L10_pos
+peek F:4A8AF 3 L10_ring_wr_rd_cnt
+peek F:4A899 10 L10_ring
+peek F:4A896 2 L10_s896
+peek F:4A898 1 L10_g898
+peek F:4A85B 1 L10_k85b
+peek F:4A8A3 12 L10_typed
+peek R:C544B6 24 L10_name
+peek R:C54498 8 L10_rec0
+peek F:1A6BC 4 L10_state
+thaw
+key K 0.3
+wait 0.7
+key L 0.3
+wait 0.7
+key M 0.3
+wait 0.7
+key N 0.3
+wait 0.7
+key O 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 L15_rem
+peek F:4A8AE 1 L15_pos
+peek F:4A8AF 3 L15_ring_wr_rd_cnt
+peek F:4A899 10 L15_ring
+peek F:4A896 2 L15_s896
+peek F:4A898 1 L15_g898
+peek F:4A85B 1 L15_k85b
+peek F:4A8A3 12 L15_typed
+peek R:C544B6 24 L15_name
+peek R:C54498 8 L15_rec0
+peek F:1A6BC 4 L15_state
+thaw
+key P 0.3
+wait 0.7
+key Q 0.3
+wait 0.7
+key R 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 L18_rem
+peek F:4A8AE 1 L18_pos
+peek F:4A8AF 3 L18_ring_wr_rd_cnt
+peek F:4A899 10 L18_ring
+peek F:4A896 2 L18_s896
+peek F:4A898 1 L18_g898
+peek F:4A85B 1 L18_k85b
+peek F:4A8A3 12 L18_typed
+peek R:C544B6 24 L18_name
+peek R:C54498 8 L18_rec0
+peek F:1A6BC 4 L18_state
+thaw
+key S 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 L19_rem
+peek F:4A8AE 1 L19_pos
+peek F:4A8AF 3 L19_ring_wr_rd_cnt
+peek F:4A899 10 L19_ring
+peek F:4A896 2 L19_s896
+peek F:4A898 1 L19_g898
+peek F:4A85B 1 L19_k85b
+peek F:4A8A3 12 L19_typed
+peek R:C544B6 24 L19_name
+peek R:C54498 8 L19_rec0
+peek F:1A6BC 4 L19_state
+thaw
+key T 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 L20_rem
+peek F:4A8AE 1 L20_pos
+peek F:4A8AF 3 L20_ring_wr_rd_cnt
+peek F:4A899 10 L20_ring
+peek F:4A896 2 L20_s896
+peek F:4A898 1 L20_g898
+peek F:4A85B 1 L20_k85b
+peek F:4A8A3 12 L20_typed
+peek R:C544B6 24 L20_name
+peek R:C54498 8 L20_rec0
+peek F:1A6BC 4 L20_state
+thaw
+frame extracted/captures/logs/log-name-20.ppm
+key U 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 L21_rem
+peek F:4A8AE 1 L21_pos
+peek F:4A8AF 3 L21_ring_wr_rd_cnt
+peek F:4A899 10 L21_ring
+peek F:4A896 2 L21_s896
+peek F:4A898 1 L21_g898
+peek F:4A85B 1 L21_k85b
+peek F:4A8A3 12 L21_typed
+peek R:C544B6 24 L21_name
+peek R:C54498 8 L21_rec0
+peek F:1A6BC 4 L21_state
+thaw
+frame extracted/captures/logs/log-name-21.ppm
+key V 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 L22_rem
+peek F:4A8AE 1 L22_pos
+peek F:4A8AF 3 L22_ring_wr_rd_cnt
+peek F:4A899 10 L22_ring
+peek F:4A896 2 L22_s896
+peek F:4A898 1 L22_g898
+peek F:4A85B 1 L22_k85b
+peek F:4A8A3 12 L22_typed
+peek R:C544B6 24 L22_name
+peek R:C54498 8 L22_rec0
+peek F:1A6BC 4 L22_state
+thaw
+key W 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 L23_rem
+peek F:4A8AE 1 L23_pos
+peek F:4A8AF 3 L23_ring_wr_rd_cnt
+peek F:4A899 10 L23_ring
+peek F:4A896 2 L23_s896
+peek F:4A898 1 L23_g898
+peek F:4A85B 1 L23_k85b
+peek F:4A8A3 12 L23_typed
+peek R:C544B6 24 L23_name
+peek R:C54498 8 L23_rec0
+peek F:1A6BC 4 L23_state
+thaw
+key X 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 L24_rem
+peek F:4A8AE 1 L24_pos
+peek F:4A8AF 3 L24_ring_wr_rd_cnt
+peek F:4A899 10 L24_ring
+peek F:4A896 2 L24_s896
+peek F:4A898 1 L24_g898
+peek F:4A85B 1 L24_k85b
+peek F:4A8A3 12 L24_typed
+peek R:C544B6 24 L24_name
+peek R:C54498 8 L24_rec0
+peek F:1A6BC 4 L24_state
+thaw
+key Y 0.3
+wait 0.7
+freeze
+peek F:4A8AD 1 L25_rem
+peek F:4A8AE 1 L25_pos
+peek F:4A8AF 3 L25_ring_wr_rd_cnt
+peek F:4A899 10 L25_ring
+peek F:4A896 2 L25_s896
+peek F:4A898 1 L25_g898
+peek F:4A85B 1 L25_k85b
+peek F:4A8A3 12 L25_typed
+peek R:C544B6 24 L25_name
+peek R:C54498 8 L25_rec0
+peek F:1A6BC 4 L25_state
+thaw
+wait 3
+frame extracted/captures/logs/log-name-after.ppm
+freeze
+peek F:4A8AD 1 after_rem
+peek F:4A8AE 1 after_pos
+peek F:4A8AF 3 after_ring_wr_rd_cnt
+peek F:4A899 10 after_ring
+peek F:4A896 2 after_s896
+peek F:4A898 1 after_g898
+peek F:4A85B 1 after_k85b
+peek F:4A8A3 12 after_typed
+peek R:C544B6 24 after_name
+peek R:C54498 8 after_rec0
+peek F:1A6BC 4 after_state
+thaw
+key RETURN 0.3
+wait 5
+freeze
+peek F:4A8AD 1 ret_rem
+peek F:4A8AE 1 ret_pos
+peek F:4A8AF 3 ret_ring_wr_rd_cnt
+peek F:4A899 10 ret_ring
+peek F:4A896 2 ret_s896
+peek F:4A898 1 ret_g898
+peek F:4A85B 1 ret_k85b
+peek F:4A8A3 12 ret_typed
+peek R:C544B6 24 ret_name
+peek R:C54498 8 ret_rec0
+peek F:1A6BC 4 ret_state
+thaw
+frame extracted/captures/logs/log-name-ret.ppm
+wait 8
+frame extracted/captures/logs/log-name-menu.ppm
+freeze
+peek F:4A8AD 1 menu_rem
+peek F:4A8AE 1 menu_pos
+peek F:4A8AF 3 menu_ring_wr_rd_cnt
+peek F:4A899 10 menu_ring
+peek F:4A896 2 menu_s896
+peek F:4A898 1 menu_g898
+peek F:4A85B 1 menu_k85b
+peek F:4A8A3 12 menu_typed
+peek R:C544B6 24 menu_name
+peek R:C54498 8 menu_rec0
+peek F:1A6BC 4 menu_state
+thaw
+savedisk extracted/captures/logs/log-name.adf

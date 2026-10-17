@@ -1,0 +1,26 @@
+# note 07 8.2 (b) and (c), milestone 7 task 3: the whole machine state of a free flight (airborne.vasnap) for the rig:
+# the state hunks 71 to 77 one by one (flat addresses through seglist), the slow RAM, and the chip RAM below and above the image.
+# Output: extracted/captures/logs/combat7-statedump.txt, converted by tools/m68k-rig/tests/lists_model/state_dump.py.
+thaw
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A6E8 11604 h71
+peek F:4D43C 25564 h72
+peek F:53818 5800 h73
+peek F:54EC0 260 h74
+peek F:54FC4 404 h75
+peek F:55158 420 h76
+peek F:552FC 344 h77
+peek R:C00000 65536 slow0
+peek R:C10000 65536 slow1
+peek R:C20000 65536 slow2
+peek R:C30000 65536 slow3
+peek R:C40000 65536 slow4
+peek R:C50000 65536 slow5
+peek R:C60000 65536 slow6
+peek R:C70000 65536 slow7
+peek R:0 65536 chiplow
+peek R:5A000 65536 chiphigh0
+peek R:6A000 65536 chiphigh1
+peek R:7A000 24576 chiphigh2

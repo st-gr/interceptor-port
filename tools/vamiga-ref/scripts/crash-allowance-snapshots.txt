@@ -1,0 +1,25 @@
+# Crash allowance V:4A94F, game mode V:4A95E and start block V:4A900 in the flight snapshots (note 05, 17.17).
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A94F 1 airborne_allow
+peek F:4A95E 1 airborne_mode
+peek F:4A900 2 airborne_start_and_type
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A94F 1 ground_allow
+peek F:4A95E 1 ground_mode
+peek F:4A900 2 ground_start_and_type
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A94F 1 carrier_allow
+peek F:4A95E 1 carrier_mode
+peek F:4A900 2 carrier_start_and_type
+restore extracted/captures/demo.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A94F 1 demo_allow
+peek F:4A95E 1 demo_mode
+peek F:4A900 2 demo_start_and_type

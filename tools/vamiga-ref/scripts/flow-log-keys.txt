@@ -1,0 +1,327 @@
+# Note 08 10.6: the menu keys on the log screen. From credits-rw.vasnap (shipped log, first word 1): credits key, welcome, menu, key 8 (log screen), snapshot,
+# then each of the keys 2 to 7, 9 and 0 alone (restore, key, 40 blanks): state, mode byte, V:4A84A, dirty flag, leave request, the record's first word.
+restore extracted/captures/credits-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+key SPACE
+wait 15
+key 8 0.3
+wait 7
+freeze
+snapshot extracted/captures/log-screen-rw.vasnap
+peek F:1A6BC 4 base_st
+peek F:4A84A 1 base_g84a
+peek F:4A87D 1 base_dirty
+peek F:4A95E 1 base_mode
+restore extracted/captures/log-screen-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 2 0.2
+peek F:1A6BC 4 k2_0_st
+peek F:4A95E 1 k2_0_mode
+peek F:4A84A 1 k2_0_g84a
+peek F:4A87D 1 k2_0_dirty
+peek F:4A8E2 1 k2_0_e2
+peek F:4A802 4 k2_0_txt
+step 1
+peek F:1A6BC 4 k2_1_st
+peek F:4A95E 1 k2_1_mode
+peek F:4A84A 1 k2_1_g84a
+peek F:4A87D 1 k2_1_dirty
+peek F:4A8E2 1 k2_1_e2
+peek F:4A802 4 k2_1_txt
+step 1
+peek F:1A6BC 4 k2_2_st
+peek F:4A95E 1 k2_2_mode
+peek F:4A84A 1 k2_2_g84a
+peek F:4A87D 1 k2_2_dirty
+peek F:4A8E2 1 k2_2_e2
+peek F:4A802 4 k2_2_txt
+step 4
+peek F:1A6BC 4 k2_6_st
+peek F:4A95E 1 k2_6_mode
+peek F:4A84A 1 k2_6_g84a
+peek F:4A87D 1 k2_6_dirty
+peek F:4A8E2 1 k2_6_e2
+peek F:4A802 4 k2_6_txt
+step 34
+peek F:1A6BC 4 k2_40_st
+peek F:4A95E 1 k2_40_mode
+peek F:4A84A 1 k2_40_g84a
+peek F:4A87D 1 k2_40_dirty
+peek F:4A8E2 1 k2_40_e2
+peek F:4A802 4 k2_40_txt
+step 1
+restore extracted/captures/log-screen-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 3 0.2
+peek F:1A6BC 4 k3_0_st
+peek F:4A95E 1 k3_0_mode
+peek F:4A84A 1 k3_0_g84a
+peek F:4A87D 1 k3_0_dirty
+peek F:4A8E2 1 k3_0_e2
+peek F:4A802 4 k3_0_txt
+step 1
+peek F:1A6BC 4 k3_1_st
+peek F:4A95E 1 k3_1_mode
+peek F:4A84A 1 k3_1_g84a
+peek F:4A87D 1 k3_1_dirty
+peek F:4A8E2 1 k3_1_e2
+peek F:4A802 4 k3_1_txt
+step 1
+peek F:1A6BC 4 k3_2_st
+peek F:4A95E 1 k3_2_mode
+peek F:4A84A 1 k3_2_g84a
+peek F:4A87D 1 k3_2_dirty
+peek F:4A8E2 1 k3_2_e2
+peek F:4A802 4 k3_2_txt
+step 4
+peek F:1A6BC 4 k3_6_st
+peek F:4A95E 1 k3_6_mode
+peek F:4A84A 1 k3_6_g84a
+peek F:4A87D 1 k3_6_dirty
+peek F:4A8E2 1 k3_6_e2
+peek F:4A802 4 k3_6_txt
+step 34
+peek F:1A6BC 4 k3_40_st
+peek F:4A95E 1 k3_40_mode
+peek F:4A84A 1 k3_40_g84a
+peek F:4A87D 1 k3_40_dirty
+peek F:4A8E2 1 k3_40_e2
+peek F:4A802 4 k3_40_txt
+step 1
+restore extracted/captures/log-screen-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 4 0.2
+peek F:1A6BC 4 k4_0_st
+peek F:4A95E 1 k4_0_mode
+peek F:4A84A 1 k4_0_g84a
+peek F:4A87D 1 k4_0_dirty
+peek F:4A8E2 1 k4_0_e2
+peek F:4A802 4 k4_0_txt
+step 1
+peek F:1A6BC 4 k4_1_st
+peek F:4A95E 1 k4_1_mode
+peek F:4A84A 1 k4_1_g84a
+peek F:4A87D 1 k4_1_dirty
+peek F:4A8E2 1 k4_1_e2
+peek F:4A802 4 k4_1_txt
+step 1
+peek F:1A6BC 4 k4_2_st
+peek F:4A95E 1 k4_2_mode
+peek F:4A84A 1 k4_2_g84a
+peek F:4A87D 1 k4_2_dirty
+peek F:4A8E2 1 k4_2_e2
+peek F:4A802 4 k4_2_txt
+step 4
+peek F:1A6BC 4 k4_6_st
+peek F:4A95E 1 k4_6_mode
+peek F:4A84A 1 k4_6_g84a
+peek F:4A87D 1 k4_6_dirty
+peek F:4A8E2 1 k4_6_e2
+peek F:4A802 4 k4_6_txt
+step 34
+peek F:1A6BC 4 k4_40_st
+peek F:4A95E 1 k4_40_mode
+peek F:4A84A 1 k4_40_g84a
+peek F:4A87D 1 k4_40_dirty
+peek F:4A8E2 1 k4_40_e2
+peek F:4A802 4 k4_40_txt
+step 1
+restore extracted/captures/log-screen-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 5 0.2
+peek F:1A6BC 4 k5_0_st
+peek F:4A95E 1 k5_0_mode
+peek F:4A84A 1 k5_0_g84a
+peek F:4A87D 1 k5_0_dirty
+peek F:4A8E2 1 k5_0_e2
+peek F:4A802 4 k5_0_txt
+step 1
+peek F:1A6BC 4 k5_1_st
+peek F:4A95E 1 k5_1_mode
+peek F:4A84A 1 k5_1_g84a
+peek F:4A87D 1 k5_1_dirty
+peek F:4A8E2 1 k5_1_e2
+peek F:4A802 4 k5_1_txt
+step 1
+peek F:1A6BC 4 k5_2_st
+peek F:4A95E 1 k5_2_mode
+peek F:4A84A 1 k5_2_g84a
+peek F:4A87D 1 k5_2_dirty
+peek F:4A8E2 1 k5_2_e2
+peek F:4A802 4 k5_2_txt
+step 4
+peek F:1A6BC 4 k5_6_st
+peek F:4A95E 1 k5_6_mode
+peek F:4A84A 1 k5_6_g84a
+peek F:4A87D 1 k5_6_dirty
+peek F:4A8E2 1 k5_6_e2
+peek F:4A802 4 k5_6_txt
+step 34
+peek F:1A6BC 4 k5_40_st
+peek F:4A95E 1 k5_40_mode
+peek F:4A84A 1 k5_40_g84a
+peek F:4A87D 1 k5_40_dirty
+peek F:4A8E2 1 k5_40_e2
+peek F:4A802 4 k5_40_txt
+step 1
+restore extracted/captures/log-screen-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 6 0.2
+peek F:1A6BC 4 k6_0_st
+peek F:4A95E 1 k6_0_mode
+peek F:4A84A 1 k6_0_g84a
+peek F:4A87D 1 k6_0_dirty
+peek F:4A8E2 1 k6_0_e2
+peek F:4A802 4 k6_0_txt
+step 1
+peek F:1A6BC 4 k6_1_st
+peek F:4A95E 1 k6_1_mode
+peek F:4A84A 1 k6_1_g84a
+peek F:4A87D 1 k6_1_dirty
+peek F:4A8E2 1 k6_1_e2
+peek F:4A802 4 k6_1_txt
+step 1
+peek F:1A6BC 4 k6_2_st
+peek F:4A95E 1 k6_2_mode
+peek F:4A84A 1 k6_2_g84a
+peek F:4A87D 1 k6_2_dirty
+peek F:4A8E2 1 k6_2_e2
+peek F:4A802 4 k6_2_txt
+step 4
+peek F:1A6BC 4 k6_6_st
+peek F:4A95E 1 k6_6_mode
+peek F:4A84A 1 k6_6_g84a
+peek F:4A87D 1 k6_6_dirty
+peek F:4A8E2 1 k6_6_e2
+peek F:4A802 4 k6_6_txt
+step 34
+peek F:1A6BC 4 k6_40_st
+peek F:4A95E 1 k6_40_mode
+peek F:4A84A 1 k6_40_g84a
+peek F:4A87D 1 k6_40_dirty
+peek F:4A8E2 1 k6_40_e2
+peek F:4A802 4 k6_40_txt
+step 1
+restore extracted/captures/log-screen-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 7 0.2
+peek F:1A6BC 4 k7_0_st
+peek F:4A95E 1 k7_0_mode
+peek F:4A84A 1 k7_0_g84a
+peek F:4A87D 1 k7_0_dirty
+peek F:4A8E2 1 k7_0_e2
+peek F:4A802 4 k7_0_txt
+step 1
+peek F:1A6BC 4 k7_1_st
+peek F:4A95E 1 k7_1_mode
+peek F:4A84A 1 k7_1_g84a
+peek F:4A87D 1 k7_1_dirty
+peek F:4A8E2 1 k7_1_e2
+peek F:4A802 4 k7_1_txt
+step 1
+peek F:1A6BC 4 k7_2_st
+peek F:4A95E 1 k7_2_mode
+peek F:4A84A 1 k7_2_g84a
+peek F:4A87D 1 k7_2_dirty
+peek F:4A8E2 1 k7_2_e2
+peek F:4A802 4 k7_2_txt
+step 4
+peek F:1A6BC 4 k7_6_st
+peek F:4A95E 1 k7_6_mode
+peek F:4A84A 1 k7_6_g84a
+peek F:4A87D 1 k7_6_dirty
+peek F:4A8E2 1 k7_6_e2
+peek F:4A802 4 k7_6_txt
+step 34
+peek F:1A6BC 4 k7_40_st
+peek F:4A95E 1 k7_40_mode
+peek F:4A84A 1 k7_40_g84a
+peek F:4A87D 1 k7_40_dirty
+peek F:4A8E2 1 k7_40_e2
+peek F:4A802 4 k7_40_txt
+step 1
+restore extracted/captures/log-screen-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 9 0.2
+peek F:1A6BC 4 k9_0_st
+peek F:4A95E 1 k9_0_mode
+peek F:4A84A 1 k9_0_g84a
+peek F:4A87D 1 k9_0_dirty
+peek F:4A8E2 1 k9_0_e2
+peek F:4A802 4 k9_0_txt
+step 1
+peek F:1A6BC 4 k9_1_st
+peek F:4A95E 1 k9_1_mode
+peek F:4A84A 1 k9_1_g84a
+peek F:4A87D 1 k9_1_dirty
+peek F:4A8E2 1 k9_1_e2
+peek F:4A802 4 k9_1_txt
+step 1
+peek F:1A6BC 4 k9_2_st
+peek F:4A95E 1 k9_2_mode
+peek F:4A84A 1 k9_2_g84a
+peek F:4A87D 1 k9_2_dirty
+peek F:4A8E2 1 k9_2_e2
+peek F:4A802 4 k9_2_txt
+step 4
+peek F:1A6BC 4 k9_6_st
+peek F:4A95E 1 k9_6_mode
+peek F:4A84A 1 k9_6_g84a
+peek F:4A87D 1 k9_6_dirty
+peek F:4A8E2 1 k9_6_e2
+peek F:4A802 4 k9_6_txt
+step 34
+peek F:1A6BC 4 k9_40_st
+peek F:4A95E 1 k9_40_mode
+peek F:4A84A 1 k9_40_g84a
+peek F:4A87D 1 k9_40_dirty
+peek F:4A8E2 1 k9_40_e2
+peek F:4A802 4 k9_40_txt
+step 1
+restore extracted/captures/log-screen-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+key 0 0.2
+peek F:1A6BC 4 k0_0_st
+peek F:4A95E 1 k0_0_mode
+peek F:4A84A 1 k0_0_g84a
+peek F:4A87D 1 k0_0_dirty
+peek F:4A8E2 1 k0_0_e2
+peek F:4A802 4 k0_0_txt
+step 1
+peek F:1A6BC 4 k0_1_st
+peek F:4A95E 1 k0_1_mode
+peek F:4A84A 1 k0_1_g84a
+peek F:4A87D 1 k0_1_dirty
+peek F:4A8E2 1 k0_1_e2
+peek F:4A802 4 k0_1_txt
+step 1
+peek F:1A6BC 4 k0_2_st
+peek F:4A95E 1 k0_2_mode
+peek F:4A84A 1 k0_2_g84a
+peek F:4A87D 1 k0_2_dirty
+peek F:4A8E2 1 k0_2_e2
+peek F:4A802 4 k0_2_txt
+step 4
+peek F:1A6BC 4 k0_6_st
+peek F:4A95E 1 k0_6_mode
+peek F:4A84A 1 k0_6_g84a
+peek F:4A87D 1 k0_6_dirty
+peek F:4A8E2 1 k0_6_e2
+peek F:4A802 4 k0_6_txt
+step 34
+peek F:1A6BC 4 k0_40_st
+peek F:4A95E 1 k0_40_mode
+peek F:4A84A 1 k0_40_g84a
+peek F:4A87D 1 k0_40_dirty
+peek F:4A8E2 1 k0_40_e2
+peek F:4A802 4 k0_40_txt
+step 1

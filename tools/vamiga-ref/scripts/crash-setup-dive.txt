@@ -1,0 +1,13 @@
+# Setup for the crash-flow scripts (note 05, 17.17): a snapshot of the airborne state in a nose-down dive, a few
+# steps above the sea. Writes extracted/captures/dive-precrash.vasnap (git-ignored). Run first.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+holduntil UP F:4B2A2 gt -1
+wait 1
+freeze
+peek F:4B254 4 y_start
+stepuntil F:4B254 4 lt 30000 3000
+peek F:4B254 4 y_snap
+peek F:4A83D 1 view
+peek F:4A82C 2 blank
+snapshot extracted/captures/dive-precrash.vasnap

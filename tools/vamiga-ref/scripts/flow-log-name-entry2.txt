@@ -1,0 +1,76 @@
+# note 08 section 10: name entry, second run from name-prompt.vasnap: ESC, a letter, a held key (auto-repeat), RETURN on a name.
+# Prerequisite: extracted/captures/name-prompt.vasnap (flow-log-name-prompt.txt). Run with --rw and --log extracted/captures/logs/flow-log-name-entry2.txt
+restore extracted/captures/name-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+freeze
+peek F:4A8AD 1 s0_rem
+peek F:4A8AE 1 s0_pos
+peek F:4A8AF 3 s0_ring_wr_rd_cnt
+peek F:4A898 1 s0_g898
+peek F:4A8E2 1 s0_e2
+peek R:C544B6 24 s0_name
+peek F:1A6BC 4 s0_state
+thaw
+key ESC 0.3
+wait 1
+freeze
+peek F:4A8AD 1 esc_rem
+peek F:4A8AE 1 esc_pos
+peek F:4A8AF 3 esc_ring_wr_rd_cnt
+peek F:4A898 1 esc_g898
+peek F:4A8E2 1 esc_e2
+peek R:C544B6 24 esc_name
+peek F:1A6BC 4 esc_state
+thaw
+key A 0.3
+wait 1
+freeze
+peek F:4A8AD 1 A_rem
+peek F:4A8AE 1 A_pos
+peek F:4A8AF 3 A_ring_wr_rd_cnt
+peek F:4A898 1 A_g898
+peek F:4A8E2 1 A_e2
+peek R:C544B6 24 A_name
+peek F:1A6BC 4 A_state
+thaw
+keydown B
+wait 2.5
+keyup B
+wait 1
+freeze
+peek F:4A8AD 1 Bheld_rem
+peek F:4A8AE 1 Bheld_pos
+peek F:4A8AF 3 Bheld_ring_wr_rd_cnt
+peek F:4A898 1 Bheld_g898
+peek F:4A8E2 1 Bheld_e2
+peek R:C544B6 24 Bheld_name
+peek F:1A6BC 4 Bheld_state
+thaw
+key RETURN 0.3
+wait 4
+freeze
+peek F:4A8AD 1 ret_rem
+peek F:4A8AE 1 ret_pos
+peek F:4A8AF 3 ret_ring_wr_rd_cnt
+peek F:4A898 1 ret_g898
+peek F:4A8E2 1 ret_e2
+peek R:C544B6 24 ret_name
+peek F:1A6BC 4 ret_state
+thaw
+wait 8
+frame extracted/captures/logs/log-name2-menu.ppm
+freeze
+peek F:4A8AD 1 menu_rem
+peek F:4A8AE 1 menu_pos
+peek F:4A8AF 3 menu_ring_wr_rd_cnt
+peek F:4A898 1 menu_g898
+peek F:4A8E2 1 menu_e2
+peek R:C544B6 24 menu_name
+peek F:1A6BC 4 menu_state
+thaw
+key 2 0.3
+wait 3
+freeze
+peek F:4A95E 1 key2_mode
+thaw

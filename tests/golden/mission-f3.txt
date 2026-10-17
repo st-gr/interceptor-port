@@ -1,0 +1,819 @@
+# mission-f3: menu key F3, the third mission (game mode 5, the stolen aircraft, note 08 12.7): success (0xFF) needs the kill count at the cap 2 (the two escorts) and the thieves either shadowed
+# for 200 consecutive passes (inside 0x30000 position units on all three axes) or both destroyed; failure 0xFE when a thief's cell x reaches 0x70.
+# 1 tick = 1 core step, the game starts at the credits: any key (tick 3), the continuing welcome of a log with a player record (tick 133), the menu's F3 (tick 175). The flight log is imported by the
+# script ("log": qualified, tours 2, the completion bytes 0 0 0 1 1 1 1 1 0) and the placement generator is seeded with 127 ("seed 127": m = 46 and the jitter +1, selector 0x0FFE, variant 1, offsets (-3, -3) cells, the placement of the earlier golden, which seed 1 no longer draws; the selector rule of note 07 gives each seed one of 14 placements,
+# this one puts the thieves about 38 million units away). The location is the carrier and fixed for the mission: the approach, the notice and the wait run by themselves and the first flight step is tick 535.
+# THIS MISSION REACHES THE SUCCESS CODE: end 0xFF at tick 8470 (the end column; the kill count 2), the outcome text types and the flight resumes after it. The path: a catapult launch with F10 at
+# tick 537, a pull at 621 (stick back until 636), the gear at 646, the weapon cycle to the gun (three presses from 655), then a closed-loop tail chase of the first thief (a bang-bang bank and pitch
+# controller on the thief's lead point, the throttle holding its speed; found with a throwaway steering tool run against this port, not committed) that keeps the player inside the 0x30000 box for
+# the 200 passes (the shadowing, the timer negative for good, is in force long before the end), then a look-ahead search (every 6 ticks, 18 candidate stick and trigger states each simulated 24 ticks ahead
+# from a forked copy of the run, scored on the angle to the nearest escort, the range and the kills) that brings both escorts down (kills 2; the second escort comes from the region 2 entry).
+# Milestone 7 history: the click cost 5,350 and the measured typing times (note 08 3.8) and then the final round (note 08 12.14 C14 and 5.13: the missions' approach is the mover's from the briefing camera, and the first flight pass follows the outcome resume by one step) re-timed this script twice; the values above are the current ones. The seed and the inputs are unchanged and the run still reaches the end code 0xFF.
+# The real "at" lines after tick 400 moved by -8 in the final round (+3 in the click-cost round); the synthetic "sat" lines by +98.
+screens
+seed 127
+log 0 0 0 1 1 1 1 1 0
+ticks 8703
+# SYNTHETIC RUN (CI): "synthflight" gives the synthetic world the invented flight tables (all zero) and the invented mission tables of tests/world_synth.h (scenario rows, templates, position blocks, briefing chain, ai.bin), so the F-key starts the mission; "synthfrom 175" keeps the
+# "at" lines up to the menu key and drops the real fight; the "sat" lines are the synthetic fight. F3: the two thieves (not counted) are placed within the shadowing box of the stationary start, the two escorts stacked below it in the line of the gun: catapult key, the gun, FIRE for 80 ticks; the kill count reaches the cap 2: END CODE 0xFF at tick 744, resume code 1 at 754.
+synthflight
+synthfrom 175
+synthetic 898
+sat 640 fkey 10
+sat 658 btn SELECT_WEAPON 1
+sat 658 btn SELECT_WEAPON 0
+sat 663 btn SELECT_WEAPON 1
+sat 663 btn SELECT_WEAPON 0
+sat 668 btn SELECT_WEAPON 1
+sat 668 btn SELECT_WEAPON 0
+sat 698 btn FIRE 1
+sat 778 btn FIRE 0
+# the credits (any key), the continuing welcome (any key), the menu's F3
+at 3 key 120
+at 133 key 120
+at 175 fkey 3
+# the briefing chain runs by itself (the location is fixed, the approach and the notice are not skipped); the flight starts at the tick the header names
+at 537 fkey 10
+at 621 stick 0 12000
+at 636 stick 0 0
+at 646 btn GEAR
+at 655 btn SELECT_WEAPON 1
+at 655 btn SELECT_WEAPON 0
+at 661 btn SELECT_WEAPON 1
+at 661 btn SELECT_WEAPON 0
+at 667 btn SELECT_WEAPON 1
+at 667 btn SELECT_WEAPON 0
+at 735 stick 12000 -12000
+at 735 throttle 31500
+at 743 stick 0 -12000
+at 751 stick 12000 -12000
+at 753 stick 0 -12000
+at 757 stick 12000 0
+at 759 stick 12000 12000
+at 760 stick 0 12000
+at 770 stick 0 0
+at 775 stick 0 -12000
+at 781 stick -12000 0
+at 784 stick 0 0
+at 788 stick -12000 0
+at 791 stick 0 0
+at 794 stick -12000 0
+at 797 stick 0 0
+at 800 stick -12000 0
+at 803 stick 0 0
+at 809 stick 0 12000
+at 812 stick -12000 12000
+at 813 stick 0 12000
+at 817 stick -12000 0
+at 818 stick 0 0
+at 820 stick 0 12000
+at 825 stick 0 0
+at 836 stick -12000 0
+at 837 stick 0 0
+at 841 stick -12000 0
+at 842 stick 0 0
+at 852 stick -12000 0
+at 853 stick 0 0
+at 865 stick -12000 0
+at 866 stick 0 0
+at 869 stick 0 12000
+at 870 stick -12000 12000
+at 871 stick 0 12000
+at 872 stick 0 0
+at 875 stick -12000 0
+at 876 stick 0 0
+at 948 stick 0 -12000
+at 951 stick 0 0
+at 960 stick 12000 0
+at 962 stick 0 0
+at 972 stick 0 -12000
+at 975 stick 0 0
+at 1318 stick 0 12000
+at 1320 stick 0 0
+at 1414 stick -12000 0
+at 1415 stick 0 0
+at 1417 stick -12000 0
+at 1418 stick 0 0
+at 1420 stick -12000 0
+at 1421 stick 0 0
+at 1432 stick -12000 0
+at 1433 stick 0 0
+at 1435 stick -12000 0
+at 1436 stick 0 0
+at 1438 stick -12000 0
+at 1439 stick 0 0
+at 1458 stick 0 -12000
+at 1460 stick 0 0
+at 1464 stick 0 -12000
+at 1466 stick 0 0
+at 1556 stick -12000 0
+at 1557 stick 0 0
+at 1560 stick -12000 0
+at 1561 stick 0 0
+at 1562 stick -12000 0
+at 1563 stick 0 0
+at 1658 stick 12000 0
+at 1660 stick 0 0
+at 1917 stick -12000 0
+at 1918 stick 0 0
+at 1919 stick -12000 0
+at 1920 stick 0 0
+at 1921 stick -12000 0
+at 1922 stick 0 0
+at 1927 stick -12000 0
+at 1928 stick 0 0
+at 1929 stick -12000 0
+at 1930 stick 0 0
+at 1932 stick -12000 0
+at 1933 stick 0 0
+at 1936 stick -12000 0
+at 1937 stick 0 0
+at 2021 stick 12000 0
+at 2023 stick 0 0
+at 2236 stick 0 12000
+at 2238 stick 0 0
+at 2272 stick -12000 0
+at 2273 stick 0 0
+at 2275 stick -12000 0
+at 2276 stick 0 0
+at 2278 stick -12000 0
+at 2279 stick 0 0
+at 2283 stick -12000 0
+at 2284 stick 0 0
+at 2285 stick -12000 0
+at 2286 stick 0 0
+at 2287 stick -12000 0
+at 2288 stick 0 0
+at 2300 stick 0 -12000
+at 2303 stick 0 0
+at 2318 stick 0 -12000
+at 2320 stick 0 0
+at 2324 stick 0 -12000
+at 2326 stick 0 0
+at 2383 stick 12000 0
+at 2385 stick 0 0
+at 2392 stick 12000 0
+at 2393 stick 0 0
+at 2821 stick -12000 0
+at 2822 stick 0 0
+at 2823 stick -12000 0
+at 2824 stick 0 0
+at 2825 stick -12000 0
+at 2826 stick 0 0
+at 2837 stick -12000 0
+at 2838 stick 0 0
+at 2839 stick -12000 0
+at 2840 stick 0 0
+at 2841 stick -12000 0
+at 2842 stick 0 0
+at 2928 stick 12000 0
+at 2930 stick 0 0
+at 2936 stick 12000 0
+at 2938 stick 0 0
+at 3025 stick -12000 0
+at 3027 stick 0 0
+at 3028 stick -12000 0
+at 3029 stick 0 0
+at 3041 stick -12000 0
+at 3042 stick 0 0
+at 3043 stick -12000 0
+at 3044 stick 0 0
+at 3057 stick -12000 0
+at 3058 stick 0 0
+at 3060 stick -12000 0
+at 3062 stick 0 0
+at 3080 stick -12000 0
+at 3081 stick 0 0
+at 3096 stick 0 12000
+at 3098 stick 0 0
+at 3160 stick 12000 -12000
+at 3162 stick 0 0
+at 3163 stick 0 -12000
+at 3164 stick 0 0
+at 3165 stick 12000 0
+at 3166 stick 0 0
+at 3177 stick 0 -12000
+at 3179 stick 0 0
+at 3184 stick 0 -12000
+at 3186 stick 0 0
+at 3197 stick 12000 0
+at 3199 stick 0 0
+at 3263 stick -12000 0
+at 3266 stick 0 0
+at 3270 stick -12000 0
+at 3272 stick 0 0
+at 3274 stick -12000 0
+at 3276 stick 0 0
+at 3282 stick -12000 0
+at 3284 stick 0 0
+at 3289 stick -12000 0
+at 3290 stick 0 0
+at 3291 stick -12000 0
+at 3292 stick 0 0
+at 3379 stick 12000 0
+at 3380 stick 0 0
+at 3381 stick 12000 0
+at 3382 stick 0 0
+at 3383 stick 12000 0
+at 3385 stick 0 0
+at 3387 stick 12000 0
+at 3389 stick 0 0
+at 3463 stick -12000 0
+at 3466 stick 0 0
+at 3468 stick -12000 0
+at 3471 stick 0 0
+at 3473 stick -12000 0
+at 3475 stick 0 0
+at 3484 stick -12000 0
+at 3486 stick 0 0
+at 3515 throttle 30000
+at 3530 throttle 28500
+at 3539 stick 12000 0
+at 3540 throttle 27000
+at 3542 stick 0 0
+at 3549 stick 12000 0
+at 3553 stick 0 0
+at 3560 throttle 25500
+at 3572 stick 12000 0
+at 3573 stick 0 0
+at 3575 throttle 24000
+at 3595 throttle 22500
+at 3614 stick -12000 0
+at 3615 throttle 21000
+at 3620 stick 0 0
+at 3632 stick -12000 0
+at 3635 stick 0 0
+at 3637 stick -12000 0
+at 3639 stick 0 0
+at 3645 throttle 19500
+at 3668 stick 12000 0
+at 3672 stick 0 0
+at 3676 stick 12000 0
+at 3682 stick 0 0
+at 3686 stick 12000 0
+at 3688 stick 0 0
+at 3695 throttle 18000
+at 3718 stick -12000 0
+at 3723 stick 0 0
+at 3725 stick -12000 0
+at 3732 stick 0 0
+at 3771 stick 12000 0
+at 3778 stick 0 0
+at 3786 stick 12000 0
+at 3790 stick 0 0
+at 3792 stick 12000 0
+at 3795 stick 0 0
+at 3818 stick -12000 0
+at 3826 stick 0 0
+at 3835 throttle 19500
+at 3836 stick -12000 0
+at 3841 stick 0 0
+at 3861 stick -12000 0
+at 3865 throttle 1500
+at 3867 stick -12000 12000
+at 3879 stick 12000 12000
+at 3885 stick 0 12000
+at 3897 stick 0 -12000
+at 3903 stick -12000 0
+at 3909 stick -12000 -12000
+at 3915 stick -12000 0
+at 3921 stick 0 -12000
+at 3927 stick 0 0
+at 3933 stick 0 -12000
+at 3939 stick 12000 0
+at 3945 stick -12000 -12000
+at 3951 stick 12000 12000
+at 3957 stick 0 0
+at 3963 stick -12000 0
+at 3969 stick 0 0
+at 3975 stick 12000 -12000
+at 3981 stick -12000 0
+at 3990 throttle 4500
+at 3993 stick 12000 -12000
+at 3995 throttle 6000
+at 3999 stick 0 0
+at 4000 throttle 9000
+at 4005 throttle 10500
+at 4010 throttle 13500
+at 4015 throttle 15000
+at 4017 stick -12000 12000
+at 4020 throttle 18000
+at 4023 stick -12000 0
+at 4025 throttle 21000
+at 4029 stick -12000 12000
+at 4030 throttle 22500
+at 4035 stick 0 0
+at 4035 throttle 25500
+at 4040 throttle 27000
+at 4045 throttle 28500
+at 4050 throttle 30000
+at 4055 throttle 31500
+at 4071 stick 0 12000
+at 4077 stick 12000 12000
+at 4083 stick 12000 0
+at 4085 throttle 28500
+at 4090 throttle 21000
+at 4095 stick 0 -12000
+at 4095 throttle 18000
+at 4100 throttle 16500
+at 4101 stick 12000 0
+at 4113 stick 0 -12000
+at 4115 throttle 18000
+at 4119 stick 0 0
+at 4120 throttle 19500
+at 4125 stick -12000 -12000
+at 4125 throttle 21000
+at 4131 stick 0 0
+at 4135 throttle 22500
+at 4140 throttle 24000
+at 4145 throttle 25500
+at 4149 stick 12000 0
+at 4155 stick -12000 0
+at 4155 throttle 27000
+at 4160 throttle 28500
+at 4161 stick 12000 -12000
+at 4167 stick 12000 12000
+at 4173 stick 12000 0
+at 4175 throttle 25500
+at 4179 stick 12000 12000
+at 4180 throttle 21000
+at 4185 stick -12000 0
+at 4185 throttle 13500
+at 4190 throttle 9000
+at 4191 stick 0 0
+at 4195 throttle 7500
+at 4197 stick -12000 -12000
+at 4203 stick 0 0
+at 4215 stick 0 12000
+at 4215 throttle 9000
+at 4220 throttle 10500
+at 4221 stick 0 0
+at 4225 throttle 12000
+at 4230 throttle 13500
+at 4235 throttle 16500
+at 4240 throttle 18000
+at 4245 stick 0 -12000
+at 4245 throttle 19500
+at 4250 throttle 21000
+at 4251 stick 0 0
+at 4255 throttle 24000
+at 4257 stick -12000 -12000
+at 4260 throttle 25500
+at 4263 stick 12000 0
+at 4265 throttle 27000
+at 4269 stick 0 -12000
+at 4270 throttle 30000
+at 4275 stick 0 0
+at 4275 throttle 31500
+at 4281 stick 12000 -12000
+at 4287 stick 0 0
+at 4293 stick 0 -12000
+at 4299 stick 0 0
+at 4300 throttle 1500
+at 4305 stick 0 -12000
+at 4311 stick 0 0
+at 4317 stick 0 -12000
+at 4323 stick -12000 0
+at 4329 stick 0 -12000
+at 4335 stick -12000 0
+at 4335 throttle 4500
+at 4340 throttle 7500
+at 4341 stick 0 12000
+at 4345 throttle 10500
+at 4347 stick 0 0
+at 4350 throttle 15000
+at 4353 stick -12000 12000
+at 4355 throttle 18000
+at 4360 throttle 21000
+at 4365 throttle 24000
+at 4370 throttle 27000
+at 4371 stick 12000 12000
+at 4375 throttle 30000
+at 4380 throttle 31500
+at 4383 stick 12000 0
+at 4389 stick 0 0
+at 4390 throttle 30000
+at 4395 stick 12000 0
+at 4395 throttle 28500
+at 4400 throttle 27000
+at 4401 stick 0 0
+at 4407 stick -12000 0
+at 4413 stick 0 0
+at 4415 throttle 25500
+at 4419 stick -12000 0
+at 4430 throttle 24000
+at 4431 stick 12000 0
+at 4443 stick -12000 0
+at 4449 stick 0 0
+at 4455 stick -12000 0
+at 4461 stick 0 0
+at 4473 stick 12000 12000
+at 4479 stick -12000 0
+at 4485 stick 12000 12000
+at 4491 stick 0 0
+at 4495 throttle 25500
+at 4497 stick -12000 12000
+at 4500 throttle 24000
+at 4503 stick 12000 12000
+at 4503 btn FIRE 1
+at 4509 btn FIRE 0
+at 4510 throttle 21000
+at 4515 stick 0 -12000
+at 4515 throttle 1500
+at 4521 stick -12000 -12000
+at 4525 throttle 3000
+at 4527 stick 12000 -12000
+at 4530 throttle 7500
+at 4533 stick 0 12000
+at 4535 throttle 10500
+at 4540 throttle 13500
+at 4545 stick 0 -12000
+at 4545 throttle 18000
+at 4550 throttle 21000
+at 4551 stick 0 0
+at 4555 throttle 24000
+at 4557 stick -12000 -12000
+at 4560 throttle 27000
+at 4563 stick 12000 0
+at 4565 throttle 30000
+at 4569 stick 0 0
+at 4570 throttle 31500
+at 4575 stick -12000 0
+at 4581 stick 0 0
+at 4593 stick 0 12000
+at 4599 stick 0 0
+at 4615 throttle 1500
+at 4623 stick -12000 0
+at 4629 stick -12000 -12000
+at 4635 stick 0 0
+at 4641 stick 0 -12000
+at 4647 stick 0 0
+at 4665 stick 0 -12000
+at 4671 stick 12000 0
+at 4677 stick -12000 0
+at 4683 stick 0 0
+at 4685 throttle 3000
+at 4689 stick 12000 -12000
+at 4690 throttle 6000
+at 4695 stick 0 0
+at 4695 throttle 9000
+at 4700 throttle 13500
+at 4705 throttle 16500
+at 4710 throttle 18000
+at 4730 throttle 16500
+at 4750 throttle 19500
+at 4755 throttle 21000
+at 4760 throttle 24000
+at 4765 throttle 25500
+at 4770 throttle 27000
+at 4775 throttle 28500
+at 4780 throttle 30000
+at 4785 throttle 31500
+at 4797 stick -12000 -12000
+at 4803 stick 12000 0
+at 4809 stick 0 -12000
+at 4815 stick -12000 0
+at 4821 stick 12000 -12000
+at 4827 stick 0 0
+at 4833 stick 0 -12000
+at 4839 stick 0 0
+at 4845 stick 12000 0
+at 4845 throttle 30000
+at 4851 stick -12000 0
+at 4857 stick 0 0
+at 4860 throttle 31500
+at 4863 stick -12000 0
+at 4869 stick 0 0
+at 4881 stick 0 12000
+at 4887 stick 0 0
+at 4893 stick 0 12000
+at 4899 stick 0 0
+at 4905 stick -12000 12000
+at 4905 btn FIRE 1
+at 4911 stick 0 0
+at 4911 btn FIRE 0
+at 4915 throttle 22500
+at 4917 stick -12000 12000
+at 4920 throttle 1500
+at 4923 stick 12000 12000
+at 4929 stick -12000 -12000
+at 4935 throttle 3000
+at 4935 btn FIRE 1
+at 4940 throttle 31500
+at 4941 stick 0 12000
+at 4941 btn FIRE 0
+at 4953 stick -12000 12000
+at 4965 stick 12000 12000
+at 4971 stick 12000 0
+at 4977 stick 12000 -12000
+at 4983 stick 0 0
+at 4989 stick 12000 12000
+at 4995 stick 12000 0
+at 5001 stick -12000 0
+at 5013 stick 12000 0
+at 5019 stick 0 0
+at 5025 stick 12000 0
+at 5031 stick 0 0
+at 5055 stick -12000 0
+at 5061 stick 12000 0
+at 5067 stick -12000 0
+at 5073 stick 12000 0
+at 5079 stick -12000 0
+at 5085 stick 12000 0
+at 5091 stick -12000 0
+at 5097 stick 0 0
+at 5103 stick 12000 0
+at 5109 stick -12000 0
+at 5115 stick 12000 0
+at 5121 stick -12000 0
+at 5127 stick 0 0
+at 5139 stick 12000 0
+at 5145 stick -12000 0
+at 5151 stick 12000 0
+at 5157 stick -12000 0
+at 5163 stick 0 0
+at 5175 stick 12000 0
+at 5181 stick -12000 0
+at 5187 stick 0 0
+at 5967 stick 0 12000
+at 5973 stick 0 -12000
+at 5979 stick 0 0
+at 6015 stick 12000 0
+at 6021 stick -12000 0
+at 6027 stick 0 0
+at 6069 stick 0 12000
+at 6075 stick 0 -12000
+at 6081 stick 0 0
+at 6129 stick 0 12000
+at 6135 stick 0 -12000
+at 6141 stick 0 0
+at 6189 stick 0 12000
+at 6195 stick 0 -12000
+at 6201 stick 0 0
+at 6255 stick 0 12000
+at 6261 stick 0 -12000
+at 6267 stick 0 0
+at 6303 stick 0 12000
+at 6309 stick 0 -12000
+at 6315 stick 0 0
+at 6501 stick 0 -12000
+at 6507 stick 0 0
+at 6975 stick 12000 0
+at 6981 stick -12000 0
+at 6987 stick 0 0
+at 6999 stick 0 12000
+at 7005 stick 0 -12000
+at 7011 stick 0 0
+at 7017 stick 12000 0
+at 7023 stick -12000 0
+at 7029 stick 0 12000
+at 7035 stick 0 -12000
+at 7041 stick 0 0
+at 7059 stick 0 12000
+at 7065 stick 12000 0
+at 7071 stick -12000 -12000
+at 7077 stick 0 0
+at 7095 stick 0 12000
+at 7101 stick 12000 0
+at 7107 stick -12000 -12000
+at 7113 stick 0 0
+at 7125 stick 12000 0
+at 7131 stick -12000 12000
+at 7137 stick 0 -12000
+at 7143 stick 0 0
+at 7149 stick 0 12000
+at 7155 stick 0 0
+at 7167 stick 0 -12000
+at 7173 stick 0 0
+at 7179 stick 12000 0
+at 7185 stick -12000 0
+at 7191 stick 0 0
+at 7197 stick 0 12000
+at 7203 stick 0 0
+at 7209 stick 12000 0
+at 7215 stick -12000 0
+at 7221 stick 0 0
+at 7239 stick 12000 0
+at 7245 stick -12000 0
+at 7251 stick 0 0
+at 7275 stick 0 12000
+at 7281 stick 0 0
+at 7295 throttle 1500
+at 7311 stick 0 12000
+at 7317 stick 0 0
+at 7329 stick -12000 0
+at 7335 stick 12000 12000
+at 7341 stick -12000 0
+at 7347 stick 12000 0
+at 7353 stick 0 0
+at 7359 stick 0 12000
+at 7365 stick 0 -12000
+at 7371 stick 0 0
+at 7419 stick 0 12000
+at 7420 throttle 3000
+at 7425 stick 0 0
+at 7425 throttle 6000
+at 7430 throttle 9000
+at 7431 stick -12000 12000
+at 7435 throttle 10500
+at 7437 stick 0 0
+at 7440 throttle 13500
+at 7443 stick 12000 -12000
+at 7445 throttle 16500
+at 7449 stick -12000 0
+at 7450 throttle 18000
+at 7455 stick 0 -12000
+at 7455 throttle 21000
+at 7460 throttle 24000
+at 7461 stick -12000 -12000
+at 7465 throttle 28500
+at 7467 stick -12000 12000
+at 7470 throttle 31500
+at 7479 stick 12000 12000
+at 7491 stick -12000 0
+at 7497 stick -12000 -12000
+at 7503 stick 12000 0
+at 7509 stick 12000 -12000
+at 7521 stick 0 0
+at 7527 stick 0 -12000
+at 7533 stick -12000 -12000
+at 7539 stick 0 0
+at 7545 stick -12000 -12000
+at 7551 stick 0 -12000
+at 7557 stick 0 0
+at 7563 stick -12000 -12000
+at 7569 stick 0 0
+at 7570 throttle 1500
+at 7575 stick 0 -12000
+at 7581 stick 12000 -12000
+at 7587 stick 12000 12000
+at 7593 stick -12000 12000
+at 7599 stick 0 12000
+at 7600 throttle 4500
+at 7605 stick 0 0
+at 7605 throttle 9000
+at 7610 throttle 12000
+at 7611 stick -12000 0
+at 7615 throttle 16500
+at 7617 stick 0 0
+at 7620 throttle 19500
+at 7623 stick -12000 0
+at 7625 throttle 22500
+at 7629 stick 12000 -12000
+at 7630 throttle 25500
+at 7635 stick 0 0
+at 7635 throttle 28500
+at 7640 throttle 30000
+at 7641 stick -12000 0
+at 7645 throttle 31500
+at 7647 stick 0 0
+at 7685 throttle 28500
+at 7689 stick 12000 0
+at 7690 throttle 22500
+at 7695 throttle 18000
+at 7700 throttle 15000
+at 7701 stick 0 0
+at 7707 stick 12000 0
+at 7715 throttle 16500
+at 7719 stick -12000 0
+at 7720 throttle 18000
+at 7725 throttle 19500
+at 7730 throttle 21000
+at 7731 stick 12000 0
+at 7737 stick 0 0
+at 7740 throttle 22500
+at 7745 throttle 24000
+at 7755 throttle 25500
+at 7761 stick 0 12000
+at 7765 throttle 27000
+at 7767 stick 0 -12000
+at 7773 stick 0 0
+at 7780 throttle 24000
+at 7785 stick 12000 0
+at 7785 throttle 22500
+at 7790 throttle 19500
+at 7791 stick 0 0
+at 7795 throttle 18000
+at 7797 stick -12000 0
+at 7800 throttle 16500
+at 7803 stick 12000 0
+at 7809 stick 0 0
+at 7820 throttle 18000
+at 7821 stick -12000 0
+at 7825 throttle 19500
+at 7827 stick 0 0
+at 7833 stick -12000 0
+at 7835 throttle 21000
+at 7839 stick 0 0
+at 7845 stick -12000 0
+at 7845 throttle 22500
+at 7851 stick 0 0
+at 7855 throttle 24000
+at 7875 throttle 25500
+at 7881 stick 12000 0
+at 7885 throttle 24000
+at 7887 stick 0 0
+at 7895 throttle 22500
+at 7900 throttle 21000
+at 7905 throttle 19500
+at 7911 stick -12000 0
+at 7915 throttle 18000
+at 7917 stick 0 0
+at 7920 throttle 19500
+at 7935 throttle 21000
+at 7947 stick -12000 0
+at 7950 throttle 22500
+at 7953 stick 0 0
+at 7965 stick 12000 0
+at 7965 throttle 24000
+at 7971 stick -12000 0
+at 7977 stick 0 0
+at 7980 throttle 25500
+at 7983 stick 12000 0
+at 7989 stick 0 0
+at 7995 throttle 24000
+at 8001 stick -12000 0
+at 8005 throttle 22500
+at 8007 stick 12000 0
+at 8010 throttle 21000
+at 8013 stick -12000 0
+at 8015 throttle 19500
+at 8019 stick 12000 0
+at 8025 stick -12000 0
+at 8031 stick 0 0
+at 8040 throttle 21000
+at 8043 stick -12000 0
+at 8049 stick 0 0
+at 8055 stick 12000 0
+at 8055 throttle 22500
+at 8061 stick -12000 0
+at 8067 stick 0 0
+at 8075 throttle 24000
+at 8079 stick 12000 0
+at 8085 stick -12000 0
+at 8091 stick 0 0
+at 8097 stick 12000 0
+at 8103 stick 12000 -12000
+at 8109 stick -12000 0
+at 8110 throttle 22500
+at 8115 throttle 21000
+at 8120 throttle 19500
+at 8121 stick 0 0
+at 8127 stick -12000 0
+at 8133 stick 12000 0
+at 8139 stick 0 0
+at 8145 stick -12000 0
+at 8151 stick 12000 0
+at 8155 throttle 21000
+at 8157 stick -12000 0
+at 8163 stick 0 0
+at 8170 throttle 22500
+at 8181 stick 12000 0
+at 8187 stick -12000 0
+at 8193 stick 0 0
+at 8195 throttle 24000
+at 8199 stick 12000 0
+at 8205 stick -12000 12000
+at 8210 throttle 22500
+at 8211 stick 12000 -12000
+at 8217 stick 0 0
+at 8220 throttle 21000
+at 8225 throttle 19500
+at 8229 stick -12000 0
+at 8235 stick 0 0
+at 8255 throttle 21000
+at 8259 stick -12000 0
+at 8265 stick 0 0
+at 8275 throttle 22500
+at 8290 throttle 24000
+at 8319 stick 12000 0
+at 8325 stick -12000 0
+at 8331 stick 0 0
+at 8349 stick -12000 0
+at 8355 stick 12000 0
+at 8361 stick 0 0
+at 8367 stick -12000 0
+at 8370 throttle 25500
+at 8373 stick 12000 0
+at 8379 stick 0 0
+at 8385 stick -12000 0
+at 8391 stick 0 0
+at 8397 stick 12000 0
+at 8403 stick 0 0
+at 8405 throttle 27000
+at 8409 stick -12000 12000
+at 8415 stick 12000 0
+at 8415 btn FIRE 1
+at 8421 stick -12000 12000
+at 8421 btn FIRE 0
+at 8425 throttle 25500
+at 8427 stick 12000 12000
+at 8433 stick -12000 0
+at 8433 btn FIRE 1
+at 8435 throttle 24000
+at 8439 stick 0 12000
+at 8439 btn FIRE 0
+at 8440 throttle 21000
+at 8445 stick 12000 0
+at 8445 throttle 18000
+at 8450 stick 0 0

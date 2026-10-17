@@ -1,0 +1,209 @@
+name: ci
+on:
+  push:
+    branches-ignore: [ci-results]
+  pull_request:
+  workflow_dispatch:   # the Run-workflow button (shown once this file is on the default branch)
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { submodules: true }
+      - run: sudo apt-get update && sudo apt-get install -y libsdl2-dev tcc
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pytest amitools -e tools/extract
+      - timeout-minutes: 6
+        run: |
+          set -o pipefail
+          { make core test; } 2>&1 | tee -a ci-linux.log
+      - timeout-minutes: 6
+        run: |
+          set -o pipefail
+          { make clean && make CC=tcc CFLAGS="-std=c99 -Wall" core test golden; } 2>&1 | tee -a ci-linux.log
+      - timeout-minutes: 6
+        run: |
+          set -o pipefail
+          { make clean && make; } 2>&1 | tee -a ci-linux.log
+      - timeout-minutes: 6
+        run: |
+          set -o pipefail
+          { pytest tools/extract tools/hunk tests/frontend tools/cleanroom -q -rs; } 2>&1 | tee -a ci-linux.log
+      - timeout-minutes: 6
+        run: |
+          set -o pipefail
+          { make -C tools/m68k-rig test; } 2>&1 | tee -a ci-linux.log
+      - timeout-minutes: 6
+        run: |
+          set -o pipefail
+          { make golden; } 2>&1 | tee -a ci-linux.log
+      - if: always()
+        run: echo "${{ job.status }}" > ci-linux.status
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-linux
+          path: |
+            ci-linux.log
+            ci-linux.status
+          if-no-files-found: ignore
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    defaults: { run: { shell: "msys2 {0}" } }
+    steps:
+      - uses: actions/checkout@v4
+        with: { submodules: true }
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          install: >-
+            mingw-w64-x86_64-gcc mingw-w64-x86_64-binutils
+            mingw-w64-x86_64-SDL2 mingw-w64-x86_64-pkg-config make diffutils
+      - run: |
+          set -o pipefail
+          { make core test; } 2>&1 | tee -a ci-windows.log
+      - run: |
+          set -o pipefail
+          { make; } 2>&1 | tee -a ci-windows.log
+      - run: |
+          set -o pipefail
+          { make -C tools/m68k-rig test; } 2>&1 | tee -a ci-windows.log
+      - run: |
+          set -o pipefail
+          { make golden; } 2>&1 | tee -a ci-windows.log
+      - if: always()
+        run: echo "${{ job.status }}" > ci-windows.status
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-windows
+          path: |
+            ci-windows.log
+            ci-windows.status
+          if-no-files-found: ignore
+  macos:
+    runs-on: macos-latest   # Apple Silicon runners
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { submodules: true }
+      - run: brew install sdl2-compat pkg-config
+      - run: |
+          set -o pipefail
+          { make CC=clang core test; } 2>&1 | tee -a ci-macos.log
+      - run: |
+          set -o pipefail
+          { make CC=clang; } 2>&1 | tee -a ci-macos.log
+      - run: |
+          set -o pipefail
+          { make -C tools/m68k-rig CC=clang test; } 2>&1 | tee -a ci-macos.log
+      - run: |
+          set -o pipefail
+          { make CC=clang golden; } 2>&1 | tee -a ci-macos.log
+      - if: always()
+        run: echo "${{ job.status }}" > ci-macos.status
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-macos
+          path: |
+            ci-macos.log
+            ci-macos.status
+          if-no-files-found: ignore
+  extract-js:
+    runs-on: ubuntu-latest   # the JavaScript port of the extractor (tools/extract-js), against the Python one's committed output
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - timeout-minutes: 6
+        run: |
+          set -o pipefail
+          { node --version && node --test --test-concurrency=1 "tools/extract-js/test/*.test.js"; } 2>&1 | tee -a ci-extract-js.log
+      - if: always()
+        run: echo "${{ job.status }}" > ci-extract-js.status
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-extract-js
+          path: |
+            ci-extract-js.log
+            ci-extract-js.status
+          if-no-files-found: ignore
+  web:
+    runs-on: ubuntu-latest   # the browser build (make web): no asset in it; the artefact is the static site
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - uses: mymindstorm/setup-emsdk@v14
+        with: { version: "4.0.9" }
+      - timeout-minutes: 10
+        run: |
+          set -o pipefail
+          { emcc --version | head -1 && make -j1 web && ls -l build/web build/web/extract; } 2>&1 | tee -a ci-web.log
+      - timeout-minutes: 6
+        run: |
+          set -o pipefail
+          node --test --test-concurrency=1 tools/extract-js/test/page.test.js tools/extract-js/test/segments.test.js 2>&1 | tee -a ci-web.log
+      - if: always()
+        run: echo "${{ job.status }}" > ci-web.status
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-web
+          path: |
+            ci-web.log
+            ci-web.status
+          if-no-files-found: ignore
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web
+          path: build/web
+          if-no-files-found: error
+  publish:
+    needs: [linux, windows, macos, extract-js, web]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions: { contents: write }
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: ci-*
+          path: artifacts
+      - name: Publish results to ci-results
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
+          if ! git clone -q --depth 1 --branch ci-results "$url" results; then
+            git init -q results
+            git -C results checkout -q -b ci-results
+            git -C results remote add origin "$url"
+          fi
+          cd results
+          find . -mindepth 1 -maxdepth 1 -not -name .git -exec rm -rf {} +
+          for os in linux windows macos extract-js web; do
+            cp "../artifacts/ci-$os/ci-$os.log" . 2>/dev/null || echo "no log" > "ci-$os.log"
+            st=$(cat "../artifacts/ci-$os/ci-$os.status" 2>/dev/null || echo missing)
+            echo "$os $st" >> status.txt
+          done
+          echo "${{ github.sha }}" > commit.txt
+          echo "${{ github.run_id }} ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" > run.txt
+          git add -A
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          git -c user.name=ci -c user.email=ci@example.invalid commit -q -m "CI results for ${{ github.sha }}"
+          for i in 1 2 3; do
+            git push origin ci-results && exit 0
+            git -c user.name=ci -c user.email=ci@example.invalid pull --rebase origin ci-results
+          done
+          exit 1

@@ -1,0 +1,21 @@
+# Note 08 section 11: the location selection accepts the digit 5 (V:4A900 = 4, the second-ship block): the start falls back to the runway block 0.
+restore extracted/captures/location-select.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek F:4A900 1 before_loc
+thaw
+key 5
+wait 1.5
+freeze
+peek F:4A900 1 after5_loc
+peek F:4A966 1 after5_phase
+thaw
+key 1
+wait 12
+freeze
+peek F:4A900 1 fl_loc
+peek F:4A901 1 fl_ac
+peek F:4B250 12 fl_xyz
+peek F:4B23C 2 fl_w0
+frame extracted/captures/egg-loc-flight5b.ppm
+thaw

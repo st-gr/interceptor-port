@@ -1,0 +1,23 @@
+# F3 (mode 5) from the countercode prompt snapshot to the first flight passes, in real time: the countercode, the orders, the approach (carrier start: no aircraft prompt);
+# snapshot extracted/captures/mb/m5-flight.vasnap and the records of the first flight pass.  Prerequisite: extracted/captures/mb/m5-prompt.vasnap (mission-brief-m5-a.txt).
+restore extracted/captures/mb/m5-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt 4218
+wait 55
+freeze
+stepuntil F:1A6BC 4 eq 0xC0AA26 900
+step 30
+peek F:4A992 2 st_n
+peek F:4A95E 6 st_a95e
+peek F:4A7F2 4 st_sublist
+peek F:4AA78 2 st_lock
+peek F:4B23C 128 st_r0
+peek F:4BA3C 128 st_r4
+peek F:4BE3C 128 st_r6
+peek F:4C23C 128 st_r8
+peek F:4C63C 128 st_r10
+peek F:4CA3C 128 st_r12
+peek F:4CE3C 128 st_r14
+peek R:C54498 78 st_log
+snapshot extracted/captures/mb/m5-flight.vasnap
+frame extracted/captures/mb/m5-flight.ppm

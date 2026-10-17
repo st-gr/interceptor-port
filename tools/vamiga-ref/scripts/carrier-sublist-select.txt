@@ -1,0 +1,18 @@
+# The per-mode selector bytes that choose the sub-list of the placement table at 0x2DEDA (note 05, 17.17): the structure
+# V:1D024 points to (RAM C54498 on this boot path), bytes +0x10 to +0x20, in four flight snapshots.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek R:C54498 48 airborne_struct
+restore extracted/captures/cockpit-ground.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek R:C54498 48 ground_struct
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek R:C54498 48 carrier_struct
+restore extracted/captures/demo.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+freeze
+peek R:C54498 48 demo_struct

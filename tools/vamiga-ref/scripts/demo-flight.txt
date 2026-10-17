@@ -1,0 +1,22 @@
+# Credits screen -> log-disk prompt -> menu -> DEMO (menu item 1). The demo needs no countercode, but it is
+# a scripted flight, not player control; see freeflight-takeoff.txt for the controllable flight.
+# Prerequisite: extracted/captures/credits.vasnap from boot-to-credits.txt (150 s, once).
+# Run:  build/vamiga-ref/ref --rom disks/kick12.rom --adf extracted/interceptor-autoboot.adf \
+#           --script tools/vamiga-ref/scripts/demo-flight.txt
+# Waits are wall-clock against a real-time emulator, so the demo moment of each frame is accurate only to
+# about a second or two (jitter); treat the frames as "approximately T+n s".
+restore extracted/captures/credits.vasnap
+key SPACE
+wait 8
+frame extracted/captures/log-disk-prompt.ppm
+key RETURN
+wait 8
+frame extracted/captures/menu.ppm
+key 1
+# T = moment of this key press. The demo opens on the carrier deck, external chase view.
+wait 10
+frame extracted/captures/demo-deck.ppm
+wait 20
+frame extracted/captures/demo-external.ppm
+wait 32
+frame extracted/captures/demo-cockpit.ppm

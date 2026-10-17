@@ -1,0 +1,40 @@
+# Near body in windows of 167 rows (note 03, "What the near body shows"; note 04a section 8a). Prerequisite: cockpit-carrier.vasnap (deck, cockpit).
+# KP7 (view code 12, last row 167, pitch band 3) and KP1 (code 13): peek the window words and write a frame each; then the single pass after an
+# external view: V:4A8ED is 1 and the window last row is already 144. Frames go to extracted/captures/nearbody/ (git-ignored).
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KP7 1.0
+wait 1.5
+freeze
+log view_KP7
+peek F:4AA3C 2 last
+peek F:4A85F 1 viewcode
+peek F:4A923 1 band
+frame extracted/captures/nearbody/KP7.ppm
+thaw
+key KP7 1.0
+wait 1.0
+key KP1 1.0
+wait 1.5
+freeze
+log view_KP1
+peek F:4AA3C 2 last
+peek F:4A85F 1 viewcode
+peek F:4A923 1 band
+frame extracted/captures/nearbody/KP1.ppm
+thaw
+restore extracted/captures/cockpit-carrier.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+key KPENTER
+wait 3
+freeze
+log external
+peek F:4AA3C 2 last
+peek F:4A83D 1 v83d
+thaw
+key KPENTER 0.05
+freeze
+log after_external_key
+peek F:4AA3C 2 last
+peek F:4A83D 1 v83d
+peek F:4A8ED 1 v8ed

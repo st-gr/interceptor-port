@@ -1,0 +1,771 @@
+# HUD update cadence: freeze a steady climb and step one video frame (1/50 s) at a time; log the game frame counter 4A992, record y, the HUD altitude word 4A9BA, the speed word 4A9B0, the mission seconds 4ABAA; a frame every 10 steps.
+restore extracted/captures/airborne.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 2
+freeze
+step
+peek F:4A992 2 c000_f
+peek F:4B254 4 c000_y
+peek F:4A9BA 2 c000_a
+peek F:4A9B0 2 c000_s
+frame extracted/captures/openers/cad-000.ppm
+step
+peek F:4A992 2 c001_f
+peek F:4B254 4 c001_y
+peek F:4A9BA 2 c001_a
+peek F:4A9B0 2 c001_s
+step
+peek F:4A992 2 c002_f
+peek F:4B254 4 c002_y
+peek F:4A9BA 2 c002_a
+peek F:4A9B0 2 c002_s
+step
+peek F:4A992 2 c003_f
+peek F:4B254 4 c003_y
+peek F:4A9BA 2 c003_a
+peek F:4A9B0 2 c003_s
+step
+peek F:4A992 2 c004_f
+peek F:4B254 4 c004_y
+peek F:4A9BA 2 c004_a
+peek F:4A9B0 2 c004_s
+step
+peek F:4A992 2 c005_f
+peek F:4B254 4 c005_y
+peek F:4A9BA 2 c005_a
+peek F:4A9B0 2 c005_s
+step
+peek F:4A992 2 c006_f
+peek F:4B254 4 c006_y
+peek F:4A9BA 2 c006_a
+peek F:4A9B0 2 c006_s
+step
+peek F:4A992 2 c007_f
+peek F:4B254 4 c007_y
+peek F:4A9BA 2 c007_a
+peek F:4A9B0 2 c007_s
+step
+peek F:4A992 2 c008_f
+peek F:4B254 4 c008_y
+peek F:4A9BA 2 c008_a
+peek F:4A9B0 2 c008_s
+step
+peek F:4A992 2 c009_f
+peek F:4B254 4 c009_y
+peek F:4A9BA 2 c009_a
+peek F:4A9B0 2 c009_s
+step
+peek F:4A992 2 c010_f
+peek F:4B254 4 c010_y
+peek F:4A9BA 2 c010_a
+peek F:4A9B0 2 c010_s
+frame extracted/captures/openers/cad-010.ppm
+step
+peek F:4A992 2 c011_f
+peek F:4B254 4 c011_y
+peek F:4A9BA 2 c011_a
+peek F:4A9B0 2 c011_s
+step
+peek F:4A992 2 c012_f
+peek F:4B254 4 c012_y
+peek F:4A9BA 2 c012_a
+peek F:4A9B0 2 c012_s
+step
+peek F:4A992 2 c013_f
+peek F:4B254 4 c013_y
+peek F:4A9BA 2 c013_a
+peek F:4A9B0 2 c013_s
+step
+peek F:4A992 2 c014_f
+peek F:4B254 4 c014_y
+peek F:4A9BA 2 c014_a
+peek F:4A9B0 2 c014_s
+step
+peek F:4A992 2 c015_f
+peek F:4B254 4 c015_y
+peek F:4A9BA 2 c015_a
+peek F:4A9B0 2 c015_s
+step
+peek F:4A992 2 c016_f
+peek F:4B254 4 c016_y
+peek F:4A9BA 2 c016_a
+peek F:4A9B0 2 c016_s
+step
+peek F:4A992 2 c017_f
+peek F:4B254 4 c017_y
+peek F:4A9BA 2 c017_a
+peek F:4A9B0 2 c017_s
+step
+peek F:4A992 2 c018_f
+peek F:4B254 4 c018_y
+peek F:4A9BA 2 c018_a
+peek F:4A9B0 2 c018_s
+step
+peek F:4A992 2 c019_f
+peek F:4B254 4 c019_y
+peek F:4A9BA 2 c019_a
+peek F:4A9B0 2 c019_s
+step
+peek F:4A992 2 c020_f
+peek F:4B254 4 c020_y
+peek F:4A9BA 2 c020_a
+peek F:4A9B0 2 c020_s
+frame extracted/captures/openers/cad-020.ppm
+step
+peek F:4A992 2 c021_f
+peek F:4B254 4 c021_y
+peek F:4A9BA 2 c021_a
+peek F:4A9B0 2 c021_s
+step
+peek F:4A992 2 c022_f
+peek F:4B254 4 c022_y
+peek F:4A9BA 2 c022_a
+peek F:4A9B0 2 c022_s
+step
+peek F:4A992 2 c023_f
+peek F:4B254 4 c023_y
+peek F:4A9BA 2 c023_a
+peek F:4A9B0 2 c023_s
+step
+peek F:4A992 2 c024_f
+peek F:4B254 4 c024_y
+peek F:4A9BA 2 c024_a
+peek F:4A9B0 2 c024_s
+step
+peek F:4A992 2 c025_f
+peek F:4B254 4 c025_y
+peek F:4A9BA 2 c025_a
+peek F:4A9B0 2 c025_s
+step
+peek F:4A992 2 c026_f
+peek F:4B254 4 c026_y
+peek F:4A9BA 2 c026_a
+peek F:4A9B0 2 c026_s
+step
+peek F:4A992 2 c027_f
+peek F:4B254 4 c027_y
+peek F:4A9BA 2 c027_a
+peek F:4A9B0 2 c027_s
+step
+peek F:4A992 2 c028_f
+peek F:4B254 4 c028_y
+peek F:4A9BA 2 c028_a
+peek F:4A9B0 2 c028_s
+step
+peek F:4A992 2 c029_f
+peek F:4B254 4 c029_y
+peek F:4A9BA 2 c029_a
+peek F:4A9B0 2 c029_s
+step
+peek F:4A992 2 c030_f
+peek F:4B254 4 c030_y
+peek F:4A9BA 2 c030_a
+peek F:4A9B0 2 c030_s
+frame extracted/captures/openers/cad-030.ppm
+step
+peek F:4A992 2 c031_f
+peek F:4B254 4 c031_y
+peek F:4A9BA 2 c031_a
+peek F:4A9B0 2 c031_s
+step
+peek F:4A992 2 c032_f
+peek F:4B254 4 c032_y
+peek F:4A9BA 2 c032_a
+peek F:4A9B0 2 c032_s
+step
+peek F:4A992 2 c033_f
+peek F:4B254 4 c033_y
+peek F:4A9BA 2 c033_a
+peek F:4A9B0 2 c033_s
+step
+peek F:4A992 2 c034_f
+peek F:4B254 4 c034_y
+peek F:4A9BA 2 c034_a
+peek F:4A9B0 2 c034_s
+step
+peek F:4A992 2 c035_f
+peek F:4B254 4 c035_y
+peek F:4A9BA 2 c035_a
+peek F:4A9B0 2 c035_s
+step
+peek F:4A992 2 c036_f
+peek F:4B254 4 c036_y
+peek F:4A9BA 2 c036_a
+peek F:4A9B0 2 c036_s
+step
+peek F:4A992 2 c037_f
+peek F:4B254 4 c037_y
+peek F:4A9BA 2 c037_a
+peek F:4A9B0 2 c037_s
+step
+peek F:4A992 2 c038_f
+peek F:4B254 4 c038_y
+peek F:4A9BA 2 c038_a
+peek F:4A9B0 2 c038_s
+step
+peek F:4A992 2 c039_f
+peek F:4B254 4 c039_y
+peek F:4A9BA 2 c039_a
+peek F:4A9B0 2 c039_s
+step
+peek F:4A992 2 c040_f
+peek F:4B254 4 c040_y
+peek F:4A9BA 2 c040_a
+peek F:4A9B0 2 c040_s
+frame extracted/captures/openers/cad-040.ppm
+step
+peek F:4A992 2 c041_f
+peek F:4B254 4 c041_y
+peek F:4A9BA 2 c041_a
+peek F:4A9B0 2 c041_s
+step
+peek F:4A992 2 c042_f
+peek F:4B254 4 c042_y
+peek F:4A9BA 2 c042_a
+peek F:4A9B0 2 c042_s
+step
+peek F:4A992 2 c043_f
+peek F:4B254 4 c043_y
+peek F:4A9BA 2 c043_a
+peek F:4A9B0 2 c043_s
+step
+peek F:4A992 2 c044_f
+peek F:4B254 4 c044_y
+peek F:4A9BA 2 c044_a
+peek F:4A9B0 2 c044_s
+step
+peek F:4A992 2 c045_f
+peek F:4B254 4 c045_y
+peek F:4A9BA 2 c045_a
+peek F:4A9B0 2 c045_s
+step
+peek F:4A992 2 c046_f
+peek F:4B254 4 c046_y
+peek F:4A9BA 2 c046_a
+peek F:4A9B0 2 c046_s
+step
+peek F:4A992 2 c047_f
+peek F:4B254 4 c047_y
+peek F:4A9BA 2 c047_a
+peek F:4A9B0 2 c047_s
+step
+peek F:4A992 2 c048_f
+peek F:4B254 4 c048_y
+peek F:4A9BA 2 c048_a
+peek F:4A9B0 2 c048_s
+step
+peek F:4A992 2 c049_f
+peek F:4B254 4 c049_y
+peek F:4A9BA 2 c049_a
+peek F:4A9B0 2 c049_s
+step
+peek F:4A992 2 c050_f
+peek F:4B254 4 c050_y
+peek F:4A9BA 2 c050_a
+peek F:4A9B0 2 c050_s
+frame extracted/captures/openers/cad-050.ppm
+step
+peek F:4A992 2 c051_f
+peek F:4B254 4 c051_y
+peek F:4A9BA 2 c051_a
+peek F:4A9B0 2 c051_s
+step
+peek F:4A992 2 c052_f
+peek F:4B254 4 c052_y
+peek F:4A9BA 2 c052_a
+peek F:4A9B0 2 c052_s
+step
+peek F:4A992 2 c053_f
+peek F:4B254 4 c053_y
+peek F:4A9BA 2 c053_a
+peek F:4A9B0 2 c053_s
+step
+peek F:4A992 2 c054_f
+peek F:4B254 4 c054_y
+peek F:4A9BA 2 c054_a
+peek F:4A9B0 2 c054_s
+step
+peek F:4A992 2 c055_f
+peek F:4B254 4 c055_y
+peek F:4A9BA 2 c055_a
+peek F:4A9B0 2 c055_s
+step
+peek F:4A992 2 c056_f
+peek F:4B254 4 c056_y
+peek F:4A9BA 2 c056_a
+peek F:4A9B0 2 c056_s
+step
+peek F:4A992 2 c057_f
+peek F:4B254 4 c057_y
+peek F:4A9BA 2 c057_a
+peek F:4A9B0 2 c057_s
+step
+peek F:4A992 2 c058_f
+peek F:4B254 4 c058_y
+peek F:4A9BA 2 c058_a
+peek F:4A9B0 2 c058_s
+step
+peek F:4A992 2 c059_f
+peek F:4B254 4 c059_y
+peek F:4A9BA 2 c059_a
+peek F:4A9B0 2 c059_s
+step
+peek F:4A992 2 c060_f
+peek F:4B254 4 c060_y
+peek F:4A9BA 2 c060_a
+peek F:4A9B0 2 c060_s
+frame extracted/captures/openers/cad-060.ppm
+step
+peek F:4A992 2 c061_f
+peek F:4B254 4 c061_y
+peek F:4A9BA 2 c061_a
+peek F:4A9B0 2 c061_s
+step
+peek F:4A992 2 c062_f
+peek F:4B254 4 c062_y
+peek F:4A9BA 2 c062_a
+peek F:4A9B0 2 c062_s
+step
+peek F:4A992 2 c063_f
+peek F:4B254 4 c063_y
+peek F:4A9BA 2 c063_a
+peek F:4A9B0 2 c063_s
+step
+peek F:4A992 2 c064_f
+peek F:4B254 4 c064_y
+peek F:4A9BA 2 c064_a
+peek F:4A9B0 2 c064_s
+step
+peek F:4A992 2 c065_f
+peek F:4B254 4 c065_y
+peek F:4A9BA 2 c065_a
+peek F:4A9B0 2 c065_s
+step
+peek F:4A992 2 c066_f
+peek F:4B254 4 c066_y
+peek F:4A9BA 2 c066_a
+peek F:4A9B0 2 c066_s
+step
+peek F:4A992 2 c067_f
+peek F:4B254 4 c067_y
+peek F:4A9BA 2 c067_a
+peek F:4A9B0 2 c067_s
+step
+peek F:4A992 2 c068_f
+peek F:4B254 4 c068_y
+peek F:4A9BA 2 c068_a
+peek F:4A9B0 2 c068_s
+step
+peek F:4A992 2 c069_f
+peek F:4B254 4 c069_y
+peek F:4A9BA 2 c069_a
+peek F:4A9B0 2 c069_s
+step
+peek F:4A992 2 c070_f
+peek F:4B254 4 c070_y
+peek F:4A9BA 2 c070_a
+peek F:4A9B0 2 c070_s
+frame extracted/captures/openers/cad-070.ppm
+step
+peek F:4A992 2 c071_f
+peek F:4B254 4 c071_y
+peek F:4A9BA 2 c071_a
+peek F:4A9B0 2 c071_s
+step
+peek F:4A992 2 c072_f
+peek F:4B254 4 c072_y
+peek F:4A9BA 2 c072_a
+peek F:4A9B0 2 c072_s
+step
+peek F:4A992 2 c073_f
+peek F:4B254 4 c073_y
+peek F:4A9BA 2 c073_a
+peek F:4A9B0 2 c073_s
+step
+peek F:4A992 2 c074_f
+peek F:4B254 4 c074_y
+peek F:4A9BA 2 c074_a
+peek F:4A9B0 2 c074_s
+step
+peek F:4A992 2 c075_f
+peek F:4B254 4 c075_y
+peek F:4A9BA 2 c075_a
+peek F:4A9B0 2 c075_s
+step
+peek F:4A992 2 c076_f
+peek F:4B254 4 c076_y
+peek F:4A9BA 2 c076_a
+peek F:4A9B0 2 c076_s
+step
+peek F:4A992 2 c077_f
+peek F:4B254 4 c077_y
+peek F:4A9BA 2 c077_a
+peek F:4A9B0 2 c077_s
+step
+peek F:4A992 2 c078_f
+peek F:4B254 4 c078_y
+peek F:4A9BA 2 c078_a
+peek F:4A9B0 2 c078_s
+step
+peek F:4A992 2 c079_f
+peek F:4B254 4 c079_y
+peek F:4A9BA 2 c079_a
+peek F:4A9B0 2 c079_s
+step
+peek F:4A992 2 c080_f
+peek F:4B254 4 c080_y
+peek F:4A9BA 2 c080_a
+peek F:4A9B0 2 c080_s
+frame extracted/captures/openers/cad-080.ppm
+step
+peek F:4A992 2 c081_f
+peek F:4B254 4 c081_y
+peek F:4A9BA 2 c081_a
+peek F:4A9B0 2 c081_s
+step
+peek F:4A992 2 c082_f
+peek F:4B254 4 c082_y
+peek F:4A9BA 2 c082_a
+peek F:4A9B0 2 c082_s
+step
+peek F:4A992 2 c083_f
+peek F:4B254 4 c083_y
+peek F:4A9BA 2 c083_a
+peek F:4A9B0 2 c083_s
+step
+peek F:4A992 2 c084_f
+peek F:4B254 4 c084_y
+peek F:4A9BA 2 c084_a
+peek F:4A9B0 2 c084_s
+step
+peek F:4A992 2 c085_f
+peek F:4B254 4 c085_y
+peek F:4A9BA 2 c085_a
+peek F:4A9B0 2 c085_s
+step
+peek F:4A992 2 c086_f
+peek F:4B254 4 c086_y
+peek F:4A9BA 2 c086_a
+peek F:4A9B0 2 c086_s
+step
+peek F:4A992 2 c087_f
+peek F:4B254 4 c087_y
+peek F:4A9BA 2 c087_a
+peek F:4A9B0 2 c087_s
+step
+peek F:4A992 2 c088_f
+peek F:4B254 4 c088_y
+peek F:4A9BA 2 c088_a
+peek F:4A9B0 2 c088_s
+step
+peek F:4A992 2 c089_f
+peek F:4B254 4 c089_y
+peek F:4A9BA 2 c089_a
+peek F:4A9B0 2 c089_s
+step
+peek F:4A992 2 c090_f
+peek F:4B254 4 c090_y
+peek F:4A9BA 2 c090_a
+peek F:4A9B0 2 c090_s
+frame extracted/captures/openers/cad-090.ppm
+step
+peek F:4A992 2 c091_f
+peek F:4B254 4 c091_y
+peek F:4A9BA 2 c091_a
+peek F:4A9B0 2 c091_s
+step
+peek F:4A992 2 c092_f
+peek F:4B254 4 c092_y
+peek F:4A9BA 2 c092_a
+peek F:4A9B0 2 c092_s
+step
+peek F:4A992 2 c093_f
+peek F:4B254 4 c093_y
+peek F:4A9BA 2 c093_a
+peek F:4A9B0 2 c093_s
+step
+peek F:4A992 2 c094_f
+peek F:4B254 4 c094_y
+peek F:4A9BA 2 c094_a
+peek F:4A9B0 2 c094_s
+step
+peek F:4A992 2 c095_f
+peek F:4B254 4 c095_y
+peek F:4A9BA 2 c095_a
+peek F:4A9B0 2 c095_s
+step
+peek F:4A992 2 c096_f
+peek F:4B254 4 c096_y
+peek F:4A9BA 2 c096_a
+peek F:4A9B0 2 c096_s
+step
+peek F:4A992 2 c097_f
+peek F:4B254 4 c097_y
+peek F:4A9BA 2 c097_a
+peek F:4A9B0 2 c097_s
+step
+peek F:4A992 2 c098_f
+peek F:4B254 4 c098_y
+peek F:4A9BA 2 c098_a
+peek F:4A9B0 2 c098_s
+step
+peek F:4A992 2 c099_f
+peek F:4B254 4 c099_y
+peek F:4A9BA 2 c099_a
+peek F:4A9B0 2 c099_s
+step
+peek F:4A992 2 c100_f
+peek F:4B254 4 c100_y
+peek F:4A9BA 2 c100_a
+peek F:4A9B0 2 c100_s
+frame extracted/captures/openers/cad-100.ppm
+step
+peek F:4A992 2 c101_f
+peek F:4B254 4 c101_y
+peek F:4A9BA 2 c101_a
+peek F:4A9B0 2 c101_s
+step
+peek F:4A992 2 c102_f
+peek F:4B254 4 c102_y
+peek F:4A9BA 2 c102_a
+peek F:4A9B0 2 c102_s
+step
+peek F:4A992 2 c103_f
+peek F:4B254 4 c103_y
+peek F:4A9BA 2 c103_a
+peek F:4A9B0 2 c103_s
+step
+peek F:4A992 2 c104_f
+peek F:4B254 4 c104_y
+peek F:4A9BA 2 c104_a
+peek F:4A9B0 2 c104_s
+step
+peek F:4A992 2 c105_f
+peek F:4B254 4 c105_y
+peek F:4A9BA 2 c105_a
+peek F:4A9B0 2 c105_s
+step
+peek F:4A992 2 c106_f
+peek F:4B254 4 c106_y
+peek F:4A9BA 2 c106_a
+peek F:4A9B0 2 c106_s
+step
+peek F:4A992 2 c107_f
+peek F:4B254 4 c107_y
+peek F:4A9BA 2 c107_a
+peek F:4A9B0 2 c107_s
+step
+peek F:4A992 2 c108_f
+peek F:4B254 4 c108_y
+peek F:4A9BA 2 c108_a
+peek F:4A9B0 2 c108_s
+step
+peek F:4A992 2 c109_f
+peek F:4B254 4 c109_y
+peek F:4A9BA 2 c109_a
+peek F:4A9B0 2 c109_s
+step
+peek F:4A992 2 c110_f
+peek F:4B254 4 c110_y
+peek F:4A9BA 2 c110_a
+peek F:4A9B0 2 c110_s
+frame extracted/captures/openers/cad-110.ppm
+step
+peek F:4A992 2 c111_f
+peek F:4B254 4 c111_y
+peek F:4A9BA 2 c111_a
+peek F:4A9B0 2 c111_s
+step
+peek F:4A992 2 c112_f
+peek F:4B254 4 c112_y
+peek F:4A9BA 2 c112_a
+peek F:4A9B0 2 c112_s
+step
+peek F:4A992 2 c113_f
+peek F:4B254 4 c113_y
+peek F:4A9BA 2 c113_a
+peek F:4A9B0 2 c113_s
+step
+peek F:4A992 2 c114_f
+peek F:4B254 4 c114_y
+peek F:4A9BA 2 c114_a
+peek F:4A9B0 2 c114_s
+step
+peek F:4A992 2 c115_f
+peek F:4B254 4 c115_y
+peek F:4A9BA 2 c115_a
+peek F:4A9B0 2 c115_s
+step
+peek F:4A992 2 c116_f
+peek F:4B254 4 c116_y
+peek F:4A9BA 2 c116_a
+peek F:4A9B0 2 c116_s
+step
+peek F:4A992 2 c117_f
+peek F:4B254 4 c117_y
+peek F:4A9BA 2 c117_a
+peek F:4A9B0 2 c117_s
+step
+peek F:4A992 2 c118_f
+peek F:4B254 4 c118_y
+peek F:4A9BA 2 c118_a
+peek F:4A9B0 2 c118_s
+step
+peek F:4A992 2 c119_f
+peek F:4B254 4 c119_y
+peek F:4A9BA 2 c119_a
+peek F:4A9B0 2 c119_s
+step
+peek F:4A992 2 c120_f
+peek F:4B254 4 c120_y
+peek F:4A9BA 2 c120_a
+peek F:4A9B0 2 c120_s
+frame extracted/captures/openers/cad-120.ppm
+step
+peek F:4A992 2 c121_f
+peek F:4B254 4 c121_y
+peek F:4A9BA 2 c121_a
+peek F:4A9B0 2 c121_s
+step
+peek F:4A992 2 c122_f
+peek F:4B254 4 c122_y
+peek F:4A9BA 2 c122_a
+peek F:4A9B0 2 c122_s
+step
+peek F:4A992 2 c123_f
+peek F:4B254 4 c123_y
+peek F:4A9BA 2 c123_a
+peek F:4A9B0 2 c123_s
+step
+peek F:4A992 2 c124_f
+peek F:4B254 4 c124_y
+peek F:4A9BA 2 c124_a
+peek F:4A9B0 2 c124_s
+step
+peek F:4A992 2 c125_f
+peek F:4B254 4 c125_y
+peek F:4A9BA 2 c125_a
+peek F:4A9B0 2 c125_s
+step
+peek F:4A992 2 c126_f
+peek F:4B254 4 c126_y
+peek F:4A9BA 2 c126_a
+peek F:4A9B0 2 c126_s
+step
+peek F:4A992 2 c127_f
+peek F:4B254 4 c127_y
+peek F:4A9BA 2 c127_a
+peek F:4A9B0 2 c127_s
+step
+peek F:4A992 2 c128_f
+peek F:4B254 4 c128_y
+peek F:4A9BA 2 c128_a
+peek F:4A9B0 2 c128_s
+step
+peek F:4A992 2 c129_f
+peek F:4B254 4 c129_y
+peek F:4A9BA 2 c129_a
+peek F:4A9B0 2 c129_s
+step
+peek F:4A992 2 c130_f
+peek F:4B254 4 c130_y
+peek F:4A9BA 2 c130_a
+peek F:4A9B0 2 c130_s
+frame extracted/captures/openers/cad-130.ppm
+step
+peek F:4A992 2 c131_f
+peek F:4B254 4 c131_y
+peek F:4A9BA 2 c131_a
+peek F:4A9B0 2 c131_s
+step
+peek F:4A992 2 c132_f
+peek F:4B254 4 c132_y
+peek F:4A9BA 2 c132_a
+peek F:4A9B0 2 c132_s
+step
+peek F:4A992 2 c133_f
+peek F:4B254 4 c133_y
+peek F:4A9BA 2 c133_a
+peek F:4A9B0 2 c133_s
+step
+peek F:4A992 2 c134_f
+peek F:4B254 4 c134_y
+peek F:4A9BA 2 c134_a
+peek F:4A9B0 2 c134_s
+step
+peek F:4A992 2 c135_f
+peek F:4B254 4 c135_y
+peek F:4A9BA 2 c135_a
+peek F:4A9B0 2 c135_s
+step
+peek F:4A992 2 c136_f
+peek F:4B254 4 c136_y
+peek F:4A9BA 2 c136_a
+peek F:4A9B0 2 c136_s
+step
+peek F:4A992 2 c137_f
+peek F:4B254 4 c137_y
+peek F:4A9BA 2 c137_a
+peek F:4A9B0 2 c137_s
+step
+peek F:4A992 2 c138_f
+peek F:4B254 4 c138_y
+peek F:4A9BA 2 c138_a
+peek F:4A9B0 2 c138_s
+step
+peek F:4A992 2 c139_f
+peek F:4B254 4 c139_y
+peek F:4A9BA 2 c139_a
+peek F:4A9B0 2 c139_s
+step
+peek F:4A992 2 c140_f
+peek F:4B254 4 c140_y
+peek F:4A9BA 2 c140_a
+peek F:4A9B0 2 c140_s
+frame extracted/captures/openers/cad-140.ppm
+step
+peek F:4A992 2 c141_f
+peek F:4B254 4 c141_y
+peek F:4A9BA 2 c141_a
+peek F:4A9B0 2 c141_s
+step
+peek F:4A992 2 c142_f
+peek F:4B254 4 c142_y
+peek F:4A9BA 2 c142_a
+peek F:4A9B0 2 c142_s
+step
+peek F:4A992 2 c143_f
+peek F:4B254 4 c143_y
+peek F:4A9BA 2 c143_a
+peek F:4A9B0 2 c143_s
+step
+peek F:4A992 2 c144_f
+peek F:4B254 4 c144_y
+peek F:4A9BA 2 c144_a
+peek F:4A9B0 2 c144_s
+step
+peek F:4A992 2 c145_f
+peek F:4B254 4 c145_y
+peek F:4A9BA 2 c145_a
+peek F:4A9B0 2 c145_s
+step
+peek F:4A992 2 c146_f
+peek F:4B254 4 c146_y
+peek F:4A9BA 2 c146_a
+peek F:4A9B0 2 c146_s
+step
+peek F:4A992 2 c147_f
+peek F:4B254 4 c147_y
+peek F:4A9BA 2 c147_a
+peek F:4A9B0 2 c147_s
+step
+peek F:4A992 2 c148_f
+peek F:4B254 4 c148_y
+peek F:4A9BA 2 c148_a
+peek F:4A9B0 2 c148_s
+step
+peek F:4A992 2 c149_f
+peek F:4B254 4 c149_y
+peek F:4A9BA 2 c149_a
+peek F:4A9B0 2 c149_s
+thaw

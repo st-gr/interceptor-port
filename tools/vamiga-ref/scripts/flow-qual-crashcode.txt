@@ -1,0 +1,41 @@
+# note 08 section 9: carrier qualification (menu item 5, mode 9), a staged arrested landing with the crash code V:4A850 = 4 poked in (note 08 9.3).
+# Prerequisite: extracted/captures/qual-prompt-rw.vasnap (flow-qual-prompt-rw.txt). Run with
+#   build/vamiga-ref/ref --rw --rom disks/kick12.rom --adf extracted/scratch/q/zero.adf --script <this> --log extracted/captures/logs/flow-qual-landing-rw.txt
+# The launch is flown (F10 on the catapult). The approach is staged with poke, as the rig example E6 of note 05: the player is put 260000 units
+# astern of the carrier on the deck line (x unchanged = carrier x + 11264, heading 0), y = 37472, S = W = 1700, T = 40, hook down (W2 bit 0x8000).
+restore extracted/captures/qual-prompt-rw.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+code @disks/countercodes.txt D631
+wait 14
+key SPACE
+wait 8
+key F10 0.5
+wait 3
+freeze
+log STAGE
+stepuntil F:4B240 1 eq 0 600
+poke F:4A850 1 4
+poke F:4B254 4 37472
+poke F:4B258 4 273942624
+poke F:4B2A8 2 1700
+poke F:4B2AA 2 1700
+poke F:4B267 1 40
+poke F:4B23E 2 0xA002
+peek F:4A850 1 res_staged
+stepuntil F:4B23E 2 and 0x4000 400
+peek F:4A850 1 res_caught
+stepuntil F:4B2AA 2 eq 0 1500
+peek F:4A850 1 res_stopped
+peek F:4A98A 2 v98a_stopped
+step 3
+peek F:4A850 1 res_3
+step 30
+peek F:4A850 1 res_30
+peek F:4A8E2 1 e2_30
+peek F:1A6BC 4 state_30
+peek R:C54498 2 qualified_30
+step 300
+peek F:4A850 1 res_330
+peek F:4A8E2 1 e2_330
+peek F:1A6BC 4 state_330
+peek R:C54498 2 qualified_330

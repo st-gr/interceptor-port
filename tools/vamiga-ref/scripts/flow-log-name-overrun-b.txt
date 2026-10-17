@@ -1,0 +1,81 @@
+# note 08 section 10.5: the name-entry overrun, automatic end: 10 letters then a SPACE as the 11th character (the count still allowed becomes 0x1F), then letters
+# until the entry ends by itself (no RETURN). Prerequisite: name-prompt.vasnap. Run with --rw and --log extracted/captures/logs/flow-log-name-overrun-b.txt
+restore extracted/captures/name-prompt.vasnap
+seglist extracted/interceptor.bin extracted/interceptor.map.json
+wait 1
+type ABCDEFGHIJ ABCDEFGHI
+wait 1
+freeze
+peek F:4A8AD 2 n20_rem_pos
+peek F:4A898 1 n20_g898
+peek R:C544B6 24 n20_name
+peek R:C54498 78 n20_rec
+peek F:1A6BC 4 n20_state
+thaw
+type ABCDEFGHI
+wait 1
+freeze
+peek F:4A8AD 2 n29_rem_pos
+peek F:4A898 1 n29_g898
+peek R:C544B6 24 n29_name
+peek R:C54498 78 n29_rec
+peek F:1A6BC 4 n29_state
+thaw
+type ABCDEFGHI
+wait 1
+freeze
+peek F:4A8AD 2 n38_rem_pos
+peek F:4A898 1 n38_g898
+peek R:C544B6 24 n38_name
+peek R:C54498 78 n38_rec
+peek F:1A6BC 4 n38_state
+thaw
+type ABCDEFGHI
+wait 1
+freeze
+peek F:4A8AD 2 n47_rem_pos
+peek F:4A898 1 n47_g898
+peek R:C544B6 24 n47_name
+peek R:C54498 78 n47_rec
+peek F:1A6BC 4 n47_state
+thaw
+type ABCDEFGHI
+wait 1
+freeze
+peek F:4A8AD 2 n56_rem_pos
+peek F:4A898 1 n56_g898
+peek R:C544B6 24 n56_name
+peek R:C54498 78 n56_rec
+peek F:1A6BC 4 n56_state
+thaw
+wait 8
+frame extracted/captures/logs/log-overrun-b-end.ppm
+freeze
+peek F:4A8AD 2 end_rem_pos
+peek F:4A898 1 end_g898
+peek R:C544B6 24 end_name
+peek R:C54498 78 end_rec
+peek F:1A6BC 4 end_state
+thaw
+key RETURN 0.3
+wait 4
+key SPACE 0.1
+wait 1
+freeze
+peek F:4A898 1 afterret_g898
+peek F:4A88D 1 afterret_g88d
+peek F:1A6BC 4 afterret_state
+peek F:4A87D 1 afterret_dirty
+frame extracted/captures/logs/log-overrun-b-afterret.ppm
+step 3
+peek F:4A88D 1 step3_g88d
+peek F:4A898 1 step3_g898
+thaw
+key ESC 0.3
+wait 3
+key 1 0.3
+wait 3
+freeze
+peek F:4A898 1 later_g898
+peek F:1A6BC 4 later_state
+thaw

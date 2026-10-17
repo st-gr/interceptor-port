@@ -1,0 +1,3 @@
+[submodule "tools/m68k-rig/musashi"]
+	path = tools/m68k-rig/musashi
+	url = https://github.com/kstenerud/Musashi
